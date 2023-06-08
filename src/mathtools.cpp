@@ -128,7 +128,7 @@ tdouble azimuth(tdouble Xa,tdouble Ya,tdouble Xb,tdouble Yb,tdouble C,tdouble ra
 {
     tdouble Za = sqrt(1-sqr(Xa/radius)-sqr(Ya/radius));
     tdouble Zb = sqrt(1-sqr(Xb/radius)-sqr(Yb/radius));
-    return atan2(Xb-C*Xa,Yb*Za-Ya*Zb);
+    return atan2(Xb-C*Xa,Yb*Za-Ya*Zb) + Project::theone()->projection.getStereoMeridianConvergence( {Xa, Ya, 0.} );
 }
 
 tdouble gauss_random(tdouble m, tdouble s)

@@ -86,7 +86,7 @@ The vertical component must be close to the ellipsoidal height, except in case o
 
 
 .. note::
-    The *a priori* precisions are always given in the internal computation frame (see :ref:`spherical-coord`), that has no scale error or convergence of meridians.
+    The *a priori* precisions are always given in the internal computation frame (see :ref:`spherical-coord`), that has a scale error an convergience of meridians different from user projection.
 
 
 .. _1D-points:

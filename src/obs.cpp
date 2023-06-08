@@ -433,7 +433,10 @@ bool Obs::computeInfos(bool isInitialResidual)
             break;
 
         case OBS_CODE::AZIMUTH:
-            computedValue=azimuth(Xa,Ya,Xb,Yb,C,radius);
+            //{auto factors = Project::theone()->projection.getInputProjFactors({Xa, Ya,0});
+            //std::cout<<"fix az input conv "<<Xa<<": "<<factors.meridian_convergence<<std::endl;
+            //std::cout<<"fix az stereo conv "<<Xa<<": "<<Project::theone()->projection.getStereoMeridianConvergence( {Xa, Ya, 0.} )<<std::endl;}
+            computedValue = azimuth(Xa,Ya,Xb,Yb,C,radius);
             //no deflectionCorrection, AZIMUTH is given in computation frame, no vertical deflection
             break;
 
@@ -455,7 +458,7 @@ bool Obs::computeInfos(bool isInitialResidual)
 
         case OBS_CODE::HZ_REF://no difference with HZ_ANG, just used to create a new hz station (g0 unknown)
         case OBS_CODE::HZ_ANG://hz angle
-            computedValue=azimuth(Xa,Ya,Xb,Yb,C,radius)-dynamic_cast<Station_Hz*>(station)->g0;
+            computedValue = azimuth(Xa,Ya,Xb,Yb,C,radius) - dynamic_cast<Station_Hz*>(station)->g0;
             if (Project::theone()->use_vertical_deflection)
             {
                 vertical_deflection = from->dev_norm*cos(azim-from->dev_azim+PI/2);
@@ -758,7 +761,7 @@ bool Obs::setEquation(LeastSquares *lsquares, bool isInitialResidual, bool inter
         positions[3] = to->params.at(0).rank;
         positions[4] = to->params.at(1).rank;
         relations[5] = -1;
-        positions[5] = station->params.at(0).rank;
+        positions[5] = station->params.at(0).rank; // g0
         break;
     case OBS_CODE::EQ_DH:
         relations.resize(4);

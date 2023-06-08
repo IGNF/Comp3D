@@ -103,8 +103,8 @@ bool Station_Hz::initialize(bool verbose)
                     {
                         if (obs.to==ptAz)
                         {
-                            g0= subobs.value - obs.value;
-                            mInitOk=true;
+                            g0 = subobs.value - obs.value;
+                            mInitOk = true;
                             return true;
                         }
                     }
@@ -135,7 +135,7 @@ bool Station_Hz::initialize(bool verbose)
 
     tdouble C=NAN,S=NAN;
     arc(Xa,Ya,Xb,Yb,C,S,radius);
-    g0= azimuth(Xa,Ya,Xb,Yb,C,radius) - first_obs->value;
+    g0 = azimuth(Xa,Ya,Xb,Yb,C,radius) - first_obs->value;
 
     //vertical deflection correction
     if (Project::theone()->use_vertical_deflection)

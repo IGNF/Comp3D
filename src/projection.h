@@ -64,6 +64,7 @@ public:
     void clear();
     bool initLocal(tdouble _latitude, const Coord &_center, tdouble _scale);
     bool initGeo(const Coord &_center, const std::string &_projDef, bool forLocal=false);
+    tdouble getStereoMeridianConvergence(const Coord &coord_comp);
     bool calcRadius(tdouble _latitude);
 
     bool georefToSpherical(const Coord &in,Coord &out) const;
@@ -103,6 +104,7 @@ public:
     std::string projDef, stereoDef, latlongDef, geocentDef;//<proj4 definitions (ex: "IGNF:LAMB93")
 
     PROJ_TYPE type;
+    PJ *stereoProj;
     PJ *pj_in2latlong, *pj_in2geocent, *pj_in2stereo; //pj_in2stereo only for georef
     PJ *pj_in;
     int projIndex;//in allEPSG

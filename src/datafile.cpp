@@ -885,9 +885,9 @@ bool XYZFile::finalizeFile() const
                              * sin(station->origin()->coord_comp.y()/(scale_proj*radius))
                              / sqr(cos(station->origin()->coord_comp.y()/(scale_proj*radius))) );
         auto R_cart2spher = angEN2Rot_small_angles( angX, angY );
-        std::cout<<"center: "<<station->origin()->coord_comp.toString(10)<<"\n";
-        std::cout<<"angles: "<<angX<<" "<<angY<<"\n";
-        std::cout<<"R_cart2spher:\n"<<R_cart2spher<<"\n";
+        //std::cout<<"center: "<<station->origin()->coord_comp.toString(10)<<"\n";
+        //std::cout<<"angles: "<<angX<<" "<<angY<<"\n";
+        //std::cout<<"R_cart2spher:\n"<<R_cart2spher<<"\n";
         outFile<<"****    R_cart2spher = [["<< R_cart2spher(0,0) <<" "<< R_cart2spher(0,1) <<" "<< R_cart2spher(0,2) <<"] ["
                                           << R_cart2spher(1,0) <<" "<< R_cart2spher(1,1) <<" "<< R_cart2spher(1,2) <<"] ["
                                           << R_cart2spher(2,0) <<" "<< R_cart2spher(2,1) <<" "<< R_cart2spher(2,2)  <<"]]\n";

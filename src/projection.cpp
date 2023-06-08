@@ -35,7 +35,7 @@ std::vector<CRSproj> Projection::_allCRS=build_allCRS();
 Projection::Projection()
     :latitude(0),radius(0),centerStereo(),centerGeoref(),centerGeographic(),centerCartGeocentric(),scale(1),
       projDef("?"),stereoDef("?"), latlongDef("?"),geocentDef("?"),type(PROJ_TYPE::PJ_UNINIT),
-      pj_in2latlong(nullptr),pj_in2geocent(nullptr),pj_in2stereo(nullptr),pj_in(nullptr),projIndex(-1)
+      stereoProj(nullptr),pj_in2latlong(nullptr),pj_in2geocent(nullptr),pj_in2stereo(nullptr),pj_in(nullptr),projIndex(-1)
 {
 }
 
@@ -47,6 +47,11 @@ Projection::~Projection()
 void Projection::clear()
 {
     type=PROJ_TYPE::PJ_UNINIT;
+    if (stereoProj)
+    {
+        proj_destroy(stereoProj);
+        stereoProj=nullptr;
+    }
     if (pj_in2latlong)
     {
         proj_destroy(pj_in2latlong);
@@ -249,6 +254,7 @@ bool Projection::initGeo(const Coord &_center, const std::string &_projDef, bool
                 <<" +x_0="<<0.0
                 <<" +y_0="<<0.0;
     stereoDef=stereo_def_oss.str();
+    stereoProj = proj_create(nullptr, stereoDef.c_str());
 
 #ifdef INFO_PROJ
     Project::theInfo()->msg(INFO_CONF,1,
@@ -299,6 +305,30 @@ bool Projection::initGeo(const Coord &_center, const std::string &_projDef, bool
     return true;
 }
 
+
+tdouble Projection::getStereoMeridianConvergence(const Coord &coord_comp)
+{
+    if (type!=PROJ_TYPE::PJ_UNINIT)
+    {
+        Coord coord_compensated_georef, latlong;
+        sphericalToGeoref(coord_comp, coord_compensated_georef);
+        Project::theone()->projection.georefToLatLong(coord_compensated_georef,latlong);
+        PJ_COORD p1;
+        p1.lp.lam=latlong.x()*PI/180.;
+        p1.lp.phi=latlong.y()*PI/180.;
+        tdouble conv = proj_factors(stereoProj, p1).meridian_convergence;
+        if (proj_errno(stereoProj))
+        {
+            Project::theInfo()->error(INFO_CONF,1,QT_TRANSLATE_NOOP("QObject","Error getting meridian convergence on point %s: %s"),
+                                      latlong.toString().c_str(),proj_errno_string(proj_errno(stereoProj)));
+            return NAN;
+        }
+        return conv;
+    }else{
+        Project::theInfo()->error(INFO_CONF,1,QT_TRANSLATE_NOOP("QObject","Error! Projection uninitialized!"));
+        return NAN;
+    }
+}
 
 //converts from georef coords (.cor) to spherical coords (where Comp3D works)
 bool Projection::georefToSpherical(const Coord &in,Coord &out) const

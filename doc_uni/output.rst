@@ -172,7 +172,7 @@ Points Empirical Confidence Indicators
 
 These indicators are available after :ref:`normal-matrix-inversion`.
 
-They are given in the spherical computation frame, therefore there is no scale error, nor convergence of meridians.
+They are given in the spherical computation frame.
 
 Points empirical confidence indicators are confidence indicators scaled by *final* :math:`\sigma_0` to take into account the potential `a priori` :math:`\sigma` "optimism" or "pessimism" of the observations.
 
