@@ -2034,12 +2034,47 @@ bool Project::exportRelPrec(const std::string &filename,std::vector<Point*> &sel
                     Fdist(5,0)=0;
 
                     tdouble sigma_dist=sqrt((Fdist.transpose()*varCovar*Fdist)(0,0))*lsquares.sigma_0;
+                    
                     //std::cout<<"Fdist=\n"<<Fdist<<std::endl;
                     //std::cout<<"sigma_dist=\n"<<sigma_dist<<std::endl;
 
+					// azimut 2d
+					tdouble dx = cartGlobalB.x()-cartGlobalA.x();
+					tdouble dy = cartGlobalB.y()-cartGlobalA.y();
+					
+					
+					tdouble azimAB = atan2(dx, dy)*200.0/PI;
+					if (azimAB < 0){
+						azimAB += 400;
+					}
+					
+					tdouble vx1 = varCovar(0,0);
+					tdouble vx2 = varCovar(3,3);
+					tdouble vy1 = varCovar(1,1);
+					tdouble vy2 = varCovar(4,4);
+					tdouble cx1x2 = varCovar(0,3);
+					tdouble cx1y1 = varCovar(0,1);
+					tdouble cx1y2 = varCovar(0,4);
+					tdouble cy1y2 = varCovar(1,4);
+					tdouble cx2y1 = varCovar(1,3);
+					tdouble cx2y2 = varCovar(3,4);
+					
+					// MatX Fazim(6,1);
+                    // Fazim(0,0)=-dy/sqr(distAB);
+                    // Fazim(1,0)=+dx/sqr(distAB);
+                    // Fazim(2,0)=0;
+                    // Fazim(3,0)=+dy/sqr(distAB);
+                    // Fazim(4,0)=-dx/sqr(distAB);
+                    // Fazim(5,0)=0;
+                    // std::cout << "Verif azim = " << lsquares.sigma_0*sqrt((Fazim.transpose()*varCovar*Fazim)(0,0))*200/PI << std::endl;
+					
+					tdouble sigma_azim = lsquares.sigma_0*sqrt(sqr(dx)*(vy1+vy2-2*cy1y2)+sqr(dy)*(vx1+vx2-2*cx1x2)+2*dx*dy*(cx1y2+cx2y1-cx1y1-cx2y2))/sqr(distAB)*200.0/PI;
+	
                     relFile<<"2d dist="<<distAB<<"+/-"<<sigma_dist<<"m; ";
+                    relFile<<"2d azim="<<azimAB<<"+/-"<<sigma_azim<<"g; ";
                 }else{
                     relFile<<"no 2d dist; ";
+                    relFile<<"no 2d azim; ";
                 }
                 //1d precisions
                 {
