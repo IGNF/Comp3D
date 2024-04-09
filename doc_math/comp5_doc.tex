@@ -245,7 +245,7 @@ C'est aussi le cas pour tous les types d'observations où la verticale est prise
 \section{Fonctions utilisées en coordonnées sphériques}
 
 Angle au centre de la Terre entre les points A et B :
-$$\alpha=  \sqrt{ \left(\frac{X_B-X_A}{R}\right)^2 + \left(\frac{Y_B-Y_A}{R}\right)^2 }$$
+$$\alpha=  \sqrt{ \left(\frac{X_B-X_A}{R}\right)^2 + \left(\frac{Y_B-Y_A}{R}\right)^2 }$$
 Implémenté dans la fonction
 \texttt{arc()}
 qui donne $C_{AB} = \cos(\alpha)$  et $S_{AB} = \sin(\alpha)$.
@@ -1924,6 +1924,76 @@ $$C_{\Delta}=\Delta C \Delta^T=\sigma_{d}^2$$
 \subsection{Distance 3D}
 
 Le calcul se fait de la même façon qu'en 2D. On obtient en sortie la précision de la distance 3D entre deux points.
+
+\subsection{Azimut 2D}
+
+On considère à nouveau le vecteur $\mathbf{X} \in \mathbb{R}^4$ des coordonnées 2D des deux points $\mathbf{p_1}$ et $\mathbf{p_2}$ considérés, ainsi que la matrice de covariance associée $\mathbf{\Sigma} \in \mathbb{R}^{4 \times 4}$ :
+
+$$\mathbf{X}=\begin{pmatrix}[1.5] X_1 \\ Y_1 \\ X_2 \\ Y_2 \\ \end{pmatrix} ~~~~~~~~~~~~ ~~~~~~~~~~~~ \mathbf{\Sigma}=\begin{pmatrix}[1.5]
+\mathbb{V}[X_1] & C_{X_1Y_1} & C_{X_1X_2} & C_{X_1Y_2} \\
+C_{X_1Y_1} & \mathbb{V}[Y_1] & C_{Y_1X_2} & C_{Y_1Y_2} \\
+C_{X_2X_1} & C_{X_2Y_1} & \mathbb{V}[X_2] & C_{X_2Y_2}  \\
+C_{X_1Y_2} & C_{Y_1Y_2} & C_{X_2Y_2} & \mathbb{V}[Y_2]  \\ \end{pmatrix}$$
+
+\vspace{0.5cm}
+
+Le calcul de l'azimut $\varphi$ entre les deux points $\mathbf{p_1}$ et $\mathbf{p_2}$ s'écrit formellement avec la fonction \texttt{atan2} permettant de lever l'ambiguïté de cadran subsistant avec la fonction \texttt{atan} : \newline
+
+
+$$
+\varphi(\Delta x,\Delta y) = \mbox{atan2}(\Delta x, \Delta y) = \left\{
+    \begin{array}{ll}
+        \mbox{sgn}(\Delta x)  \times \mbox{atan}(\frac{\Delta x}{\Delta y})           & \mbox{si } \Delta y > 0 \\
+        \mbox{sgn}(\Delta x)  \times \frac{\pi}{2}                  & \mbox{si } \Delta y = 0  \\
+        \mbox{sgn}(\Delta x)  \times (\pi- \mbox{atan}(\frac{\Delta x}{\Delta y}) )  & \mbox{si } \Delta y < 0  \\
+    \end{array}
+\right.
+$$
+
+\vspace{0.5cm}
+
+avec $\Delta  \mathbf{x} = X_2 -X_1$ et $\Delta  \mathbf{y }= Y_2 -Y_1$, les écarts suivant les deux dimensions entre $\mathbf{p_1}$ et $\mathbf{p_2}$. \newline
+
+Les fonctions $\mbox{atan}(\frac{x}{y})$ et $\mbox{atan2}(x,y)$ sont égales à une constante additive près ($\pm\pi$ ou $\pm \pi/2$ suivant le signe de $y$). Leurs dérivées partielles sont donc égales presque partout (précisément sur $\mathbb{R} \times \mathbb{R}^*$) : \newline
+
+$$\frac{\partial{\varphi}}{\partial{x}}(x,y) = -\frac{y}{x^2+y^2}  ~~~~~~~~~~~~  \frac{\partial{\varphi}}{\partial{y}}(x,y) = \frac{x}{x^2+y^2}  $$
+
+\vspace{0.5cm}
+
+En notant $\Delta^2 = \Delta  \mathbf{x}^2 + \Delta  \mathbf{y}^2 = ||\mathbf{p_2} - \mathbf{p_1}||^2$ le carré de la distance entre les deux points entre lequels on cherche à calculer l'azimut, on en dérive immédiatement la matrice jacobienne $\mathbf{J_\varphi} \in \mathbb{R}^4$ de l'application : $\varphi$ qui associe au quadruplet $(X_1, Y_1, X_2, Y_2)$ une valeur d'azimut : \newline
+
+$$\mathbf{J_\varphi} = \frac{1}{\Delta^2} \Big[-\Delta  \mathbf{y} ~~~ +\Delta  \mathbf{x} ~~~ +\Delta  \mathbf{y} ~~~ -\Delta  \mathbf{x} \Big ]$$
+
+\vspace{0.5cm}
+
+La quantité recherchée s'obtient alors directement par la formule linéarisée de propagation des variances : \newline
+
+$$\mathbb{V}[\varphi] =\mathbf{J_\varphi} \mathbf{\Sigma}  \mathbf{J_\varphi}^{\mathbf{T}} $$
+
+\vspace{0.5cm}
+
+L'écart-type s'exprime alors (en gon) par : \newline
+
+
+$$\sigma_{\varphi} = \frac{\sqrt{\Gamma_Y \Delta \mathbf{x}^2+\Gamma_X\Delta  \mathbf{y}^2+2\Gamma_{XY} \Delta  \mathbf{x} \Delta  \mathbf{y} }}{\Delta^2} \times \frac{200}{\pi}$$
+
+avec : \newline
+
+$$\Gamma_X = \mathbb{V}[X_1]+\mathbb{V}[X_2]-2C_{X_1X_2} $$
+$$\Gamma_Y = \mathbb{V}[Y_1]+\mathbb{V}[Y_2]-2C_{Y_1Y_2} $$
+$$\Gamma_{XY} = C_{X_1Y_2}+C_{X_2Y_1}-C_{X_1Y_1}-C_{X_2Y_2}$$
+\vspace{0.5mm}
+
+
+
+
+
+
+
+\subsection{Azimut 3D}
+
+Le calcul se fait de la même façon qu'en 2D. On obtient en sortie la précision de l'azimut 3D entre deux points. \newline
+
 
 \section{Mesures}
 
