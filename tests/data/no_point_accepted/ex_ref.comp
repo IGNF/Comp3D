@@ -1,0 +1,104 @@
+data=
+{
+	"COMP3D_COMMIT" : "v5.21rc3-273-ge3e3bf62-dirty",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2022 IGN France",
+	"COMP3D_LICENSE" : "Licensed to IGN/ENSG only",
+	"COMP3D_OPTIONS" : "QT SIM ",
+	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"all_data_files" : null,
+	"all_forbidden_point_names" : null,
+	"all_point_names" : null,
+	"all_uninitializable_point_names" : 
+	[
+		"A",
+		"B",
+		"C"
+	],
+	"computation" : 
+	{
+		"Monte_Carlo_done" : false,
+		"all_parameters_names" : [],
+		"all_sigma0" : [],
+		"chi2_test" : 
+		{
+			"DOF" : 0,
+			"confidence" : 0.98999999999999999,
+			"max" : null,
+			"min" : null
+		},
+		"compensation_done" : false,
+		"computation_duration" : "not-a-date-time",
+		"computation_start" : "not-a-date-time",
+		"internal_constraints" : false,
+		"internal_constraints_obs" : [],
+		"interrupted" : false,
+		"inverted_matrix" : false,
+		"kernel" : null,
+		"messages_computation" : "<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;No computation, least squares are not set!</font><br/>\n",
+		"messages_read_config" : "",
+		"messages_read_data" : "Reading COR...<br/>\nRead file niv.cor...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In niv.cor:1: Constrained point without sigmas is not allowed.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In niv.cor:1: Error reading line.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In niv.cor:2: Wrong format in: 4 B 105 100 100   0.1</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In niv.cor:3: Wrong format in: 4 C 102 100 100   0.1</font><br/>\nReading OBS...<br/>\nRead file niv.obs...<br/>\nPoints setting...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;3 uninitialized points.</font><br/>\nRead data finished.<br/>\nInitialization finished with 3 uninitialized points.<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Removing point A.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Removing point B.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Removing point C.</font><br/>\nVertical deflection not used.<br/>\n",
+		"messages_set_least_squares" : "",
+		"nbr_active_obs" : 0,
+		"nbr_all_obs" : 0,
+		"nbr_iterations" : 0,
+		"nbr_parameters" : 0,
+		"projection" : 
+		{
+			"center_latitude" : 48.79999999999999,
+			"earth_model_radius" : 6380935.2757568145,
+			"geocent_def" : "+proj=geocent",
+			"input_proj_EPSG" : -1,
+			"input_proj_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0",
+			"input_proj_name" : "?",
+			"is_georef" : false,
+			"latlong_def" : "+proj=latlong",
+			"local_center_stereo" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"local_scale" : 1.0,
+			"stereo_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0"
+		},
+		"rank_deficiency" : 0,
+		"sigma_0_final" : null,
+		"sigma_0_init" : null,
+		"unit_name" : "g",
+		"use_vertical_deflection" : false
+	},
+	"config" : 
+	{
+		"center_latitude" : 48.799999999999997,
+		"clean_outputs" : false,
+		"compute_type" : 0,
+		"convergence_criterion" : 0.001,
+		"coord_cov_file" : "",
+		"description" : "",
+		"display_map" : true,
+		"files_unit" : 1,
+		"force_iterations" : 0,
+		"internal_constraints" : false,
+		"invert_matrix" : true,
+		"lang" : "en",
+		"local_center" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"max_iterations" : 1000,
+		"misc_metadata" : null,
+		"name" : "1 pt fix\u00e9",
+		"nb_digits" : 4,
+		"proj_def" : "",
+		"refraction" : 0.12,
+		"root_COR_file" : "niv.cor",
+		"root_OBS_file" : "niv.obs",
+		"use_ellips_height" : true,
+		"use_proj" : false
+	},
+	"config_file" : "/home/JMMuller/prog/comp3d_cpp/tests/data/noPointAccepted/ex_ref.comp_test.comp",
+	"other_stations" : null,
+	"points" : null
+}

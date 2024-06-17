@@ -1,0 +1,7071 @@
+data=
+{
+	"COMP3D_COMMIT" : "v5.21rc3-273-ge3e3bf62-dirty",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2022 IGN France",
+	"COMP3D_LICENSE" : "Licensed to IGN/ENSG only",
+	"COMP3D_OPTIONS" : "QT SIM ",
+	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"all_data_files" : 
+	{
+		"0" : "cor.cor",
+		"1" : "scan1.xyz",
+		"2" : "scan2.xyz",
+		"3" : "scan3.xyz",
+		"4" : "scan4.xyz",
+		"5" : "scan5.xyz",
+		"6" : "scan6.xyz"
+	},
+	"all_forbidden_point_names" : null,
+	"all_point_names" : 
+	[
+		"A1",
+		"B1",
+		"C1",
+		"D1",
+		"A2",
+		"B2",
+		"C2",
+		"D2",
+		"A3",
+		"B3",
+		"C3",
+		"D3",
+		"A4",
+		"B4",
+		"C4",
+		"D4",
+		"A5",
+		"B5",
+		"C5",
+		"D5",
+		"A6",
+		"B6",
+		"C6",
+		"D6",
+		"1",
+		"2",
+		"3",
+		"4",
+		"5",
+		"6"
+	],
+	"all_uninitializable_point_names" : null,
+	"computation" : 
+	{
+		"Monte_Carlo_done" : false,
+		"all_parameters_names" : 
+		[
+			"D6_x",
+			"D6_y",
+			"D6_z",
+			"C6_x",
+			"C6_y",
+			"C6_z",
+			"A6_x",
+			"A6_y",
+			"A6_z",
+			"6_x",
+			"6_y",
+			"6_z",
+			"6_Rc_1",
+			"B6_x",
+			"B6_y",
+			"B6_z",
+			"D5_x",
+			"D5_y",
+			"D5_z",
+			"C5_x",
+			"C5_y",
+			"C5_z",
+			"A5_x",
+			"A5_y",
+			"A5_z",
+			"5_x",
+			"5_y",
+			"5_z",
+			"5_Rc_1",
+			"B5_x",
+			"B5_y",
+			"B5_z",
+			"D4_x",
+			"D4_y",
+			"D4_z",
+			"C4_x",
+			"C4_y",
+			"C4_z",
+			"A4_x",
+			"A4_y",
+			"A4_z",
+			"4_x",
+			"4_y",
+			"4_z",
+			"4_Rc_1",
+			"B4_x",
+			"B4_y",
+			"B4_z",
+			"D3_x",
+			"D3_y",
+			"D3_z",
+			"C3_x",
+			"C3_y",
+			"C3_z",
+			"A3_x",
+			"A3_y",
+			"A3_z",
+			"3_x",
+			"3_y",
+			"3_z",
+			"3_Rc_1",
+			"B3_x",
+			"B3_y",
+			"B3_z",
+			"D2_x",
+			"D2_y",
+			"D2_z",
+			"C2_x",
+			"C2_y",
+			"C2_z",
+			"A2_x",
+			"A2_y",
+			"A2_z",
+			"2_x",
+			"2_y",
+			"2_z",
+			"2_Rc_1",
+			"2_Ra_1",
+			"2_Rb_1",
+			"B2_x",
+			"B2_y",
+			"B2_z",
+			"D1_x",
+			"D1_y",
+			"D1_z",
+			"C1_x",
+			"C1_y",
+			"C1_z",
+			"A1_x",
+			"A1_y",
+			"A1_z",
+			"1_x",
+			"1_y",
+			"1_z",
+			"1_Rc_1",
+			"B1_x",
+			"B1_y",
+			"B1_z"
+		],
+		"all_sigma0" : 
+		[
+			464.39160476704188,
+			463.10696911881826,
+			463.10696926481432
+		],
+		"chi2_test" : 
+		{
+			"DOF" : 46,
+			"confidence" : 0.98999999999999999,
+			"max" : 1.3553460123999437,
+			"min" : 0.78611456056182116
+		},
+		"compensation_done" : true,
+		"computation_duration" : "00:00:00.018306",
+		"computation_start" : "2023-May-15 14:52:28.007002",
+		"internal_constraints" : false,
+		"internal_constraints_obs" : [],
+		"interrupted" : false,
+		"inverted_matrix" : false,
+		"kernel" : null,
+		"messages_computation" : "",
+		"messages_read_config" : "",
+		"messages_read_data" : "Reading COR...<br/>\nRead file cor.cor...<br/>\nReading OBS...<br/>\nRead file obs.obs...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file scan1.xyz...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file scan2.xyz...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file scan3.xyz...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file scan4.xyz...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file scan5.xyz...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file scan6.xyz...<br/>\nPoints setting...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;6 uninitialized points.</font><br/>\nRead data finished.<br/>\nAll points are initialized.<br/>\nVertical deflection not used.<br/>\n",
+		"messages_set_least_squares" : "",
+		"nbr_active_obs" : 144,
+		"nbr_all_obs" : 144,
+		"nbr_iterations" : 2,
+		"nbr_parameters" : 98,
+		"projection" : 
+		{
+			"center_latitude" : 48.79999999999999,
+			"earth_model_radius" : 6380935.2757568145,
+			"geocent_def" : "+proj=geocent",
+			"input_proj_EPSG" : -1,
+			"input_proj_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0",
+			"input_proj_name" : "?",
+			"is_georef" : false,
+			"latlong_def" : "+proj=latlong",
+			"local_center_stereo" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"local_scale" : 1.0,
+			"stereo_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0"
+		},
+		"rank_deficiency" : 0,
+		"sigma_0_final" : 463.10696926481432,
+		"sigma_0_init" : 464.39160476704188,
+		"unit_name" : "g",
+		"use_vertical_deflection" : false
+	},
+	"config" : 
+	{
+		"center_latitude" : 48.799999999999997,
+		"clean_outputs" : false,
+		"compute_type" : 0,
+		"convergence_criterion" : 0.001,
+		"coord_cov_file" : "",
+		"description" : "",
+		"display_map" : true,
+		"files_unit" : 1,
+		"force_iterations" : 0,
+		"internal_constraints" : false,
+		"invert_matrix" : false,
+		"lang" : "en",
+		"local_center" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"max_iterations" : 100,
+		"misc_metadata" : null,
+		"name" : "new",
+		"nb_digits" : 6,
+		"proj_def" : "?",
+		"refraction" : 0.12,
+		"root_COR_file" : "cor.cor",
+		"root_OBS_file" : "obs.obs",
+		"use_ellips_height" : true,
+		"use_proj" : false
+	},
+	"config_file" : "/home/JMMuller/prog/comp3d_cpp/tests/data/bascule/ex_ref.comp_test.comp",
+	"other_stations" : null,
+	"points" : 
+	{
+		"1" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-3.3154400390670135e-15,
+				7.9486994764010888e-10,
+				99.999216403867862
+			],
+			"coord_compensated_georef" : 
+			[
+				-3.3153881575566792e-15,
+				-3.2127151115018541e-10,
+				99.999216403683633
+			],
+			"coord_read" : 
+			[
+				-7.4887422279927641e-07,
+				-1.4168522523567108e-09,
+				99.999194199219346
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : -1,
+			"nbr_active_obs" : 12,
+			"number" : 24,
+			"params" : 
+			{
+				"1_x" : 
+				{
+					"rank" : 91,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -3.3153881575566792e-15
+				},
+				"1_y" : 
+				{
+					"rank" : 92,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -3.2127151115018541e-10
+				},
+				"1_z" : 
+				{
+					"rank" : 93,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999216403683633
+				}
+			},
+			"shift_from_read" : 
+			[
+				7.4887421948388823e-07,
+				1.0955807412065253e-09,
+				2.220446428680134e-05
+			],
+			"sigmas_init" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"ang_to_vert" : 0.0,
+					"file_id" : 1,
+					"geocentric" : false,
+					"nbr_active_obs" : 12,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 15.647195292274318,
+							"number" : 72,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156471952923,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 72,
+							"residual" : 0.0015647195292274318,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 5.4398812521735032e-06,
+							"number" : 73,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156471952923,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 73,
+							"residual" : 5.4398812521735031e-10,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.011444683849503357,
+							"number" : 74,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156471952923,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 74,
+							"residual" : 1.1444683849503357e-06,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -7.5024544135746428e-11,
+							"number" : 75,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156929592563,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 75,
+							"residual" : -7.5024544135746438e-15,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 15.692959256199401,
+							"number" : 76,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156929592563,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 76,
+							"residual" : 0.0015692959256199401,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.011446704206719005,
+							"number" : 77,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156929592563,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 77,
+							"residual" : -1.1446704206719005e-06,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -15.647195292274318,
+							"number" : 78,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156471952923,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 78,
+							"residual" : -0.0015647195292274318,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 5.4396649006908468e-06,
+							"number" : 79,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156471952923,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 79,
+							"residual" : 5.4396649006908469e-10,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 0.011444683849504932,
+							"number" : 80,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156471952923,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 80,
+							"residual" : 1.1444683849504932e-06,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 1.4132708138423166e-10,
+							"number" : 81,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156929438521,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 81,
+							"residual" : 1.4132708138423165e-14,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -15.692943851917107,
+							"number" : 82,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156929438521,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 82,
+							"residual" : -0.0015692943851917107,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "1",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -0.011440917688787522,
+							"number" : 83,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156929438521,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 83,
+							"residual" : -1.1440917688787522e-06,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"observations3D" : 
+					[
+						{
+							"num_obs1" : 72,
+							"num_obs2" : 73,
+							"num_obs3" : 74
+						},
+						{
+							"num_obs1" : 75,
+							"num_obs2" : 76,
+							"num_obs3" : 77
+						},
+						{
+							"num_obs1" : 78,
+							"num_obs2" : 79,
+							"num_obs3" : 80
+						},
+						{
+							"num_obs1" : 81,
+							"num_obs2" : 82,
+							"num_obs3" : 83
+						}
+					],
+					"params" : 
+					{
+						"1_Rc_1" : 
+						{
+							"rank" : 94,
+							"unit_factor" : 1.0,
+							"unit_str" : "",
+							"value" : 0.0
+						}
+					},
+					"params_rot" : 
+					{
+						"R_global2instr" : 
+						[
+							1.0,
+							-1.08174048707806e-16,
+							7.8765366716028474e-22,
+							1.08174048707806e-16,
+							1.0,
+							8.520368615627866e-38,
+							-7.8765366716028474e-22,
+							0.0,
+							1.0
+						],
+						"R_vert2instr" : 
+						[
+							1.0,
+							-1.08174048707806e-16,
+							0.0,
+							1.08174048707806e-16,
+							1.0,
+							0.0,
+							0.0,
+							0.0,
+							1.0
+						],
+						"a" : -0.0,
+						"b" : 0.0,
+						"c" : 1.0,
+						"theta_rd" : 1.08174048707806e-16
+					},
+					"triplet_type" : 11,
+					"type" : "bascule",
+					"vertical" : true
+				}
+			]
+		},
+		"2" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				200.00352087450381,
+				8.7723606156941969e-10,
+				99.995715878666459
+			],
+			"coord_compensated_georef" : 
+			[
+				200.00039118927111,
+				-4.0422941339235513e-10,
+				99.998845702898493
+			],
+			"coord_read" : 
+			[
+				199.99999964803553,
+				-1.4168522527046922e-09,
+				99.998845705762506
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : -1,
+			"nbr_active_obs" : 12,
+			"number" : 25,
+			"params" : 
+			{
+				"2_x" : 
+				{
+					"rank" : 73,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 200.0003911401505
+				},
+				"2_y" : 
+				{
+					"rank" : 74,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -4.0422941329307531e-10
+				},
+				"2_z" : 
+				{
+					"rank" : 75,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.998845702898493
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.00039154123558660103,
+				1.012622839312337e-09,
+				-2.8640130267376662e-09
+			],
+			"sigmas_init" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"ang_to_vert" : 0.00048203841912750246,
+					"file_id" : 2,
+					"geocentric" : false,
+					"nbr_active_obs" : 12,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 27.381573871991804,
+							"number" : 84,
+							"obs_azim" : 0.0,
+							"obs_length" : 200.00273815753891,
+							"obs_zen" : 0.0,
+							"original_value" : 200.0,
+							"rank" : 84,
+							"residual" : 0.0027381573871991804,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : -1.5481526877933521e-06,
+							"number" : 85,
+							"obs_azim" : 0.0,
+							"obs_length" : 200.00273815753891,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 85,
+							"residual" : -1.5481526877933522e-10,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : -2.4634196023374728,
+							"number" : 86,
+							"obs_azim" : 0.0,
+							"obs_length" : 200.00273815753891,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 86,
+							"residual" : -0.0002463419602337473,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -3.9114768358567602,
+							"number" : 87,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156927374751,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 87,
+							"residual" : -0.00039114768358567602,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 15.692722998466024,
+							"number" : 88,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156927374751,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 88,
+							"residual" : 0.0015692722998466024,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 3.6951628843554496,
+							"number" : 89,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156927374751,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 89,
+							"residual" : 0.000369516288435545,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -19.558630045395375,
+							"number" : 90,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00195586421822,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 90,
+							"residual" : -0.0019558630045395375,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 1.4531681079427559e-06,
+							"number" : 91,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00195586421822,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 91,
+							"residual" : 1.453168107942756e-10,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -4.9268603216313336,
+							"number" : 92,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00195586421822,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 92,
+							"residual" : -0.00049268603216313337,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -3.911466995357753,
+							"number" : 93,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156927118508,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 93,
+							"residual" : -0.00039114669953577532,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -15.692697374021236,
+							"number" : 94,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156927118508,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 94,
+							"residual" : -0.0015692697374021236,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 2,
+							"from" : "2",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 3.6951628843046329,
+							"number" : 95,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156927118508,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 95,
+							"residual" : 0.00036951628843046329,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"observations3D" : 
+					[
+						{
+							"num_obs1" : 84,
+							"num_obs2" : 85,
+							"num_obs3" : 86
+						},
+						{
+							"num_obs1" : 87,
+							"num_obs2" : 88,
+							"num_obs3" : 89
+						},
+						{
+							"num_obs1" : 90,
+							"num_obs2" : 91,
+							"num_obs3" : 92
+						},
+						{
+							"num_obs1" : 93,
+							"num_obs2" : 94,
+							"num_obs3" : 95
+						}
+					],
+					"params" : 
+					{
+						"2_Ra_1" : 
+						{
+							"rank" : 77,
+							"unit_factor" : 1.0,
+							"unit_str" : "",
+							"value" : 0.0
+						},
+						"2_Rb_1" : 
+						{
+							"rank" : 78,
+							"unit_factor" : 1.0,
+							"unit_str" : "",
+							"value" : 0.0
+						},
+						"2_Rc_1" : 
+						{
+							"rank" : 76,
+							"unit_factor" : 1.0,
+							"unit_str" : "",
+							"value" : 0.0
+						}
+					},
+					"params_rot" : 
+					{
+						"R_global2instr" : 
+						[
+							0.99999999920226756,
+							-3.2843618259108274e-12,
+							-3.9943270784638141e-05,
+							3.284528582572584e-12,
+							1.0,
+							4.1746485014974184e-12,
+							3.9943270784638141e-05,
+							-4.1747796931087292e-12,
+							0.99999999920226756
+						],
+						"R_vert2instr" : 
+						[
+							0.9999999999713336,
+							-3.30677396083205e-12,
+							7.5718417608411875e-06,
+							3.3109909087955931e-12,
+							1.0,
+							-5.5692433568570011e-10,
+							-7.571841760841185e-06,
+							5.5692436073990733e-10,
+							0.9999999999713336
+						],
+						"a" : 7.3552031896190431e-05,
+						"b" : 0.99999999729495381,
+						"c" : 4.3699835923347991e-07,
+						"theta_rd" : 7.571841781395721e-06
+					},
+					"triplet_type" : 11,
+					"type" : "bascule",
+					"vertical" : false
+				}
+			]
+		},
+		"3" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				400.00625908727409,
+				3.6412686199582822e-09,
+				99.986697150164417
+			],
+			"coord_compensated_georef" : 
+			[
+				400.00000000000119,
+				2.5694019076343059e-09,
+				99.999216402265162
+			],
+			"coord_read" : 
+			[
+				400.00005313707334,
+				-2.8337045074972731e-09,
+				99.999194982461631
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : -1,
+			"nbr_active_obs" : 12,
+			"number" : 26,
+			"params" : 
+			{
+				"3_x" : 
+				{
+					"rank" : 57,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 399.99999960703855
+				},
+				"3_y" : 
+				{
+					"rank" : 58,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 2.5694019051101084e-09
+				},
+				"3_z" : 
+				{
+					"rank" : 59,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999216402265162
+				}
+			},
+			"shift_from_read" : 
+			[
+				-5.3137072143272235e-05,
+				5.403106415131579e-09,
+				2.141980353087547e-05
+			],
+			"sigmas_init" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"ang_to_vert" : 0.0,
+					"file_id" : 3,
+					"geocentric" : false,
+					"nbr_active_obs" : 12,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 15.645441173575136,
+							"number" : 96,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156459674541,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 96,
+							"residual" : 0.0015645441173575136,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : -4.3312008256090964e-06,
+							"number" : 97,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156459674541,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 97,
+							"residual" : -4.3312008256090966e-10,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 32.443449919706303,
+							"number" : 98,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156459674541,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 98,
+							"residual" : 0.0032443449919706303,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.00024185250600216768,
+							"number" : 99,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.0015691955232,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 99,
+							"residual" : 2.4185250600216769e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 15.691955231886823,
+							"number" : 100,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.0015691955232,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 100,
+							"residual" : 0.0015691955231886823,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.013678591649340259,
+							"number" : 101,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.0015691955232,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 101,
+							"residual" : -1.3678591649340259e-06,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -15.645933051189331,
+							"number" : 102,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156464585898,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 102,
+							"residual" : -0.0015645933051189331,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 2.9416437379387688e-06,
+							"number" : 103,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156464585898,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 103,
+							"residual" : 2.9416437379387688e-10,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -32.420574613392084,
+							"number" : 104,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156464585898,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 104,
+							"residual" : -0.0032420574613392086,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.00025002927663862447,
+							"number" : 105,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156919731188,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 105,
+							"residual" : 2.5002927663862448e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -15.691973118805436,
+							"number" : 106,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156919731188,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 106,
+							"residual" : -0.0015691973118805436,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 3,
+							"from" : "3",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -0.0092045944413195104,
+							"number" : 107,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156919731188,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 107,
+							"residual" : -9.2045944413195108e-07,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"observations3D" : 
+					[
+						{
+							"num_obs1" : 96,
+							"num_obs2" : 97,
+							"num_obs3" : 98
+						},
+						{
+							"num_obs1" : 99,
+							"num_obs2" : 100,
+							"num_obs3" : 101
+						},
+						{
+							"num_obs1" : 102,
+							"num_obs2" : 103,
+							"num_obs3" : 104
+						},
+						{
+							"num_obs1" : 105,
+							"num_obs2" : 106,
+							"num_obs3" : 107
+						}
+					],
+					"params" : 
+					{
+						"3_Rc_1" : 
+						{
+							"rank" : 60,
+							"unit_factor" : 1.0,
+							"unit_str" : "",
+							"value" : 0.0
+						}
+					},
+					"params_rot" : 
+					{
+						"R_global2instr" : 
+						[
+							0.9999999954846458,
+							-8.1632820068801695e-13,
+							-9.503003895085547e-05,
+							1.0296124521587957e-12,
+							1.0,
+							2.2443876607481276e-09,
+							9.503003895085547e-05,
+							-2.2443877484580336e-09,
+							0.9999999954846458
+						],
+						"R_vert2instr" : 
+						[
+							1.0,
+							-1.0296124568078607e-12,
+							0.0,
+							1.0296124568078607e-12,
+							1.0,
+							0.0,
+							0.0,
+							0.0,
+							1.0
+						],
+						"a" : -0.0,
+						"b" : 0.0,
+						"c" : 1.0,
+						"theta_rd" : 1.0296124568078607e-12
+					},
+					"triplet_type" : 11,
+					"type" : "bascule",
+					"vertical" : true
+				}
+			]
+		},
+		"4" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1001.5648758718208,
+				-4.1674138628877699e-07,
+				9999.9208486383686
+			],
+			"coord_compensated_georef" : 
+			[
+				1000.0000000004335,
+				-9.2508036277531121e-09,
+				9999.9992151876886
+			],
+			"coord_read" : 
+			[
+				1000.0000594452512,
+				8.2177431141262194e-07,
+				9999.996981668286
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : -1,
+			"nbr_active_obs" : 12,
+			"number" : 27,
+			"params" : 
+			{
+				"4_x" : 
+				{
+					"rank" : 41,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 999.9999938603919
+				},
+				"4_y" : 
+				{
+					"rank" : 42,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -9.2508035709527933e-09
+				},
+				"4_z" : 
+				{
+					"rank" : 43,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 9999.9992151876886
+				}
+			},
+			"shift_from_read" : 
+			[
+				-5.944481767983234e-05,
+				-8.31025115040375e-07,
+				0.0022335194025799865
+			],
+			"sigmas_init" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"ang_to_vert" : 0.0,
+					"file_id" : 4,
+					"geocentric" : false,
+					"nbr_active_obs" : 12,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 1564.7152924485397,
+							"number" : 108,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.1564718585405,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 108,
+							"residual" : 0.15647152924485397,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : -0.00066377253860583167,
+							"number" : 109,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.1564718585405,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 109,
+							"residual" : -6.6377253860583175e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 81.217103178550488,
+							"number" : 110,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.1564718585405,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 110,
+							"residual" : 0.0081217103178550486,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.00029420548043443509,
+							"number" : 111,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15692945686806,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 111,
+							"residual" : -2.942054804344351e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 1569.2945686801352,
+							"number" : 112,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15692945686806,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 112,
+							"residual" : 0.15692945686801352,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.025480910516904109,
+							"number" : 113,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15692945686806,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 113,
+							"residual" : -2.5480910516904111e-06,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -1564.7165326269885,
+							"number" : 114,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15647198237234,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 114,
+							"residual" : -0.15647165326269885,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 0.0007832986540287336,
+							"number" : 115,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15647198237234,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 115,
+							"residual" : 7.8329865402873368e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -81.194160650142763,
+							"number" : 116,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15647198237234,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 116,
+							"residual" : -0.008119416065014276,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.0015172016001969311,
+							"number" : 117,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15692946155013,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 117,
+							"residual" : 1.5172016001969313e-07,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -1569.2946155012066,
+							"number" : 118,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15692946155013,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 118,
+							"residual" : -0.15692946155012066,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 4,
+							"from" : "4",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.002536668175976082,
+							"number" : 119,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.15692946155013,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 119,
+							"residual" : 2.5366681759760823e-07,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"observations3D" : 
+					[
+						{
+							"num_obs1" : 108,
+							"num_obs2" : 109,
+							"num_obs3" : 110
+						},
+						{
+							"num_obs1" : 111,
+							"num_obs2" : 112,
+							"num_obs3" : 113
+						},
+						{
+							"num_obs1" : 114,
+							"num_obs2" : 115,
+							"num_obs3" : 116
+						},
+						{
+							"num_obs1" : 117,
+							"num_obs2" : 118,
+							"num_obs3" : 119
+						}
+					],
+					"params" : 
+					{
+						"4_Rc_1" : 
+						{
+							"rank" : 44,
+							"unit_factor" : 1.0,
+							"unit_str" : "",
+							"value" : 0.0
+						}
+					},
+					"params_rot" : 
+					{
+						"R_global2instr" : 
+						[
+							0.9999999717790371,
+							-8.7685187007689798e-11,
+							-0.00023757509296594168,
+							9.1017751873432779e-11,
+							0.99999999999999978,
+							1.4027406053092221e-08,
+							0.00023757509296594046,
+							-1.4027427280776181e-08,
+							0.9999999717790371
+						],
+						"R_vert2instr" : 
+						[
+							0.99999999999999989,
+							-9.1017754442041437e-11,
+							0.0,
+							9.1017754442041437e-11,
+							0.99999999999999989,
+							0.0,
+							0.0,
+							0.0,
+							1.0
+						],
+						"a" : -0.0,
+						"b" : 0.0,
+						"c" : 1.0,
+						"theta_rd" : 9.1017754442041437e-11
+					},
+					"triplet_type" : 11,
+					"type" : "bascule",
+					"vertical" : true
+				}
+			]
+		},
+		"5" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				800.01251267233806,
+				800.01254926405682,
+				99.89891599195505
+			],
+			"coord_compensated_georef" : 
+			[
+				800.00000000000239,
+				799.99999999858096,
+				99.999216404150573
+			],
+			"coord_read" : 
+			[
+				800.00010706794376,
+				799.999999993286,
+				99.999195831827819
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : -1,
+			"nbr_active_obs" : 12,
+			"number" : 28,
+			"params" : 
+			{
+				"5_x" : 
+				{
+					"rank" : 25,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 799.99999371259946
+				},
+				"5_y" : 
+				{
+					"rank" : 26,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 799.99999371117804
+				},
+				"5_z" : 
+				{
+					"rank" : 27,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999216404150573
+				}
+			},
+			"shift_from_read" : 
+			[
+				-0.000107067941371497,
+				5.2949644668842666e-09,
+				2.0572322753764638e-05
+			],
+			"sigmas_init" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"ang_to_vert" : 0.0,
+					"file_id" : 5,
+					"geocentric" : false,
+					"nbr_active_obs" : 12,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 15.636733097181832,
+							"number" : 120,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156388392448,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 120,
+							"residual" : 0.0015636733097181832,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.00048826827012051659,
+							"number" : 121,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156388392448,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 121,
+							"residual" : 4.8826827012051663e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 64.902702604833209,
+							"number" : 122,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156388392448,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 122,
+							"residual" : 0.0064902702604833218,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.00048380603530088758,
+							"number" : 123,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156845752349,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 123,
+							"residual" : 4.838060353008876e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 15.68457523461575,
+							"number" : 124,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156845752349,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 124,
+							"residual" : 0.001568457523461575,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.020391378849685674,
+							"number" : 125,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156845752349,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 125,
+							"residual" : -2.0391378849685677e-06,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -15.637716842462623,
+							"number" : 126,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.0015639821507,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 126,
+							"residual" : -0.0015637716842462623,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 0.00050536147384057156,
+							"number" : 127,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.0015639821507,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 127,
+							"residual" : 5.0536147384057153e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -64.879846832713113,
+							"number" : 128,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.0015639821507,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 128,
+							"residual" : -0.0064879846832713115,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.00049996259775426509,
+							"number" : 129,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156855942751,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 129,
+							"residual" : 4.9996259775426509e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -15.685594274970072,
+							"number" : 130,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156855942751,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 130,
+							"residual" : -0.0015685594274970072,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 5,
+							"from" : "5",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -0.0024792826111591291,
+							"number" : 131,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156855942751,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 131,
+							"residual" : -2.4792826111591293e-07,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"observations3D" : 
+					[
+						{
+							"num_obs1" : 120,
+							"num_obs2" : 121,
+							"num_obs3" : 122
+						},
+						{
+							"num_obs1" : 123,
+							"num_obs2" : 124,
+							"num_obs3" : 125
+						},
+						{
+							"num_obs1" : 126,
+							"num_obs2" : 127,
+							"num_obs3" : 128
+						},
+						{
+							"num_obs1" : 129,
+							"num_obs2" : 130,
+							"num_obs3" : 131
+						}
+					],
+					"params" : 
+					{
+						"5_Rc_1" : 
+						{
+							"rank" : 28,
+							"unit_factor" : 1.0,
+							"unit_str" : "",
+							"value" : 0.0
+						}
+					},
+					"params_rot" : 
+					{
+						"R_global2instr" : 
+						[
+							0.99999998193341655,
+							-1.6008993215927845e-08,
+							-0.00019008725936490683,
+							-7.8560019661782143e-09,
+							0.99999999211890278,
+							-0.00012554757743228514,
+							0.00019008725987670099,
+							0.00012554757665739525,
+							0.99999997405231944
+						],
+						"R_vert2instr" : 
+						[
+							0.99999999999999989,
+							7.8560021081093313e-09,
+							0.0,
+							-7.8560021081093313e-09,
+							0.99999999999999989,
+							0.0,
+							0.0,
+							0.0,
+							1.0
+						],
+						"a" : -0.0,
+						"b" : 0.0,
+						"c" : -1.0,
+						"theta_rd" : 7.8560021081093313e-09
+					},
+					"triplet_type" : 11,
+					"type" : "bascule",
+					"vertical" : true
+				}
+			]
+		},
+		"6" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1000.0156425704942,
+				-3.1637625852454221e-10,
+				99.920971072080945
+			],
+			"coord_compensated_georef" : 
+			[
+				1000.0000000000022,
+				8.1539954445530626e-10,
+				99.999216403060984
+			],
+			"coord_read" : 
+			[
+				1000.0001339651341,
+				-2.3378062307428046e-08,
+				99.99919621925801
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : -1,
+			"nbr_active_obs" : 12,
+			"number" : 29,
+			"params" : 
+			{
+				"6_x" : 
+				{
+					"rank" : 9,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 999.99999385996057
+				},
+				"6_y" : 
+				{
+					"rank" : 10,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 8.1539953944871919e-10
+				},
+				"6_z" : 
+				{
+					"rank" : 11,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999216403060984
+				}
+			},
+			"shift_from_read" : 
+			[
+				-0.0001339651319085533,
+				2.4193461851883354e-08,
+				2.018380297386102e-05
+			],
+			"sigmas_init" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"stations" : 
+			[
+				{
+					"ang_to_vert" : 0.0,
+					"file_id" : 6,
+					"geocentric" : false,
+					"nbr_active_obs" : 12,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 15.637154329795067,
+							"number" : 132,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156404421935,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 132,
+							"residual" : 0.0015637154329795067,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : -2.1239243202936273e-05,
+							"number" : 133,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156404421935,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 133,
+							"residual" : -2.1239243202936273e-09,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 81.091492741008111,
+							"number" : 134,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156404421935,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 134,
+							"residual" : 0.008109149274100811,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "A6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0006052152951732439,
+							"number" : 135,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156868106988,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 135,
+							"residual" : 6.0521529517324396e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 15.686810698412046,
+							"number" : 136,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156868106988,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 136,
+							"residual" : 0.0015686810698412046,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.025413995610529989,
+							"number" : 137,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156868106988,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 137,
+							"residual" : -2.5413995610529992e-06,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "B6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -15.638384002727435,
+							"number" : 138,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156416700092,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 138,
+							"residual" : -0.0015638384002727435,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -1.5186977273305905e-05,
+							"number" : 139,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156416700092,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 139,
+							"residual" : -1.5186977273305905e-09,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -81.068587007122147,
+							"number" : 140,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156416700092,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 140,
+							"residual" : -0.0081068587007122155,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "C6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 101,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.00062449007023793125,
+							"number" : 141,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156868171895,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 141,
+							"residual" : 6.2449007023793133e-08,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 102,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -15.686817189504154,
+							"number" : 142,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156868171895,
+							"obs_zen" : 0.0,
+							"original_value" : -100.0,
+							"rank" : 142,
+							"residual" : -0.0015686817189504154,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 103,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 6,
+							"from" : "6",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.0025582108990912203,
+							"number" : 143,
+							"obs_azim" : 0.0,
+							"obs_length" : 100.00156868171895,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 143,
+							"residual" : 2.5582108990912205e-07,
+							"sigma_abs" : 0.0001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.0001,
+							"target_height" : 0.0,
+							"to" : "D6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"observations3D" : 
+					[
+						{
+							"num_obs1" : 132,
+							"num_obs2" : 133,
+							"num_obs3" : 134
+						},
+						{
+							"num_obs1" : 135,
+							"num_obs2" : 136,
+							"num_obs3" : 137
+						},
+						{
+							"num_obs1" : 138,
+							"num_obs2" : 139,
+							"num_obs3" : 140
+						},
+						{
+							"num_obs1" : 141,
+							"num_obs2" : 142,
+							"num_obs3" : 143
+						}
+					],
+					"params" : 
+					{
+						"6_Rc_1" : 
+						{
+							"rank" : 12,
+							"unit_factor" : 1.0,
+							"unit_str" : "",
+							"value" : 0.0
+						}
+					},
+					"params_rot" : 
+					{
+						"R_global2instr" : 
+						[
+							0.99999997177903721,
+							-1.4522746244983465e-12,
+							-0.00023757509296583847,
+							4.784841481879347e-12,
+							0.99999999999999989,
+							1.4027424679687971e-08,
+							0.00023757509296583844,
+							-1.4027425420579701e-08,
+							0.9999999717790371
+						],
+						"R_vert2instr" : 
+						[
+							1.0,
+							-4.7848416169121844e-12,
+							0.0,
+							4.7848416169121844e-12,
+							1.0,
+							0.0,
+							0.0,
+							0.0,
+							1.0
+						],
+						"a" : -0.0,
+						"b" : 0.0,
+						"c" : 1.0,
+						"theta_rd" : 4.7848416169121844e-12
+					},
+					"triplet_type" : 11,
+					"type" : "bascule",
+					"vertical" : true
+				}
+			]
+		},
+		"A1" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				100.00156471952923,
+				1.3388472552833264e-09,
+				99.999217548336247
+			],
+			"coord_compensated_georef" : 
+			[
+				99.99999984352803,
+				1.1306957722028627e-14,
+				99.999999999763716
+			],
+			"coord_read" : 
+			[
+				100.0,
+				0.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 0,
+			"params" : 
+			{
+				"A1_x" : 
+				{
+					"rank" : 88,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999837388003
+				},
+				"A1_y" : 
+				{
+					"rank" : 89,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1.1306957721334377e-14
+				},
+				"A1_z" : 
+				{
+					"rank" : 90,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999999763716
+				}
+			},
+			"shift_from_read" : 
+			[
+				-1.5647196960344445e-07,
+				1.1306957722028627e-14,
+				-2.3628388134966372e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 99.999999837388003,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A1",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : -0.15647195539258973,
+							"number" : 0,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 99.999999993859959,
+							"rank" : 0,
+							"residual" : -1.5647195539258973e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 1.1306957721334377e-14,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A1",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 1.1306957721334377e-08,
+							"number" : 1,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 1,
+							"residual" : 1.1306957721334377e-14,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A1",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.0,
+							"number" : 2,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 2,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"A2" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				400.00625886250265,
+				6.5540461946511641e-11,
+				99.987480773178532
+			],
+			"coord_compensated_georef" : 
+			[
+				399.99999972618292,
+				7.7174158830104835e-14,
+				100.00000002502411
+			],
+			"coord_read" : 
+			[
+				400.0,
+				0.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 4,
+			"params" : 
+			{
+				"A2_x" : 
+				{
+					"rank" : 70,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 399.99999933322027
+				},
+				"A2_y" : 
+				{
+					"rank" : 71,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 7.7174158754288436e-14
+				},
+				"A2_z" : 
+				{
+					"rank" : 72,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000002502411
+				}
+			},
+			"shift_from_read" : 
+			[
+				-2.738170792326855e-07,
+				7.7174158830104835e-14,
+				2.5024107230819936e-08
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 399.99999933322027,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A2",
+							"instrument_height" : 0.0,
+							"line" : 6,
+							"normalized_residual" : -0.2738170792326855,
+							"number" : 12,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 399.99999960703735,
+							"rank" : 12,
+							"residual" : -2.738170792326855e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 7.7174158754288436e-14,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A2",
+							"instrument_height" : 0.0,
+							"line" : 6,
+							"normalized_residual" : 7.7174158754288442e-08,
+							"number" : 13,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 13,
+							"residual" : 7.7174158754288436e-14,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.00000002514571,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A2",
+							"instrument_height" : 0.0,
+							"line" : 6,
+							"normalized_residual" : 0.02514570951461792,
+							"number" : 14,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 14,
+							"residual" : 2.514570951461792e-08,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"A3" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				500.0078234881592,
+				3.1192328719953366e-09,
+				99.980438342567965
+			],
+			"coord_compensated_georef" : 
+			[
+				499.99999984355327,
+				1.3219658896330371e-15,
+				99.999999675223535
+			],
+			"coord_read" : 
+			[
+				500.0,
+				0.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 8,
+			"params" : 
+			{
+				"A3_x" : 
+				{
+					"rank" : 54,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 499.99999907604797
+				},
+				"A3_y" : 
+				{
+					"rank" : 55,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1.3219658876038054e-15
+				},
+				"A3_z" : 
+				{
+					"rank" : 56,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999675223535
+				}
+			},
+			"shift_from_read" : 
+			[
+				-1.5644673112547025e-07,
+				1.3219658896330371e-15,
+				-3.247764652769547e-07
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 499.99999907604797,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A3",
+							"instrument_height" : 0.0,
+							"line" : 11,
+							"normalized_residual" : -0.15644673112547025,
+							"number" : 24,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 499.9999992324947,
+							"rank" : 24,
+							"residual" : -1.5644673112547025e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 1.3219658876038054e-15,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A3",
+							"instrument_height" : 0.0,
+							"line" : 11,
+							"normalized_residual" : 1.3219658876038054e-09,
+							"number" : 25,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 25,
+							"residual" : 1.3219658876038054e-15,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 99.999999674968421,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A3",
+							"instrument_height" : 0.0,
+							"line" : 11,
+							"normalized_residual" : -0.325031578540802,
+							"number" : 26,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 26,
+							"residual" : -3.25031578540802e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"A4" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1101.7213465040697,
+				-4.9201480578631163e-07,
+				9999.9051756654226
+			],
+			"coord_compensated_georef" : 
+			[
+				1099.9999843528658,
+				7.746346875583005e-12,
+				9999.9999991870282
+			],
+			"coord_read" : 
+			[
+				1100.0,
+				0.0,
+				10000.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 12,
+			"params" : 
+			{
+				"A4_x" : 
+				{
+					"rank" : 38,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1099.9999761804706
+				},
+				"A4_y" : 
+				{
+					"rank" : 39,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 7.7463468180319058e-12
+				},
+				"A4_z" : 
+				{
+					"rank" : 40,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 9999.9999991870282
+				}
+			},
+			"shift_from_read" : 
+			[
+				-1.5647134205210023e-05,
+				7.746346875583005e-12,
+				-8.1297184806317091e-07
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 1099.9999761804706,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A4",
+							"instrument_height" : 0.0,
+							"line" : 16,
+							"normalized_residual" : -15.647133750462672,
+							"number" : 36,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 1099.9999918276044,
+							"rank" : 36,
+							"residual" : -1.5647133750462672e-05,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 7.7463468180319058e-12,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A4",
+							"instrument_height" : 0.0,
+							"line" : 16,
+							"normalized_residual" : 7.7463468180319061e-06,
+							"number" : 37,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 37,
+							"residual" : 7.7463468180319058e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 9999.9999991869554,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A4",
+							"instrument_height" : 0.0,
+							"line" : 16,
+							"normalized_residual" : -0.81304460763931274,
+							"number" : 38,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 10000.0,
+							"rank" : 38,
+							"residual" : -8.1304460763931274e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"A5" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				900.01407577267889,
+				800.01254852679699,
+				99.886397238870131
+			],
+			"coord_compensated_georef" : 
+			[
+				899.99999984364786,
+				799.99999999999477,
+				99.999999351070016
+			],
+			"coord_read" : 
+			[
+				900.0,
+				800.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 16,
+			"params" : 
+			{
+				"A5_x" : 
+				{
+					"rank" : 22,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 899.99999183089346
+				},
+				"A5_y" : 
+				{
+					"rank" : 23,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 799.99999287754645
+				},
+				"A5_z" : 
+				{
+					"rank" : 24,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999351070016
+				}
+			},
+			"shift_from_read" : 
+			[
+				-1.5635214367648587e-07,
+				-5.2295945351943374e-12,
+				-6.489299835266138e-07
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 899.99999183089346,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A5",
+							"instrument_height" : 0.0,
+							"line" : 21,
+							"normalized_residual" : -0.15635191630281042,
+							"number" : 48,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 899.99999198724538,
+							"rank" : 48,
+							"residual" : -1.5635191630281042e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 799.99999287754645,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A5",
+							"instrument_height" : 0.0,
+							"line" : 21,
+							"normalized_residual" : -5.0022208597511053e-06,
+							"number" : 49,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 799.99999287755145,
+							"rank" : 49,
+							"residual" : -5.0022208597511053e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 99.999999350868165,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A5",
+							"instrument_height" : 0.0,
+							"line" : 21,
+							"normalized_residual" : -0.64913183450698853,
+							"number" : 50,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 50,
+							"residual" : -6.4913183450698853e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"A6" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1100.0172053903186,
+				-2.6992807988790446e-09,
+				99.905322340329775
+			],
+			"coord_compensated_georef" : 
+			[
+				1099.9999998436479,
+				1.5109760788283882e-13,
+				99.999999189344663
+			],
+			"coord_read" : 
+			[
+				1100.0,
+				0.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 20,
+			"params" : 
+			{
+				"A6_x" : 
+				{
+					"rank" : 6,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1099.999991671252
+				},
+				"A6_y" : 
+				{
+					"rank" : 7,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1.5109760676026657e-13
+				},
+				"A6_z" : 
+				{
+					"rank" : 8,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999189344663
+				}
+			},
+			"shift_from_read" : 
+			[
+				-1.5635214367648587e-07,
+				1.5109760788283882e-13,
+				-8.1065533663604583e-07
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 1099.999991671252,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A6",
+							"instrument_height" : 0.0,
+							"line" : 26,
+							"normalized_residual" : -0.15635237105016131,
+							"number" : 60,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 1099.9999918276044,
+							"rank" : 60,
+							"residual" : -1.5635237105016131e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 1.5109760676026657e-13,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A6",
+							"instrument_height" : 0.0,
+							"line" : 26,
+							"normalized_residual" : 1.5109760676026659e-07,
+							"number" : 61,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 61,
+							"residual" : 1.5109760676026657e-13,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 99.99999918974936,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A6",
+							"instrument_height" : 0.0,
+							"line" : 26,
+							"normalized_residual" : -0.81025063991546631,
+							"number" : 62,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 62,
+							"residual" : -8.1025063991546631e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "A6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"B1" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-3.1982476626137944e-19,
+				100.00156929672049,
+				99.999215259197442
+			],
+			"coord_compensated_georef" : 
+			[
+				-3.1981976147897683e-19,
+				99.999999843070455,
+				100.00000000022389
+			],
+			"coord_read" : 
+			[
+				0.0,
+				100.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 1,
+			"params" : 
+			{
+				"B1_x" : 
+				{
+					"rank" : 95,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -3.198197614593398e-19
+				},
+				"B1_y" : 
+				{
+					"rank" : 96,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999836930428
+				},
+				"B1_z" : 
+				{
+					"rank" : 97,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000000022389
+				}
+			},
+			"shift_from_read" : 
+			[
+				-3.1981976147897683e-19,
+				-1.5692954491441924e-07,
+				2.2389201603800757e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : -3.198197614593398e-19,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B1",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -3.198197614593398e-13,
+							"number" : 3,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 3,
+							"residual" : -3.198197614593398e-19,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 99.999999836930428,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B1",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -0.15692953070356452,
+							"number" : 4,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 99.999999993859959,
+							"rank" : 4,
+							"residual" : -1.5692953070356452e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B1",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0,
+							"number" : 5,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 5,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"B2" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				200.00312974190868,
+				100.00156927317707,
+				99.996085410995789
+			],
+			"coord_compensated_georef" : 
+			[
+				200.00000003911504,
+				99.999999843073411,
+				99.999999963345587
+			],
+			"coord_read" : 
+			[
+				200.0,
+				100.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 5,
+			"params" : 
+			{
+				"B2_x" : 
+				{
+					"rank" : 79,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 199.99999997771459
+				},
+				"B2_y" : 
+				{
+					"rank" : 80,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.99999981237319
+				},
+				"B2_z" : 
+				{
+					"rank" : 81,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999963345587
+				}
+			},
+			"shift_from_read" : 
+			[
+				3.911503654308035e-08,
+				-1.5692658905663848e-07,
+				-3.6654412838288408e-08
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 199.99999997771459,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B2",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"normalized_residual" : 0.03911503654308035,
+							"number" : 15,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 199.99999993859956,
+							"rank" : 15,
+							"residual" : 3.911503654308035e-08,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 99.99999981237319,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B2",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"normalized_residual" : -0.15692658905663848,
+							"number" : 16,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 99.999999969299779,
+							"rank" : 16,
+							"residual" : -1.5692658905663848e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 99.99999996367842,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B2",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"normalized_residual" : -0.036321580410003662,
+							"number" : 17,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 17,
+							"residual" : -3.6321580410003662e-08,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"B3" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				400.00625911143231,
+				100.00156919916446,
+				99.986696006745248
+			],
+			"coord_compensated_georef" : 
+			[
+				399.99999999999767,
+				99.999999843080417,
+				100.00000000026868
+			],
+			"coord_read" : 
+			[
+				400.0,
+				100.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 9,
+			"params" : 
+			{
+				"B3_x" : 
+				{
+					"rank" : 61,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 399.99999958247474
+				},
+				"B3_y" : 
+				{
+					"rank" : 62,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999738699685
+				},
+				"B3_z" : 
+				{
+					"rank" : 63,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000000026868
+				}
+			},
+			"shift_from_read" : 
+			[
+				-2.3305801732931286e-12,
+				-1.5691958310526388e-07,
+				2.6868463010032428e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 399.99999958247474,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B3",
+							"instrument_height" : 0.0,
+							"line" : 12,
+							"normalized_residual" : -2.4442670110147446e-06,
+							"number" : 27,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 399.99999958247719,
+							"rank" : 27,
+							"residual" : -2.4442670110147446e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 99.999999738699685,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B3",
+							"instrument_height" : 0.0,
+							"line" : 12,
+							"normalized_residual" : -0.15691961152697331,
+							"number" : 28,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 99.999999895619297,
+							"rank" : 28,
+							"residual" : -1.5691961152697331e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B3",
+							"instrument_height" : 0.0,
+							"line" : 12,
+							"normalized_residual" : 0.0,
+							"number" : 29,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 29,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"B4" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1001.564875850911,
+				100.15692904012667,
+				9999.9208474952266
+			],
+			"coord_compensated_georef" : 
+			[
+				1000.000000000002,
+				99.999984307054419,
+				10000.000000000018
+			],
+			"coord_read" : 
+			[
+				1000.0,
+				100.0,
+				10000.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 13,
+			"params" : 
+			{
+				"B4_x" : 
+				{
+					"rank" : 45,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 999.99999379855979
+				},
+				"B4_y" : 
+				{
+					"rank" : 46,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999983686910298
+				},
+				"B4_z" : 
+				{
+					"rank" : 47,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 10000.000000000018
+				}
+			},
+			"shift_from_read" : 
+			[
+				2.0463630789890885e-12,
+				-1.5692945581236017e-05,
+				1.8189894035458565e-11
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 999.99999379855979,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B4",
+							"instrument_height" : 0.0,
+							"line" : 17,
+							"normalized_residual" : 2.0463630789890885e-06,
+							"number" : 39,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 999.99999379855774,
+							"rank" : 39,
+							"residual" : 2.0463630789890885e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 99.999983686910298,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B4",
+							"instrument_height" : 0.0,
+							"line" : 17,
+							"normalized_residual" : -15.692945481760034,
+							"number" : 40,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 99.99999937985578,
+							"rank" : 40,
+							"residual" : -1.5692945481760034e-05,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 10000.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B4",
+							"instrument_height" : 0.0,
+							"line" : 17,
+							"normalized_residual" : 0.0,
+							"number" : 41,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 10000.0,
+							"rank" : 41,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"B5" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				800.01251193471853,
+				900.01411693320222,
+				99.886358998148751
+			],
+			"coord_compensated_georef" : 
+			[
+				799.99999999999488,
+				899.999999843154,
+				100.00000000040292
+			],
+			"coord_read" : 
+			[
+				800.0,
+				900.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 17,
+			"params" : 
+			{
+				"B5_x" : 
+				{
+					"rank" : 29,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 799.99999287754656
+				},
+				"B5_y" : 
+				{
+					"rank" : 30,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 899.99999183039961
+				},
+				"B5_z" : 
+				{
+					"rank" : 31,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000000040292
+				}
+			},
+			"shift_from_read" : 
+			[
+				-5.1159076974727213e-12,
+				-1.5684599929954857e-07,
+				4.0292036374012241e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 799.99999287754656,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B5",
+							"instrument_height" : 0.0,
+							"line" : 22,
+							"normalized_residual" : -4.8885340220294893e-06,
+							"number" : 51,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 799.99999287755145,
+							"rank" : 51,
+							"residual" : -4.8885340220294893e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 899.99999183039961,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B5",
+							"instrument_height" : 0.0,
+							"line" : 22,
+							"normalized_residual" : -0.15684577192587312,
+							"number" : 52,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 899.99999198724538,
+							"rank" : 52,
+							"residual" : -1.5684577192587312e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B5",
+							"instrument_height" : 0.0,
+							"line" : 22,
+							"normalized_residual" : 0.0,
+							"number" : 53,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 53,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"B6" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1000.0156426308904,
+				100.00156868075349,
+				99.92096993343155
+			],
+			"coord_compensated_georef" : 
+			[
+				999.99999999999375,
+				99.999999843131803,
+				100.00000000050355
+			],
+			"coord_read" : 
+			[
+				1000.0,
+				100.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 21,
+			"params" : 
+			{
+				"B6_x" : 
+				{
+					"rank" : 13,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 999.99999379855171
+				},
+				"B6_y" : 
+				{
+					"rank" : 14,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999222987611
+				},
+				"B6_z" : 
+				{
+					"rank" : 15,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000000050355
+				}
+			},
+			"shift_from_read" : 
+			[
+				-6.2527760746888816e-12,
+				-1.5686819665461371e-07,
+				5.035474259784678e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 999.99999379855171,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B6",
+							"instrument_height" : 0.0,
+							"line" : 27,
+							"normalized_residual" : -6.0254023992456496e-06,
+							"number" : 63,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 999.99999379855774,
+							"rank" : 63,
+							"residual" : -6.0254023992456496e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 99.999999222987611,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B6",
+							"instrument_height" : 0.0,
+							"line" : 27,
+							"normalized_residual" : -0.15686816823290428,
+							"number" : 64,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 99.99999937985578,
+							"rank" : 64,
+							"residual" : -1.5686816823290428e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.00000000093132,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B6",
+							"instrument_height" : 0.0,
+							"line" : 27,
+							"normalized_residual" : 0.00093132257461547852,
+							"number" : 65,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 65,
+							"residual" : 9.3132257461547852e-10,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "B6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"C1" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-100.00156471952923,
+				1.3388472552833264e-09,
+				99.999217548336247
+			],
+			"coord_compensated_georef" : 
+			[
+				-99.99999984352803,
+				1.1306971018554397e-14,
+				99.999999999763716
+			],
+			"coord_read" : 
+			[
+				-100.0,
+				0.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 2,
+			"params" : 
+			{
+				"C1_x" : 
+				{
+					"rank" : 85,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -99.999999837388003
+				},
+				"C1_y" : 
+				{
+					"rank" : 86,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1.1306971017860146e-14
+				},
+				"C1_z" : 
+				{
+					"rank" : 87,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999999763716
+				}
+			},
+			"shift_from_read" : 
+			[
+				1.5647196960344445e-07,
+				1.1306971018554397e-14,
+				-2.3628388134966372e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : -99.999999837388003,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C1",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 0.15647195539258973,
+							"number" : 6,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : -99.999999993859959,
+							"rank" : 6,
+							"residual" : 1.5647195539258973e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 1.1306971017860146e-14,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C1",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 1.1306971017860147e-08,
+							"number" : 7,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 7,
+							"residual" : 1.1306971017860146e-14,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C1",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 0.0,
+							"number" : 8,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 8,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"C2" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				100.00156507159458,
+				1.3509975360648241e-09,
+				99.999217597836719
+			],
+			"coord_compensated_georef" : 
+			[
+				100.00000019558708,
+				5.5838000481439632e-14,
+				100.00000004917088
+			],
+			"coord_read" : 
+			[
+				100.0,
+				0.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 6,
+			"params" : 
+			{
+				"C2_x" : 
+				{
+					"rank" : 67,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000018944705
+				},
+				"C2_y" : 
+				{
+					"rank" : 68,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 5.5838000478011167e-14
+				},
+				"C2_z" : 
+				{
+					"rank" : 69,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000004917088
+				}
+			},
+			"shift_from_read" : 
+			[
+				1.9558707720079838e-07,
+				5.5838000481439632e-14,
+				4.9170878924087447e-08
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 100.00000018944705,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C2",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"normalized_residual" : 0.19558709141165309,
+							"number" : 18,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 99.999999993859959,
+							"rank" : 18,
+							"residual" : 1.9558709141165309e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 5.5838000478011167e-14,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C2",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"normalized_residual" : 5.5838000478011172e-08,
+							"number" : 19,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 19,
+							"residual" : 5.5838000478011167e-14,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0000000493601,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C2",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"normalized_residual" : 0.049360096454620361,
+							"number" : 20,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 20,
+							"residual" : 4.9360096454620361e-08,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"C3" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				300.00469463741859,
+				4.024343525088625e-09,
+				99.992958245296165
+			],
+			"coord_compensated_georef" : 
+			[
+				300.00000015646702,
+				-8.0195861605743717e-14,
+				100.00000032430394
+			],
+			"coord_read" : 
+			[
+				300.0,
+				0.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 10,
+			"params" : 
+			{
+				"C3_x" : 
+				{
+					"rank" : 51,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 299.99999999068592
+				},
+				"C3_y" : 
+				{
+					"rank" : 52,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -8.019586156142719e-14
+				},
+				"C3_z" : 
+				{
+					"rank" : 53,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000032430394
+				}
+			},
+			"shift_from_read" : 
+			[
+				1.5646702422600356e-07,
+				-8.0195861605743717e-14,
+				3.2430394014681951e-07
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 299.99999999068592,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C3",
+							"instrument_height" : 0.0,
+							"line" : 13,
+							"normalized_residual" : 0.15646702422600356,
+							"number" : 30,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 299.9999998342189,
+							"rank" : 30,
+							"residual" : 1.5646702422600356e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -8.019586156142719e-14,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C3",
+							"instrument_height" : 0.0,
+							"line" : 13,
+							"normalized_residual" : -8.0195861561427199e-08,
+							"number" : 31,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 31,
+							"residual" : -8.019586156142719e-14,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.00000032410026,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C3",
+							"instrument_height" : 0.0,
+							"line" : 13,
+							"normalized_residual" : 0.32410025596618652,
+							"number" : 32,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 32,
+							"residual" : 3.2410025596618652e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"C4" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				901.40840511609917,
+				-3.2951538742054254e-07,
+				9999.9365239055969
+			],
+			"coord_compensated_georef" : 
+			[
+				900.00001564718468,
+				-8.5825589442063413e-12,
+				10000.000000811957
+			],
+			"coord_read" : 
+			[
+				900.0,
+				0.0,
+				10000.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 14,
+			"params" : 
+			{
+				"C4_x" : 
+				{
+					"rank" : 35,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 900.00001117109412
+				},
+				"C4_y" : 
+				{
+					"rank" : 36,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -8.5825589015215518e-12
+				},
+				"C4_z" : 
+				{
+					"rank" : 37,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 10000.000000811957
+				}
+			},
+			"shift_from_read" : 
+			[
+				1.5647184682165971e-05,
+				-8.5825589442063413e-12,
+				8.1195685197599232e-07
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 900.00001117109412,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C4",
+							"instrument_height" : 0.0,
+							"line" : 18,
+							"normalized_residual" : 15.647184568479133,
+							"number" : 42,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 899.99999552390955,
+							"rank" : 42,
+							"residual" : 1.5647184568479133e-05,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -8.5825589015215518e-12,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C4",
+							"instrument_height" : 0.0,
+							"line" : 18,
+							"normalized_residual" : -8.5825589015215517e-06,
+							"number" : 43,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 43,
+							"residual" : -8.5825589015215518e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 10000.000000812113,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C4",
+							"instrument_height" : 0.0,
+							"line" : 18,
+							"normalized_residual" : 0.81211328506469727,
+							"number" : 44,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 10000.0,
+							"rank" : 44,
+							"residual" : 8.1211328506469727e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"C5" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				700.01094947405716,
+				800.01255010096656,
+				99.911437030623347
+			],
+			"coord_compensated_georef" : 
+			[
+				700.00000015639262,
+				799.99999999999488,
+				100.00000064845767
+			],
+			"coord_read" : 
+			[
+				700.0,
+				800.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 18,
+			"params" : 
+			{
+				"C5_x" : 
+				{
+					"rank" : 19,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 699.99999529961951
+				},
+				"C5_y" : 
+				{
+					"rank" : 20,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 799.99999444939704
+				},
+				"C5_z" : 
+				{
+					"rank" : 21,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000064845767
+				}
+			},
+			"shift_from_read" : 
+			[
+				1.5639261619071476e-07,
+				-5.1159076974727213e-12,
+				6.4845767155929934e-07
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 699.99999529961951,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C5",
+							"instrument_height" : 0.0,
+							"line" : 23,
+							"normalized_residual" : 0.15639261619071476,
+							"number" : 54,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 699.9999951432269,
+							"rank" : 54,
+							"residual" : 1.5639261619071476e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 799.99999444939704,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C5",
+							"instrument_height" : 0.0,
+							"line" : 23,
+							"normalized_residual" : -5.1159076974727213e-06,
+							"number" : 55,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 799.99999444940215,
+							"rank" : 55,
+							"residual" : -5.1159076974727213e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.00000064820051,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C5",
+							"instrument_height" : 0.0,
+							"line" : 23,
+							"normalized_residual" : 0.64820051193237305,
+							"number" : 56,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 56,
+							"residual" : 6.4820051193237305e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"C6" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				900.01407962824658,
+				-1.5761258964630542e-09,
+				99.936622094434654
+			],
+			"coord_compensated_georef" : 
+			[
+				900.00000015640308,
+				-4.1004279143425485e-14,
+				100.00000081111421
+			],
+			"coord_read" : 
+			[
+				900.0,
+				0.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 22,
+			"params" : 
+			{
+				"C6_x" : 
+				{
+					"rank" : 3,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 899.99999568031262
+				},
+				"C6_y" : 
+				{
+					"rank" : 4,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -4.1004278939493417e-14
+				},
+				"C6_z" : 
+				{
+					"rank" : 5,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000081111421
+				}
+			},
+			"shift_from_read" : 
+			[
+				1.5640307537978515e-07,
+				-4.1004279143425485e-14,
+				8.111142051347997e-07
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 899.99999568031262,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C6",
+							"instrument_height" : 0.0,
+							"line" : 28,
+							"normalized_residual" : 0.15640307537978515,
+							"number" : 66,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 899.99999552390955,
+							"rank" : 66,
+							"residual" : 1.5640307537978515e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -4.1004278939493417e-14,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C6",
+							"instrument_height" : 0.0,
+							"line" : 28,
+							"normalized_residual" : -4.100427893949342e-08,
+							"number" : 67,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 67,
+							"residual" : -4.1004278939493417e-14,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.00000081118196,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "C6",
+							"instrument_height" : 0.0,
+							"line" : 28,
+							"normalized_residual" : 0.81118196249008179,
+							"number" : 68,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 68,
+							"residual" : 8.1118196249008179e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "C6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"D1" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-3.0652835080611293e-19,
+				-100.00156929359032,
+				99.999215259776093
+			],
+			"coord_compensated_georef" : 
+			[
+				-3.0652355409235521e-19,
+				-99.999999843070484,
+				100.00000000022395
+			],
+			"coord_read" : 
+			[
+				0.0,
+				-100.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 3,
+			"params" : 
+			{
+				"D1_x" : 
+				{
+					"rank" : 82,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -3.0652355407353459e-19
+				},
+				"D1_y" : 
+				{
+					"rank" : 83,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -99.999999836930456
+				},
+				"D1_z" : 
+				{
+					"rank" : 84,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000000022395
+				}
+			},
+			"shift_from_read" : 
+			[
+				-3.0652355409235521e-19,
+				1.5692951649270981e-07,
+				2.2394885945686838e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : -3.0652355407353459e-19,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D1",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : -3.065235540735346e-13,
+							"number" : 9,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 9,
+							"residual" : -3.0652355407353459e-19,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -99.999999836930456,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D1",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.15692950228185509,
+							"number" : 10,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : -99.999999993859959,
+							"rank" : 10,
+							"residual" : 1.5692950228185509e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D1",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.0,
+							"number" : 11,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 11,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D1",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"D2" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				200.00312974223581,
+				-100.00156926886018,
+				99.996085410160802
+			],
+			"coord_compensated_georef" : 
+			[
+				200.00000003911495,
+				-99.999999843073539,
+				99.999999963345587
+			],
+			"coord_read" : 
+			[
+				200.0,
+				-100.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 7,
+			"params" : 
+			{
+				"D2_x" : 
+				{
+					"rank" : 64,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 199.99999997771451
+				},
+				"D2_y" : 
+				{
+					"rank" : 65,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -99.999999812373318
+				},
+				"D2_z" : 
+				{
+					"rank" : 66,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999963345587
+				}
+			},
+			"shift_from_read" : 
+			[
+				3.9114951277952059e-08,
+				1.5692646115894604e-07,
+				-3.6654412838288408e-08
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 199.99999997771451,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D2",
+							"instrument_height" : 0.0,
+							"line" : 9,
+							"normalized_residual" : 0.039114951277952059,
+							"number" : 21,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 199.99999993859956,
+							"rank" : 21,
+							"residual" : 3.9114951277952059e-08,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -99.999999812373318,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D2",
+							"instrument_height" : 0.0,
+							"line" : 9,
+							"normalized_residual" : 0.15692646115894604,
+							"number" : 22,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : -99.999999969299779,
+							"rank" : 22,
+							"residual" : 1.5692646115894604e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 99.99999996367842,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D2",
+							"instrument_height" : 0.0,
+							"line" : 9,
+							"normalized_residual" : -0.036321580410003662,
+							"number" : 23,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 23,
+							"residual" : -3.6321580410003662e-08,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D2",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"D3" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				400.00625911208658,
+				-100.00156919367062,
+				99.986696005260313
+			],
+			"coord_compensated_georef" : 
+			[
+				399.99999999999761,
+				-99.999999843080346,
+				100.00000000017911
+			],
+			"coord_read" : 
+			[
+				400.0,
+				-100.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 11,
+			"params" : 
+			{
+				"D3_x" : 
+				{
+					"rank" : 48,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 399.99999958247469
+				},
+				"D3_y" : 
+				{
+					"rank" : 49,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -99.999999738699614
+				},
+				"D3_z" : 
+				{
+					"rank" : 50,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000000017911
+				}
+			},
+			"shift_from_read" : 
+			[
+				-2.3874235921539366e-12,
+				1.5691965415953746e-07,
+				1.7911361283040605e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 399.99999958247469,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D3",
+							"instrument_height" : 0.0,
+							"line" : 14,
+							"normalized_residual" : -2.5011104298755527e-06,
+							"number" : 33,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 399.99999958247719,
+							"rank" : 33,
+							"residual" : -2.5011104298755527e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -99.999999738699614,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D3",
+							"instrument_height" : 0.0,
+							"line" : 14,
+							"normalized_residual" : 0.15691968258124689,
+							"number" : 34,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : -99.999999895619297,
+							"rank" : 34,
+							"residual" : 1.5691968258124689e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D3",
+							"instrument_height" : 0.0,
+							"line" : 14,
+							"normalized_residual" : 0.0,
+							"number" : 35,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 35,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D3",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"D4" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1001.5648760144852,
+				-100.15692987829152,
+				9999.9208474870575
+			],
+			"coord_compensated_georef" : 
+			[
+				999.99999999998579,
+				-99.999984307053595,
+				9999.9999999994579
+			],
+			"coord_read" : 
+			[
+				1000.0,
+				-100.0,
+				10000.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 15,
+			"params" : 
+			{
+				"D4_x" : 
+				{
+					"rank" : 32,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 999.99999379854353
+				},
+				"D4_y" : 
+				{
+					"rank" : 33,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -99.999983686909474
+				},
+				"D4_z" : 
+				{
+					"rank" : 34,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 9999.9999999994579
+				}
+			},
+			"shift_from_read" : 
+			[
+				-1.4210854715202004e-11,
+				1.5692946405465591e-05,
+				-5.4205884225666523e-10
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 999.99999379854353,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D4",
+							"instrument_height" : 0.0,
+							"line" : 19,
+							"normalized_residual" : -1.4210854715202004e-05,
+							"number" : 45,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 999.99999379855774,
+							"rank" : 45,
+							"residual" : -1.4210854715202004e-11,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -99.999983686909474,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D4",
+							"instrument_height" : 0.0,
+							"line" : 19,
+							"normalized_residual" : 15.692946305989608,
+							"number" : 46,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : -99.99999937985578,
+							"rank" : 46,
+							"residual" : 1.5692946305989608e-05,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 9999.9999999990687,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D4",
+							"instrument_height" : 0.0,
+							"line" : 19,
+							"normalized_residual" : -0.00093132257461547852,
+							"number" : 47,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 10000.0,
+							"rank" : 47,
+							"residual" : -9.3132257461547852e-10,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D4",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"D5" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				800.01251350789971,
+				700.01098149272025,
+				99.911470698689357
+			],
+			"coord_compensated_georef" : 
+			[
+				799.999999999995,
+				700.00000015685589,
+				100.00000000004468
+			],
+			"coord_read" : 
+			[
+				800.0,
+				700.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 19,
+			"params" : 
+			{
+				"D5_x" : 
+				{
+					"rank" : 16,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 799.99999444939715
+				},
+				"D5_y" : 
+				{
+					"rank" : 17,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 699.99999530008279
+				},
+				"D5_z" : 
+				{
+					"rank" : 18,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 100.00000000004468
+				}
+			},
+			"shift_from_read" : 
+			[
+				-5.0022208597511053e-12,
+				1.5685589005443035e-07,
+				4.46789272245951e-11
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 799.99999444939715,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D5",
+							"instrument_height" : 0.0,
+							"line" : 24,
+							"normalized_residual" : -5.0022208597511053e-06,
+							"number" : 57,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 799.99999444940215,
+							"rank" : 57,
+							"residual" : -5.0022208597511053e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 699.99999530008279,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D5",
+							"instrument_height" : 0.0,
+							"line" : 24,
+							"normalized_residual" : 0.15685589005443035,
+							"number" : 58,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 699.9999951432269,
+							"rank" : 58,
+							"residual" : 1.5685589005443035e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D5",
+							"instrument_height" : 0.0,
+							"line" : 24,
+							"normalized_residual" : 0.0,
+							"number" : 59,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 59,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D5",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"D6" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1000.0156426325254,
+				-100.00156868203533,
+				99.920969925122719
+			],
+			"coord_compensated_georef" : 
+			[
+				999.99999999999352,
+				-99.999999843131917,
+				99.999999999944194
+			],
+			"coord_read" : 
+			[
+				1000.0,
+				-100.0,
+				100.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 6,
+			"number" : 23,
+			"params" : 
+			{
+				"D6_x" : 
+				{
+					"rank" : 0,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 999.99999379855149
+				},
+				"D6_y" : 
+				{
+					"rank" : 1,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -99.999999222987725
+				},
+				"D6_z" : 
+				{
+					"rank" : 2,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 99.999999999944194
+				}
+			},
+			"shift_from_read" : 
+			[
+				-6.4801497501321137e-12,
+				1.5686808296777599e-07,
+				-5.5806026466598269e-11
+			],
+			"sigmas_init" : 
+			[
+				9.9999999999999995e-07,
+				9.9999999999999995e-07,
+				9.9999999999999995e-07
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 999.99999379855149,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D6",
+							"instrument_height" : 0.0,
+							"line" : 29,
+							"normalized_residual" : -6.2527760746888816e-06,
+							"number" : 69,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 999.99999379855774,
+							"rank" : 69,
+							"residual" : -6.2527760746888816e-12,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -99.999999222987725,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D6",
+							"instrument_height" : 0.0,
+							"line" : 29,
+							"normalized_residual" : 0.15686805454606656,
+							"number" : 70,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : -99.99999937985578,
+							"rank" : 70,
+							"residual" : 1.5686805454606656e-07,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 100.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "D6",
+							"instrument_height" : 0.0,
+							"line" : 29,
+							"normalized_residual" : 0.0,
+							"number" : 71,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 100.0,
+							"rank" : 71,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "D6",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,7 @@
+Comp V5.23 (next version):
+ - proj 6 > 8.2
+ - new rot export xyz
+ - faster solver solver
+ - change sigma_total
+
+

@@ -1,0 +1,605 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../cor.rst:5
+msgid "COR File"
+msgstr ""
+
+#: ../../cor.rst:7
+msgid ""
+"The *.cor* file contains the initial values of points coordinates and "
+"their constraints."
+msgstr ""
+
+#: ../../cor.rst:9
+msgid ""
+"All points may be declared or only the minimum amount for allowing "
+":ref:`CAP <cap-init>` to compute the coordinates of all the other points."
+" In the case of a simulation project, it is mandatory to declare the "
+"coordinates of all points, as the observations values are not taken into "
+"account."
+msgstr ""
+
+#: ../../cor.rst:12
+msgid ""
+"In any case, in order to settle the project translation, it is necessary "
+"to constrain at least an X, a Y and a Z, not necessarily on the same "
+"point. These constaints must appear in the *.cor file*."
+msgstr ""
+
+#: ../../cor.rst:17
+msgid "Protocol"
+msgstr ""
+
+#: ../../cor.rst:19
+msgid ""
+"The coordinates file is a plain text file with *.cor* as an extension. It"
+" has one line per point, containing the following fields:"
+msgstr ""
+
+#: ../../cor.rst:21
+msgid ""
+":math:`code\\ name\\ E\\ N\\ h\\ [\\sigma_E\\ \\sigma_N\\ \\sigma_h\\ "
+"[\\eta\\ \\xi]]\\ [*comment]`"
+msgstr ""
+
+#: ../../cor.rst:23
+msgid ":math:`code`: declares dimension of point and its type of contraints"
+msgstr ""
+
+#: ../../cor.rst:25
+msgid "**0**: 3D free point;"
+msgstr ""
+
+#: ../../cor.rst:27
+msgid "**1**: 3D point constrained on XYZ;"
+msgstr ""
+
+#: ../../cor.rst:29
+msgid "**2**: 3D point constrained on XY;"
+msgstr ""
+
+#: ../../cor.rst:31
+msgid "**3**: 3D point constrained on Z;"
+msgstr ""
+
+#: ../../cor.rst:33
+msgid "**4**: 1D free point;"
+msgstr ""
+
+#: ../../cor.rst:35
+msgid "**5**: 1D point constrained on Z;"
+msgstr ""
+
+#: ../../cor.rst:37
+msgid "**6**: 2D free point;"
+msgstr ""
+
+#: ../../cor.rst:39
+msgid "**7**: 2D point constrained on XY;"
+msgstr ""
+
+#: ../../cor.rst:41
+msgid "**8**: remote 2D free point, excluded from internal constraints;"
+msgstr ""
+
+#: ../../cor.rst:43
+msgid ""
+"**9**: remote 2D point constrained on XY, excluded from internal "
+"constraints;"
+msgstr ""
+
+#: ../../cor.rst:45
+msgid ""
+"**-1**: point to be ignored in *.obs* and not used in computation, useful"
+" for project debugging"
+msgstr ""
+
+#: ../../cor.rst:47
+msgid ":math:`name`: point name;"
+msgstr ""
+
+#: ../../cor.rst:49
+msgid ""
+":math:`E,\\ N,\\ h`: Easting and Northing in input projection of the "
+"project, and ellipsoidal height coordinates, in meters"
+msgstr ""
+
+#: ../../cor.rst:51
+msgid ""
+":math:`\\sigma_E,\\ \\sigma_N,\\ \\sigma_h`: *a priori* precisions of "
+"constraints, in meters."
+msgstr ""
+
+#: ../../cor.rst:53
+msgid ""
+":math:`\\eta,\\ \\xi`: Easting and Northing vertical deflection, in "
+"arcseconds"
+msgstr ""
+
+#: ../../cor.rst:55
+msgid ":math:`comment`: will be displayed in the report"
+msgstr ""
+
+#: ../../cor.rst:59
+msgid ""
+":math:`\\sigma_E`, :math:`\\sigma_N` and :math:`\\sigma_h` are mandatory "
+"only in case of constrained points or when :math:`\\eta` and :math:`\\xi`"
+" are expected."
+msgstr ""
+
+#: ../../cor.rst:61
+msgid ""
+"A *negative value* for :math:`\\sigma` deactivates the corresponding "
+"constraint."
+msgstr ""
+
+#: ../../cor.rst:63
+msgid ""
+"A *null precision on a coordinate* removes the parameter from the "
+"computation, the coordinate is then fixed."
+msgstr ""
+
+#: ../../cor.rst:66
+msgid ""
+":math:`\\eta` and :math:`\\xi` are mandatory on every verticalized point "
+"in order to use vertical deflection in computation."
+msgstr ""
+
+#: ../../cor.rst:69
+msgid ""
+"For ignored points (code -1), only the code and the point name are "
+"mandatory."
+msgstr ""
+
+#: ../../cor.rst:72
+msgid "Sub *.cor* files can be included with ``@subname.cor``"
+msgstr ""
+
+#: ../../cor.rst:78
+msgid "Reference Frame"
+msgstr ""
+
+#: ../../cor.rst:80
+msgid "Coordinates are provided in a local frame:"
+msgstr ""
+
+#: ../../cor.rst:82
+msgid "using local stereographic projection, in meters;"
+msgstr ""
+
+#: ../../cor.rst:83
+msgid "or using any projection, defined in :ref:`project-params`."
+msgstr ""
+
+#: ../../cor.rst:85
+msgid ""
+"The vertical component must be close to the ellipsoidal height of the "
+"place, except in the case of pure 1D compensation (see :ref:`project-"
+"params`)."
+msgstr ""
+
+#: ../../cor.rst:89
+msgid ""
+"The *a priori* precisions are always given in internal computation frame,"
+" that has no scale error or convergence of meridians."
+msgstr ""
+
+#: ../../cor.rst:96
+msgid "1D Points"
+msgstr ""
+
+#: ../../cor.rst:98
+msgid ""
+"In the case of 1D points (code **4** or **5**), all coordinates are "
+"mandatory. The altimetric component will be the only parameter for least "
+"squares, but the planimetric coordinates are used to compute:"
+msgstr ""
+
+#: ../../cor.rst:101
+msgid "the precision of the observation, if it has a part relative to distance,"
+msgstr ""
+
+#: ../../cor.rst:103
+msgid "the correction of the vertical deviation."
+msgstr ""
+
+#: ../../cor.rst:105
+msgid ""
+"The planimetric coordinates are also used to correctly display de points "
+"on the map."
+msgstr ""
+
+#: ../../cor.rst:111
+msgid "2D Points"
+msgstr ""
+
+#: ../../cor.rst:113
+msgid ""
+"In the case of 2D points  (code **6** to **9**), only the values of the "
+"planimetric coordinates are mandatory, the vertical coordinate is used "
+"only as information and for precision computation."
+msgstr ""
+
+#: ../../cor.rst:115
+msgid ""
+"Remote 2D points (code **8** and **9**) are the same as normal 2D points "
+"except that they are not used for internal constraints (see :ref"
+":`internal-constraints`)."
+msgstr ""
+
+#: ../../cor.rst:120
+msgid "Example"
+msgstr ""
+
+#: ../../cor.rst:122
+msgid "Example : BASE.COR"
+msgstr ""
+
+#: ../../cor.rst:138
+msgid ""
+"Each constraint on the coordinates of a point with :math:`\\sigma>0` adds"
+" an observation (coord_x, coord_y or coord_z) in the bundle adjustment "
+"computation."
+msgstr ""
+
+#: ../../cor.rst:143
+msgid "Point Class"
+msgstr ""
+
+#: ../../cor.rst:145
+msgid ""
+"In the GUI and report, the point class is given in an abbreviated form in"
+" order to easily see its dimensions and constraints. A \"-\" indicates a "
+"dimension without constraint, the name of the coordinate in lowercase "
+"letter when the coordinate is constrained and in uppercase letter when "
+"the coordinate is fixed."
+msgstr ""
+
+#: ../../cor.rst:147
+msgid "``\"---\"``: 3D free point;"
+msgstr ""
+
+#: ../../cor.rst:149
+msgid "``\"--z\"``: 3D point constrained on Z;"
+msgstr ""
+
+#: ../../cor.rst:151
+msgid "``\"  -\"``: 1D free point;"
+msgstr ""
+
+#: ../../cor.rst:153
+msgid "``\"  z\"``: 1D point constrained on Z;"
+msgstr ""
+
+#: ../../cor.rst:155
+msgid "``\"XYz\"``: 3D point with fixed XY and constrained on Z;"
+msgstr ""
+
+#: ../../cor.rst:157
+msgid "``\"--f\"``: remote free 2D point."
+msgstr ""
+
+#~ msgid ""
+#~ "Un point renseigné dans le fichier "
+#~ "*cor* produira dans le système des "
+#~ "moindres carrés une observation par "
+#~ "composante contrainte."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ces observations issues de coordonnées "
+#~ "sont disponibles dans le fichier *comp*"
+#~ " : ces observations ont pour code "
+#~ "-1, -2 et -3 pour des contraintes"
+#~ " respectivement sur les composantes X,Y "
+#~ "et Z."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est également possible de les "
+#~ "visualiser dans le rapport de calcul "
+#~ "*html* via les codes coord_x, coord_y,"
+#~ " coord_z pour des contraintes "
+#~ "respectivement sur les composantes X,Y "
+#~ "et Z."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le :math:`\\sigma` de ces observations "
+#~ "correspond au :math:`\\sigma` renseigné dans"
+#~ " le fichier *cor* sur la composante"
+#~ " concernée."
+#~ msgstr ""
+
+#~ msgid "Initialisation par l’étape CAP"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le fichier de coordonnées de points "
+#~ "peut ne pas contenir les coordonnées "
+#~ "initiales de certains points. Dans ce"
+#~ " cas, Comp3D tentera de les "
+#~ "déterminer à partir de celles des "
+#~ "autres. Les points renseignés avec un"
+#~ " code -1 dans le fichier *cor* "
+#~ "ne seront jamais initialisés (cf. `5.1"
+#~ " <#points-approches>`__). Pour les points"
+#~ " donnés dans le fichier *.cor*, les"
+#~ " coordonnées se doivent d’être relativement"
+#~ " correctes. Si on ne les connaît "
+#~ "pas, mieux vaut les enlever pour "
+#~ "laisser faire le calcul de points "
+#~ "approchés."
+#~ msgstr ""
+
+#~ msgid "Points approchés"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Chaque point doit avoir des coordonnées"
+#~ " approchées pour la compensation. Elles "
+#~ "sont utilisées pour linéariser le "
+#~ "problème. En effet l’ajustement par "
+#~ "moindres carrés a besoin d’équations "
+#~ "d’observations linéaires, or les équations "
+#~ "d’observations ne le sont pas."
+#~ msgstr ""
+
+#~ msgid "Initialisation des points"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Comp3D est capable de déterminer la "
+#~ "position initiale de certains points. On"
+#~ " peut commencer un calcul avec, dans"
+#~ " le fichier *.cor*, uniquement les "
+#~ "coordonnées approchées de quelques points "
+#~ "ou uniquement les coordonnées des points"
+#~ " contraints au calcul."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le fichier *.obs* pourra contenir toutes"
+#~ " les observations (en cas de problème"
+#~ " on peut commencer par un sous-"
+#~ "ensemble du réseau). À l’ouverture des"
+#~ " fichiers, de nombreux points peuvent "
+#~ "être déterminés par Comp3D."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est alors possible d’utiliser l’outil"
+#~ " \"New vers Cor\" (cf. `[new-vers-"
+#~ "cor] <#new-vers-cor>`__), même si "
+#~ "la compensation ne fonctionne pas, pour"
+#~ " ajouter les nouveaux points et les"
+#~ " coordonnées compensées en entrée du "
+#~ "prochain calcul."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il n’est pas garanti que tous les"
+#~ " points soient déterminables ou que "
+#~ "le calcul fonctionne bien. Il faut "
+#~ "alors ajouter à la main les "
+#~ "coordonnées de certains points que "
+#~ "Comp3D n’aura pas réussi à déterminer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il faut souvent plusieurs passes pour"
+#~ " initialiser les points de proche en"
+#~ " proche. Seules les observations actives"
+#~ " sont utilisées lors de cette phase."
+#~ msgstr ""
+
+#~ msgid "L’initialisation gère les cas suivants :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "depuis une station initialisée avec un"
+#~ " azimut (code 8 ou angle horizontal"
+#~ " + g0 de la station connu), un"
+#~ " angle zénithal (code 6) et une "
+#~ "distance (code 3 ou code 1) ;"
+#~ msgstr ""
+
+#~ msgid "station basculée ;"
+#~ msgstr ""
+
+#~ msgid "observation basculée ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "centrage (code 9) et différence de "
+#~ "hauteur (code 4) depuis un point "
+#~ "initialisé ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "différence de hauteur depuis un point"
+#~ " connu en Z si le point n’a "
+#~ "aucune observation planimétrique : le "
+#~ "point sera alors initialisé en point "
+#~ "1D (code 4 dans le fichier *cor*)"
+#~ " ;"
+#~ msgstr ""
+
+#~ msgid "rayonnement depuis un station connue ;"
+#~ msgstr ""
+
+#~ msgid "relèvement avec des observations 3d depuis 2 points connus ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "intersection à partir d’observations "
+#~ "angulaires depuis 2 stations connues ;"
+#~ msgstr ""
+
+#~ msgid "relèvement angulaire depuis 3 points connus."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il arrive parfois qu’on veuille "
+#~ "commenter toutes les observations en "
+#~ "liaison avec un point (pour détecter "
+#~ "une faute par exemple). Dans ce "
+#~ "cas, il faut déclarer le point "
+#~ "comme interdit (code -1) dans le "
+#~ "fichier *.cor* pour éviter que Comp3D"
+#~ " l’utilise automatiquement."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le résultat de cette initialisation est"
+#~ " fourni dans le fichier *.cap* (cf."
+#~ " `7.2 <#coordonnees-initiales>`__)."
+#~ msgstr ""
+
+#~ msgid "Classe d’un point"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Après initialisation, chaque point appartient"
+#~ " à une classe. Celle-ci est "
+#~ "prise en compte dans le calcul et"
+#~ " va notamment produire un nombre de"
+#~ " paramètres et un poids adaptés à "
+#~ "la classe du point."
+#~ msgstr ""
+
+#~ msgid "Cette classe est visualisable dans le fichier *.comp* via son code :"
+#~ msgstr ""
+
+#~ msgid "code 0 : point 3d libre ;"
+#~ msgstr ""
+
+#~ msgid "code 1 : point 3d connu en XYZ ;"
+#~ msgstr ""
+
+#~ msgid "code 2 : point 3d connu en XY ;"
+#~ msgstr ""
+
+#~ msgid "code 3 : point 3d connu en Z ;"
+#~ msgstr ""
+
+#~ msgid "code 4 : point 1d libre ;"
+#~ msgstr ""
+
+#~ msgid "code 5 : point 1d connu en Z ."
+#~ msgstr ""
+
+#~ msgid "code 6 : point 2d libre ;"
+#~ msgstr ""
+
+#~ msgid "code 7 : point 2d connu en XY en Z représenté \"XY \" ;"
+#~ msgstr ""
+
+#~ msgid "code 8 : point 2d libre lointain représenté \"f- -\" ;"
+#~ msgstr ""
+
+#~ msgid "code 9 : point 2d lointain connu en XY représenté \"fXY\"."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le *code_name* du point permet de "
+#~ "distinguer deux types de point connu "
+#~ ":"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "lorsqu’une composante est fixée, elle "
+#~ "est affichée en majuscule (par exemple"
+#~ " \"X\") ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "lorsqu’une composante est contrainte, elle "
+#~ "est affichée en en minuscule (par "
+#~ "exemple \"x\")."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cette classe est visualisable dans le"
+#~ " fichier *.comp* via son code et "
+#~ "sa représentation associée dans l’interface"
+#~ " de Comp3D et le fichier *.comp.html*"
+#~ " :"
+#~ msgstr ""
+
+#~ msgid "code 0 : point 3d libre représenté \"- - -\" ;"
+#~ msgstr ""
+
+#~ msgid "code 1 : point 3d connu en XYZ représenté \"XYZ\" ;"
+#~ msgstr ""
+
+#~ msgid "code 2 : point 3d connu en XY représenté \"XY-\" ;"
+#~ msgstr ""
+
+#~ msgid "code 3 : point 3d connu en Z représenté \"- -Z\" ;"
+#~ msgstr ""
+
+#~ msgid "code 4 : point 1d libre représenté \"-\";"
+#~ msgstr ""
+
+#~ msgid "code 5 : point 1d connu en Z représenté \"Z\" ;"
+#~ msgstr ""
+
+#~ msgid "code 6 : point 2d libre représenté \"- -\" ;"
+#~ msgstr ""
+
+#~ msgid "code 7 : point 2d connu en XY en Z représenté \"XY\" ;"
+#~ msgstr ""
+
+#~ msgid "Deux types de point connu sont distingués :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Une composante fixée ne produira pas "
+#~ "de paramètre et poids associé et "
+#~ "ne sera donc pas compensée lors du"
+#~ " calcul (cf. `4.2.1 <#formalisme>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les points en code 7 et 9 "
+#~ "sont des points d’orientation lointains "
+#~ "2D. Ils ne sont pas utilisés lors"
+#~ " des contraintes internes pour ne pas"
+#~ " fausser leur calcul et fournir des"
+#~ " demi-intervalles et ellipsoides de "
+#~ "confiance de confiance réalistes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est important de donner des "
+#~ "coordonnées raisonnables même pour les "
+#~ "dimensions non-réestimées par le calcul"
+#~ " (par exemple, donner une bonne "
+#~ "position planimétrique pour les points "
+#~ "code 4 et 5, et une bonne "
+#~ "hauteur pour les points 6, 7, 8"
+#~ " ou 9). Ces valeurs servent à "
+#~ "la fois à la documentation (plans "
+#~ "par exemple), mais aussi à certains "
+#~ "calculs (estimation des distances de "
+#~ "visées par exemple)."
+#~ msgstr ""
+

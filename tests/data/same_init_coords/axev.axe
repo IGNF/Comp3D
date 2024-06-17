@@ -1,0 +1,5 @@
+*target pos    pt    sigma_radius  sigma_perp
+1 1 T1P1 0.001 0.001
+1 2 T1P2 0.001 0.001
+1 3 T1P3 0.001 0.001
+1 4 T1P4 0.001 0.001

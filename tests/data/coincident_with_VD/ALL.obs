@@ -1,0 +1,31 @@
+**** Topo
+@./obs_topo/AW1.obs
+@./obs_topo/AW2.obs
+@./obs_topo/AW3.obs
+@./obs_topo/AW4.obs
+@./obs_topo/AW_T1.obs
+@./obs_topo/AW_T2.obs
+@./obs_topo/AW_T3.obs
+@./obs_topo/SL412.obs
+@./obs_topo/SL413.obs
+*@./obs_topo/T201.obs
+
+
+**** Nivellement
+@./obs_niv/30TOIT.obs
+@./obs_niv/30032022_cor.obs
+*@./obs_niv/niv_GRAC_gp1.obs
+@./obs_niv/niv_GRAC_gp2.obs
+@./obs_niv/niv_GRAS.obs
+@./obs_niv/niv_INSAR.obs
+@./obs_niv/niv_pil_gp1.obs
+@./obs_niv/niv_pil_gp2.obs
+@./obs_niv/niv_GRAC30.obs
+@./obs_niv/niv_510.obs
+@./obs_niv/M_PPMD22_CUBE.obs
+@./obs_niv/niv_coupole_toit.obs
+@./obs_niv/30COUPOL.obs
+
+**** Centrage
+@centrage.obs
+

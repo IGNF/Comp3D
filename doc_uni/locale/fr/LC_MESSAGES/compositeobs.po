@@ -1,0 +1,343 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../compositeobs.rst:5
+msgid "Composite observations files"
+msgstr ""
+
+#: ../../compositeobs.rst:10
+msgid "Bascules coordonnées cartésiennes"
+msgstr ""
+
+#: ../../compositeobs.rst:12
+msgid ""
+"Le code 11 représente un sous-repère en coordonnées cartésiennes à "
+"ajuster sur le chantier. Il est utilisé pour calculer des changements de "
+"repères ou ajuster des mesures de lidar terrestre."
+msgstr ""
+
+#: ../../compositeobs.rst:16
+msgid ""
+"Pour chaque point mesuré dans le fichier *.xyz*, son nom, ses coordonnées"
+" dans le sous-repère, sa/ses précision(s) sont renseignés."
+msgstr ""
+
+#: ../../compositeobs.rst:19 ../../compositeobs.rst:63
+msgid "Précisions possibles :"
+msgstr ""
+
+#: ../../compositeobs.rst:21
+msgid "XYZabs"
+msgstr ""
+
+#: ../../compositeobs.rst:23
+msgid "XYZabs XYZrel"
+msgstr ""
+
+#: ../../compositeobs.rst:25
+msgid "Xabs Yabs Zabs XYZrel"
+msgstr ""
+
+#: ../../compositeobs.rst:27
+msgid "Xabs Yabs Zabs XYZrel hauteur_cible"
+msgstr ""
+
+#: ../../compositeobs.rst:29 ../../compositeobs.rst:71
+msgid "La hauteur de cible est dans le repère terrain."
+msgstr ""
+
+#: ../../compositeobs.rst:31
+msgid "Exemple : LASER.XYZ"
+msgstr ""
+
+#: ../../compositeobs.rst:43
+msgid ""
+"On ne peut pas mettre de mesure \"0 0 0\" dans le fichier *.xyz* : ce "
+"point est l'origine du sous-repère, celui donné dans le fichier *.obs*."
+msgstr ""
+
+#: ../../compositeobs.rst:47
+msgid ""
+"Les coordonnées dans le fichier *.xyz* doivent être en cartésiennes, pour"
+" récupérer un résultat de calcul |c3| il faut partir du fichier *.3d* et "
+"pas *.new* (cf. :ref:`out-new`)."
+msgstr ""
+
+#: ../../compositeobs.rst:53
+msgid "Bascules angle+angle+distance"
+msgstr ""
+
+#: ../../compositeobs.rst:55
+msgid ""
+"Les fichiers *.xyz* utilisés avec le code 12 représentent un sous-repère "
+"en coordonnées polaires à ajuster sur le chantier."
+msgstr ""
+
+#: ../../compositeobs.rst:58
+msgid ""
+"Pour chaque point mesuré, on donne son nom, les mesures (angle pseudo-"
+"horizontal, angle pseudo-vertical origine à l'horizontale, distance) et "
+"les précisions des mesures."
+msgstr ""
+
+#: ../../compositeobs.rst:65
+msgid "ang_abs dist_abs dist_rel"
+msgstr ""
+
+#: ../../compositeobs.rst:67
+msgid "ang_abs ang_rel dist_abs dist_rel"
+msgstr ""
+
+#: ../../compositeobs.rst:69
+msgid "ang_abs ang_rel dist_abs dist_rel hauteur_cible"
+msgstr ""
+
+#: ../../compositeobs.rst:73
+msgid "Exemple : TRACKER.XYZ"
+msgstr ""
+
+#: ../../compositeobs.rst:85
+msgid "Détermination d'axes de rotation"
+msgstr ""
+
+#: ../../compositeobs.rst:87
+msgid ""
+"Les observations de code 18 servent à déterminer un axe de rotation d'un "
+"objet (par exemple un télescope)."
+msgstr ""
+
+#: ../../compositeobs.rst:90
+msgid ""
+"Pour cela on fixe des cibles sur la structure de l'objet, et on les "
+"mesure en topométrie pour différentes positions de l'objet quand celui-ci"
+" tourne autour de son axe."
+msgstr ""
+
+#: ../../compositeobs.rst:93
+msgid ""
+"Si l'objet a plusieurs axes de rotation il faut faire autant "
+"d'observations code 18. Chaque observation code 18 fait référence à un "
+"fichier *.axe* faisant le lien entre un point mesuré sur le terrain et un"
+" couple (cible, position)."
+msgstr ""
+
+#: ../../compositeobs.rst:97
+msgid "Exemple : fichier.axe"
+msgstr ""
+
+#: ../../compositeobs.rst:109
+msgid ""
+"Ici les points observés en topométrie sont A1, A2, A3 et A4. Ils "
+"correspondent tous à une même cible posée sur l'appareil, qui a été "
+"tourné dans 4 positions."
+msgstr ""
+
+#: ../../compositeobs.rst:113
+msgid ""
+"La dernière ligne sert à donner une contrainte sur la position du point "
+"de la station le long de l'axe : le vecteur entre le point de la station "
+"et le point donné après \"L\" doit être perpendiculaire au vecteur de "
+"l'axe."
+msgstr ""
+
+#: ../../compositeobs.rst:118
+msgid ""
+"Chaque cible décrit un cercle quand l'appareil bouge. Ces cercles ont "
+"tous le centre qui passe par l'axe de rotation et chacun est "
+"perpendiculaire à cet axe."
+msgstr ""
+
+#: ../../compositeobs.rst:122
+msgid ""
+"Les sigmas donnés dans le fichier *.axe* correspondent à la stablilité "
+"des cercles : stabilité du rayon et stabilité de la perpendiculaire."
+msgstr ""
+
+#: ../../compositeobs.rst:125
+msgid ""
+"Comme pour toutes les observations, attention à ne pas utiliser de sigmas"
+" trop petits. Si une observation tire trop, son résidu normalisé baisse "
+"plus rapidement que le sigma, ce qui pousse à baisser encore le sigma. "
+"Pour éviter cela on peut veiller à ce que la redondance des observations "
+"ne soit pas trop basse (donc qu'elles aient un sigma assez grand)."
+msgstr ""
+
+#: ../../compositeobs.rst:132
+msgid ""
+"Le point donné pour le code 18 représente un point de l'axe de rotation. "
+"Il n'est déterminé par ces observations que dans 2 directions. Il faut "
+"donc ajouter d'autres observations pour permettre au calcul de passer "
+"(par exemple pour un axe proche de la verticale on ajouterait un code 4)."
+msgstr ""
+
+#: ../../compositeobs.rst:138
+msgid "On peut utiliser le même point pour deux axes qui s'intersectent."
+msgstr ""
+
+#~ msgid "Utilisation (fichier *.obs*) :"
+#~ msgstr ""
+
+#~ msgid "11 pt @fichier.xyz"
+#~ msgstr ""
+
+#~ msgid "11 pt @fichier.xyz 1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le point donné après le code 11"
+#~ " est l’origine du sous-repère. Les"
+#~ " observations de la bascule sont "
+#~ "stockées dans un fichier *.xyz*. Un "
+#~ "\"1\" au bout de la ligne permet"
+#~ " de dire que le sous-repère a"
+#~ " son axe Z aligné avec la "
+#~ "verticale du chantier au point origine."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On ne peut pas mettre de mesure"
+#~ " \"0,0,0\" dans le fichier *.xyz*. Ce"
+#~ " point est l’origine du sous-repère,"
+#~ " celui donné dans le fichier *.obs*,"
+#~ " inutile de le rappeler dans le "
+#~ "*.xyz*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le cas d’un ajustement des "
+#~ "résultats d’un ancien chantier Comp3D, "
+#~ "il faut renommer le fichier *.3d* "
+#~ "en *.xyz* (pour travailler en "
+#~ "coordonnées cartésiennes)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les fichiers *.xyz* utilisés avec le "
+#~ "code 12 représentent un sous-repère "
+#~ "en coordonnées polaires à ajuster sur"
+#~ " le chantier. Il est également "
+#~ "possible de forcer le sous-repère "
+#~ "à être verticalisé avec un \"1\" "
+#~ "en bout de ligne."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour chaque point mesuré, son nom, "
+#~ "ses mesures laser (angle pseudo-"
+#~ "horizontal, angle pseudo-vertical origine "
+#~ "à l’horizontale, distance), sa précision "
+#~ "angulaire, absolue en distance, relative "
+#~ "en distance. On peut aussi avoir 8"
+#~ " ou 9 données : nom, mesures "
+#~ "laser, sa précision angulaire, définition "
+#~ "de cible, absolue en distance, relative"
+#~ " en distance et la hauteur visée "
+#~ "(dans le repère terrain) si nécessaire."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour chaque point mesuré, son nom, "
+#~ "ses mesures (angle pseudo-horizontal, "
+#~ "angle pseudo-vertical origine à "
+#~ "l’horizontale, distance), sa/ses précision(s)."
+#~ msgstr ""
+
+#~ msgid "Détermination d’axes de rotation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Avec les observations de code 18 "
+#~ "on peut chercher à déterminer des "
+#~ "axes de rotation (par exemple de "
+#~ "téléscopes) en mesurant des cibles "
+#~ "fixées sur la structure et ce dans"
+#~ " plusieurs positions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si la structure a plusieurs axes "
+#~ "de rotation il faut les séparer "
+#~ "dans les déplacements et dans le "
+#~ "calcul."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Un fichier *.axe* décrit les points "
+#~ "du calcul topométrique correspondants aux "
+#~ "différentes cibles aux différentes positions."
+#~ msgstr ""
+
+#~ msgid "18 pt @fichier.axe"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ici les points observés en topométrie"
+#~ " sont A1, A2, A3 et A4. Ils "
+#~ "correspondent tous à une même cible "
+#~ "posée sur un appareil. L’appareil a "
+#~ "été tourné dans 4 positions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La dernière ligne sert à donner "
+#~ "une contrainte sur la position du "
+#~ "point de la station le long de "
+#~ "l’axe : le vecteur entre le point"
+#~ " de la station et le point "
+#~ "donné après \"L\" doit être "
+#~ "perpendiculaire au vecteur de l’axe."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Chaque cible décrit un cercle quand "
+#~ "l’appareil bouge. Ces cercles ont tous"
+#~ " le centre qui passe par l’axe "
+#~ "de rotation et chacun est "
+#~ "perpendiculaire à cet axe."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Comme pour toutes les observations, "
+#~ "attention à ne pas utiliser de "
+#~ "sigmas trop petits. Si une observation"
+#~ " tire trop, son résidu normalisé "
+#~ "baisse plus rapidement que le sigma, "
+#~ "ce qui pousse à baisser encore le"
+#~ " sigma. Pour éviter cela on peut "
+#~ "veiller à ce que la redondance des"
+#~ " observations ne soit pas trop basse"
+#~ " (donc qu’elles aient un sigma assez"
+#~ " grand)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le point donné pour le code 18 "
+#~ "représente un point de l’axe de "
+#~ "rotation. Il n’est déterminé par ces "
+#~ "observations que dans 2 directions. Il"
+#~ " faut donc ajouter d’autres observations"
+#~ " pour permettre au calcul de passer"
+#~ " (par exemple pour un axe proche "
+#~ "de la verticale on ajouterait un "
+#~ "code 4)."
+#~ msgstr ""
+
+#~ msgid "On peut utiliser le même point pour deux axes qui s’intersectent."
+#~ msgstr ""
+

@@ -1,0 +1,15 @@
+*B0 B1 B2 B3 B4 : steps on a ladder with constant step height
+*B0 is constrained, B0-B4 is given in obs
+5 B0 100 100 10 0 0 0.001
+4 B1 100 100 10 * needed for CAP
+
+* A0 - A3 are aligned points with constant dist
+* obs 4 and 15 for alignment, A0-A3 dist is given
+
+1 A0 100 90 10 0.001 0.001 0.001
+0 A1 101 90 10 0.001 0.001 0.001 * no CAP for 4, 15, 22
+0 A2 102.9 90 10 0.001 0.001 0.001
+0 A3 103 90 10 0.001 0.001 0.001
+
+
+

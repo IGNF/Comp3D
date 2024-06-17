@@ -1,0 +1,796 @@
+/**
+ * Copyright (c) Institut national de l'information géographique et forestière https://www.ign.fr/
+ *
+ * File main authors:
+ *  - JM Muller
+ *  - S Gonnet
+ *  - P Bouquet
+ *
+ * This file is part of Comp3D: https://github.com/IGNF/Comp3D
+ *
+ * Comp3D is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+ * Comp3D is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty
+ * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License along with Comp3D. If not, see <https://www.gnu.org/licenses/>.
+ */
+
+html, body {
+    margin :0;
+}
+
+
+#container {
+    float:left;
+    display:inline-block;
+    width: 100%;
+    margin-top:10px;
+}
+
+
+#sideBar{
+    position: fixed;
+
+    margin-top: -10px;
+    margin-right: 10px;
+    float:left;
+    width:15vw;
+    /* height: calc( 100vh - 100px ); */
+    height: calc( 100vh - 20px );
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    padding:10px 0px 10px 20px;
+    border-right: 1px solid #98be0e;
+    box-shadow: 3px 1px 16px 0px grey;
+    z-index: 9999;
+}
+
+
+#sideBar.collapsed {
+    max-width:80px;
+}
+
+#sideBar.collapsed > #table_of_content{
+    display:none;
+}
+
+#sideBar.collapsed > #table_of_content_mini{
+    display:block;
+}
+
+#table_of_content_mini {
+    display:none;
+}
+
+#logos {
+    display : flex;
+    flex-wrap: wrap;
+}
+
+#sideBar.collapsed > .menu_button {
+     transform: rotate(90deg);
+     transition : transform 0.5s;
+}
+
+#sideBar > .menu_button {
+     transition : transform 0.5s;
+}
+
+#main{
+    /* border-left: 1px solid #98be0e; */
+    padding:10px 20px;
+    transition: margin-left 0.5s; /* If you want a transition effect */
+    background-color: white;
+    /*overflow-y: scroll;*/
+    margin-left:16vw;
+    /*height: calc( 100vh - 30px );*/
+}
+
+#main.side_collapsed {
+    margin-left:90px;
+}
+
+/* The button used to open the sidebar */
+.menu_button {
+  cursor: pointer;
+  background-color: #98be0e;
+  color: white;
+  margin: 5px;
+  padding: 15px 15px;
+  border: none;
+}
+
+#logos img {
+    /* display:inline-block; */
+    width: 40%;
+    min-width:60px;
+    margin: 5px;
+    /* padding: 10px 15px; */
+}
+
+#report {
+    padding-left: 10px;
+}
+
+h2 {
+  /*scroll-margin-top: 35px;/* anchor link with sticky header */
+  /*margin-block-start: 42px;*/
+  border-bottom: 1px solid;
+}
+
+h2 a{
+	margin-left:10px;
+}
+
+h4{
+  margin-block-end: 0.5em;
+}
+
+h5{
+  margin-bottom: 5px;
+}
+
+
+div.button{
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 15px;
+  color: #98be0e;
+}
+
+
+
+
+/* ############# */
+/* notify  div   */
+/* ############# */
+#notify{
+  position:fixed;
+  top:0px;
+/*  left:0px;*/
+  margin-left: -19px;
+  width:84vw;
+  box-sizing:border-box;
+  color:white;
+  text-align:center;
+  background:rgba(0,0,0,.6);
+  overflow:hidden;
+  box-sizing:border-box;
+  transition:height .2s;
+  z-index: 9999;
+
+}
+#notify span{
+  vertical-align: middle;
+
+}
+.hide_notif{
+  height:0px;
+
+}
+
+.show_notif{
+  height:30px;
+  z-index: 9999;
+}
+
+
+
+/* ############# */
+/*    cursor     */
+/* ############# */
+.mouse_hand {
+  cursor: pointer;
+}
+
+
+
+
+/**********
+* Tables
+***********/
+
+.report_tables th {
+    overflow: hidden;
+    max-height: 35px; 
+    padding: 2px 2px;
+    background: #555;
+    color: #f1f1f1;
+    position: sticky;
+    top: 0px;
+    z-index:6666;
+
+}
+
+
+
+.report_tables th[sort_dir='desc']::before {
+    color:red;
+    font-family: math; /* bigger font */
+    font-weight: bold;
+    content:  "\2193\00a0"; /* ↓ with a space after */
+    display: inline;
+}
+
+.report_tables th[sort_dir='asc']::before {
+    color:red;
+    font-family: math; /* bigger font */
+    font-weight: bold;
+    content:  "\2191\00a0"; /* ↑ with a space after */
+    display: inline;
+}
+
+
+.report_tables:not(#ellips_table):not(#sim):not(#eq):not(#g0) th:first-child,
+.report_tables:not(#ellips_table):not(#sim):not(#eq):not(#g0) td:first-child {
+    display: none;
+}
+
+.report_tables tr:first-child {
+    max-height:20px;
+}
+
+
+/* Size table and colum */
+#observations_table {
+  max-width: 98%;
+}
+#observations_table th:nth-child(n+1):nth-child(-n+4){
+    min-width: 50px;
+    vertical-align: inherit;
+}
+
+
+tr:not(.filename) td {
+    font-weight: normal;
+    text-align: right;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td[field="code"],
+td[field="name"],
+td[field="from"],
+td[field="to"]{
+  text-align: left !important;
+  font-weight: bold !important;
+}
+
+
+th[field="normalized_residual"],
+th[field="residual_std"],
+th[field="standardized_residual"],
+th[field="redondancy"]  {
+  max-width: 100px;
+}
+
+th[field="sigma_a_posteriori"] span.value {
+    max-width:100px;
+}
+
+#init_coord_table {
+  min-width: 68%;
+}
+
+
+tr.veryhigh {
+  color: red;
+}
+
+tr.high {
+  color: #d96000;
+}
+
+tr.hide_sorting {
+    display:none;
+}
+
+tr.filename {
+  background-color:#CCC;
+  font-weight : bold;
+  text-align: center;
+}
+tr.inactive {
+  font-style : italic;
+  color: DimGrey;
+}
+
+tr {
+  scroll-margin-top: 70px; /* anchor link with sticky header */
+}
+
+#displa td:nth-child(2),
+#init_coord_table td:nth-child(2),
+#interv_table td:nth-child(2){
+    text-align: left;
+    font-weight: bold;
+}
+
+#observations_table tr:not(.filename) td:nth-child(n+1):nth-child(-n+4){
+    font-weight: bold;
+    text-align: left;
+}
+
+/* ############### */
+/* Residual Charts */
+/* ############### */
+
+/* Canvas width and height should be defined in JS to avoid aspect ratio problem */
+
+
+/* ################## */
+/* Similarities table */
+/* ################## */
+
+#sim {
+/*    border-collapse: collapse;*/
+    border-collapse: separate; /* Don't collapse */
+    border-spacing: 0;
+}
+
+
+#sim tr td {
+    border-left: 1px solid #b7b7b7;
+    border-bottom: 1px solid #b7b7b7;
+}
+
+#sim tr td.name {
+    font-weight: bold;
+    text-align: left;
+}
+
+#sim tr td:last-child {
+    border-right: 1px solid #b7b7b7;
+}
+
+#sim th {
+    border: 1px solid #b7b7b7;
+}
+
+/* ################## */
+/*     Axis table     */
+/* ################## */
+
+.axis_param_table {
+  font-size:medium;
+  border-bottom: 2px solid;
+  margin-block-end: 50px;
+}
+
+.axis_param_table th {
+    max-height: 35px;
+    padding: 2px 2px;
+    background: #555;
+    color: #f1f1f1;
+    top: 0px;
+    z-index:1;
+
+}
+
+/* ################## */
+/* Compensated coord table */
+/* ################## */
+
+#coord_comp_table td:nth-child(2){
+    text-align: left;
+    font-weight: bold;
+}
+
+#coord_comp_table .grey {
+    font-style : italic;
+    color: DimGrey;
+}
+
+/* ################## */
+/* Ellips table */
+/* ################## */
+
+/*just first column has rowspan*/
+#ellips_table [rowspan]{
+    text-align: left;
+    font-weight: bold;
+}
+
+/* ############# */
+/*    td hover */
+/* ############# */
+
+table:not(#residuals_charts):not(#dist_residuals_charts_type):not(#sim):not(#ellips_table):not(.axis_param_table) tr:hover td {
+    background: #ffeded;
+    font-weight:bold;
+}
+
+
+td span.foldable{
+    text-align:right;
+
+}
+
+th span.folded,
+td span.folded{
+    display: none;
+}
+
+td span.small_unicode{
+    font-size: 10px;
+}
+
+
+[pre]::before  {
+  content: attr(pre);
+  font-weight : normal;
+  color:#777;
+  display: inline;
+}
+
+[post]::after {
+  content: attr(post);
+  font-weight : normal;
+  color:#777;
+  display: inline;
+}
+
+[warn_post]::after {
+  content: attr(warn_post);
+  font-weight : bold;
+  color:red;
+}
+
+
+/***
+* tooltip
+***/
+span.tooltiptext {
+   display: none; /* Hide tooltip. */
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+td span.tooltip_name{
+    font-weight : bold;
+    text-align: center;
+}
+
+
+.report_tables td span.comment{
+    color: #a64906;
+    font-size : 0.9em;
+    font-style:italic;
+    font-weight : normal;
+}
+
+td span.tooltip_fold{
+    color: #23536f;
+    text-align: center;
+    font-weight: normal;
+    font-style:italic;
+}
+
+div.button:hover span.tooltip span.tooltiptext,
+tr td:hover span.tooltip span.tooltiptext  {
+    display: inline; /* On affiche l'infobulle. */
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    background: white;
+    border: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 6px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    white-space:nowrap;
+    z-index:9999;
+    /* animation-direction: reverse; */
+/*    -webkit-animation: opentooltip 4.5s 2 alternate forwards;
+    animation: opentooltip 4.5s 2 alternate forwards ;*/
+    opacity: 1;
+    font-size: small;
+    color: black;
+}
+
+
+
+@keyframes opentooltip {
+    0%   {opacity: 0.3;}
+    90%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes opentooltip {
+    0%   {opacity: 0.3;}
+    90%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+
+
+
+
+td.mask {
+  white-space: nowrap;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 6px;
+  cursor: pointer;
+}
+
+td.hand, th.hand {
+  cursor: pointer;
+}
+
+.graph {
+  width: 70%;
+  height: 80%;
+}
+
+
+
+#graph {
+  width: 1000px;
+  height: 500px;
+  margin: 20px auto 0 auto;
+}
+
+td {
+  /*width: 100px;*/
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+
+}
+
+
+td.name, th.name {
+  font-weight: bold;
+  text-align: left;
+}
+
+td.code, th.code {
+  font-weight: bold;
+  text-align: left;
+  max-width: 75px;
+}
+
+th.small {
+  width: 50px;
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+input.small {
+  vertical-align: inherit;
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 1px
+}
+
+img {
+  vertical-align: middle;
+}
+
+td.inactive {
+  font-style : italic;
+  color: blue;
+}
+
+tr.unsaved {
+  background-color:#81C7C3 !important;
+}
+
+tr.inactive {
+  font-style : italic;
+  color: DimGrey;
+}
+
+tr.filename td {
+  background-color:#CCC;
+  font-weight : bold;
+  text-align: center;
+}
+
+tr {
+  font-family: monospace;
+  background-color: white;
+}
+table:not(#sim):not(#ellips_table):not(.axis_param_table):not(#cart2geoc) tr:nth-child(even) {
+  background-color:#DDE;
+}
+
+tr.variance_punk td[field="sigma_total"]{
+  font-style: italic;
+  font-weight: bold;
+}
+
+th.likedt {
+  text-align: left;
+  color: green;
+  font-weight: normal;
+  padding: 0;
+  font-family: Verdana, Helvetica, sans-serif, Loma;
+}
+
+dl.inline-flex {
+  display: flex;
+  font-family: Verdana, Helvetica, sans-serif, Loma;
+  font-size: 15px;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+dt {
+  float: left;
+  width: 30%;
+  color: green;
+  margin: 0pt;
+  padding: 0;
+  margin: 0;
+}
+
+dd {
+  float: left;
+  width: 70%;
+  margin-left: auto;
+  text-align: left;
+  margin-bottom: 10pt;
+}
+
+p.footer {
+  text-align: center;
+  color: grey;
+  margin-top: 30px;
+}
+
+
+
+td {
+   position: relative;
+   /*color: black;*/
+   text-decoration: none;
+}
+
+
+table:not(.report_tables) td span.tooltip {
+   display: none; /* On masque l'infobulle.*/
+}
+
+
+table:not(.report_tables) td:hover {
+   background: none;  /*Correction d'un bug d'Internet Explorer.*/
+   z-index: 500; /* On définit une valeur pour l'ordre d'affichage.*/
+   font-weight : bold;
+}
+
+
+table:not(.report_tables) td:hover span.tooltip {
+   display: inline;  /*On affiche l'infobulle.*/
+   position: absolute;
+   top: 30px;  /*On positionne notre infobulle.*/
+   left: 20px;
+   background: white;
+   border: 1px solid black;
+   border-left: 1px solid black;
+   border-radius: 6px;
+   text-align: center;
+   padding: 5px 5px 5px 5px;
+   font-weight : bold;
+   white-space:nowrap;
+   z-index: 10;
+}
+
+span.tooltipp {
+  position: absolute;
+  display: inline;
+}
+
+span.tooltipptext {
+  visibility: hidden;
+  width: 600px;
+  background: white;
+  border: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 4px 4px 4px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-weight : bold;
+  font-size: 13px;
+  z-index: 10;
+}
+
+span.tooltipp:hover span.tooltipptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sum_red {
+   color:#777;
+   font-weight : normal;
+}
+
+.av_red {
+   color:#000080;
+   font-weight : normal;
+   font-style : italic;
+}
+
+.warn_red {
+   color:red;
+}
+
+td span.file {
+   color:#777;
+   font-weight : normal;
+}
+
+td span.fold {
+   color:#000080;
+   font-weight : normal;
+   font-style : italic;
+}
+
+/*td span.comment {
+   color:#777;
+   font-style : italic;
+   font-weight : normal;
+}*/
+
+#mapid {
+   height: 900px;
+   width: 100%;
+   outline: 2px midnightblue outset;
+   background: ghostwhite;
+}
+
+.comp-tooltips {
+  font-weight : bold;
+  background: #fffa;
+  border: 0;
+  box-shadow: none;
+  padding: 0px 2px;
+  left : 0.1em;
+  top: 0.3em;
+  /*text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;*/
+}
+
+.leaflet-tooltip-left.comp-tooltips::before {
+  border-left-color: #0000;
+}
+
+.leaflet-tooltip-right.comp-tooltips::before {
+  border-right-color: #0000;
+}
+
+.map-info{
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background: #fffd;
+  padding: 0 10px;
+}
+
+/*wait anim from https://365webresources.com/best-pure-css-loading-spinners/#single*/
+.spinner{
+  width: 4rem;
+  height: 4rem;
+  border-right: 3px solid #000;
+  border-radius: 50%;
+  animation: rotation .8s linear infinite;
+}
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

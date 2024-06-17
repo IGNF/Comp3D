@@ -1,0 +1,10 @@
+*4 A1 axe 0 0.001 0 0 0
+18 axe1 @obs1.axe
+
+18 axe2 @obs2.axe
+
+*9 axe1 axe2 0 1 0 0 0
+*4 axe1 axe2 0 1 0 0 0
+
+*3 axe1 axe2 0 0.0001 0 0 0
+

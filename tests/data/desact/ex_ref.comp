@@ -1,0 +1,1231 @@
+data=
+{
+	"COMP3D_COMMIT" : "v5.21rc3-308-g86248473-dirty",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2023 IGN France",
+	"COMP3D_LICENSE" : "Licensed to IGN/ENSG only",
+	"COMP3D_OPTIONS" : "QT SIM ",
+	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"all_data_files" : 
+	{
+		"0" : "ex.cor",
+		"1" : "ex.obs"
+	},
+	"all_forbidden_point_names" : null,
+	"all_point_names" : 
+	[
+		"a",
+		"b",
+		"c",
+		"d"
+	],
+	"all_uninitializable_point_names" : null,
+	"computation" : 
+	{
+		"Monte_Carlo_done" : false,
+		"all_parameters_names" : 
+		[
+			"c_z",
+			"d_z",
+			"a_x",
+			"a_y",
+			"a_z",
+			"a_G0_1",
+			"a_G0_2",
+			"b_x",
+			"b_y",
+			"b_z"
+		],
+		"all_sigma0" : 
+		[
+			null
+		],
+		"chi2_test" : 
+		{
+			"DOF" : -2,
+			"confidence" : 0.98999999999999999,
+			"max" : null,
+			"min" : null
+		},
+		"compensation_done" : false,
+		"computation_duration" : "00:00:00.000413",
+		"computation_start" : "2023-Jun-02 09:21:19.579585",
+		"internal_constraints" : false,
+		"internal_constraints_obs" : [],
+		"interrupted" : true,
+		"inverted_matrix" : false,
+		"kernel" : 
+		[
+			{
+				"a_G0_1" : 
+				{
+					"num_pt" : 0,
+					"val" : 1.0
+				}
+			},
+			{
+				"a_G0_2" : 
+				{
+					"num_pt" : 0,
+					"val" : 1.0
+				}
+			},
+			{
+				"c_z" : 
+				{
+					"num_pt" : 2,
+					"val" : 1.0
+				},
+				"d_z" : 
+				{
+					"num_pt" : 3,
+					"val" : 1.0
+				}
+			}
+		],
+		"messages_computation" : "<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;Linear application rank deficiency or imbalanced matrix (3 constraints are missing)!</font><br/>\n<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;Kernel base:</font><br/>\n<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 a_G0_1 </font><br/>\n<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 a_G0_2 </font><br/>\n<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 c_z + d_z </font><br/>\n<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;The system has infinite solutions!</font><br/>\n<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;Normal matrix stability test failed!</font><br/>\n<font color=red>&nbsp;&nbsp;&nbsp;&nbsp;Error during computation.</font><br/>\n",
+		"messages_read_config" : "",
+		"messages_read_data" : "Reading COR...<br/>\nRead file ex.cor...<br/>\nReading OBS...<br/>\nRead file ex.obs...<br/>\nPoints setting...<br/>\nRead data finished.<br/>\nAll points are initialized.<br/>\nVertical deflection not used.<br/>\n",
+		"messages_set_least_squares" : "",
+		"nbr_active_obs" : 8,
+		"nbr_all_obs" : 29,
+		"nbr_iterations" : 1,
+		"nbr_parameters" : 10,
+		"projection" : 
+		{
+			"center_latitude" : 48.79999999999999,
+			"earth_model_radius" : 6380935.2757568145,
+			"geocent_def" : "+proj=geocent",
+			"input_proj_EPSG" : -1,
+			"input_proj_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0",
+			"input_proj_name" : "?",
+			"is_georef" : false,
+			"latlong_def" : "+proj=latlong",
+			"local_center_stereo" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"local_scale" : 1.0,
+			"stereo_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0"
+		},
+		"rank_deficiency" : 3,
+		"sigma_0_final" : null,
+		"sigma_0_init" : null,
+		"unit_name" : "g",
+		"use_vertical_deflection" : false
+	},
+	"config" : 
+	{
+		"center_latitude" : 48.799999999999997,
+		"clean_outputs" : false,
+		"compute_type" : 0,
+		"convergence_criterion" : 0.001,
+		"coord_cov_file" : "",
+		"description" : "",
+		"display_map" : true,
+		"files_unit" : 1,
+		"force_iterations" : 0,
+		"internal_constraints" : false,
+		"invert_matrix" : false,
+		"lang" : "en",
+		"local_center" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"max_iterations" : 100,
+		"misc_metadata" : null,
+		"name" : "ex",
+		"nb_digits" : 4,
+		"proj_def" : "?",
+		"refraction" : 0.12,
+		"root_COR_file" : "ex.cor",
+		"root_OBS_file" : "ex.obs",
+		"use_ellips_height" : true,
+		"use_proj" : false
+	},
+	"config_file" : "/home/JMMuller/prog/comp3d_cpp/tests/data/desact/ex_ref.comp_test.comp",
+	"other_stations" : null,
+	"points" : 
+	{
+		"a" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				0.0,
+				10.000000001522697,
+				-7.847080167877607e-06
+			],
+			"coord_read" : 
+			[
+				0.0,
+				10.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 4,
+			"number" : 0,
+			"params" : 
+			{
+				"a_x" : 
+				{
+					"rank" : 2,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				},
+				"a_y" : 
+				{
+					"rank" : 3,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 9.9999999999938609
+				},
+				"a_z" : 
+				{
+					"rank" : 4,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				}
+			},
+			"sigmas_init" : 
+			[
+				0.001,
+				0.001,
+				0.001
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 4,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.0,
+							"number" : 0,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 0,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "a",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 9.9999999999938609,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.0,
+							"number" : 1,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 9.9999999999938609,
+							"rank" : 1,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "a",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.0,
+							"number" : 2,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 2,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "a",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 4,
+							"comment" : "for redondancy",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.0,
+							"number" : 6,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : 3,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 1,
+							"comment" : "",
+							"computed_value" : 9.9999999999928395,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"normalized_residual" : 9.9999999999928395,
+							"number" : 10,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 9.9999999999928395,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 2,
+							"comment" : "",
+							"computed_value" : 9.9999999999938609,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 9,
+							"normalized_residual" : 9.9999999999938609,
+							"number" : 11,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 9.9999999999938609,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 9.9999999999928395,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 10,
+							"normalized_residual" : 9.9999999999928395,
+							"number" : 12,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 9.9999999999928395,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 4,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 11,
+							"normalized_residual" : 0.0,
+							"number" : 13,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00004389875528,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 13,
+							"normalized_residual" : 100.00004389875528,
+							"number" : 15,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 100.00004389875528,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 8,
+							"comment" : "",
+							"computed_value" : 199.99999999999997,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 14,
+							"normalized_residual" : -199.99999999999997,
+							"number" : 16,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : -199.99999999999997,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 14,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 15,
+							"normalized_residual" : 0.0,
+							"number" : 17,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 15,
+							"comment" : "",
+							"computed_value" : -9.9999999999938609,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 15,
+							"normalized_residual" : -9.9999999999938609,
+							"number" : 18,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : -9.9999999999938609,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 1,
+							"comment" : "",
+							"computed_value" : 9.9999999999928395,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 19,
+							"normalized_residual" : 9.9999999999928395,
+							"number" : 20,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 9.9999999999928395,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 2,
+							"comment" : "",
+							"computed_value" : 9.9999999999938609,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 20,
+							"normalized_residual" : 9.9999999999938609,
+							"number" : 21,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 9.9999999999938609,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 9.9999999999928395,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 21,
+							"normalized_residual" : 9.9999999999928395,
+							"number" : 22,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 9.9999999999928395,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 4,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 22,
+							"normalized_residual" : 0.0,
+							"number" : 23,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00004389875528,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 24,
+							"normalized_residual" : 100.00004389875528,
+							"number" : 25,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 100.00004389875528,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 8,
+							"comment" : "",
+							"computed_value" : 199.99999999999997,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 25,
+							"normalized_residual" : -199.99999999999997,
+							"number" : 26,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : -199.99999999999997,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 14,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 26,
+							"normalized_residual" : 0.0,
+							"number" : 27,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 15,
+							"comment" : "",
+							"computed_value" : -9.9999999999938609,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 26,
+							"normalized_residual" : -9.9999999999938609,
+							"number" : 28,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : -9.9999999999938609,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 0,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"normalized_residual" : 0.0,
+							"number" : 9,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 12,
+							"normalized_residual" : 0.0,
+							"number" : 14,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"a_G0_1" : 
+						{
+							"rank" : 5,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : 3.1415926535897931
+						}
+					},
+					"type" : "hz_unknown"
+				},
+				{
+					"nbr_active_obs" : 0,
+					"num" : 2,
+					"observations" : 
+					[
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 18,
+							"normalized_residual" : 0.0,
+							"number" : 19,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "a",
+							"instrument_height" : 0.0,
+							"line" : 23,
+							"normalized_residual" : 0.0,
+							"number" : 24,
+							"obs_azim" : 3.1415926535897931,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 1.0,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"a_G0_2" : 
+						{
+							"rank" : 6,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : 3.1415926535897931
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		},
+		"b" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"coord_read" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 4,
+			"number" : 1,
+			"params" : 
+			{
+				"b_x" : 
+				{
+					"rank" : 7,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				},
+				"b_y" : 
+				{
+					"rank" : 8,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				},
+				"b_z" : 
+				{
+					"rank" : 9,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				}
+			},
+			"sigmas_init" : 
+			[
+				0.001,
+				0.001,
+				0.001
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0,
+							"number" : 3,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 4,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0,
+							"number" : 4,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 5,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0,
+							"number" : 5,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 6,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : false,
+							"active_read" : false,
+							"code" : 4,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 0.0,
+							"number" : 7,
+							"obs_azim" : 1.5707963267948966,
+							"obs_length" : 9.9999999999928395,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : -1,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "c",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"c" : 
+		{
+			"code" : 4,
+			"code_name" : "1  -",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				9.9999999999938769,
+				-4.3249362161212375e-10,
+				-7.8236157279149937e-06
+			],
+			"coord_read" : 
+			[
+				10.0,
+				0.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 1,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 1,
+			"number" : 2,
+			"params" : 
+			{
+				"c_z" : 
+				{
+					"rank" : 0,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				}
+			},
+			"sigmas_init" : 
+			[
+				0.001,
+				0.001,
+				0.001
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 1,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 4,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "c",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 0.0,
+							"number" : 8,
+							"obs_azim" : 1.5707963267948966,
+							"obs_length" : 9.9999999999559961,
+							"obs_zen" : 1.5707970163549321,
+							"original_value" : 0.0,
+							"rank" : 7,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "d",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"d" : 
+		{
+			"code" : 4,
+			"code_name" : "1  -",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				19.999999999950973,
+				3.0879238182130147e-09,
+				-3.1297442884853061e-05
+			],
+			"coord_read" : 
+			[
+				20.0,
+				0.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 1,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 1,
+			"number" : 3,
+			"params" : 
+			{
+				"d_z" : 
+				{
+					"rank" : 1,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				}
+			},
+			"sigmas_init" : 
+			[
+				0.001,
+				0.001,
+				0.001
+			],
+			"stations" : []
+		}
+	}
+}

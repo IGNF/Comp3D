@@ -1,0 +1,9 @@
+*z axe 112.0 *plus tard on pourra fixer une coordonnee d'un point ?
+
+*cible pos   pt sigma_rayon  sigma_perp
+   1    1    B1    0.0001      0.0001
+   1    2    B2    0.0001      0.0001
+   1    3    B3    0.0001      0.0001
+   1    4    B4    0.0001      0.0001
+
+L axe1

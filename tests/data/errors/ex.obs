@@ -1,0 +1,23 @@
+8 b a   0.0   0.000001 0 0 0
+
+*4 c a 0.0001   0.001 0 0 0
+
+5 b a   0.0   0.000001 0 0 0 *pas code 7
+6 b a  100.001 0.001000 0 0 0
+6 b a  100.001 0.001 0 0 0
+6 b a  0.001 0 0 0 *champ mesure manquant
+10 b a  100.001 0.001 0 0 0 *code inexistant
+*6 b a  100.001 0 0 0 0 *sigma à 0
+6 b a  100.001   *manque 4 champs
+6 b a  100.001 0.001000  *manque 3 champs
+6 b a  100.001 0.001000 0 *manque 2 champs
+6 b a  100.001 0.001000 0 0 *manque 1 champ
+3 b a  10.001 0.001000 0 0 0
+3 b a  10.002 0.001000 0 0 0
+
+-3 b a  10.002 0.001000 0 0 0 *code interdit
+74563 b a  10.002 0.001000 0 0 0 *code inexistant
+
+
+@bilout.obs *fichier qui n'existe pas
+

@@ -1,0 +1,23 @@
+CXX = g++
+CXXFLAGS = -DUSE_AUTO -DADD_PROJ_CC -DADD_PROJ_NTF -DUSE_SIM -Isrc/ -std=c++11 -I/usr/local/proj61/include/
+LFLAGS = -no-pie -lboost_system -lboost_filesystem -lboost_date_time -lboost_regex -lboost_graph -lproj -lsqlite3 -L/usr/local/proj61/lib/
+EXE = Comp3d5_nonQt
+
+CXX_SRCS = $(wildcard src/*.cpp main.cpp) src/genere/git_revision.cpp
+OBJ_FILES = $(CXX_SRCS:.cpp=.o)
+
+.PHONY: src/genere/git_revision.o
+
+all: src/genere/git_revision.o $(OBJ_FILES)
+	$(CXX) $^ $(LFLAGS) -o $(EXE)
+
+src/genere/git_revision.o:
+	echo "const char *GIT_VERSION=\"$$(git describe --dirty)\""\; > src/genere/git_revision.cpp
+	$(CXX) -c  $(CXXFLAGS) src/genere/git_revision.cpp -o src/genere/git_revision.o
+
+clean:
+	rm -f $(OBJ_FILES)
+
+%.o: %.cpp
+	$(CXX) -c  $(CXXFLAGS) $< -o $@
+

@@ -1,0 +1,29 @@
+8 StA T1 0 0.0001   * azimuth to fix orientation of figure
+
+4 LvlRef StA 2.500 0.0002  * leveling between ground points
+
+* for StA, total station is 1.5m above ground point
+7 StA StB   0 0.001 0 1.5 0  * horizontal reference
+5 StA T1  300 0.001 0 1.5 0  * horizontal angle
+5 StA T2  350 0.001 0 1.5 0
+
+6 StA StB  100 0.001 0 1.5 0  * vertical angle
+6 StA T1   100 0.001 0 1.5 0
+6 StA T2   100 0.001 0 1.5 0
+
+3 StA StB  10 0.001 0 1.5 0  * distance
+3 StA T1   10    0.001 0 1.5 0
+3 StA T2   14.14 0.001 0 1.5 0
+
+* StB has no ground point
+7 StB StA  0 0.001 0 0 1.5  * the target is 1.5m above ground point
+5 StB T1  50 0.001   * horizontal angle
+5 StB T2 100 0.001 
+
+6 StB StA  100 0.001 0 0 1.5   * vertical angle
+6 StB T1   100 0.001 
+6 StB T2   100 0.001 
+
+*3 StB StA  10 0.001 0 0 1.5   * distance
+*3 StB T1   14.14 0.001 
+*3 StB T2   10    0.001 

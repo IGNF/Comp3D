@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-04 09:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Language: fr\n"
+"X-Source-Language: C\n"
+
+#: ../../index.rst:3
+msgid "Comp3D Documentation"
+msgstr "Documentation de Comp3D"
+
+#: ../../index.rst:5
+msgid ""
+"Welcome to IGN's topometric compensation software Comp3D's documentation."
+msgstr ""
+"Bienvenue sur la documentation du logiciel de compensation topométrique de "
+"l'IGN Comp3D."
+
+#: ../../index.rst
+msgid "Version"
+msgstr "Version"
+
+#: ../../index.rst:8
+msgid "|c3_version|"
+msgstr "|c3_version|"
+
+#: ../../index.rst
+msgid "Author"
+msgstr "Auteur"
+
+#: ../../index.rst:10
+msgid "travaux.speciaux@ign.fr"
+msgstr "travaux.speciaux@ign.fr"
+
+#: ../../index.rst
+msgid "Date"
+msgstr "Date"
+
+#: ../../index.rst:12
+msgid "|date|"
+msgstr "|date|"

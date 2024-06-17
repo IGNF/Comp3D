@@ -1,0 +1,9 @@
+#!/bin/bash
+# This `DEBIAN/postinst` script is run post-installation
+set -e
+
+LAST=$(ls /usr/bin/comp3d5v* | sed -e "s/rc/~rc/" | sort -V | tail -n 1  | sed -e "s/~rc/rc/" )
+
+echo "Create or update /usr/bin/comp3d5"
+ln -f -s ${LAST} /usr/bin/comp3d5
+

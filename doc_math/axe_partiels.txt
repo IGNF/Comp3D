@@ -1,0 +1,62 @@
+obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij):=(li*a+x0-xij)**2 + (li*b+y0-yij)**2 + (li*c+z0-zij)**2 - ri**2;
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),a);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),b);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),c);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),x0);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),y0);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),z0);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),li);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),ri);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),xij);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),yij);
+diff(obs(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),zij);
+
+$\frac{\partial{o1}}{\partial{a}}         = 2 li (-x_{ij}+x_0+a \lambda_i)$
+$\frac{\partial{o1}}{\partial{b}}         = 2 li (-y_{ij}+y_0+b \lambda_i)$
+$\frac{\partial{o1}}{\partial{c}}         = 2 li (-z_{ij}+z_0+c \lambda_i)$
+$\frac{\partial{o1}}{\partial{x_0}}       = 2 (-x_{ij}+x_0+a \lambda_i)$
+$\frac{\partial{o1}}{\partial{y_0}}       = 2 (-y_{ij}+y_0+b \lambda_i)$
+$\frac{\partial{o1}}{\partial{z_0}}       = 2 (-z_{ij}+z_0+c \lambda_i)$
+$\frac{\partial{o1}}{\partial{\lambda_i}} = 2 c (-z_{ij}+z_0+c \lambda_i)+2 b (-y_{ij}+y_0+b \lambda_i)+2 a (-x_{ij}+x_0+a \lambda_i)$
+$\frac{\partial{o1}}{\partial{\rho_i}}    = -2 \rho_i$
+$\frac{\partial{o1}}{\partial{x_{ij}}}    = -2 (-x_{ij}+x_0+a \lambda_i)$
+$\frac{\partial{o1}}{\partial{y_{ij}}}    = -2 (-y_{ij}+y_0+b \lambda_i)$
+$\frac{\partial{o1}}{\partial{z_{ij}}}    = -2 (-z_{ij}+z_0+c \lambda_i)$
+
+
+
+
+
+obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij):=a*(li*a+x0-xij) + b*(li*b+y0-yij) + c*(li*c+z0-zij);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),a);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),b);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),c);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),x0);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),y0);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),z0);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),li);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),ri);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),xij);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),yij);
+diff(obs2(a,b,c,x0,y0,z0,li,ri,xij,yij,zij),zij);
+
+$\frac{\partial{o2}}{\partial{a}}         = -x_{ij}+x0+2 a \lambda_i$
+$\frac{\partial{o2}}{\partial{b}}         = -y_{ij}+y0+2 b \lambda_i$
+$\frac{\partial{o2}}{\partial{c}}         = -z_{ij}+z0+2 c \lambda_i$
+$\frac{\partial{o2}}{\partial{x_0}}       = a$
+$\frac{\partial{o2}}{\partial{y_0}}       = b$
+$\frac{\partial{o2}}{\partial{z_0}}       = c$
+$\frac{\partial{o2}}{\partial{\lambda_i}} = c^2+b^2+a^2$
+$\frac{\partial{o2}}{\partial{\rho_i}}    = 0$
+$\frac{\partial{o2}}{\partial{x_{ij}}}    = -a$
+$\frac{\partial{o2}}{\partial{y_{ij}}}    = -b$
+$\frac{\partial{o2}}{\partial{z_{ij}}}    = -c$
+
+
+
+On regarde la formule de distances suivant la pente (code 3), y'a un doute :
+obs3(Xa,Ya,Za,Xb,Yb,Zb,R):=sqrt((Za-Zb)^2+4*Za*Zb*(sin(asin(sin(sqrt((Xb/R-Xa/R)^2+(Yb/R-Ya/R)^2)))/2))^2);
+diff(obs3(Xa,Ya,Za,Xb,Yb,Zb,R),Za);
+diff(obs3(Xa,Ya,Za,Xb,Yb,Zb,R),Zb);
+
+

@@ -1,0 +1,4 @@
+On fait un calcul simple géoref, on exporte le sinex pour avoir les coordonnées des points en geocentrique et la mat de var/covar.
+Dans le fichier .bas on écrit la diff entre les coordonnées géocentriques du sinex.
+Comme on veut juste la précision relative entre les 2 points on fixe le point de base et on récupère juste la partie qu'il faut de la matrice de var/covar.
+

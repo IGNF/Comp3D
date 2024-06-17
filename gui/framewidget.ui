@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FrameWidget</class>
+ <widget class="QGroupBox" name="FrameWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>540</width>
+    <height>180</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="title">
+   <string>Frame</string>
+  </property>
+  <property name="flat">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="5" column="2">
+    <widget class="QRadioButton" name="radioButton_local">
+     <property name="text">
+      <string>&amp;Local Frame</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="6">
+    <widget class="QDoubleSpinBox" name="localManualYSpinBox">
+     <property name="toolTip">
+      <string>Center is substracted from point coordinates during the adjustment</string>
+     </property>
+     <property name="suffix">
+      <string> m</string>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="minimum">
+      <double>-10000000.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>10000000.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1000.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <widget class="QDoubleSpinBox" name="localManualXSpinBox">
+     <property name="toolTip">
+      <string>Center is substracted from point coordinates during the adjustment</string>
+     </property>
+     <property name="suffix">
+      <string> m</string>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="minimum">
+      <double>-10000000.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>10000000.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1000.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QLabel" name="label_17">
+     <property name="toolTip">
+      <string>Latitude in decimal degrees to determine the local curvature of the ellipsoid</string>
+     </property>
+     <property name="text">
+      <string>Center Latitude</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="QLabel" name="label_18">
+     <property name="text">
+      <string>CRS Name</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Local Center Coordinates</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Proj Definition</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="4" colspan="3">
+    <widget class="QComboBox" name="comboBoxProj"/>
+   </item>
+   <item row="11" column="4" colspan="3">
+    <widget class="QLineEdit" name="CRSLineEdit">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;Examples :
+&lt;p&gt;epsg:32719&lt;/p&gt;
+&lt;p&gt;IGNF:LAMB1&lt;/p&gt;
+&lt;p&gt;+proj=lcc +lon_0=-90 +lat_1=33 +lat_2=45&lt;/p&gt;
+&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="5">
+    <widget class="QLabel" name="label_12">
+     <property name="toolTip">
+      <string>Center is substracted from point coordinates during the adjustment</string>
+     </property>
+     <property name="text">
+      <string notr="true">Y</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4">
+    <widget class="QDoubleSpinBox" name="latitudeDoubleSpinBox">
+     <property name="toolTip">
+      <string>Latitude in decimal degrees to determine the local curvature of the ellipsoid</string>
+     </property>
+     <property name="suffix">
+      <string>°</string>
+     </property>
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="minimum">
+      <double>-90.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>90.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="value">
+      <double>45.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QRadioButton" name="radioButton_proj">
+     <property name="text">
+      <string>&amp;Georeferenced Frame</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QLabel" name="label_11">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Center is substracted from point coordinates during the adjustment&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string notr="true">X</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>localManualXSpinBox</tabstop>
+  <tabstop>localManualYSpinBox</tabstop>
+  <tabstop>radioButton_local</tabstop>
+  <tabstop>latitudeDoubleSpinBox</tabstop>
+  <tabstop>radioButton_proj</tabstop>
+  <tabstop>comboBoxProj</tabstop>
+  <tabstop>CRSLineEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

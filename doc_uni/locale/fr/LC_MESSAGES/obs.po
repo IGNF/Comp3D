@@ -1,0 +1,691 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-29 09:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../obs.rst:5
+msgid "OBS File"
+msgstr ""
+
+#: ../../obs.rst:8
+msgid "Les fichiers des observations ont l'extension *.obs*."
+msgstr ""
+
+#: ../../obs.rst:10
+msgid "Chaque ligne du fichier d'observation est soit :"
+msgstr ""
+
+#: ../../obs.rst:12
+msgid "vide ou un commentaire ;"
+msgstr ""
+
+#: ../../obs.rst:14
+msgid "une observation simple ;"
+msgstr ""
+
+#: ../../obs.rst:16
+msgid "une observation composée ;"
+msgstr ""
+
+#: ../../obs.rst:18
+msgid "une inclusion d'un sous-fichier *.obs* (``@subname.obs``)."
+msgstr ""
+
+#: ../../obs.rst:20
+msgid "Les observation ont pour premier champ le code de la mesure."
+msgstr ""
+
+#: ../../obs.rst:22
+msgid "Pour les observations simples :"
+msgstr ""
+
+#: ../../obs.rst:24
+msgid "1 ou 3 : Distance suivant la pente réduite  de la météo."
+msgstr ""
+
+#: ../../obs.rst:26
+msgid "2 : Distance géodésique réduite au niveau de la mer entre repères."
+msgstr ""
+
+#: ../../obs.rst:28
+msgid "4 : Différence de niveau entre repères."
+msgstr ""
+
+#: ../../obs.rst:30
+msgid "5 : Angle horizontal dans un tour d'horizon."
+msgstr ""
+
+#: ../../obs.rst:32
+msgid "6 : Angle zénithal non corrigé de la réfraction."
+msgstr ""
+
+#: ../../obs.rst:34
+msgid "7 : Ouverture de tour d'horizon."
+msgstr ""
+
+#: ../../obs.rst:36
+msgid "8 : Azimut imposé."
+msgstr ""
+
+#: ../../obs.rst:38
+msgid "9 : Centrage planimétrique."
+msgstr ""
+
+#: ../../obs.rst:40
+msgid "14 : Différence d'est."
+msgstr ""
+
+#: ../../obs.rst:42
+msgid "15 : Différence de nord."
+msgstr ""
+
+#: ../../obs.rst:44
+msgid "Pour les observations composées :"
+msgstr ""
+
+#: ../../obs.rst:46
+msgid "11 : Sous-repère en coordonnées cartésiennes."
+msgstr ""
+
+#: ../../obs.rst:48
+msgid "12 : Sous-repère en coordonnées sphériques."
+msgstr ""
+
+#: ../../obs.rst:50
+msgid "18 : Détermination d'axe de rotation."
+msgstr ""
+
+#: ../../obs.rst:54
+msgid "Observations simples"
+msgstr ""
+
+#: ../../obs.rst:56
+msgid "Simple observations contains the following fields:"
+msgstr ""
+
+#: ../../obs.rst:58
+msgid ""
+":math:`code\\ from\\ to\\ value\\ \\sigma\\_abs\\ [\\sigma\\_rel\\ "
+"[station\\_height\\ target\\_height]]\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:60
+msgid ":math:`code`: code de l'observation ;"
+msgstr ""
+
+#: ../../obs.rst:62
+msgid ":math:`from`: le nom de la station ;"
+msgstr ""
+
+#: ../../obs.rst:64
+msgid ":math:`to`: le nom du point visé ;"
+msgstr ""
+
+#: ../../obs.rst:66
+msgid ""
+":math:`value`: la valeur mesurée, en unité angulaire ou mètres suivant le"
+" type de mesure ;"
+msgstr ""
+
+#: ../../obs.rst:68
+msgid ""
+":math:`\\sigma\\_abs`: la partie fixe de la précision estimée de cette "
+"mesure (si elle est négative, la mesure correspondante sera inactive, cf."
+" :ref:`deactivated-obs`) ;"
+msgstr ""
+
+#: ../../obs.rst:71
+msgid ""
+":math:`\\sigma\\_rel`: partie de la précision relative à la distance : "
+":math:`\\sigma\\_abs + \\sigma\\_rel \\times distance` pour les mesures "
+"linéaires, :math:`\\sigma\\_abs + \\sigma\\_rel / distance` pour les "
+"mesures angulaires ;"
+msgstr ""
+
+#: ../../obs.rst:74
+msgid ":math:`station\\_height`: hauteur de station ;"
+msgstr ""
+
+#: ../../obs.rst:76
+msgid ":math:`target\\_height`: hauteur de voyant."
+msgstr ""
+
+#: ../../obs.rst:79
+msgid ""
+"Pour un même tour il est d'usage de classer les observations par station "
+"puis par type d'observation , mais cela n'est pas obligatoire."
+msgstr ""
+
+#: ../../obs.rst:82
+msgid ""
+"Le centrage planimétrique (code 9) est une pseudo-observation, remplacée "
+"par une observation code 14 et une code 15. La valeur mesurée n'est pas "
+"prise  en compte, elle est forcée à 0."
+msgstr ""
+
+#: ../../obs.rst:85
+msgid ""
+"Les ouvertures de tour (code 7) servent à ajouter une nouvelle inconnue "
+"d'orientation, toutes les mesures code 5 suivantes depuis la même station"
+" seront dans ce tour. Si un code 5 n'est pas précédé d'un code 7, il sera"
+" lui-même     consiéré comme l'ouverture d'un tour."
+msgstr ""
+
+#: ../../obs.rst:89
+msgid ""
+"Il est déconseillé d'utiliser les hauteurs de station et de voyant si une"
+" grande précision est recherchée car il n'est pas possible de donner une "
+"précision à ces hauteurs. Il faut dans ce cas dédoubler les points à "
+"chaque changement de hauteur, et utiliser un centrage (code 9) et une "
+"dénivelée (code 4) pour lesquels on peut définir une précision. For "
+"|more|, see :ref:`centering`."
+msgstr ""
+
+#: ../../obs.rst:98
+msgid "Exemple"
+msgstr ""
+
+#: ../../obs.rst:119
+msgid ""
+"La distance S1 S3 a été mesurée avec une précision de 1 mm + 0.0001*D, "
+"les angles horizontaux depuis S1 avec une précision de 2 mgr sur des "
+"cibles définies au millimètre."
+msgstr ""
+
+#: ../../obs.rst:127
+msgid "Équation de centrage"
+msgstr ""
+
+#: ../../obs.rst:135
+msgid ""
+"Le point T5 est centré sur 5 avec une précision de 3 mm en X et 0.1 mm en"
+" Y. La hauteur de T5 au dessus de 5 est 1.619 m avec une précision de 5 "
+"mm + 0.1 mm \\*D avec D la distance entre les coordonnées des points."
+msgstr ""
+
+#: ../../obs.rst:141
+msgid "Observations composées"
+msgstr ""
+
+#: ../../obs.rst:143
+msgid ""
+"Les observations composées représentent tout une station et font "
+"référence à des fichiers contenant les mesures faites depuis cette "
+"station."
+msgstr ""
+
+#: ../../obs.rst:147
+msgid "Sous-repère cartésien"
+msgstr ""
+
+#: ../../obs.rst:149
+msgid ""
+"Une station correspondant à un sous-repère cartésien (code 11) est "
+"décrite ainsi :"
+msgstr ""
+
+#: ../../obs.rst:151 ../../obs.rst:165
+msgid ":math:`code\\ from\\ @file.xyz\\ [1]\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:153
+msgid ""
+"Le fichier d'observations *.xyz* contient les coordonnées cartésiennes "
+"d'un ensemble de point dans un repère centré sur la station. Its synthax "
+"is described in :ref:`file_xyz_11`."
+msgstr ""
+
+#: ../../obs.rst:156 ../../obs.rst:170
+msgid ""
+"On peut ajouter un \"1\" en 4ème champ sur la ligne de station pour dire "
+"qu'elle est verticalisée, c'est-à-dire que le sous-repère a la même "
+"verticale que le repère global."
+msgstr ""
+
+#: ../../obs.rst:158 ../../obs.rst:172
+msgid ""
+"Une station correspondant à un sous-repère a 3 paramètres d'orientation "
+"sauf si elle est verticalisée (1 seul paramètre)."
+msgstr ""
+
+#: ../../obs.rst:161
+msgid "Sous-repère sphérique"
+msgstr ""
+
+#: ../../obs.rst:163
+msgid ""
+"Une station correspondant à un sous-repère sphérique (code 12) est "
+"décrite ainsi :"
+msgstr ""
+
+#: ../../obs.rst:167
+msgid ""
+"Le fichier d'observations *.xyz* contient les coordonnées cartésiennes "
+"d'un ensemble de point dans un repère centré sur la station. Its synthax "
+"is described in :ref:`file_xyz_12`."
+msgstr ""
+
+#: ../../obs.rst:175
+msgid "Axe de rotation"
+msgstr ""
+
+#: ../../obs.rst:177
+msgid ""
+"Une station correspondant à un axe de rotation (code 18) est décrite "
+"ainsi :"
+msgstr ""
+
+#: ../../obs.rst:179
+msgid ":math:`code\\ from\\ @file.axe\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:181
+msgid ""
+"Le fichier *.axe* contient la liste des points terrain correspondant à "
+"différentes cibles dans différentes positions. Its synthax is described "
+"in :ref:`file_axe`."
+msgstr ""
+
+#: ../../obs.rst:191
+msgid "Deactivate Observation"
+msgstr ""
+
+#: ../../obs.rst:193
+msgid ""
+"Observation can be temporarily deactivated in the |gui| (see "
+":ref:`gui_obs_activ`) for quick tests. To record the status of an "
+"observation, it must be done in the *.obs* file."
+msgstr ""
+
+#: ../../obs.rst:196
+msgid "On peut **désactiver** une observation en :"
+msgstr ""
+
+#: ../../obs.rst:198
+msgid "ajoutant un \"-\" devant le code d'observation ;"
+msgstr ""
+
+#: ../../obs.rst:200
+msgid ""
+"en mettant une précision négative : le résidu normalisé sera fourni par "
+"rapport à la valeur négative renseignée ;"
+msgstr ""
+
+#: ../../obs.rst:203
+msgid ""
+"Cette observation ne sera alors pas utilisée pour le calcul mais il sera "
+"possible de visualiser son résidu par rapport aux coordonnées compensées."
+" En pratique dans le fichier *.comp*, l'attribut *active* de cette "
+"observation sera renseigné à *false*."
+msgstr ""
+
+#: ../../obs.rst:208
+msgid ""
+"De plus, cette observation apparaîtra en gris italique dans le rapport "
+"*html*."
+msgstr ""
+
+#: ../../obs.rst:211
+msgid ""
+"Il est donc conseillé de désactiver une observation plutôt que de la "
+"commenter. Pour ne pas utiliser toutes les observations d'une station ou "
+"en lien avec un point, il est préférable de rendre le point interdit dans"
+" le fichier *cor* (cf. :ref:`cor-protocol`)."
+msgstr ""
+
+#: ../../obs.rst:216
+msgid "Exemple : station1.OBS"
+msgstr ""
+
+#: ../../obs.rst:229
+msgid "Observations et déviation de la verticale"
+msgstr ""
+
+#: ../../obs.rst:231
+msgid ""
+"Les mesures sont exprimées dans le repère de l'instrument : les mesures "
+"topométriques sont sensibles à la déviation de la verticale, mais pas les"
+" azimuts qui sont donnés par rapport au nord géographique et pas mesurés "
+"par un instrument bullé."
+msgstr ""
+
+#: ../../obs.rst:237
+msgid "Simulations"
+msgstr ""
+
+#: ../../obs.rst:239
+msgid ""
+"Dans le cas de simulations, on peut créer des fichiers d'observations "
+"fictifs sans avoir à donner de valeurs aux mesures. L'outil de création "
+"de fichiers *.obs* à partir d'une matrice d'intervisibilité sert à "
+"simplifier cette démarche. Voir ci-dessous."
+msgstr ""
+
+#: ../../obs.rst:244
+msgid ""
+"Les observations étant simulées, il faut renseigner les coordonnées "
+"approchées des points dans le fichier *cor*, même pour les points non "
+"contraints."
+msgstr ""
+
+#: ../../obs.rst:248
+msgid ""
+"Dans le cas des observations de type bascule (*.xyz*), il n'est pas "
+"nécessaire de donner de valeurs aux mesures. Les stations sont supposées "
+"orientées suivant la verticale. Il est toujours possible d'ajouter une "
+"contrainte pour dire qu'elles sont bullées."
+msgstr ""
+
+#~ msgid ""
+#~ "Le fichier ASCII des observations prend"
+#~ " l’extension *.obs*, avec une ligne "
+#~ "par mesure contenant nécessairement les "
+#~ "8 champs suivants :"
+#~ msgstr ""
+
+#~ msgid "Un code indiquant le type de mesure :"
+#~ msgstr ""
+
+#~ msgid "linéaire :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "1 ou 3 : Distance suivant la "
+#~ "pente (théodolite-voyant) réduite de la"
+#~ " météo."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "2 : Distance géodésique réduite au "
+#~ "niveau de la mer entre repères "
+#~ "(mise à l’échelle sur coordonnées "
+#~ "géodésiques)."
+#~ msgstr ""
+
+#~ msgid "4 : Différence de niveau entre repères (nivellement direct)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "9 : Centrage planimétrique. La valeur"
+#~ " mesurée n’est pas prise en compte"
+#~ " (forcée à 0). Les deux points "
+#~ "tendent à avoir les mêmes coordonnées"
+#~ " planimétriques ; le centrage altimétrique"
+#~ " peut être obtenu par le code 4"
+#~ " avec dénivelée nulle."
+#~ msgstr ""
+
+#~ msgid "14 : Différence d’est."
+#~ msgstr ""
+
+#~ msgid "angulaire :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "5 : Angle horizontal (tour d’horizon)"
+#~ " - chaque tour doit être précédé "
+#~ "d’une mesure sur référence (code 7)."
+#~ msgstr ""
+
+#~ msgid "7 : Référence de tour d’horizon - pas nécessairement 0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "8 : Azimut imposé (permet d’orienter "
+#~ "un réseau local par rapport au "
+#~ "nord géographique)."
+#~ msgstr ""
+
+#~ msgid "composée :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "11 : Changement de référentiel. Dans "
+#~ "ce cas, la ligne contient uniquement "
+#~ "le nom du point de station, et "
+#~ "la référence à un fichier contenant "
+#~ "les données de points de passage. "
+#~ "Si l’axe de l’appareil a été "
+#~ "verticalisé, on ajoutera un 1 en "
+#~ "fin de ligne (4ème champ)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "12 : Changement de référentiel pour "
+#~ "les tracker laser. Si l’axe de "
+#~ "l’appareil a été verticalisé, on "
+#~ "ajoutera un 1 en fin de ligne "
+#~ "(4ème champ)."
+#~ msgstr ""
+
+#~ msgid "18 : Détermination d’axe de rotation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est d’usage de classer les "
+#~ "observations par station puis par type"
+#~ " d’observation , mais cela n’est pas"
+#~ " obligatoire."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si aucun code 7 n’est renseigné "
+#~ "avant un code 5, le 1er code "
+#~ "5 sert de référence à la station."
+#~ msgstr ""
+
+#~ msgid "Pour les codes 1 à 8 ainsi que 14 et 15:"
+#~ msgstr ""
+
+#~ msgid "Le nom de la station."
+#~ msgstr ""
+
+#~ msgid "Le nom du point visé."
+#~ msgstr ""
+
+#~ msgid "La valeur mesurée :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "en grade et comprise entre -400 et"
+#~ " +400 pour les angles (codes 5,6,7,8"
+#~ " et 12) ;"
+#~ msgstr ""
+
+#~ msgid "en mètre pour les distances et dénivelées (codes 1,2,3,4,9 et 11)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La précision estimée de cette mesure "
+#~ "(si elle est négative, la mesure "
+#~ "correspondante sera inactive, cf. "
+#~ "`[deactivated-obs] <#deactivated-obs>`__). Cette"
+#~ " précision peut être composée de deux"
+#~ " nombres : P1 et P2. Si seul"
+#~ " P1 est donnée, il s’agit de la"
+#~ " précision absolue de la mesure. "
+#~ "L’usage de ces deux précisions est "
+#~ "différent suivant que l’on a affaire "
+#~ "à une mesure linéaire (codes 1 à"
+#~ " 4 et 9) ou angulaire (5 à "
+#~ "8)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Observation linéaire : P1 (en mètres)"
+#~ " repré­sente la partie constante de "
+#~ "la précision et P2 (sans unité) la"
+#~ " part proportionnelle à la distance. "
+#~ "La précision de la mesure sera "
+#~ "P1+P2*D."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Observation angulaire : P1 (en unité "
+#~ "d’angle) est la précision angulaire de"
+#~ " l’appareil alors que P2 (en mètres)"
+#~ " représente la définition linéaire de "
+#~ "l’objet pointé. La précision de la "
+#~ "mesure sera P1+P2/D."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La distance de pondération de P2 "
+#~ "est la distance horizontale, sauf pour"
+#~ " les visées zénithales, les distances "
+#~ "suivant la pente et les différences "
+#~ "d’est et de nord (codes 1, 3, "
+#~ "6, 14 et 15) où il s’agit de"
+#~ " la distance suivant la pente."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Facultatif (il faut avoir donné P1 "
+#~ "et P2 avant) : hauteur de station"
+#~ " et hauteur de voyant."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour le code 9, c’est la même "
+#~ "chose avec simplement les deux parties"
+#~ " de la précision qui représentent la"
+#~ " précision par composante planimétrique. Si"
+#~ " la deuxième est nulle, cela signifie"
+#~ " que la précision est la même "
+#~ "suivant les 2 composantes (pour "
+#~ "compatibilité avec les anciennes versions)."
+#~ " Il n’y a donc pas de précision"
+#~ " relative pour les centrages. On peut"
+#~ " désactiver la partie X ou Y du"
+#~ " centrage en mettant la précision "
+#~ "correspondante négative. Si on veut une"
+#~ " précision relative à la dénivelée "
+#~ "pour les centrages, il faut passer "
+#~ "par les codes 14 et 15."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les hauteurs de station et de "
+#~ "voyant doivent être entrées même pour"
+#~ " des mesures ne les faisant pas "
+#~ "intervenir (elles servent par exemple "
+#~ "pour la correction de déviation de "
+#~ "la verticale pour les angles "
+#~ "horizontaux). Il est fortement déconseillé "
+#~ "d’utiliser ces hauteurs dans les cas "
+#~ "où une grande précision est recherchée."
+#~ " En effet il n’est pas possible "
+#~ "de donner une précision à ces "
+#~ "hauteurs. Il faut dans ce cas "
+#~ "dédoubler les points à chaque changement"
+#~ " de hauteur, et utiliser un centrage"
+#~ " (code 9) et une dénivelée (code "
+#~ "4) pour lesquels on peut définir "
+#~ "une précision (cf. `[equation-de-"
+#~ "centrage] <#equation-de-centrage>`__)."
+#~ msgstr ""
+
+#~ msgid "Exemple : BASE.OBS"
+#~ msgstr ""
+
+#~ msgid "Appel d’un fichier"
+#~ msgstr ""
+
+#~ msgid "Ce fichier fait appel à un sous-fichier d’observations *detail.obs*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This allows, for example, to have "
+#~ "a file per day of observations or"
+#~ " to study possible variants."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Certains types d’observations complexes "
+#~ "utilisent un fichier pour décrire la "
+#~ "mesure. Dans ce cas le nom de "
+#~ "fichier est aussi précédé d’une arobase."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On a ici un exemple d’observation "
+#~ "d’une bascule (code 11) nécessitant un"
+#~ " paramétrage par un sous-fichier."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Attention à écrire les noms de "
+#~ "fichiers avec la casse correcte et "
+#~ "avec un chemin relatif au fichier "
+#~ "courant."
+#~ msgstr ""
+
+#~ msgid "ajoutant un \"-\" devant le code d’observation ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cette observation ne sera alors pas "
+#~ "utilisée pour le calcul mais il "
+#~ "sera possible de visualiser son résidu"
+#~ " par rapport aux coordonnées compensées."
+#~ " En pratique dans le fichier *.comp*,"
+#~ " l’attribut *active* de cette observation"
+#~ " sera renseigné à *false*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est donc conseillé de désactiver "
+#~ "une observation plutôt que de la "
+#~ "commenter. Pour ne pas utiliser toutes"
+#~ " les observations d’une station ou en"
+#~ " lien avec un point, il est "
+#~ "préférable de rendre le point interdit"
+#~ " dans le fichier *cor* (cf. `4.2 "
+#~ "<#coordonnees>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les mesures sont exprimées dans le "
+#~ "repère de l’instrument : les mesures "
+#~ "topométriques sont sensibles à la "
+#~ "déviation de la verticale, mais pas "
+#~ "les azimuts qui sont donnés par "
+#~ "rapport au nord géographique et pas "
+#~ "mesurés par un instrument bullé."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le cas de simulations, on "
+#~ "peut créer des fichiers d’observations "
+#~ "fictifs sans avoir à donner de "
+#~ "valeurs aux mesures. L’outil de création"
+#~ " de fichiers *.obs* à partir d’une"
+#~ " matrice d’intervisibilité sert à "
+#~ "simplifier cette démarche. Voir ci-"
+#~ "dessous."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le cas des observations de "
+#~ "type bascule (*.xyz*), il n’est pas "
+#~ "nécessaire de donner de valeurs aux "
+#~ "mesures. Les stations sont supposées "
+#~ "orientées suivant la verticale. Il est"
+#~ " toujours possible d’ajouter une contrainte"
+#~ " pour dire qu’elles sont bullées."
+#~ msgstr ""
+

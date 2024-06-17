@@ -1,0 +1,1491 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-29 15:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../computation.rst:5
+msgid "Computation"
+msgstr ""
+
+#: ../../computation.rst:7
+msgid "In the least-squares bundle adjustement, there are two main entities:"
+msgstr ""
+
+#: ../../computation.rst:9
+msgid ""
+"parameters corresponding to unknowns (e.g., coordinates of points, "
+"stations orientations)"
+msgstr ""
+
+#: ../../computation.rst:11
+msgid "observations corresponding to measurements or reference frames"
+msgstr ""
+
+#: ../../computation.rst:13
+msgid "La compensation est réalisée par Comp3D dans son repère local."
+msgstr ""
+
+#: ../../computation.rst:15
+msgid ""
+"Le système d'équations étant non linéaire, il est résolu par itérations "
+"successives, que le programme arrête lorsque la convergence est atteinte."
+msgstr ""
+
+#: ../../computation.rst:21
+msgid "Coordinates systems"
+msgstr ""
+
+#: ../../computation.rst:26
+msgid "Coordonnées sphériques"
+msgstr ""
+
+#: ../../computation.rst:28
+msgid ""
+"Le repère de calcul de Comp3D est un repère sphérique proche d'une "
+"projection stéréographique locale."
+msgstr ""
+
+#: ../../computation.rst:30
+msgid ""
+"Le centre du chantier y a pour coordonnées (0,0) et la direction Z suit "
+"la courbure de la Terre, qui est assimilée à une sphère. À l'origine, la "
+"direction Y correspond au Nord."
+msgstr ""
+
+#: ../../computation.rst:33
+msgid ""
+"Les coordonnées en entrée, qui sont dans une projection choisie par "
+"l'utilisateur, sont passées dans le repère sphérique pour le calcul, et "
+"les coordonnées finales sont repassées dans la projection de "
+"l'utilisateur."
+msgstr ""
+
+#: ../../computation.rst:36
+msgid ""
+"Les azimuts et :math:`\\sigma` sont toujours donnés en coordonnées "
+"sphériques, ils ne sont donc pas entâchés par l'altération linéaire et la"
+" convergence des méridiens."
+msgstr ""
+
+#: ../../computation.rst:41
+msgid "Coordonnées en projection"
+msgstr ""
+
+#: ../../computation.rst:43
+msgid ""
+"Les coordonnées en projection sont utilisées dans les fichiers *.cor*, "
+"*.cap* et *.new*."
+msgstr ""
+
+#: ../../computation.rst:46
+msgid ""
+"Dans tous les cas un centre du chantier doit être défini. Celui-ci doit "
+"rester le même entre déterminations successives si on veut pouvoir "
+"comparer au mieux les résultats. Il faut également veiller à ne pas avoir"
+" de points trop éloignés du centre pour ne pas perdre en précision."
+msgstr ""
+
+#: ../../computation.rst:53
+msgid "Projection locale"
+msgstr ""
+
+#: ../../computation.rst:55
+msgid ""
+"Dans le cas de coordonnées fournies dans une projection stéréographique "
+"locale, le rayon de la sphère d'approximation de la Terre est déterminé à"
+" partir de la courbure à l'ellipsoïde à la latitude donnée."
+msgstr ""
+
+#: ../../computation.rst:59
+msgid ""
+"Le centre du chantier représente les coordonnées du point de tangence de "
+"la projection stéréographique locale."
+msgstr ""
+
+#: ../../computation.rst:62
+msgid "La direction Y est celle du Nord."
+msgstr ""
+
+#: ../../computation.rst:67
+msgid "Projection géoréférencée"
+msgstr ""
+
+#: ../../computation.rst:69
+msgid ""
+"Dans le cas de coordonnées fournies dans une projection géoréférencée "
+"(cf. :ref:`project-params`), les coordonnées sont transformées avec "
+"*proj4* vers une projection stéréographique locale dont le point de "
+"tangence est au centre du chantier. Le rayon de la sphère d'approximation"
+" de la Terre est déterminé à partir de la courbure de l'ellipsoïde à la "
+"latitude du centre du chantier. Le fichier *.new* en sortie de calcul est"
+" re-projeté dans la projection d'entrée."
+msgstr ""
+
+#: ../../computation.rst:82
+msgid "Coordonnées cartésiennes"
+msgstr ""
+
+#: ../../computation.rst:84
+msgid ""
+"Comp3D utilise des coordonnées cartésiennes par exemple pour l'ajustement"
+" de sous-repères (cf. :ref:`file_xyz_11`)."
+msgstr ""
+
+#: ../../computation.rst:86
+msgid ""
+"Le repère cartésien global est celui qui coincide avec le repère de "
+"calcul au point origine. Les coordonnées compensées de tous les points "
+"dans le repère cartésien global sont écrites dans le fichier *.3d*."
+msgstr ""
+
+#: ../../computation.rst:89
+msgid ""
+"Si on travaille en géoréférencé, la fonction de passage entre ce repère "
+"et le repère cartésien géocentrique est donnée dans le rapport de calcul "
+"(cf. :ref:`computation-info`)."
+msgstr ""
+
+#: ../../computation.rst:91
+msgid ""
+"Les fonctions de passages entre les différents sous-repères et le repère "
+"cartésien global sont données dans les fichiers *.xyz*."
+msgstr ""
+
+#: ../../computation.rst:95
+msgid "Conversion cartésiennes-projection"
+msgstr ""
+
+#: ../../computation.rst:97
+msgid "Utiliser l'outil :ref:`cart-proj`."
+msgstr ""
+
+#: ../../computation.rst:102
+msgid "Initialisation par l'étape CAP"
+msgstr ""
+
+#: ../../computation.rst:104
+msgid ""
+"Le fichier de coordonnées de points peut ne pas contenir les coordonnées "
+"initiales de certains points. Dans ce cas, Comp3D tentera de les "
+"déterminer à partir de celles des autres."
+msgstr ""
+
+#: ../../computation.rst:108
+msgid ""
+"Les points renseignés avec un code -1 dans le fichier *.cor* ne seront "
+"pas utilisés dans le calcul. Cela permet de ne travailler que sur un "
+"sous-ensemble de points sans avoir à modifier les fichier *.obs*."
+msgstr ""
+
+#: ../../computation.rst:111
+msgid ""
+"Les coordonnées des points donnés dans le fichier *.cor*, se doivent "
+"d'être relativement correctes pour que le calcul de compensation puisse "
+"converger. Si on ne les connaît pas, mieux vaut les enlever pour laisser "
+"faire le calcul de points approchés."
+msgstr ""
+
+#: ../../computation.rst:116
+msgid ""
+"Il n'est pas garanti que tous les points soient déterminables ou que le "
+"calcul fonctionne bien. Il faut alors ajouter à la main les coordonnées "
+"de certains points que Comp3D n'aura pas réussi à déterminer."
+msgstr ""
+
+#: ../../computation.rst:121
+msgid "L'initialisation gère les cas suivants :"
+msgstr ""
+
+#: ../../computation.rst:123
+msgid ""
+"depuis une station initialisée avec un azimut (code 8 ou angle horizontal"
+" + orientation connue), un angle zénithal (code 6) et une distance (code "
+"3 ou code 1) ;"
+msgstr ""
+
+#: ../../computation.rst:127
+msgid "station type bascule ;"
+msgstr ""
+
+#: ../../computation.rst:129
+msgid "observation type bascule ;"
+msgstr ""
+
+#: ../../computation.rst:131
+msgid ""
+"centrage (code 9) et différence de hauteur (code 4) depuis un point "
+"initialisé ;"
+msgstr ""
+
+#: ../../computation.rst:134
+msgid ""
+"différence de hauteur depuis un point connu en Z. Si le point n'a aucune "
+"observation planimétrique, il sera considéré comme un point 1D ;"
+msgstr ""
+
+#: ../../computation.rst:137
+msgid "rayonnement depuis un station connue ;"
+msgstr ""
+
+#: ../../computation.rst:139
+msgid "relèvement avec des observations 3d depuis 2 points connus ;"
+msgstr ""
+
+#: ../../computation.rst:141
+msgid ""
+"intersection à partir d'observations angulaires depuis 2 stations connues"
+" ;"
+msgstr ""
+
+#: ../../computation.rst:144
+msgid "relèvement angulaire depuis 3 points connus."
+msgstr ""
+
+#: ../../computation.rst:146
+msgid ""
+"Il arrive parfois qu'on veuille commenter toutes les observations en "
+"liaison avec un point (pour détecter une faute par exemple). Dans ce cas,"
+" il faut déclarer le point comme interdit (code -1) dans le fichier "
+"*.cor* pour éviter que Comp3D l'utilise automatiquement."
+msgstr ""
+
+#: ../../computation.rst:151
+msgid ""
+"Le résultat de cette initialisation est fourni dans le fichier *.cap*. "
+"For |more|, see :ref:`init-coord`."
+msgstr ""
+
+#: ../../computation.rst:154
+msgid ""
+"Après une compensation, il est possible d'utiliser l'outil \"New to Cor\""
+" (for |more|, see :ref:`new-to-cor`), pour mettre à jour les fichiers "
+"*.cor* avec les nouveaux points déterminés par CAP et de meilleurs "
+"coordonnées initiales."
+msgstr ""
+
+#: ../../computation.rst:160
+msgid "Contraintes"
+msgstr ""
+
+#: ../../computation.rst:162
+msgid ""
+"Dans un premier temps, il est conseillé de réaliser un calcul en "
+"compensation libre puis de procéder à l'étape de mise en référence."
+msgstr ""
+
+#: ../../computation.rst:168
+msgid "Compensation libre"
+msgstr ""
+
+#: ../../computation.rst:170
+msgid ""
+"L'estimation des paramètres et des erreurs est effectuée dans un premier "
+"temps par une procédure d'ajustement par moindres carrés selon le mode "
+"dit de contraintes minimales."
+msgstr ""
+
+#: ../../computation.rst:174
+msgid ""
+"Le nombre minimal de contraintes à apporter est le défaut de rang de la "
+"matrice du système."
+msgstr ""
+
+#: ../../computation.rst:176
+msgid ""
+"En ajoutant des contraintes externes correspondant à ce défaut de rang, "
+"on ne modifie pas la précision interne du réseau topométrique."
+msgstr ""
+
+#: ../../computation.rst:179
+msgid ""
+"Dans le cas classique, les contraintes minimales à ajouter à un réseau "
+"topométrique sont des contraintes sur les coordonnées d'un point et un "
+"azimut."
+msgstr ""
+
+#: ../../computation.rst:182
+msgid "Les contraintes minimales permettent :"
+msgstr ""
+
+#: ../../computation.rst:184
+msgid "d'évaluer la cohérence interne du réseau ;"
+msgstr ""
+
+#: ../../computation.rst:186
+msgid ""
+"d'étudier les résidus et informer sur l'efficacité du modèle stochastique"
+" a priori;"
+msgstr ""
+
+#: ../../computation.rst:189
+msgid ""
+"d'analyser les demi-intervalles, ellipses et ellipsoïdes de confiance "
+"relatifs afin de détecter une faiblesse du réseau en s'affranchissant en "
+"partie de l'influence des contraintes imposées pour le calcul ;"
+msgstr ""
+
+#: ../../computation.rst:193
+msgid "d'entreprendre une démarche interactive de détection des fautes."
+msgstr ""
+
+#: ../../computation.rst:195
+msgid ""
+"Pour ne pas affecter les résultats des contraintes ajoutées, leur poids "
+"sera choisi de sorte qu'elles aient une incidence négligeable sur la "
+"précision du réseau. Ces pondérations dépendent donc de la précision des "
+"observations effectuées et de la redondance du réseau. Il peut également "
+"être utile de calculer le réseau avec plusieurs jeux de contraintes."
+msgstr ""
+
+#: ../../computation.rst:201
+msgid ""
+"Le défaut de cette méthode est qu'on doit choisir au minimum un point "
+"qu'on va supposer comme très bien connu, et ainsi les autres seront vus "
+"comme moins bons à mesure qu'on s'en éloignera."
+msgstr ""
+
+#: ../../computation.rst:205
+msgid ""
+"Ainsi, après cette étape de compensation libre, pour éviter que les "
+"ellipsoïdes et demi-intervalles de confiance ne soient liés au(x) "
+"point(s) contraint(s), l'inversion de la matrice normale pourra être "
+"effectuée en contraintes internes (cf. :ref:`internal-constraints`)."
+msgstr ""
+
+#: ../../computation.rst:213
+msgid "Mise en référence"
+msgstr ""
+
+#: ../../computation.rst:215
+msgid ""
+"Celle-ci est effectuée par ajustement contraint ou fixé sur points "
+"d'appui. Dans la pratique, on prend le calcul de compensation de la phase"
+" précédente (compensation libre) et on fixe ou on contraint toutes les "
+"coordonnées des points du réseau d'appui."
+msgstr ""
+
+#: ../../computation.rst:220
+msgid ""
+"Si la précision des points d'appui est connue, il est conseillé de "
+"contraindre ses coordonnées et renseigner leur pondération en "
+"conséquence."
+msgstr ""
+
+#: ../../computation.rst:228
+msgid "Rank default"
+msgstr ""
+
+#: ../../computation.rst:230
+msgid ""
+"A rank default in the system matrix will make the problem impossible to "
+"solve. In this case, the kernel of the linear application will be "
+"estimated and shown in the report. This kernel will be displayed on the "
+"report map to help finding the network issue."
+msgstr ""
+
+#: ../../computation.rst:235
+msgid ""
+"Most of the time this kind of error apprears if there is not enought "
+"external constraints (e.g. nothing to fix global translation), or too "
+"many observations deactivated, creating several indepentant sub-networks."
+msgstr ""
+
+#: ../../computation.rst:243
+msgid "Normal Matrix Inversion"
+msgstr ""
+
+#: ../../computation.rst:245
+msgid "L'inversion de la matrice normale permet d'obtenir :"
+msgstr ""
+
+#: ../../computation.rst:247
+msgid "pour les paramètres :"
+msgstr ""
+
+#: ../../computation.rst:249
+msgid "la matrice de variance-covariance des paramètres au format *csv* ;"
+msgstr ""
+
+#: ../../computation.rst:251
+msgid ""
+"l'ellipsoïde de confiance (3D) de chaque point à 1 :math:`\\sigma` "
+"multiplié pas le :math:`\\sigma_0` final ;"
+msgstr ""
+
+#: ../../computation.rst:254
+msgid ""
+"les demi-intervalles de confiance (1D) de chaque point à 1 "
+":math:`\\sigma` multipliés par le :math:`\\sigma_0` final ;"
+msgstr ""
+
+#: ../../computation.rst:258
+msgid ""
+"Les demi-intervalles et ellipsoides de confiance de confiance sont "
+"toujours donnés dans le repère local. Ils ne sont donc pas entâchés de "
+"l'altération linéaire et de la convergence des méridiens de la projection"
+" d'entrée."
+msgstr ""
+
+#: ../../computation.rst:263
+msgid "pour chaque observation :"
+msgstr ""
+
+#: ../../computation.rst:265
+msgid "l'écart-type a posteriori : précision de l'observation compensée ;"
+msgstr ""
+
+#: ../../computation.rst:267
+#, python-format
+msgid ""
+"la redondance partielle : (0% correspond à une observation non "
+"surabondante, seule à déterminer une inconnue et 100% à une observation "
+"totalement redondante ou dépondérée) ;"
+msgstr ""
+
+#: ../../computation.rst:271
+msgid "le résidu normé : résidu divisé par son écart-type ;"
+msgstr ""
+
+#: ../../computation.rst:273
+msgid ""
+":math:`\\nabla` : plus grande faute non détectable correspondant à "
+"l'indicateur de fiabilité interne ;"
+msgstr ""
+
+#: ../../computation.rst:276
+msgid "la faute probable."
+msgstr ""
+
+#: ../../computation.rst:278
+msgid ""
+"L'inversion de la matrice normale est automatique lorsque l'on fait une "
+"simulation par propagation."
+msgstr ""
+
+#: ../../computation.rst:284
+msgid "Simulation"
+msgstr ""
+
+#: ../../computation.rst:286
+msgid ""
+"Les simultations sont faites le plus souvent à partir d'observations "
+"fictives. L'outil :ref:`matrix-obs` permet de créer de telles "
+"observations facilement."
+msgstr ""
+
+#: ../../computation.rst:292
+msgid "Simulation par propagation"
+msgstr ""
+
+#: ../../computation.rst:294
+msgid ""
+"En mode \"Simulation par propagation\", seul le calcul d'inversion de la "
+"matrice normale est fait. Il s'agit de la méthode de propagation de la "
+"variance : calcul de la matrice de variance-covariance des coordonnées à "
+"partir de celle des observations."
+msgstr ""
+
+#: ../../computation.rst:299
+msgid ""
+"Les valeurs des mesures ne sont pas prises en compte : elles peuvent être"
+" mises à n'importe quelle valeur dans les fichiers *.obs*, seules les "
+"coodonnées des points et la liste des observations et leurs "
+":math:`\\sigma` sont pris en compte."
+msgstr ""
+
+#: ../../computation.rst:304
+msgid "Il n'y a donc pas de résidu, d'itérations et de :math:`\\sigma_0`."
+msgstr ""
+
+#: ../../computation.rst:306
+msgid ""
+"On obtient les ellipsoïdes et demi-intervalles de confiance qu'on aurait "
+"avec ces observations dans le cas d'erreurs suivant parfaitement la loi "
+"normale centrée."
+msgstr ""
+
+#: ../../computation.rst:315
+msgid "Simulation par Monte-Carlo"
+msgstr ""
+
+#: ../../computation.rst:317
+msgid ""
+"Le programme Comp3D permet de compenser des observations fictives "
+"correspondant à une configuration donnée des mesures."
+msgstr ""
+
+#: ../../computation.rst:320
+msgid ""
+"Dans le cas d'une simulation par Monte-Carlo, Comp3D utilise des valeurs "
+"de mesures fictives obtenues en bruitant les valeurs calculées à partir "
+"des coordonnées par des erreurs aléatoires gaussiennes dont l'écart-type "
+"est égal à l'écart-type correspondant de chaque mesure."
+msgstr ""
+
+#: ../../computation.rst:325
+msgid ""
+"Le principe est, dans une configura­tion donnée, de faire un certain "
+"nombre de simulations successives (une centaine), et de vérifier si les "
+"déplacements restent dans les tolérances."
+msgstr ""
+
+#: ../../computation.rst:329
+msgid ""
+"Le rapport récapitule les moyennes quadratiques des déplacements des "
+"points. On a également accès aux déplacements maximum des points. Cela "
+"permet d'étudier la stabilité théorique d'une figure avant observation."
+msgstr ""
+
+#: ../../computation.rst:333
+msgid ""
+"Le nombre de tirages aléatoires est choisi par le champ \"itérations "
+"maximum\" dans les paramètres du projet (cf. :ref:`project-params`). Pour"
+" chaque tirage, il n'y a pas besoin qu'une itération car les coordonnées "
+"fournies sont proches des coordonnées compensées : c'est le déplacement "
+"qui importe."
+msgstr ""
+
+#: ../../computation.rst:343
+msgid "Contraintes internes"
+msgstr ""
+
+#: ../../computation.rst:345
+msgid ""
+"Le choix des contraintes externes, nécessaires pour pouvoir calculer un "
+"réseau, a de l'influence sur les intervalles de confiance obtenus sur "
+"chaque point."
+msgstr ""
+
+#: ../../computation.rst:348
+msgid ""
+"Si on veut connaître la précision interne d'un réseau (donc hors mise en "
+"référence), on peut utiliser l'option de calcul \"contraintes internes\" "
+"(cf. :ref:`project-params`) pour que les contraintes minimales ajoutées "
+"ne favorisent pas un point particulier, en disant que :"
+msgstr ""
+
+#: ../../computation.rst:352
+msgid "le barycentre ne doit pas se déplacer ;"
+msgstr ""
+
+#: ../../computation.rst:354
+msgid "l'ensemble des points ne doit pas tourner ni basculer ;"
+msgstr ""
+
+#: ../../computation.rst:356
+msgid ""
+"l'ensemble des points ne doit pas subir de facteur d'échelle par rapport "
+"aux coordonnées initiales données en entrée."
+msgstr ""
+
+#: ../../computation.rst:359
+msgid ""
+"Les contraintes ajoutées dépendent des défaut de rang du système. Exemple"
+" pas besoin de contrainte sur l'échelle pour un chantier avec des mesures"
+" de distances."
+msgstr ""
+
+#: ../../computation.rst:362
+msgid ""
+"Si cette option est choisie, Comp3D ajoutera automatiquement ces "
+"contraintes et désactivera les contraintes externes à la dernière "
+"itération d'une compensation. Les contraintes externes (si possible "
+"minimales) sont toutesfois nécessaires pour arriver jusqu'à la dernière "
+"itération."
+msgstr ""
+
+#: ../../computation.rst:365
+msgid ""
+"Ce mode de calcul fonctionne également pour les simulations par "
+"propagation."
+msgstr ""
+
+#: ../../computation.rst:367
+msgid ""
+"Dans le cas d'un chantier avec mise en référence, il est conseillé de "
+"faire un calcul séparé si on souhaite obtenir la précision interne du "
+"réseau, en utilisant des contraintes externes minimales et avec l'option "
+"contraintes internes."
+msgstr ""
+
+#: ../../computation.rst:370
+msgid ""
+"Les observations des contraintes internes apparraissent dans le tableau "
+"des observations (cf. :ref:`output-obs`) du rapport de sortie :"
+msgstr ""
+
+#: ../../computation.rst:373
+msgid "cint_tx : composante X du barycentre ;"
+msgstr ""
+
+#: ../../computation.rst:375
+msgid "cint_ty : composante Y du barycentre ;"
+msgstr ""
+
+#: ../../computation.rst:377
+msgid "cint_tz : composante Z du barycentre ;"
+msgstr ""
+
+#: ../../computation.rst:379
+msgid "cint_rx : rotation d'axe X ;"
+msgstr ""
+
+#: ../../computation.rst:381
+msgid "cint_ry : rotation d'axe Y ;"
+msgstr ""
+
+#: ../../computation.rst:383
+msgid "cint_rz : rotation d'axe Z ;"
+msgstr ""
+
+#: ../../computation.rst:385
+msgid "cint_sc : facteur d'échelle."
+msgstr ""
+
+#: ../../computation.rst:387
+msgid ""
+"Points far from project barycenter will make the whole geometric figure "
+"less precise with internal constraints. Define points as **remote** (see "
+":ref:`cor-protocol`) in order to no tuse them in internal constraints."
+msgstr ""
+
+#~ msgid "Paramètres Comp3D"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ces paramètres sont stockés dans le "
+#~ "fichier *comp3d_config.txt* de Comp3D."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "À l’ouverture du logiciel, les "
+#~ "paramètres suivants sont lus dans ce "
+#~ "fichier :"
+#~ msgstr ""
+
+#~ msgid "Chemin du dernier chantier ouvert"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Langue : anglais \"en\" ou français "
+#~ "\"fr\". La langue ne s’applique à "
+#~ "l’interface graphique qu’au démarrage."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "une ligne non lue, contenant \"4095\""
+#~ " pour rétro-compatibilité avec les "
+#~ "versions <5.20"
+#~ msgstr ""
+
+#~ msgid "Chemin du répertoire des données de Proj"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "une ligne non lue, contenant \"1\" "
+#~ "pour rétro-compatibilité avec les "
+#~ "versions <5.20"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si le fichier n’existe pas, Comp3D "
+#~ "va en créer un par défaut dans "
+#~ "le répertoire d’installation de Comp3D."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si le chemin des données de Proj"
+#~ " n’est pas correct, Comp3D va "
+#~ "chercher à d’autres emplacements (voir "
+#~ "messages dans le terminal). Si un "
+#~ "chemin correct est trouvé, le fichier"
+#~ " de configuration est automatiquement mis"
+#~ " à jour."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Avec l’interface graphique il n’est pas"
+#~ " nécessaire de modifier directement le "
+#~ "fichier de paramètres, le menu "
+#~ "Comp3D>Préférences est fait pour ça."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour modifier les préférences hors "
+#~ "interface graphique, il faut créer et"
+#~ " modifier le fichier *comp3d_config.txt* en"
+#~ " respectant la structure décrite ci-"
+#~ "dessus."
+#~ msgstr ""
+
+#~ msgid "Project Parameters"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ces paramètres sont stockés dans le "
+#~ "fichier *.comp* du chantier. Ce fichier"
+#~ " est une source javascript. Il peut"
+#~ " être interprété comme du JSON une"
+#~ " fois la première ligne retirée."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "À la création d’un nouveau chantier "
+#~ "ou une fois un chantier chargé, en"
+#~ " cliquant sur \"Configuration\" dans "
+#~ "l’interface principale (accessible également "
+#~ "par Projet>Configuration ou Alt+C), il "
+#~ "est possible d’éditer ces paramètres."
+#~ msgstr ""
+
+#~ msgid "Les paramètres du chantier sont :"
+#~ msgstr ""
+
+#~ msgid "Métadonnées :"
+#~ msgstr ""
+
+#~ msgid "Nom du projet."
+#~ msgstr ""
+
+#~ msgid "Description du projet."
+#~ msgstr ""
+
+#~ msgid "Entrées/sorties :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Fichier COR principal : fichier de "
+#~ "coordonnées racine au format *.cor* "
+#~ "(cf.`4.2 <#coordonnees>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Hauteurs ellispoïdales dans le COR : "
+#~ "cette case à cocher permet de "
+#~ "s’assurer que les composantes verticales "
+#~ "des points sont bien fournies en "
+#~ "hauteurs ellipsoïdales quand cela est "
+#~ "nécessaire, et d’alerter l’utilisateur le "
+#~ "cas échéant."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sorties nettoyées : cela permet de "
+#~ "produire les fichiers de sortie *new*"
+#~ " et *3d* épurés des commentaires et"
+#~ " autres sauts de lignes afin de "
+#~ "faciliter leur utilisation dans un "
+#~ "tableur."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Fichier OBS principal : fichier "
+#~ "d’observations racine au format *.obs* "
+#~ "(cf. `4.1 <#observations>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Coefficient de réfraction : n’affecte "
+#~ "que les mesures de zénithales. Le "
+#~ "plus souvent il est fixé à 0.12,"
+#~ " mais peut être modifié, par exemple"
+#~ " en intérieur il peut être plus "
+#~ "bas."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Chiffres significatifs : c’est un indice"
+#~ " de la précision donnée dans le "
+#~ "rapport, certaines valeurs seront données "
+#~ "avec plus ou moins de décimales."
+#~ msgstr ""
+
+#~ msgid "Type de calcul :"
+#~ msgstr ""
+
+#~ msgid "Compensation : compensation classique par moindres carrés."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Simulation propagation : simulation par "
+#~ "propagation de la variance (cf. `5.4 "
+#~ "<#simulation-par-propagation>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Simulation Monte-Carlo : simulation par"
+#~ " tirages aléatoires répétés (cf. `5.5 "
+#~ "<#simulation-par-monte-carlo>`__)."
+#~ msgstr ""
+
+#~ msgid "Options de calcul :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Inverser la matrice normale : cette "
+#~ "étape des moindres carrés permet "
+#~ "d’obtenir entre autres des demi-"
+#~ "intervalles et ellipsoïdes de confiance "
+#~ "(cf. `5.3 <#inversion-de-la-matrice-"
+#~ "normale>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Enregistrer la matrice de Var/Covar :"
+#~ " la matrice de variance/covariance en "
+#~ "sortie de calcul peut être écrite "
+#~ "dans un fichier *csv* qui s’avérer "
+#~ "volumineux."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Contraintes internes : réaliser un "
+#~ "calcul en contraintes internes. Cela "
+#~ "permet, contrairement à un calcul en "
+#~ "contraintes externes, de ne favoriser "
+#~ "aucun point en particulier (cf. `6 "
+#~ "<#contraintes-internes>`__)."
+#~ msgstr ""
+
+#~ msgid "Itérations :"
+#~ msgstr ""
+
+#~ msgid "Nombre d’itérations maximum."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Itérations supplémentaires : nombre "
+#~ "d’itérations forcées après convergence."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Critère de convergence : variation du"
+#~ " :math:`\\sigma_0` entre 2 itérations."
+#~ msgstr ""
+
+#~ msgid "Système :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Coordonnées du centre du repère local"
+#~ " : le centre est retiré à "
+#~ "chacune des coordonnées des points lors"
+#~ " du calcul aussi bien en local "
+#~ "qu’en géoréférencé. Ce centre doit "
+#~ "correspondre à une approximation du "
+#~ "barycentre du chantier."
+#~ msgstr ""
+
+#~ msgid "Repère local :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Latitude centrale du chantier : donnée"
+#~ " en degrés décimaux. Permet de "
+#~ "déterminer la courbure locale de "
+#~ "l’ellipsoïde pour définir le repère "
+#~ "sphérique tangent à l’ellipsoïde utilisé "
+#~ "pour le calcul. Elle pourra être "
+#~ "approximée à la latitude moyenne du "
+#~ "chantier. Elle n’a pas à être "
+#~ "donnée à mieux que :math:`0.1 "
+#~ "^{\\circ}`."
+#~ msgstr ""
+
+#~ msgid "Repère géoréférencé :"
+#~ msgstr ""
+
+#~ msgid "Nom CRS : permet de choisir une projection standard parmi une liste."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Définition Proj4 de la projection "
+#~ "d’entrée. Comp3D utilise cette bibliothèque"
+#~ " pour passer de coordonnées dans une"
+#~ " projection donnée à la projection "
+#~ "stéréographique locale utilisée lors du "
+#~ "calcul. Exemples : \"``epsg:32719``\", "
+#~ "\"``IGNF:LAMB1``\" ou \"``+proj=lcc +lon_0=-90 "
+#~ "+lat_1=33 +lat_2=45``\". Il est possible "
+#~ "via ce champ de renseigner une "
+#~ "projection personnalisée au format Proj4."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans les 2 cas, il faut veiller"
+#~ " à ce que les points aient des"
+#~ " coordonnées Z proches de leur vraie"
+#~ " hauteur ellipsoïdale car cela a un"
+#~ " impact important sur l’échelle "
+#~ "planimétrique de la projection stéréographique"
+#~ " oblique utilisée lors du calcul."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les distances sont en mètres et "
+#~ "les angles en grades. Ces paramètres "
+#~ "sont enregistrés dans le fichier *.comp*"
+#~ " du projet."
+#~ msgstr ""
+
+#~ msgid "Compensation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Elle est réalisée par Comp3D suivant "
+#~ "les principes exposés plus haut "
+#~ "(tridimensionnel local, la projection étant"
+#~ " approximée par une stéréogra­phique "
+#~ "oblique de la sphère de courbure "
+#~ "moyenne au centre du chantier). Le "
+#~ "système d’équations étant non linéaire, "
+#~ "il est résolu par itérations "
+#~ "successives, que le programme arrête "
+#~ "lorsque la convergence est atteinte."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les fichiers *.xyz* de repère laser "
+#~ "sont mis à jour avec les "
+#~ "coordonnées de la station et sa "
+#~ "matrice rotation après compensation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le fichier *.comp* contient principalement "
+#~ "les résidus avant et après compensation,"
+#~ " les coordonnées compensées."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans un premier temps, il est "
+#~ "conseiller de réaliser un calcul en "
+#~ "compensation libre puis de procéder à"
+#~ " l’étape de mise en référence."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "L’estimation des paramètres et des "
+#~ "erreurs aléatoires est effectuée dans un"
+#~ " premier temps par une procédure "
+#~ "d’ajustement par moindres carrés selon "
+#~ "le mode dit de contraintes minimales."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le nombre minimal de contraintes à "
+#~ "apporter est :math:`c = u - "
+#~ "rang(A)`. Le nombre exact de contraintes"
+#~ " nécessaires est ajouté : ce sont "
+#~ "les contraintes minimales. Ainsi les "
+#~ "mesures ne sont pas perturbées par "
+#~ "des contraintes externes incohérentes avec "
+#~ "elles."
+#~ msgstr ""
+
+#~ msgid "Cela permet :"
+#~ msgstr ""
+
+#~ msgid "d’évaluer la cohérence interne du réseau ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "d’étudier les résidus et informe sur "
+#~ "l’efficacité du modèle stochastique a "
+#~ "priori;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "d’analyser les demi-intervalles, ellipses "
+#~ "et ellipsoïdes de confiance relatifs "
+#~ "afin de détecter une faiblesse du "
+#~ "réseau en s’affranchissant en partie de"
+#~ " l’influence des contraintes imposées pour"
+#~ " le calcul ;"
+#~ msgstr ""
+
+#~ msgid "d’entreprendre une démarche interactive de détection des fautes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour ne pas affecter les résultats "
+#~ "des contraintes ajoutées, leur poids "
+#~ "sera choisi de sorte qu’elles aient "
+#~ "une incidence négligeable sur la "
+#~ "précision du réseau. Ces pondérations "
+#~ "dépendent donc de la précision des "
+#~ "observations effectuées et de la "
+#~ "redondance du réseau. Il peut également"
+#~ " être utile de calculer le réseau "
+#~ "avec plusieurs jeux de contraintes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le défaut de cette méthode est "
+#~ "qu’on doit choisir au minimum un "
+#~ "point qu’on va supposer comme très "
+#~ "bien connu, et ainsi les autres "
+#~ "seront vus comme moins bons à "
+#~ "mesure qu’on s’en éloignera."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ainsi, après cette étape de compensation"
+#~ " libre, pour éviter que les "
+#~ "ellipsoïdes et demi-intervalles de "
+#~ "confiance ne soient liés au(x) point(s)"
+#~ " contraint(s), l’inversion de la matrice"
+#~ " normale pourra être effectuée en "
+#~ "contraintes internes (cf. `6 <#contraintes-"
+#~ "internes>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Celle-ci est effectuée par ajustement"
+#~ " contraint ou fixé sur points "
+#~ "d’appui. Dans la pratique, on prend "
+#~ "le calcul de compensation de la "
+#~ "phase précédente (compensation libre) et "
+#~ "on fixe ou on contraint toutes les"
+#~ " coordonnées des points du réseau "
+#~ "d’appui."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si la précision des points d’appui "
+#~ "est connue, il est conseiller de "
+#~ "contraindre ses coordonnées et renseigner "
+#~ "leur pondération en conséquence."
+#~ msgstr ""
+
+#~ msgid "L’inversion de la matrice normale permet d’obtenir :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "l’ellipsoïde de confiance (3D) de chaque"
+#~ " point à 1 :math:`\\sigma` multiplié "
+#~ "pas le :math:`\\sigma_0` final ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**Attention !** Les demi-intervalles et"
+#~ " ellipsoides de confiance de confiance "
+#~ "sont toujours donnés dans le repère "
+#~ "local. Ils ne sont donc pas "
+#~ "entâchés de l’altération linéaire et de"
+#~ " la convergence des méridiens de la"
+#~ " projection d’entrée."
+#~ msgstr ""
+
+#~ msgid "l’écart-type a posteriori : précision de l’observation compensée ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "la redondance partielle : (0% correspond"
+#~ " à une observation non surabondante, "
+#~ "seule à déterminer une inconnue et "
+#~ "100% à une observation inutile ou "
+#~ "totalement dépondérée) ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\nabla` : plus grande faute non"
+#~ " détectable correspondant à l’indicateur de"
+#~ " fiabilité interne ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "L’inversion de la matrice normale est"
+#~ " automatique lorsque l’on fait une "
+#~ "simulation par propagation."
+#~ msgstr ""
+
+#~ msgid "Cette étape peut être longue, la désactiver accélérera le calcul."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "En mode \"Simulation par propagation\", "
+#~ "seul le calcul d’inversion de la "
+#~ "matrice normale est fait. Il s’agit "
+#~ "de la méthode de propagation de la"
+#~ " variance : calcul de la matrice "
+#~ "de variance-covariance des coordonnées à"
+#~ " partir de celle des observations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cela permet de connaître les ellipsoïdes"
+#~ " et demi-intervalles de confiance "
+#~ "qu’on aurait avec ces observations dans"
+#~ " le cas d’erreurs suivant parfaitement "
+#~ "la loi normale centrée."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La configuration du chantier (répartition "
+#~ "des points) est prise en compte. "
+#~ "Cependant, dans le cas de visées "
+#~ "en sifflet, l’erreur sur les "
+#~ "observations pourra ne pas suivre la "
+#~ "loi normale centrée durant les mesures,"
+#~ " la simulation ne prend pas en "
+#~ "compte ces erreurs. il est néanmoins "
+#~ "possible de rentrer des définitions de"
+#~ " cible pour pallier ce problème pour"
+#~ " les mesures angulaires."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les mesures n’étant pas réelles, il "
+#~ "n’y a pas de résidu et donc "
+#~ "pas d’itération et pas de "
+#~ ":math:`\\sigma_0`. Ce dernier est fixé à"
+#~ " 1 étant donné que les "
+#~ ":math:`\\sigma` des demi-intervalles et "
+#~ "ellipsoïdes de confiance de chaque point"
+#~ " sont multipliés par le :math:`\\sigma_0`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le cas d’une simulation par "
+#~ "Monte-Carlo, Comp3D utilise des mesures "
+#~ "fictives obtenues en bruitant les "
+#~ "valeurs calculées à partir des "
+#~ "coordonnées par des erreurs aléatoires "
+#~ "gaussiennes dont l’écart-type est égal"
+#~ " à l’écart-type correspondant de "
+#~ "chaque mesure."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le principe est, dans une configura­tion"
+#~ " donnée, de faire un certain nombre"
+#~ " de simulations successives (une dizaine),"
+#~ " et de vérifier si les déplacements"
+#~ " restent dans les tolérances."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le rapport récapitule les moyennes "
+#~ "quadratiques des déplacements des points. "
+#~ "On a également accès aux déplacements"
+#~ " maximum des points. Cela permet "
+#~ "d’étudier la stabilité théorique d’une "
+#~ "figure avant observation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le nombre de tirages aléatoires est "
+#~ "choisi par le champ \"itérations "
+#~ "maximum\" dans les paramètres du projet."
+#~ " Pour chaque tirage, il n’y a "
+#~ "pas besoin d’itération car les "
+#~ "coordonnées fournies sont proches des "
+#~ "coordonnées compensées : c’est le "
+#~ "déplacement qui importe."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Comme pour Comp3D V3 et V4, les"
+#~ " contraintes sur les coordonnées des "
+#~ "points ne sont pas affectées par "
+#~ "les erreurs aléatoires gaussiennes."
+#~ msgstr ""
+
+#~ msgid "Principe"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans un réseau à compenser ou à"
+#~ " simuler, un système sans contrainte "
+#~ "externe ayant une infinité de solution,"
+#~ " des contraintes doivent être ajoutées, "
+#~ "le plus souvent sous la forme de"
+#~ " points contraints et d’azimuts imposés "
+#~ "avec une précision donnée. Elles "
+#~ "permettent de résoudre le défaut de "
+#~ "rang de la matrice normale (par "
+#~ "exemple, seulement avec des observations "
+#~ "topo, une translation globale du "
+#~ "chantier est possible)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le défaut de cette méthode est "
+#~ "qu’il est nécessaire de choisir au "
+#~ "minimum un point, qui sera supposé "
+#~ "comme très bien connu, et ainsi "
+#~ "les autres seront vus comme moins "
+#~ "bons à mesure qu’on s’en éloignera "
+#~ "(cf. `5.2.4 <#compensation-libre>`__)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Une contrainte est interne lorsqu’elle "
+#~ "est une relation entre uniquement des"
+#~ " points du réseau. Les contraintes "
+#~ "internes ne favorisent pas un point "
+#~ "particulier et permettent de dire que"
+#~ " :"
+#~ msgstr ""
+
+#~ msgid "Le barycentre ne doit pas se déplacer ;"
+#~ msgstr ""
+
+#~ msgid "L’ensemble des points ne doit pas tourner ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "L’ensemble des points ne doit pas "
+#~ "subir de facteur d’échelle par rapport"
+#~ " aux coordonnées initiales données en "
+#~ "entrée."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les ellipsoïdes de confiance sont alors"
+#~ " calculés sans s’appuyer sur un seul"
+#~ " point, en « diffusant » les "
+#~ "erreurs. Les résultats sont donc plus"
+#~ " sensés, ils ne dépendent pas du "
+#~ "point choisi. Par contre, le calcul "
+#~ "est beaucoup plus lent, étant donné "
+#~ "que des relations entre tous les "
+#~ "points sont ajoutées. L’optimisation du "
+#~ "calcul est alors moins efficace."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Un calcul en contraintes internes n’a"
+#~ " de sens qu’en compensation libre "
+#~ "(cf. `5.2.4 <#compensation-libre>`__)."
+#~ msgstr ""
+
+#~ msgid "En compensation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Par rapport aux contraintes minimales, "
+#~ "en compensation, les contraintes internes "
+#~ "servent uniquement à avoir des "
+#~ "ellipsoïdes d’erreur plus corrects. Mais "
+#~ "pour cela, il faut avoir des "
+#~ "coordonnées initiales cohérentes avec les "
+#~ "mesures. Pour cela on fait la "
+#~ "compensation en deux étapes, en "
+#~ "commençant par une compensation classique "
+#~ "(minimales si un seul point et un"
+#~ " azimut sont contraints), et en "
+#~ "utilisant ensuite les coordonnées obtenues "
+#~ "comme coordonnées de départ d’une "
+#~ "compensation en contraintes internes."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Normalement les contraintes internes ne "
+#~ "doivent pas modifier les coordonnées "
+#~ "finales, ni le :math:`\\sigma_0` final. "
+#~ "Or souvent ça n’est pas le cas."
+#~ " Il faut alors faire des "
+#~ "compensations en contraintes minimales, et "
+#~ "remplacer le fichier *.cor* par le "
+#~ "fichier *.new*, jusqu’à ce que le "
+#~ ":math:`\\sigma_0` ne change presque plus "
+#~ "entre les contraintes minimales et "
+#~ "internes."
+#~ msgstr ""
+
+#~ msgid "En simulation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les contraintes internes sont utiles "
+#~ "pour les simulations par propagation de"
+#~ " la variance. Elles permettent de "
+#~ "s’affranchir des effets du choix du "
+#~ "ou des points contraints. Par exemple"
+#~ " en contraintes minimales, le point "
+#~ "contraint a toujours des EMQ nuls "
+#~ "et un ellipsoïde de confiance uniquement"
+#~ " lié à la précision à laquelle "
+#~ "on l’a contraint."
+#~ msgstr ""
+
+#~ msgid "Visualisation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le fichier *.comp* du chantier, "
+#~ "des observations correspondant aux différentes"
+#~ " contraintes internes sont créées. Les "
+#~ "différentes contraintes sont associés aux "
+#~ "codes suivants :"
+#~ msgstr ""
+
+#~ msgid "201 : composante X du barycentre ;"
+#~ msgstr ""
+
+#~ msgid "202 : composante Y du barycentre ;"
+#~ msgstr ""
+
+#~ msgid "203 : composante Z du barycentre ;"
+#~ msgstr ""
+
+#~ msgid "204 : rotation d’axe X ;"
+#~ msgstr ""
+
+#~ msgid "205 : rotation d’axe Y ;"
+#~ msgstr ""
+
+#~ msgid "206 : rotation d’axe Z ;"
+#~ msgstr ""
+
+#~ msgid "207 : facteur d’échelle."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le rapport de calcul *html*, "
+#~ "ces observations correspondant aux différentes"
+#~ " contraintes internes apparraissent dans le"
+#~ " tableau des observations (cf. `7.1.6 "
+#~ "<#observations-sortie>`__) avec comme type "
+#~ "d’observation, les abréviations suivantes :"
+#~ msgstr ""
+
+#~ msgid "cint_rx : rotation d’axe X ;"
+#~ msgstr ""
+
+#~ msgid "cint_ry : rotation d’axe Y ;"
+#~ msgstr ""
+
+#~ msgid "cint_rz : rotation d’axe Z ;"
+#~ msgstr ""
+
+#~ msgid "cint_sc : facteur d’échelle."
+#~ msgstr ""
+
+#~ msgid "Coordonnées 3D et coordonnées sphériques"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Comp3D travaille toujours en coordonnées "
+#~ "sphériques (où Z constant signifie "
+#~ "suivre la courbure de la Terre). "
+#~ "Ainsi l’axe Z suit toujours la "
+#~ "verticale (appareil bullé)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les coordonnées sphériques sont utilisées "
+#~ "dans les fichiers *.cor* et *.new*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le cas de coordonnées fournies "
+#~ "(via le fichier *.cor*) dans une "
+#~ "projection géoréférencée (cf. `3.2 "
+#~ "<#parametres-de-chantier>`__), les coordonnées"
+#~ " sont transformées avec *proj4* vers "
+#~ "une projection stéréographique locale dont "
+#~ "le point de tangence est au centre"
+#~ " du chantier. Le rayon de la "
+#~ "sphère d’approximation de la Terre est"
+#~ " déterminé à partir de la courbure"
+#~ " de l’ellipsoïde à la latitude du "
+#~ "centre du chantier. Le fichier *.new*"
+#~ " en sortie de calcul est re-"
+#~ "projeté dans la projection d’entrée."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le cas de coordonnées fournies "
+#~ "dans une projection stéréographique locale,"
+#~ " le rayon de la sphère "
+#~ "d’approximation de la Terre est "
+#~ "déterminé à partir de la courbure "
+#~ "à l’ellipsoïde à la latitude donnée."
+#~ msgstr ""
+
+#~ msgid "Coordonnées 3D"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les coordonnées cartésiennes des points "
+#~ "sont exportées dans le fichier *.3d*."
+#~ " Ces coordonnées ne sont utilisées "
+#~ "que pour le mode ajustement (codes "
+#~ "11 et 12) correspondant aux fichiers "
+#~ "*.xyz*."
+#~ msgstr ""
+
+#~ msgid "Propriétés de ces coordonnées :"
+#~ msgstr ""
+
+#~ msgid "insensibles à des translations ;"
+#~ msgstr ""
+
+#~ msgid "calcul des distances avec la formule de Pythagore ;"
+#~ msgstr ""
+
+#~ msgid "centrées sur 0 en planimétrie ;"
+#~ msgstr ""
+
+#~ msgid "non entachées de l’altération linéaire ;"
+#~ msgstr ""
+
+#~ msgid "verticales parallèles."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A rank default in the system "
+#~ "matrix will make the problem impossible"
+#~ " to solve. In this case, the "
+#~ "kernel of the linear application will"
+#~ " be estimated. This kernel will be"
+#~ " displayed on the report map to "
+#~ "help finding the network issue."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La compensation est réalisée par Comp3D"
+#~ " dans son repère local. Le système"
+#~ " d'équations étant non linéaire, il "
+#~ "est résolu par itérations successives, "
+#~ "que le programme arrête lorsque la "
+#~ "convergence est atteinte."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Points far from project barycenter will"
+#~ " make the whole geometric figure less"
+#~ " precise with internal constraints. Use "
+#~ "points of type  **remote** (see :ref"
+#~ ":`cor-code`), to have points not "
+#~ "taken into account in the internal "
+#~ "constraints."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Points far from project barycenter will"
+#~ " make the whole geometric figure less"
+#~ " precise with internal constraints. Use "
+#~ "points of type  **remote** (see :ref"
+#~ ":`cor-protocol`), to have points not "
+#~ "taken into account in the internal "
+#~ "constraints."
+#~ msgstr ""
+

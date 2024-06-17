@@ -1,0 +1,54 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  id-token: write
+  contents: read
+  pages: write
+
+jobs:
+  build:
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install python3-pip python3-sphinx python3-stemmer qttranslations5-l10n pandoc
+        pip3 install -U sphinx-mathjax-offline sphinx_intl
+
+    - name: Run build user doc
+      run: |
+        cd doc_uni
+        ./build_doc.sh
+
+    - name: Readme to html
+      run: |
+        mkdir -p website
+        pandoc -s --metadata title="Comp3D" -f gfm README.md -o website/index.html -c data/comp3d_website.css && cp -R data/ *.md website
+        cp -R doc_uni/en/html website/doc
+        
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'website'
+
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}

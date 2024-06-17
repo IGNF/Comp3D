@@ -1,0 +1,89 @@
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#graph {
+  width: 1000px;
+  height: 500px;
+  margin: 20px auto 0 auto;
+}
+
+td {
+  /*width: 100px;*/
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: right;
+}
+
+td.name, th.name {
+  font-weight: bold;
+  text-align: left;
+  /*width: 70px;*/
+}
+
+th.small {
+  width: 70px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+td.inactive {
+  font-style : italic;
+  color:#FF0000;
+}
+
+
+tr.inactive {
+  font-style : italic; 
+  color:#FF0000;
+}
+
+tr.filename td {
+  background-color:#CCC;
+  font-weight : bold;
+  text-align: center;
+}
+
+tr {
+  font-family: monospace;
+}
+
+/*tr.paire td{
+  background-color:#EEF;
+}*/
+
+tr.paire{
+  background-color:#DDE;
+}
+
+dl.inline-flex {
+  display: flex;
+  font-family: Verdana, Helvetica, sans-serif, Loma; 
+  font-size: 15px;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+dl.inline-flex dt {
+  flex: 0 0 30%;
+  color: green;
+  height:35px;
+}
+dl.inline-flex dd {
+  flex:0 0 70%;
+  margin-left: auto;
+  text-align: left;
+  height:35px;
+}
+
+p.footer {
+  text-align: center;
+  color: grey;
+}
+
+[post]::after {
+  content: attr(post);
+}
+

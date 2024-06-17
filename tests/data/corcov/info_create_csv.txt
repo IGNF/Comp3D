@@ -1,0 +1,16 @@
+Simple example with very distinctive ellipsoid on B:
+the axes are 10, 1 and 0.1mm, biggest with 60° az.
+
+COR file:
+
+1 A 100 100 100 0.001 0.001 0.001
+0 B 108.66 105 100
+
+OBS file:
+
+8 A B 66.6666 0.0001
+3 A B 10 0.1
+4 A B 0 0.01
+4 A B 0.1 1 *just for redondancy
+
+The output csv is used as corcov for the test example.

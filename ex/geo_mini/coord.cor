@@ -1,0 +1,9 @@
+*Lambert 93 : +init=epsg:2154   equiv   +proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+
+ 1 A 657723 6860710 0  0.00001 0.00001 0.00001  *alt lin : -115.8mm/km
+ 1 B 657823 6860710 0  0.00001 0.00001 0.00001  *alt lin : -115.8mm/km
+ 1 C 657823 6860810 0  0.00001 0.00001 0.00001  *alt lin : -115.1mm/km
+ 1 D 657723 6860810 0  0.00001 0.00001 0.00001  *alt lin : -115.1mm/km
+ 
+ 
+* echo 657723 6860710 | cs2cs +proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs +to +proj=latlong +ellps=GRS80 -f %.12f

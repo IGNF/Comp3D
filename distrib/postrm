@@ -1,0 +1,14 @@
+#!/bin/bash
+# This `DEBIAN/postinst` script is run post-remove
+set -e
+
+LAST=$(ls /usr/bin/comp3d5v* | sed -e "s/rc/~rc/" | sort -V | tail -n 1  | sed -e "s/~rc/rc/")
+
+if [ -z $LAST ]
+then
+    echo "Remove /usr/bin/comp3d5"
+    unlink /usr/bin/comp3d5
+else
+    echo "Update /usr/bin/comp3d5"
+    ln -f -s ${LAST} /usr/bin/comp3d5
+fi

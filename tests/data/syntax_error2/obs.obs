@@ -1,0 +1,15 @@
+*** obs file corresponding to crash described in #312
+
+*gisement imposé
+8 1         106            300 0.00001 0 0 0
+*Mise à l'échelle
+3 100       200            1.0499901 0.00005 0 0 0
+3 300       400            1.000668 0.00005 0 0 0
+3 ancien_300  ancien_400   1.000668 0.00005 0 0 0
+3 ancien_100  ancien_200   1.0499901 0.00005 0 0 0
+
+@20111_t312.obs
+@20109_t312.obs
+@20110_t312.obs
+@20112_t312.obs
+@20104_t312.obs

@@ -1,0 +1,110 @@
+comp 606415 1127179 => 48.845113 2.424630
+
+echo 657723 6860710 | wine ~/.wine/drive_c/OSGeo4W64/bin/cs2cs.exe +no_defs +proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m  +to +no_defs +proj=lcc +lat_1=49.50000000000001 +lat_0=49.50000000000001 +lon_0=0 +k_0=0.999877341 +x_0=600000 +y_0=1200000 +a=6378249.2 +b=6356515 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m  -f %.12f
+606416.889604874421 1127179.380041174823 cs2cs 4.8 def à la main
+606415.489          1127179.120          circe
+606415.489130906761 1127179.119549849274 cs2cs docker proj6.0
+606415.489106453373 1127179.119549891751 0.000000000000 cs2cs 4.8 def ignf !!
++init=epsg:2154
+
+avec igne
+
+echo 657723 6860710 | wine ~/.wine/drive_c/OSGeo4W64/bin/cs2cs.exe +init=ignf:lamb93  +to +no_defs +proj=lcc +lat_1=49.50000000000001 +lat_0=49.50000000000001 +lon_0=0 +k_0=0.999877341 +x_0=600000 +y_0=1200000 +a=6378249.2 +b=6356515 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m  -f %.12f
+
+echo 657723 6860710 | wine ~/.wine/drive_c/OSGeo4W64/bin/cs2cs.exe +init=epsg:2154  +to +no_defs +proj=lcc +lat_1=49.50000000000001 +lat_0=49.50000000000001 +lon_0=0 +k_0=0.999877341 +x_0=600000 +y_0=1200000 +a=6378249.2 +b=6356515 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m  -f %.12f
+
+
+IGNF:LAMB93
+
+
+echo 657723 6860710 | cs2cs +init=epsg:2154  +to +no_defs +proj=lcc +lat_1=49.50000000000001 +lat_0=49.50000000000001 +lon_0=0 +k_0=0.999877341 +x_0=600000 +y_0=1200000 +a=6378249.2 +b=6356515 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m  -f %.12f
+
+ echo 657723 6860710 | cs2cs +init=epsg:2154 +to +init=epsg:2155  -f %.12f
+ 
+Avec le docker proj6.0 :
+ echo 657723 6860710 | cs2cs +init=IGNF:LAMB93 +to +init=IGNF:LAMB1  -f %.12f
+606415.489130906761 127179.119549849274 0.000000000000
+
+Install proj6
+https://proj4.org/install.html#install
+
+Il faut passer aux init correctes : 
++init=IGNF:LAMB93
++init=IGNF:LAMB1
++init=epsg:
++init=IGNF:RGF93CC49
+
+
+
+Par contre on voit que le module linéaire n'est pas correct :
+echo 606400 127100 | cs2cs +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84 -f %.12f
+echo 606500 127100 | cs2cs +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84 -f %.12f
+echo 606500 127200 | cs2cs +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84 -f %.12f
+echo 606400 127200 | cs2cs +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84 -f %.12f
+
+
+cs2cs
+A=[4201714.362052434124 177898.297349285102 4779188.817014539614];
+B=[4201710.218410135247 177998.212339535996 4779188.740258184262];
+C=[4201634.983648246154 177995.142784630123 4779254.553982907906];
+D=[4201639.127291259356 177895.227776702726 4779254.630739286542];
+norm(A-B) =  100.000904695285
+norm(C-D) =  100.000922386217
+norm(C-B) =  100.005689467291
+norm(D-A) =  100.005689487785
+#on retrouve les résultats du tests NTF de comp (quand on passe en stéréo)
+
+Par contre le même calcul dans comp (LAMB1 => geocent) donne de bons résulats !
+
+
+circe 
+A=[4201750.723 177846.950 4779216.279]; #-57.7
+B=[4201746.579 177946.870 4779216.202]; #-57.7
+C=[4201671.344 177943.800 4779282.016]; #-57.9
+D=[4201675.488 177843.880 4779282.093]; #-57.9
+=> norm(A-B) = 100.005925149460
+=> norm(C-D) = 100.005925149460
+=> norm(C-B) = 100.006063421589
+
+On retrouve a peut pres le module linéaire avec Circé, mais pas du tout avec proj4.9 !
+
+Avec Circe en L93 :
+circe -115.8
+A=[4201661.927 177860.188 4779236.016];
+B=[4201657.148 177960.084 4779236.496];
+=> norm(A-B) = 100.011399635256
+Ca marche pas mal et on a validé que proj4.9 fonctionne aussi.
+
+Essayer avec proj6...
+sudo docker run -i -t osgeo/proj /bin/bash
+=> bof, accepte pas IGNF, ni rien d'autre !
+Essayer avec OSGeo4W64 => marche pas non plus, à installer sous windows pour de vrai !
+
+
+echo 606400 127100 | wine .wine/drive_c/OSGeo4W64/bin/cs2cs.exe +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84
+echo 606500 127100 | wine .wine/drive_c/OSGeo4W64/bin/cs2cs.exe +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84
+echo 606500 127200 | wine .wine/drive_c/OSGeo4W64/bin/cs2cs.exe +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84
+echo 606400 127200 | wine .wine/drive_c/OSGeo4W64/bin/cs2cs.exe +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84
+
+Avec OSGeo4W64 sous windows pour de vrai
+echo 606400 127100 | cs2cs.exe +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84
+echo 606500 127100 | cs2cs.exe +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84
+echo 606500 127200 | cs2cs.exe +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84
+echo 606400 127200 | cs2cs.exe +init=IGNF:LAMB1 +to +no_defs +proj=geocent +ellps=WGS84
+
+A=[4201714.36 177898.30 4779188.82];
+B=[4201710.22 177998.21 4779188.74];
+C=[4201634.98 177995.14 4779254.55];
+D=[4201639.13 177895.23 4779254.63];
+=> Exactement comme l'ancienne version !!
+
+Essai avec circé v4.2 en forçant NTF à faire des cartésiennes (mettre 3d pour ntf et ajouter export cartésiennes dans Data.txt) :
+A=[4201918.723 177906.950 4778896.279];
+B=[4201914.579 178006.870 4778896.202];
+C=[4201839.344 178003.800 4778962.016];
+D=[4201843.488 177903.880 4778962.093];
+norm(A-B) =  100.005925149460
+norm(C-D) =  100.005925149460
+norm(C-B) =  100.006063421589
+norm(A-D) =  100.006063421589
+

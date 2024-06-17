@@ -1,0 +1,297 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../gettingstarted.rst:5
+msgid "Getting Started"
+msgstr ""
+
+#: ../../gettingstarted.rst:7
+msgid ""
+"Example data can be found into the **ex/gettingstarted/** folder: "
+":download:`coord.cor <data/gettingstarted/coord.cor>`, "
+":download:`observ.obs <data/gettingstarted/observ.obs>`."
+msgstr ""
+
+#: ../../gettingstarted.rst:12
+msgid "Input Files"
+msgstr ""
+
+#: ../../gettingstarted.rst:14
+msgid ""
+"All coordinates and observations files are text files with fields "
+"delimited by any number of spaces or tabs. Blank lines are overlooked."
+msgstr ""
+
+#: ../../gettingstarted.rst:16
+msgid "Example::"
+msgstr ""
+
+#: ../../gettingstarted.rst:28
+msgid "Comments"
+msgstr ""
+
+#: ../../gettingstarted.rst:30
+msgid "The '*' character defines a comment that goes up to the end of the line."
+msgstr ""
+
+#: ../../gettingstarted.rst:32
+msgid ""
+"The comments associated to an observation or a point will appear as such "
+"in the :ref:`.html report file <out-report>`."
+msgstr ""
+
+#: ../../gettingstarted.rst:37
+msgid "Subfiles"
+msgstr ""
+
+#: ../../gettingstarted.rst:39
+msgid ""
+"Subfiles can be included in :ref:`.cor <corfiles>` or :ref:`.obs "
+"<obsfiles>` files with a '@' character preceeding their filename path "
+"relative to the current file."
+msgstr ""
+
+#: ../../gettingstarted.rst:44
+msgid "File Paths"
+msgstr ""
+
+#: ../../gettingstarted.rst:46
+msgid ""
+"|c3| data files can be located in any directory with the following "
+"restrictions:"
+msgstr ""
+
+#: ../../gettingstarted.rst:48
+msgid ""
+"spaces are not allowed in relative subfiles paths since they will be "
+"interpreted as field separators"
+msgstr ""
+
+#: ../../gettingstarted.rst:49
+msgid ""
+"Windows, unlike other operating systems, is case-insensitive, so wrong "
+"case can be used for subfile inclusions, but this will not work on other "
+"OS"
+msgstr ""
+
+#: ../../gettingstarted.rst:57
+msgid "Create a Project"
+msgstr ""
+
+#: ../../gettingstarted.rst:58
+msgid ""
+"Once you have the :ref:`.cor <corfiles>` and :ref:`.obs <obsfiles>` "
+"files, you can create a new project. In the |gui| (GUI), select "
+"*Project>New* and fill in the *Project Configuration* form (see :ref"
+":`project-params`). The mandatory parameters are the root :ref:`.cor "
+"<corfiles>` and :ref:`.obs <obsfiles>` files and the input frame."
+msgstr ""
+
+#: ../../gettingstarted.rst:60
+msgid "The new project is then automatically loaded into the main window."
+msgstr ""
+
+#: ../../gettingstarted.rst:63
+msgid "Main Window"
+msgstr ""
+
+#: ../../gettingstarted.rst:65
+msgid ""
+"Once the project is loaded in the |gui| with *Project>Open*, the project "
+"reading messages are shown."
+msgstr ""
+
+#: ../../gettingstarted.rst:67
+msgid ""
+"Use *Configuration* to make changes on project parameters, *Reload* to "
+"reload input files, *Start Compensation/Propagation/Monte-Carlo* to start"
+" the action or *View Log* to open the :ref:`html report file <out-"
+"report>`."
+msgstr ""
+
+#: ../../gettingstarted.rst:69
+msgid "The :abbr:`GUI (graphical user interface)` contains two main tables:"
+msgstr ""
+
+#: ../../gettingstarted.rst:71
+msgid "list of points"
+msgstr ""
+
+#: ../../gettingstarted.rst:72
+msgid "list of observations"
+msgstr ""
+
+#: ../../gettingstarted.rst:74
+msgid ""
+"By clicking on the *Act* field of an observation you can activate or "
+"deactivate it. You can then relaunch the computation to check if you "
+"isolated an error or not."
+msgstr ""
+
+#: ../../gettingstarted.rst:77
+msgid ""
+"The |c3| :abbr:`GUI (graphical user interface)`'s actions does not change"
+" the :ref:`.obs file<obsfiles>`. Keep in mind that reloading files, with "
+"\"Reload\", leads to the loss of all changes regarding the observations "
+"status deactivate/activate. You have to record deactivated observations "
+"in the :ref:`.obs file<obsfiles>` as described in :ref:`deactivated-obs`."
+msgstr ""
+
+#: ../../gettingstarted.rst:81
+msgid "For more details, see :ref:`gui`."
+msgstr ""
+
+#: ../../gettingstarted.rst:84
+msgid "Html Report"
+msgstr ""
+
+#: ../../gettingstarted.rst:86
+msgid ""
+"The html report is automatically generated at the end of computation or "
+"with *View Log* before computation (in which case it contains the initial"
+" state before computation)."
+msgstr ""
+
+#: ../../gettingstarted.rst:88
+msgid "For more details, see :ref:`out-report`."
+msgstr ""
+
+#: ../../gettingstarted.rst:91
+msgid "Quick Review of an Example"
+msgstr ""
+
+#: ../../gettingstarted.rst:94
+msgid "Example of .COR File"
+msgstr ""
+
+#: ../../gettingstarted.rst:96
+msgid "See example .cor file in *ex/gettingstarted/coord.cor*"
+msgstr ""
+
+#: ../../gettingstarted.rst:102
+msgid ""
+"In this example, only one point is declared, it gives minimal information"
+" to set the translation of the project."
+msgstr ""
+
+#: ../../gettingstarted.rst:104
+msgid ""
+"The point *StA* was chosen as all the other points can easily be "
+"determined from it in this project."
+msgstr ""
+
+#: ../../gettingstarted.rst:106
+msgid "For |more|, see :doc:`cor`."
+msgstr ""
+
+#: ../../gettingstarted.rst:110
+msgid "Example of .OBS File"
+msgstr ""
+
+#: ../../gettingstarted.rst:112
+msgid "See example .OBS file in *ex/gettingstarted/observ.obs*"
+msgstr ""
+
+#: ../../gettingstarted.rst:116
+msgid ""
+"First, an azimuth between two points is used to give the orientation of "
+"the whole figure. Then we have total stations observations from *StA* to "
+"*T1* and *T2*, and a leveling measurement between *T1* and *T2* to give "
+"some redondancy."
+msgstr ""
+
+#: ../../gettingstarted.rst:119
+msgid "For |more|, see :doc:`obs`."
+msgstr ""
+
+#: ../../gettingstarted.rst:122
+msgid "Computation"
+msgstr ""
+
+#: ../../gettingstarted.rst:124
+msgid ""
+"When the project is loaded, the coordinates of the undeclared points are "
+"computed, if possible. Then, the initial residual of every observation "
+"and the initial :math:`\\sigma_0` is given."
+msgstr ""
+
+#: ../../gettingstarted.rst:127
+msgid ""
+"The final :math:`\\sigma_0` is obtained after computation. Here, it is "
+"close to 1, meaning that the weights of the observations are coherent "
+"with their residuals."
+msgstr ""
+
+#: ../../gettingstarted.rst:129
+msgid "For |more|, see :doc:`computation`."
+msgstr ""
+
+#: ../../gettingstarted.rst:132
+msgid "Report"
+msgstr ""
+
+#: ../../gettingstarted.rst:134
+msgid ""
+"The computation report shows the map, the initial and final coordinates "
+"and the list of observations with many statistical indicators."
+msgstr ""
+
+#: ../../gettingstarted.rst:136
+msgid "For |more|, see :ref:`out-report`."
+msgstr ""
+
+#~ msgid ""
+#~ "For some example data, take a look"
+#~ " into the **ex/gettingstarted/** folder: "
+#~ ":download:`coord.cor <data/gettingstarted/coord.cor>`, "
+#~ ":download:`observ.obs <data/gettingstarted/observ.obs>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The comments associated to an "
+#~ "observation or a point will appear "
+#~ "as such in the :ref:`.html report "
+#~ "file <out-html>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you have the :ref:`.cor <corfiles>`"
+#~ " and :ref:`.obs <obsfiles>` files, you "
+#~ "can create a new project. For "
+#~ "this, in the |gui| (GUI), select "
+#~ "*Project>New* and fill in the *Project"
+#~ " Configuration* form (see :ref:`project-"
+#~ "params`). The mandatory parameters are "
+#~ "the root :ref:`.cor <corfiles>` and "
+#~ ":ref:`.obs <obsfiles>` files and the "
+#~ "input frame."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use *Configuration* to make changes on"
+#~ " project parameters, *Reload* to reload "
+#~ "input files, *Start Compensation/Propagation"
+#~ "/Monte-Carlo* to start the action or"
+#~ " *View Log* to open the :ref:`html"
+#~ " report file <out-html>`."
+#~ msgstr ""
+
+#~ msgid "For more details, see :ref:`out-html`."
+#~ msgstr ""
+

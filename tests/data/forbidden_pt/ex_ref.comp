@@ -1,0 +1,515 @@
+data=
+{
+	"COMP3D_COMMIT" : "v5.21rc3-273-ge3e3bf62-dirty",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2022 IGN France",
+	"COMP3D_LICENSE" : "Licensed to IGN/ENSG only",
+	"COMP3D_OPTIONS" : "QT SIM ",
+	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"all_data_files" : 
+	{
+		"0" : "ex.cor",
+		"1" : "ex.obs"
+	},
+	"all_forbidden_point_names" : 
+	[
+		"c"
+	],
+	"all_point_names" : 
+	[
+		"a",
+		"b"
+	],
+	"all_uninitializable_point_names" : null,
+	"computation" : 
+	{
+		"Monte_Carlo_done" : false,
+		"all_parameters_names" : 
+		[
+			"a_x",
+			"a_y",
+			"a_z",
+			"b_x",
+			"b_y",
+			"b_z",
+			"b_G0_1"
+		],
+		"all_sigma0" : 
+		[
+			2.4318983599506336,
+			0.7071067953674316,
+			0.70710678119255199
+		],
+		"chi2_test" : 
+		{
+			"DOF" : 1,
+			"confidence" : 0.98999999999999999,
+			"max" : 159.57586772460573,
+			"min" : 0.35624794089670553
+		},
+		"compensation_done" : true,
+		"computation_duration" : "00:00:00.000675",
+		"computation_start" : "2023-May-15 14:52:28.126130",
+		"internal_constraints" : false,
+		"internal_constraints_obs" : [],
+		"interrupted" : false,
+		"inverted_matrix" : false,
+		"kernel" : null,
+		"messages_computation" : "",
+		"messages_read_config" : "",
+		"messages_read_data" : "Reading COR...<br/>\nRead file ex.cor...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:4: There is already a forbidden point named \"c\".</font><br/>\nReading OBS...<br/>\nRead file ex.obs...<br/>\nPoints setting...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Forbidden point c.</font><br/>\nRead data finished.<br/>\nAll points are initialized.<br/>\nVertical deflection not used.<br/>\n",
+		"messages_set_least_squares" : "",
+		"nbr_active_obs" : 8,
+		"nbr_all_obs" : 8,
+		"nbr_iterations" : 2,
+		"nbr_parameters" : 7,
+		"projection" : 
+		{
+			"center_latitude" : 48.79999999999999,
+			"earth_model_radius" : 6380935.2757568145,
+			"geocent_def" : "+proj=geocent",
+			"input_proj_EPSG" : -1,
+			"input_proj_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0",
+			"input_proj_name" : "?",
+			"is_georef" : false,
+			"latlong_def" : "+proj=latlong",
+			"local_center_stereo" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"local_scale" : 1.0,
+			"stereo_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0"
+		},
+		"rank_deficiency" : 0,
+		"sigma_0_final" : 0.70710678119255199,
+		"sigma_0_init" : 2.4318983599506336,
+		"unit_name" : "g",
+		"use_vertical_deflection" : false
+	},
+	"config" : 
+	{
+		"center_latitude" : 48.799999999999997,
+		"clean_outputs" : false,
+		"compute_type" : 0,
+		"convergence_criterion" : 0.001,
+		"coord_cov_file" : "",
+		"description" : "",
+		"display_map" : true,
+		"files_unit" : 1,
+		"force_iterations" : 0,
+		"internal_constraints" : false,
+		"invert_matrix" : false,
+		"lang" : "en",
+		"local_center" : 
+		[
+			0.0,
+			0.0,
+			0.0
+		],
+		"max_iterations" : 100,
+		"misc_metadata" : null,
+		"name" : "forbidden pt",
+		"nb_digits" : 4,
+		"proj_def" : "?",
+		"refraction" : 0.12,
+		"root_COR_file" : "ex.cor",
+		"root_OBS_file" : "ex.obs",
+		"use_ellips_height" : true,
+		"use_proj" : false
+	},
+	"config_file" : "/home/JMMuller/prog/comp3d_cpp/tests/data/forbidden_pt/ex_ref.comp_test.comp",
+	"other_stations" : null,
+	"points" : 
+	{
+		"a" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				0.0,
+				10.001500001971529,
+				-0.000158053847848727
+			],
+			"coord_compensated_georef" : 
+			[
+				0.0,
+				10.00149999899697,
+				-0.00015020510296266177
+			],
+			"coord_read" : 
+			[
+				0.0,
+				10.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 5,
+			"number" : 0,
+			"params" : 
+			{
+				"a_x" : 
+				{
+					"rank" : 0,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				},
+				"a_y" : 
+				{
+					"rank" : 1,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 10.001499998990827
+				},
+				"a_z" : 
+				{
+					"rank" : 2,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -0.00015020510296266177
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.0,
+				0.0014999989969695093,
+				-0.00015020510296266177
+			],
+			"sigmas_init" : 
+			[
+				0.0001,
+				0.0001,
+				0.0001
+			],
+			"stations" : []
+		},
+		"b" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"coord_compensated_georef" : 
+			[
+				0.0,
+				-1.0615317544201627e-20,
+				1.3424477267288439e-23
+			],
+			"coord_read" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : null,
+			"file_id" : 0,
+			"nbr_active_obs" : 8,
+			"number" : 1,
+			"params" : 
+			{
+				"b_x" : 
+				{
+					"rank" : 3,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.0
+				},
+				"b_y" : 
+				{
+					"rank" : 4,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -1.0615317544201627e-20
+				},
+				"b_z" : 
+				{
+					"rank" : 5,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1.3424477267288439e-23
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.0,
+				-1.0615317544201627e-20,
+				1.3424477267288439e-23
+			],
+			"sigmas_init" : 
+			[
+				0.001,
+				0.001,
+				0.001
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 7,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0,
+							"number" : 0,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 0,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -1.0615317544201627e-20,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : -1.0615317544201628e-17,
+							"number" : 1,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 1,
+							"residual" : -1.0615317544201627e-20,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"normalized_residual" : 0.0,
+							"number" : 2,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 2,
+							"residual" : 0.0,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "b",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 8,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"normalized_residual" : 0.0,
+							"number" : 3,
+							"obs_azim" : 0.0,
+							"obs_length" : 10.001500000000002,
+							"obs_zen" : 1.5708120348005163,
+							"original_value" : 0.0,
+							"rank" : 3,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "a",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00100000269619,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 6,
+							"normalized_residual" : 2.6961915429730835e-06,
+							"number" : 5,
+							"obs_azim" : 0.0,
+							"obs_length" : 10.001500000000002,
+							"obs_zen" : 1.5708120348005163,
+							"original_value" : 100.001,
+							"rank" : 4,
+							"residual" : 2.6961915429730838e-09,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "a",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 10.001500000000002,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"normalized_residual" : 0.50000000000238742,
+							"number" : 6,
+							"obs_azim" : 0.0,
+							"obs_length" : 10.001500000000002,
+							"obs_zen" : 1.5708120348005163,
+							"original_value" : 10.000999999999999,
+							"rank" : 5,
+							"residual" : 0.00050000000000238742,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "a",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 10.001500000000002,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"normalized_residual" : -0.49999999999883471,
+							"number" : 7,
+							"obs_azim" : 0.0,
+							"obs_length" : 10.001500000000002,
+							"obs_zen" : 1.5708120348005163,
+							"original_value" : 10.002000000000001,
+							"rank" : 6,
+							"residual" : -0.00049999999999883471,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "a",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 1,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "b",
+							"instrument_height" : 0.0,
+							"line" : 5,
+							"normalized_residual" : 0.0,
+							"number" : 4,
+							"obs_azim" : 0.0,
+							"obs_length" : 10.001500000000002,
+							"obs_zen" : 1.5708120348005163,
+							"original_value" : 0.0,
+							"rank" : 7,
+							"residual" : 0.0,
+							"sigma_abs" : 9.9999999999999995e-07,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 9.9999999999999995e-07,
+							"target_height" : 0.0,
+							"to" : "a",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"b_G0_1" : 
+						{
+							"rank" : 6,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : 0.0
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Comp3D</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../ressource.qrc">
+    <normaloff>:/gui/icon.ico</normaloff>:/gui/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
+    <item>
+     <widget class="MainTables" name="mainTables">
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QSplitter::handle{image:url(:/gui/splitter_M.svg);}</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>true</bool>
+      </property>
+      <property name="handleWidth">
+       <number>12</number>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="3,3,1,3,1,3,3">
+      <item row="0" column="2">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="reloadPushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Reload files given in the configuration panel</string>
+        </property>
+        <property name="text">
+         <string>&amp;Reload</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="configPushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>&amp;Configuration</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="viewLogPushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="toolTip">
+         <string>Open the html log file of the computation</string>
+        </property>
+        <property name="text">
+         <string>&amp;View Log</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="stop_pushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>&amp;Interrupt</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="startComputPushButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>&amp;Start ...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1020</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Pro&amp;ject</string>
+    </property>
+    <addaction name="actionNew_project"/>
+    <addaction name="actionOpen_project"/>
+    <addaction name="actionProject_settings"/>
+    <addaction name="action_Reload"/>
+    <addaction name="action_Start"/>
+    <addaction name="action_Interrupt"/>
+    <addaction name="action_View_Log"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Co&amp;mp3D</string>
+    </property>
+    <addaction name="actionPreferences"/>
+    <addaction name="separator"/>
+    <addaction name="actionContents"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="actionSight_Matrix_to_Obs"/>
+    <addaction name="action_Infinity_ASC_to_BAS"/>
+    <addaction name="separator"/>
+    <addaction name="actionExport_Coordinates"/>
+    <addaction name="actionExport_to_Cor"/>
+    <addaction name="actionExport_VarCov"/>
+    <addaction name="actionExport_to_sinex"/>
+    <addaction name="actionExport_Sight_Matrix"/>
+    <addaction name="actionExport_relative_precisions"/>
+    <addaction name="actionExport_parameters_variations"/>
+    <addaction name="separator"/>
+    <addaction name="actionApply_Transfo_to_File"/>
+    <addaction name="action_Cartesian_Proj"/>
+    <addaction name="separator"/>
+    <addaction name="action_Project_File_Template"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </widget>
+  <action name="actionNew_project">
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="actionOpen_project">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+  <action name="actionContents">
+   <property name="text">
+    <string>&amp;Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionExport_to_sinex">
+   <property name="text">
+    <string>Export to &amp;Sinex File</string>
+   </property>
+  </action>
+  <action name="actionProject_settings">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Configuration</string>
+   </property>
+  </action>
+  <action name="actionExport_Sight_Matrix">
+   <property name="text">
+    <string>Export Sight &amp;Matrix</string>
+   </property>
+  </action>
+  <action name="actionSight_Matrix_to_Obs">
+   <property name="text">
+    <string>Sight Matrix to &amp;OBS File</string>
+   </property>
+  </action>
+  <action name="actionApply_Transfo_to_File">
+   <property name="text">
+    <string>Apply Cartesian &amp;Transfo</string>
+   </property>
+  </action>
+  <action name="actionExport_to_Cor">
+   <property name="text">
+    <string>Export to CO&amp;R File</string>
+   </property>
+  </action>
+  <action name="action_Cartesian_Proj">
+   <property name="text">
+    <string>&amp;Cartesian from/to Proj</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>&amp;Language</string>
+   </property>
+  </action>
+  <action name="action_Project_File_Template">
+   <property name="text">
+    <string>&amp;Project File Template</string>
+   </property>
+  </action>
+  <action name="action_Reload">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Reload</string>
+   </property>
+  </action>
+  <action name="action_Start">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Start...</string>
+   </property>
+  </action>
+  <action name="action_Interrupt">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Interupt</string>
+   </property>
+  </action>
+  <action name="action_View_Log">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;View Log</string>
+   </property>
+  </action>
+  <action name="actionExport_parameters_variations">
+   <property name="text">
+    <string>Export Parameters &amp;Variations</string>
+   </property>
+  </action>
+  <action name="actionExport_relative_precisions">
+   <property name="text">
+    <string>Export &amp;Relative Precisions</string>
+   </property>
+  </action>
+  <action name="action_Infinity_ASC_to_BAS">
+   <property name="text">
+    <string>&amp;Infinity ASC to BAS File</string>
+   </property>
+  </action>
+  <action name="actionExport_Coordinates">
+   <property name="text">
+    <string>Export &amp;Coordinates</string>
+   </property>
+  </action>
+  <action name="actionExport_VarCov">
+   <property name="text">
+    <string>Export V&amp;arCov Matrix</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MainTables</class>
+   <extends>QSplitter</extends>
+   <header>gui/maintables.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../ressource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

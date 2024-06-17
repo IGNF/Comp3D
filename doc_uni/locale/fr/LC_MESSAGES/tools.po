@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../tools.rst:5
+msgid "Tools"
+msgstr ""
+
+#: ../../tools.rst:7
+msgid "Several tools can be used from de *Tools* menu."
+msgstr ""
+
+#: ../../tools.rst:13
+msgid "Sight matrix to obs"
+msgstr ""
+
+#: ../../tools.rst:15
+msgid ""
+"Cet outil permet de convertir une matrice d'intervisibilité en fichier "
+"d'observation simulé. Il est accessible via le menu Outil>Matrice "
+"d'intervisibilité vers Obs."
+msgstr ""
+
+#: ../../tools.rst:19
+msgid ""
+"Le fichier d'entrée est une matrice d'intervisibilité. Sur la première "
+"ligne les points visés sont renseignés et sur la première colonne les "
+"stations."
+msgstr ""
+
+#: ../../tools.rst:23
+msgid ""
+"Un code 1 signifie que la station et la cible correspondante sont inter-"
+"visibles. 3 observations entre les 2 points seront alors créées dans le "
+"ficher *obs* en sortie :"
+msgstr ""
+
+#: ../../tools.rst:27
+msgid "un angle horizontal (code 5) ;"
+msgstr ""
+
+#: ../../tools.rst:29
+msgid "un angle vertical (code 6) ;"
+msgstr ""
+
+#: ../../tools.rst:31
+msgid "une distance (code 3)."
+msgstr ""
+
+#: ../../tools.rst:33
+msgid "Exemple : matrice.mat"
+msgstr ""
+
+#: ../../tools.rst:43
+msgid ""
+"La station S1 voit les cibles C1 et C4 : 6 observations correspondantes "
+"seront créées dans le fichier *obs* résultant."
+msgstr ""
+
+#: ../../tools.rst:46
+msgid ""
+"Il faut renseigner des précisions pour les trois types d'observation "
+"créés. Pour les précisions angulaires, la première valeur rentrée "
+"correspond à la précision de l'appareil tandis que la deuxième correspond"
+" à la définition de cible."
+msgstr ""
+
+#: ../../tools.rst:51
+msgid ""
+"Pour la précision sur les distances, la première valeur correspond à la "
+"précision de l'appareil tandis que la deuxième correspond à la précision "
+"proportionnelle à la distance (ppm)."
+msgstr ""
+
+#: ../../tools.rst:55
+msgid ""
+"Il est possible de créer un fchier d'observation avec des valeurs de "
+"mesures cohérentes avec des coordonnées de points. Pour cela il faut "
+"donner un fichier .cor contenant les coordonnées de tous les points "
+"référencés dans la matrice, et dire dans quel repère ces coordonnées sont"
+" exprimées. On peut également ajouter un bruit suivant le :math:`\\sigma`"
+" choisi pour les observations."
+msgstr ""
+
+#: ../../tools.rst:65
+msgid "Export sight matrix"
+msgstr ""
+
+#: ../../tools.rst:67
+msgid ""
+"Il est possible d'exporter la matrice d'intervisibilité d'un chantier. "
+"Pour cela il suffit de fournir le fichier *.comp* du chantier dans "
+"l'outil disponible dans Outils>Exporter la matrice d'intervisibilité. La "
+"matrice est alors fournie sous forme d'un fichier *.csv*."
+msgstr ""
+
+#: ../../tools.rst:76
+msgid "Export sinex"
+msgstr ""
+
+#: ../../tools.rst:78
+msgid ""
+"If the computation was georeferenced, export a subset of points to `sinex"
+" format "
+"<https://www.iers.org/IERS/EN/Organization/AnalysisCoordinator/SinexFormat/sinex.html>`_."
+msgstr ""
+
+#: ../../tools.rst:85
+msgid "Export relative precision"
+msgstr ""
+
+#: ../../tools.rst:87
+msgid ""
+"After a computation, you can export the relative precision between a set "
+"of points."
+msgstr ""
+
+#: ../../tools.rst:93
+msgid "Export parameters variations"
+msgstr ""
+
+#: ../../tools.rst:95
+msgid ""
+"Export the variations of each parameter at each iteration. Mostly for "
+"debugging purposes."
+msgstr ""
+
+#: ../../tools.rst:103
+msgid "Apply cartesian transfo"
+msgstr ""
+
+#: ../../tools.rst:105
+msgid ""
+"Sert à appliquer dans un sens ou dans l'autre la fonction de passage "
+"entre coordonnées cartésienne d'un instrument (définie dans un fichier "
+"*.xyz*) à un fichier de points en coordonnées cartésiennes."
+msgstr ""
+
+#: ../../tools.rst:109
+msgid ""
+"Cela permet par exemple de basculer tout un nuage de points d'un scanner "
+"3D dans le repère global du chantier."
+msgstr ""
+
+#: ../../tools.rst:117
+msgid "New to cor"
+msgstr ""
+
+#: ../../tools.rst:119
+msgid "On peut convertir un fichier *.new* en *.cor* avec cet outil."
+msgstr ""
+
+#: ../../tools.rst:121
+msgid ""
+"Attention, les coordonnées compensées des points contraints varient par "
+"les moindres carrés. Il faut donc remettre leurs coordonnées originales "
+"dans le fichier obtenu."
+msgstr ""
+
+#: ../../tools.rst:129
+msgid "Cartesian from/to projection"
+msgstr ""
+
+#: ../../tools.rst:131
+msgid ""
+"Cet outil permet de faire des conversions entre fichiers de coordonnées "
+"en projection (locale ou géoréférencée) et coordonnées cartésiennes "
+"globales."
+msgstr ""
+
+#: ../../tools.rst:134
+msgid "Il faut pour cela définir le repère de calcul."
+msgstr ""
+
+#: ../../tools.rst:141
+msgid "Project file template"
+msgstr ""
+
+#: ../../tools.rst:143
+msgid ""
+"Cet outil permet de récupérer l'ensemble des fichiers nécessaires au "
+"rendu html du rapport. Il permet aussi d'obtenir un fichier *.comp* "
+"minimal pour générer des configurations de calcul hors de Comp3D."
+msgstr ""
+
+#~ msgid "New vers cor"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On peut convertir un fichier *.new* "
+#~ "en *.cor* avec l’outil dédié dans "
+#~ "la barre de menu (Outil>New vers "
+#~ "Cor). Attention, les coordonnées compensées"
+#~ " des points contraints varient par "
+#~ "les moindres carrés. Il faut donc "
+#~ "remettre leurs coordonnées originales dans "
+#~ "le fichier obtenu *.cor*."
+#~ msgstr ""
+
+#~ msgid "Matrice d’intervisibilité vers *obs*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cet outil permet de convertir une "
+#~ "matrice d’intervisibilité en fichier "
+#~ "d’observation simulé. Il est accessible "
+#~ "via le menu Outil>Matrice d’intervisibilité"
+#~ " vers Obs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le fichier d’entrée est une matrice "
+#~ "d’intervisibilité. Sur la première ligne "
+#~ "les points visés sont renseignés et "
+#~ "sur la première colonne les stations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il faut renseigner des précisions pour"
+#~ " les trois types d’observation créés. "
+#~ "Pour les précisions angulaires, la "
+#~ "première valeur rentrée correspond à la"
+#~ " précision de l’appareil tandis que "
+#~ "la deuxième correspond à la définition"
+#~ " de cible."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour la précision sur les distances, "
+#~ "la première valeur correspond à la "
+#~ "précision de l’appareil tandis que la"
+#~ " deuxième correspond à la précision "
+#~ "proportionnelle à la distance (ppm)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est possible de créer un fchier"
+#~ " d’observation avec des valeurs de "
+#~ "mesures cohérentes avec des coordonnées "
+#~ "de points. Pour cela il faut "
+#~ "donner un fichier .cor contenant les "
+#~ "coordonnées de tous les points "
+#~ "référencés dans la matrice, et dire "
+#~ "dans quel repère ces coordonnées sont"
+#~ " exprimées. On peut également ajouter "
+#~ "un bruit suivant le :math:`\\sigma` "
+#~ "choisi pour les observations."
+#~ msgstr ""
+
+#~ msgid "Exporter la matrice d’intervisibilité"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est possible d’exporter la matrice"
+#~ " d’intervisibilité d’un chantier. Pour cela"
+#~ " il suffit de fournir le fichier "
+#~ "*.comp* du chantier dans l’outil "
+#~ "disponible dans Outils>Exporter la matrice "
+#~ "d’intervisibilité. La matrice est alors "
+#~ "fournie sous forme d’un fichier *.csv*."
+#~ msgstr ""
+

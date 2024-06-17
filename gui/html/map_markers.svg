@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="map_markers.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="249.97501"
+     inkscape:cy="885.2404"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:measure-start="150,860"
+     inkscape:measure-end="190,860"
+     inkscape:window-width="2560"
+     inkscape:window-height="1359"
+     inkscape:window-x="0"
+     inkscape:window-y="54"
+     inkscape:window-maximized="1"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ff4185;fill-opacity:0.58823532;stroke:#ba2323;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stroke-linejoin:bevel;opacity:1"
+       id="rect817"
+       width="13.229166"
+       height="13.229166"
+       x="43.65625"
+       y="43"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_s.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 48.947913,65.489585 58.20833,80.041668 H 39.687497 Z"
+       id="path821-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_f.png"
+       inkscape:export-xdpi="24.579201"
+       inkscape:export-ydpi="24.579201" />
+    <rect
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect817-3"
+       width="13.229167"
+       height="13.229167"
+       x="42.333332"
+       y="68.135422"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_s.png"
+       inkscape:export-xdpi="24.579201"
+       inkscape:export-ydpi="24.579201" />
+    <rect
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect863"
+       width="21.166666"
+       height="21.166666"
+       x="38.364582"
+       y="64.166664" />
+    <rect
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect863-5"
+       width="21.166666"
+       height="21.166666"
+       x="14.552083"
+       y="41.677082"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_f.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <rect
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect863-3"
+       width="21.166666"
+       height="21.166666"
+       x="39.6875"
+       y="39.03125"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_s.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <rect
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect863-56"
+       width="21.166666"
+       height="21.166666"
+       x="64.822914"
+       y="40.354168"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="24"
+       inkscape:export-ydpi="24" />
+    <circle
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#00ba93;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path819-6-2"
+       cx="75.40625"
+       cy="50.937504"
+       r="7.9375024"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="24.579201"
+       inkscape:export-ydpi="24.579201" />
+    <path
+       style="opacity:1;fill:#ce8f00;fill-opacity:0.58823532;stroke:#f55200;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 25.135416,43 9.260417,14.552083 H 15.875001 Z"
+       id="path821-7-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_f.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:0.75;fill:none;stroke:#00ba93;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 39.687498,74.750005 H 58.208331"
+       id="path950"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:0.75;fill:none;stroke:#00ba93;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 48.947914,65.489588 V 84.010421"
+       id="path952"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect863-1"
+       width="21.166666"
+       height="21.166666"
+       x="13.229166"
+       y="62.843742"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <circle
+       style="opacity:1;fill:#0063d2;fill-opacity:0.58823529;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path819-6-2-3"
+       cx="23.8125"
+       cy="73.427086"
+       r="6.6145859"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:1;fill:#0063d2;fill-opacity:0.58823529;stroke:#00df80;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 14.552083,73.427084 H 33.072917"
+       id="path950-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:1;fill:#0063d2;fill-opacity:0.58823529;stroke:#00df80;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 23.8125,64.166667 V 82.6875"
+       id="path952-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <rect
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect863-1-6"
+       width="21.166666"
+       height="21.166666"
+       x="62.177082"
+       y="64.166656"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <ellipse
+       style="opacity:1;fill:#00a05c;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path819-6-2-3-0"
+       cx="72.760414"
+       cy="74.75"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001"
+       rx="3.9687474"
+       ry="2.6458333" />
+    <path
+       style="opacity:1;fill:#0063d2;fill-opacity:0.58823529;stroke:#00a05c;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 63.499998,74.750006 H 82.020832"
+       id="path950-2-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:1;fill:#0063d2;fill-opacity:0.58823529;stroke:#00a05c;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 72.760415,65.489589 V 84.010422"
+       id="path952-7-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_t.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <rect
+       style="opacity:0.75;fill:none;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect863-1-6-6"
+       width="21.166666"
+       height="21.166666"
+       x="85.989578"
+       y="64.166656"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_s.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <ellipse
+       style="opacity:1;fill:#0033a0;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path819-6-2-3-0-1"
+       cx="96.572914"
+       cy="74.75"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_s.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001"
+       rx="2.6458309"
+       ry="3.9687474" />
+    <path
+       style="opacity:1;fill:#0033a0;fill-opacity:1;stroke:#0033a0;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 89.958333,68.135417 103.1875,81.364583"
+       id="path950-2-6-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_s.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+    <path
+       style="opacity:1;fill:#0033a0;fill-opacity:1;stroke:#0033a0;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 103.1875,68.135417 89.958333,81.364583"
+       id="path952-7-2-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/data/tmp/2020/s12/ex_rapport_comp/res/marker_s.png"
+       inkscape:export-xdpi="19.200001"
+       inkscape:export-ydpi="19.200001" />
+  </g>
+</svg>

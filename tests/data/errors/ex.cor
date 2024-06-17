@@ -1,0 +1,9 @@
+@toto.cor * n'existe pas
+1ere part * oubli commentaire
+1 S1 10 20 0.01 0.01 * manque un champ
+
+56 t 0 0 0 0.0001 0.0001 0.0001 * code inexistant
+
+1 a 0 11 0 0.0001 0.0001 0.0001
+0 b 0 0 0 0.001 0.001 0.001
+

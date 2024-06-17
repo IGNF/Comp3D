@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../auto.rst:5
+msgid "Automatization"
+msgstr ""
+
+#: ../../auto.rst:7
+msgid ""
+"Comp3D can be used without its |gui|, to automatically compensate "
+"observations. This can be used to build a real-time monitoring system."
+msgstr ""
+
+#: ../../auto.rst:10
+msgid ""
+"In this case, both Comp3D and the project parameters must be set outside "
+"of Comp3D."
+msgstr ""
+
+#: ../../auto.rst:15
+msgid "Paramètres Comp3D"
+msgstr ""
+
+#: ../../auto.rst:17
+msgid "Ces paramètres sont stockés dans le fichier *comp3d_config.txt* de Comp3D."
+msgstr ""
+
+#: ../../auto.rst:20
+msgid ""
+"À l'ouverture du logiciel, les paramètres suivants sont lus dans ce "
+"fichier :"
+msgstr ""
+
+#: ../../auto.rst:23
+msgid "Chemin du dernier chantier ouvert"
+msgstr ""
+
+#: ../../auto.rst:25
+msgid ""
+"Langue : anglais \"en\" ou français \"fr\". La langue ne s'applique à "
+"l'interface graphique qu'au démarrage."
+msgstr ""
+
+#: ../../auto.rst:28
+msgid ""
+"une ligne non lue, contenant \"4095\" pour rétro-compatibilité avec les "
+"versions <5.20"
+msgstr ""
+
+#: ../../auto.rst:31
+msgid "Chemin du répertoire des données de Proj"
+msgstr ""
+
+#: ../../auto.rst:33
+msgid ""
+"une ligne non lue, contenant \"1\" pour rétro-compatibilité avec les "
+"versions <5.20"
+msgstr ""
+
+#: ../../auto.rst:36
+msgid ""
+"Si le fichier n'existe pas, Comp3D va en créer un par défaut dans le "
+"répertoire d'installation de Comp3D."
+msgstr ""
+
+#: ../../auto.rst:39
+msgid ""
+"Si le chemin des données de Proj n'est pas correct, Comp3D va chercher à "
+"d'autres emplacements (voir messages dans le terminal). Si un chemin "
+"correct est trouvé, le fichier de configuration est automatiquement mis à"
+" jour."
+msgstr ""
+
+#: ../../auto.rst:44
+msgid ""
+"Avec l'interface graphique il n'est pas nécessaire de modifier "
+"directement le fichier de paramètres, le menu Comp3D>Préférences est fait"
+" pour ça."
+msgstr ""
+
+#: ../../auto.rst:48
+msgid ""
+"Pour modifier les préférences hors interface graphique, il faut créer et "
+"modifier le fichier *comp3d_config.txt* en respectant la structure "
+"décrite ci-dessus."
+msgstr ""
+
+#: ../../auto.rst:55
+msgid "Project Settings json"
+msgstr ""
+
+#: ../../auto.rst:57
+msgid ""
+"The project settings are recorded in the *config* node of the *.comp* "
+"file."
+msgstr ""
+
+#: ../../auto.rst:59
+msgid ""
+"An example of minimal *.comp* file can be obtained from the command line "
+"when running Comp3D with *-h* option, or via the :ref:`project-template` "
+"tool."
+msgstr ""
+
+#: ../../auto.rst:62
+msgid "See :ref:`project-params` for each parameter description."
+msgstr ""
+
+#: ../../auto.rst:67
+msgid "Command line computation"
+msgstr ""
+
+#: ../../auto.rst:69
+msgid ""
+"To run a compensation without interaction, simply launch Comp3D with the "
+"*.comp* file as a parameter."
+msgstr ""
+
+#: ../../auto.rst:72
+msgid "Output"
+msgstr ""
+
+#: ../../auto.rst:74
+msgid ""
+"Une chaîne de calcul automatique lira directement les données json du "
+"fichier *.comp*, mais en cas de besoin on peut utiliser l'outil :ref"
+":`project-template` pour avoir tous les fichiers nécessaires pour le "
+"rendu html."
+msgstr ""
+

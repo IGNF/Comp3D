@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>gui/html/visu_comp.js</file>
+        <file>gui/html/comp3d.css</file>
+        <file>gui/html/logo_IGN.jpg</file>
+        <file alias="qt_fr.qm">gui/translations/qt_fr.qm</file>
+        <file alias="qtbase_fr.qm">gui/translations/qtbase_fr.qm</file>
+        <file>gui/html/Chart.js</file>
+        <file>gui/icon.ico</file>
+        <file>gui/html/logo_comp.png</file>
+        <file>gui/html/leaflet.js</file>
+        <file>gui/html/leaflet.css</file>
+        <file>gui/html/marker_f.png</file>
+        <file>gui/html/marker_s.png</file>
+        <file>gui/html/marker_t.png</file>
+        <file>gui/html/l.ellipse.min.js</file>
+        <file>gui/splitter_L.svg</file>
+        <file>gui/splitter_R.svg</file>
+        <file>gui/splitter_M.svg</file>
+        <file>gui/html/marker_r1.png</file>
+        <file>gui/html/marker_r2.png</file>
+        <file>gui/html/burger.png</file>
+    </qresource>
+</RCC>
