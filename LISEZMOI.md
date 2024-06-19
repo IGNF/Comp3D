@@ -64,7 +64,7 @@ Licence
 -----------------------------
 Comp3D est distribué sans aucune garante, sous la licence **GPLv3**, voir [LICENSE.md](LICENSE.md).
 
-Voir [NOTICE.txt](NOTICE.txt) pour les bibliothèques embarquées et liées.
+Voir [NOTICE.md](NOTICE.md) pour les bibliothèques embarquées et liées.
 
 
 Comment Citer

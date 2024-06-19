@@ -65,7 +65,7 @@ License
 -------
 Comp3D is provided with absolutely no warranty, under **GPLv3** license, see [LICENSE.md](LICENSE.md).
 
-Refer to [NOTICE.txt](NOTICE.txt) for the embedded and linked libraries.
+Refer to [NOTICE.md](NOTICE.md) for the embedded and linked libraries.
 
 
 How to Cite
