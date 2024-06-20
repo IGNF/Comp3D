@@ -108,6 +108,14 @@ VarCovarMatrix::VarCovarMatrix(const std::string &csv_path, const std::string &c
         params_col.push_back(token);
     auto selectedIndices = selectUsefulParams(params_col);
 
+    if (selectedIndices.empty())
+    {
+        Project::theInfo()->warning(INFO_OBS,1,
+                                  QT_TRANSLATE_NOOP("QObject","Nothing useful in CorCov matrix %s (no coord constraints on matrix points)."),
+                                  csv_path.c_str());
+        return;
+    }
+
     matrix.resize(selectedIndices.size(),selectedIndices.size());
     int num_row = 0;
     int num_row_index = 0;
