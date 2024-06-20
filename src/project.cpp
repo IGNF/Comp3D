@@ -1688,6 +1688,7 @@ bool Project::exportVarCov(const std::string &filename, std::vector<Point *> &se
         matrixFile<<"param"<<"\t";
         for (const auto& param : selected_params)
             matrixFile<<param->name<<"\t";
+        matrixFile<<"\n";
         for (unsigned i=0;i<selected_params.size();i++)
         {
             matrixFile<<selected_params[i]->name<<"\t";
