@@ -43,7 +43,7 @@ cd $1
   cp -R $base/datasets/gettingstarted $dir_name/datasets/gettingstarted
   cp -R $base/datasets/gettingfurther $dir_name/datasets/gettingfurther
   cp $base/LICENSE.md $base/README.md $base/LISEZMOI.md $base/CONTRIBUTORS.md $base/changelog.txt $dir_name
-  cp $base/src/*/LICENSE* $base/gui/html/LICENSE* $base/NOTICE.txt $dir_name/licenses
+  cp $base/src/*/LICENSE* $base/gui/html/LICENSE* $base/NOTICE.md $dir_name/licenses
   cp $base/data/logo_* $dir_name/data
   cp $base/data/comp3d5.xpm $dir_name
   zip -r $base/${dir_name}.zip $dir_name

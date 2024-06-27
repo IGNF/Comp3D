@@ -44,7 +44,7 @@ cd -
   cp -R $base/datasets/gettingstarted $dir_name/datasets/gettingstarted
   cp -R $base/datasets/gettingfurther $dir_name/datasets/gettingfurther
   cp $base/LICENSE.md $base/README.md $base/LISEZMOI.md $base/CONTRIBUTORS.md $base/changelog.txt $dir_name
-  cp $base/src/*/LICENSE* $base/gui/html/LICENSE* $base/NOTICE.txt $dir_name/licenses
+  cp $base/src/*/LICENSE* $base/gui/html/LICENSE* $base/NOTICE.md $dir_name/licenses
   cp $base/data/logo_* $dir_name/data
   tar zcvf $base/${dir_name}.tgz $dir_name
 cd -
