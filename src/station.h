@@ -21,6 +21,7 @@
 #include "json/json.h"
 #include "parameter.h"
 #include <vector>
+#include <list>
 
 
 class Point;

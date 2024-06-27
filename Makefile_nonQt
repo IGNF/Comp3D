@@ -1,6 +1,6 @@
 CXX = g++
-CXXFLAGS = -DUSE_AUTO -DADD_PROJ_CC -DADD_PROJ_NTF -DUSE_SIM -Isrc/ -std=c++11 -I/usr/local/proj61/include/
-LFLAGS = -no-pie -lboost_system -lboost_filesystem -lboost_date_time -lboost_regex -lboost_graph -lproj -lsqlite3 -L/usr/local/proj61/lib/
+CXXFLAGS = -DUSE_AUTO -DADD_PROJ_CC -DADD_PROJ_NTF -DUSE_SIM -Isrc/ -std=c++14 -I/usr/local/proj82/include/
+LFLAGS = -no-pie -lboost_system -lboost_filesystem -lboost_date_time -lboost_regex -lboost_graph -lproj -lsqlite3 -L/usr/local/proj82/lib/
 EXE = Comp3d5_nonQt
 
 CXX_SRCS = $(wildcard src/*.cpp main.cpp) src/genere/git_revision.cpp
@@ -20,4 +20,3 @@ clean:
 
 %.o: %.cpp
 	$(CXX) -c  $(CXXFLAGS) $< -o $@
-

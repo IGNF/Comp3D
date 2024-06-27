@@ -124,7 +124,9 @@ int main(int argc, char *argv[])
     std::cout<<"------------------------------------------------------------------------"<<std::endl;
     std::cout<<" end of "<<COMP3D_VERSION<<std::endl;
     std::cout<<"------------------------------------------------------------------------"<<std::endl;
+#ifdef USE_QT
     delete a;
+#endif
     return result;
 }
 
