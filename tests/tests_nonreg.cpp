@@ -85,7 +85,7 @@ void Tests_NonReg::test_baselines()
 {
     std::cout<<"\nPrepare test_baselines"<<std::endl;
     std::string refFile="./data/baselines/ex_ref.comp";
-    std::string refMD5="c771484db5f9691401925f5820bdbbac";
+    std::string refMD5="399a84b6b3722a45c4fa74004c380046";
 
     test_template(refFile, refMD5,false);
 }

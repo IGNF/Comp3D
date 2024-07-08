@@ -3,5 +3,6 @@ Comp V5.23 (next version):
  - new rot export xyz
  - faster solver solver
  - change sigma_total
+ - sigma factor applicable to cartesian and polar subframes
 
 

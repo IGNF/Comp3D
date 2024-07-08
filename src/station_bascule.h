@@ -89,7 +89,8 @@ public:
     tdouble a,b,c;//value of orientations unknowns
     Mat3 R_vert2instr;//Matrix between vertical on station point and instrument z (should be I if bubbuled)
 
-    tdouble stationHeight, varianceFactor; //only for GNSS baselines
+    tdouble stationHeight; //Only for GNSS baselines
+    tdouble sigmaFactor; //for GNSS baselines (19) and cartesian subframes (11) and polar subframes (12)
 
     //only when reading transfo
     std::string readStationName;

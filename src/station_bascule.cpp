@@ -181,6 +181,10 @@ bool Obs3D::read_obs(const std::string& line, int line_number, DataFile *_file, 
 
     if ((station->triplet_type==STATION_CODE::BASC_XYZ_CART)||(station->triplet_type==STATION_CODE::BASC_ANG_CART))
     {
+        sigma_abs1_original*=station->sigmaFactor; //apply standard deviation factor
+        sigma_abs2_original*=station->sigmaFactor;
+        sigma_abs3_original*=station->sigmaFactor;
+
         if ((fabs(sigma_abs1_original)<MINIMAL_SIGMA)||(fabs(sigma_abs2_original)<MINIMAL_SIGMA)||(fabs(sigma_abs3_original)<MINIMAL_SIGMA))
         {
             Project::theInfo()->warning(INFO_OBS,_file->get_fileDepth()+1,QT_TRANSLATE_NOOP("QObject","At line %d: %s => Observation sigma_abs is too small."),line_number,line.c_str());
@@ -233,13 +237,14 @@ bool Obs3D::read_obs(const std::string& line, int line_number, DataFile *_file, 
         else if (station->triplet_type==STATION_CODE::BASELINE_GEO_XYZ)
         {
             active1 = active2 = active3 = active1 && active2 && active3; //semi-active baselines not allowed
-
-            sigma_abs1_original*=station->varianceFactor; //apply variance factor
-            sigma_abs2_original*=station->varianceFactor;
-            sigma_abs3_original*=station->varianceFactor;
-            sigma_xy*=station->varianceFactor;
-            sigma_xz*=station->varianceFactor;
-            sigma_yz*=station->varianceFactor;
+            //sigma_abs 1,2,3 are variances and not standard deviations
+            double varianceFactor = station->sigmaFactor*station->sigmaFactor;
+            sigma_abs1_original*=varianceFactor; //apply variance factor
+            sigma_abs2_original*=varianceFactor;
+            sigma_abs3_original*=varianceFactor;
+            sigma_xy*=varianceFactor;
+            sigma_xz*=varianceFactor;
+            sigma_yz*=varianceFactor;
 
             station->observations.emplace_back(station->origin(),to,station,OBS_CODE::BASELINE_X,active1,value1_original,sqrt(sigma_abs1_original),
                                                0,station->stationHeight,target_height,
@@ -854,7 +859,7 @@ Coord Obs3D::obsToInstrumentFrameCoords(bool simul)
 
 Station_Bascule::Station_Bascule(Point *origin):Station(origin, STATION_TYPE::ST_BASCULE),isVertical(false),isGeocentric(false),
     da(0.0),db(0.0),dc(0.0),a(0.0),b(0.0),c(0.0),R_vert2instr(Mat3::Zero()),
-    stationHeight(0.0),varianceFactor(1.0),triplet_type(STATION_CODE::BASC_XYZ_CART),file(nullptr)
+    stationHeight(0.0),sigmaFactor(1.0),triplet_type(STATION_CODE::BASC_XYZ_CART),file(nullptr)
 {
 }
 
@@ -1075,8 +1080,8 @@ Json::Value Station_Bascule::toJson(FileRefJson &fileRef) const
     if (isGeocentric)
     {
         val["station_height"]=static_cast<double>(stationHeight);
-        val["variance_factor"]=static_cast<double>(varianceFactor);
     }
+    val["sigma_factor"]=static_cast<double>(sigmaFactor);
 
     val["ang_to_vert"]=angleInstr2Vert()/toRad(1.0,Project::theone()->config.filesUnit);
     return val;
@@ -1234,13 +1239,28 @@ bool Station_Bascule::read_obs(std::string line,
 
     if (!isGeocentric) //test if bascule is verticalized
     {
-        int vertical_int=-1;
-        if (iss >> vertical_int)
-            isVertical=(vertical_int>=0);
-    }else{ //test if variance factor and station height
-        if ((iss >> varianceFactor))
+        std::string vertical_str;
+        if (iss >> vertical_str){
+            if(vertical_str == "1" || vertical_str == "V" || vertical_str == "v")
+                isVertical=true;
+            else if (vertical_str == "-1" || vertical_str == "N" || vertical_str == "n")
+                isVertical=false;
+            else{
+                Project::theInfo()->warning(INFO_OBS,_file->get_fileDepth(),QT_TRANSLATE_NOOP("QObject","At line %d: %s => %s is not a valid value for Vertical."),line_number,line.c_str(),vertical_str.c_str());
+                ok=false;
+            }
+            if (!(iss >> sigmaFactor))
+                sigmaFactor=1.0;
+        }
+        else
+            isVertical=false;
+    }
+    else{ //test if variance factor and station height
+        if (iss >> sigmaFactor)
             iss >> stationHeight;
-        varianceFactor*=varianceFactor;//varianceFactor=K**2
+        else
+            sigmaFactor=1.0;
+        
         isVertical=false;
     }
 

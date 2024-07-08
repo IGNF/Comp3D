@@ -146,13 +146,16 @@ Cartesian Subframes
 
 The protocol of a cartesian subframe (code ``11``) in *.obs* file is:
 
-    +----------------------------------------------+
-    |:math:`11\ origin\ @file.xyz\ [1]\ [*comment]`|
-    +----------------------------------------------+
+    +-----------------------------------------------------------+
+    | :math:`11\ origin\ @file.xyz\ [vertical\ [K]]\ [*comment]`|
+    +-----------------------------------------------------------+
 
 Code ``11`` is used in case of frame change computation or terrestrial lidar measurements adjustment.
 
-It is possible to add a ``1`` in the 4\ :sup:`th` column to indicate that the station is verticalized, i.e. the subframe's Z axis is vertical.
+- Optional parameters:
+
+  - *vertical*: ``V`` (or ``1``) indicates that the station is verticalized, i.e. the subframe's Z axis is vertical. ``N`` (or ``-1``) means that the station isn't verticalized (default: not verticalized)
+  - *K*: factor to be applied to the standard deviations in the cartesian subframe file (default: 1)
 
 The observations file *.xyz* contains the cartesian coordinates of points in a subframe centered on *origin*. Each line in the *.xyz* file contains the point name, its coordinates in the subframe and its precision(s).
 Therefore, the possible protocols in *.xyz* file are:
@@ -204,13 +207,17 @@ Polar Subframes
 
 The protocol of a polar subframe (code ``12``) is:
 
-    +----------------------------------------------+
-    |:math:`12\ origin\ @file.xyz\ [1]\ [*comment]`|
-    +----------------------------------------------+
+    +-----------------------------------------------------------+
+    | :math:`12\ origin\ @file.xyz\ [vertical\ [K]]\ [*comment]`|
+    +-----------------------------------------------------------+
 
 Code ``12`` is used in case of non-verticalized total station, laser tracker or photogrammetric measurements.
 
-It is possible to add a ``1`` in the 4\ :sup:`th` column to indicate that the station is verticalized, i.e. the subframe's Z axis is vertical.
+- Optional parameters:
+
+  - *vertical*: ``V`` (or ``1``) indicates that the station is verticalized, i.e. the subframe's Z axis is vertical. ``N`` (or ``-1``) means that the station isn't verticalized (default: not verticalized)
+  - *K*: factor to be applied to the standard deviations in the polar subframe file (default: 1)
+
 
 The observations file *.xyz* contains the polar coordinates of points in a subframe centered on *origin*. Each line in the *.xyz* file contains the point name, its polar coordinates (pseudo-horizontal angle :math:`\alpha`, pseudo-vertical angle :math:`\beta`, distance) and their precisions.
 
@@ -333,8 +340,8 @@ The protocol of GNSS baselines *.obs* file is:
 - *pt*: starting point of all baselines described in *.bas* file
 - optional parameters:
 
-  - *K*: factor to be applied squarred to the baselines' variance-covariance matrix; this amends for potential overestimation of the output precision given by the GNSS software
-  - :math:`h_{station}`: station height
+  - *K*: factor to be applied squarred to the baselines' variance-covariance matrix; this amends for potential overestimation of the output precision given by the GNSS software (default: 1)
+  - :math:`h_{station}`: station height (default: 0)
 
 The *.bas* file contains, for each point, its name, vector from the station, variance-covariance upper-half matrix, and, eventually, target height. Therefore, the protocol in *.bas* file is:
 

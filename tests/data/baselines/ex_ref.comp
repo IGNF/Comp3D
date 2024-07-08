@@ -1,9 +1,10 @@
 data=
 {
-	"COMP3D_COMMIT" : "v5.22-21-ge6096736-dirty",
-	"COMP3D_COPYRIGHT" : "Copyright 1992-2024 IGN France",
-	"COMP3D_LICENSE" : "Licensed for tests only",
+	"COMP3D_COMMIT" : "InitPublic-12-g17577e34-dirty",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2024 IGN France www.ign.fr",
+	"COMP3D_LICENSE" : "Provided with absolutely no warranty, under GPLv3 license",
 	"COMP3D_OPTIONS" : "QT SIM ",
+	"COMP3D_REPO" : "https://github.com/IGNF/Comp3D",
 	"COMP3D_VERSION" : "COMP3D v5.23dev-linux",
 	"all_data_files" : 
 	{
@@ -50,8 +51,8 @@ data=
 			"min" : 0.48340294863001054
 		},
 		"compensation_done" : true,
-		"computation_duration" : "00:00:00.002352",
-		"computation_start" : "2024-May-14 11:35:09.882589",
+		"computation_duration" : "00:00:00.000216",
+		"computation_start" : "2024-Jul-04 16:37:51.524487",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
@@ -152,7 +153,7 @@ data=
 		"use_ellips_height" : true,
 		"use_proj" : true
 	},
-	"config_file" : "/home/JMMuller/prog/comp3d_cpp/tests/data/baselines/ex_ref.comp_test.comp",
+	"config_file" : "/home/CBellon/Documents/Developpement/Comp3D/Comp3D/comp3d_cpp/tests/data/baselines/ex_ref.comp_test.comp",
 	"other_stations" : null,
 	"points" : 
 	{
@@ -555,10 +556,10 @@ data=
 						}
 					],
 					"params" : null,
+					"sigma_factor" : 1.0,
 					"station_height" : 0.0,
 					"triplet_type" : 19,
 					"type" : "bascule",
-					"variance_factor" : 1.0,
 					"vertical" : false
 				},
 				{
