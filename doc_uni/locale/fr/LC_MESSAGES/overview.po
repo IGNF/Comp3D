@@ -1,3 +1,7 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) IGN
 # This file is distributed under the same license as the Comp3D package.
@@ -8,14 +12,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comp3D \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-29 10:25+0200\n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../overview.rst:5
 msgid "Overview"
@@ -23,8 +27,8 @@ msgstr ""
 
 #: ../../overview.rst:7
 msgid ""
-"Comp3D is a micro-geodesy compensation software that enables computation "
-"on a limited spread network (few kilometers) using a global 3D least-"
+"|c3| is a micro-geodesy compensation software that enables computation on"
+" a limited spread network (few kilometers) using a global 3D least-"
 "squares bundle adjustment on several topometric observation types."
 msgstr ""
 
@@ -39,124 +43,148 @@ msgid "Features"
 msgstr ""
 
 #: ../../overview.rst:15
-msgid "simple input format (see :ref:`input-files`)"
+msgid "simple input text format (see :ref:`input-files`)"
 msgstr ""
 
 #: ../../overview.rst:17
-msgid "input/output in any projection (see :ref:`georeference`)"
+msgid "input/output in any projection (see :ref:`georef-proj`)"
 msgstr ""
 
 #: ../../overview.rst:19
-msgid "vertical deflexion support (see :ref:`obs-deflexion`)"
-msgstr ""
-
-#: ../../overview.rst:21
 msgid "topometric observations (see :ref:`obsfiles`)"
 msgstr ""
 
+#: ../../overview.rst:21
+msgid ""
+"subframes adjustment (see :ref:`cartesian-subframe` and :ref:`polar-"
+"subframe`)"
+msgstr ""
+
 #: ../../overview.rst:23
-msgid "sub-frames adjustment (see :ref:`file_xyz_11`)"
+msgid "rotation axes determination (see :ref:`rotation-axis`)"
 msgstr ""
 
 #: ../../overview.rst:25
-msgid "rotation axis determination (see :ref:`file_axe`)"
+msgid "vertical deflection (see :ref:`obs-deflection`)"
 msgstr ""
 
 #: ../../overview.rst:27
-msgid ""
-"error detection assistance (see :ref:`repartition-des-residus`, :ref"
-":`rank-default`)"
+msgid "equality constraints (see :ref:`obs-equal`)"
 msgstr ""
 
 #: ../../overview.rst:29
-msgid "many statistical indicators (see :ref:`output-obs`)"
+msgid "GNSS baselines (see :ref:`gnss-baselines`)"
 msgstr ""
 
 #: ../../overview.rst:31
-msgid "internal constraints (see :ref:`internal-constraints`)"
+msgid ""
+"error detection assistance (see :ref:`residual-repartition`, :ref:`rank-"
+"deficiency`)"
 msgstr ""
 
 #: ../../overview.rst:33
-msgid "simulations (see :ref:`simulation`)"
+msgid "many statistical indicators (see :ref:`output-obs`)"
 msgstr ""
 
 #: ../../overview.rst:35
-msgid "Sinex format export (see :ref:`export-sinex`)"
+msgid "internal constraints (see :ref:`internal-constraints`)"
 msgstr ""
 
 #: ../../overview.rst:37
-msgid "relative precision export (see :ref:`relative-precision`)"
+msgid "simulations (see :ref:`simulation`)"
 msgstr ""
 
 #: ../../overview.rst:39
-msgid "automatization (see :ref:`automatization`)"
+msgid ""
+"`Sinex format "
+"<https://www.iers.org/IERS/EN/Organization/AnalysisCoordinator/SinexFormat/sinex.html>`_"
+" export (see :ref:`export-sinex`)"
 msgstr ""
 
-#: ../../overview.rst:44
-msgid "Example of Workflow"
+#: ../../overview.rst:41
+msgid "coordinates constraints covariance matrix input (see :ref:`corcov`)"
 msgstr ""
 
-#: ../../overview.rst:46
-msgid "Input preparation:"
+#: ../../overview.rst:43
+msgid "relative precision export (see :ref:`relative-precision`)"
 msgstr ""
 
-#: ../../overview.rst:48
-msgid "create observations :doc:`obs` from measurements"
+#: ../../overview.rst:45
+msgid ""
+"possibility of integrating an automatic pipeline (see "
+":ref:`automatization`)"
 msgstr ""
 
-#: ../../overview.rst:50
-msgid "set coordinates for some starting points in :doc:`cor`"
+#: ../../overview.rst:47
+msgid "and more"
 msgstr ""
 
 #: ../../overview.rst:52
-msgid ":ref:`create-proj`"
+msgid "Example of Workflow"
 msgstr ""
 
 #: ../../overview.rst:54
-msgid "Computation:"
+msgid "Input preparation:"
 msgstr ""
 
 #: ../../overview.rst:56
-msgid "initialization of all parameters (see :ref:`cap-init` step)"
+msgid "Create observations :doc:`obs` from measurements"
 msgstr ""
 
 #: ../../overview.rst:58
-msgid "bundle adjustment on all observations (see :ref:`computation`)"
+msgid "Set coordinates for some starting points in :doc:`cor`"
 msgstr ""
 
 #: ../../overview.rst:60
-msgid "Error correction:"
+msgid ":ref:`create-proj`"
 msgstr ""
 
 #: ../../overview.rst:62
-msgid "study results (see :ref:`output-obs`)"
+msgid "Computation:"
 msgstr ""
 
 #: ../../overview.rst:64
-msgid "isolate errors (:ref:`deactivated-obs`) and fix them"
+msgid "Initialization of all parameters (see :ref:`cap-init` step)"
 msgstr ""
 
 #: ../../overview.rst:66
-msgid "Output results:"
+msgid "Bundle adjustment on all observations (see :ref:`computation`)"
 msgstr ""
 
 #: ../../overview.rst:68
-msgid ":ref:`out-report`"
+msgid "Error correction:"
 msgstr ""
 
 #: ../../overview.rst:70
-msgid ":ref:`exports <exports>`"
+msgid "Study results (see :ref:`output-obs`)"
+msgstr ""
+
+#: ../../overview.rst:72
+msgid "Isolate errors (see :ref:`deactivated-obs`) and fix them"
 msgstr ""
 
 #: ../../overview.rst:74
+msgid "Output results:"
+msgstr ""
+
+#: ../../overview.rst:76
+msgid ":ref:`out-report`"
+msgstr ""
+
+#: ../../overview.rst:78
+msgid ":ref:`Exports <exports>`"
+msgstr ""
+
+#: ../../overview.rst:80
 msgid ""
 "All input data come from text files (see :doc:`cor` and :doc:`obs`). "
 "Project configuration and results are stored in a json-like :ref:`.comp "
 "file <out-data>` that can be displayed in :ref:`html <out-report>`. Some "
-"simple output files are also created such as :ref:`.new file <out-new>`."
+"simple output text files are also created, such as *.new* file (see :ref"
+":`out-coord`)."
 msgstr ""
 
-#: ../../overview.rst:78
+#: ../../overview.rst:84
 msgid ""
 "When analyzing the results, please keep in mind that the computation is "
 "global and tridimensional. Therefore, it is crucial to avoid all aberrant"
@@ -268,5 +296,73 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "bundle adjustment on all observations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Comp3D is a micro-geodesy compensation"
+#~ " software that enables computation on "
+#~ "a limited spread network (few "
+#~ "kilometers) using a global 3D least-"
+#~ "squares bundle adjustment on several "
+#~ "topometric observation types."
+#~ msgstr ""
+
+#~ msgid "simple input format (see :ref:`input-files`)"
+#~ msgstr ""
+
+#~ msgid "input/output in any projection (see :ref:`georeference`)"
+#~ msgstr ""
+
+#~ msgid "vertical deflexion support (see :ref:`obs-deflexion`)"
+#~ msgstr ""
+
+#~ msgid "sub-frames adjustment (see :ref:`file_xyz_11`)"
+#~ msgstr ""
+
+#~ msgid "rotation axis determination (see :ref:`file_axe`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "error detection assistance (see :ref"
+#~ ":`repartition-des-residus`, :ref:`rank-default`)"
+#~ msgstr ""
+
+#~ msgid "Sinex format export (see :ref:`export-sinex`)"
+#~ msgstr ""
+
+#~ msgid "automatization (see :ref:`automatization`)"
+#~ msgstr ""
+
+#~ msgid "create observations :doc:`obs` from measurements"
+#~ msgstr ""
+
+#~ msgid "set coordinates for some starting points in :doc:`cor`"
+#~ msgstr ""
+
+#~ msgid "initialization of all parameters (see :ref:`cap-init` step)"
+#~ msgstr ""
+
+#~ msgid "bundle adjustment on all observations (see :ref:`computation`)"
+#~ msgstr ""
+
+#~ msgid "study results (see :ref:`output-obs`)"
+#~ msgstr ""
+
+#~ msgid "isolate errors (:ref:`deactivated-obs`) and fix them"
+#~ msgstr ""
+
+#~ msgid ":ref:`exports <exports>`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All input data come from text "
+#~ "files (see :doc:`cor` and :doc:`obs`). "
+#~ "Project configuration and results are "
+#~ "stored in a json-like :ref:`.comp "
+#~ "file <out-data>` that can be "
+#~ "displayed in :ref:`html <out-report>`. "
+#~ "Some simple output files are also "
+#~ "created such as :ref:`.new file <out-"
+#~ "new>`."
 #~ msgstr ""
 

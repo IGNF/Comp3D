@@ -1,3 +1,7 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) IGN
 # This file is distributed under the same license as the Comp3D package.
@@ -8,14 +12,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comp3D \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../gettingstarted.rst:5
 msgid "Getting Started"
@@ -23,9 +27,9 @@ msgstr ""
 
 #: ../../gettingstarted.rst:7
 msgid ""
-"Example data can be found into the **ex/gettingstarted/** folder: "
-":download:`coord.cor <data/gettingstarted/coord.cor>`, "
-":download:`observ.obs <data/gettingstarted/observ.obs>`."
+"Example data can be found into the *datasets/gettingstarted/* folder: "
+":download:`coord.cor <../datasets/gettingstarted/coord.cor>`, "
+":download:`observ.obs <../datasets/gettingstarted/observ.obs>`."
 msgstr ""
 
 #: ../../gettingstarted.rst:12
@@ -39,122 +43,110 @@ msgid ""
 msgstr ""
 
 #: ../../gettingstarted.rst:16
-msgid "Example::"
-msgstr ""
-
-#: ../../gettingstarted.rst:28
-msgid "Comments"
+msgid "Example:"
 msgstr ""
 
 #: ../../gettingstarted.rst:30
-msgid "The '*' character defines a comment that goes up to the end of the line."
+msgid "Comments"
 msgstr ""
 
 #: ../../gettingstarted.rst:32
+msgid "The ``*`` character defines a comment that goes up to the end of the line."
+msgstr ""
+
+#: ../../gettingstarted.rst:34
 msgid ""
 "The comments associated to an observation or a point will appear as such "
 "in the :ref:`.html report file <out-report>`."
 msgstr ""
 
-#: ../../gettingstarted.rst:37
+#: ../../gettingstarted.rst:39
 msgid "Subfiles"
 msgstr ""
 
-#: ../../gettingstarted.rst:39
+#: ../../gettingstarted.rst:41
 msgid ""
 "Subfiles can be included in :ref:`.cor <corfiles>` or :ref:`.obs "
-"<obsfiles>` files with a '@' character preceeding their filename path "
+"<obsfiles>` files with a ``@`` character preceeding their filename path "
 "relative to the current file."
 msgstr ""
 
-#: ../../gettingstarted.rst:44
+#: ../../gettingstarted.rst:46
 msgid "File Paths"
 msgstr ""
 
-#: ../../gettingstarted.rst:46
+#: ../../gettingstarted.rst:48
 msgid ""
 "|c3| data files can be located in any directory with the following "
 "restrictions:"
 msgstr ""
 
-#: ../../gettingstarted.rst:48
+#: ../../gettingstarted.rst:50
 msgid ""
 "spaces are not allowed in relative subfiles paths since they will be "
 "interpreted as field separators"
 msgstr ""
 
-#: ../../gettingstarted.rst:49
+#: ../../gettingstarted.rst:51
 msgid ""
 "Windows, unlike other operating systems, is case-insensitive, so wrong "
 "case can be used for subfile inclusions, but this will not work on other "
 "OS"
 msgstr ""
 
-#: ../../gettingstarted.rst:57
+#: ../../gettingstarted.rst:59
 msgid "Create a Project"
 msgstr ""
 
-#: ../../gettingstarted.rst:58
+#: ../../gettingstarted.rst:60
 msgid ""
-"Once you have the :ref:`.cor <corfiles>` and :ref:`.obs <obsfiles>` "
-"files, you can create a new project. In the |gui| (GUI), select "
-"*Project>New* and fill in the *Project Configuration* form (see :ref"
-":`project-params`). The mandatory parameters are the root :ref:`.cor "
-"<corfiles>` and :ref:`.obs <obsfiles>` files and the input frame."
+"With the :ref:`.cor <corfiles>` and :ref:`.obs <obsfiles>` files, you can"
+" create a new project. In the |gui|, select ``Project>New``, choose a "
+"file name (to make things simple in the same folder as the data files) "
+"and fill in the ``Project Configuration`` form  as described in :ref"
+":`project-params`. The mandatory parameters are the root :ref:`.cor "
+"<corfiles>` and :ref:`.obs <obsfiles>` files and the input frame (for the"
+" getting started example, the default local frame is sufficient)."
 msgstr ""
 
-#: ../../gettingstarted.rst:60
+#: ../../gettingstarted.rst:64
 msgid "The new project is then automatically loaded into the main window."
 msgstr ""
 
-#: ../../gettingstarted.rst:63
+#: ../../gettingstarted.rst:67
 msgid "Main Window"
 msgstr ""
 
-#: ../../gettingstarted.rst:65
-msgid ""
-"Once the project is loaded in the |gui| with *Project>Open*, the project "
-"reading messages are shown."
-msgstr ""
-
-#: ../../gettingstarted.rst:67
-msgid ""
-"Use *Configuration* to make changes on project parameters, *Reload* to "
-"reload input files, *Start Compensation/Propagation/Monte-Carlo* to start"
-" the action or *View Log* to open the :ref:`html report file <out-"
-"report>`."
-msgstr ""
-
 #: ../../gettingstarted.rst:69
-msgid "The :abbr:`GUI (graphical user interface)` contains two main tables:"
+msgid ""
+"Once the project is loaded in the |gui| with ``Project>Open``, the "
+"project reading messages are shown."
 msgstr ""
 
 #: ../../gettingstarted.rst:71
+msgid ""
+"Use ``Configuration`` button to make changes on project parameters, "
+"``Reload`` to reload input files, ``Start Compensation/Propagation/Monte-"
+"Carlo`` to start the action or ``View Log`` to open the :ref:`html report"
+" file <out-report>`."
+msgstr ""
+
+#: ../../gettingstarted.rst:73
+msgid "The |gui| contains two main tables (as described in :ref:`gui-tables`):"
+msgstr ""
+
+#: ../../gettingstarted.rst:75
 msgid "list of points"
 msgstr ""
 
-#: ../../gettingstarted.rst:72
+#: ../../gettingstarted.rst:76
 msgid "list of observations"
 msgstr ""
 
-#: ../../gettingstarted.rst:74
+#: ../../gettingstarted.rst:80
 msgid ""
-"By clicking on the *Act* field of an observation you can activate or "
-"deactivate it. You can then relaunch the computation to check if you "
-"isolated an error or not."
-msgstr ""
-
-#: ../../gettingstarted.rst:77
-msgid ""
-"The |c3| :abbr:`GUI (graphical user interface)`'s actions does not change"
-" the :ref:`.obs file<obsfiles>`. Keep in mind that reloading files, with "
-"\"Reload\", leads to the loss of all changes regarding the observations "
-"status deactivate/activate. You have to record deactivated observations "
-"in the :ref:`.obs file<obsfiles>` as described in :ref:`deactivated-obs`."
-msgstr ""
-
-#: ../../gettingstarted.rst:81
-msgid "For more details, see :ref:`gui`."
+"Observations can be activated or deactivated using the ``Act`` field (see"
+" :ref:`gui_obs_activ`)."
 msgstr ""
 
 #: ../../gettingstarted.rst:84
@@ -163,97 +155,104 @@ msgstr ""
 
 #: ../../gettingstarted.rst:86
 msgid ""
-"The html report is automatically generated at the end of computation or "
-"with *View Log* before computation (in which case it contains the initial"
-" state before computation)."
+"The html report is automatically generated at the end of computation. It "
+"can be loaded in the system default web browser with the ``View Log`` "
+"button. Using this button before computation, as expected, it will open "
+"the report in the initial state before computation."
 msgstr ""
 
 #: ../../gettingstarted.rst:88
-msgid "For more details, see :ref:`out-report`."
-msgstr ""
-
-#: ../../gettingstarted.rst:91
-msgid "Quick Review of an Example"
-msgstr ""
-
-#: ../../gettingstarted.rst:94
-msgid "Example of .COR File"
-msgstr ""
-
-#: ../../gettingstarted.rst:96
-msgid "See example .cor file in *ex/gettingstarted/coord.cor*"
-msgstr ""
-
-#: ../../gettingstarted.rst:102
-msgid ""
-"In this example, only one point is declared, it gives minimal information"
-" to set the translation of the project."
-msgstr ""
-
-#: ../../gettingstarted.rst:104
-msgid ""
-"The point *StA* was chosen as all the other points can easily be "
-"determined from it in this project."
-msgstr ""
-
-#: ../../gettingstarted.rst:106
-msgid "For |more|, see :doc:`cor`."
-msgstr ""
-
-#: ../../gettingstarted.rst:110
-msgid "Example of .OBS File"
-msgstr ""
-
-#: ../../gettingstarted.rst:112
-msgid "See example .OBS file in *ex/gettingstarted/observ.obs*"
-msgstr ""
-
-#: ../../gettingstarted.rst:116
-msgid ""
-"First, an azimuth between two points is used to give the orientation of "
-"the whole figure. Then we have total stations observations from *StA* to "
-"*T1* and *T2*, and a leveling measurement between *T1* and *T2* to give "
-"some redondancy."
-msgstr ""
-
-#: ../../gettingstarted.rst:119
-msgid "For |more|, see :doc:`obs`."
-msgstr ""
-
-#: ../../gettingstarted.rst:122
-msgid "Computation"
-msgstr ""
-
-#: ../../gettingstarted.rst:124
-msgid ""
-"When the project is loaded, the coordinates of the undeclared points are "
-"computed, if possible. Then, the initial residual of every observation "
-"and the initial :math:`\\sigma_0` is given."
-msgstr ""
-
-#: ../../gettingstarted.rst:127
-msgid ""
-"The final :math:`\\sigma_0` is obtained after computation. Here, it is "
-"close to 1, meaning that the weights of the observations are coherent "
-"with their residuals."
-msgstr ""
-
-#: ../../gettingstarted.rst:129
-msgid "For |more|, see :doc:`computation`."
-msgstr ""
-
-#: ../../gettingstarted.rst:132
-msgid "Report"
-msgstr ""
-
-#: ../../gettingstarted.rst:134
 msgid ""
 "The computation report shows the map, the initial and final coordinates "
 "and the list of observations with many statistical indicators."
 msgstr ""
 
-#: ../../gettingstarted.rst:136
+#: ../../gettingstarted.rst:90
 msgid "For |more|, see :ref:`out-report`."
+msgstr ""
+
+#: ../../gettingstarted.rst:93
+msgid "Quick Review of an Example"
+msgstr ""
+
+#: ../../gettingstarted.rst:95
+msgid ""
+"The example in *datasets/gettingstarted/* folder is simply one total "
+"station (*StA*) measuring two targets (*T1* and *T2*). A height "
+"difference between *T1* and *T2* is added to give some redondancy."
+msgstr ""
+
+#: ../../gettingstarted.rst:102
+msgid "Example of .COR File"
+msgstr ""
+
+#: ../../gettingstarted.rst:104
+msgid "See example *.cor* file in *datasets/gettingstarted/coord.cor*"
+msgstr ""
+
+#: ../../gettingstarted.rst:109
+msgid ""
+"In this example, only one point is declared, it provides minimal "
+"information to set the position of the project."
+msgstr ""
+
+#: ../../gettingstarted.rst:111
+msgid ""
+"The point *StA* was chosen as all the other points can easily be "
+"determined from it in this project. The other two points will be inferred"
+" from the *.obs* file."
+msgstr ""
+
+#: ../../gettingstarted.rst:113
+msgid "For |more|, see :doc:`cor`."
+msgstr ""
+
+#: ../../gettingstarted.rst:117
+msgid "Example of .OBS File"
+msgstr ""
+
+#: ../../gettingstarted.rst:119
+msgid "See example *.obs* file in *datasets/gettingstarted/observ.obs*"
+msgstr ""
+
+#: ../../gettingstarted.rst:123
+msgid ""
+"In this example, an azimuth between two points is used to give the "
+"orientation of the whole figure. Then we have total stations observations"
+" from *StA* to *T1* and *T2*, and a leveling measurement between *T1* and"
+" *T2* to give some redondancy."
+msgstr ""
+
+#: ../../gettingstarted.rst:127
+msgid ""
+"In |c3|, all linear observations values are in meters and angular "
+"observations values are in grads (gons)."
+msgstr ""
+
+#: ../../gettingstarted.rst:130
+msgid "For |more|, see :doc:`obs`."
+msgstr ""
+
+#: ../../gettingstarted.rst:133
+msgid "Computation"
+msgstr ""
+
+#: ../../gettingstarted.rst:135
+msgid ""
+"When the project is loaded, the coordinates of the undeclared points are "
+"initialized, if possible. Then, the initial residual of every observation"
+" and the *initial* :math:`\\sigma_0` is given."
+msgstr ""
+
+#: ../../gettingstarted.rst:138
+msgid ""
+"The *final* :math:`\\sigma_0` is obtained after computation. In this "
+"example, it is close to 1, meaning that the weights of the observations "
+"are coherent with their residuals."
+msgstr ""
+
+#: ../../gettingstarted.rst:140
+msgid "For |more|, see :doc:`computation`."
 msgstr ""
 
 #~ msgid ""
@@ -293,5 +292,143 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "For more details, see :ref:`out-html`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Example data can be found into the"
+#~ " **ex/gettingstarted/** folder: :download:`coord.cor"
+#~ " <data/gettingstarted/coord.cor>`, :download:`observ.obs "
+#~ "<data/gettingstarted/observ.obs>`."
+#~ msgstr ""
+
+#~ msgid "Example::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The '*' character defines a comment "
+#~ "that goes up to the end of "
+#~ "the line."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Subfiles can be included in :ref:`.cor"
+#~ " <corfiles>` or :ref:`.obs <obsfiles>` "
+#~ "files with a '@' character preceeding"
+#~ " their filename path relative to the"
+#~ " current file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once you have the :ref:`.cor <corfiles>`"
+#~ " and :ref:`.obs <obsfiles>` files, you "
+#~ "can create a new project. In the"
+#~ " |gui| (GUI), select *Project>New* and "
+#~ "fill in the *Project Configuration* form"
+#~ " (see :ref:`project-params`). The mandatory"
+#~ " parameters are the root :ref:`.cor "
+#~ "<corfiles>` and :ref:`.obs <obsfiles>` files"
+#~ " and the input frame."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once the project is loaded in the"
+#~ " |gui| with *Project>Open*, the project "
+#~ "reading messages are shown."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use *Configuration* to make changes on"
+#~ " project parameters, *Reload* to reload "
+#~ "input files, *Start Compensation/Propagation"
+#~ "/Monte-Carlo* to start the action or"
+#~ " *View Log* to open the :ref:`html"
+#~ " report file <out-report>`."
+#~ msgstr ""
+
+#~ msgid "The :abbr:`GUI (graphical user interface)` contains two main tables:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By clicking on the *Act* field of"
+#~ " an observation you can activate or"
+#~ " deactivate it. You can then relaunch"
+#~ " the computation to check if you "
+#~ "isolated an error or not."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The |c3| :abbr:`GUI (graphical user "
+#~ "interface)`'s actions does not change "
+#~ "the :ref:`.obs file<obsfiles>`. Keep in "
+#~ "mind that reloading files, with "
+#~ "\"Reload\", leads to the loss of "
+#~ "all changes regarding the observations "
+#~ "status deactivate/activate. You have to "
+#~ "record deactivated observations in the "
+#~ ":ref:`.obs file<obsfiles>` as described in "
+#~ ":ref:`deactivated-obs`."
+#~ msgstr ""
+
+#~ msgid "For more details, see :ref:`gui`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The html report is automatically "
+#~ "generated at the end of computation "
+#~ "or with *View Log* before computation"
+#~ " (in which case it contains the "
+#~ "initial state before computation)."
+#~ msgstr ""
+
+#~ msgid "For more details, see :ref:`out-report`."
+#~ msgstr ""
+
+#~ msgid "See example .cor file in *ex/gettingstarted/coord.cor*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In this example, only one point is"
+#~ " declared, it gives minimal information "
+#~ "to set the translation of the "
+#~ "project."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The point *StA* was chosen as all"
+#~ " the other points can easily be "
+#~ "determined from it in this project."
+#~ msgstr ""
+
+#~ msgid "See example .OBS file in *ex/gettingstarted/observ.obs*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "First, an azimuth between two points "
+#~ "is used to give the orientation of"
+#~ " the whole figure. Then we have "
+#~ "total stations observations from *StA* "
+#~ "to *T1* and *T2*, and a leveling"
+#~ " measurement between *T1* and *T2* to"
+#~ " give some redondancy."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When the project is loaded, the "
+#~ "coordinates of the undeclared points are"
+#~ " computed, if possible. Then, the "
+#~ "initial residual of every observation "
+#~ "and the initial :math:`\\sigma_0` is "
+#~ "given."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The final :math:`\\sigma_0` is obtained "
+#~ "after computation. Here, it is close "
+#~ "to 1, meaning that the weights of"
+#~ " the observations are coherent with "
+#~ "their residuals."
+#~ msgstr ""
+
+#~ msgid "Report"
 #~ msgstr ""
 

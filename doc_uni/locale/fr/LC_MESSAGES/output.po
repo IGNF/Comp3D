@@ -1,3 +1,7 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) IGN
 # This file is distributed under the same license as the Comp3D package.
@@ -8,953 +12,358 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comp3D \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../output.rst:5
 msgid "Output"
 msgstr ""
 
 #: ../../output.rst:10
-msgid "Computation Data"
+msgid "Output Coordinates"
 msgstr ""
 
 #: ../../output.rst:12
 msgid ""
-"Les données du calcul sont enregistrées dans le fichier *.comp*, qui sert"
-" également de fichier de configuration du projet. Ce fichier est une "
-"source javascript. Il peut être interprété comme du JSON une fois la "
-"première ligne retirée. Il est ainsi facile de faire un programme lisant "
-"ces données."
+"*.new* text file is created after the compensation process; it contains "
+"the compensated coordinates in the user-input projection. To convert "
+"*.new* into *.cor* in order to update initial coordinates, use :ref"
+":`export-to-cor` tool ."
 msgstr ""
 
-#: ../../output.rst:20
-msgid "Computation Report"
-msgstr ""
-
-#: ../../output.rst:22
+#: ../../output.rst:15
 msgid ""
-"On peut afficher le rapport avec une mise en forme *html* en ouvrant le "
-"fichier *.comp.html*, qui fait une interprétation des données du fichier "
-"*.comp*. Cette mise en forme permet de visualiser les informations de "
-"configuration, d'entrées, de calcul et de résultats du chantier.*"
+"If :ref:`normal-matrix-inversion` was computed, compensated coordinates "
+"in *.new* file are followed by empirical half confidence intervals."
+msgstr ""
+
+#: ../../output.rst:21
+msgid "Subframes Files"
+msgstr ""
+
+#: ../../output.rst:23
+msgid ""
+"All *.xyz* files are updated after compensation with a final comment "
+"containing:"
+msgstr ""
+
+#: ../../output.rst:25
+msgid "transformation between the subframe and the global cartesian frame"
+msgstr ""
+
+#: ../../output.rst:26
+msgid "measured points (=raw observations) in the global cartesian frame"
 msgstr ""
 
 #: ../../output.rst:27
 msgid ""
-"Les différents champs ne sont pas toujours présents, en fonction du type "
-"de calcul (simulation, géoréférencement etc.)."
+"measured points (=raw observations) in the projection frame (as in *.new*"
+" file)."
 msgstr ""
 
-#: ../../output.rst:30
-msgid "Configuration du chantier"
-msgstr ""
-
-#: ../../output.rst:32
-msgid ""
-"Cette partie reprend les paramètres du projet renseignés par "
-"l'utilisateur dans le panneau \"Configuration du projet\" de l'interface "
-"(cf. :ref:`project-params`)."
+#: ../../output.rst:29
+msgid "This transformation is used by :ref:`apply-transfo` tool."
 msgstr ""
 
 #: ../../output.rst:36
-msgid ""
-"Un plan de situation du chantier permet de voir l'ensemble des points et "
-"éventuellement des observations."
+msgid "Computation Data"
 msgstr ""
 
-#: ../../output.rst:42
-msgid "Informations sur le calcul"
+#: ../../output.rst:38
+msgid ""
+"All computation data are stored in the *.comp* file, alongside project "
+"configuration."
 msgstr ""
 
-#: ../../output.rst:44
+#: ../../output.rst:40
 msgid ""
-"Cette partie informe l'utilisateur de ce qui a été fait pendant le "
-"calcul. On retrouve des informations sur la compensation par moindre "
-"carrés, dont :"
+"This file is a JavaScript source that can be interpreted as JSON once its"
+" first line is removed, making it easily machine-readable."
+msgstr ""
+
+#: ../../output.rst:46
+msgid "Computation Report"
 msgstr ""
 
 #: ../../output.rst:48
-msgid "est-ce qu'une compensation a été effectuée ;"
-msgstr ""
-
-#: ../../output.rst:50
-msgid ":math:`\\sigma_0` initial et final ;"
-msgstr ""
-
-#: ../../output.rst:52
-msgid "nombre d'itérations ;"
-msgstr ""
-
-#: ../../output.rst:54
-msgid "est-ce que le calcul a été interrompu (cf. note) ;"
-msgstr ""
-
-#: ../../output.rst:56
 msgid ""
-"est-ce qu'un défaut de rang a été détecté sur la matrice normale (cf. "
-":ref:`rank-default`) ;"
+"The report can be displayed as a web page by opening the *.comp.html* "
+"file, which takes the data from the corresponding *.comp* file."
 msgstr ""
 
-#: ../../output.rst:58
-msgid "date et durée du calcul ;"
+#: ../../output.rst:51
+msgid ""
+"The tables can be sorted by any column and are easy to copy-paste into "
+"spreadsheets, as units and other information are not selected."
 msgstr ""
 
-#: ../../output.rst:60
-msgid "rayon de la sphère d'approximation (fonction de la latitude du chantier) ;"
+#: ../../output.rst:55
+msgid "Project Configuration"
+msgstr ""
+
+#: ../../output.rst:57
+msgid ""
+"It contains the list of projects parameters and is equivalent to the "
+"``Project Settings`` form from the |gui| (see :ref:`project-params`). It "
+"also contains a map of the project."
 msgstr ""
 
 #: ../../output.rst:62
-msgid "projection utilisée ;"
+msgid "Computation Information"
 msgstr ""
 
 #: ../../output.rst:64
-msgid "nombre d'observations ;"
-msgstr ""
-
-#: ../../output.rst:66
-msgid "nombre de paramètres ;"
-msgstr ""
-
-#: ../../output.rst:68
 msgid ""
-"if the vertical deflection information were sufficient to use them for "
-"computation ;"
+"It represents general information about the computation. It is possible "
+"to hide or show the information messages with the corresponding buttons."
 msgstr ""
 
 #: ../../output.rst:70
-msgid ""
-"the transfomation from computation global cartesian frame to geocentric "
-"cartesian frame."
+msgid ":math:`\\sigma_0` Evolution - :math:`\\chi^2` Test"
 msgstr ""
 
-#: ../../output.rst:73
+#: ../../output.rst:72
 msgid ""
-"De plus, il est possible de visualiser les messages de Comp3D lors du "
-"chargement de la configuration, de la lecture des fichiers, du "
-"paramétrage du calcul et du calcul. Pour ne pas surcharger le rapport, "
-"seuls les messages lors du calcul sont affichés par défaut, pour afficher"
-" les autres, il suffit de cliquer sur le bouton correspondant."
+"The log scale graph represents the evolution of :math:`\\sigma_0` along "
+"the iterative process."
 msgstr ""
 
-#: ../../output.rst:80
-msgid "Différents éléments peuvent provoquer une interruption du calcul :"
+#: ../../output.rst:74
+msgid ""
+"The :math:`\\chi^2` test limits are computed from the degrees of freedom "
+"of the least squares adjustment and they are also represented in the "
+"graph."
+msgstr ""
+
+#: ../../output.rst:76
+msgid ""
+"If :ref:`normal-matrix-inversion` was computed, the biggest confidence "
+"ellipsoid is also given. This may help to detect a problem of external "
+"constraints that does not affect :math:`\\sigma_0`."
 msgstr ""
 
 #: ../../output.rst:82
-msgid "le nombre maximum d'itération a été atteint ;"
+msgid "Initial Coordinates"
 msgstr ""
 
 #: ../../output.rst:84
-msgid "le calcul a été interrompu manuellement ;"
-msgstr ""
-
-#: ../../output.rst:86
-msgid "il n'y a pas de redondance."
-msgstr ""
-
-#: ../../output.rst:91
-msgid "Évolution du :math:`\\sigma_0`"
-msgstr ""
-
-#: ../../output.rst:93
 msgid ""
-"Ce graphique représente l'évolution du :math:`\\sigma_0` en échelle "
-"logarithmique en fonction du nombre d'itérations. Sont également "
-"représentées les bornes du test du :math:`\\chi^2`."
+"Initial coordinates are the coordinates of the points in the user-input "
+"projection after :ref:`cap-init`. They contain the :ref:`point class "
+"<point-class>`, comment as infotip, *a priori* precisions of constraints "
+"and the number of active observations on each point."
+msgstr ""
+
+#: ../../output.rst:90
+msgid "Observations"
+msgstr ""
+
+#: ../../output.rst:92
+msgid ""
+"The observations table contains all the observations in the given input "
+"order, with their *.obs* file name and line number as infotip and several"
+" indicators, such as:"
+msgstr ""
+
+#: ../../output.rst:94
+msgid "*distance* between points"
+msgstr ""
+
+#: ../../output.rst:95
+msgid ""
+"*total* :math:`\\sigma`: combination of *absolute* and *relative* "
+":math:`\\sigma`"
+msgstr ""
+
+#: ../../output.rst:96
+msgid ""
+"*residual*, *projected residual* and *normalized residual* (*initial "
+"residuals* if before computation)"
 msgstr ""
 
 #: ../../output.rst:98
-msgid "Test du :math:`\\chi^2`"
+msgid ":ref:`normal-matrix-inversion` mode  adds more indicators:"
 msgstr ""
 
 #: ../../output.rst:100
 msgid ""
-"Le test du :math:`\\chi^2` permet de valider le calcul par moindres "
-"carrés. Les bornes du :math:`\\chi^2` dépendent des degrés de liberté du "
-"système. Dans Comp3D, un modèle paramétrique est utilisé pour les "
-"moindres carrés. Ainsi, les degrés de liberté du problème sont la "
-"différence entre le nombre d'observations actives et le nombre de "
-"paramètres."
+"`a posteriori` :math:`\\sigma`: parameters precision propagated to the "
+"observation"
+msgstr ""
+
+#: ../../output.rst:101
+msgid ""
+"*standard residual*: *residual normalized* by `a posteriori` "
+":math:`\\sigma`"
+msgstr ""
+
+#: ../../output.rst:102
+msgid "*redundancy*"
+msgstr ""
+
+#: ../../output.rst:104
+msgid "and in case of sufficient redundancy:"
+msgstr ""
+
+#: ../../output.rst:106
+msgid "*standardized residual*: residual divided by its own :math:`\\sigma`"
 msgstr ""
 
 #: ../../output.rst:107
-msgid ""
-"Un test du :math:`\\chi^2` réussi, signifiera qu'en moyenne, les "
-"observations suivent une loi normale correspondant aux écarts-types "
-"renseignés."
+msgid ":math:`\\nabla` (nabla): biggest non-detectable fault, internal fiability"
+msgstr ""
+
+#: ../../output.rst:108
+msgid "*probable error*"
 msgstr ""
 
 #: ../../output.rst:111
-msgid "Si le :math:`\\sigma_0` est supérieur à l'intervalle du :math:`\\chi^2` :"
+msgid "Some columns can be folded by clicking on them."
 msgstr ""
 
-#: ../../output.rst:113
-msgid "soit il reste des fautes dans les observations,"
+#: ../../output.rst:116
+msgid "Residual Repartition"
 msgstr ""
 
-#: ../../output.rst:115
-msgid "soit la précision des observations est sur-estimée."
-msgstr ""
-
-#: ../../output.rst:117
+#: ../../output.rst:118
 msgid ""
-"si le :math:`\\sigma_0` est trop petit, la précision des observations a "
-"été sous-estimée."
+"It is represented by a histogram showing how the residual are distributed"
+" by type, normalized residual values and observation distances."
 msgstr ""
 
 #: ../../output.rst:120
+msgid "Infotips are present on each bar to display more information."
+msgstr ""
+
+#: ../../output.rst:126
+msgid "Pseudo Random Propositions"
+msgstr ""
+
+#: ../../output.rst:128
 msgid ""
-"Il est possible d'ajuster la précision par type d'observation en "
-"utilisant les propositions pseudo aléatoires (cf. :ref:`propositions-"
-"pseudo-aleatoires`)."
-msgstr ""
-
-#: ../../output.rst:127
-msgid "Coordonnées initiales"
-msgstr ""
-
-#: ../../output.rst:129
-msgid "Cela correspond aux coordonnées des points après :ref:`cap-init` :"
+"To help fix observations' `a priori` :math:`\\sigma`, a factor is "
+"proposed for each type of observation (if sufficient redundancy). It is "
+"calculated from residuals and redundancy (see the infotips for more "
+"information)."
 msgstr ""
 
 #: ../../output.rst:131
-msgid ":ref:`point-class` ;"
-msgstr ""
-
-#: ../../output.rst:133
-msgid "coordonnées initiales ;"
-msgstr ""
-
-#: ../../output.rst:135
-msgid ":math:`\\sigma` (pour les points contraints) ;"
-msgstr ""
-
-#: ../../output.rst:137
 msgid ""
-"valeurs de la déviation de la verticale au point (si utilisée dans le "
-"calcul) ;"
+"The residuals' repartition by distance helps determine if the *absolute* "
+"or *relative* :math:`\\sigma` has to be changed in the *.obs* file."
 msgstr ""
 
-#: ../../output.rst:139
-msgid "nombre d'observations actives sur le point."
+#: ../../output.rst:136
+msgid "Biggest Residuals"
 msgstr ""
 
-#: ../../output.rst:142
+#: ../../output.rst:138
 msgid ""
-"Si un commentaire a été renseigné dans le fichier *.cor*, un logo "
-"information apparaît à gauche du point et son commentaire est "
-"visualisable dans une info-bulle en survolant le point. Ce commentaire "
-"sur le point apparait également dans les tableaux d'observations."
+"Biggest residuals are displayed in an observations table containing only "
+"suspicious observations, ordered by decreasing residuals, with a maximum "
+"of 20 observations."
 msgstr ""
 
-#: ../../output.rst:147
-msgid "On retrouve ces coordonnées dans le fichier de sortie *.cap*."
-msgstr ""
-
-#: ../../output.rst:152
-msgid "Observations"
-msgstr ""
-
-#: ../../output.rst:154
+#: ../../output.rst:140
 msgid ""
-"Chaque observation du calcul est listée dans un tableau dans l'ordre "
-"donné par l'utilisateur. Il est possible d'ouvrir un fichier *.obs* en "
-"cliquant sur la ligne contenant son nom. En survolant la ligne d'une "
-"observation, on peut visualiser le numéro de ligne de l'observation dans "
-"son fichier."
+"The anchors on the beginning of the lines link to the observation's line "
+"in the table containing all the observations."
 msgstr ""
 
-#: ../../output.rst:160
-msgid "Code couleur :"
+#: ../../output.rst:144
+msgid "Similarities"
 msgstr ""
 
-#: ../../output.rst:162
+#: ../../output.rst:146
 msgid ""
-"les observations en gris italique correspondent à des observations "
-"désactivées (cf. :ref:`deactivated-obs`) ;"
+"This section shows the subframes (:ref:`cartesian-subframe` or :ref"
+":`polar-subframe`), with vertical error and transformation between the "
+"subframe and the global cartesian frame."
 msgstr ""
 
-#: ../../output.rst:165
-msgid ""
-"si la matrice normale a été inversée (see :ref:`normal-matrix-inversion`)"
-" :"
+#: ../../output.rst:151
+msgid "Axes"
 msgstr ""
 
-#: ../../output.rst:167
+#: ../../output.rst:153
 msgid ""
-"les observations en orange correspondent à des observations suspectes "
-"avec un résidu normé >2.5 :math:`\\sigma` en valeur absolue ;"
+"This section shows the :ref:`rotation-axis` with their parametrizations "
+"(from left to right: axis orientation, orientation precision, origin) and"
+" the list of their targets (circle parameter, number of positions)."
+msgstr ""
+
+#: ../../output.rst:161
+msgid "Compensated Coordinates"
+msgstr ""
+
+#: ../../output.rst:163
+msgid ""
+"The compensated coordinates are given in the user-input projection, with "
+"their displacements since initialization."
+msgstr ""
+
+#: ../../output.rst:166
+msgid "These coordinates are also exported in *.new* file (see :ref:`out-coord`)."
 msgstr ""
 
 #: ../../output.rst:171
-msgid ""
-"les observations en rouge correspondent à des observations qui semblent "
-"fausses avec un résidu normé >4.1 :math:`\\sigma` en valeur absolue ;"
+msgid "Points Empirical Confidence Indicators"
+msgstr ""
+
+#: ../../output.rst:173
+msgid "These indicators are available after :ref:`normal-matrix-inversion`."
 msgstr ""
 
 #: ../../output.rst:175
-msgid "si la matrice normale n'a pas été inversée :"
+msgid ""
+"They are given in the spherical computation frame, therefore there is no "
+"scale error, nor convergence of meridians."
 msgstr ""
 
 #: ../../output.rst:177
 msgid ""
-"les observations en orange correspondent à des observations suspectes "
-"avec un résidu normalisé >3 :math:`\\sigma` en valeur absolue ;"
+"Points empirical confidence indicators are confidence indicators scaled "
+"by *final* :math:`\\sigma_0` to take into account the potential `a "
+"priori` :math:`\\sigma` \"optimism\" or \"pessimism\" of the "
+"observations."
 msgstr ""
 
-#: ../../output.rst:181
-msgid ""
-"les observations en rouge correspondent à des observations qui semblent "
-"fausses avec un résidu normalisé >6 :math:`\\sigma` en valeur absolue ;"
+#: ../../output.rst:182
+msgid "Confidence Ellipsoids"
 msgstr ""
 
-#: ../../output.rst:185
+#: ../../output.rst:184
 msgid ""
-"L'analyse des résidus est plus rigoureuse avec les résidus normés, ces "
-"derniers suivants une loi normale centrale réduite, ce qui n'est pas le "
-"cas des résidus normalisés. Il est donc fortement recommandé de toujours "
-"inverser la matrice normale."
+"The confidence ellipsoids at :math:`1\\sigma` (confidence of 20% because "
+"of the three dimensions) are given as lengths and orientations for each "
+"half axis."
+msgstr ""
+
+#: ../../output.rst:188
+msgid "Half Confidence Intervals"
 msgstr ""
 
 #: ../../output.rst:190
-msgid "Les colonnes sont les suivantes :"
-msgstr ""
-
-#: ../../output.rst:192
-msgid ""
-"code : type d'observation et éventuellement le commentaire associée à "
-"l'observation ;"
-msgstr ""
-
-#: ../../output.rst:195
-msgid ""
-"de : classe (cf. :ref:`point-class`) et nom du point duquel part "
-"l'observation ;"
-msgstr ""
-
-#: ../../output.rst:198
-msgid ""
-"vers : classe (cf. :ref:`point-class`) et nom du point destinataire de "
-"l'observation ;"
-msgstr ""
-
-#: ../../output.rst:201
-msgid "mesure : valeur de l'observation dans son unité ;"
-msgstr ""
-
-#: ../../output.rst:203
-msgid "distance : distance en m entre les coordonnées compensées des 2 points ;"
-msgstr ""
-
-#: ../../output.rst:206
-msgid ""
-":math:`\\sigma` total : :math:`\\sigma` de l'observation correspondant à "
-"la somme du :math:`\\sigma` absolu et du :math:`\\sigma` relatif "
-"renseignés par l'utilisateur ;"
-msgstr ""
-
-#: ../../output.rst:210
-msgid ""
-":math:`\\sigma` *a posteriori* : :math:`\\sigma` calculé après inversion "
-"de la matrice normale par propagation de la variance (:math:`Qll = A Qxx "
-"A^T`). Cela correspond au :math:`\\sigma` sur l'observation obtenue après"
-" compensation ;"
-msgstr ""
-
-#: ../../output.rst:215
-msgid ""
-"résidu normalisé : résidu divisé par le :math:`\\sigma` total de "
-"l'observation. Un résidu normalisé égal à 1 correspond à une observation "
-"dont le :math:`\\sigma` total et le résidu sont égaux. Un résidu "
-"supérieur à 1 signifie que la précision de l'observation est surévaluée "
-"par rapport à la compensation ou alors il s'agit d'une faute ;"
-msgstr ""
-
-#: ../../output.rst:222
-msgid ""
-"résidu : résidu de l'observation correspondant à l'écart entre "
-"l'observation compensée et l'observation mesurée dans l'unité de la "
-"mesure ;"
-msgstr ""
-
-#: ../../output.rst:226
-msgid ""
-"résidu mm : résidu en mm de l'observation correspondant à l'écart "
-"métrique entre l'observation compensée et l'observation mesurée ;"
-msgstr ""
-
-#: ../../output.rst:229
-msgid ""
-":math:`\\sigma` *a posteriori* : :math:`\\sigma` calculé après inversion "
-"de la matrice normale par propagation de la variance (Qll = AQxxA'). Cela"
-" correspond au :math:`\\sigma` sur l'observation obtenue après "
-"compensation, autrement dit la précision de l'observation compensée ;"
-msgstr ""
-
-#: ../../output.rst:235
-msgid ""
-"résidu standard : résidu divisé par le :math:`\\sigma` a posteriori. Il "
-"permet d'évaluer le résidu en fonction du niveau de redondance ;"
-msgstr ""
-
-#: ../../output.rst:238
-msgid ""
-"redondance : la redondance partielle d'une observation est le rapport "
-"entre le :math:`\\sigma` *a posteriori* et le :math:`\\sigma` total. Elle"
-" reflète l'utilité d'une observation dans le calcul :"
-msgstr ""
-
-#: ../../output.rst:242
-msgid "0% : l'observation est indispensable au calcul ;"
-msgstr ""
-
-#: ../../output.rst:244
-msgid "100% : l'observation est complètement redondante."
-msgstr ""
-
-#: ../../output.rst:246
-msgid ""
-"Elle peut être aussi interprétée en tant qu'indicateur de fiabilité "
-"locale :"
-msgstr ""
-
-#: ../../output.rst:249
-msgid "0% : l'observation n'est pas contrôlée ;"
-msgstr ""
-
-#: ../../output.rst:251
-msgid "25% : l'observation est suffisament contrôlée ;"
-msgstr ""
-
-#: ../../output.rst:253
-msgid "65% : l'observation est bien contrôlée ;"
-msgstr ""
-
-#: ../../output.rst:255
-msgid "100% : l'observation est contrôlée de manière optimale."
-msgstr ""
-
-#: ../../output.rst:257
-msgid ""
-"résidu normé : résidu divisé par son écart-type. Cet indicateur suit une "
-"loi normale centrée réduite et est utilisé pour détecter une faute :"
-msgstr ""
-
-#: ../../output.rst:261
-msgid ""
-"valeur absolue du résidu normé < 2.5 :math:`\\sigma` : l'observation "
-"semble bonne ;"
-msgstr ""
-
-#: ../../output.rst:264
-msgid ""
-"2.5 :math:`\\sigma` < valeur absolue du résidu normé < 4.1 "
-":math:`\\sigma` : l'observation est suspecte et apparait en orange ;"
-msgstr ""
-
-#: ../../output.rst:268
-msgid ""
-"4.1 :math:`\\sigma` < valeur absolue du résidu normé : l'observation "
-"semble fausse et apparait en rouge ;"
-msgstr ""
-
-#: ../../output.rst:271
-msgid ""
-":math:`\\nabla` (nabla) : plus grande faute non détectable correspondant "
-"à l'indicateur de fiabilité interne ;"
-msgstr ""
-
-#: ../../output.rst:274
-msgid "faute probable : estimation de la grandeur de la faute probable."
-msgstr ""
-
-#: ../../output.rst:276
-msgid "Conditions d'affichage :"
-msgstr ""
-
-#: ../../output.rst:278
-msgid ""
-"l'inversion de la matrice normale doit avoir été effectuée pour afficher "
-"les colonnes \":math:`\\sigma` a posteriori\", \"résidu standard\", "
-"\"résidu normé\", \"redondance\", \":math:`\\nabla`\" et faute probable :"
-" l'inversion n'est pas effectuée sur les observations désactivées ;"
-msgstr ""
-
-#: ../../output.rst:284
-msgid ""
-"le résidu normé, le :math:`\\nabla` et la faute probable ne sont calculés"
-" que si la redondance partielle de l'observation est supérieure à 1% ;"
-msgstr ""
-
-#: ../../output.rst:288
-msgid "la faute probable est affichée si la valeur absolue du résidu normé > 2.5."
-msgstr ""
-
-#: ../../output.rst:292
-msgid ""
-"Les tableaux sont faits pour être facilement copiables dans un tableur. "
-"Les unités et d'autres informations ne sont pas conservées à la copie "
-"pour simplifier l'exploitation des données."
-msgstr ""
-
-#: ../../output.rst:296
-msgid ""
-"Pour alléger le tableau, il est possible de masquer certaines colonnes. "
-"Pour cela, un simple clique sur la colonne souhaitée suffit pour "
-"masquer/afficher la colonne. Les colonnes sont masquables si une main "
-"apparait au survol."
-msgstr ""
-
-#: ../../output.rst:304
-msgid "Répartition des résidus"
-msgstr ""
-
-#: ../../output.rst:306 ../../output.rst:401
-msgid "Cette section n'est pas affichée lors de simulation."
-msgstr ""
-
-#: ../../output.rst:308
-msgid ""
-"Ces différents graphiques permettent d'analyser la répartition des "
-"résidus normés. En cliquant sur un attribut légende, il est possible "
-"d'afficher ou de masquer la représentation associée."
-msgstr ""
-
-#: ../../output.rst:312
-msgid "Les observations sont classées :"
-msgstr ""
-
-#: ../../output.rst:314
-msgid "par classe de résidu, et devraient suivre la loi normale donnée en gris"
-msgstr ""
-
-#: ../../output.rst:316
-msgid ""
-"par classe de résidu et type de mesure, chaque type devant suivre la loi "
-"normale"
-msgstr ""
-
-#: ../../output.rst:318
-msgid ""
-"par type de mesure et par classe de distance, les résidus étant censés ne"
-" pas dépendre de la distance."
-msgstr ""
-
-#: ../../output.rst:321
-msgid ""
-"Cela peut permettre de détecter des erreurs dans le choix des "
-":math:`\\sigma` absolus et relatifs ou bien un problème dans la "
-"modélisation de la réfraction sur angles zénithaux."
-msgstr ""
-
-#: ../../output.rst:325
-msgid ""
-"Sur le dernier graphique, en survolant une barre de l'histogramme, "
-"plusieurs informations sont affichées :"
-msgstr ""
-
-#: ../../output.rst:328
-msgid ""
-"Abs : moyenne des valeurs absolues des résidus normalisés sur "
-"l'intervalle ;"
-msgstr ""
-
-#: ../../output.rst:331
-msgid ""
-"NoAbs : moyenne des résidus normalisés sur l'intervalle +/- l'écart-type "
-"sur les valeurs de l'intervalle ;"
-msgstr ""
-
-#: ../../output.rst:334
-msgid "NbObs : nombre d'observations de l'intervalle."
-msgstr ""
-
-#: ../../output.rst:340
-msgid "Propositions pseudo aléatoires"
-msgstr ""
-
-#: ../../output.rst:342
-msgid ""
-"Cette section n'est pas affichée en cas de simulation et il faut avoir "
-"inversé la matrice normale."
-msgstr ""
-
-#: ../../output.rst:345
-msgid ""
-"Dans un premier temps, la redondance totale du système est fournie. Elle "
-"correspond au degré de liberté du système, soit la différence entre le "
-"nombre d'observations et le nombre de paramètres du système."
-msgstr ""
-
-#: ../../output.rst:349
-msgid ""
-"Pour chaque observation, une redondance partielle est calculée à partir "
-"du sigma total et du sigma a posteriori. Elle est comprise entre 0 et 1. "
-"Ces redondances partielles bénéficient d'une propriété remarquable : leur"
-" somme totale est égale à la redondance du système."
-msgstr ""
-
-#: ../../output.rst:354
-msgid ""
-"Pour qu'une compensation soit correcte, il faut que le :math:`\\sigma_0` "
-"soit proche de 1 et compris dans l'intervalle du :math:`\\chi^2` mais "
-"aussi que chaque type d'observation ait son :math:`\\sigma_0` proche de "
-"1. Cela garantit que chaque type d'observation est correctement pondéré "
-"et qu'un type d'observation n'est pas sous-pondéré au profit d'un autre."
-msgstr ""
-
-#: ../../output.rst:360
-msgid ""
-"Comp3d fournit des propositions pseudo aléatoires pour chaque type "
-"d'observation présente dans le calcul. En multipliant les :math:`\\sigma`"
-" a priori associés par cette proposition, les :math:`\\sigma_0` tendent "
-"vers 1 et leur proposition pseudo aléatoire aussi."
-msgstr ""
-
-#: ../../output.rst:365
-msgid "ces corrections ne sont à faire qu'une fois les fautes éliminées ;"
-msgstr ""
-
-#: ../../output.rst:367
-msgid ""
-"pour chaque type, une proposition pseudo aléatoire n'est faite que si les"
-" deux conditions suivantes sont remplies :"
-msgstr ""
-
-#: ../../output.rst:370
-msgid "il y a au moins 10 observations de ce type ;"
-msgstr ""
-
-#: ../../output.rst:372
-msgid ""
-"la moyenne des redondances partielles de ce type supérieure à 30% (si tel"
-" est le cas, un message d'avertissement est affichée) ;"
-msgstr ""
-
-#: ../../output.rst:375
-msgid "en survolant la proposition, différentes informations sont affichés :"
-msgstr ""
-
-#: ../../output.rst:377
 #, python-format
 msgid ""
-"le nombre d'observations et le nombre d'observations avec une redondance "
-"supérieure à 80% sont affichés ;"
+"Half confidence intervals are the projections of the confidence "
+"ellipsoids on each direction (68% confidence), corresponding to *a "
+"posteriori* :math:`\\sigma` of points coordinates. These :math:`\\sigma` "
+"are also exported in *.new* file (see :ref:`out-coord`)."
 msgstr ""
 
-#: ../../output.rst:380
-msgid ""
-"la somme des redondances partielles de ce type et la proportion qu'elles "
-"représentent par rapport à la redondance totale du système ;"
+#: ../../output.rst:197
+msgid "Points Displacements Simulation"
 msgstr ""
 
-#: ../../output.rst:384
-msgid "la moyenne des redondances partielles de ce type ;"
-msgstr ""
-
-#: ../../output.rst:386
-msgid ""
-"une proposition pseudo aléatoire inférieure à 1 signifie que la précision"
-" des observations de ce type est sous-estimée ;"
-msgstr ""
-
-#: ../../output.rst:389
-msgid ""
-"une proposition pseudo aléatoire supérieure à 1 signifie que la précision"
-" des observations de ce type est sur-estimée."
-msgstr ""
-
-#: ../../output.rst:392
-msgid ""
-"L'information donnée ne dit pas si il faut modifier le :math:`\\sigma` "
-"absolu ou relatif des observations, c'est à l'utilisateur de voir en "
-"fonction de la répartition des résidus en fonction de la distance."
-msgstr ""
-
-#: ../../output.rst:399
-msgid "Plus gros résidus"
-msgstr ""
-
-#: ../../output.rst:403
-msgid ""
-"Les observations suspectes ou qui semblent fausses (cf. :ref:`output-"
-"obs`) sont fournies dans ce tableau par ordre décroissant, avec un "
-"maximum de 20 observations."
-msgstr ""
-
-#: ../../output.rst:407
-msgid "Le tri est effectué sur :"
-msgstr ""
-
-#: ../../output.rst:409
-msgid ""
-"la valeur absolue des résidus normés si la matrice normale a été inversée"
-" ;"
-msgstr ""
-
-#: ../../output.rst:412
-msgid "la valeur absolue des résidus normalisés sinon."
-msgstr ""
-
-#: ../../output.rst:414
-msgid ""
-"La flèche à gauche est un lien vers la ligne correspondante du tableau "
-"des observations."
-msgstr ""
-
-#: ../../output.rst:418 ../../output.rst:543
-msgid "Bascules"
-msgstr ""
-
-#: ../../output.rst:420
-msgid "Cette section est pas affichée si il y a des bascule dans le chantier."
-msgstr ""
-
-#: ../../output.rst:422
-msgid "Différentes colonnes sont affichées :"
-msgstr ""
-
-#: ../../output.rst:424
-msgid "nom du fichier XYZ associé à la bascule ;"
-msgstr ""
-
-#: ../../output.rst:426
-msgid "centre de la bascule ;"
-msgstr ""
-
-#: ../../output.rst:428
-msgid ""
-"est-ce que la station est verticalisée, et de quel angle (en grades) est "
-"déviée par rapport à la verticale ;"
-msgstr ""
-
-#: ../../output.rst:430
-msgid ""
-"tranformation entre le repère cartésien XYZ et les coordonnées "
-"cartésiennes globales :"
-msgstr ""
-
-#: ../../output.rst:432
-msgid "Vect : la position de la station dans le repère cartésien global"
-msgstr ""
-
-#: ../../output.rst:434
-msgid "Mat : matrice de rotation entre repère local et global."
-msgstr ""
-
-#: ../../output.rst:439 ../../output.rst:518
-msgid "Coordonnées compensées"
-msgstr ""
-
-#: ../../output.rst:441
-msgid "Cette section n'est pas affichée lors de simulations."
-msgstr ""
-
-#: ../../output.rst:443
-msgid ""
-"Dans ce tableau se trouvent les coordonnées compensées par les moindres "
-"carrés. Les déplacements par composante par rapport aux coordonnées "
-"initiales sont également fournis."
-msgstr ""
-
-#: ../../output.rst:447
-msgid "On retrouve ces coordonnées dans le fichier résultat *.new*."
-msgstr ""
-
-#: ../../output.rst:450
-msgid "Indicateurs de confiance"
-msgstr ""
-
-#: ../../output.rst:452
-msgid "Il faut avoir inversé la matrice normale pour afficher cette section."
-msgstr ""
-
-#: ../../output.rst:454
-msgid ""
-"Ces indicateurs sont données dans la projection stéréographique. Ainsi "
-"l'orientation des ellipsoïdes est donnée par rapport au nord géographique"
-" et correspond à un azimut (cf. :ref:`overview`)."
-msgstr ""
-
-#: ../../output.rst:458
-msgid ""
-"Les grandeurs sont toujours données multipliés pas le :math:`\\sigma_0` "
-"final pour compenser l'optimisme ou le pessimisme des :math:`\\sigma` en "
-"entrée."
-msgstr ""
-
-#: ../../output.rst:464
-msgid "Ellipsoïdes de confiance"
-msgstr ""
-
-#: ../../output.rst:466
-#, python-format
-msgid ""
-"Les ellipsoïdes (3D) de confiance à 1 :math:`\\sigma` (20% de chance de "
-"se trouver dans ce volume) sont donnés dans cette partie, sous la forme "
-"de 1/2 axes, azimuts et sites par composante."
-msgstr ""
-
-#: ../../output.rst:471
-msgid "Demi-intervalles de confiance"
-msgstr ""
-
-#: ../../output.rst:473
-#, python-format
-msgid ""
-"Les demi-intervalles de confiance 1D par composante terrain sont fournis "
-"en millimètre pour chaque point du chantier à 1 :math:`\\sigma` : 68% de "
-"chance de se trouver dans cet intervalle défini par :math:`\\pm` le demi-"
-"intervalle de confiance."
-msgstr ""
-
-#: ../../output.rst:478
-msgid ""
-"Les demi-intervalles de confiance correspondent à la racine carrée des "
-"élements diagonaux de la matrice de variance, multimpliés par le "
-":math:`\\sigma_0` final."
-msgstr ""
-
-#: ../../output.rst:482
-msgid ""
-"Aucun indicateur de confiance n'est donné pour les composantes fixées, "
-"car celles-ci ne correspondent pas à un paramètre."
-msgstr ""
-
-#: ../../output.rst:488
-msgid "Simulations des déplacements des points"
-msgstr ""
-
-#: ../../output.rst:490
-msgid ""
-"Cette section n'est affichée que lors d'une simulation par Monte-Carlo "
-"(cf. `5.5 <#simulation-par-monte-carlo>`__)."
-msgstr ""
-
-#: ../../output.rst:496
-msgid "Coordonnées initialisées"
-msgstr ""
-
-#: ../../output.rst:498
-msgid ""
-"Les coordonnées initiales ayant servies au calcul sont sauvegardées dans "
-"un fichier *.cap* dans le repère d'entrée. Ce fichier comprend les "
-"coordonnées initiales fournies dans le fichier cor et les coordonnées "
-"initiales des points initialisés par CAP (cf. :ref:`cap-init`)."
-msgstr ""
-
-#: ../../output.rst:503
-msgid ""
-"Le fichier *.cap* est écrit lors du chargement des données qui s'effectue"
-" dans les cas suivants :"
-msgstr ""
-
-#: ../../output.rst:506
-msgid "ouverture d'un chantier ;"
-msgstr ""
-
-#: ../../output.rst:508
-msgid "validation de la configuration d'un chantier ;"
-msgstr ""
-
-#: ../../output.rst:510
-msgid "appui sur le bouton \"Recharger\" de l'interface."
-msgstr ""
-
-#: ../../output.rst:512
-msgid ""
-"En conséquence, même si la compensation n'a pas été effectuée, ce fichier"
-" est écrit. Il peut servir à compléter un fichier *.cor* en cours de "
-"création."
-msgstr ""
-
-#: ../../output.rst:520
-msgid "Les coordonnées compensées sont enregistrées dans 2 fichiers :"
-msgstr ""
-
-#: ../../output.rst:522
-msgid "*.new* : dans le repère du fichier *.cor* ;"
-msgstr ""
-
-#: ../../output.rst:524
-msgid "*.3d* : dans le repère cartésien global."
-msgstr ""
-
-#: ../../output.rst:526
-msgid "cf. :ref:`coord-systems`."
-msgstr ""
-
-#: ../../output.rst:528
-msgid ""
-"En cas de calcul avec inversion de la matrice normale, les coordonnées "
-"compensées sont accompagnées des précisions estimées après compensation."
-msgstr ""
-
-#: ../../output.rst:535
-msgid "Matrice de variance-covariance"
-msgstr ""
-
-#: ../../output.rst:538
-msgid ""
-"En cas de calcul avec inversion de la matrice normale, on peut demander à"
-" ce que la matrice"
-msgstr ""
-
-#: ../../output.rst:538
-msgid ""
-"de variance-covariance soit exportée dans un fichier "
-"*.comp_var_covar.csv* (cf. :ref:`project-params`)."
-msgstr ""
-
-#: ../../output.rst:540
-msgid "Ce fichier texte est fait pour être importé dans un tableur."
-msgstr ""
-
-#: ../../output.rst:545
-msgid ""
-"Tous les fichiers *.xyz* utilisés sont mis à jour à la suite du calcul. "
-"On y ajoute en commentaire :"
-msgstr ""
-
-#: ../../output.rst:548
-msgid ""
-"la transformation entre le repère terrain en cartésiennes et le repère "
-"local cartésien : centre de la station et matrice rotation ;"
-msgstr ""
-
-#: ../../output.rst:551
-msgid ""
-"Measured points (=raw observations) in cartesian ground frame (as in .3d)"
-" ;"
-msgstr ""
-
-#: ../../output.rst:553
-msgid "Measured points (=raw observations) in projection frame (as in .new)."
-msgstr ""
-
-#: ../../output.rst:555
-msgid ""
-"Pour mettre en référence dans le repère du fichier *.cor* un nuage de "
-"point complet à partir de ces informations, il faut :"
-msgstr ""
-
-#: ../../output.rst:558
-msgid ""
-"appliquer la transformation aux points du nuage, on obtient alors un "
-"nuage de point dans le repère cartésien (comme dans le fichier *.3d*) ;"
-msgstr ""
-
-#: ../../output.rst:562
-msgid ""
-"transformer ces points en coordonnées cartésiennes en coordonnées "
-"projetées via l'outil :ref:`cart-proj`."
+#: ../../output.rst:199
+msgid "This output is available only for the :ref:`simul-mc` mode."
 msgstr ""
 
 #~ msgid "Output Data"
@@ -1822,5 +1231,950 @@ msgstr ""
 #~ "cartésiennes en coordonnées projetées via "
 #~ "l’outil Cartésien <> Proj (Outil> "
 #~ "Cartésien <> Proj)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les données du calcul sont enregistrées"
+#~ " dans le fichier *.comp*, qui sert"
+#~ " également de fichier de configuration "
+#~ "du projet. Ce fichier est une "
+#~ "source javascript. Il peut être "
+#~ "interprété comme du JSON une fois "
+#~ "la première ligne retirée. Il est "
+#~ "ainsi facile de faire un programme "
+#~ "lisant ces données."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On peut afficher le rapport avec "
+#~ "une mise en forme *html* en "
+#~ "ouvrant le fichier *.comp.html*, qui "
+#~ "fait une interprétation des données du"
+#~ " fichier *.comp*. Cette mise en forme"
+#~ " permet de visualiser les informations "
+#~ "de configuration, d'entrées, de calcul "
+#~ "et de résultats du chantier.*"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les différents champs ne sont pas "
+#~ "toujours présents, en fonction du type"
+#~ " de calcul (simulation, géoréférencement "
+#~ "etc.)."
+#~ msgstr ""
+
+#~ msgid "Configuration du chantier"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cette partie reprend les paramètres du"
+#~ " projet renseignés par l'utilisateur dans"
+#~ " le panneau \"Configuration du projet\" "
+#~ "de l'interface (cf. :ref:`project-params`)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Un plan de situation du chantier "
+#~ "permet de voir l'ensemble des points "
+#~ "et éventuellement des observations."
+#~ msgstr ""
+
+#~ msgid "Informations sur le calcul"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cette partie informe l'utilisateur de ce"
+#~ " qui a été fait pendant le "
+#~ "calcul. On retrouve des informations sur"
+#~ " la compensation par moindre carrés, "
+#~ "dont :"
+#~ msgstr ""
+
+#~ msgid "est-ce qu'une compensation a été effectuée ;"
+#~ msgstr ""
+
+#~ msgid ":math:`\\sigma_0` initial et final ;"
+#~ msgstr ""
+
+#~ msgid "nombre d'itérations ;"
+#~ msgstr ""
+
+#~ msgid "est-ce que le calcul a été interrompu (cf. note) ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "est-ce qu'un défaut de rang a "
+#~ "été détecté sur la matrice normale "
+#~ "(cf. :ref:`rank-default`) ;"
+#~ msgstr ""
+
+#~ msgid "date et durée du calcul ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "rayon de la sphère d'approximation "
+#~ "(fonction de la latitude du chantier)"
+#~ " ;"
+#~ msgstr ""
+
+#~ msgid "projection utilisée ;"
+#~ msgstr ""
+
+#~ msgid "nombre d'observations ;"
+#~ msgstr ""
+
+#~ msgid "nombre de paramètres ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "if the vertical deflection information "
+#~ "were sufficient to use them for "
+#~ "computation ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the transfomation from computation global "
+#~ "cartesian frame to geocentric cartesian "
+#~ "frame."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "De plus, il est possible de "
+#~ "visualiser les messages de Comp3D lors"
+#~ " du chargement de la configuration, "
+#~ "de la lecture des fichiers, du "
+#~ "paramétrage du calcul et du calcul. "
+#~ "Pour ne pas surcharger le rapport, "
+#~ "seuls les messages lors du calcul "
+#~ "sont affichés par défaut, pour afficher"
+#~ " les autres, il suffit de cliquer "
+#~ "sur le bouton correspondant."
+#~ msgstr ""
+
+#~ msgid "Différents éléments peuvent provoquer une interruption du calcul :"
+#~ msgstr ""
+
+#~ msgid "le nombre maximum d'itération a été atteint ;"
+#~ msgstr ""
+
+#~ msgid "le calcul a été interrompu manuellement ;"
+#~ msgstr ""
+
+#~ msgid "il n'y a pas de redondance."
+#~ msgstr ""
+
+#~ msgid "Évolution du :math:`\\sigma_0`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ce graphique représente l'évolution du "
+#~ ":math:`\\sigma_0` en échelle logarithmique en"
+#~ " fonction du nombre d'itérations. Sont "
+#~ "également représentées les bornes du "
+#~ "test du :math:`\\chi^2`."
+#~ msgstr ""
+
+#~ msgid "Test du :math:`\\chi^2`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le test du :math:`\\chi^2` permet de "
+#~ "valider le calcul par moindres carrés."
+#~ " Les bornes du :math:`\\chi^2` dépendent"
+#~ " des degrés de liberté du système."
+#~ " Dans Comp3D, un modèle paramétrique "
+#~ "est utilisé pour les moindres carrés."
+#~ " Ainsi, les degrés de liberté du "
+#~ "problème sont la différence entre le "
+#~ "nombre d'observations actives et le "
+#~ "nombre de paramètres."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Un test du :math:`\\chi^2` réussi, "
+#~ "signifiera qu'en moyenne, les observations "
+#~ "suivent une loi normale correspondant "
+#~ "aux écarts-types renseignés."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si le :math:`\\sigma_0` est supérieur à"
+#~ " l'intervalle du :math:`\\chi^2` :"
+#~ msgstr ""
+
+#~ msgid "soit il reste des fautes dans les observations,"
+#~ msgstr ""
+
+#~ msgid "soit la précision des observations est sur-estimée."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "si le :math:`\\sigma_0` est trop petit,"
+#~ " la précision des observations a été"
+#~ " sous-estimée."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est possible d'ajuster la précision"
+#~ " par type d'observation en utilisant "
+#~ "les propositions pseudo aléatoires (cf. "
+#~ ":ref:`propositions-pseudo-aleatoires`)."
+#~ msgstr ""
+
+#~ msgid "Coordonnées initiales"
+#~ msgstr ""
+
+#~ msgid "Cela correspond aux coordonnées des points après :ref:`cap-init` :"
+#~ msgstr ""
+
+#~ msgid ":ref:`point-class` ;"
+#~ msgstr ""
+
+#~ msgid "coordonnées initiales ;"
+#~ msgstr ""
+
+#~ msgid ":math:`\\sigma` (pour les points contraints) ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "valeurs de la déviation de la "
+#~ "verticale au point (si utilisée dans "
+#~ "le calcul) ;"
+#~ msgstr ""
+
+#~ msgid "nombre d'observations actives sur le point."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Si un commentaire a été renseigné "
+#~ "dans le fichier *.cor*, un logo "
+#~ "information apparaît à gauche du point"
+#~ " et son commentaire est visualisable "
+#~ "dans une info-bulle en survolant "
+#~ "le point. Ce commentaire sur le "
+#~ "point apparait également dans les "
+#~ "tableaux d'observations."
+#~ msgstr ""
+
+#~ msgid "On retrouve ces coordonnées dans le fichier de sortie *.cap*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Chaque observation du calcul est listée"
+#~ " dans un tableau dans l'ordre donné"
+#~ " par l'utilisateur. Il est possible "
+#~ "d'ouvrir un fichier *.obs* en cliquant"
+#~ " sur la ligne contenant son nom. "
+#~ "En survolant la ligne d'une observation,"
+#~ " on peut visualiser le numéro de "
+#~ "ligne de l'observation dans son fichier."
+#~ msgstr ""
+
+#~ msgid "Code couleur :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "les observations en gris italique "
+#~ "correspondent à des observations désactivées"
+#~ " (cf. :ref:`deactivated-obs`) ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "si la matrice normale a été "
+#~ "inversée (see :ref:`normal-matrix-inversion`)"
+#~ " :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "les observations en orange correspondent "
+#~ "à des observations suspectes avec un "
+#~ "résidu normé >2.5 :math:`\\sigma` en "
+#~ "valeur absolue ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "les observations en rouge correspondent "
+#~ "à des observations qui semblent fausses"
+#~ " avec un résidu normé >4.1 "
+#~ ":math:`\\sigma` en valeur absolue ;"
+#~ msgstr ""
+
+#~ msgid "si la matrice normale n'a pas été inversée :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "les observations en orange correspondent "
+#~ "à des observations suspectes avec un "
+#~ "résidu normalisé >3 :math:`\\sigma` en "
+#~ "valeur absolue ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "les observations en rouge correspondent "
+#~ "à des observations qui semblent fausses"
+#~ " avec un résidu normalisé >6 "
+#~ ":math:`\\sigma` en valeur absolue ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "L'analyse des résidus est plus "
+#~ "rigoureuse avec les résidus normés, ces"
+#~ " derniers suivants une loi normale "
+#~ "centrale réduite, ce qui n'est pas "
+#~ "le cas des résidus normalisés. Il "
+#~ "est donc fortement recommandé de "
+#~ "toujours inverser la matrice normale."
+#~ msgstr ""
+
+#~ msgid "Les colonnes sont les suivantes :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "code : type d'observation et "
+#~ "éventuellement le commentaire associée à "
+#~ "l'observation ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "de : classe (cf. :ref:`point-class`) "
+#~ "et nom du point duquel part "
+#~ "l'observation ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "vers : classe (cf. :ref:`point-class`)"
+#~ " et nom du point destinataire de "
+#~ "l'observation ;"
+#~ msgstr ""
+
+#~ msgid "mesure : valeur de l'observation dans son unité ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "distance : distance en m entre les"
+#~ " coordonnées compensées des 2 points "
+#~ ";"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\sigma` total : :math:`\\sigma` de "
+#~ "l'observation correspondant à la somme "
+#~ "du :math:`\\sigma` absolu et du "
+#~ ":math:`\\sigma` relatif renseignés par "
+#~ "l'utilisateur ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\sigma` *a posteriori* : "
+#~ ":math:`\\sigma` calculé après inversion de "
+#~ "la matrice normale par propagation de"
+#~ " la variance (:math:`Qll = A Qxx "
+#~ "A^T`). Cela correspond au :math:`\\sigma` "
+#~ "sur l'observation obtenue après compensation"
+#~ " ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "résidu normalisé : résidu divisé par "
+#~ "le :math:`\\sigma` total de l'observation. "
+#~ "Un résidu normalisé égal à 1 "
+#~ "correspond à une observation dont le "
+#~ ":math:`\\sigma` total et le résidu sont"
+#~ " égaux. Un résidu supérieur à 1 "
+#~ "signifie que la précision de "
+#~ "l'observation est surévaluée par rapport "
+#~ "à la compensation ou alors il "
+#~ "s'agit d'une faute ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "résidu : résidu de l'observation "
+#~ "correspondant à l'écart entre l'observation"
+#~ " compensée et l'observation mesurée dans"
+#~ " l'unité de la mesure ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "résidu mm : résidu en mm de "
+#~ "l'observation correspondant à l'écart métrique"
+#~ " entre l'observation compensée et "
+#~ "l'observation mesurée ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\sigma` *a posteriori* : "
+#~ ":math:`\\sigma` calculé après inversion de "
+#~ "la matrice normale par propagation de"
+#~ " la variance (Qll = AQxxA'). Cela "
+#~ "correspond au :math:`\\sigma` sur "
+#~ "l'observation obtenue après compensation, "
+#~ "autrement dit la précision de "
+#~ "l'observation compensée ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "résidu standard : résidu divisé par "
+#~ "le :math:`\\sigma` a posteriori. Il "
+#~ "permet d'évaluer le résidu en fonction"
+#~ " du niveau de redondance ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "redondance : la redondance partielle "
+#~ "d'une observation est le rapport entre"
+#~ " le :math:`\\sigma` *a posteriori* et "
+#~ "le :math:`\\sigma` total. Elle reflète "
+#~ "l'utilité d'une observation dans le "
+#~ "calcul :"
+#~ msgstr ""
+
+#~ msgid "0% : l'observation est indispensable au calcul ;"
+#~ msgstr ""
+
+#~ msgid "100% : l'observation est complètement redondante."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Elle peut être aussi interprétée en "
+#~ "tant qu'indicateur de fiabilité locale :"
+#~ msgstr ""
+
+#~ msgid "0% : l'observation n'est pas contrôlée ;"
+#~ msgstr ""
+
+#~ msgid "25% : l'observation est suffisament contrôlée ;"
+#~ msgstr ""
+
+#~ msgid "65% : l'observation est bien contrôlée ;"
+#~ msgstr ""
+
+#~ msgid "100% : l'observation est contrôlée de manière optimale."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "résidu normé : résidu divisé par "
+#~ "son écart-type. Cet indicateur suit "
+#~ "une loi normale centrée réduite et "
+#~ "est utilisé pour détecter une faute "
+#~ ":"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "valeur absolue du résidu normé < "
+#~ "2.5 :math:`\\sigma` : l'observation semble "
+#~ "bonne ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "2.5 :math:`\\sigma` < valeur absolue du"
+#~ " résidu normé < 4.1 :math:`\\sigma` :"
+#~ " l'observation est suspecte et apparait "
+#~ "en orange ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "4.1 :math:`\\sigma` < valeur absolue du"
+#~ " résidu normé : l'observation semble "
+#~ "fausse et apparait en rouge ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\nabla` (nabla) : plus grande "
+#~ "faute non détectable correspondant à "
+#~ "l'indicateur de fiabilité interne ;"
+#~ msgstr ""
+
+#~ msgid "faute probable : estimation de la grandeur de la faute probable."
+#~ msgstr ""
+
+#~ msgid "Conditions d'affichage :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "l'inversion de la matrice normale doit"
+#~ " avoir été effectuée pour afficher "
+#~ "les colonnes \":math:`\\sigma` a posteriori\","
+#~ " \"résidu standard\", \"résidu normé\", "
+#~ "\"redondance\", \":math:`\\nabla`\" et faute "
+#~ "probable : l'inversion n'est pas "
+#~ "effectuée sur les observations désactivées "
+#~ ";"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "le résidu normé, le :math:`\\nabla` et"
+#~ " la faute probable ne sont calculés"
+#~ " que si la redondance partielle de"
+#~ " l'observation est supérieure à 1% ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "la faute probable est affichée si "
+#~ "la valeur absolue du résidu normé "
+#~ "> 2.5."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les tableaux sont faits pour être "
+#~ "facilement copiables dans un tableur. "
+#~ "Les unités et d'autres informations ne"
+#~ " sont pas conservées à la copie "
+#~ "pour simplifier l'exploitation des données."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour alléger le tableau, il est "
+#~ "possible de masquer certaines colonnes. "
+#~ "Pour cela, un simple clique sur la"
+#~ " colonne souhaitée suffit pour "
+#~ "masquer/afficher la colonne. Les colonnes "
+#~ "sont masquables si une main apparait "
+#~ "au survol."
+#~ msgstr ""
+
+#~ msgid "Répartition des résidus"
+#~ msgstr ""
+
+#~ msgid "Cette section n'est pas affichée lors de simulation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ces différents graphiques permettent "
+#~ "d'analyser la répartition des résidus "
+#~ "normés. En cliquant sur un attribut "
+#~ "légende, il est possible d'afficher ou"
+#~ " de masquer la représentation associée."
+#~ msgstr ""
+
+#~ msgid "Les observations sont classées :"
+#~ msgstr ""
+
+#~ msgid "par classe de résidu, et devraient suivre la loi normale donnée en gris"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "par classe de résidu et type de"
+#~ " mesure, chaque type devant suivre la"
+#~ " loi normale"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "par type de mesure et par classe"
+#~ " de distance, les résidus étant "
+#~ "censés ne pas dépendre de la "
+#~ "distance."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cela peut permettre de détecter des "
+#~ "erreurs dans le choix des "
+#~ ":math:`\\sigma` absolus et relatifs ou "
+#~ "bien un problème dans la modélisation"
+#~ " de la réfraction sur angles "
+#~ "zénithaux."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sur le dernier graphique, en survolant"
+#~ " une barre de l'histogramme, plusieurs "
+#~ "informations sont affichées :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Abs : moyenne des valeurs absolues "
+#~ "des résidus normalisés sur l'intervalle "
+#~ ";"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NoAbs : moyenne des résidus normalisés"
+#~ " sur l'intervalle +/- l'écart-type "
+#~ "sur les valeurs de l'intervalle ;"
+#~ msgstr ""
+
+#~ msgid "NbObs : nombre d'observations de l'intervalle."
+#~ msgstr ""
+
+#~ msgid "Propositions pseudo aléatoires"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cette section n'est pas affichée en "
+#~ "cas de simulation et il faut avoir"
+#~ " inversé la matrice normale."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans un premier temps, la redondance "
+#~ "totale du système est fournie. Elle "
+#~ "correspond au degré de liberté du "
+#~ "système, soit la différence entre le "
+#~ "nombre d'observations et le nombre de"
+#~ " paramètres du système."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour chaque observation, une redondance "
+#~ "partielle est calculée à partir du "
+#~ "sigma total et du sigma a "
+#~ "posteriori. Elle est comprise entre 0"
+#~ " et 1. Ces redondances partielles "
+#~ "bénéficient d'une propriété remarquable : "
+#~ "leur somme totale est égale à la"
+#~ " redondance du système."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour qu'une compensation soit correcte, "
+#~ "il faut que le :math:`\\sigma_0` soit"
+#~ " proche de 1 et compris dans "
+#~ "l'intervalle du :math:`\\chi^2` mais aussi "
+#~ "que chaque type d'observation ait son"
+#~ " :math:`\\sigma_0` proche de 1. Cela "
+#~ "garantit que chaque type d'observation "
+#~ "est correctement pondéré et qu'un type"
+#~ " d'observation n'est pas sous-pondéré "
+#~ "au profit d'un autre."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Comp3d fournit des propositions pseudo "
+#~ "aléatoires pour chaque type d'observation "
+#~ "présente dans le calcul. En multipliant"
+#~ " les :math:`\\sigma` a priori associés "
+#~ "par cette proposition, les :math:`\\sigma_0`"
+#~ " tendent vers 1 et leur proposition"
+#~ " pseudo aléatoire aussi."
+#~ msgstr ""
+
+#~ msgid "ces corrections ne sont à faire qu'une fois les fautes éliminées ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pour chaque type, une proposition pseudo"
+#~ " aléatoire n'est faite que si les "
+#~ "deux conditions suivantes sont remplies "
+#~ ":"
+#~ msgstr ""
+
+#~ msgid "il y a au moins 10 observations de ce type ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "la moyenne des redondances partielles de"
+#~ " ce type supérieure à 30% (si "
+#~ "tel est le cas, un message "
+#~ "d'avertissement est affichée) ;"
+#~ msgstr ""
+
+#~ msgid "en survolant la proposition, différentes informations sont affichés :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "le nombre d'observations et le nombre"
+#~ " d'observations avec une redondance "
+#~ "supérieure à 80% sont affichés ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "la somme des redondances partielles de"
+#~ " ce type et la proportion qu'elles"
+#~ " représentent par rapport à la "
+#~ "redondance totale du système ;"
+#~ msgstr ""
+
+#~ msgid "la moyenne des redondances partielles de ce type ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "une proposition pseudo aléatoire inférieure"
+#~ " à 1 signifie que la précision "
+#~ "des observations de ce type est "
+#~ "sous-estimée ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "une proposition pseudo aléatoire supérieure"
+#~ " à 1 signifie que la précision "
+#~ "des observations de ce type est "
+#~ "sur-estimée."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "L'information donnée ne dit pas si "
+#~ "il faut modifier le :math:`\\sigma` "
+#~ "absolu ou relatif des observations, "
+#~ "c'est à l'utilisateur de voir en "
+#~ "fonction de la répartition des résidus"
+#~ " en fonction de la distance."
+#~ msgstr ""
+
+#~ msgid "Plus gros résidus"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les observations suspectes ou qui "
+#~ "semblent fausses (cf. :ref:`output-obs`) "
+#~ "sont fournies dans ce tableau par "
+#~ "ordre décroissant, avec un maximum de"
+#~ " 20 observations."
+#~ msgstr ""
+
+#~ msgid "Le tri est effectué sur :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "la valeur absolue des résidus normés "
+#~ "si la matrice normale a été "
+#~ "inversée ;"
+#~ msgstr ""
+
+#~ msgid "la valeur absolue des résidus normalisés sinon."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La flèche à gauche est un lien "
+#~ "vers la ligne correspondante du tableau"
+#~ " des observations."
+#~ msgstr ""
+
+#~ msgid "Bascules"
+#~ msgstr ""
+
+#~ msgid "Cette section est pas affichée si il y a des bascule dans le chantier."
+#~ msgstr ""
+
+#~ msgid "Différentes colonnes sont affichées :"
+#~ msgstr ""
+
+#~ msgid "nom du fichier XYZ associé à la bascule ;"
+#~ msgstr ""
+
+#~ msgid "centre de la bascule ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "est-ce que la station est "
+#~ "verticalisée, et de quel angle (en "
+#~ "grades) est déviée par rapport à "
+#~ "la verticale ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "tranformation entre le repère cartésien "
+#~ "XYZ et les coordonnées cartésiennes "
+#~ "globales :"
+#~ msgstr ""
+
+#~ msgid "Vect : la position de la station dans le repère cartésien global"
+#~ msgstr ""
+
+#~ msgid "Mat : matrice de rotation entre repère local et global."
+#~ msgstr ""
+
+#~ msgid "Coordonnées compensées"
+#~ msgstr ""
+
+#~ msgid "Cette section n'est pas affichée lors de simulations."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans ce tableau se trouvent les "
+#~ "coordonnées compensées par les moindres "
+#~ "carrés. Les déplacements par composante "
+#~ "par rapport aux coordonnées initiales "
+#~ "sont également fournis."
+#~ msgstr ""
+
+#~ msgid "On retrouve ces coordonnées dans le fichier résultat *.new*."
+#~ msgstr ""
+
+#~ msgid "Indicateurs de confiance"
+#~ msgstr ""
+
+#~ msgid "Il faut avoir inversé la matrice normale pour afficher cette section."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Ces indicateurs sont données dans la "
+#~ "projection stéréographique. Ainsi l'orientation "
+#~ "des ellipsoïdes est donnée par rapport"
+#~ " au nord géographique et correspond à"
+#~ " un azimut (cf. :ref:`overview`)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les grandeurs sont toujours données "
+#~ "multipliés pas le :math:`\\sigma_0` final "
+#~ "pour compenser l'optimisme ou le "
+#~ "pessimisme des :math:`\\sigma` en entrée."
+#~ msgstr ""
+
+#~ msgid "Ellipsoïdes de confiance"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les ellipsoïdes (3D) de confiance à "
+#~ "1 :math:`\\sigma` (20% de chance de "
+#~ "se trouver dans ce volume) sont "
+#~ "donnés dans cette partie, sous la "
+#~ "forme de 1/2 axes, azimuts et "
+#~ "sites par composante."
+#~ msgstr ""
+
+#~ msgid "Demi-intervalles de confiance"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les demi-intervalles de confiance 1D "
+#~ "par composante terrain sont fournis en"
+#~ " millimètre pour chaque point du "
+#~ "chantier à 1 :math:`\\sigma` : 68% "
+#~ "de chance de se trouver dans cet"
+#~ " intervalle défini par :math:`\\pm` le "
+#~ "demi-intervalle de confiance."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les demi-intervalles de confiance "
+#~ "correspondent à la racine carrée des "
+#~ "élements diagonaux de la matrice de "
+#~ "variance, multimpliés par le :math:`\\sigma_0`"
+#~ " final."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Aucun indicateur de confiance n'est "
+#~ "donné pour les composantes fixées, car"
+#~ " celles-ci ne correspondent pas à "
+#~ "un paramètre."
+#~ msgstr ""
+
+#~ msgid "Simulations des déplacements des points"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cette section n'est affichée que lors"
+#~ " d'une simulation par Monte-Carlo "
+#~ "(cf. `5.5 <#simulation-par-monte-"
+#~ "carlo>`__)."
+#~ msgstr ""
+
+#~ msgid "Coordonnées initialisées"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les coordonnées initiales ayant servies "
+#~ "au calcul sont sauvegardées dans un "
+#~ "fichier *.cap* dans le repère d'entrée."
+#~ " Ce fichier comprend les coordonnées "
+#~ "initiales fournies dans le fichier cor"
+#~ " et les coordonnées initiales des "
+#~ "points initialisés par CAP (cf. :ref"
+#~ ":`cap-init`)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le fichier *.cap* est écrit lors "
+#~ "du chargement des données qui s'effectue"
+#~ " dans les cas suivants :"
+#~ msgstr ""
+
+#~ msgid "ouverture d'un chantier ;"
+#~ msgstr ""
+
+#~ msgid "validation de la configuration d'un chantier ;"
+#~ msgstr ""
+
+#~ msgid "appui sur le bouton \"Recharger\" de l'interface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "En conséquence, même si la compensation"
+#~ " n'a pas été effectuée, ce fichier"
+#~ " est écrit. Il peut servir à "
+#~ "compléter un fichier *.cor* en cours "
+#~ "de création."
+#~ msgstr ""
+
+#~ msgid "Les coordonnées compensées sont enregistrées dans 2 fichiers :"
+#~ msgstr ""
+
+#~ msgid "*.new* : dans le repère du fichier *.cor* ;"
+#~ msgstr ""
+
+#~ msgid "*.3d* : dans le repère cartésien global."
+#~ msgstr ""
+
+#~ msgid "cf. :ref:`coord-systems`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "En cas de calcul avec inversion de"
+#~ " la matrice normale, les coordonnées "
+#~ "compensées sont accompagnées des précisions"
+#~ " estimées après compensation."
+#~ msgstr ""
+
+#~ msgid "Matrice de variance-covariance"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "En cas de calcul avec inversion de"
+#~ " la matrice normale, on peut demander"
+#~ " à ce que la matrice"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "de variance-covariance soit exportée "
+#~ "dans un fichier *.comp_var_covar.csv* (cf. "
+#~ ":ref:`project-params`)."
+#~ msgstr ""
+
+#~ msgid "Ce fichier texte est fait pour être importé dans un tableur."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Tous les fichiers *.xyz* utilisés sont"
+#~ " mis à jour à la suite du "
+#~ "calcul. On y ajoute en commentaire "
+#~ ":"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "la transformation entre le repère "
+#~ "terrain en cartésiennes et le repère "
+#~ "local cartésien : centre de la "
+#~ "station et matrice rotation ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Measured points (=raw observations) in "
+#~ "cartesian ground frame (as in .3d) "
+#~ ";"
+#~ msgstr ""
+
+#~ msgid "Measured points (=raw observations) in projection frame (as in .new)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour mettre en référence dans le "
+#~ "repère du fichier *.cor* un nuage "
+#~ "de point complet à partir de ces"
+#~ " informations, il faut :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "appliquer la transformation aux points "
+#~ "du nuage, on obtient alors un "
+#~ "nuage de point dans le repère "
+#~ "cartésien (comme dans le fichier *.3d*)"
+#~ " ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "transformer ces points en coordonnées "
+#~ "cartésiennes en coordonnées projetées via "
+#~ "l'outil :ref:`cart-proj`."
 #~ msgstr ""
 

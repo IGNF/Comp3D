@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../translation.rst:5 ../../translation.rst:18 ../../translation.rst:69
+#: ../../translation.rst:102
+msgid "Translation"
+msgstr ""
+
+#: ../../translation.rst:7
+msgid "There are three targets for translation:"
+msgstr ""
+
+#: ../../translation.rst:9
+msgid "graphical user interface (GUI)"
+msgstr ""
+
+#: ../../translation.rst:10
+msgid "reports"
+msgstr ""
+
+#: ../../translation.rst:11
+msgid "documentation"
+msgstr ""
+
+#: ../../translation.rst:15
+msgid "GUI"
+msgstr ""
+
+#: ../../translation.rst:20 ../../translation.rst:104
+msgid "Dependencies:"
+msgstr ""
+
+#: ../../translation.rst:27
+msgid "Update list of strings to translate:"
+msgstr ""
+
+#: ../../translation.rst:33
+msgid "or, in *Qt Creator*:"
+msgstr ""
+
+#: ../../translation.rst:35
+msgid "``Tools>External>Linguist>lupdate``"
+msgstr ""
+
+#: ../../translation.rst:37
+msgid "Then run the the *linguist* GUI via"
+msgstr ""
+
+#: ../../translation.rst:43
+msgid "and open file *gui/translations/Comp3D_fr.ts*."
+msgstr ""
+
+#: ../../translation.rst:45
+msgid "Translations are compiled at the same time as the executable."
+msgstr ""
+
+#: ../../translation.rst:49 ../../translation.rst:92 ../../translation.rst:129
+msgid "Add a new language translation"
+msgstr ""
+
+#: ../../translation.rst:51
+msgid ""
+"Add to the project the Qt ressources files corresponding to the language:"
+" *qt_XX.qm* and *qtbase_XX.qm* (that can be found in *qttranslations-"
+"opensource-src-5.X.X.zip*) in *gui/translations* and in *ressource.qrc*."
+msgstr ""
+
+#: ../../translation.rst:54
+msgid "Create a file named *gui/translations/Comp3D_??.ts*."
+msgstr ""
+
+#: ../../translation.rst:56
+msgid ""
+"Insert the language name and its abbrevation in the following lines of "
+"*src/compile.h*:"
+msgstr ""
+
+#: ../../translation.rst:66
+msgid "Report"
+msgstr ""
+
+#: ../../translation.rst:71
+msgid "Mandatory for the first translation update, in *Comp3D_cpp/gui/html/*:"
+msgstr ""
+
+#: ../../translation.rst:77
+msgid "Then run, in *Comp3D_cpp/gui/html/simple_i18n/*:"
+msgstr ""
+
+#: ../../translation.rst:83
+msgid "(replace ``fr`` with the target language)."
+msgstr ""
+
+#: ../../translation.rst:85
+msgid ""
+"It will add untranslated strings to the translation list. Replace the old"
+" list in *visu_comp.js* by the new one and translate the new strings that"
+" are between ``~``."
+msgstr ""
+
+#: ../../translation.rst:88
+msgid "|c3| must be compiled to take into account the new *visu_comp.js*."
+msgstr ""
+
+#: ../../translation.rst:94
+msgid ""
+"To add a new language, add a new entry in the ``translations`` dict in "
+"*visu_comp.js*."
+msgstr ""
+
+#: ../../translation.rst:99
+msgid "User documentation"
+msgstr ""
+
+#: ../../translation.rst:110
+msgid "The following commands are to be run in *doc_uni/* directory."
+msgstr ""
+
+#: ../../translation.rst:112
+msgid "Update the strings to translate:"
+msgstr ""
+
+#: ../../translation.rst:118
+msgid ""
+"The files to translate are `doc_uni/locale/??/LC_MESSAGES/*.po`, using "
+"*linguist*."
+msgstr ""
+
+#: ../../translation.rst:120
+msgid "Apply the translations:"
+msgstr ""
+
+#: ../../translation.rst:126
+msgid "|c3| must be compiled to take into account the new user documentation."
+msgstr ""
+
+#: ../../translation.rst:131
+msgid "Update *build_doc.sh*."
+msgstr ""
+

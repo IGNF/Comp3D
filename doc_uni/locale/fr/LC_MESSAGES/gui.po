@@ -1,3 +1,7 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) IGN
 # This file is distributed under the same license as the Comp3D package.
@@ -8,14 +12,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comp3D \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../gui.rst:5
 msgid "Graphical User Interface"
@@ -26,120 +30,155 @@ msgid "Main Tables"
 msgstr ""
 
 #: ../../gui.rst:13
-msgid "The GUI contains two main tables:"
+msgid "The |gui| contains two main tables:"
 msgstr ""
 
 #: ../../gui.rst:15
-msgid "list of points, containing:"
+msgid "the list of points, containing for each point:"
 msgstr ""
 
 #: ../../gui.rst:17
-msgid "point number;"
+msgid "number"
+msgstr ""
+
+#: ../../gui.rst:18
+msgid "class"
 msgstr ""
 
 #: ../../gui.rst:19
-msgid "point class;"
+msgid "name"
 msgstr ""
 
-#: ../../gui.rst:21
-msgid "point name;"
+#: ../../gui.rst:20
+msgid "initial coordinates or their variation after compensation"
 msgstr ""
 
-#: ../../gui.rst:23
-msgid "point initial coordinates or their variation after compensation;"
+#: ../../gui.rst:22
+msgid "the list of observations, containing for each observation:"
+msgstr ""
+
+#: ../../gui.rst:24
+msgid "observation number"
 msgstr ""
 
 #: ../../gui.rst:25
-msgid "list of observations, containing:"
+msgid "a checkbox to activate or deactivate the observation"
+msgstr ""
+
+#: ../../gui.rst:26
+msgid "name of the observation's starting point"
 msgstr ""
 
 #: ../../gui.rst:27
-msgid "observation number;"
+msgid "name of the observation's target point"
+msgstr ""
+
+#: ../../gui.rst:28
+msgid "observation type"
 msgstr ""
 
 #: ../../gui.rst:29
-msgid "a checkbox to activate or deactivate the observation;"
+msgid "observation precision (:math:`\\sigma`)"
 msgstr ""
 
-#: ../../gui.rst:31
-msgid "name of the observation's starting point;"
+#: ../../gui.rst:30
+msgid "initial/final normalized residual (:math:`Res\\ \\sigma`)"
 msgstr ""
 
-#: ../../gui.rst:33
-msgid "name of the observation's target point;"
+#: ../../gui.rst:32
+msgid "All information contained in these two tables can be sorted by any column."
 msgstr ""
 
-#: ../../gui.rst:35
-msgid "observation type;"
+#: ../../gui.rst:34
+msgid "Tooltips are available to give more information on the cells."
 msgstr ""
 
 #: ../../gui.rst:37
-msgid "observation precision;"
-msgstr ""
-
-#: ../../gui.rst:39
-msgid "initial/final normalized residual."
-msgstr ""
-
-#: ../../gui.rst:41
 msgid ""
-"All information contained in these two tables may be sorted by column and"
-" tooltips are available."
+"It is possible to increase the size of one of the tables by sliding the "
+"central vertical separation. If you hide one table, the other one will "
+"show extra information such as:"
+msgstr ""
+
+#: ../../gui.rst:40
+msgid "for points:"
+msgstr ""
+
+#: ../../gui.rst:42
+msgid "number of active observations to the point"
 msgstr ""
 
 #: ../../gui.rst:44
-msgid ""
-"If you increase the size of one of the tables by sliding the central "
-"vertical separation. Il you hide on table, the other will show extra "
-"informations:"
+msgid "empirical confidence interval per element/parameter"
 msgstr ""
 
-#: ../../gui.rst:47
-msgid "points:"
+#: ../../gui.rst:46
+msgid "for observations:"
 msgstr ""
 
-#: ../../gui.rst:49
-msgid "number of active observations to the point;"
+#: ../../gui.rst:48
+msgid "residue of the observation in *mm*"
 msgstr ""
 
-#: ../../gui.rst:51
-msgid "confidence interval per element/parameter;"
+#: ../../gui.rst:50
+msgid "number of active observations to the target point"
 msgstr ""
 
-#: ../../gui.rst:53
-msgid "observations:"
-msgstr ""
-
-#: ../../gui.rst:55
-msgid "residue of the observation in *mm*;"
-msgstr ""
-
-#: ../../gui.rst:57
-msgid "number of active observations to the target point;"
-msgstr ""
-
-#: ../../gui.rst:59
+#: ../../gui.rst:52
 msgid "redundancy of the observation in *%* (see :ref:`normal-matrix-inversion`)"
 msgstr ""
 
+#: ../../gui.rst:59
+msgid "Changing Observation Status"
+msgstr ""
+
+#: ../../gui.rst:61
+msgid ""
+"By clicking on the ``Act`` field of an observation you can activate or "
+"deactivate it. You can relaunch the computation to check if you isolated "
+"an error."
+msgstr ""
+
 #: ../../gui.rst:66
-msgid "Change Observation Status"
+msgid "The |c3| |gui| does not change the :ref:`.obs file <obsfiles>`."
 msgstr ""
 
-#: ../../gui.rst:68
+#: ../../gui.rst:70
 msgid ""
-"By clicking on the *Act* field of an observation you can activate or "
-"deactivate it. You can then compute again to check if you isolated an "
-"error."
-msgstr ""
-
-#: ../../gui.rst:71
-msgid ""
-"The |c3| |gui| does not change the :ref:`.obs <obsfiles>`. Keep in mind "
-"that reloading files, with \"Reload\", leads to the loss of all changes "
+"Reloading files, with ``Reload``, leads to the loss of all changes "
 "regarding the observations status deactivate/activate. You have to record"
 " deactivated observations in the :ref:`.obs file<obsfiles>` (see :ref"
 ":`deactivated-obs`)."
+msgstr ""
+
+#: ../../gui.rst:76
+msgid "Project Menu"
+msgstr ""
+
+#: ../../gui.rst:78
+msgid "The ``Project`` menu is used to create, open, setup and process projects."
+msgstr ""
+
+#: ../../gui.rst:80
+msgid ""
+"The :ref:`project-params` and processing commands are also available as "
+"buttons."
+msgstr ""
+
+#: ../../gui.rst:85
+msgid "Tools Menu"
+msgstr ""
+
+#: ../../gui.rst:87
+msgid "See :ref:`tools`."
+msgstr ""
+
+#: ../../gui.rst:93
+msgid "Software Language Preferences"
+msgstr ""
+
+#: ../../gui.rst:95
+msgid "Interface language can be changed via ``Comp3D>Language`` menu."
 msgstr ""
 
 #~ msgid ""
@@ -242,5 +281,101 @@ msgstr ""
 #~ "deactivated observations in the :ref:`.obs "
 #~ "file<obsfiles>` suivant : :ref:`deactivated-"
 #~ "obs`."
+#~ msgstr ""
+
+#~ msgid "The GUI contains two main tables:"
+#~ msgstr ""
+
+#~ msgid "list of points, containing:"
+#~ msgstr ""
+
+#~ msgid "point number;"
+#~ msgstr ""
+
+#~ msgid "point class;"
+#~ msgstr ""
+
+#~ msgid "point name;"
+#~ msgstr ""
+
+#~ msgid "point initial coordinates or their variation after compensation;"
+#~ msgstr ""
+
+#~ msgid "list of observations, containing:"
+#~ msgstr ""
+
+#~ msgid "observation number;"
+#~ msgstr ""
+
+#~ msgid "a checkbox to activate or deactivate the observation;"
+#~ msgstr ""
+
+#~ msgid "name of the observation's starting point;"
+#~ msgstr ""
+
+#~ msgid "name of the observation's target point;"
+#~ msgstr ""
+
+#~ msgid "observation type;"
+#~ msgstr ""
+
+#~ msgid "observation precision;"
+#~ msgstr ""
+
+#~ msgid "initial/final normalized residual."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All information contained in these two"
+#~ " tables may be sorted by column "
+#~ "and tooltips are available."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you increase the size of one"
+#~ " of the tables by sliding the "
+#~ "central vertical separation. Il you hide"
+#~ " on table, the other will show "
+#~ "extra informations:"
+#~ msgstr ""
+
+#~ msgid "points:"
+#~ msgstr ""
+
+#~ msgid "number of active observations to the point;"
+#~ msgstr ""
+
+#~ msgid "confidence interval per element/parameter;"
+#~ msgstr ""
+
+#~ msgid "observations:"
+#~ msgstr ""
+
+#~ msgid "residue of the observation in *mm*;"
+#~ msgstr ""
+
+#~ msgid "number of active observations to the target point;"
+#~ msgstr ""
+
+#~ msgid "Change Observation Status"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By clicking on the *Act* field of"
+#~ " an observation you can activate or"
+#~ " deactivate it. You can then compute"
+#~ " again to check if you isolated "
+#~ "an error."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The |c3| |gui| does not change the"
+#~ " :ref:`.obs <obsfiles>`. Keep in mind "
+#~ "that reloading files, with \"Reload\", "
+#~ "leads to the loss of all changes"
+#~ " regarding the observations status "
+#~ "deactivate/activate. You have to record "
+#~ "deactivated observations in the :ref:`.obs "
+#~ "file<obsfiles>` (see :ref:`deactivated-obs`)."
 #~ msgstr ""
 

@@ -1,3 +1,7 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) IGN
 # This file is distributed under the same license as the Comp3D package.

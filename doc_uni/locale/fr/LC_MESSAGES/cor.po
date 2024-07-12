@@ -1,3 +1,7 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) IGN
 # This file is distributed under the same license as the Comp3D package.
@@ -8,14 +12,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comp3D \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-29 08:57+0200\n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../cor.rst:5
 msgid "COR File"
@@ -30,21 +34,22 @@ msgstr ""
 #: ../../cor.rst:9
 msgid ""
 "All points may be declared or only the minimum amount for allowing "
-":ref:`CAP <cap-init>` to compute the coordinates of all the other points."
-" In the case of a simulation project, it is mandatory to declare the "
-"coordinates of all points, as the observations values are not taken into "
-"account."
+"automatic :ref:`cap-init` to compute the coordinates of all the other "
+"points. In the case of a simulation project, it is mandatory to declare "
+"the coordinates of all points, as the observations values are not taken "
+"into account."
 msgstr ""
 
 #: ../../cor.rst:12
 msgid ""
-"In any case, in order to settle the project translation, it is necessary "
-"to constrain at least an X, a Y and a Z, not necessarily on the same "
-"point. These constaints must appear in the *.cor file*."
+"For example in case of a 3D computation, in order to settle the project "
+"translation, it is necessary to constrain at least an X, a Y and a Z "
+"coordinates, not necessarily on the same point. These constaints must "
+"appear in the *.cor file*."
 msgstr ""
 
 #: ../../cor.rst:17
-msgid "Protocol"
+msgid "Protocol for .COR File"
 msgstr ""
 
 #: ../../cor.rst:19
@@ -53,247 +58,279 @@ msgid ""
 " has one line per point, containing the following fields:"
 msgstr ""
 
-#: ../../cor.rst:21
+#: ../../cor.rst:22
 msgid ""
 ":math:`code\\ name\\ E\\ N\\ h\\ [\\sigma_E\\ \\sigma_N\\ \\sigma_h\\ "
 "[\\eta\\ \\xi]]\\ [*comment]`"
 msgstr ""
 
-#: ../../cor.rst:23
-msgid ":math:`code`: declares dimension of point and its type of contraints"
-msgstr ""
-
 #: ../../cor.rst:25
-msgid "**0**: 3D free point;"
+msgid "*code*: point dimension and type of contraints"
 msgstr ""
 
 #: ../../cor.rst:27
-msgid "**1**: 3D point constrained on XYZ;"
+msgid "``0``: 3D free point"
 msgstr ""
 
 #: ../../cor.rst:29
-msgid "**2**: 3D point constrained on XY;"
+msgid "``1``: 3D point constrained on ENh"
 msgstr ""
 
 #: ../../cor.rst:31
-msgid "**3**: 3D point constrained on Z;"
+msgid "``2``: 3D point constrained on EN"
 msgstr ""
 
 #: ../../cor.rst:33
-msgid "**4**: 1D free point;"
+msgid "``3``: 3D point constrained on h"
 msgstr ""
 
 #: ../../cor.rst:35
-msgid "**5**: 1D point constrained on Z;"
+msgid "``4``: 1D free point"
 msgstr ""
 
 #: ../../cor.rst:37
-msgid "**6**: 2D free point;"
+msgid "``5``: 1D point constrained on h"
 msgstr ""
 
 #: ../../cor.rst:39
-msgid "**7**: 2D point constrained on XY;"
+msgid "``6``: 2D free point"
 msgstr ""
 
 #: ../../cor.rst:41
-msgid "**8**: remote 2D free point, excluded from internal constraints;"
+msgid "``7``: 2D point constrained on EN"
 msgstr ""
 
 #: ../../cor.rst:43
-msgid ""
-"**9**: remote 2D point constrained on XY, excluded from internal "
-"constraints;"
+msgid "``8``: remote 2D free point, excluded from internal constraints"
 msgstr ""
 
 #: ../../cor.rst:45
 msgid ""
-"**-1**: point to be ignored in *.obs* and not used in computation, useful"
-" for project debugging"
+"``9``: remote 2D point constrained on EN, excluded from internal "
+"constraints"
 msgstr ""
 
 #: ../../cor.rst:47
-msgid ":math:`name`: point name;"
+msgid ""
+"``-1``: point to be ignored in *.obs* and not used in computation, useful"
+" for project debugging"
 msgstr ""
 
 #: ../../cor.rst:49
-msgid ""
-":math:`E,\\ N,\\ h`: Easting and Northing in input projection of the "
-"project, and ellipsoidal height coordinates, in meters"
+msgid "*name*: point name"
 msgstr ""
 
 #: ../../cor.rst:51
 msgid ""
-":math:`\\sigma_E,\\ \\sigma_N,\\ \\sigma_h`: *a priori* precisions of "
-"constraints, in meters."
+"*E*, *N*: Easting and Northing coordinates in input projection of the "
+"project"
 msgstr ""
 
 #: ../../cor.rst:53
+msgid "*h*: ellipsoidal height or altitude (see :ref:`ref-frame`)"
+msgstr ""
+
+#: ../../cor.rst:55
+msgid ""
+":math:`\\sigma_E,\\ \\sigma_N,\\ \\sigma_h`: *a priori* precisions of "
+"constraints"
+msgstr ""
+
+#: ../../cor.rst:57
 msgid ""
 ":math:`\\eta,\\ \\xi`: Easting and Northing vertical deflection, in "
 "arcseconds"
 msgstr ""
 
-#: ../../cor.rst:55
-msgid ":math:`comment`: will be displayed in the report"
+#: ../../cor.rst:59
+msgid "*comment*: saved and displayed in the report"
 msgstr ""
 
-#: ../../cor.rst:59
+#: ../../cor.rst:62
 msgid ""
 ":math:`\\sigma_E`, :math:`\\sigma_N` and :math:`\\sigma_h` are mandatory "
 "only in case of constrained points or when :math:`\\eta` and :math:`\\xi`"
 " are expected."
 msgstr ""
 
-#: ../../cor.rst:61
+#: ../../cor.rst:64
 msgid ""
 "A *negative value* for :math:`\\sigma` deactivates the corresponding "
 "constraint."
 msgstr ""
 
-#: ../../cor.rst:63
+#: ../../cor.rst:66
 msgid ""
-"A *null precision on a coordinate* removes the parameter from the "
-"computation, the coordinate is then fixed."
+"If :math:`\\sigma` on a constrained coordinate is set to *0*, the "
+"corresponding parameter is removed from the computation (the coordinate "
+"is fixed)."
 msgstr ""
 
-#: ../../cor.rst:66
+#: ../../cor.rst:69
 msgid ""
 ":math:`\\eta` and :math:`\\xi` are mandatory on every verticalized point "
 "in order to use vertical deflection in computation."
 msgstr ""
 
-#: ../../cor.rst:69
+#: ../../cor.rst:72
 msgid ""
-"For ignored points (code -1), only the code and the point name are "
+"For ignored points (code ``-1``), only the code and the point name are "
 "mandatory."
 msgstr ""
 
-#: ../../cor.rst:72
-msgid "Sub *.cor* files can be included with ``@subname.cor``"
+#: ../../cor.rst:75
+msgid ""
+"*.cor* subfiles can be included into a *.cor* file using *@* (see :ref"
+":`ex-cor-file`)."
 msgstr ""
 
-#: ../../cor.rst:78
-msgid "Reference Frame"
-msgstr ""
-
-#: ../../cor.rst:80
-msgid "Coordinates are provided in a local frame:"
-msgstr ""
-
-#: ../../cor.rst:82
-msgid "using local stereographic projection, in meters;"
+#: ../../cor.rst:81
+msgid "Reference Frame in .COR File"
 msgstr ""
 
 #: ../../cor.rst:83
-msgid "or using any projection, defined in :ref:`project-params`."
+msgid ""
+"Coordinates in a *.cor* file are provided in a local stereographic "
+"projection, in meters or using any projection, as defined in :ref"
+":`project-params`."
 msgstr ""
 
 #: ../../cor.rst:85
 msgid ""
-"The vertical component must be close to the ellipsoidal height of the "
-"place, except in the case of pure 1D compensation (see :ref:`project-"
-"params`)."
+"The vertical component must be close to the ellipsoidal height, except in"
+" case of leveling (1D) compensation where altitude can be used (see :ref"
+":`project-params`)."
 msgstr ""
 
 #: ../../cor.rst:89
 msgid ""
-"The *a priori* precisions are always given in internal computation frame,"
-" that has no scale error or convergence of meridians."
+"The *a priori* precisions are always given in the internal computation "
+"frame (see :ref:`spherical-coord`), that has no scale error or "
+"convergence of meridians."
 msgstr ""
 
-#: ../../cor.rst:96
+#: ../../cor.rst:95
 msgid "1D Points"
 msgstr ""
 
-#: ../../cor.rst:98
+#: ../../cor.rst:97
 msgid ""
-"In the case of 1D points (code **4** or **5**), all coordinates are "
+"In the case of 1D points (code ``4`` or ``5``), all coordinates are "
 "mandatory. The altimetric component will be the only parameter for least "
-"squares, but the planimetric coordinates are used to compute:"
+"squares, but the planimetric coordinates are used to compute the "
+"precision of the observation, if it has a part relative to distance, and "
+"the correction of the vertical deviation."
 msgstr ""
 
-#: ../../cor.rst:101
-msgid "the precision of the observation, if it has a part relative to distance,"
-msgstr ""
-
-#: ../../cor.rst:103
-msgid "the correction of the vertical deviation."
-msgstr ""
-
-#: ../../cor.rst:105
+#: ../../cor.rst:100
 msgid ""
-"The planimetric coordinates are also used to correctly display de points "
-"on the map."
+"The planimetric coordinates are also used to correctly display the points"
+" on the report map."
 msgstr ""
 
-#: ../../cor.rst:111
+#: ../../cor.rst:106
 msgid "2D Points"
 msgstr ""
 
-#: ../../cor.rst:113
+#: ../../cor.rst:108
 msgid ""
-"In the case of 2D points  (code **6** to **9**), only the values of the "
-"planimetric coordinates are mandatory, the vertical coordinate is used "
-"only as information and for precision computation."
+"In the case of 2D points  (code ``6`` to ``9``), all coordinates are "
+"mandatory, the vertical coordinate is used only as information and for "
+"precision computation."
 msgstr ""
 
-#: ../../cor.rst:115
+#: ../../cor.rst:110
 msgid ""
-"Remote 2D points (code **8** and **9**) are the same as normal 2D points "
+"Remote 2D points (code ``8`` and ``9``) are the same as normal 2D points "
 "except that they are not used for internal constraints (see :ref"
 ":`internal-constraints`)."
 msgstr ""
 
-#: ../../cor.rst:120
-msgid "Example"
+#: ../../cor.rst:116
+msgid "Example of .COR File"
 msgstr ""
 
-#: ../../cor.rst:122
-msgid "Example : BASE.COR"
-msgstr ""
-
-#: ../../cor.rst:138
+#: ../../cor.rst:132
 msgid ""
 "Each constraint on the coordinates of a point with :math:`\\sigma>0` adds"
-" an observation (coord_x, coord_y or coord_z) in the bundle adjustment "
-"computation."
+" an observation in the bundle adjustment computation."
 msgstr ""
 
-#: ../../cor.rst:143
+#: ../../cor.rst:137
 msgid "Point Class"
 msgstr ""
 
-#: ../../cor.rst:145
+#: ../../cor.rst:139
 msgid ""
-"In the GUI and report, the point class is given in an abbreviated form in"
-" order to easily see its dimensions and constraints. A \"-\" indicates a "
-"dimension without constraint, the name of the coordinate in lowercase "
-"letter when the coordinate is constrained and in uppercase letter when "
-"the coordinate is fixed."
+"In the |gui| and report, the point class is displayed in an abbreviated "
+"form in order to easily see its dimensions and constraints. A ``-`` "
+"indicates a dimension without constraint, the name of the coordinate in "
+"lowercase letter when the coordinate is constrained and in uppercase "
+"letter when the coordinate is fixed, following this protocol:"
+msgstr ""
+
+#: ../../cor.rst:141
+msgid "``\"---\"``: 3D free point"
+msgstr ""
+
+#: ../../cor.rst:143
+msgid "``\"--z\"``: 3D point constrained on Z"
+msgstr ""
+
+#: ../../cor.rst:145
+msgid "``\"  -\"``: 1D free point"
 msgstr ""
 
 #: ../../cor.rst:147
-msgid "``\"---\"``: 3D free point;"
+msgid "``\"  z\"``: 1D point constrained on Z"
 msgstr ""
 
 #: ../../cor.rst:149
-msgid "``\"--z\"``: 3D point constrained on Z;"
+msgid "``\"XYz\"``: 3D point with fixed XY and constrained on Z"
 msgstr ""
 
 #: ../../cor.rst:151
-msgid "``\"  -\"``: 1D free point;"
-msgstr ""
-
-#: ../../cor.rst:153
-msgid "``\"  z\"``: 1D point constrained on Z;"
-msgstr ""
-
-#: ../../cor.rst:155
-msgid "``\"XYz\"``: 3D point with fixed XY and constrained on Z;"
+msgid "``\"--R\"``: remote free 2D point"
 msgstr ""
 
 #: ../../cor.rst:157
-msgid "``\"--f\"``: remote free 2D point."
+msgid "COR Covariance Matrix File"
+msgstr ""
+
+#: ../../cor.rst:159
+msgid ""
+"If a ``COR Covariance Matrix File`` has been given in :ref:`project-"
+"params`, all the variances and covariances between coordinates "
+"constraints observations will be replaced by the values found in the "
+"*.csv* file."
+msgstr ""
+
+#: ../../cor.rst:161
+msgid ""
+"The *.csv* file must have the same format as the one of :ref:`export-"
+"covar` tool."
+msgstr ""
+
+#: ../../cor.rst:163
+msgid ""
+"This can be used to place a new set of observations in the exact same "
+"reference as an old network."
+msgstr ""
+
+#: ../../cor.rst:166
+msgid ""
+"Fixed points are not affected by this since they have no coordinates "
+"constraints observations."
+msgstr ""
+
+#: ../../cor.rst:169
+msgid ""
+"This is not used in :ref:`internal-constraints` mode since all "
+"coordinates constraints observations are discarded."
+msgstr ""
+
+#: ../../cor.rst:172
+msgid "The covariances are not used in :ref:`simul-mc`."
 msgstr ""
 
 #~ msgid ""
@@ -601,5 +638,218 @@ msgstr ""
 #~ "par exemple), mais aussi à certains "
 #~ "calculs (estimation des distances de "
 #~ "visées par exemple)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All points may be declared or only"
+#~ " the minimum amount for allowing "
+#~ ":ref:`CAP <cap-init>` to compute the "
+#~ "coordinates of all the other points. "
+#~ "In the case of a simulation "
+#~ "project, it is mandatory to declare "
+#~ "the coordinates of all points, as "
+#~ "the observations values are not taken"
+#~ " into account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In any case, in order to settle"
+#~ " the project translation, it is "
+#~ "necessary to constrain at least an "
+#~ "X, a Y and a Z, not "
+#~ "necessarily on the same point. These "
+#~ "constaints must appear in the *.cor "
+#~ "file*."
+#~ msgstr ""
+
+#~ msgid "Protocol"
+#~ msgstr ""
+
+#~ msgid ":math:`code`: declares dimension of point and its type of contraints"
+#~ msgstr ""
+
+#~ msgid "**0**: 3D free point;"
+#~ msgstr ""
+
+#~ msgid "**1**: 3D point constrained on XYZ;"
+#~ msgstr ""
+
+#~ msgid "**2**: 3D point constrained on XY;"
+#~ msgstr ""
+
+#~ msgid "**3**: 3D point constrained on Z;"
+#~ msgstr ""
+
+#~ msgid "**4**: 1D free point;"
+#~ msgstr ""
+
+#~ msgid "**5**: 1D point constrained on Z;"
+#~ msgstr ""
+
+#~ msgid "**6**: 2D free point;"
+#~ msgstr ""
+
+#~ msgid "**7**: 2D point constrained on XY;"
+#~ msgstr ""
+
+#~ msgid "**8**: remote 2D free point, excluded from internal constraints;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**9**: remote 2D point constrained on"
+#~ " XY, excluded from internal constraints;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**-1**: point to be ignored in "
+#~ "*.obs* and not used in computation, "
+#~ "useful for project debugging"
+#~ msgstr ""
+
+#~ msgid ":math:`name`: point name;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`E,\\ N,\\ h`: Easting and "
+#~ "Northing in input projection of the "
+#~ "project, and ellipsoidal height coordinates,"
+#~ " in meters"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\sigma_E,\\ \\sigma_N,\\ \\sigma_h`: *a "
+#~ "priori* precisions of constraints, in "
+#~ "meters."
+#~ msgstr ""
+
+#~ msgid ":math:`comment`: will be displayed in the report"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A *null precision on a coordinate* "
+#~ "removes the parameter from the "
+#~ "computation, the coordinate is then "
+#~ "fixed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For ignored points (code -1), only "
+#~ "the code and the point name are"
+#~ " mandatory."
+#~ msgstr ""
+
+#~ msgid "Sub *.cor* files can be included with ``@subname.cor``"
+#~ msgstr ""
+
+#~ msgid "Reference Frame"
+#~ msgstr ""
+
+#~ msgid "Coordinates are provided in a local frame:"
+#~ msgstr ""
+
+#~ msgid "using local stereographic projection, in meters;"
+#~ msgstr ""
+
+#~ msgid "or using any projection, defined in :ref:`project-params`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The vertical component must be close "
+#~ "to the ellipsoidal height of the "
+#~ "place, except in the case of pure"
+#~ " 1D compensation (see :ref:`project-"
+#~ "params`)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The *a priori* precisions are always "
+#~ "given in internal computation frame, "
+#~ "that has no scale error or "
+#~ "convergence of meridians."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the case of 1D points (code "
+#~ "**4** or **5**), all coordinates are "
+#~ "mandatory. The altimetric component will "
+#~ "be the only parameter for least "
+#~ "squares, but the planimetric coordinates "
+#~ "are used to compute:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the precision of the observation, if "
+#~ "it has a part relative to "
+#~ "distance,"
+#~ msgstr ""
+
+#~ msgid "the correction of the vertical deviation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The planimetric coordinates are also "
+#~ "used to correctly display de points "
+#~ "on the map."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the case of 2D points  (code"
+#~ " **6** to **9**), only the values "
+#~ "of the planimetric coordinates are "
+#~ "mandatory, the vertical coordinate is "
+#~ "used only as information and for "
+#~ "precision computation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Remote 2D points (code **8** and "
+#~ "**9**) are the same as normal 2D"
+#~ " points except that they are not "
+#~ "used for internal constraints (see :ref"
+#~ ":`internal-constraints`)."
+#~ msgstr ""
+
+#~ msgid "Example"
+#~ msgstr ""
+
+#~ msgid "Example : BASE.COR"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Each constraint on the coordinates of"
+#~ " a point with :math:`\\sigma>0` adds "
+#~ "an observation (coord_x, coord_y or "
+#~ "coord_z) in the bundle adjustment "
+#~ "computation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the GUI and report, the point"
+#~ " class is given in an abbreviated "
+#~ "form in order to easily see its"
+#~ " dimensions and constraints. A \"-\" "
+#~ "indicates a dimension without constraint, "
+#~ "the name of the coordinate in "
+#~ "lowercase letter when the coordinate is"
+#~ " constrained and in uppercase letter "
+#~ "when the coordinate is fixed."
+#~ msgstr ""
+
+#~ msgid "``\"---\"``: 3D free point;"
+#~ msgstr ""
+
+#~ msgid "``\"--z\"``: 3D point constrained on Z;"
+#~ msgstr ""
+
+#~ msgid "``\"  -\"``: 1D free point;"
+#~ msgstr ""
+
+#~ msgid "``\"  z\"``: 1D point constrained on Z;"
+#~ msgstr ""
+
+#~ msgid "``\"XYz\"``: 3D point with fixed XY and constrained on Z;"
+#~ msgstr ""
+
+#~ msgid "``\"--f\"``: remote free 2D point."
 #~ msgstr ""
 

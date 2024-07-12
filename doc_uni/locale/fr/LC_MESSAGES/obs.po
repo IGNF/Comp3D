@@ -1,3 +1,7 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) IGN
 # This file is distributed under the same license as the Comp3D package.
@@ -8,386 +12,642 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comp3D \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-29 09:40+0200\n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.12.1\n"
 
 #: ../../obs.rst:5
 msgid "OBS File"
 msgstr ""
 
-#: ../../obs.rst:8
-msgid "Les fichiers des observations ont l'extension *.obs*."
+#: ../../obs.rst:7
+msgid ""
+"The *.obs* file contains simple observations and parametric stations "
+"declarations."
 msgstr ""
 
-#: ../../obs.rst:10
-msgid "Chaque ligne du fichier d'observation est soit :"
+#: ../../obs.rst:9
+msgid "Each line in an *.obs* file defines:"
+msgstr ""
+
+#: ../../obs.rst:11
+msgid "a simple observation (see :ref:`simple-obs`)"
 msgstr ""
 
 #: ../../obs.rst:12
-msgid "vide ou un commentaire ;"
+msgid "a parametric station (see :ref:`parametric-station`)"
 msgstr ""
 
-#: ../../obs.rst:14
-msgid "une observation simple ;"
-msgstr ""
-
-#: ../../obs.rst:16
-msgid "une observation composée ;"
+#: ../../obs.rst:13
+msgid "a reference to an *.obs* subfile (see :ref:`subfiles`)"
 msgstr ""
 
 #: ../../obs.rst:18
-msgid "une inclusion d'un sous-fichier *.obs* (``@subname.obs``)."
+msgid "Simple Observations"
 msgstr ""
 
 #: ../../obs.rst:20
-msgid "Les observation ont pour premier champ le code de la mesure."
-msgstr ""
-
-#: ../../obs.rst:22
-msgid "Pour les observations simples :"
-msgstr ""
-
-#: ../../obs.rst:24
-msgid "1 ou 3 : Distance suivant la pente réduite  de la météo."
+msgid ""
+"As mentioned in :ref:`overview`, all values and sigmas are in meters for "
+"linear observations and in grads (gons) for angular observations."
 msgstr ""
 
 #: ../../obs.rst:26
-msgid "2 : Distance géodésique réduite au niveau de la mer entre repères."
+msgid "Protocol for Simple Observations"
 msgstr ""
 
 #: ../../obs.rst:28
-msgid "4 : Différence de niveau entre repères."
+msgid "Simple observations definition contains the following fields:"
 msgstr ""
 
-#: ../../obs.rst:30
-msgid "5 : Angle horizontal dans un tour d'horizon."
-msgstr ""
-
-#: ../../obs.rst:32
-msgid "6 : Angle zénithal non corrigé de la réfraction."
+#: ../../obs.rst:31
+msgid ""
+":math:`code\\ origin\\ target\\ value\\ \\sigma_{abs}\\ [\\sigma_{rel}\\ "
+"[h_{station}\\ h_{target}]]\\ [*comment]`"
 msgstr ""
 
 #: ../../obs.rst:34
-msgid "7 : Ouverture de tour d'horizon."
-msgstr ""
-
-#: ../../obs.rst:36
-msgid "8 : Azimut imposé."
-msgstr ""
-
-#: ../../obs.rst:38
-msgid "9 : Centrage planimétrique."
-msgstr ""
-
-#: ../../obs.rst:40
-msgid "14 : Différence d'est."
+msgid ""
+"*code*: observation code (if negative, the observation will be "
+"deactivated as explained in :ref:`deactivated-obs`)"
 msgstr ""
 
 #: ../../obs.rst:42
-msgid "15 : Différence de nord."
+msgid "for linear observations:"
 msgstr ""
 
-#: ../../obs.rst:44
-msgid "Pour les observations composées :"
+#: ../../obs.rst:37
+msgid "``1`` or ``3``: slope distance adjusted for atmospheric propagation"
 msgstr ""
 
-#: ../../obs.rst:46
-msgid "11 : Sous-repère en coordonnées cartésiennes."
+#: ../../obs.rst:38
+msgid "``2``: geodetic distance at ellipsoid level between two points"
+msgstr ""
+
+#: ../../obs.rst:39
+msgid "``4``: height difference between two points"
+msgstr ""
+
+#: ../../obs.rst:40
+msgid "``9``: planimetric centering"
+msgstr ""
+
+#: ../../obs.rst:41
+msgid "``14``: Easting coordinate difference"
+msgstr ""
+
+#: ../../obs.rst:42
+msgid "``15``: Northing coordinate difference"
 msgstr ""
 
 #: ../../obs.rst:48
-msgid "12 : Sous-repère en coordonnées sphériques."
+msgid "for angular observations:"
+msgstr ""
+
+#: ../../obs.rst:45
+msgid "``5``: horizontal angle"
+msgstr ""
+
+#: ../../obs.rst:46
+msgid "``6``: zenith angle without refraction correction"
+msgstr ""
+
+#: ../../obs.rst:47
+msgid "``7``: reference of horizontal angles' round"
+msgstr ""
+
+#: ../../obs.rst:48
+msgid "``8``: azimuth between two points"
 msgstr ""
 
 #: ../../obs.rst:50
-msgid "18 : Détermination d'axe de rotation."
+msgid "*origin*: station name"
+msgstr ""
+
+#: ../../obs.rst:52
+msgid "*target*: target name"
 msgstr ""
 
 #: ../../obs.rst:54
-msgid "Observations simples"
+msgid "*value*: observation value"
 msgstr ""
 
 #: ../../obs.rst:56
-msgid "Simple observations contains the following fields:"
+msgid ""
+":math:`\\sigma_{abs}`: fixed part of observation's standard deviation (if"
+" negative, the correspondant observation will be deactived as explained "
+"in :ref:`deactivated-obs`)"
 msgstr ""
 
 #: ../../obs.rst:58
 msgid ""
-":math:`code\\ from\\ to\\ value\\ \\sigma\\_abs\\ [\\sigma\\_rel\\ "
-"[station\\_height\\ target\\_height]]\\ [*comment]`"
+":math:`\\sigma_{rel}`: standard deviation relative to computed distance "
+"between the two points' coordinates at current iteration"
 msgstr ""
 
-#: ../../obs.rst:60
-msgid ":math:`code`: code de l'observation ;"
+#: ../../obs.rst:60 ../../obs.rst:337
+msgid ":math:`h_{station}`: station height"
 msgstr ""
 
 #: ../../obs.rst:62
-msgid ":math:`from`: le nom de la station ;"
+msgid ":math:`h_{target}`: target height"
 msgstr ""
 
-#: ../../obs.rst:64
-msgid ":math:`to`: le nom du point visé ;"
-msgstr ""
-
-#: ../../obs.rst:66
+#: ../../obs.rst:65
 msgid ""
-":math:`value`: la valeur mesurée, en unité angulaire ou mètres suivant le"
-" type de mesure ;"
+"The planimetric centering (code ``9``) is a pseudo-observation and it is "
+"replaced, when importing the *.obs* file, by two observations: one "
+"observation with code ``14`` and one code ``15`` and measured value is "
+"not taken into account, it is forced to 0."
 msgstr ""
 
 #: ../../obs.rst:68
 msgid ""
-":math:`\\sigma\\_abs`: la partie fixe de la précision estimée de cette "
-"mesure (si elle est négative, la mesure correspondante sera inactive, cf."
-" :ref:`deactivated-obs`) ;"
+"A reference of horizontal angles' round (code ``7``) adds a new unknown "
+"in orientation; all the measurements code ``5`` from the same station "
+"following this code will be in the same round. If a code ``5`` is not "
+"preceeded by a code ``7``, it will be considered as a reference of "
+"horizontal angles' round."
 msgstr ""
 
 #: ../../obs.rst:71
 msgid ""
-":math:`\\sigma\\_rel`: partie de la précision relative à la distance : "
-":math:`\\sigma\\_abs + \\sigma\\_rel \\times distance` pour les mesures "
-"linéaires, :math:`\\sigma\\_abs + \\sigma\\_rel / distance` pour les "
-"mesures angulaires ;"
+"The final precision of an observation takes into account the absolute "
+"precison and the one relative to the computed distance between the two "
+"points' coordinates at current iteration:"
 msgstr ""
 
-#: ../../obs.rst:74
-msgid ":math:`station\\_height`: hauteur de station ;"
-msgstr ""
-
-#: ../../obs.rst:76
-msgid ":math:`target\\_height`: hauteur de voyant."
-msgstr ""
-
-#: ../../obs.rst:79
+#: ../../obs.rst:73
 msgid ""
-"Pour un même tour il est d'usage de classer les observations par station "
-"puis par type d'observation , mais cela n'est pas obligatoire."
+"for linear measurements: :math:`\\sigma_{abs} + \\sigma_{rel} \\cdot "
+"distance`"
 msgstr ""
 
-#: ../../obs.rst:82
+#: ../../obs.rst:75
 msgid ""
-"Le centrage planimétrique (code 9) est une pseudo-observation, remplacée "
-"par une observation code 14 et une code 15. La valeur mesurée n'est pas "
-"prise  en compte, elle est forcée à 0."
+"for angular measurements: :math:`\\sigma_{abs} + "
+"\\frac{\\sigma_{rel}}{distance}`"
 msgstr ""
 
-#: ../../obs.rst:85
+#: ../../obs.rst:78
 msgid ""
-"Les ouvertures de tour (code 7) servent à ajouter une nouvelle inconnue "
-"d'orientation, toutes les mesures code 5 suivantes depuis la même station"
-" seront dans ce tour. Si un code 5 n'est pas précédé d'un code 7, il sera"
-" lui-même     consiéré comme l'ouverture d'un tour."
+"In case of required high precision, it is not recommended to use the "
+"heights of the station and target, as they have no precision. It is "
+"necessary to duplicate the points at each height difference and use a "
+"planimetric centering (code ``9``) and height difference between the two "
+"points (code ``4``), for which a precision can be defined (see :ref"
+":`simple-obs-example`)."
 msgstr ""
 
-#: ../../obs.rst:89
+#: ../../obs.rst:83
+msgid "Example of Simple Observations File"
+msgstr ""
+
+#: ../../obs.rst:114
+msgid "Deactivated Observations"
+msgstr ""
+
+#: ../../obs.rst:116
 msgid ""
-"Il est déconseillé d'utiliser les hauteurs de station et de voyant si une"
-" grande précision est recherchée car il n'est pas possible de donner une "
-"précision à ces hauteurs. Il faut dans ce cas dédoubler les points à "
-"chaque changement de hauteur, et utiliser un centrage (code 9) et une "
-"dénivelée (code 4) pour lesquels on peut définir une précision. For "
-"|more|, see :ref:`centering`."
+"A simple observation can be deactivated in order to be removed from the "
+"bundle adjustment computation while being kept in the final report "
+"(grayed out) and computing its residual."
 msgstr ""
 
-#: ../../obs.rst:98
-msgid "Exemple"
-msgstr ""
-
-#: ../../obs.rst:119
+#: ../../obs.rst:118
 msgid ""
-"La distance S1 S3 a été mesurée avec une précision de 1 mm + 0.0001*D, "
-"les angles horizontaux depuis S1 avec une précision de 2 mgr sur des "
-"cibles définies au millimètre."
+"Observations can be temporarily deactivated in the |gui| (see "
+":ref:`gui_obs_activ`) for quick tests."
 msgstr ""
 
-#: ../../obs.rst:127
-msgid "Équation de centrage"
-msgstr ""
-
-#: ../../obs.rst:135
+#: ../../obs.rst:120
 msgid ""
-"Le point T5 est centré sur 5 avec une précision de 3 mm en X et 0.1 mm en"
-" Y. La hauteur de T5 au dessus de 5 est 1.619 m avec une précision de 5 "
-"mm + 0.1 mm \\*D avec D la distance entre les coordonnées des points."
+"In order to record the status of observations, all changes must be done "
+"in the *.obs* files. To deactivate an observation in the *.obs* file, add"
+" a ``-`` in front of its code or its absolute precision."
 msgstr ""
 
-#: ../../obs.rst:141
-msgid "Observations composées"
+#: ../../obs.rst:122
+msgid "Example:"
 msgstr ""
 
-#: ../../obs.rst:143
+#: ../../obs.rst:136
+msgid "Parametric Observations"
+msgstr ""
+
+#: ../../obs.rst:138
 msgid ""
-"Les observations composées représentent tout une station et font "
-"référence à des fichiers contenant les mesures faites depuis cette "
-"station."
+"A parametric observation uses a subfile containing a list of observations"
+" sharing a set of unknowns."
+msgstr ""
+
+#: ../../obs.rst:140
+msgid ""
+"They are declared in an *.obs* file and each parametric observation type "
+"has its own protocol."
+msgstr ""
+
+#: ../../obs.rst:145
+msgid "Cartesian Subframes"
 msgstr ""
 
 #: ../../obs.rst:147
-msgid "Sous-repère cartésien"
+msgid "The protocol of a cartesian subframe (code ``11``) in *.obs* file is:"
 msgstr ""
 
-#: ../../obs.rst:149
-msgid ""
-"Une station correspondant à un sous-repère cartésien (code 11) est "
-"décrite ainsi :"
-msgstr ""
-
-#: ../../obs.rst:151 ../../obs.rst:165
-msgid ":math:`code\\ from\\ @file.xyz\\ [1]\\ [*comment]`"
+#: ../../obs.rst:150
+msgid ":math:`11\\ origin\\ @file.xyz\\ [1]\\ [*comment]`"
 msgstr ""
 
 #: ../../obs.rst:153
 msgid ""
-"Le fichier d'observations *.xyz* contient les coordonnées cartésiennes "
-"d'un ensemble de point dans un repère centré sur la station. Its synthax "
-"is described in :ref:`file_xyz_11`."
+"Code ``11`` is used in case of frame change computation or terrestrial "
+"lidar measurements adjustment."
 msgstr ""
 
-#: ../../obs.rst:156 ../../obs.rst:170
+#: ../../obs.rst:155 ../../obs.rst:213
 msgid ""
-"On peut ajouter un \"1\" en 4ème champ sur la ligne de station pour dire "
-"qu'elle est verticalisée, c'est-à-dire que le sous-repère a la même "
-"verticale que le repère global."
+"It is possible to add a ``1`` in the 4\\ :sup:`th` column to indicate "
+"that the station is verticalized, i.e. the subframe's Z axis is vertical."
 msgstr ""
 
-#: ../../obs.rst:158 ../../obs.rst:172
+#: ../../obs.rst:157
 msgid ""
-"Une station correspondant à un sous-repère a 3 paramètres d'orientation "
-"sauf si elle est verticalisée (1 seul paramètre)."
+"The observations file *.xyz* contains the cartesian coordinates of points"
+" in a subframe centered on *origin*. Each line in the *.xyz* file "
+"contains the point name, its coordinates in the subframe and its "
+"precision(s). Therefore, the possible protocols in *.xyz* file are:"
 msgstr ""
 
 #: ../../obs.rst:161
-msgid "Sous-repère sphérique"
+msgid ":math:`target\\ X\\ Y\\ Z\\ \\sigma_{XYZabs}\\ [*comment]`"
 msgstr ""
 
-#: ../../obs.rst:163
+#: ../../obs.rst:165
 msgid ""
-"Une station correspondant à un sous-repère sphérique (code 12) est "
-"décrite ainsi :"
+":math:`target\\ X\\ Y\\ Z\\ \\sigma_{XYZabs}\\  \\sigma_{XYZrel}\\ "
+"[*comment]`"
 msgstr ""
 
-#: ../../obs.rst:167
+#: ../../obs.rst:169
 msgid ""
-"Le fichier d'observations *.xyz* contient les coordonnées cartésiennes "
-"d'un ensemble de point dans un repère centré sur la station. Its synthax "
-"is described in :ref:`file_xyz_12`."
+":math:`target\\ X\\ Y\\ Z\\ \\sigma_{Xabs}\\  \\sigma_{Yabs}\\  "
+"\\sigma_{Zabs}\\  \\sigma_{XYZrel}\\ [*comment]`"
 msgstr ""
 
-#: ../../obs.rst:175
-msgid "Axe de rotation"
-msgstr ""
-
-#: ../../obs.rst:177
+#: ../../obs.rst:173
 msgid ""
-"Une station correspondant à un axe de rotation (code 18) est décrite "
-"ainsi :"
+":math:`target\\ X\\ Y\\ Z\\ \\sigma_{Xabs}\\  \\sigma_{Yabs}\\  "
+"\\sigma_{Zabs}\\  \\sigma_{XYZrel}\\  h_{target}\\ [*comment]`"
 msgstr ""
 
-#: ../../obs.rst:179
-msgid ":math:`code\\ from\\ @file.axe\\ [*comment]`"
+#: ../../obs.rst:176 ../../obs.rst:233
+msgid "The target height (:math:`h_{target}`) is given along the vertical."
 msgstr ""
 
-#: ../../obs.rst:181
+#: ../../obs.rst:178
+msgid "Example of code ``11`` *.xyz* file:"
+msgstr ""
+
+#: ../../obs.rst:188
 msgid ""
-"Le fichier *.axe* contient la liste des points terrain correspondant à "
-"différentes cibles dans différentes positions. Its synthax is described "
-"in :ref:`file_axe`."
+"A negative :math:`\\sigma_{abs}` on a dimension will deactivate the "
+"corresponding observation(s)."
 msgstr ""
 
-#: ../../obs.rst:191
-msgid "Deactivate Observation"
-msgstr ""
-
-#: ../../obs.rst:193
+#: ../../obs.rst:192
 msgid ""
-"Observation can be temporarily deactivated in the |gui| (see "
-":ref:`gui_obs_activ`) for quick tests. To record the status of an "
-"observation, it must be done in the *.obs* file."
+"In the *.xyz* file, a *0 0 0* measurement is not allowed, as this "
+"describes the origin of the subframe, that is given in the *.obs* file."
 msgstr ""
 
 #: ../../obs.rst:196
-msgid "On peut **désactiver** une observation en :"
+msgid ""
+"In the *.xyz* file, all coordinates must be cartesian coordinates. In "
+"order to build a *.xyz* file from |c3| outputs, it is mandatory to use "
+"cartesian coordiantes and not a *.cor/.new* file (see :ref:`export-"
+"coord`)."
 msgstr ""
 
 #: ../../obs.rst:198
-msgid "ajoutant un \"-\" devant le code d'observation ;"
-msgstr ""
-
-#: ../../obs.rst:200
 msgid ""
-"en mettant une précision négative : le résidu normalisé sera fourni par "
-"rapport à la valeur négative renseignée ;"
+"A subframe has three orientation parameters unless it is verticalized, in"
+" which case it has only one orientation parameter."
 msgstr ""
 
 #: ../../obs.rst:203
-msgid ""
-"Cette observation ne sera alors pas utilisée pour le calcul mais il sera "
-"possible de visualiser son résidu par rapport aux coordonnées compensées."
-" En pratique dans le fichier *.comp*, l'attribut *active* de cette "
-"observation sera renseigné à *false*."
+msgid "Polar Subframes"
+msgstr ""
+
+#: ../../obs.rst:205
+msgid "The protocol of a polar subframe (code ``12``) is:"
 msgstr ""
 
 #: ../../obs.rst:208
-msgid ""
-"De plus, cette observation apparaîtra en gris italique dans le rapport "
-"*html*."
+msgid ":math:`12\\ origin\\ @file.xyz\\ [1]\\ [*comment]`"
 msgstr ""
 
 #: ../../obs.rst:211
 msgid ""
-"Il est donc conseillé de désactiver une observation plutôt que de la "
-"commenter. Pour ne pas utiliser toutes les observations d'une station ou "
-"en lien avec un point, il est préférable de rendre le point interdit dans"
-" le fichier *cor* (cf. :ref:`cor-protocol`)."
+"Code ``12`` is used in case of non-verticalized total station, laser "
+"tracker or photogrammetric measurements."
 msgstr ""
 
-#: ../../obs.rst:216
-msgid "Exemple : station1.OBS"
-msgstr ""
-
-#: ../../obs.rst:229
-msgid "Observations et déviation de la verticale"
-msgstr ""
-
-#: ../../obs.rst:231
+#: ../../obs.rst:215
 msgid ""
-"Les mesures sont exprimées dans le repère de l'instrument : les mesures "
-"topométriques sont sensibles à la déviation de la verticale, mais pas les"
-" azimuts qui sont donnés par rapport au nord géographique et pas mesurés "
-"par un instrument bullé."
+"The observations file *.xyz* contains the polar coordinates of points in "
+"a subframe centered on *origin*. Each line in the *.xyz* file contains "
+"the point name, its polar coordinates (pseudo-horizontal angle "
+":math:`\\alpha`, pseudo-vertical angle :math:`\\beta`, distance) and "
+"their precisions."
+msgstr ""
+
+#: ../../obs.rst:217
+msgid "Polar measurements in instrument subframe are as follows:"
+msgstr ""
+
+#: ../../obs.rst:223
+msgid "The possible protocols in *.xyz* file are:"
+msgstr ""
+
+#: ../../obs.rst:226
+msgid ""
+":math:`target\\ \\alpha\\ \\beta\\ dist\\  "
+"\\sigma_{\\alpha\\beta_{abs}}\\ \\sigma_{dist_{abs}}\\ "
+"\\sigma_{dist_{rel}}\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:230
+msgid ""
+":math:`target\\ \\alpha\\ \\beta\\ dist\\ \\sigma_{\\alpha\\beta_{abs}}\\"
+" \\sigma_{\\alpha\\beta_{rel}}\\ \\sigma_{dist_{abs}}\\ "
+"\\sigma_{dist_{rel}}\\ [h_{target}]\\ [*comment]`"
 msgstr ""
 
 #: ../../obs.rst:237
-msgid "Simulations"
+msgid "Example of code ``12`` *.xyz* file:"
 msgstr ""
 
-#: ../../obs.rst:239
+#: ../../obs.rst:246
 msgid ""
-"Dans le cas de simulations, on peut créer des fichiers d'observations "
-"fictifs sans avoir à donner de valeurs aux mesures. L'outil de création "
-"de fichiers *.obs* à partir d'une matrice d'intervisibilité sert à "
-"simplifier cette démarche. Voir ci-dessous."
-msgstr ""
-
-#: ../../obs.rst:244
-msgid ""
-"Les observations étant simulées, il faut renseigner les coordonnées "
-"approchées des points dans le fichier *cor*, même pour les points non "
-"contraints."
+"A negative :math:`\\sigma_{abs}` will deactivate the corresponding "
+"observation(s)."
 msgstr ""
 
 #: ../../obs.rst:248
 msgid ""
-"Dans le cas des observations de type bascule (*.xyz*), il n'est pas "
-"nécessaire de donner de valeurs aux mesures. Les stations sont supposées "
-"orientées suivant la verticale. Il est toujours possible d'ajouter une "
-"contrainte pour dire qu'elles sont bullées."
+"A a polar subframe has three orientation parameters, unless it is "
+"verticalized, in which case it has only one orientation parameter."
+msgstr ""
+
+#: ../../obs.rst:250
+msgid ""
+"When a polar subframe is used for photogrammetric measurements, the "
+"distances have to be set to value 0 and have a negative sigma to be "
+"deactivated."
+msgstr ""
+
+#: ../../obs.rst:254
+msgid ""
+"To generate *.xyz* file with MicMac (https://github.com/micmacIGN/micmac)"
+" from a 2d points xml file and a camera calibration:"
+msgstr ""
+
+#: ../../obs.rst:256
+msgid ""
+"``mm3d Bundles2Comp camera_calibration.xml 2d_measurements.xml "
+"Distance=0``"
+msgstr ""
+
+#: ../../obs.rst:262
+msgid "Rotation Axes"
+msgstr ""
+
+#: ../../obs.rst:264
+msgid "The protocol of a rotation axis (code ``18``) is:"
+msgstr ""
+
+#: ../../obs.rst:267
+msgid ":math:`18\\ origin\\ @file.axe\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:270
+msgid ""
+"Code ``18`` is used to determine a rotation axis of an object (e.g. a "
+"telescope). Targets are fixed to the structure of the object, topometric "
+"measurements on these targets are carried out for different positions of "
+"the object when it is revolving around its axis."
+msgstr ""
+
+#: ../../obs.rst:277
+msgid ""
+"Each target describes a circle when the object moves. Each of these "
+"circles is perpendicular to this axis and has its center on the rotation "
+"axis."
+msgstr ""
+
+#: ../../obs.rst:279
+msgid ""
+"The *origin* point is on the axis. Two parameters are added for the axis "
+"direction, and two parameters per target: the circle position along the "
+"axis and its radius."
+msgstr ""
+
+#: ../../obs.rst:281
+msgid ""
+"The *.axe* file contains the list of topometric points (:math:`pt`) "
+"corresponding to the different targets (:math:`target`) in the different "
+"object positions (:math:`pos`) and precisions corresponding to the "
+"stability of the circles: stability of radius (:math:`\\sigma_{radius}`) "
+"and stability of their perpendicularity to the axis "
+"(:math:`\\sigma_{perp}`). Therefore, the protocol in *.axe* file is:"
+msgstr ""
+
+#: ../../obs.rst:285
+msgid ":math:`target\\ pos\\ pt\\ \\sigma_{radius}\\ \\sigma_{perp}\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:288
+msgid "Example of object axis observation:"
+msgstr ""
+
+#: ../../obs.rst:294
+msgid "The corresponding *.axe* file:"
+msgstr ""
+
+#: ../../obs.rst:307
+msgid ""
+"In this example, T_1_1, T_1_2 and T_1_3 represent topometric points and "
+"they correspond to the same target (1) fixed on the object, which was "
+"turned in three positions (1, 2, 3)."
+msgstr ""
+
+#: ../../obs.rst:309
+msgid ""
+"The last line in the example gives a constraint on the position of the "
+"origin point along the axis: it will be the orthogonal (hence the ``L``) "
+"projection of another topometric point on the axis."
+msgstr ""
+
+#: ../../obs.rst:311
+msgid ""
+"Two axis can be declared on the same origin point: the two axes will "
+"intersect at the origin. In this case, there is no need for a ``L`` line "
+"in the *.axe* files."
+msgstr ""
+
+#: ../../obs.rst:313 ../../obs.rst:401
+msgid "A negative :math:`\\sigma` will deactivate the corresponding observation."
+msgstr ""
+
+#: ../../obs.rst:318
+msgid "GNSS Baselines"
+msgstr ""
+
+#: ../../obs.rst:320
+msgid ""
+"GNSS baselines (code ``19``) are vectors between a station and its "
+"targets, in cartesian geocentric coordinates frame, with covariances."
+msgstr ""
+
+#: ../../obs.rst:324
+msgid "GNSS baselines can only be used in a georeferenced project."
+msgstr ""
+
+#: ../../obs.rst:326
+msgid "The protocol of GNSS baselines *.obs* file is:"
+msgstr ""
+
+#: ../../obs.rst:329
+msgid ":math:`19\\ pt\\ @file.bas\\ [K\\ [h_{station}]]\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:333
+msgid "*pt*: starting point of all baselines described in *.bas* file"
+msgstr ""
+
+#: ../../obs.rst:334
+msgid "optional parameters:"
+msgstr ""
+
+#: ../../obs.rst:336
+msgid ""
+"*K*: factor to be applied squarred to the baselines' variance-covariance "
+"matrix; this amends for potential overestimation of the output precision "
+"given by the GNSS software"
+msgstr ""
+
+#: ../../obs.rst:339
+msgid ""
+"The *.bas* file contains, for each point, its name, vector from the "
+"station, variance-covariance upper-half matrix, and, eventually, target "
+"height. Therefore, the protocol in *.bas* file is:"
+msgstr ""
+
+#: ../../obs.rst:342
+msgid ""
+":math:`target\\  \\Delta X\\  \\Delta Y\\  \\Delta Z\\  \\sigma_{XX}\\  "
+"\\sigma_{XY}\\  \\sigma_{XZ}\\  \\sigma_{YY}\\  \\sigma_{YZ}\\  "
+"\\sigma_{ZZ}\\  [h_{target}]\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:346
+msgid ""
+"The vector  and the upper-half matrix must be given in cartesian "
+"geocentric frame. Station's and target's heights (:math:`h_{station}` and"
+" :math:`h_{target}`) are given along the vertical."
+msgstr ""
+
+#: ../../obs.rst:350
+msgid ""
+"This file protocol has the advantage of being easily extracted from a "
+"`sinex "
+"<https://www.iers.org/IERS/EN/Organization/AnalysisCoordinator/SinexFormat/sinex.html>`_"
+" file."
+msgstr ""
+
+#: ../../obs.rst:353
+msgid ""
+"The tool :ref:`infinity-asc-to-bas` converts `Leica Infinity software "
+"<https://leica-geosystems.com/fr-fr/products/gnss-systems/software/leica-"
+"infinity/>`_ *.asc* files into *.bas* files."
+msgstr ""
+
+#: ../../obs.rst:357
+msgid ""
+"If the GNSS software has already taken into account all antenna heights, "
+"their values should be put to 0 in |c3| and thus avoid to be taken into "
+"account twice."
+msgstr ""
+
+#: ../../obs.rst:359
+msgid ""
+"If |c3| takes antenna heights into account, instead of the GNSS software,"
+" it guarantees that the vertical deflection is used."
+msgstr ""
+
+#: ../../obs.rst:362
+msgid ""
+"To deactivate a baseline, :math:`\\sigma_{XX}`, :math:`\\sigma_{YY}` or "
+":math:`\\sigma_{ZZ}` must be set to a negative value. It is impossible to"
+" deactivate only one component of a baseline."
+msgstr ""
+
+#: ../../obs.rst:366
+msgid ""
+":math:`\\sigma_{XY}`, :math:`\\sigma_{XZ}` and :math:`\\sigma_{YZ}` might"
+" have negative values."
+msgstr ""
+
+#: ../../obs.rst:372
+msgid "Equality Constraints"
+msgstr ""
+
+#: ../../obs.rst:374
+msgid ""
+"Equality contraints are used for points sharing a commun constraint per "
+"pair (e.g., same distance)."
+msgstr ""
+
+#: ../../obs.rst:376
+msgid "The protocol to create an equality constraints set in *.obs* file is:"
+msgstr ""
+
+#: ../../obs.rst:379
+msgid ":math:`code\\ @file.eq\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:385
+msgid "Available codes:"
+msgstr ""
+
+#: ../../obs.rst:383
+msgid "``21``: equal height differences"
+msgstr ""
+
+#: ../../obs.rst:384
+msgid "``22``: equal distances"
+msgstr ""
+
+#: ../../obs.rst:387
+msgid ""
+"The input file *.eq* contains the list of points pairs sharing the same "
+"constraint:"
+msgstr ""
+
+#: ../../obs.rst:390
+msgid ":math:`point1\\ point2\\ \\sigma\\ [*comment]`"
+msgstr ""
+
+#: ../../obs.rst:393
+msgid ""
+"Example of code ``22`` *.eq* file, where the ``Bn`` points are on a "
+"sphere centered on ``A``:"
 msgstr ""
 
 #~ msgid ""
@@ -687,5 +947,369 @@ msgstr ""
 #~ "orientées suivant la verticale. Il est"
 #~ " toujours possible d’ajouter une contrainte"
 #~ " pour dire qu’elles sont bullées."
+#~ msgstr ""
+
+#~ msgid "Les fichiers des observations ont l'extension *.obs*."
+#~ msgstr ""
+
+#~ msgid "Chaque ligne du fichier d'observation est soit :"
+#~ msgstr ""
+
+#~ msgid "vide ou un commentaire ;"
+#~ msgstr ""
+
+#~ msgid "une observation simple ;"
+#~ msgstr ""
+
+#~ msgid "une observation composée ;"
+#~ msgstr ""
+
+#~ msgid "une inclusion d'un sous-fichier *.obs* (``@subname.obs``)."
+#~ msgstr ""
+
+#~ msgid "Les observation ont pour premier champ le code de la mesure."
+#~ msgstr ""
+
+#~ msgid "Pour les observations simples :"
+#~ msgstr ""
+
+#~ msgid "1 ou 3 : Distance suivant la pente réduite  de la météo."
+#~ msgstr ""
+
+#~ msgid "2 : Distance géodésique réduite au niveau de la mer entre repères."
+#~ msgstr ""
+
+#~ msgid "4 : Différence de niveau entre repères."
+#~ msgstr ""
+
+#~ msgid "5 : Angle horizontal dans un tour d'horizon."
+#~ msgstr ""
+
+#~ msgid "6 : Angle zénithal non corrigé de la réfraction."
+#~ msgstr ""
+
+#~ msgid "7 : Ouverture de tour d'horizon."
+#~ msgstr ""
+
+#~ msgid "8 : Azimut imposé."
+#~ msgstr ""
+
+#~ msgid "9 : Centrage planimétrique."
+#~ msgstr ""
+
+#~ msgid "14 : Différence d'est."
+#~ msgstr ""
+
+#~ msgid "15 : Différence de nord."
+#~ msgstr ""
+
+#~ msgid "Pour les observations composées :"
+#~ msgstr ""
+
+#~ msgid "11 : Sous-repère en coordonnées cartésiennes."
+#~ msgstr ""
+
+#~ msgid "12 : Sous-repère en coordonnées sphériques."
+#~ msgstr ""
+
+#~ msgid "18 : Détermination d'axe de rotation."
+#~ msgstr ""
+
+#~ msgid "Observations simples"
+#~ msgstr ""
+
+#~ msgid "Simple observations contains the following fields:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`code\\ from\\ to\\ value\\ "
+#~ "\\sigma\\_abs\\ [\\sigma\\_rel\\ [station\\_height\\ "
+#~ "target\\_height]]\\ [*comment]`"
+#~ msgstr ""
+
+#~ msgid ":math:`code`: code de l'observation ;"
+#~ msgstr ""
+
+#~ msgid ":math:`from`: le nom de la station ;"
+#~ msgstr ""
+
+#~ msgid ":math:`to`: le nom du point visé ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`value`: la valeur mesurée, en "
+#~ "unité angulaire ou mètres suivant le "
+#~ "type de mesure ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\sigma\\_abs`: la partie fixe de "
+#~ "la précision estimée de cette mesure "
+#~ "(si elle est négative, la mesure "
+#~ "correspondante sera inactive, cf. :ref"
+#~ ":`deactivated-obs`) ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":math:`\\sigma\\_rel`: partie de la précision"
+#~ " relative à la distance : "
+#~ ":math:`\\sigma\\_abs + \\sigma\\_rel \\times "
+#~ "distance` pour les mesures linéaires, "
+#~ ":math:`\\sigma\\_abs + \\sigma\\_rel / "
+#~ "distance` pour les mesures angulaires ;"
+#~ msgstr ""
+
+#~ msgid ":math:`station\\_height`: hauteur de station ;"
+#~ msgstr ""
+
+#~ msgid ":math:`target\\_height`: hauteur de voyant."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pour un même tour il est d'usage"
+#~ " de classer les observations par "
+#~ "station puis par type d'observation ,"
+#~ " mais cela n'est pas obligatoire."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le centrage planimétrique (code 9) est"
+#~ " une pseudo-observation, remplacée par "
+#~ "une observation code 14 et une "
+#~ "code 15. La valeur mesurée n'est "
+#~ "pas prise  en compte, elle est "
+#~ "forcée à 0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les ouvertures de tour (code 7) "
+#~ "servent à ajouter une nouvelle inconnue"
+#~ " d'orientation, toutes les mesures code "
+#~ "5 suivantes depuis la même station "
+#~ "seront dans ce tour. Si un code"
+#~ " 5 n'est pas précédé d'un code "
+#~ "7, il sera lui-même     consiéré "
+#~ "comme l'ouverture d'un tour."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est déconseillé d'utiliser les "
+#~ "hauteurs de station et de voyant "
+#~ "si une grande précision est recherchée"
+#~ " car il n'est pas possible de "
+#~ "donner une précision à ces hauteurs. "
+#~ "Il faut dans ce cas dédoubler les"
+#~ " points à chaque changement de "
+#~ "hauteur, et utiliser un centrage (code"
+#~ " 9) et une dénivelée (code 4) "
+#~ "pour lesquels on peut définir une "
+#~ "précision. For |more|, see :ref:`centering`."
+#~ msgstr ""
+
+#~ msgid "Exemple"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "La distance S1 S3 a été mesurée"
+#~ " avec une précision de 1 mm +"
+#~ " 0.0001*D, les angles horizontaux depuis"
+#~ " S1 avec une précision de 2 mgr"
+#~ " sur des cibles définies au "
+#~ "millimètre."
+#~ msgstr ""
+
+#~ msgid "Équation de centrage"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le point T5 est centré sur 5 "
+#~ "avec une précision de 3 mm en "
+#~ "X et 0.1 mm en Y. La hauteur"
+#~ " de T5 au dessus de 5 est "
+#~ "1.619 m avec une précision de 5"
+#~ " mm + 0.1 mm \\*D avec D "
+#~ "la distance entre les coordonnées des"
+#~ " points."
+#~ msgstr ""
+
+#~ msgid "Observations composées"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les observations composées représentent tout"
+#~ " une station et font référence à "
+#~ "des fichiers contenant les mesures "
+#~ "faites depuis cette station."
+#~ msgstr ""
+
+#~ msgid "Sous-repère cartésien"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Une station correspondant à un sous-"
+#~ "repère cartésien (code 11) est décrite"
+#~ " ainsi :"
+#~ msgstr ""
+
+#~ msgid ":math:`code\\ from\\ @file.xyz\\ [1]\\ [*comment]`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le fichier d'observations *.xyz* contient "
+#~ "les coordonnées cartésiennes d'un ensemble "
+#~ "de point dans un repère centré sur"
+#~ " la station. Its synthax is described"
+#~ " in :ref:`file_xyz_11`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "On peut ajouter un \"1\" en 4ème"
+#~ " champ sur la ligne de station "
+#~ "pour dire qu'elle est verticalisée, "
+#~ "c'est-à-dire que le sous-repère a "
+#~ "la même verticale que le repère "
+#~ "global."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Une station correspondant à un sous-"
+#~ "repère a 3 paramètres d'orientation sauf"
+#~ " si elle est verticalisée (1 seul "
+#~ "paramètre)."
+#~ msgstr ""
+
+#~ msgid "Sous-repère sphérique"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Une station correspondant à un sous-"
+#~ "repère sphérique (code 12) est décrite"
+#~ " ainsi :"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le fichier d'observations *.xyz* contient "
+#~ "les coordonnées cartésiennes d'un ensemble "
+#~ "de point dans un repère centré sur"
+#~ " la station. Its synthax is described"
+#~ " in :ref:`file_xyz_12`."
+#~ msgstr ""
+
+#~ msgid "Axe de rotation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Une station correspondant à un axe "
+#~ "de rotation (code 18) est décrite "
+#~ "ainsi :"
+#~ msgstr ""
+
+#~ msgid ":math:`code\\ from\\ @file.axe\\ [*comment]`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Le fichier *.axe* contient la liste "
+#~ "des points terrain correspondant à "
+#~ "différentes cibles dans différentes positions."
+#~ " Its synthax is described in "
+#~ ":ref:`file_axe`."
+#~ msgstr ""
+
+#~ msgid "Deactivate Observation"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Observation can be temporarily deactivated "
+#~ "in the |gui| (see :ref:`gui_obs_activ`) "
+#~ "for quick tests. To record the "
+#~ "status of an observation, it must "
+#~ "be done in the *.obs* file."
+#~ msgstr ""
+
+#~ msgid "On peut **désactiver** une observation en :"
+#~ msgstr ""
+
+#~ msgid "ajoutant un \"-\" devant le code d'observation ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "en mettant une précision négative : "
+#~ "le résidu normalisé sera fourni par "
+#~ "rapport à la valeur négative renseignée"
+#~ " ;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Cette observation ne sera alors pas "
+#~ "utilisée pour le calcul mais il "
+#~ "sera possible de visualiser son résidu"
+#~ " par rapport aux coordonnées compensées."
+#~ " En pratique dans le fichier *.comp*,"
+#~ " l'attribut *active* de cette observation"
+#~ " sera renseigné à *false*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "De plus, cette observation apparaîtra en"
+#~ " gris italique dans le rapport "
+#~ "*html*."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Il est donc conseillé de désactiver "
+#~ "une observation plutôt que de la "
+#~ "commenter. Pour ne pas utiliser toutes"
+#~ " les observations d'une station ou en"
+#~ " lien avec un point, il est "
+#~ "préférable de rendre le point interdit"
+#~ " dans le fichier *cor* (cf. :ref"
+#~ ":`cor-protocol`)."
+#~ msgstr ""
+
+#~ msgid "Exemple : station1.OBS"
+#~ msgstr ""
+
+#~ msgid "Observations et déviation de la verticale"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les mesures sont exprimées dans le "
+#~ "repère de l'instrument : les mesures "
+#~ "topométriques sont sensibles à la "
+#~ "déviation de la verticale, mais pas "
+#~ "les azimuts qui sont donnés par "
+#~ "rapport au nord géographique et pas "
+#~ "mesurés par un instrument bullé."
+#~ msgstr ""
+
+#~ msgid "Simulations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le cas de simulations, on "
+#~ "peut créer des fichiers d'observations "
+#~ "fictifs sans avoir à donner de "
+#~ "valeurs aux mesures. L'outil de création"
+#~ " de fichiers *.obs* à partir d'une"
+#~ " matrice d'intervisibilité sert à "
+#~ "simplifier cette démarche. Voir ci-"
+#~ "dessous."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Les observations étant simulées, il faut"
+#~ " renseigner les coordonnées approchées des"
+#~ " points dans le fichier *cor*, même"
+#~ " pour les points non contraints."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Dans le cas des observations de "
+#~ "type bascule (*.xyz*), il n'est pas "
+#~ "nécessaire de donner de valeurs aux "
+#~ "mesures. Les stations sont supposées "
+#~ "orientées suivant la verticale. Il est"
+#~ " toujours possible d'ajouter une contrainte"
+#~ " pour dire qu'elles sont bullées."
 #~ msgstr ""
 

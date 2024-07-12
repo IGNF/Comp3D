@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) IGN
+# This file is distributed under the same license as the Comp3D package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Comp3D \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../compilation.rst:5
+msgid "Compilation"
+msgstr ""
+
+#: ../../compilation.rst:8
+msgid "Dependencies"
+msgstr ""
+
+#: ../../compilation.rst:10
+msgid "The libraries to install are:"
+msgstr ""
+
+#: ../../compilation.rst:12
+msgid "Boost"
+msgstr ""
+
+#: ../../compilation.rst:13
+msgid "Eigen v3"
+msgstr ""
+
+#: ../../compilation.rst:14
+msgid "proj 9.3"
+msgstr ""
+
+#: ../../compilation.rst:15
+msgid "Qt 5 (optional)"
+msgstr ""
+
+#: ../../compilation.rst:21
+msgid "GNU/Linux"
+msgstr ""
+
+#: ../../compilation.rst:23
+msgid "All the GNU/Linux commands are described for **Ubuntu 22.04**."
+msgstr ""
+
+#: ../../compilation.rst:26
+msgid "Packages"
+msgstr ""
+
+#: ../../compilation.rst:34
+msgid "Proj"
+msgstr ""
+
+#: ../../compilation.rst:36
+msgid "LibProj version is fixed to 9.3, installed into ``/usr/local/proj93/``."
+msgstr ""
+
+#: ../../compilation.rst:38
+msgid "Download grids:"
+msgstr ""
+
+#: ../../compilation.rst:50
+msgid "Compile proj-9.3 :"
+msgstr ""
+
+#: ../../compilation.rst:74
+msgid "Windows"
+msgstr ""
+
+#: ../../compilation.rst:76
+msgid ""
+"For now, there is no compilation process on Windows, only cross-"
+"compilation via *Docker*, see :ref:`compileauto`."
+msgstr ""
+
+#: ../../compilation.rst:82
+msgid "Basic compilation"
+msgstr ""
+
+#: ../../compilation.rst:84
+msgid "Project setup:"
+msgstr ""
+
+#: ../../compilation.rst:92
+msgid "Compilation:"
+msgstr ""
+
+#: ../../compilation.rst:100
+msgid "Tests"
+msgstr ""
+
+#: ../../compilation.rst:102
+msgid "To compile the tests:"
+msgstr ""
+
+#: ../../compilation.rst:113
+msgid "Then run the tests from ``tests/`` directory:"
+msgstr ""
+
+#: ../../compilation.rst:123
+msgid "Automatic compilation/cross-compilation/tests/packaging"
+msgstr ""
+
+#: ../../compilation.rst:125
+msgid "All these actions are done with the command:"
+msgstr ""
+
+#: ../../compilation.rst:131
+msgid "This command will:"
+msgstr ""
+
+#: ../../compilation.rst:133
+msgid "setup the compilation docker image if needed"
+msgstr ""
+
+#: ../../compilation.rst:134
+msgid "compile user documentation"
+msgstr ""
+
+#: ../../compilation.rst:135
+msgid "compile |c3| for GNU/Linux"
+msgstr ""
+
+#: ../../compilation.rst:136
+msgid "compile and run tests"
+msgstr ""
+
+#: ../../compilation.rst:137
+msgid "cross-compile for Windows"
+msgstr ""
+
+#: ../../compilation.rst:138
+msgid "cross-compile and run tests"
+msgstr ""
+
+#: ../../compilation.rst:139
+msgid "packages (appimage, deb, zip)"
+msgstr ""
+
+#: ../../compilation.rst:141
+msgid ""
+"See ``docker/README.md`` for more information and check the docker "
+"scripts to learn more about cross-complation and packaging."
+msgstr ""
+
+#: ../../compilation.rst:145
+msgid "Build options"
+msgstr ""
+
+#: ../../compilation.rst:147
+msgid ""
+"The software project is défined by *Comp3D_cpp.pro*. It is possible to "
+"change the compilation options on the ``DEFINES +=`` lines of this file:"
+msgstr ""
+
+#: ../../compilation.rst:150
+msgid "``USE_QT``: to use Qt, mandatory in order to have messages translation"
+msgstr ""
+
+#: ../../compilation.rst:151
+msgid ""
+"``USE_RES``: depends on ``USE_QT``, to be able to create report "
+"ressources directory *res/* (see :ref:`out-report`)"
+msgstr ""
+
+#: ../../compilation.rst:152
+msgid "``USE_GUI``: depends on ``USE_QT``, to enable the GUI"
+msgstr ""
+
+#: ../../compilation.rst:153
+msgid "``USE_AUTO``: to enable the automatic mode (see :ref:`automatization`)"
+msgstr ""
+
+#: ../../compilation.rst:154
+msgid ""
+"``ADD_PROJ_CC``, ``ADD_PROJ_NTF``, ``ADD_PROJ_UTM``: to fill the pre-"
+"recorded projections list"
+msgstr ""
+
+#: ../../compilation.rst:160
+msgid "Documentation generation"
+msgstr ""
+
+#: ../../compilation.rst:164
+msgid "User documentation"
+msgstr ""
+
+#: ../../compilation.rst:166
+msgid ""
+"The user documentation is in *doc_uni/*. It is written in "
+"*reStructuredText* and compiled by *sphinx*."
+msgstr ""
+
+#: ../../compilation.rst:168 ../../compilation.rst:194
+msgid "Dependencies:"
+msgstr ""
+
+#: ../../compilation.rst:180
+msgid "To generate the html pages for every supported language:"
+msgstr ""
+
+#: ../../compilation.rst:186
+msgid "|c3| must be compiled to take into account the new user documentation."
+msgstr ""
+
+#: ../../compilation.rst:190
+msgid "Math documentation"
+msgstr ""
+
+#: ../../compilation.rst:192
+msgid "The math documentation is in *doc_math/*, written in LaTeX."
+msgstr ""
+
+#: ../../compilation.rst:200
+msgid "to generate de pdf file:"
+msgstr ""
+

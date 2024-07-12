@@ -8,28 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Comp3D\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-04 09:49+0200\n"
+"POT-Creation-Date: 2024-07-12 08:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.12.1\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr\n"
-"X-Source-Language: C\n"
+"X-Source-Language: en\n"
 
 #: ../../index.rst:3
-msgid "Comp3D Documentation"
+msgid "|c3| Documentation"
 msgstr "Documentation de Comp3D"
 
 #: ../../index.rst:5
-msgid ""
-"Welcome to IGN's topometric compensation software Comp3D's documentation."
+msgid "Welcome to IGN's topometric compensation software |c3|'s documentation."
 msgstr ""
 "Bienvenue sur la documentation du logiciel de compensation topométrique de "
-"l'IGN Comp3D."
+"l'IGN |c3|."
 
 #: ../../index.rst
 msgid "Version"
@@ -44,13 +43,24 @@ msgid "Author"
 msgstr "Auteur"
 
 #: ../../index.rst:10
-msgid "travaux.speciaux@ign.fr"
-msgstr "travaux.speciaux@ign.fr"
+msgid "IGN France"
+msgstr "IGN France"
+
+#: ../../index.rst
+msgid "Contact"
+msgstr "Contact"
+
+#: ../../index.rst:11
+msgid "https://github.com/IGNF/Comp3D"
+msgstr "https://github.com/IGNF/Comp3D"
 
 #: ../../index.rst
 msgid "Date"
 msgstr "Date"
 
-#: ../../index.rst:12
+#: ../../index.rst:13
 msgid "|date|"
 msgstr "|date|"
+
+#~ msgid "travaux.speciaux@ign.fr"
+#~ msgstr "travaux.speciaux@ign.fr"
