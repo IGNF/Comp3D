@@ -61,7 +61,8 @@ poubelle/
 doc_uni/_build/
 doc_uni/data/
 doc_uni/??/
-build*
+build*/
 /CCACHE_DOCKER/*
 !/CCACHE_DOCKER/ccache.conf
+vcpkg_installed/
 

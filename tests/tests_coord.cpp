@@ -22,7 +22,7 @@
 
 
 Tests_Coord::Tests_Coord():
-    center(0.0,0.0,0.0),project("./data/simple/toto.comp"),p1(),st1(Station::create<Station_Bascule>(&p1))
+    center(0.0,0.0,0.0),p1(),project("./data/simple/toto.comp"),st1(Station::create<Station_Bascule>(&p1))
 {
     project.mInfo.setDirect(false);
     project.config.centerLatitude=45.0;//< in DMS!

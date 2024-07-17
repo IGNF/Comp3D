@@ -25,8 +25,8 @@
 #include "station_eq.h"
 #include "station_hz.h"
 #include "uni_stream.h"
+#include "filesystem_compat.h"
 #include <algorithm>
-#include <boost/filesystem.hpp>
 #include <ctime>
 #include <eigen3/Eigen/Dense>
 #include <exception>
@@ -41,16 +41,16 @@
 #include <QSettings>
 #endif
 
-//TODO(jmm): replace it with "boost::filesystem::relative" when using boost 1.6
+
+//TODO(jmm): replace it with "std::filesystem::relative"
 //taken from https://stackoverflow.com/questions/10167382/boostfilesystem-get-relative-path
-static boost::filesystem::path relativeTo(const boost::filesystem::path& from,
-                                          const boost::filesystem::path& to)
+static fs::path relativeTo(const fs::path& from, const fs::path& to)
 {
    // Start at the root path and while they are the same then do nothing then when they first
    // diverge take the remainder of the two path and replace the entire from path with ".."
    // segments.
-   boost::filesystem::path::const_iterator fromIter = from.begin();
-   boost::filesystem::path::const_iterator toIter = to.begin();
+   fs::path::const_iterator fromIter = from.begin();
+   fs::path::const_iterator toIter = to.begin();
 
    // Loop through both
    while (fromIter != from.end() && toIter != to.end() && (*toIter) == (*fromIter))
@@ -59,7 +59,7 @@ static boost::filesystem::path relativeTo(const boost::filesystem::path& from,
       ++fromIter;
    }
 
-   boost::filesystem::path finalPath;
+   fs::path finalPath;
    while (fromIter != from.end())
    {
       finalPath /= "..";
@@ -1539,10 +1539,10 @@ bool Project::saveasJSON()
     js_root["COMP3D_REPO"]=COMP3D_REPO;
     js_root["COMP3D_COMMIT"]=GIT_VERSION;
     js_root["COMP3D_OPTIONS"]=COMP3D_OPTIONS;
-    if (boost::filesystem::exists(config.config_file))
+    if (fs::exists(config.config_file))
     {
-        boost::filesystem::path current_config_path(config.config_file);
-        js_root["config_file"]=boost::filesystem::canonical(current_config_path).string();
+        fs::path current_config_path(config.config_file);
+        js_root["config_file"]=fs::canonical(current_config_path).string();
     }else{
         js_root["config_file"]=config.config_file;
     }
@@ -1584,8 +1584,8 @@ bool Project::saveasJSON()
         std::stringstream oss;
         oss << it.second;
         std::string file_path=it.first->get_path()+it.first->get_name();
-        boost::filesystem::path file_path_path(file_path);
-        boost::filesystem::path comp_path(config.config_file);
+        fs::path file_path_path(file_path);
+        fs::path comp_path(config.config_file);
         js_all_data_files[oss.str()]=relativeTo( comp_path.parent_path(),file_path_path ).string();
     }
     js_root["all_data_files"]=js_all_data_files;
@@ -1606,7 +1606,7 @@ bool Project::saveasJSON()
 //record NEW, CSV
 void Project::saveNEW()
 {
-    boost::filesystem::path current_path(config.get_root_COR_absolute_filename());
+    fs::path current_path(config.get_root_COR_absolute_filename());
 
     if (Project::theone()->compensationDone)
     {
@@ -1765,9 +1765,17 @@ bool Project::exportSINEX(const std::string &filename,std::vector<Point*> &selec
         struct tm genTime{},obsTime{};
 
         time_t timestamp = time( nullptr );
+#ifndef _MSC_VER
         gmtime_r(&timestamp, &genTime);
+#else
+        gmtime_s(&genTime, &timestamp); // Yes, args are in reverse order in Microsoft CRT ...
+#endif
         timestamp = jsonSINEX.get("obsTime",0).asInt64();
+#ifndef _MSC_VER
         gmtime_r(&timestamp, &obsTime);
+#else
+        gmtime_s(&obsTime, &timestamp);
+#endif
         FortranFormat::FFormat fmt;
         
         sinexFile << fmt.toStringf(
@@ -1781,7 +1789,7 @@ bool Project::exportSINEX(const std::string &filename,std::vector<Point*> &selec
         sinexFile << fmt.toStringf("'+FILE/COMMENT'");
         sinexFile << fmt.toStringf("'* File created by ', A60.60", COMP3D_VERSION);
 
-        boost::filesystem::path config_path(config.config_file);
+        fs::path config_path(config.config_file);
         sinexFile << fmt.toStringf("'* Original computation file: ', A49.49", config_path.filename().string());
         sinexFile << fmt.toStringf("'* Matrix Scalling Factor used: ', F15.4", sqr(lsquares.sigma_0));
         sinexFile << fmt.toStringf("'-FILE/COMMENT'");

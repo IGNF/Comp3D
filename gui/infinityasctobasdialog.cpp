@@ -22,9 +22,8 @@
 #include <QSettings>
 #include <sstream>
 #include "uni_stream.h"
-#include <boost/filesystem.hpp>
+#include "filesystem_compat.h"
 
-namespace filesystem = ::boost::filesystem;
 
 InfinityAscToBasDialog::InfinityAscToBasDialog(QWidget *parent) :
     QDialog(parent),
@@ -123,7 +122,7 @@ static int readAscFile(const std::string& ascFileName, BasObs &basObs)
     std::string word1,word2;
     double K;
     BasBaseLine *basPt=nullptr;
-    std::string basFileStem = filesystem::path(ascFileName).stem().string();
+    std::string basFileStem = fs::path(ascFileName).stem().string();
 
     uni_stream::ifstream ascFile(ascFileName);
     if (!ascFile)
@@ -188,8 +187,8 @@ static int readAscFile(const std::string& ascFileName, BasObs &basObs)
 
 static void writeBasFile(const std::string& ascFileName, BasObs &basObs)
 {
-    filesystem::path basFilePath = ascFileName;
-    filesystem::path basFileDir= basFilePath.parent_path();
+    fs::path basFilePath = ascFileName;
+    fs::path basFileDir= basFilePath.parent_path();
 
     for (auto& piv : basObs) {
         piv.second.ok = true;
@@ -238,7 +237,7 @@ void InfinityAscToBasDialog::convert()
     QString resText;
 
     QString ascFileName = ui->lineEditAscFile->text();
-    QString outDir = QString::fromStdString(filesystem::path(ascFileName.toStdString()).parent_path().string());
+    QString outDir = QString::fromStdString(fs::path(ascFileName.toStdString()).parent_path().string());
 
     res = readAscFile(ascFileName.toStdString(),basObs);
     if (res < 1) {

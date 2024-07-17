@@ -14,17 +14,15 @@
  */
 
 #include "projection.h"
+#include "misc_tools.h"
 
 #include <iostream>
-#include <boost/filesystem.hpp>
 #include <cstdlib>
 #include "mathtools.h"
 #include "project.h"
 
 #ifdef USE_QT
     #include <QCoreApplication>
-    #include <QFileInfo>
-    #include <QDir>
     #include <QSettings>
 #endif
 
@@ -534,67 +532,48 @@ bool Projection::init_proj_dir()
         return true;
 
     static const std::vector<std::string> proj_files_to_test={"proj.db","ntf_r93.gsb"};
-    //TODO: replace QT with c++14 filesystem current_path()
-    enum SearchDir{CMDLINE=0,ABS,
-           #ifdef USE_QT
-                   EXE,LOCAL,
-           #endif
-                   STOP};
-    #ifdef USE_QT
-        QDir newDir;
-    #endif
-    std::string dir;
+    std::vector<fs::path> dirs;
 
     if (Project::theone())
     {
-        for (int search=0;search<STOP && !projDir_found;search++)
-        {
-            switch(search)
-            {
-            case CMDLINE:
-                if (cmdLineProjPath.size() == 0)
-                    continue;
-                dir = cmdLineProjPath;
-                break;
-            case ABS:
-                dir = std::string(std::getenv("APPDIR")?std::getenv("APPDIR"):"")+"/usr/local/proj82/share/proj/";//$APPDIR to work with AppImage
-                break;
-    #ifdef USE_QT
-            case EXE:
-                newDir = QDir(QCoreApplication::applicationDirPath());
-                dir = (newDir.absolutePath()+"/proj").toStdString();
-                break;
-            case LOCAL:
-                newDir = QDir(QCoreApplication::applicationDirPath());
-                newDir.cdUp();
-                dir = (newDir.absolutePath()+"/local/comp3d5_proj").toStdString();
-                break;
-    #endif
-            }
-            std::cout<<QObject::tr("Testing Proj files in ").toCstr()<<dir.c_str()<<std::endl;
+        auto appDir =  selfExecPath();
+
+        if (cmdLineProjPath.size() != 0)
+            dirs.push_back(cmdLineProjPath);
+#ifdef PROJ_DATA_LOCAL_PATH
+        dirs.push_back(std::string(std::getenv("APPDIR") ? std::getenv("APPDIR") : "") + PROJ_DATA_LOCAL_PATH) ;//$APPDIR to work with AppImage
+#endif
+        dirs.push_back(appDir / "proj");
+        dirs.push_back(appDir.parent_path() / "proj");
+#ifdef __linux__
+        dirs.push_back("/usr/share/proj");
+        dirs.push_back("/usr/local/share/proj");
+        dirs.push_back("/usr/share/proj/share/proj");
+#endif
+        for (const auto& dir :  dirs) {
+            std::cout<<QObject::tr("Testing Proj files in ").toCstr()<<dir.string().c_str()<<std::endl;
             projDir_found =true;
             for (auto &filename:proj_files_to_test)
             {
-                if (!boost::filesystem::exists(dir+"/"+filename))
+                if (! fs::exists(dir / filename))
                 {
                     projDir_found=false;
                     break;
                 }
             }
+            if (projDir_found) {
+                std::cout<<QObject::tr("Proj dir found: ").toCstr()<<dir<<"\n";
+                auto s = dir.string();      // to keep c-string alive
+                const char* paths[1]= {s.c_str()};
+                proj_context_set_search_paths(nullptr,1,paths);
+                return true;
+            }
         }
-
-        if (projDir_found)
-        {
-            std::cout<<QObject::tr("Proj dir found: ").toCstr()<<dir<<"\n";
-            const char* paths[1]= {dir.c_str()};
-            proj_context_set_search_paths(nullptr,1,paths);
-        } else {
-            Project::theInfo()->error(INFO_CONF,1,
-                                      QT_TRANSLATE_NOOP("QObject","Proj directory not found, please make sure proj grids"
-                                                                  " are correctly installed (see documentation)."));
-        }
+        Project::theInfo()->error(INFO_CONF,1,
+                                  QT_TRANSLATE_NOOP("QObject","Proj directory not found, please make sure proj grids"
+                                                              " are correctly installed (see documentation)."));
     }
-    return projDir_found;
+    return false;
 }
 
 static std::vector<CRSproj> build_allCRS()

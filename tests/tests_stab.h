@@ -34,7 +34,7 @@ public:
 private:
     void test_template(std::string _refFilename, std::string refMD5, bool verbose,
                        std::vector< std::pair<std::string, std::string> > moreComparePaths={},
-                       double tolerancy=0.0001);
+                       double tolerance=0.0001);
 private slots:
     void test_changement_de_repere();
     void test_convergence();

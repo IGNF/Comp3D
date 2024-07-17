@@ -15,8 +15,9 @@
 
 #include "tests_stab.h"
 
-#include <boost/filesystem.hpp>
+#include "../src/filesystem_compat.h"
 #include "compcompare.h"
+
 
 Tests_Stab::Tests_Stab()
 {
@@ -26,7 +27,7 @@ Tests_Stab::Tests_Stab()
 
 void Tests_Stab::test_template(std::string _refFilename, std::string refMD5, bool verbose,
                                std::vector< std::pair<std::string,std::string> > moreComparePaths,
-                               double tolerancy)
+                               double tolerance)
 {
     std::vector< std::pair<std::string,std::string> > comparePaths={
         {"/computation/compensationDone", "/computation/compensation_done"}, // for old stability tests
@@ -45,26 +46,26 @@ void Tests_Stab::test_template(std::string _refFilename, std::string refMD5, boo
 
     //copy .comp file
     try{
-        boost::filesystem::remove(_compFilename);
-        boost::filesystem::copy_file(_refFilename,_compFilename,boost::filesystem::copy_option::overwrite_if_exists);
-    } catch (const boost::filesystem::filesystem_error& e)
+        fs::remove(_compFilename);
+        fs::copy_file(_refFilename,_compFilename,FS_COPY_OVERWRITE_EXISTING);
+    } catch (const fs::filesystem_error& e)
     {
         std::cerr<<e.what()<<std::endl;
     }
 
     //copy files from origin/ (for .xyz, that are modified by tests)
-    boost::filesystem::path working_path(_refFilename);
+    fs::path working_path(_refFilename);
     working_path.remove_filename();
     try{
-        for(    boost::filesystem::directory_iterator file(working_path / "origin");
-                file != boost::filesystem::directory_iterator();
+        for(    fs::directory_iterator file(working_path / "origin");
+                file != fs::directory_iterator();
                 ++file )
         {
-            boost::filesystem::path current(file->path());
-            boost::filesystem::copy_file(current, working_path / current.filename(),boost::filesystem::copy_option::overwrite_if_exists);
+            fs::path current(file->path());
+            fs::copy_file(current, working_path / current.filename(),FS_COPY_OVERWRITE_EXISTING);
             std::cout<<"Copy "<<current<<" to "<<working_path / current.filename()<<std::endl;
         }
-    } catch (const boost::filesystem::filesystem_error& e)
+    } catch (const fs::filesystem_error& e)
     {
         std::cout<<e.what()<<std::endl;
     }
@@ -76,7 +77,7 @@ void Tests_Stab::test_template(std::string _refFilename, std::string refMD5, boo
     project.readData();
     project.set_least_squares(project.config.internalConstr);
     project.computation(project.config.invert,true);
-    CompCompare ccp(_compFilename,_refFilename,refMD5,verbose,tolerancy);
+    CompCompare ccp(_compFilename,_refFilename,refMD5,verbose,tolerance);
     QCOMPARE(!ccp.isError(),true);
     QCOMPARE(ccp.checkOnly(comparePaths),true);
 }
@@ -105,14 +106,14 @@ void Tests_Stab::test_egouts()
     std::string refFile="./data_stab/egouts/ex_ref.comp";
     std::string refMD5="9c9159aab240ebf6fae535cbe649e3a2";
 
-    test_template(refFile, refMD5, false, {}, 0.0003); // more tolerancy because of the new sigma_total
+    test_template(refFile, refMD5, false, {}, 0.0003); // more tolerance because of the new sigma_total
 }
 
 void Tests_Stab::test_modane()
 {
     std::cout<<"\nPrepare test_modane"<<std::endl;
     std::string refFile="./data_stab/modane/ex_ref.comp";
-    std::string refMD5="3de3773373dbfc2e289aa7952108b526";
+    std::string refMD5="5b0cb7bae0c064cd231dc23234bf9bb4";
 
     test_template(refFile, refMD5, false, {{"/computation/all_sigma0",""}});
 }

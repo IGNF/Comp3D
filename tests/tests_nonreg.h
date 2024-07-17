@@ -32,7 +32,7 @@ public:
 
 private:
     void test_template(std::string _refFilename, std::string refMD5, bool verbose, std::vector<std::string> comparePaths={},
-                       std::vector<std::string> addNoComparePaths={}, std::vector<std::string> addNoCompareLeaves={}, double tolerancy=0.00001);
+                       std::vector<std::string> addNoCompareNodePaths={}, double tolerance=0.00001);
 private slots:
     void test_axe();
     void test_baselines();

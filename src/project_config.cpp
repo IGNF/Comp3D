@@ -15,12 +15,13 @@
 
 #include "project_config.h"
 #include "uni_stream.h"
+#include "filesystem_compat.h"
 #include <string>
 #include <cerrno>
-#include <boost/filesystem.hpp>
 #include <exception>
 
 #include "project.h"
+
 
 Project_Config::Project_Config(const  std::string &filename):working_directory(""),config_file(filename),
     name(""),description(""),compute_type(COMPUTE_TYPE::type_compensation),centerLatitude(48.8),localCenter(0,0,0),
@@ -29,7 +30,7 @@ Project_Config::Project_Config(const  std::string &filename):working_directory("
     lang(Project::defaultLogLang),useProj(false),projDef(""),useEllipsHeight(true),cleanOutputs(false),displayMap(true),miscMetadata(),
     root_COR_file(""),root_OBS_file(""),coord_cov_file("")
 {
-    boost::filesystem::path current_path(config_file);
+    fs::path current_path(config_file);
     working_directory=current_path.parent_path().string();
 
     if (working_directory.empty()) working_directory+=".";
@@ -200,9 +201,6 @@ bool Project_Config::loadasJSON()
     {
         tmp = js_config.get("compute_type", static_cast<int>(COMPUTE_TYPE::type_compensation)).asInt();
         compute_type = static_cast<COMPUTE_TYPE>(tmp);
-#ifndef USE_SIM
-        compute_type=COMPUTE_TYPE::type_compensation; //forced
-#endif
     }catch (std::exception& e){
         Project::theInfo()->warning(INFO_CONF,1,
                                     QT_TRANSLATE_NOOP("QObject","Exception: %s while reading \"%s\" node."),
@@ -354,7 +352,7 @@ bool Project_Config::loadasJSON()
 
 std::string Project_Config::get_root_COR_absolute_filename()
 {
-    boost::filesystem::path current_COR_path(root_COR_file);
+    fs::path current_COR_path(root_COR_file);
     if (current_COR_path.is_relative())
         return working_directory+current_COR_path.string();
     else return current_COR_path.string();
@@ -362,7 +360,7 @@ std::string Project_Config::get_root_COR_absolute_filename()
 
 std::string Project_Config::get_root_OBS_absolute_filename()//from comp point of view
 {
-    boost::filesystem::path current_OBS_path(root_OBS_file);
+    fs::path current_OBS_path(root_OBS_file);
     if (current_OBS_path.is_relative())
         return working_directory+current_OBS_path.string();
     else return current_OBS_path.string();
@@ -370,7 +368,7 @@ std::string Project_Config::get_root_OBS_absolute_filename()//from comp point of
 
 std::string Project_Config::get_coord_cov_absolute_filename()//from comp point of view
 {
-    boost::filesystem::path current_coord_cov_path(coord_cov_file);
+    fs::path current_coord_cov_path(coord_cov_file);
     if (current_coord_cov_path.is_relative())
         return working_directory+current_coord_cov_path.string();
     else return current_coord_cov_path.string();
@@ -383,8 +381,8 @@ void Project_Config::set_root_COR_filename(const std::string &_root_COR_filename
 
 void Project_Config::set_root_COR_abs_path(const std::string &_root_COR_abs_path)
 {
-    boost::filesystem::path COR_path(_root_COR_abs_path);
-    root_COR_file=boost::filesystem::relative(COR_path).string();
+    fs::path COR_path(_root_COR_abs_path);
+    root_COR_file=fs::relative(COR_path).string();
 }
 
 void Project_Config::set_root_OBS_filename(const std::string &_root_OBS_filename)//from comp point of view

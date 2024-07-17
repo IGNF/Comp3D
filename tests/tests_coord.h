@@ -30,8 +30,8 @@ public:
     Tests_Coord();
 private:
     Coord center;
-    Project project;
     Point p1;
+    Project project;
     Station_Bascule *st1;
 
 private slots:

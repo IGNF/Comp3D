@@ -67,12 +67,6 @@ ConfigDialog::ConfigDialog(Project *project, QWidget *parent) :
 
     ui->groupBoxFrame->importConfig(m_project->config);
 
-#ifndef USE_SIM
-    ui->compensationRadioButton->setChecked(true);
-    ui->propagationRadioButton->hide();
-    ui->monteCarloRadioButton->hide();
-#endif
-
     updateInvertCheckBox();
     updateIterationsLabel();
 
@@ -98,13 +92,9 @@ void ConfigDialog::updateProjectConfig()
     m_project->config.set_coord_cov_filename(_coord_cov_filename.toCstr());
     m_project->config.description=ui->projectDescEdit->toPlainText().toCstr();
     m_project->config.name=ui->projectNameEdit->text().toCstr();
-#ifdef USE_SIM
     if (ui->compensationRadioButton->isChecked()) m_project->config.compute_type=COMPUTE_TYPE::type_compensation;
     else if (ui->propagationRadioButton->isChecked()) m_project->config.compute_type=COMPUTE_TYPE::type_propagation;
     else m_project->config.compute_type=COMPUTE_TYPE::type_monte_carlo;
-#else
-    m_project->config.compute_type=COMPUTE_TYPE::type_compensation;
-#endif
     m_project->config.convergenceCriterion=ui->convergenceDoubleSpinBox->value();
     m_project->config.refraction=ui->refractionDoubleSpinBox->value();
     m_project->config.maxIterations=ui->maxIterSpinBox->value();

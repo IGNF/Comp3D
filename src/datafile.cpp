@@ -16,8 +16,8 @@
 #include "datafile.h"
 
 #include <regex>
-#include <boost/filesystem.hpp>
 
+#include "filesystem_compat.h"
 #include "point.h"
 #include "obs.h"
 #include "project.h"
@@ -126,7 +126,7 @@ bool DataFile::read()
                         if ((what_subfile[1]).length()>0)
                         {
                             std::cout<<"call for subfile\n";
-                            boost::filesystem::path next_path(file_path);
+                            fs::path next_path(file_path);
                             std::string next_path_str=next_path.parent_path().string()+"/";
                             ok =read_subfile(what_subfile[1],next_path_str,line_num) && ok;
                         }
@@ -596,7 +596,7 @@ bool OBSFile::interpret_line(const std::string &line, int line_num)
             comment=line.substr(line.find('*')+1);
 
         std::string file_path=current_absolute_path+"/"+filename.c_str();
-        boost::filesystem::path next_path=file_path;
+        fs::path next_path=file_path;
         std::string next_path_str=next_path.parent_path().string()+"/";
 
         if (std::regex_search(line, matches_obs, regex_obs))

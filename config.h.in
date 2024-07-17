@@ -1,0 +1,19 @@
+
+#cmakedefine ADD_PROJ_CC
+#cmakedefine ADD_PROJ_NTF
+#cmakedefine ADD_PROJ_UTM
+
+#cmakedefine USE_AUTO
+#cmakedefine USE_QT
+#cmakedefine USE_RES
+#cmakedefine USE_GUI
+
+#cmakedefine COMP3D_DOC_DIR "@COMP3D_DOC_DIR@"
+
+#cmakedefine PROJ_DATA_LOCAL_PATH "@PROJ_DATA_LOCAL_PATH@"
+
+#cmakedefine PROJ_VERSION "@PROJ_VERSION@"
+#ifndef PROJ_VERSION
+# define PROJ_VERSION "N/A"
+#endif
+

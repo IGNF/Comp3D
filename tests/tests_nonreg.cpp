@@ -15,40 +15,41 @@
 
 #include "tests_nonreg.h"
 
-#include <boost/filesystem.hpp>
+#include "../src/filesystem_compat.h"
 #include "compcompare.h"
+
 
 Tests_NonReg::Tests_NonReg()
 {
 }
 
 void Tests_NonReg::test_template(std::string _refFilename, std::string refMD5, bool verbose, std::vector<std::string> comparePaths,
-                                 std::vector<std::string> addNoComparePaths, std::vector<std::string> addNoCompareLeaves, double tolerancy)
+                                 std::vector<std::string> addNoCompareNodePaths, double tolerance)
 {
     std::string _compFilename=_refFilename+"_test.comp";
 
     //copy .comp file
     try{
-        boost::filesystem::remove(_compFilename);
-        boost::filesystem::copy_file(_refFilename,_compFilename,boost::filesystem::copy_option::overwrite_if_exists);
-    } catch (const boost::filesystem::filesystem_error& e)
+        fs::remove(_compFilename);
+        fs::copy_file(_refFilename,_compFilename,FS_COPY_OVERWRITE_EXISTING);
+    } catch (const fs::filesystem_error& e)
     {
         std::cerr<<e.what()<<std::endl;
     }
 
     //copy files from origin/ (for .xyz, that are modified by tests)
-    boost::filesystem::path working_path(_refFilename);
+    fs::path working_path(_refFilename);
     working_path.remove_filename();
     try{
-        for(    boost::filesystem::directory_iterator file(working_path / "origin");
-                file != boost::filesystem::directory_iterator();
+        for(    fs::directory_iterator file(working_path / "origin");
+                file != fs::directory_iterator();
                 ++file )
         {
-            boost::filesystem::path current(file->path());
-            boost::filesystem::copy_file(current, working_path / current.filename(),boost::filesystem::copy_option::overwrite_if_exists);
+            fs::path current(file->path());
+            fs::copy_file(current, working_path / current.filename(),FS_COPY_OVERWRITE_EXISTING);
             std::cout<<"Copy "<<current<<" to "<<working_path / current.filename()<<std::endl;
         }
-    } catch (const boost::filesystem::filesystem_error& e)
+    } catch (const fs::filesystem_error& e)
     {
         std::cout<<e.what()<<std::endl;
     }
@@ -60,11 +61,9 @@ void Tests_NonReg::test_template(std::string _refFilename, std::string refMD5, b
     project.readData();
     project.set_least_squares(project.config.internalConstr);
     project.computation(project.config.invert,true);
-    CompCompare ccp(_compFilename,_refFilename,refMD5,verbose,tolerancy);
-    if (!addNoComparePaths.empty())
-        ccp.addNoComparePaths(addNoComparePaths);
-    if (!addNoCompareLeaves.empty())
-        ccp.addNoCompareLeaves(addNoCompareLeaves);
+    CompCompare ccp(_compFilename,_refFilename,refMD5,verbose,tolerance);
+    if (!addNoCompareNodePaths.empty())
+        ccp.addNoCompareNodePaths(addNoCompareNodePaths);
     QCOMPARE(!ccp.isError(),true);
     if (comparePaths.empty())
         QCOMPARE(ccp.checkContent(),true);
@@ -103,7 +102,7 @@ void Tests_NonReg::test_coincident_with_VD()
 {
     std::cout<<"\nPrepare test_coincident_with_VD"<<std::endl;
     std::string refFile="./data/coincident_with_VD/ex_ref.comp";
-    std::string refMD5="c45e0de158912896880775121302ae81";
+    std::string refMD5="c436e9d6d4701ffdb30cb6056ca0befa";
     test_template(refFile, refMD5,false);
 }
 
@@ -313,8 +312,8 @@ void Tests_NonReg::test_simul_MonteCarlo_mini()
 
     //do not check many random things!
     test_template(refFile, refMD5,false,{},
-        {"/computation/all_sigma0"},
-        {"MC_shift_max", "MC_shift_sq_average", "residual"});
+                  {"/computation/all_sigma0/","*/MC_shift_max/", "*/MC_shift_sq_average/", "*/residual"}
+    );
 }
 
 void Tests_NonReg::test_subfiles()

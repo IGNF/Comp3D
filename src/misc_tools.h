@@ -17,6 +17,7 @@
 #ifndef MISC_TOOLS_H
 #define MISC_TOOLS_H
 #include "compile.h"
+#include "filesystem_compat.h"
 
 #ifdef USE_QT
 #include <QString>
@@ -25,5 +26,6 @@ void copyRes(const QString & res, const QString & filename);
 void copyAllRes(const QString & resPath, const QString & outPath); //< ":/gui/html/", "/res"
 #endif
 
+fs::path selfExecPath();
 
 #endif // MISC_TOOLS_H

@@ -37,10 +37,17 @@ class Info
 
 public:
     Info();
-    //__attribute__ to have printf warnings (when using std::string for %s, ...)
-    void msg(unsigned subjects, unsigned depth, const char * format, ...)    __attribute__ ((format (printf,4,5)));
-    void error(unsigned subjects, unsigned depth, const char * format, ...)   __attribute__ ((format (printf,4,5)));
-    void warning(unsigned subjects, unsigned depth, const char * format, ...) __attribute__ ((format (printf,4,5)));
+
+#ifndef _MSC_VER
+# define CHECK_PRINTF_FORMAT __attribute__ ((format (printf,4,5)))
+#else
+# define CHECK_PRINTF_FORMAT
+#endif
+    void msg(unsigned subjects, unsigned depth, const char * format, ...) CHECK_PRINTF_FORMAT ;
+    void error(unsigned subjects, unsigned depth, const char * format, ...) CHECK_PRINTF_FORMAT ;
+    void warning(unsigned subjects, unsigned depth, const char * format, ...) CHECK_PRINTF_FORMAT ;
+#undef CHECK_PRINTF_FORMAT
+
     bool isEmpty(){return mStreamRaw.str().size()==0;}
     void clear();
 

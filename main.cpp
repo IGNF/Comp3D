@@ -29,8 +29,6 @@
 
 #include <iostream>
 #include <string>
-#include <getopt.h>
-//#include <Eigen/Dense>
 #include <locale.h>
 #include "src/project.h"
 
@@ -39,7 +37,7 @@
 #endif
 
 
-int main_auto(int argc, char *argv[]);
+static int main_auto(int argc, char *argv[]);
 
 int main(int argc, char *argv[])
 {
@@ -130,7 +128,7 @@ int main(int argc, char *argv[])
     return result;
 }
 
-void usage(const std::string& msg = "")
+static void usage(const std::string& msg = "")
 {
     if (msg.size())
         std::cout << msg << std::endl;
@@ -148,34 +146,43 @@ void usage(const std::string& msg = "")
     std::cout << std::endl << std::endl;
 }
 
-int main_auto(int argc, char *argv[])
+static bool checkOption(const char *s, const char* l, char *argv[], int& i, int n, const char* &value)
 {
-    int c;
+    const char* arg=argv[i];
+
+    auto len_s = strlen(s);
+    auto len_l = strlen(l);
+    auto len_a = strlen(arg);
+
+    value=nullptr;
+    if (strcmp(arg,s)==0 || strcmp(arg,l)==0) {
+        if (i < n)
+            value = argv[++i];
+        return true;
+    }
+    if (strncmp(arg,s,len_s)==0) {  // then len_a > len_s as tested before in strcmp(arg,s)
+        value = arg+len_s;
+        return true;
+    }
+
+    if (strncmp(arg,l,len_l)==0 && len_a>len_l && arg[len_l] == '=') {
+        if (len_a >len_l+1)
+            value = arg+len_l+1;
+        return true;
+    }
+    return false;
+}
+
+static int main_auto(int argc, char *argv[])
+{
+    const char *filename_arg = nullptr;
     bool force_lang=false;
+    std::string pgm_name=argc ? argv[0] : COMP3D_APPLICATION_NAME;
 
-    while (1) {
-        int option_index = 0;
-        static struct option long_options[] = {
-        {"help", no_argument,       0, 'h'},
-        {"lang", required_argument, 0, 'l'},
-#ifndef USE_QT
-        {"proj", required_argument, 0, 'p'},
-#endif
-        {0,      0,                 0, 0 }};
-
-        c = getopt_long(argc, argv,
-#ifndef USE_QT
-                        "hl:p:",
-#else
-                        "hl:",
-#endif
-                        long_options, &option_index);
-        if (c == -1)
-            break;
-
-        switch (c) {
-        case 'h':
-        {
+    for (int i=1; i<argc; i++) {
+        const char *arg=argv[i];
+        const char *value;
+        if (strcmp(arg,"-h") == 0 || strcmp(arg,"--help") == 0) {
             usage();
             std::cout<<"Informations: "<<std::endl;
             std::string json_data_str=Project::createTemplate("file.comp");
@@ -184,35 +191,46 @@ int main_auto(int argc, char *argv[])
             std::cout<<"--------------------"<<std::endl;
             Projection::showAllProj();
             return 0;
-        }
-        case 'l':
+#ifndef USE_QT
+        } else if (checkOption("-p","--proj",argv,i,argc,value)) {
+            if (value==nullptr || strlen(value) == 0) {
+                usage(pgm_name + ": Missing parameter for option '" + arg);
+                return 1;
+            }
+            Projection::setCmdLineProjPath(value);
+#endif
+        } else if (checkOption("-l","--lang",argv,i,argc,value)) {
+            if (value==nullptr || strlen(value) == 0) {
+                usage(pgm_name + ": Missing parameter for option '" + arg);
+                return 1;
+            }
             for (auto p : SUPPORTED_LANG_CODE) {
-                if (strcmp(p,optarg)==0) {
-                    Project::defaultLogLang = optarg;
+                if (strcmp(p,value)==0) {
+                    Project::defaultLogLang = value;
                     force_lang = true;
                     break;
                 }
             }
             if (! force_lang) {
-                usage (std::string(argv[0]) + ": Unsupported language code '" + optarg + "'");
+                usage (pgm_name + ": Unsupported language code '" + value + "'");
                 return 1;
             }
-            break;
-        case 'p':
-            Projection::setCmdLineProjPath(optarg);
-            break;
-        default:
-            usage();
+        } else if (strncmp(arg,"-",1) == 0) {
+            usage(pgm_name + ": Unknown option '" + arg + "'");
             return 1;
+        } else {
+            if (filename_arg != nullptr) {
+                usage(pgm_name + ": Extra argument '" + arg + "'");
+            }
+            filename_arg = arg;
         }
     }
-
-    if (optind != argc-1) {
-        usage (std::string(argv[0]) + ": Missing project file name");
+    if (filename_arg == nullptr) {
+        usage (pgm_name + ": Missing project file name");
         return 1;
     }
 
-    std::string filename=argv[optind];
+    std::string filename=filename_arg;
 
     std::cout<<"Try to compute "<<filename<<std::endl;
     std::ostringstream error_msg;

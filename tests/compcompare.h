@@ -17,25 +17,54 @@
 #define COMPCOMPARE_H
 
 #include <json/json.h>
+#include <QRegExp>
 
 /**********************
  * Compare two .comp files
  * show differences
  *********************/
+
+
+// NoComparePath use wildcard pattern
+//
+// a non-leaf node name (objects && arrays) has the form:
+// /node_0/.../node_n/          // trailing '/'
+//
+// a lead node name has the form:
+// /node_0/.../leaf             // no trailing '/'
+//
+// Wildcard patterns use '*', '?' and '[]' with the same meaning as in a Unix shell.
+// Wildcard can be backslashed (double backslash in a C-string: "/node/\\[0\\]/rank" to match exactly "/node/[0]/rank"
+//
+// Warning: '/' has no special meaning ! It will be matched like any other character
+//
+// To filter out all under /test/computation:
+// "/test/computation/"
+//
+// To filter all "rank" leaves:
+// "*/rank"
+//
+// To filter all "rank" leaves under "computation":
+// "/computation/*/rank"      // will not filter out /computation/rank !
+//
+// To filter all "rank" leaves in an array:
+// "*\\]/rank"
+//
+//
+
 class CompCompare
 {
 public:
-    CompCompare(const std::string &_compFilename, const std::string &_refFilename, const std::string &_refMD5sum, bool _verbose, double _tolerancy);
-    void addMoreTolerancyLeaves(std::vector<std::string> &moreTolerancyLeaves2);
-    void addNoComparePaths(std::vector<std::string> &noComparePaths2);
-    void addNoCompareLeaves(std::vector<std::string> &noCompareLeaves2);
+    CompCompare(const std::string &_compFilename, const std::string &_refFilename, const std::string &_refMD5sum, bool _verbose, double _tolerance);
+    void addMoreToleranceNodes(std::vector<std::string> &moreToleranceNodes2);
+    void addNoCompareNodePaths(const std::vector<std::string>& moreNoComparePaths);
     bool openFile(std::string filename, Json::Value &root, std::string md5sum="");
     bool checkContent();//<check all the data
     bool checkOnly(std::vector<std::string> comparePaths);//<check only selected nodes
     bool checkOnly(std::vector< std::pair<std::string, std::string> > comparePaths);//<check only selected nodes, with new names (if not "")
     bool isError() const{return error;}
 protected:
-    bool checkNode(Json::Value nodeComp, Json::Value nodeRef, std::string path);//recursive
+    bool checkNode(Json::Value nodeComp, Json::Value nodeRef, std::string path, bool moreTolerance);//recursive
     bool checkFiles(Json::Value nodeComp, Json::Value nodeRef, const std::string &path);
     std::string compFilename;
     std::string refFilename;
@@ -44,9 +73,10 @@ protected:
     Json::Value rootRef;
     bool error;
     bool verbose;
-    double tolerancy;
-    std::vector<std::string> moreTolerancyLeaves;//leaves where tolerancy is *1000
-    std::vector<std::string> noComparePaths, noCompareLeaves;
+    double tolerance;
+    std::vector<std::string> moreToleranceNodes;//leaves where tolerance is *1000
+    std::vector<std::string> noCompareNodePaths;
+    std::vector<QRegExp> noCompareRE;
     bool checkStrings(Json::Value nodeComp, Json::Value nodeRef, const std::string &path);
 };
 

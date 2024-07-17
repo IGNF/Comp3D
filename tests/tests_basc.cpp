@@ -15,8 +15,9 @@
 
 #include "tests_basc.h"
 
-#include <boost/filesystem.hpp>
+#include "../src/filesystem_compat.h"
 #include "station_bascule.h"
+
 
 Tests_Basc::Tests_Basc() :
     filename("./data/bascule/ex_ref.comp"),
@@ -24,27 +25,27 @@ Tests_Basc::Tests_Basc() :
 {
     std::cout<<"Prepare Tests_Basc"<<std::endl;
     try{
-        boost::filesystem::remove(filename+"_test.comp");
-        boost::filesystem::copy(filename,filename+"_test.comp");
-    } catch (const boost::filesystem::filesystem_error& e)
+        fs::remove(filename+"_test.comp");
+        fs::copy(filename,filename+"_test.comp");
+    } catch (const fs::filesystem_error& e)
     {
         std::cerr<<e.what()<<std::endl;
     }
 
     //copy files from origin/ (for .xyz, that are modified by tests)
-    boost::filesystem::path working_path(filename);
+    fs::path working_path(filename);
     working_path.remove_filename();
     try{
-        for(    boost::filesystem::directory_iterator file(working_path / "origin");
-                file != boost::filesystem::directory_iterator();
+        for(    fs::directory_iterator file(working_path / "origin");
+                file != fs::directory_iterator();
                 ++file )
         {
-            boost::filesystem::path current(file->path());
-            boost::filesystem::remove(working_path / current.filename());
-            boost::filesystem::copy(current, working_path / current.filename());
+            fs::path current(file->path());
+            fs::remove(working_path / current.filename());
+            fs::copy(current, working_path / current.filename());
             std::cout<<"Copy "<<current<<" to "<<working_path / current.filename()<<std::endl;
         }
-    } catch (const boost::filesystem::filesystem_error& e)
+    } catch (const fs::filesystem_error& e)
     {
         std::cout<<e.what()<<std::endl;
     }

@@ -19,12 +19,12 @@
 #include <QCryptographicHash>
 #include "project_config.h"
 
-CompCompare::CompCompare(const std::string &_compFilename, const std::string &_refFilename, const std::string &_refMD5sum, bool _verbose, double _tolerancy):
-    compFilename(_compFilename),refFilename(_refFilename),refMD5um(_refMD5sum),error(false),verbose(_verbose),tolerancy(_tolerancy),
-    moreTolerancyLeaves({"residual_std", "standardized_residual", "normalized_residual"}),
-    noComparePaths({"/COMP3D_COMMIT","/COMP3D_VERSION","/computation/computation_duration","/computation/solver_name",
-                    "/computation/computation_start","/config_file","/COMP3D_OPTIONS","/COMP3D_LICENSE","/COMP3D_COPYRIGHT","/config/save_invert"}),
-    noCompareLeaves({"rank","all_data_files"})
+CompCompare::CompCompare(const std::string &_compFilename, const std::string &_refFilename, const std::string &_refMD5sum, bool _verbose, double _tolerance):
+    compFilename(_compFilename),refFilename(_refFilename),refMD5um(_refMD5sum),error(false),verbose(_verbose),tolerance(_tolerance),
+    moreToleranceNodes({"residual_std", "standardized_residual", "normalized_residual", "all_sigma0", "sigma_0_init", "obs_azim", "obs_zen"}),
+    noCompareNodePaths({"/COMP3D_*", "/computation/computation_duration","/computation/computation_start",
+                        "/computation/solver_name","/config_file", "/all_data_files*", "/computation/all_parameters_names/", "*/params/*/rank"})
+
 {
     if (!openFile(compFilename,rootComp))
     {
@@ -36,36 +36,27 @@ CompCompare::CompCompare(const std::string &_compFilename, const std::string &_r
         std::cout<<"Error reading "<<refFilename<<std::endl;
         error=true;
     }
+    for (const auto& path: noCompareNodePaths)
+        noCompareRE.push_back(QRegExp(path.c_str(),Qt::CaseSensitive,QRegExp::PatternSyntax::WildcardUnix));
 }
 
-void CompCompare::addMoreTolerancyLeaves(std::vector<std::string> &moreTolerancyLeaves2)
+void CompCompare::addMoreToleranceNodes(std::vector<std::string> &moreToleranceNodes2)
 {
-    for (auto & str:moreTolerancyLeaves2)
-        moreTolerancyLeaves.push_back(str);
-    std::cout<<"moreTolerancyLeaves: ";
-    for (auto & str:moreTolerancyLeaves)
+    for (auto & str:moreToleranceNodes2)
+        moreToleranceNodes.push_back(str);
+    std::cout<<"moreToleranceNodes: ";
+    for (auto & str:moreToleranceNodes)
         std::cout<<str<<" ";
     std::cout<<std::endl;
 }
 
-
-void CompCompare::addNoComparePaths(std::vector<std::string> &noComparePaths2)
+void CompCompare::addNoCompareNodePaths(const std::vector<std::string> &moreNoComparePaths)
 {
-    for (auto & str:noComparePaths2)
-        noComparePaths.push_back(str);
-    std::cout<<"noComparePaths: ";
-    for (auto & str:noComparePaths)
-        std::cout<<str<<" ";
-    std::cout<<std::endl;
-}
-
-void CompCompare::addNoCompareLeaves(std::vector<std::string> &noCompareLeaves2)
-{
-    for (auto & str:noCompareLeaves2)
-        noCompareLeaves.push_back(str);
-    std::cout<<"noCompareLeaves: ";
-    for (auto & str:noCompareLeaves)
-        std::cout<<str<<" ";
+    for (auto & str:moreNoComparePaths)
+            noCompareRE.push_back(QRegExp(str.c_str(),Qt::CaseSensitive,QRegExp::PatternSyntax::WildcardUnix));
+    std::cout<<"noCompareNodePaths: ";
+    for (auto & str:noCompareRE)
+        std::cout << str.pattern().toStdString() <<" ";
     std::cout<<std::endl;
 }
 
@@ -79,6 +70,8 @@ bool CompCompare::openFile(std::string filename,Json::Value &root,std::string md
     try
     {
         config_file_contents=Project_Config::get_file_contents(filename.c_str());
+        // Remove all '\r', may happen if we are running on Windows or the file is coming from a Windows system
+        config_file_contents.erase( std::remove(config_file_contents.begin(), config_file_contents.end(), '\r'), config_file_contents.end() );
         unsigned long pos = config_file_contents.find("=");
         jsondata= config_file_contents.substr(pos+1);
     }
@@ -121,7 +114,7 @@ bool CompCompare::checkContent()
 {
     if (error) return false;
     //check each node of reference exept date and some other special ones
-    return checkNode(rootComp,rootRef,"");
+    return checkNode(rootComp,rootRef,"", false);
 }
 
 
@@ -165,7 +158,7 @@ bool CompCompare::checkFiles(Json::Value nodeComp, Json::Value nodeRef, const st
     return checkStrings(fileComp,fileRef,path);
 }
 
-bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::string path)
+bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::string path, bool moreTolerance)
 {
     bool ok=true;
     if (verbose)
@@ -178,6 +171,10 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
         std::cout<<std::endl;
         return false;
     }
+    std::size_t found = path.find_last_of("/\\");
+    std::string name = path.substr(found+1);
+    if (std::find(moreToleranceNodes.begin(), moreToleranceNodes.end(),name)!=moreToleranceNodes.end())
+        moreTolerance = true;
     switch (nodeRef.type()) {
         case Json::stringValue:
             return checkStrings(nodeComp,nodeRef,path);
@@ -195,20 +192,17 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
         case Json::realValue:
             if (path.find("axes")!=std::string::npos)
             {
-                if ((fabs(nodeRef.asDouble()-nodeComp.asDouble())>tolerancy)&&(fabs(nodeRef.asDouble()-nodeComp.asDouble())-200>tolerancy))
+                if ((fabs(nodeRef.asDouble()-nodeComp.asDouble())>tolerance)&&(fabs(nodeRef.asDouble()-nodeComp.asDouble())-200>tolerance))
                 {
                     std::cout<<"  Difference found for axes node "<<path<<": ";
                     std::cout<<nodeRef<<" /VS/ "<<nodeComp<<"\n";
                     std::cout<<std::endl;
                     return false;
                 }
-            }else if (fabs(nodeRef.asDouble()-nodeComp.asDouble())>tolerancy)
+            }else if (fabs(nodeRef.asDouble()-nodeComp.asDouble())>tolerance)
             {
-                std::size_t found = path.find_last_of("/\\");
-                std::string name = path.substr(found+1);
-                if (std::find(moreTolerancyLeaves.begin(), moreTolerancyLeaves.end(),name)!=moreTolerancyLeaves.end())
-                    if (fabs(nodeRef.asDouble()-nodeComp.asDouble())<tolerancy*1000)
-                        return true;
+                if (moreTolerance && (fabs(nodeRef.asDouble()-nodeComp.asDouble())<tolerance*1000))
+                    return true;
                 std::cout<<"  Difference found for node "<<path<<": ";
                 std::cout<<nodeRef<<" /VS/ "<<nodeComp<<"\n";
                 std::cout<<std::endl;
@@ -228,29 +222,33 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
         //check all nodeRef nodes
         for (auto &name:nodeRefMembers)
         {
-            if ((std::find(noComparePaths.begin(), noComparePaths.end(),path+"/"+name)==noComparePaths.end())
-                &&(std::find(noCompareLeaves.begin(), noCompareLeaves.end(),name)==noCompareLeaves.end()))
+            auto subNodePath = path + "/" + name;
+            auto testPath = subNodePath;
+            if (nodeRef[name].isArray() || nodeRef[name].isObject())
+                testPath += "/";
+
+            if (std::find_if(noCompareRE.begin(), noCompareRE.end(),[testPath](const QRegExp& re){return re.exactMatch(testPath.c_str());})==noCompareRE.end())
             {
                 if (verbose)
-                    std::cout<<"Checking "<<path+"/"+name<<"\n";
+                    std::cout<<"Checking "<<subNodePath<<"\n";
                 //test if node exists in nodeComp
                 if (!nodeComp.isMember(name))
                 {
-                    std::cout<<path+"/"+name<<": error! Node not existing in comp file!\n";
+                    std::cout<<subNodePath<<": error! Node not existing in comp file!\n";
                     std::cout<<std::endl;
                     return false;
                 }
                 Json::Value subNodeComp=nodeComp[name];
                 Json::Value subNodeRef=nodeRef[name];
                 if (name == "file_id" && subNodeRef.type() == Json::intValue && subNodeComp.type() == Json::intValue)
-                    ok = ok && checkFiles(subNodeComp, subNodeRef, path+"/"+name);
+                    ok = ok && checkFiles(subNodeComp, subNodeRef, subNodePath);
                 else
-                    ok = ok && checkNode(subNodeComp, subNodeRef, path+"/"+name);
+                    ok = ok && checkNode(subNodeComp, subNodeRef, subNodePath, moreTolerance);
                 if (!ok)
                     return false;//skip the rest
             }else{
                 if (verbose)
-                    std::cout<<"Skip "<<path+"/"+name<<"\n";
+                    std::cout<<"Skip "<<subNodePath<<"\n";
             }
         }
     }else if (nodeRef.type()==Json::arrayValue){
@@ -268,7 +266,7 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
                 std::cout<<"Checking "<<oss.str()<<"\n";
             Json::Value subNodeComp=nodeComp[i];
             Json::Value subNodeRef=nodeRef[i];
-            ok = ok && checkNode(subNodeComp, subNodeRef, oss.str());
+            ok = ok && checkNode(subNodeComp, subNodeRef, oss.str(), moreTolerance);
             if (!ok)
                 return false;//skip the rest
         }
@@ -305,7 +303,7 @@ bool CompCompare::checkOnly(std::vector<std::string> comparePaths)
             }
         }
         if (pathFoundInRef)
-            if (!checkNode(subNodeComp,subNodeRef,path))
+            if (!checkNode(subNodeComp,subNodeRef,path,false))
                 return false;
     }
     return true;
@@ -351,7 +349,7 @@ bool CompCompare::checkOnly(std::vector< std::pair<std::string, std::string> > c
             }
         }
         if (pathFoundInRef)
-            if (!checkNode(subNodeComp,subNodeRef,newpath))
+            if (!checkNode(subNodeComp,subNodeRef,newpath, false))
                 return false;
     }
     return true;

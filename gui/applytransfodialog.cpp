@@ -17,7 +17,6 @@
 #include "ui_applytransfodialog.h"
 
 #include <regex>
-#include <boost/filesystem.hpp>
 #include <boost/date_time.hpp>
 #include <QFileDialog>
 #include <QMessageBox>

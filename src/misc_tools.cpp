@@ -15,6 +15,16 @@
  */
 
 #include "misc_tools.h"
+#ifdef __linux__
+#  include <unistd.h>
+#elif _WIN32
+#  include <windows.h>
+#  include <process.h>
+#elif __APPLE__
+#  include <unistd.h>
+#  include <mach-o/dyld.h>
+#endif
+
 
 #ifdef USE_QT
 #include <QFile>
@@ -40,4 +50,47 @@ void copyAllRes(const QString & resPath, const QString & outPath)
         copyRes(filePath, filePathOut);
     }
 }
+#endif
+
+
+#ifdef __linux__
+fs::path selfExecPath()
+{
+    char buf[4096];
+
+    *buf = 0;
+    ssize_t result = readlink("/proc/self/exe", buf, sizeof(buf) - 1);
+    if (result >= 0 && (size_t)result < sizeof(buf) - 1)
+        buf[result] = 0;
+    else
+        buf[0] = 0;
+    return fs::path(buf).parent_path();
+}
+#elif _WIN32
+fs::path selfExecPath()
+{
+    wchar_t buffer[MAX_PATH];
+    *buffer = L'0';
+    DWORD size = GetModuleFileNameW(nullptr, buffer,(DWORD)sizeof(buffer));
+    if (size <0 || size == (DWORD)sizeof(buffer))
+        *buffer = L'0';
+    return fs::path(buffer).parent_path();
+}
+#elif __APPLE__
+fs::path selfExecPath()
+{
+    // Ch.M: Not tested
+    fs::path path;
+
+    uint32_t size = 0;
+    _NSGetExecutablePath(nullptr, &size);
+    char *buffer = new char[size + 1];
+    if (_NSGetExecutablePath(buffer, &size) >= 0) {
+        buffer[size] = '\0';
+        path = buffer;
+    }
+    delete[] buffer;
+    return path;
+#else
+#  error Please implement selfExecPath() for your OS
 #endif
