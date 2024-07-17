@@ -1,0 +1,250 @@
+name: Build MMVII Linux/Windows
+
+on:
+  push:
+    branches:
+      - 'main'
+
+env:
+  PROJ_URL: https://download.osgeo.org/proj/proj-9.3.1.tar.gz
+  PROJ_INSTALL: /usr/local/proj93
+  PROJDATA_URL: https://download.osgeo.org/proj/proj-datumgrid-1.8.zip
+
+jobs:
+
+  build_doc:
+    if: true
+    runs-on: ubuntu-latest
+    outputs:
+      comp3dversion: ${{ steps.do-build-doc.outputs.comp3dversion }}
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install sphinx
+      run: |
+        sudo apt-get install -y --fix-missing python3-pip python3-stemmer qttranslations5-l10n libjs-mathjax
+        pip3 install sphinx sphinx-intl sphinx-mathjax-offline
+ 
+    - name: Build doc
+      id: do-build-doc
+      run: |
+        cd doc_uni
+        ./build_doc.sh
+
+    - name: Upload documentation artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: 'doc'
+        path: 'doc_uni/'
+
+  build_linux:
+    if: true
+    runs-on: ubuntu-latest
+    needs: build_doc
+
+    steps:
+        
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        fetch-tags: true
+
+    - name: Install deps
+      run: |
+        sudo apt update
+        sudo apt install wget unzip build-essential pkg-config libboost-all-dev qttools5-dev-tools qttools5-dev qtbase5-dev git doxygen sqlite libsqlite3-dev cmake fuse libtiff-dev libcurl4-openssl-dev libeigen3-dev
+
+    - name: Install libproj
+      run: |
+        FILE=${PROJ_URL##*/}
+        wget ${PROJ_URL}
+        tar -xf "$FILE"
+        cd ${FILE%%.tar.gz}
+        mkdir build
+        cd build
+        cmake .. -DBUILD_TESTING=OFF -DBUILD_SHARED_LIBS=OFF -DBUILD_PROJSYNC=OFF  -DENABLE_CURL=OFF -DENABLE_TIFF=OFF -DCMAKE_INSTALL_PREFIX=${PROJ_INSTALL}
+        make clean
+        make -j5
+        sudo make install
+
+    - name: Install proj data
+      run: |
+        wget ${PROJDATA_URL}
+        unzip ${PROJDATA_URL##*/} -d proj-data
+        sudo mkdir -p ${PROJ_INSTALL}/share/proj/
+        sudo cp proj-data/* ${PROJ_INSTALL}/share/proj/
+
+    - name: Install appimage
+      run: |
+        wget https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
+        wget https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage
+        chmod a+x *.AppImage
+
+    - name: Build Comp3D
+      run: |
+        VERSION=`cat src/compile.h | grep "COMP3D_VERSION" | sed 's/.*COMP3D v//' | sed 's/[^0-9.a-zA-Z_].*//'`
+        COMP3D_DOC_DIR="/usr/share/doc/comp3d/${VERSION}"
+        echo "VERSION=${VERSION}" >> "$GITHUB_ENV"
+        echo "COMP3D_DOC_DIR=${COMP3D_DOC_DIR}" >> "$GITHUB_ENV"
+        mkdir -p autobuild/
+        cd autobuild/
+        cmake .. -DPROJ_DATA_LOCAL_PATH=${PROJ_INSTALL}/share/proj/ -DCOMP3D_DOC_DIR="${COMP3D_DOC_DIR}" -DCMAKE_BUILD_TYPE=Release
+        cmake --build .
+
+    - name: Build tests
+      working-directory: ./tests
+      run: |
+        mkdir -p autobuild/
+        cd autobuild/
+        cmake .. -DPROJ_DATA_LOCAL_PATH=${PROJ_INSTALL}/share/proj/ -DCMAKE_BUILD_TYPE=Release
+        cmake --build .
+
+    - name: Run tests
+      working-directory: ./tests
+      id: tests
+      run: |
+        autobuild/Comp3D_tests
+
+    - name: Upload tests result artifact
+      uses: actions/upload-artifact@v4
+      if: ${{ success() || (failure() && steps.tests.conclusion == 'failure') }}
+      with: 
+        name: linuxtest-results
+        path: tests/data*/**/*.comp_test.comp
+
+    - name: Download documentation artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: 'doc'
+        path: 'doc_uni/'
+
+    - name: Package
+      run: |
+        distrib/make_appimage.sh  ./autobuild/ /tmp/AppDir "${COMP3D_DOC_DIR}"
+        distrib/make_ziplinux.sh $(ls -t Comp3d5v5.*.AppImage | head -1)
+        distrib/make_appimagedeb.sh $(ls -t Comp3d5v5.*.AppImage | head -1)
+        mv $(ls -t distrib/comp3d5v5.*.deb | head -1) .
+        ls -l
+        echo v__"$VERSION"__
+        echo "done"
+
+
+    - name: Remove previous Comp3D release
+      env:
+         GH_TOKEN: ${{ github.token }}
+      continue-on-error: true
+      run: gh release delete Comp3D_linux -y --cleanup-tag
+
+    - name: Upload Comp3D
+      uses: softprops/action-gh-release@v2
+      with:
+          name: 'Comp3D linux - Latest'
+          tag_name: Comp3D_linux
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            comp3d_*_linux.tgz
+            comp3d_*_linux_deb.tgz
+          
+
+  build_win:
+    if: true
+    runs-on: windows-latest
+    needs: build_doc
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        fetch-tags: true
+
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v3
+      with:
+          version:      5.15.2
+          cache: true
+
+    - name: Install Miniconda 
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+         auto-update-conda: true
+          
+    - name: Install PROJ with miniconda
+      run: conda install -y curl proj boost eigen
+      
+    - name: Install proj data
+      shell: bash
+      run: |
+        curl -sL ${PROJDATA_URL} -o proj-data.zip
+        unzip proj-data.zip -d proj-data
+
+    - name: Build Comp3D
+      shell: cmd
+      run: |
+        mkdir -p autobuild
+        cd autobuild
+        cmake .. -DCMAKE_PREFIX_PATH=C:/Miniconda/envs/test/Library -DCOMP3D_DOC_DIR=doc
+        cmake --build . --config Release
+        cp -a C:/Miniconda/envs/test/Library/share/proj Release/
+        cp ../proj-data/* Release/proj/
+
+    - name: Build tests
+      working-directory: ./tests
+      shell: bash
+      run: |
+        mkdir -p autobuild
+        cd autobuild
+        pwd
+        cmake .. -DCMAKE_PREFIX_PATH=C:/Miniconda/envs/test/Library
+        cmake --build . --config Release
+        cp -a C:/Miniconda/envs/test/Library/share/proj Release/
+        cp ../../proj-data/* Release/proj/
+
+    - name: Run tests
+      id: tests
+      working-directory: ./tests
+      run: autobuild/Release/Comp3D_tests.exe
+
+    - name: Upload tests result artifact
+      uses: actions/upload-artifact@v4
+      if: ${{ success() || (failure() && steps.tests.conclusion == 'failure') }}
+      with: 
+        name: wintest-results
+        path: tests/data*/**/*.comp_test.comp
+
+    - name: Download documentation artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: 'doc'
+        path: 'doc_uni/'
+
+    - name: Package
+      env:
+        VERSION: ${{needs.build_doc.outputs.comp3dversion}}
+      shell: bash
+      run: |
+        COMP3D_DIR=$(pwd)/autobuild/Release
+        mkdir -p ${COMP3D_DIR}/platforms ${COMP3D_DIR}/imageformats
+        cd /C/Miniconda/envs/test/Library/bin/
+        cp deflate.dll Lerc.dll libcrypto-3-x64.dll libcurl.dll liblzma.dll libssh2.dll proj_*.dll sqlite3.dll tiff.dll zlib.dll zstd.dll ${COMP3D_DIR}/
+        cd $Qt5_Dir/bin
+        cp Qt5Core.dll Qt5Gui.dll Qt5Xml.dll Qt5OpenGL.dll Qt5Widgets.dll ${COMP3D_DIR}/
+        cd $Qt5_Dir/plugins
+        cp platforms/qwindows.dll ${COMP3D_DIR}/platforms/
+        cd $GITHUB_WORKSPACE
+        distrib/make_zipwin.sh ./autobuild/ doc
+
+    - name: Remove previous Comp3D release
+      env:
+         GH_TOKEN: ${{ github.token }}
+      continue-on-error: true
+      run: gh release delete Comp3D_win -y --cleanup-tag
+
+    - name: Upload Comp3D
+      uses: softprops/action-gh-release@v2
+      with:
+          name: 'Comp3D win - Latest'
+          tag_name: Comp3D_win
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            comp3d_*_win.zip
+
