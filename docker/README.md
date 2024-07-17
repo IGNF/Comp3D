@@ -45,13 +45,13 @@ Build docker image
 
 From docker directory:
 
-    docker build --network=host -t c3ddocker1804 .
+    docker build --network=host -t c3ddocker2004 .
 
 It needs 2 GB of disk space.
 
-The image is based on ubuntu:18.04. In case of old base image (with 404 errors on packages), update with:
+The image is based on ubuntu:20.04. In case of old base image (with 404 errors on packages), update with:
 
-    docker pull ubuntu:18.04
+    docker pull ubuntu:20.04
 
 Then retry to build.
 
@@ -60,8 +60,8 @@ Run image
 ---------
 For automatic compilation and packaging for Linux and Windows, from docker directory:
 
-    docker run --user "$(id -u):$(id -g)" --rm  -v $(pwd)/..:/c3d c3ddocker1804 /c3d/docker/compile_all.sh
-    docker run --rm --device /dev/fuse --privileged -v $(pwd)/..:/c3d c3ddocker1804 /c3d/docker/package_all.sh
+    docker run --user "$(id -u):$(id -g)" --rm  -v $(pwd)/..:/c3d c3ddocker2004 /c3d/docker/compile_all.sh
+    docker run --rm --device /dev/fuse --privileged -v $(pwd)/..:/c3d c3ddocker2004 /c3d/docker/package_all.sh
 
 The compilation and tests are done with current user, the packaging (via fuse/appimage) needs to be done as root.
 
@@ -69,11 +69,11 @@ Output will be in comp3d/autobuild/, comp3d/autobuild-mxe/, comp3d/comp3d_5.??_l
 
 If something is wrong with files authorizations, try cleaning as docker root :
 
-    docker run --rm --device /dev/fuse --privileged -v $(pwd)/..:/c3d c3ddocker1804 /c3d/docker/clean_all.sh
+    docker run --rm --device /dev/fuse --privileged -v $(pwd)/..:/c3d c3ddocker2004 /c3d/docker/clean_all.sh
 
 For interactive compilation:
 
-    docker run --user "$(id -u):$(id -g)" -ti --rm --device /dev/fuse --privileged -v $(pwd)/..:/c3d c3ddocker1804 bash
+    docker run --user "$(id -u):$(id -g)" -ti --rm --device /dev/fuse --privileged -v $(pwd)/..:/c3d c3ddocker2004 bash
 
 Look at comp3d/docker/compile_all.sh to get compilation instructions.
 
@@ -81,5 +81,5 @@ Look at comp3d/docker/compile_all.sh to get compilation instructions.
 Remove docker image
 -------------------
 
-    docker rmi c3ddocker1804
+    docker rmi c3ddocker2004
 

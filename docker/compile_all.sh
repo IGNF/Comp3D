@@ -22,10 +22,9 @@ version=`cat /c3d/src/compile.h | grep "COMP3D_VERSION" | sed 's/.*COMP3D v//' |
 COMP3D_DOC_DIR="/usr/share/doc/comp3d/${version}"
 echo -e "${GREEN}Linux compilation${STOP}"
 cd /c3d/
-lrelease Comp3D_cpp.pro
 mkdir -p autobuild/
 cd autobuild/
-qmake ../Comp3D_cpp.pro CONFIG+=release COMP3D_DOC_DIR="${COMP3D_DOC_DIR}"
+cmake -DCOMP3D_DOC_DIR="${COMP3D_DOC_DIR}" -DPROJ_DATA_LOCAL_PATH=/usr/local/proj93/share/proj ..
 make clean
 make -j$NBRP
 
@@ -34,16 +33,16 @@ echo -e "${GREEN}Windows cross-compilation${STOP}"
 cd /c3d/
 mkdir -p autobuild-mxe/
 cd autobuild-mxe/
-x86_64-w64-mingw32.static-qmake-qt5 ../Comp3D_cpp.pro COMP3D_DOC_DIR="${COMP3D_DOC_DIR}"
+x86_64-w64-mingw32.static-cmake -DCOMP3D_DOC_DIR="${COMP3D_DOC_DIR}" -DCMAKE_FIND_ROOT_PATH="/usr/lib/mxe/usr/x86_64-w64-mingw32.static;/usr/local/mxe" -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=Release ..
 make clean
 make -j$NBRP
-cp -R /usr/local/proj82/share/proj/ release/proj
+cp -a /usr/local/mxe/proj93/share/proj/ Release/proj
 
 echo -e "${GREEN}Compile tests on linux...${STOP}"
 cd /c3d/tests/
 mkdir -p autobuild/
 cd autobuild/
-qmake ../tests.pro
+cmake -DPROJ_DATA_LOCAL_PATH=/usr/local/proj93/share/proj ..
 make clean
 make -j$NBRP
 cd ..
@@ -55,14 +54,15 @@ echo -e "${GREEN}Compile tests on wine...${STOP}"
 cd /c3d/tests/
 mkdir -p autobuild-mxe/
 cd autobuild-mxe/
-x86_64-w64-mingw32.static-qmake-qt5 ../tests.pro
+x86_64-w64-mingw32.static-cmake -DCMAKE_FIND_ROOT_PATH="/usr/lib/mxe/usr/x86_64-w64-mingw32.static;/usr/local/mxe" -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=Release ..
 make clean
 make -j$NBRP
+cp -a /usr/local/mxe/proj93/share/proj/ Release/proj
 cd ..
 echo -e "${GREEN}Run tests on wine...${STOP}"
 mkdir /tmp/wineprefix
 export WINEPREFIX=/tmp/wineprefix/
-wine autobuild-mxe/release/Comp3D_tests.exe
+wine autobuild-mxe/Release/Comp3D_tests.exe
 echo -e "${GREEN}Wine tests finished, no errors.${STOP}"
 
 #to see all messages on wine tests outside docker, run:

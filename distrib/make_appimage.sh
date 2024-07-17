@@ -30,14 +30,14 @@ distrib/make_shortcut.sh
 cd $1
   rm -Rf $2/
   mkdir -p $2
-  make -j5
-  make install INSTALL_ROOT=$2
+  cmake -DINSTALL_PREFIX="$2" ..
+  make install
   $base/distrib/install_doc.sh ${base}/doc_uni $2/$3
   mkdir -p $2/usr/share/applications/
   mkdir -p $2/usr/share/pixmaps/
-  mkdir -p $2/usr/local/proj82/share/proj/
+  mkdir -p $2/usr/local/proj93/share/proj/
   cp $2/usr/bin/Comp3D $2/usr/bin/comp3d5v$version
-  cp -r /usr/local/proj82/share/proj/* $2/usr/local/proj82/share/proj/
+  cp -r /usr/local/proj93/share/proj/* $2/usr/local/proj93/share/proj/
   cp $base/distrib/comp3d5.desktop $2/usr/share/applications/comp3d5v$version.desktop
   cp $base/data/comp3d5.xpm $2/usr/share/pixmaps/comp3d5v$version.xpm
 cd -

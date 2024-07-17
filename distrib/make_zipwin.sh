@@ -24,7 +24,6 @@ base=$(pwd)
 echo "base dir: $base"
 version=`cat src/compile.h | grep "COMP3D_VERSION" | sed 's/.*COMP3D v//' | sed 's/[^0-9.a-zA-Z_].*//'`
 echo "version : $version"
-distrib/make_shortcut.sh
 
 dir_name=comp3d_${version}_win
 
@@ -34,8 +33,7 @@ cd $1
   rm -rf $dir_name
   mkdir $dir_name
   ${base}/distrib/install_doc.sh ${base}/doc_uni $dir_name/$2
-  cp -R release/proj $dir_name
-  cp release/Comp3D.exe $dir_name
+  cp -a Release/* $dir_name
   mkdir -p $dir_name/datasets
   mkdir -p $dir_name/data
   mkdir -p $dir_name/licenses
@@ -46,7 +44,7 @@ cd $1
   cp $base/src/*/LICENSE* $base/gui/html/LICENSE* $base/NOTICE.md $dir_name/licenses
   cp $base/data/logo_* $dir_name/data
   cp $base/data/comp3d5.xpm $dir_name
-  zip -r $base/${dir_name}.zip $dir_name
+  7z a $base/${dir_name}.zip $dir_name
 cd -
 
 echo "Zip created: " $base/${dir_name}.zip
