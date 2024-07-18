@@ -245,6 +245,7 @@ namespace uni_stream {
 
 inline int rename_file(const std::string& old_name, const std::string& new_name)
 {
+    ::remove(new_name.c_str());
     return ::rename(old_name.c_str(),new_name.c_str()) < 0 ? errno : 0;
 }
 
