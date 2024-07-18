@@ -268,6 +268,7 @@ file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/cmake_qm.qrc"
 #######################################################
 
 add_executable(${COMP3D_TARGET} ${SOURCES} ${SOURCES_GUI} ${HEADERS} comp3d.rc ressource.qrc ${CMAKE_BINARY_DIR}/cmake_qm.qrc ${CMAKE_BINARY_DIR}/git_revision.cpp )
+set_target_properties(${PROJECT_NAME} PROPERTIES WIN32_EXECUTABLE $<CONFIG:Release>)
 
 target_include_directories (${COMP3D_TARGET} PRIVATE src gui . ${PROJECT_BINARY_DIR} ${PROJ_INCLUDE_DIRS})
 target_link_libraries (${COMP3D_TARGET} PRIVATE COMP3D_compiler_flags ${BOOST_COMPONENTS_FULL} ${QT_COMPONENTS_FULL} ${PROJ_LIBRARIES} Eigen3::Eigen)
