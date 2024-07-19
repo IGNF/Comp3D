@@ -223,6 +223,7 @@ jobs:
         cp Qt5Core.dll Qt5Gui.dll Qt5Xml.dll Qt5OpenGL.dll Qt5Widgets.dll ${COMP3D_DIR}/
         cd $Qt5_Dir/plugins
         cp platforms/qwindows.dll ${COMP3D_DIR}/platforms/
+        cp imageformats/*.dll ${COMP3D_DIR}/imageformats/
         cd $GITHUB_WORKSPACE
         distrib/make_zipwin.sh ./autobuild/ doc
 
