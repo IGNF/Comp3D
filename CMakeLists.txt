@@ -37,7 +37,7 @@ endif()
 
 set(COMP3D_DOC_DIR "${CMAKE_SOURCE_DIR}/doc_uni" CACHE STRING "Path to doc")
 if ("${COMP3D_DOC_DIR}" STREQUAL "")
-	set(COMP3D_DOC_DIR "${CMAKE_SOURCE_DIR}/doc_uni" CACHE STRING  "Path to doc" FORCE)
+  set(COMP3D_DOC_DIR "${CMAKE_SOURCE_DIR}/doc_uni" CACHE STRING  "Path to doc" FORCE)
 endif()
 
 set(PROJ_DATA_LOCAL_PATH "" CACHE STRING "Path to proj data")
@@ -254,6 +254,22 @@ set(HEADERS
     gui/exportpointsdialog.h
 )
 
+set(UI_FILES
+    gui/applytransfodialog.ui
+    gui/configdialog.ui
+    gui/conversiondialog.ui
+    gui/dialogpreferences.ui
+    gui/errordialog.ui
+    gui/exportcoorddialog.ui
+    gui/exportpointsdialog.ui
+    gui/framewidget.ui
+    gui/infinityasctobasdialog.ui
+    gui/maintables.ui
+    gui/mainwindow.ui
+    gui/sightmatrixdialog.ui
+    gui/sinexdialog.ui
+)
+
 
 #######################################################
 ##        Translation
@@ -269,7 +285,7 @@ qt5_add_translation(QM_FILES ${TS_FILES})
 set (QM_FILES_QRC ${TRANSLATIONS})
 list (TRANSFORM QM_FILES_QRC PREPEND "<file>i18n/")
 list (TRANSFORM QM_FILES_QRC APPEND ".qm</file>\n")
-file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/cmake_qm.qrc" 
+file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/cmake_qm.qrc"
 "
 <RCC>
   <qresource>
@@ -282,7 +298,11 @@ file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/cmake_qm.qrc"
 ##        Target
 #######################################################
 
-add_executable(${COMP3D_TARGET} ${SOURCES} ${SOURCES_GUI} ${HEADERS} comp3d.rc ressource.qrc ${CMAKE_BINARY_DIR}/cmake_qm.qrc ${CMAKE_BINARY_DIR}/git_revision.cpp )
+add_executable(${COMP3D_TARGET}
+    ${SOURCES} ${SOURCES_GUI} ${HEADERS} ${UI_FILES}
+    comp3d.rc ressource.qrc ${CMAKE_BINARY_DIR}/cmake_qm.qrc ${CMAKE_BINARY_DIR}/git_revision.cpp
+)
+
 set_target_properties(${PROJECT_NAME} PROPERTIES WIN32_EXECUTABLE $<CONFIG:Release>)
 
 target_include_directories (${COMP3D_TARGET} PRIVATE src gui . ${PROJECT_BINARY_DIR} ${PROJ_INCLUDE_DIRS})
