@@ -12,6 +12,10 @@ The computation is done in a local 3D system based on an oblique stereographic p
 Features
 ================
 
+- simple graphical user interface (see :ref:`gui`)
+
+- html interactive report (see :ref:`out-report`)
+
 - simple input text format (see :ref:`input-files`)
 
 - input/output in any projection (see :ref:`georef-proj`)
@@ -42,7 +46,7 @@ Features
 
 - relative precision export (see :ref:`relative-precision`)
 
-- possibility of integrating an automatic pipeline (see :ref:`automatization`)
+- pipeline integration, command line interface (see :ref:`automatization`)
 
 - and more
 

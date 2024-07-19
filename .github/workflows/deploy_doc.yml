@@ -34,10 +34,10 @@ jobs:
         cd doc_uni
         ./build_doc.sh
 
-    - name: Readme to html
+    - name: website.md to html
       run: |
         mkdir -p website
-        pandoc -s --metadata title="Comp3D" -f gfm README.md -o website/index.html -c data/comp3d_website.css && cp -R data/ *.md website
+        pandoc -s --metadata title="Comp3D" -f gfm data/website.md -H data/website_header.html -o website/index.html -c data/comp3d_website.css && cp -R data/ website
         cp -R doc_uni/en/html website/doc
         
     - name: Setup Pages

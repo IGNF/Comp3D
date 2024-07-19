@@ -3,21 +3,19 @@
 **Comp3D** is an open-source micro-geodesy compensation software that enables computation on a limited spread network (few kilometers) using a global 3D least-squares bundle adjustment on several topometric observation types.
 The computation is done in a local 3D system based on an oblique stereographic projection with a spherical Earth model.
 
-Copyright 1992-2024 [IGN France](https://www.ign.fr/), licensed under **GPLv3** license, see [LICENSE.md](LICENSE.md).
+Copyright 1992-2024 [IGN France](https://www.ign.fr/), licensed under **GPLv3** license, see [LICENSE.md](https://github.com/IGNF/Comp3D/blob/main/LICENSE.md).
 
 
 Documentation
 -------------
-Website:
-[ignf.github.io/Comp3D](https://ignf.github.io/Comp3D)
-
-User documentation:
+User documentation is accessible here:
 [IGNF.github.io/Comp3D/doc](https://IGNF.github.io/Comp3D/doc)
-or offline from *Comp3D>Help* menu.
+
+or via *Comp3D>Help* menu.
 
 
-Source files
-------------
+Official repository
+-------------------
 
 [github.com/IGNF/Comp3D](https://github.com/IGNF/Comp3D)
 
@@ -26,27 +24,37 @@ Installation
 
 Get the latest compiled version: [github.com/IGNF/Comp3D/releases](https://github.com/IGNF/Comp3D/releases)
 
-### Windows
 
-Extract the archive and run *Comp3D.exe*.
+Features
+--------
 
+- simple graphical user interface
+- html interactive report
+- simple input text format
+- input/output in any projection
+- topometric observations
+- subframes adjustment
+- rotation axes determination
+- vertical deflection
+- equality constraints
+- GNSS baselines
+- error detection assistance
+- many statistical indicators
+- internal constraints
+- simulations
+- [Sinex format](https://www.iers.org/IERS/EN/Organization/AnalysisCoordinator/SinexFormat/sinex.html) export
+- coordinates constraints covariance matrix input
+- relative precision export
+- pipeline integration, command line interface
 
-### AppImage (any Linux)
-```shell
-sudo apt install libfuse2
+Screenshots
+-----------
 
-chmod a+x Comp3d5???-x86_64.AppImage
-./Comp3d5???-x86_64.AppImage
-```
+![gui](data/gui.png)
 
-### Deb package on Debian/Ubuntu
-```shell
-sudo apt install libfuse2
+![gui](data/report.png)
 
-sudo apt install ./comp3d???.deb
-```
-
-Deb installation creates a `comp3d5` link targeting the last Comp3D installation.
+![gui](data/map.png)
 
 
 Getting started
@@ -62,19 +70,19 @@ Compilation
 
 Contributors
 ------------
-Refer to [CONTRIBUTORS.md](CONTRIBUTORS.md)
+Refer to [CONTRIBUTORS.md](https://github.com/IGNF/Comp3D/blob/main/CONTRIBUTORS.md)
 
 
 Contributing
 ------------
-Refer to [CONTRIBUTING.md](CONTRIBUTING.md)
+Refer to [CONTRIBUTING.md](https://github.com/IGNF/Comp3D/blob/main/CONTRIBUTING.md)
 
 
 License
 -------
-Comp3D is provided with absolutely no warranty, under **GPLv3** license, see [LICENSE.md](LICENSE.md).
+Comp3D is provided with absolutely no warranty, under **GPLv3** license, see [LICENSE.md](https://github.com/IGNF/Comp3D/blob/main/LICENSE.md).
 
-Refer to [NOTICE.md](NOTICE.md) for the embedded and linked libraries.
+Refer to [NOTICE.md](https://github.com/IGNF/Comp3D/blob/main/NOTICE.md) for the embedded and linked libraries.
 
 
 How to Cite
