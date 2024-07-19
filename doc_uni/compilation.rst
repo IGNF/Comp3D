@@ -104,11 +104,12 @@ Windows
  - install *git* (https://git-scm.com/download/win)
  - install *msvc++* community edition (https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio, https://visualstudio.microsoft.com/en/downloads/)
  - install *cmake* (https://cmake.org/download/), add it to system *PATH*
+ - Download PROJ grids from https://download.osgeo.org/proj/proj-datumgrid-1.8.zip and unzip this file in a temporary directory
 
 vcpkg
 ~~~~~
 
-Choose a directory for vcpkg (here marked \*VCPKG_DIR\*)
+Choose a directory to install vcpkg in (here marked \*VCPKG_DIR\*)
 
 .. code-block:: bash
 
@@ -127,6 +128,10 @@ Configure Comp3D
     cd build
     cmake .. -DCMAKE_TOOLCHAIN_FILE=*VCPKG_DIR*/vcpkg/scripts/buildsystems/vcpkg.cmake
 
+(The first time, this configuration will be very long due to the QT5 donwload and compilation)
+
+Copy all the PROJ grids files previously downloaded in the subdirectory proj/ (just created by cmake)
+
 
 Configure tests
 ~~~~~~~~~~~~~~~
@@ -138,6 +143,7 @@ Configure tests
     cd build
     cmake .. -DCMAKE_TOOLCHAIN_FILE=*VCPKG_DIR*/vcpkg/scripts/buildsystems/vcpkg.cmake
 
+Copy all the PROJ grids files previously downloaded in the subdirectory proj/ (just created by cmake)
 
 
 .. _compile:
@@ -188,7 +194,7 @@ Then run the tests from ``Comp3D/tests/`` directory:
 
 .. code-block:: bash
 
-    ./build/Comp3D_tests.exe
+    ./build/Release/Comp3D_tests.exe
 
 
 
@@ -246,7 +252,7 @@ Linux dependencies:
 
     sudo apt install python3-stemmer qttranslations5-l10n
 
-On any OS:
+On any OS (python3 must be installed):
 
 .. code-block:: bash
 
@@ -267,7 +273,6 @@ On Windows:
 
     build_doc.bat
 
-|c3| must then be compiled to take into account the new user documentation.
 
 
 Math documentation
