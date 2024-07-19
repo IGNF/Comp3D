@@ -104,7 +104,6 @@ Windows
  - install *git* (https://git-scm.com/download/win)
  - install *msvc++* community edition (https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio, https://visualstudio.microsoft.com/en/downloads/)
  - install *cmake* (https://cmake.org/download/), add it to system *PATH*
- - Download PROJ grids from https://download.osgeo.org/proj/proj-datumgrid-1.8.zip and unzip this file in a temporary directory
 
 vcpkg
 ~~~~~
@@ -130,8 +129,6 @@ Configure Comp3D
 
 (The first time, this configuration will be very long due to the QT5 donwload and compilation)
 
-Copy all the PROJ grids files previously downloaded in the subdirectory proj/ (just created by cmake)
-
 
 Configure tests
 ~~~~~~~~~~~~~~~
@@ -142,8 +139,6 @@ Configure tests
     mkdir build
     cd build
     cmake .. -DCMAKE_TOOLCHAIN_FILE=*VCPKG_DIR*/vcpkg/scripts/buildsystems/vcpkg.cmake
-
-Copy all the PROJ grids files previously downloaded in the subdirectory proj/ (just created by cmake)
 
 
 .. _compile:

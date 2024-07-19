@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'gh-tests'
 
 env:
   PROJ_URL: https://download.osgeo.org/proj/proj-9.3.1.tar.gz
@@ -171,21 +172,15 @@ jobs:
     - name: Install PROJ with miniconda
       run: conda install -y curl proj boost eigen
       
-    - name: Install proj data
-      shell: bash
-      run: |
-        curl -sL ${PROJDATA_URL} -o proj-data.zip
-        unzip proj-data.zip -d proj-data
-
     - name: Build Comp3D
-      shell: cmd
+      shell: bash
       run: |
         mkdir -p autobuild
         cd autobuild
         cmake .. -DCMAKE_PREFIX_PATH=C:/Miniconda/envs/test/Library -DCOMP3D_DOC_DIR=doc
         cmake --build . --config Release
-        cp -a C:/Miniconda/envs/test/Library/share/proj Release/
-        cp ../proj-data/* Release/proj/
+        cp -a proj/ Release/
+        cp -a C:/Miniconda/envs/test/Library/share/proj/ Release/
 
     - name: Build tests
       working-directory: ./tests
@@ -193,11 +188,9 @@ jobs:
       run: |
         mkdir -p autobuild
         cd autobuild
-        pwd
         cmake .. -DCMAKE_PREFIX_PATH=C:/Miniconda/envs/test/Library
         cmake --build . --config Release
-        cp -a C:/Miniconda/envs/test/Library/share/proj Release/
-        cp ../../proj-data/* Release/proj/
+        cp -a C:/Miniconda/envs/test/Library/share/proj/ .
 
     - name: Run tests
       id: tests

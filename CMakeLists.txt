@@ -95,6 +95,21 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
+# Windows: install PROJ grids
+if (CMAKE_HOST_WIN32)
+  include(FetchContent)
+  if (CMAKE_VERSION VERSION_GREATER_EQUAL "3.24.0")
+     cmake_policy(SET CMP0135 OLD)
+  endif()
+
+  FetchContent_Declare(
+    proj-data
+    URL      https://download.osgeo.org/proj/proj-datumgrid-1.8.zip
+  )
+  FetchContent_MakeAvailable(proj-data)
+  file(COPY ${proj-data_SOURCE_DIR}/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/proj)
+endif()
+
 
 #######################################################
 ##        Compilation toolchain
