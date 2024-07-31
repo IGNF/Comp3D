@@ -126,7 +126,7 @@ const translation_fr={
     "Normalized residuals distribution": "Répartition des résidus normalisés",
     "Not enough observations": "Pas assez d'observations",
     "Not enough redundancy": "Pas assez de redondance",
-    "Not vericalized": "Non verticalisé",
+    "Not verticalized": "Non verticalisé",
     "Number and nature of active observations": "Nombre et nature des observations actives",
     "Obs": "Obs",
     "Observation": "Observation",
@@ -3110,7 +3110,7 @@ function show_similarities(){
     let td_vert=document.createElement("td");
     td_vert.setAttribute('rowspan',2);
     td_vert.title=_("Is subframe z forced to be aligned with vertical?");
-    td_vert.innerHTML=(basc.vertical?_("Verticalized"):_("Not vericalized"))
+    td_vert.innerHTML=(basc.vertical?_("Verticalized"):_("Not verticalized"))
     new_tr.appendChild(td_vert);
 
     //Case T
