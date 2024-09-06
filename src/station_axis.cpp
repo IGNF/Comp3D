@@ -334,7 +334,7 @@ bool Station_Axis::read_obs(std::string line,
             for (auto &aobs: target.allAxisObs)
             {
             #ifdef INFO_AXE
-                std::cout<<"Checking "<<aobs->getPosNum()<<"-"<<target->getTargetNum()<<" "<<aobs->getPt()->name<<"\n";
+                std::cout<<"Checking "<<aobs.getPosNum()<<"-"<<target.getTargetNum()<<" "<<aobs.getPt()->name<<"\n";
             #endif
                 ret = pointsSet.insert(aobs.getPt()->name);
                 if (!ret.second)
@@ -532,6 +532,9 @@ bool Station_Axis::initialize(bool verbose)
                                     origin()->name.c_str());
         return false;
     }
+#ifdef INFO_AXE
+    std::cout<<"Station_Axis::initialize best_target_wingspan: "<<best_target_wingspan<<"\n";
+#endif
 
     //get 3 good positions of that target
     auto bestPos=best_target->get3BestPos();

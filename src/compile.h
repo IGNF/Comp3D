@@ -42,7 +42,7 @@
 
 
 //---------------------------------- Settings ------------------------------------
-#define COMP3D_VERSION "COMP3D v5.23dev" "-PROJ " PROJ_VERSION "-" COMPILED_FOR
+#define COMP3D_VERSION "COMP3D v5.23rc1" "-PROJ " PROJ_VERSION "-" COMPILED_FOR
 #define COMP3D_COPYRIGHT "Copyright 1992-2024 IGN France www.ign.fr"
 #define COMP3D_LICENSE "Provided with absolutely no warranty, under GPLv3 license"
 #define COMP3D_CONTACT "comp3d@ign.fr"
