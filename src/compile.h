@@ -132,10 +132,6 @@ static std::string COMP3D_OPTIONS=""
 //average weight is around 0.0003 => square
 constexpr double WEIGHT_FACTOR = 0.0000001;
 
-//minimal value to accept a pivot during Gauss-Jordan Reduction
-//in delphi comp it is 1e-19!
-constexpr double PIVOT_MIN = 1e-9;
-
 //internal constraints sigma
 constexpr double  INTERNALCONSTR_SIGMA = 1e-7;
 

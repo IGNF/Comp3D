@@ -653,8 +653,6 @@ bool LeastSquares::prepareSolve(spSolver &solver)
 
     solver.compute(AtPA);
     if(solver.info()!=Eigen::Success) {
-        // decomposition failed
-        //Project::theInfo()->error(INFO_LS,1,QT_TRANSLATE_NOOP("QObject","SparseQR decomposition failed."));
         computeKernel();
         Project::theInfo()->error(INFO_LS,1,
                                   QT_TRANSLATE_NOOP("QObject","Normal matrix stability test failed!"));
