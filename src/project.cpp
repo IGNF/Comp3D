@@ -1444,13 +1444,23 @@ void Project::outputConversion()
     }
 }
 
-void Project::updateEllipsoids()
+bool Project::updateEllipsoids()
 {
     biggestEllips = 0;
-    if (!invertedMatrix) return;
+    if (!invertedMatrix) return true;
 
     for (auto & point : points)
-        point.set_posteriori_variance(lsquares.Qxx);
+    {
+        bool ptok = point.set_posteriori_variance(lsquares.Qxx);
+        if (!ptok && std::isfinite(lsquares.sigma_0))
+        {
+            Project::theInfo()->warning(INFO_LS,1,
+                                        QT_TRANSLATE_NOOP("QObject","Error on output sigmas of point %s: %s"),
+                                        point.name.c_str(), point.ellipsoid.sigmasToString(lsquares.sigma_0).c_str());
+            lsquares.computeKernel();
+            return false;
+        }
+    }
 
     int nbrEllipsTooBig = 0;
     Point *ptbig = nullptr;
@@ -1478,7 +1488,9 @@ void Project::updateEllipsoids()
         Project::theInfo()->warning(INFO_LS,1,
                                     QT_TRANSLATE_NOOP("QObject","and sigma0 = %.3f"),
                                     lsquares.sigma_0);
+        lsquares.computeKernel();
     }
+    return true;
 }
 
 bool Project::computation(bool invert, bool saveNew)

@@ -80,7 +80,7 @@ std::string Point::toString() const
     if (ellipsoid.isSet())
     {
         oss<<"   var:";
-        for (int i=0;i<dimension;i++)
+        for (int i=0;i<3;i++)
             oss<<" "<<ellipsoid.get_variance(i);
     }
     return oss.str();
@@ -468,7 +468,7 @@ bool Point::initCoordinates()
     return true;
 }
 
-void Point::set_posteriori_variance(const MatX &Qxx)
+bool Point::set_posteriori_variance(const MatX &Qxx)
 {
     for (int i=0;i<3;i++)
     {
@@ -484,6 +484,14 @@ void Point::set_posteriori_variance(const MatX &Qxx)
     //std::cout<<"For point "<<name<<":\n";
 
     ellipsoid.compute_eigenvalues(Project::theone()->lsquares.sigma_0);
+    for (int i=0;i<3;i++)
+    {
+        if (!std::isfinite(ellipsoid.get_ellipsAxe(i)))
+            return false;
+        if (!std::isfinite(ellipsoid.get_variance(i)))
+            return false;
+    }
+    return true;
 }
 
 void Point::create_coordinates_constraits()

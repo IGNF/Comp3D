@@ -66,7 +66,7 @@ public:
     bool exportSightMatrix(const std::string &filename);
 
     bool computation(bool invert, bool saveNew);
-    void updateEllipsoids();
+    bool updateEllipsoids(); //< return false if error
 
     bool saveasJSON();
 

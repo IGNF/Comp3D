@@ -120,6 +120,7 @@ public:
     bool m_interrupted;//<if computatio interrupted by max iter, no redondancy or user interruption (button)
     bool m_internalConstr;//m_internalConstr is update during initialize(), and used in iterate
     int rankDeficiency;//< if AtPA rank is not equal to cols
+    bool computeKernel();//returns true if dim(kern)>0
 
 protected:
     bool prepareSolve(spSolver &solver);
@@ -134,7 +135,6 @@ protected:
     bool testStability(spSolver &solver);
 #endif
 
-    bool computeKernel();//returns true if dim(kern)>0
     void kernelMessage();
     MatrixOrdering matrixOrdering;
     std::vector <std::unique_ptr<Obs> > ICobs;//internal constraints obs

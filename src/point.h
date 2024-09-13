@@ -116,7 +116,7 @@ public:
                             STATION_CREATION_MODE creation_mode=STATION_CREATION_MODE::ST_CREAT_ALLOWED);//where to add new observations
 
     bool initCoordinates();
-    void set_posteriori_variance(const MatX &Qxx);
+    bool set_posteriori_variance(const MatX &Qxx); //< return false if error
     std::string toString() const;
 
     std::vector<Point *> pointsMeasured() const;//<list of measured point from this

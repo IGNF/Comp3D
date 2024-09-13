@@ -757,7 +757,7 @@ bool LeastSquares::iterate(bool invert, COMPUTE_TYPE compute_type)
             m_interrupted = true;
         //std::cout<<error_msg.str()<<std::flush;
         //project->outputConversion();
-        project->updateEllipsoids();
+        m_calculusError = m_calculusError || !project->updateEllipsoids();
         return !m_calculusError;
     }
 
@@ -936,7 +936,10 @@ bool LeastSquares::iterate(bool invert, COMPUTE_TYPE compute_type)
     if (!m_calculusError)
     {
         project->outputConversion();
-        if (invert) project->updateEllipsoids();
+        if (invert)
+        {
+            m_calculusError = m_calculusError || !project->updateEllipsoids();
+        }
     }
     return !m_calculusError;
 }
