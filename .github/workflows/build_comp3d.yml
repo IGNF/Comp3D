@@ -1,10 +1,18 @@
-name: Build MMVII Linux/Windows
+name: Build Comp3D Linux/Windows
 
 on:
   push:
     branches:
       - 'main'
-      - 'gh-tests'
+    tags:
+      - 'v*'
+  release:
+    types:
+      - created
+
+permissions:
+  contents: write
+  packages: write
 
 env:
   PROJ_URL: https://download.osgeo.org/proj/proj-9.3.1.tar.gz
@@ -44,11 +52,24 @@ jobs:
     needs: build_doc
 
     steps:
-        
+
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
         fetch-tags: true
+
+    - name: Set release variables
+      id: release_vars
+      run: |
+        if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]]; then
+          echo "release_name=Comp3D linux - Latest" >> $GITHUB_ENV
+          echo "release_tag=Comp3D_linux" >> $GITHUB_ENV
+          echo "release_draft=true" >> $GITHUB_ENV
+        else
+          echo "release_name=Comp3D linux - ${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "release_tag=${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "release_draft=false" >> $GITHUB_ENV
+        fi
 
     - name: Install deps
       run: |
@@ -139,12 +160,13 @@ jobs:
     - name: Upload Comp3D
       uses: softprops/action-gh-release@v2
       with:
-          name: 'Comp3D linux - Latest'
-          tag_name: Comp3D_linux
+          name: ${{ env.release_name }}
+          tag_name: ${{ env.release_tag }}
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
             comp3d_*_linux.tgz
             comp3d_*_linux_deb.tgz
+          draft: ${{ env.release_draft }}
           
 
   build_win:
@@ -153,10 +175,25 @@ jobs:
     needs: build_doc
 
     steps:
+
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
         fetch-tags: true
+
+    - name: Set release variables
+      id: release_vars
+      shell: bash
+      run: |
+        if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]]; then
+          echo "release_name=Comp3D win - Latest" >> $GITHUB_ENV
+          echo "release_tag=Comp3D_win" >> $GITHUB_ENV
+          echo "release_draft=true" >> $GITHUB_ENV
+        else
+          echo "release_name=Comp3D win - ${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "release_tag=${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "release_draft=false" >> $GITHUB_ENV
+        fi
 
     - name: Install Qt
       uses: jurplel/install-qt-action@v3
@@ -236,9 +273,10 @@ jobs:
     - name: Upload Comp3D
       uses: softprops/action-gh-release@v2
       with:
-          name: 'Comp3D win - Latest'
-          tag_name: Comp3D_win
+          name: ${{ env.release_name }}
+          tag_name: ${{ env.release_tag }}
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
             comp3d_*_win.zip
+          draft: ${{ env.release_draft }}
 
