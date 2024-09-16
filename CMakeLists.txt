@@ -270,6 +270,8 @@ set(UI_FILES
     gui/sinexdialog.ui
 )
 
+set (ALL_SOURCES ${SOURCES} ${SOURCES_GUI} ${HEADERS} ${UI_FILES})
+
 
 #######################################################
 ##        Translation
@@ -285,21 +287,32 @@ qt5_add_translation(QM_FILES ${TS_FILES})
 set (QM_FILES_QRC ${TRANSLATIONS})
 list (TRANSFORM QM_FILES_QRC PREPEND "<file>i18n/")
 list (TRANSFORM QM_FILES_QRC APPEND ".qm</file>\n")
+SET(WITHOUT_SEMICOLON "")
+FOREACH(file ${QM_FILES_QRC})
+	SET(WITHOUT_SEMICOLON "${WITHOUT_SEMICOLON}${file}")
+ENDFOREACH(file)
+
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/cmake_qm.qrc"
 "
 <RCC>
   <qresource>
-  ${QM_FILES_QRC}
+  ${WITHOUT_SEMICOLON}
   </qresource>
 </RCC>
 ")
+
+add_custom_target(lupdate
+    COMMAND ${Qt5_LUPDATE_EXECUTABLE} ${ALL_SOURCES} -ts ${TS_FILES}
+    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+    COMMENT "Updating translations"
+)
 
 #######################################################
 ##        Target
 #######################################################
 
 add_executable(${COMP3D_TARGET}
-    ${SOURCES} ${SOURCES_GUI} ${HEADERS} ${UI_FILES}
+    ${ALL_SOURCES}
     comp3d.rc ressource.qrc ${CMAKE_BINARY_DIR}/cmake_qm.qrc ${CMAKE_BINARY_DIR}/git_revision.cpp
 )
 

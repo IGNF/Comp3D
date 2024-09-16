@@ -91,6 +91,7 @@ fs::path selfExecPath()
     }
     delete[] buffer;
     return path;
+}
 #else
 #  error Please implement selfExecPath() for your OS
 #endif
