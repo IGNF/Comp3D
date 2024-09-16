@@ -24,15 +24,12 @@ Dependencies:
     sudo apt install qttranslations5-l10n
 
 
-Update list of strings to translate: 
+Update list of strings to translate by using the lupdate target (in the build directory) :
 
 .. code-block:: bash
 
-    lupdate Comp3D_cpp.pro
+    cmake --build . --target lupdate
 
-or, in *Qt Creator*:
-
-  ``Tools>External>Linguist>lupdate``
 
 Then run the the *linguist* GUI via
 
@@ -51,7 +48,17 @@ Add a new language translation
 Add to the project the Qt ressources files corresponding to the language: *qt_XX.qm* and *qtbase_XX.qm* (that can be found in *qttranslations-opensource-src-5.X.X.zip*)
 in *gui/translations* and in *ressource.qrc*.
 
-Create a file named *gui/translations/Comp3D_??.ts*.
+Add the language 2-letters code in CMakeLists.txt:
+
+.. code-block:: bash
+
+    set (TRANSLATIONS fr XX)
+
+and run lupdate:
+
+.. code-block:: bash
+
+    cmake --build . --target lupdate
 
 Insert the language name and its abbrevation in the following lines of *src/compile.h*:
 
