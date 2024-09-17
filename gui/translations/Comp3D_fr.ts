@@ -71,17 +71,17 @@
         <translation>Fichier en cartésiennes</translation>
     </message>
     <message>
-        <location filename="../applytransfodialog.cpp" line="41"/>
+        <location filename="../applytransfodialog.cpp" line="55"/>
         <source>Select transformation XYZ file</source>
         <translation>Sélectionner fichier XYZ</translation>
     </message>
     <message>
-        <location filename="../applytransfodialog.cpp" line="43"/>
+        <location filename="../applytransfodialog.cpp" line="57"/>
         <source>XYZ (*.xyz)</source>
         <translation>XYZ (*.xyz)</translation>
     </message>
     <message>
-        <location filename="../applytransfodialog.cpp" line="55"/>
+        <location filename="../applytransfodialog.cpp" line="69"/>
         <source>Select cartesian file to transform</source>
         <translation>Sélectionner fichier cartésien à transformer</translation>
     </message>
@@ -90,27 +90,27 @@
         <translation type="vanished">3D (*.3d)</translation>
     </message>
     <message>
-        <location filename="../applytransfodialog.cpp" line="57"/>
+        <location filename="../applytransfodialog.cpp" line="71"/>
         <source>Cartesian (*.txt *.xyz *.XYZ);;All (*.*)</source>
         <translation>Coord cartésiennes (*.txt *.xyz *.XYZ);;Tous (*.*)</translation>
     </message>
     <message>
-        <location filename="../applytransfodialog.cpp" line="95"/>
+        <location filename="../applytransfodialog.cpp" line="109"/>
         <source>Output file</source>
         <translation>Fichier de sortie</translation>
     </message>
     <message>
-        <location filename="../applytransfodialog.cpp" line="97"/>
+        <location filename="../applytransfodialog.cpp" line="111"/>
         <source>Any (*.*)</source>
         <translation>Tous (*.*)</translation>
     </message>
     <message>
-        <location filename="../applytransfodialog.cpp" line="129"/>
+        <location filename="../applytransfodialog.cpp" line="143"/>
         <source>Write OK</source>
         <translation>Écriture OK</translation>
     </message>
     <message>
-        <location filename="../applytransfodialog.cpp" line="129"/>
+        <location filename="../applytransfodialog.cpp" line="143"/>
         <source>Points written to </source>
         <translation>Points écrits dans </translation>
     </message>
@@ -475,7 +475,7 @@
         <translation>&amp;Compensation</translation>
     </message>
     <message>
-        <location filename="../configdialog.cpp" line="178"/>
+        <location filename="../configdialog.cpp" line="183"/>
         <source>Maximum Iterations</source>
         <translation>Nombre d&apos;itérations maximum</translation>
     </message>
@@ -515,7 +515,7 @@
         <translation type="vanished">Sélectionner fichier COR source</translation>
     </message>
     <message>
-        <location filename="../configdialog.cpp" line="115"/>
+        <location filename="../configdialog.cpp" line="120"/>
         <source>COR (*.cor)</source>
         <translation>COR (*.cor)</translation>
     </message>
@@ -524,7 +524,7 @@
         <translation type="vanished">Sélectionner fichier OBS source</translation>
     </message>
     <message>
-        <location filename="../configdialog.cpp" line="128"/>
+        <location filename="../configdialog.cpp" line="133"/>
         <source>OBS (*.obs)</source>
         <translation>OBS (*.obs)</translation>
     </message>
@@ -533,17 +533,17 @@
         <translation type="vanished">Sélectionner fichier VarCovar principal</translation>
     </message>
     <message>
-        <location filename="../configdialog.cpp" line="113"/>
+        <location filename="../configdialog.cpp" line="118"/>
         <source>Select main COR file</source>
         <translation>Sélectionner fichier COR principal</translation>
     </message>
     <message>
-        <location filename="../configdialog.cpp" line="126"/>
+        <location filename="../configdialog.cpp" line="131"/>
         <source>Select main OBS file</source>
         <translation>Sélectionner fichier OBS principal</translation>
     </message>
     <message>
-        <location filename="../configdialog.cpp" line="139"/>
+        <location filename="../configdialog.cpp" line="144"/>
         <source>Select COR covariance matrix file</source>
         <translation>Sélectionner fichier matrice de covariance du COR</translation>
     </message>
@@ -552,12 +552,12 @@
         <translation type="obsolete">Sélectionner fichier matrice de covariance principal</translation>
     </message>
     <message>
-        <location filename="../configdialog.cpp" line="141"/>
+        <location filename="../configdialog.cpp" line="146"/>
         <source>CSV (*.csv)</source>
         <translation>CSV (*.csv)</translation>
     </message>
     <message>
-        <location filename="../configdialog.cpp" line="176"/>
+        <location filename="../configdialog.cpp" line="181"/>
         <source>Number of draws</source>
         <translation>Nombre de tirages</translation>
     </message>
@@ -695,54 +695,54 @@
         <translation type="vanished">Cood cartésiennes (*.3d *.xyz);;Tous (*.*)</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="54"/>
-        <location filename="../conversiondialog.cpp" line="125"/>
-        <location filename="../conversiondialog.cpp" line="131"/>
-        <location filename="../conversiondialog.cpp" line="133"/>
-        <location filename="../conversiondialog.cpp" line="145"/>
-        <location filename="../conversiondialog.cpp" line="212"/>
-        <location filename="../conversiondialog.cpp" line="218"/>
-        <location filename="../conversiondialog.cpp" line="220"/>
+        <location filename="../conversiondialog.cpp" line="69"/>
+        <location filename="../conversiondialog.cpp" line="140"/>
+        <location filename="../conversiondialog.cpp" line="146"/>
+        <location filename="../conversiondialog.cpp" line="148"/>
+        <location filename="../conversiondialog.cpp" line="160"/>
+        <location filename="../conversiondialog.cpp" line="227"/>
+        <location filename="../conversiondialog.cpp" line="233"/>
+        <location filename="../conversiondialog.cpp" line="235"/>
         <source>Conversion</source>
         <translation>Conversion</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="59"/>
-        <location filename="../conversiondialog.cpp" line="150"/>
+        <location filename="../conversiondialog.cpp" line="74"/>
+        <location filename="../conversiondialog.cpp" line="165"/>
         <source>Choose output files suffix</source>
         <translation>Choisissez le suffixe des fichiers de sortie</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="60"/>
-        <location filename="../conversiondialog.cpp" line="151"/>
+        <location filename="../conversiondialog.cpp" line="75"/>
+        <location filename="../conversiondialog.cpp" line="166"/>
         <source>Suffix:</source>
         <translation>Suffixe :</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="111"/>
-        <location filename="../conversiondialog.cpp" line="129"/>
-        <location filename="../conversiondialog.cpp" line="198"/>
-        <location filename="../conversiondialog.cpp" line="216"/>
+        <location filename="../conversiondialog.cpp" line="126"/>
+        <location filename="../conversiondialog.cpp" line="144"/>
+        <location filename="../conversiondialog.cpp" line="213"/>
+        <location filename="../conversiondialog.cpp" line="231"/>
         <source>Points processed: %1</source>
         <translation>Points traités : %1</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="227"/>
+        <location filename="../conversiondialog.cpp" line="242"/>
         <source>Select proj coord files</source>
         <translation>Sléctionner les fichiers de coordonnées projetées</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="229"/>
+        <location filename="../conversiondialog.cpp" line="244"/>
         <source>Proj coord (*.cor *.new *.txt);;All (*.*)</source>
         <translation>Coord en projection (*.cor *.new *.txt);;Tous (*.*)</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="251"/>
+        <location filename="../conversiondialog.cpp" line="266"/>
         <source>Select cartesian coord files</source>
         <translation>Sléctionner les fichiers de coordonnées cartésiennes</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="253"/>
+        <location filename="../conversiondialog.cpp" line="268"/>
         <source>Cartesian (*.txt *.xyz *.XYZ);;All (*.*)</source>
         <translation>Coord cartésiennes (*.txt *.xyz *.XYZ);;Tous (*.*)</translation>
     </message>
@@ -751,14 +751,14 @@
         <translation type="vanished">Choix du fichier de coord cartésiennes en sortie</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="131"/>
-        <location filename="../conversiondialog.cpp" line="218"/>
+        <location filename="../conversiondialog.cpp" line="146"/>
+        <location filename="../conversiondialog.cpp" line="233"/>
         <source>%1 points successfully converted.</source>
         <translation>%1 points convertis avec succès.</translation>
     </message>
     <message>
-        <location filename="../conversiondialog.cpp" line="125"/>
-        <location filename="../conversiondialog.cpp" line="212"/>
+        <location filename="../conversiondialog.cpp" line="140"/>
+        <location filename="../conversiondialog.cpp" line="227"/>
         <source>Error: impossible to open file %1</source>
         <translation>Error: impossible d&apos;ouvrir le fichier %1</translation>
     </message>
@@ -915,12 +915,12 @@
         <translation type="vanished">Erreur sur les paramètres</translation>
     </message>
     <message>
-        <location filename="../dialogpreferences.cpp" line="38"/>
+        <location filename="../dialogpreferences.cpp" line="53"/>
         <source>Can&apos;t save language preference</source>
         <translation>Impossible d&apos;enregistrer le choix de langue</translation>
     </message>
     <message>
-        <location filename="../dialogpreferences.cpp" line="38"/>
+        <location filename="../dialogpreferences.cpp" line="53"/>
         <source>Preferences error</source>
         <translation>Erreur de préférences</translation>
     </message>
@@ -942,9 +942,9 @@
     <name>ExportCoordDialog</name>
     <message>
         <location filename="../exportcoorddialog.ui" line="14"/>
-        <location filename="../exportcoorddialog.cpp" line="101"/>
-        <location filename="../exportcoorddialog.cpp" line="240"/>
-        <location filename="../exportcoorddialog.cpp" line="242"/>
+        <location filename="../exportcoorddialog.cpp" line="116"/>
+        <location filename="../exportcoorddialog.cpp" line="266"/>
+        <location filename="../exportcoorddialog.cpp" line="268"/>
         <source>Export Coordinates</source>
         <translation>Export de coordonnées</translation>
     </message>
@@ -1020,22 +1020,22 @@
         <translation type="vanished">Initiales</translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="60"/>
+        <location filename="../exportcoorddialog.cpp" line="75"/>
         <source>Geographic degdec</source>
         <translation>Géographiques degdec</translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="67"/>
+        <location filename="../exportcoorddialog.cpp" line="82"/>
         <source>Geographic dms</source>
         <translation>Géographiques dms</translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="74"/>
+        <location filename="../exportcoorddialog.cpp" line="89"/>
         <source>Geocentric cartesian</source>
         <translation>Cartésiennes géocentriques</translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="81"/>
+        <location filename="../exportcoorddialog.cpp" line="96"/>
         <source>Global cartesian</source>
         <translation>Cartésiennes globales</translation>
     </message>
@@ -1044,41 +1044,41 @@
         <translation type="vanished">Erreur ! Impossible de créer le fichier : </translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="102"/>
+        <location filename="../exportcoorddialog.cpp" line="117"/>
         <source>Error: impossible to create file </source>
         <translation>Erreur : impossible de créer le fichier </translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="107"/>
+        <location filename="../exportcoorddialog.cpp" line="122"/>
         <source> after computation</source>
         <translation> après calcul</translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="109"/>
+        <location filename="../exportcoorddialog.cpp" line="124"/>
         <source> before computation</source>
         <translation> avant calcul</translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="112"/>
+        <location filename="../exportcoorddialog.cpp" line="127"/>
         <source> with final precisions (factor applied %1)</source>
         <translation> avec précisions finales (facteur appliqué %1)</translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="115"/>
+        <location filename="../exportcoorddialog.cpp" line="130"/>
         <source>* From project %1
 </source>
         <translation>* Projet %1
 </translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="117"/>
+        <location filename="../exportcoorddialog.cpp" line="132"/>
         <source>* project computed on %1 with Comp3D %2
 </source>
         <translation>* projet calculé le %1 avec Comp3D %2
 </translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="242"/>
+        <location filename="../exportcoorddialog.cpp" line="268"/>
         <source>Output files: </source>
         <translation>Fichiers sortis : </translation>
     </message>
@@ -1087,7 +1087,7 @@
         <translation type="vanished">Fichiers écrits : </translation>
     </message>
     <message>
-        <location filename="../exportcoorddialog.cpp" line="240"/>
+        <location filename="../exportcoorddialog.cpp" line="266"/>
         <source>Nothing to export!</source>
         <translation>Rien à exporter !</translation>
     </message>
@@ -1323,22 +1323,22 @@
         <translation>Entrée : fichier ASC</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="46"/>
+        <location filename="../infinityasctobasdialog.cpp" line="61"/>
         <source>Select ASC File</source>
         <translation>Choix du fichier ASC</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="48"/>
+        <location filename="../infinityasctobasdialog.cpp" line="63"/>
         <source>Infinity ASC file(*.asc);;All (*.*)</source>
         <translation>Infinity ASC (*.asc);;Tous (*.*)</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="69"/>
+        <location filename="../infinityasctobasdialog.cpp" line="84"/>
         <source>Infinity ASC to BAS help</source>
         <translation>Aide Infinity ASC vers BAS</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="70"/>
+        <location filename="../infinityasctobasdialog.cpp" line="85"/>
         <source>Converts an ASC file from Leica Infinity GNSS software into a Comp3D GNSS baselines BAS file.
 
 A BAS file is generated for each baselines starting point from the ASC file.
@@ -1349,52 +1349,52 @@ Un fichier .BAS est généré pour chaque point de départ des lignes de base du
 Si le fichier ASC d&apos;entrée contient des hauteurs, cela signifie que ces hauteurs ont été prises en compte lors du calcul de la ligne de base. L&apos;outil ajoute donc ces hauteur sous forme de commentaire et met la hauteur à 0 dans le fichier de sortie BAS.</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="230"/>
+        <location filename="../infinityasctobasdialog.cpp" line="245"/>
         <source>Error reading file &apos;%1&apos;</source>
         <translation>Erreur à la lecture du fichier &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="231"/>
+        <location filename="../infinityasctobasdialog.cpp" line="246"/>
         <source>Can&apos;t open file &apos;%1&apos;</source>
         <translation>Impossible d&apos;ouvrir le fichier &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="232"/>
+        <location filename="../infinityasctobasdialog.cpp" line="247"/>
         <source>No observation found in &apos;%1&apos;</source>
         <translation>Pas observation trouvée dans &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="246"/>
+        <location filename="../infinityasctobasdialog.cpp" line="261"/>
         <source>Overwrite files in %1:</source>
         <translation>Écraser les fichiers de %1 :</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="248"/>
+        <location filename="../infinityasctobasdialog.cpp" line="263"/>
         <source>Overwrite files</source>
         <translation>Écraser les fichier</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="250"/>
+        <location filename="../infinityasctobasdialog.cpp" line="265"/>
         <source>Cancelled.</source>
         <translation>Annulé.</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="263"/>
+        <location filename="../infinityasctobasdialog.cpp" line="278"/>
         <source>Error writting files in %1:</source>
         <translation>Erreur lors de l&apos;écriture des fichiers dans %1 :</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="276"/>
+        <location filename="../infinityasctobasdialog.cpp" line="291"/>
         <source>%1 file(s) written in %2:</source>
         <translation>%1 fichiers(s) écrits dans %2 :</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="269"/>
+        <location filename="../infinityasctobasdialog.cpp" line="284"/>
         <source>Write file error</source>
         <translation>Erreur d&apos;écriture de fichier</translation>
     </message>
     <message>
-        <location filename="../infinityasctobasdialog.cpp" line="287"/>
+        <location filename="../infinityasctobasdialog.cpp" line="302"/>
         <source>%1 pivot(s), %2 baseline(s):</source>
         <translation>%1 pivot(s), %2 ligne(s) de base :</translation>
     </message>
@@ -1494,7 +1494,7 @@ Si le fichier ASC d&apos;entrée contient des hauteurs, cela signifie que ces ha
     <name>MainTables</name>
     <message>
         <location filename="../maintables.ui" line="20"/>
-        <location filename="../maintables.cpp" line="61"/>
+        <location filename="../maintables.cpp" line="77"/>
         <source>Resize/Hide Tables</source>
         <translation>Redimensionner / cacher les tables</translation>
     </message>
@@ -1509,243 +1509,243 @@ Si le fichier ASC d&apos;entrée contient des hauteurs, cela signifie que ces ha
         <translation>Observations</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="126"/>
+        <location filename="../maintables.cpp" line="142"/>
         <source>Final Points</source>
         <translation>Points compensés</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="127"/>
+        <location filename="../maintables.cpp" line="143"/>
         <source>Final Observations</source>
         <translation>Observations compensées</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="129"/>
+        <location filename="../maintables.cpp" line="145"/>
         <source>Initial Points</source>
         <translation>Points initiaux</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="130"/>
+        <location filename="../maintables.cpp" line="146"/>
         <source>Initial Observations</source>
         <translation>Observations initiales</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="136"/>
+        <location filename="../maintables.cpp" line="152"/>
         <source>Name</source>
         <translation>Nom</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="137"/>
+        <location filename="../maintables.cpp" line="153"/>
         <source>Point rank</source>
         <translation>Rang du point</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="137"/>
+        <location filename="../maintables.cpp" line="153"/>
         <source>Point code</source>
         <translation>Code du point</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="137"/>
+        <location filename="../maintables.cpp" line="153"/>
         <source>Point name</source>
         <translation>Nom du point</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="141"/>
+        <location filename="../maintables.cpp" line="157"/>
         <source>Difference between final and initial East coordinate (m)</source>
         <translation>Différence entre les coordonnées finales et initiales en est (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="142"/>
+        <location filename="../maintables.cpp" line="158"/>
         <source>Difference between final and initial North coordinate (m)</source>
         <translation>Différence entre les coordonnées finales et initiales en nord (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="145"/>
+        <location filename="../maintables.cpp" line="161"/>
         <source>Difference between final and initial x (m)</source>
         <translation>Différence entre x final et initial (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="146"/>
+        <location filename="../maintables.cpp" line="162"/>
         <source>Difference between final and initial y (m)</source>
         <translation>Différence entre y final et initial (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="149"/>
+        <location filename="../maintables.cpp" line="165"/>
         <source>ΔEh m</source>
         <translation>ΔEh m</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="150"/>
+        <location filename="../maintables.cpp" line="166"/>
         <source>Difference between final and initial ellipsoidal height (m)</source>
         <translation>Différence entre la hauteur ellipsoïdale finale et initiale (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="152"/>
+        <location filename="../maintables.cpp" line="168"/>
         <source>ΔGh m</source>
         <translation>ΔGh m</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="153"/>
+        <location filename="../maintables.cpp" line="169"/>
         <source>Difference between final and initial orthometric height (m)</source>
         <translation>Différence entre altitude orthométrique finale et initiale (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="158"/>
+        <location filename="../maintables.cpp" line="174"/>
         <source>East (m)</source>
         <translation>Est (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="158"/>
+        <location filename="../maintables.cpp" line="174"/>
         <source>North (m)</source>
         <translation>Nord (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="164"/>
+        <location filename="../maintables.cpp" line="180"/>
         <source>Eh m</source>
         <translation>Eh m</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="165"/>
+        <location filename="../maintables.cpp" line="181"/>
         <source>Ellipsoidal height (m)</source>
         <translation>Hauteur ellipsoïdale (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="167"/>
+        <location filename="../maintables.cpp" line="183"/>
         <source>Gh m</source>
         <translation>Gh m</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="168"/>
+        <location filename="../maintables.cpp" line="184"/>
         <source>Orthometric height (m)</source>
         <translation>Altitude orthométrique (m)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="172"/>
+        <location filename="../maintables.cpp" line="188"/>
         <source>NbObs</source>
         <translation>NbObs</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="176"/>
+        <location filename="../maintables.cpp" line="192"/>
         <source>MSE x mm</source>
         <translation>EMQ x mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="176"/>
+        <location filename="../maintables.cpp" line="192"/>
         <source>MSE y mm</source>
         <translation>EMQ y mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="176"/>
+        <location filename="../maintables.cpp" line="192"/>
         <source>MSE z mm</source>
         <translation>EMQ z mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="177"/>
+        <location filename="../maintables.cpp" line="193"/>
         <source>Mean squared error x (mm)</source>
         <translation>Écart moyen quadratique x mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="177"/>
+        <location filename="../maintables.cpp" line="193"/>
         <source>Mean squared error y (mm)</source>
         <translation>Écart moyen quadratique y mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="177"/>
+        <location filename="../maintables.cpp" line="193"/>
         <source>Mean squared error z (mm)</source>
         <translation>Écart moyen quadratique z mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="179"/>
+        <location filename="../maintables.cpp" line="195"/>
         <source>σ̂x mm</source>
         <translation>σ̂x mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="179"/>
+        <location filename="../maintables.cpp" line="195"/>
         <source>σ̂y mm</source>
         <translation>σ̂y mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="179"/>
+        <location filename="../maintables.cpp" line="195"/>
         <source>σ̂z mm</source>
         <translation>σ̂z mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="173"/>
+        <location filename="../maintables.cpp" line="189"/>
         <source>Number of active observations for this point</source>
         <translation>Nombre d&apos;observations actives sur ce point</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="24"/>
-        <location filename="../maintables.cpp" line="35"/>
+        <location filename="../maintables.cpp" line="40"/>
+        <location filename="../maintables.cpp" line="51"/>
         <source>?</source>
         <translation>?</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="25"/>
+        <location filename="../maintables.cpp" line="41"/>
         <source>3D free point</source>
         <translation>point 3D libre</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="26"/>
+        <location filename="../maintables.cpp" line="42"/>
         <source>3D point with known X,Y,Z</source>
         <translation>point 3D avec X,Y,Z connus</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="27"/>
+        <location filename="../maintables.cpp" line="43"/>
         <source>3D point with known X and Y</source>
         <translation>point 3D avec X et Y connus</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="28"/>
+        <location filename="../maintables.cpp" line="44"/>
         <source>3D point with known Z</source>
         <translation>point 3D avec Z connu</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="29"/>
+        <location filename="../maintables.cpp" line="45"/>
         <source>1D free point</source>
         <translation>point 1D libre</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="30"/>
+        <location filename="../maintables.cpp" line="46"/>
         <source>1D point with known Z </source>
         <translation>point 1D avec Z connu </translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="31"/>
+        <location filename="../maintables.cpp" line="47"/>
         <source>2D free point</source>
         <translation>point 2D libre</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="32"/>
+        <location filename="../maintables.cpp" line="48"/>
         <source>2D point with known X and Y</source>
         <translation>point 2D avec X et Y connus</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="33"/>
+        <location filename="../maintables.cpp" line="49"/>
         <source>Far 2D free point</source>
         <translation>Point 2D libre lointain</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="34"/>
+        <location filename="../maintables.cpp" line="50"/>
         <source>Far 2D point with known X and Y</source>
         <translation>Point 2D lointain avec X et Y connus</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="180"/>
+        <location filename="../maintables.cpp" line="196"/>
         <source>A posteriori sigma x (mm)</source>
         <translation>Sigma x a posteriori (mm)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="180"/>
+        <location filename="../maintables.cpp" line="196"/>
         <source>A posteriori sigma y (mm)</source>
         <translation>Sigma y a posteriori (mm)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="180"/>
+        <location filename="../maintables.cpp" line="196"/>
         <source>A posteriori sigma z (mm)</source>
         <translation>Sigma z a posteriori (mm)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="195"/>
+        <location filename="../maintables.cpp" line="211"/>
         <source>Act</source>
         <translation>Act</translation>
     </message>
@@ -1758,160 +1758,160 @@ Si le fichier ASC d&apos;entrée contient des hauteurs, cela signifie que ces ha
         <translation type="vanished">À</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="195"/>
+        <location filename="../maintables.cpp" line="211"/>
         <source>Type</source>
         <translation>Type</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="195"/>
+        <location filename="../maintables.cpp" line="211"/>
         <source>σ</source>
         <translation>σ</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="195"/>
+        <location filename="../maintables.cpp" line="211"/>
         <source>Res σ</source>
         <translation>Rés σ</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="195"/>
+        <location filename="../maintables.cpp" line="211"/>
         <source>Origin</source>
         <translation>Origine</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="195"/>
+        <location filename="../maintables.cpp" line="211"/>
         <source>Target</source>
         <translation>Cible</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="196"/>
+        <location filename="../maintables.cpp" line="212"/>
         <source>Observation rank</source>
         <translation>Rang de l&apos;observation</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="197"/>
+        <location filename="../maintables.cpp" line="213"/>
         <source>Activate or deactivate observations</source>
         <translation>Activer ou désactiver les observations</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="198"/>
+        <location filename="../maintables.cpp" line="214"/>
         <source>From point</source>
         <translation>Point origine</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="199"/>
+        <location filename="../maintables.cpp" line="215"/>
         <source>To point</source>
         <translation>Point destination</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="200"/>
+        <location filename="../maintables.cpp" line="216"/>
         <source>Observation type</source>
         <translation>Type d&apos;observation</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="201"/>
+        <location filename="../maintables.cpp" line="217"/>
         <source>A priori sigma</source>
         <translation>Sigma a priori</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="203"/>
+        <location filename="../maintables.cpp" line="219"/>
         <source>Initial normalized residual</source>
         <translation>Résidu normalisé initial</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="204"/>
+        <location filename="../maintables.cpp" line="220"/>
         <source>Initial Residual (mm)</source>
         <translation>Résidu initial (mm)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="207"/>
+        <location filename="../maintables.cpp" line="223"/>
         <source>Computed standardized residual, depends on redondancy</source>
         <translation>Résidu normé calculé, dépend de la redondance</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="209"/>
+        <location filename="../maintables.cpp" line="225"/>
         <source>Computed normalized residual</source>
         <translation>Résidu normalisé calculé</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="210"/>
+        <location filename="../maintables.cpp" line="226"/>
         <source>Computed Residual (mm)</source>
         <translation>Résidu calculé (mm)</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="212"/>
+        <location filename="../maintables.cpp" line="228"/>
         <source>Number of active observations for the &apos;To&apos; point</source>
         <translation>Nombre d&apos;observations actives sur le point cible</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="213"/>
+        <location filename="../maintables.cpp" line="229"/>
         <source>Observations redundancy</source>
         <translation>Redondance de l&apos;observation</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="216"/>
+        <location filename="../maintables.cpp" line="232"/>
         <source>Res mm</source>
         <translation>Rés mm</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="216"/>
+        <location filename="../maintables.cpp" line="232"/>
         <source>NbObs To</source>
         <translation>NbObs cible</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="216"/>
+        <location filename="../maintables.cpp" line="232"/>
         <source>Red %</source>
         <translation>Red %</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="247"/>
-        <location filename="../maintables.cpp" line="344"/>
+        <location filename="../maintables.cpp" line="263"/>
+        <location filename="../maintables.cpp" line="360"/>
         <source>From file &apos;%1&apos;, line: %2</source>
         <translation>Du fichier &apos;%1&apos;, ligne: %2</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="249"/>
+        <location filename="../maintables.cpp" line="265"/>
         <source>Auto initialized point</source>
         <translation>Point auto-initialisé</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="538"/>
+        <location filename="../maintables.cpp" line="554"/>
         <source>
 This observation has been modified</source>
         <translation>
 Cette observation a été modifiée</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="543"/>
+        <location filename="../maintables.cpp" line="559"/>
         <source>Click to deactivate this observation</source>
         <translation>Cliquer pour désactiver cette observation</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="545"/>
+        <location filename="../maintables.cpp" line="561"/>
         <source>Click to activate this observation</source>
         <translation>Cliquer pour activer cette observation</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="648"/>
+        <location filename="../maintables.cpp" line="664"/>
         <source>Activate selection</source>
         <translation>Activer la sélection</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="652"/>
+        <location filename="../maintables.cpp" line="668"/>
         <source>Deactivate selection</source>
         <translation>Désactiver la sélection</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="656"/>
+        <location filename="../maintables.cpp" line="672"/>
         <source>Toggle selection activation</source>
         <translation>Inverser l&apos;activation de la sélection</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="663"/>
+        <location filename="../maintables.cpp" line="679"/>
         <source>Open file %1 line %2</source>
         <translation>Ouvrir le fichier %1 à la ligne %2</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="713"/>
+        <location filename="../maintables.cpp" line="729"/>
         <source>Waiting for compensation to finish</source>
         <translation>En attente de la fin de la compensation</translation>
     </message>
@@ -1927,7 +1927,7 @@ Cette observation a été modifiée</translation>
         <translation type="vanished">Observations</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="250"/>
         <source>Reload</source>
         <translation>Recharger</translation>
     </message>
@@ -1936,8 +1936,8 @@ Cette observation a été modifiée</translation>
         <translation type="vanished">Voir le Rapport</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="447"/>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="462"/>
+        <location filename="../mainwindow.cpp" line="470"/>
         <source>Interrupt</source>
         <translation>Interrompre</translation>
     </message>
@@ -2160,7 +2160,7 @@ Cette observation a été modifiée</translation>
         <translation type="vanished">Bienvenue à </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="122"/>
+        <location filename="../mainwindow.cpp" line="137"/>
         <source>About Comp3D</source>
         <translation>À propos de Comp3D</translation>
     </message>
@@ -2169,17 +2169,17 @@ Cette observation a été modifiée</translation>
         <translation type="vanished">Nouveau projet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="236"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>Are you sure you want to close current project and loose unsaved data?</source>
         <translation>Êtes-vous sûr de vouloir quitter le projet en cours et de perdre les données non enregistrées ?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="142"/>
+        <location filename="../mainwindow.cpp" line="157"/>
         <source>New Comp3D project file</source>
         <translation>Nouveau  projet Comp3D</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="184"/>
         <source>Open Comp3D project file</source>
         <translation>Ouvrir un projet Comp3D</translation>
     </message>
@@ -2196,48 +2196,48 @@ Cette observation a été modifiée</translation>
         <translation type="vanished">Démarrer Monte-Carlo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="123"/>
+        <location filename="../mainwindow.cpp" line="138"/>
         <source>Built </source>
         <translation>Compilé le </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="140"/>
+        <location filename="../mainwindow.cpp" line="155"/>
         <source>new</source>
         <translation>nouveau</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="144"/>
-        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="159"/>
+        <location filename="../mainwindow.cpp" line="186"/>
         <source>Comp3D (*.comp)</source>
         <translation>Comp3D (*.comp)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="228"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>Comp3D: %1</source>
         <translation>Comp3D : %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="316"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Setting messages: </source>
         <translation>Messages de mise en place : </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
+        <location filename="../mainwindow.cpp" line="346"/>
         <source>Will stop at next iteration...</source>
         <translation>Le calcul va s&apos;arrêter à la prochaine itération...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="528"/>
+        <location filename="../mainwindow.cpp" line="543"/>
         <source>You need to load a project first.</source>
         <translation>Il faut d&apos;abord ouvrir un projet.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="355"/>
         <source>Project is not ready for computation.</source>
         <translation>Le projet n&apos;est pas prêt à être calculé.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>Computation started...</source>
         <translation>Calcul commencé...</translation>
     </message>
@@ -2294,68 +2294,68 @@ Cette observation a été modifiée</translation>
         <translation type="vanished">Début du calcul du noyau...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="438"/>
         <source>Computation messages: </source>
         <translation>Messages du calcul : </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="449"/>
         <source>End of Computation after %1 iterations, final sigma0=%2. Duration: %3</source>
         <translation>Compensation terminée après %1 itérations, sigma0 final=%2. Durée : %3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
+        <location filename="../mainwindow.cpp" line="453"/>
         <source>End of Computation after %1 iterations. Duration: %2</source>
         <translation>Compensation terminée après %1 itérations. Durée : %2</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="583"/>
         <source>Export Variance-Covariance Matrix File</source>
         <translation>Exporter fichier matrice variance-covariance</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="596"/>
+        <location filename="../mainwindow.cpp" line="611"/>
         <source>Export Sinex File</source>
         <translation>Export de fichier Sinex</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="598"/>
+        <location filename="../mainwindow.cpp" line="613"/>
         <source>Sinex (*.SNX)</source>
         <translation>Sinex (*.SNX)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="621"/>
+        <location filename="../mainwindow.cpp" line="636"/>
         <source>Export relative precision file</source>
         <translation>Fichier d&apos;export des précisions relatives</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="623"/>
+        <location filename="../mainwindow.cpp" line="638"/>
         <source>Text (*.txt)</source>
         <translation>Texte (*.txt)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="640"/>
+        <location filename="../mainwindow.cpp" line="655"/>
         <source>CSV (*.csv);;All (*.*)</source>
         <translation>CSV (*.csv);;Tous (*.*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="707"/>
+        <location filename="../mainwindow.cpp" line="722"/>
         <source>Not compensated</source>
         <translation>Non compensé</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="708"/>
+        <location filename="../mainwindow.cpp" line="723"/>
         <source>There is no compensation. Would you like to export initial coordinates?</source>
         <translation>Il n&apos;y a pas eu de compensation. Voulez-vous exporter les coordonnées initiales ?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="715"/>
+        <location filename="../mainwindow.cpp" line="730"/>
         <source>Output COR file name</source>
         <translation>Nom du fichier COR en sortie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="723"/>
-        <location filename="../mainwindow.cpp" line="737"/>
+        <location filename="../mainwindow.cpp" line="738"/>
+        <location filename="../mainwindow.cpp" line="752"/>
         <source>Export to COR</source>
         <translation>Exporter COR</translation>
     </message>
@@ -2368,17 +2368,17 @@ Cette observation a été modifiée</translation>
         <translation type="vanished">tentative d&apos;ouverture de %1 ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="811"/>
+        <location filename="../mainwindow.cpp" line="826"/>
         <source>No documentation</source>
         <translation>Pas de documentation</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="812"/>
+        <location filename="../mainwindow.cpp" line="827"/>
         <source>Internal error: documentation not found!&lt;p&gt;&lt;p&gt;Documentation should have been installed in &apos;%1&apos;.</source>
         <translation>Erreur interne : documentation introuvable!&lt;p&gt;&lt;p&gt;La documentation devrait être installée dans &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="819"/>
+        <location filename="../mainwindow.cpp" line="834"/>
         <source>Opening %1</source>
         <translation>Overture de %1</translation>
     </message>
@@ -2387,17 +2387,17 @@ Cette observation a été modifiée</translation>
         <translation type="vanished">NEW vers COR</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="739"/>
         <source>Do you want the constrained points to be included in the COR file?</source>
         <translation>Voulez-vous que les points contraints soient inclus dans le fichier COR ?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="725"/>
+        <location filename="../mainwindow.cpp" line="740"/>
         <source>Constrained coordinates will be kept to read ones.</source>
         <translation>Les coordonnées contraintes vont rester à leurs valeurs lues.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="734"/>
+        <location filename="../mainwindow.cpp" line="749"/>
         <source>Done.</source>
         <translation>Fait.</translation>
     </message>
@@ -2412,27 +2412,27 @@ Make sure to check constrained points coordinates!</source>
 Vérifiez les coordonnées des points contraints !</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="758"/>
+        <location filename="../mainwindow.cpp" line="773"/>
         <source>Output Comp3D file name</source>
         <translation>Nom du fichier de sortie de Comp3D</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="760"/>
+        <location filename="../mainwindow.cpp" line="775"/>
         <source>Comp3D project (*.comp);;All (*.*)</source>
         <translation>Projet Comp3D (*.comp);;All (*.*)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="771"/>
+        <location filename="../mainwindow.cpp" line="786"/>
         <source>Project template</source>
         <translation>Modèle de projet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="772"/>
+        <location filename="../mainwindow.cpp" line="787"/>
         <source>Project template saved in </source>
         <translation>Modèle de projet sauvegardé dans </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="717"/>
+        <location filename="../mainwindow.cpp" line="732"/>
         <source>Coord (*.cor);;All (*.*)</source>
         <translation>Coord (*.cor);;Tous (*.*)</translation>
     </message>
@@ -2441,73 +2441,73 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Commence l&apos;élimination de Gauss-Jordan...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="638"/>
+        <location filename="../mainwindow.cpp" line="653"/>
         <source>Parameters variations file name</source>
         <translation>Nom du fichier de variation des paramètres</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="673"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Export Sight Matrix</source>
         <translation>Exporter la Matrice d&apos;intervisibilité</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="570"/>
-        <location filename="../mainwindow.cpp" line="675"/>
+        <location filename="../mainwindow.cpp" line="585"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>CSV (*.csv)</source>
         <translation>CSV (*.csv)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="539"/>
+        <location filename="../mainwindow.cpp" line="554"/>
         <source>You need to invert normal matrix first.</source>
         <translation>Il faut d&apos;abord inverser la matrice normale.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="36"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>&amp;Start Compensation</source>
         <translation>&amp;Démarrer compensation</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="37"/>
+        <location filename="../mainwindow.cpp" line="52"/>
         <source>&amp;Start Propagation</source>
         <translation>&amp;Démarrer propagation</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="38"/>
+        <location filename="../mainwindow.cpp" line="53"/>
         <source>&amp;Start Monte-Carlo</source>
         <translation>&amp;Démarrer Monte-Carlo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>Warnings when reading file: %1</source>
         <translation>Avertissements lors de la lecture du fichier %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="188"/>
+        <location filename="../mainwindow.cpp" line="203"/>
         <source>Impossible to read file: %1</source>
         <translation>Impossible de lire le fichier %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="278"/>
+        <location filename="../mainwindow.cpp" line="293"/>
         <source>Found %1 observations and %2 points.</source>
         <translation>%1 observations et %2 points trouvés.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="296"/>
         <source> Initial sigma0: %3.</source>
         <translation> Sigma0 initial : %3.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="299"/>
         <source>Errors reading data. </source>
         <translation>Erreurs à la lecture des données. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="302"/>
         <source>Warnings reading data. </source>
         <translation>Avertissements à la lecture des données. </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Data reading OK. </source>
         <translation>Lecture des données OK. </translation>
     </message>
@@ -2520,35 +2520,35 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">COV (*.cov)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
-        <location filename="../mainwindow.cpp" line="528"/>
-        <location filename="../mainwindow.cpp" line="539"/>
-        <location filename="../mainwindow.cpp" line="680"/>
+        <location filename="../mainwindow.cpp" line="355"/>
+        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="554"/>
+        <location filename="../mainwindow.cpp" line="695"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>Suspected rank error in normal matrix.</source>
         <translation>Soupçon d&apos;erreur de rang de la matrice normale.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>Begin kernel computation...</source>
         <translation>Début du calcul du noyau...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="406"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>Begin normal matrix inversion...</source>
         <translation>Début de l&apos;inversion de la matrice normale...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="429"/>
         <source>Iteration number %1 finished. Sigma0=%2, convergence=%3.</source>
         <translation>Itération numéro %1 terminée. Sigma0=%2, convergence=%3.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="681"/>
+        <location filename="../mainwindow.cpp" line="696"/>
         <source>Impossible to write file: </source>
         <translation>Impossible de créer le fichier : </translation>
     </message>
@@ -2557,7 +2557,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Itération numéro %1 terminée. Sigma0=%2, convergence=%3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="431"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Unexpected end of computation</source>
         <translation>Fin de calcul inattendue</translation>
     </message>
@@ -2993,22 +2993,22 @@ Vérifiez les coordonnées des points contraints !</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="149"/>
+        <location filename="../../src/leastsquares.cpp" line="163"/>
         <source> unknowns.</source>
         <translation> inconnues.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="149"/>
+        <location filename="../../src/leastsquares.cpp" line="163"/>
         <source>Total: </source>
         <translation>Total : </translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1045"/>
+        <location filename="../../src/leastsquares.cpp" line="1057"/>
         <source>Error in observation: no B part: %s</source>
         <translation>Erreur dans l&apos;observation : pas de partie B : %s</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1065"/>
+        <location filename="../../src/leastsquares.cpp" line="1077"/>
         <source>Error in add_covariance: obs_list size and sigmas size not coherent</source>
         <translation>Erreur dans add_covariance : taille de obs_list et sigmas non cohérents</translation>
     </message>
@@ -3021,36 +3021,36 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">En cas de défaut de rang : dimension du noyau de l&apos;application linéaire = %d</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1241"/>
+        <location filename="../../src/leastsquares.cpp" line="1253"/>
         <source>Normal matrix cols: </source>
         <translation>Colonnes de la matrice normale : </translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1242"/>
+        <location filename="../../src/leastsquares.cpp" line="1254"/>
         <source>Normal matrix rank: </source>
         <translation>Rang de la matrice normale : </translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="167"/>
-        <location filename="../../src/leastsquares.cpp" line="175"/>
-        <location filename="../../src/leastsquares.cpp" line="799"/>
-        <location filename="../../src/leastsquares.cpp" line="877"/>
+        <location filename="../../src/leastsquares.cpp" line="181"/>
+        <location filename="../../src/leastsquares.cpp" line="189"/>
+        <location filename="../../src/leastsquares.cpp" line="811"/>
+        <location filename="../../src/leastsquares.cpp" line="889"/>
         <source>Error on observations, compensation canceled.</source>
         <translation>Erreur sur les observations, la compensation est annulée.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="221"/>
-        <location filename="../../src/leastsquares.cpp" line="348"/>
+        <location filename="../../src/leastsquares.cpp" line="235"/>
+        <location filename="../../src/leastsquares.cpp" line="362"/>
         <source>Error setting observations.</source>
         <translation>Erreur lors de l&apos;ajout d&apos;observations.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="273"/>
-        <location filename="../../src/leastsquares.cpp" line="560"/>
-        <location filename="../../src/leastsquares.cpp" line="582"/>
-        <location filename="../../src/leastsquares.cpp" line="618"/>
-        <location filename="../../src/leastsquares.cpp" line="620"/>
-        <location filename="../../src/leastsquares.cpp" line="666"/>
+        <location filename="../../src/leastsquares.cpp" line="287"/>
+        <location filename="../../src/leastsquares.cpp" line="574"/>
+        <location filename="../../src/leastsquares.cpp" line="596"/>
+        <location filename="../../src/leastsquares.cpp" line="632"/>
+        <location filename="../../src/leastsquares.cpp" line="634"/>
+        <location filename="../../src/leastsquares.cpp" line="678"/>
         <source>Compute</source>
         <translation>Calcul de</translation>
     </message>
@@ -3059,7 +3059,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Impossible d&apos;inverser la matrice normale (toutes les valeurs ne sont pas finies)!</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1179"/>
+        <location filename="../../src/leastsquares.cpp" line="1191"/>
         <source>The system has infinite solutions!</source>
         <translation>Le système a une infinité de solutions !</translation>
     </message>
@@ -3068,17 +3068,17 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">L&apos;éliminationde Gauss-Jordan a échoué!</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="568"/>
+        <location filename="../../src/leastsquares.cpp" line="582"/>
         <source>Qxx has infinite values!</source>
         <translation>Qxx a des valeurs infinies!</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="626"/>
+        <location filename="../../src/leastsquares.cpp" line="640"/>
         <source>Impossible to solve system (not all values are finite)!</source>
         <translation>Impossible de résoudre le système (toutes les valeurs ne sont pas finies)!</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="638"/>
+        <location filename="../../src/leastsquares.cpp" line="652"/>
         <source>Compute SparseQR decomposition...</source>
         <translation>Calcul de la decomposition SparseQR...</translation>
     </message>
@@ -3087,113 +3087,113 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Décomposition SparseQR ratée.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="277"/>
+        <location filename="../../src/leastsquares.cpp" line="291"/>
         <source>Error: Q matrix decomposition failed!</source>
         <translation>Erreur : échec lors de la décomposition de la matrice Q !</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="284"/>
+        <location filename="../../src/leastsquares.cpp" line="298"/>
         <source>Error: P matrix solving failed!</source>
         <translation>Erreur : échec lors de la résolution de la matrice P !</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="646"/>
-        <location filename="../../src/leastsquares.cpp" line="653"/>
+        <location filename="../../src/leastsquares.cpp" line="658"/>
+        <location filename="../../src/leastsquares.cpp" line="665"/>
         <source>Normal matrix stability test failed!</source>
         <translation>Échec du test de stabilité de la matrice normale !</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="669"/>
+        <location filename="../../src/leastsquares.cpp" line="681"/>
         <source>Compute SparseQR solving...</source>
         <translation>Calcul de la résolution SparseQR...</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="675"/>
+        <location filename="../../src/leastsquares.cpp" line="687"/>
         <source>SparseQR solving failed.</source>
         <translation>Résolution SparseQR ratée.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="692"/>
+        <location filename="../../src/leastsquares.cpp" line="704"/>
         <source>Point %s got too far away...</source>
         <translation>Le point %s est parti très très loin...</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="709"/>
+        <location filename="../../src/leastsquares.cpp" line="721"/>
         <source>Error: LeastSquares not initialized!</source>
         <translation>Erreur : moindres carrrés non initialisés !</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="732"/>
+        <location filename="../../src/leastsquares.cpp" line="744"/>
         <source>No parameters to optimize.</source>
         <translation>Pas de paramètres à optimiser.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="763"/>
+        <location filename="../../src/leastsquares.cpp" line="775"/>
         <source>Maximum iterations reached, computation interrupted.</source>
         <translation>Nombre maximum d&apos;itérations atteint, calcul interrompu.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="831"/>
+        <location filename="../../src/leastsquares.cpp" line="843"/>
         <source>Convergence: </source>
         <translation>Convergence: </translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="840"/>
+        <location filename="../../src/leastsquares.cpp" line="852"/>
         <source>No redondancy!</source>
         <translation>Pas de redondance!</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="842"/>
+        <location filename="../../src/leastsquares.cpp" line="854"/>
         <source>sigma_0 is NaN, end of normal iterations.</source>
         <translation>sigma_0 vaut NaN, fin des itérations normales.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="845"/>
+        <location filename="../../src/leastsquares.cpp" line="857"/>
         <source>sigma_0 is NaN.</source>
         <translation>sigma_0 vaut NaN.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="854"/>
+        <location filename="../../src/leastsquares.cpp" line="866"/>
         <source>Convergence reached!</source>
         <translation>Convergence atteinte !</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="860"/>
+        <location filename="../../src/leastsquares.cpp" line="872"/>
         <source>Convergence unreached! Continue iterations...</source>
         <translation>Convergence non atteinte ! Continuer les itérations...</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="897"/>
+        <location filename="../../src/leastsquares.cpp" line="909"/>
         <source>Computation manually interrupted.</source>
         <translation>Calcul interrompu manuellement.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="949"/>
+        <location filename="../../src/leastsquares.cpp" line="961"/>
         <source>Error in observation setting (relations.size()!=positions.size()): %s</source>
         <translation>Erreur dans le paramétrage de l&apos;observation (relations.size()!=positions.size()): %s</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="958"/>
+        <location filename="../../src/leastsquares.cpp" line="970"/>
         <source>Error in observation setting (sigma negative: %f): %s</source>
         <translation>Erreur dans le paramétrage de l&apos;observation (sigma négatif : %f) : %s</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="969"/>
+        <location filename="../../src/leastsquares.cpp" line="981"/>
         <source>Error in observation setting (not finite value): %s</source>
         <translation>Erreur dans la pose des observations (valeur non finie) : %s</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="985"/>
+        <location filename="../../src/leastsquares.cpp" line="997"/>
         <source>Error: observation norm too low (%f): %s</source>
         <translation>Ereur: nomre de l&apos;observation trop faible (%f) : %s</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1015"/>
+        <location filename="../../src/leastsquares.cpp" line="1027"/>
         <source>Error in observation setting (positions out of model): %s</source>
         <translation>Erreur dans le paramétrage de l&apos;observation (position en dehors du modèle) : %s</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1191"/>
+        <location filename="../../src/leastsquares.cpp" line="1203"/>
         <source>Linear application rank deficiency or imbalanced matrix (%d constraints are missing)!</source>
         <translation>Défaut de rang de l&apos;application linéaire ou matrice déséquilibrée (%d contraintes manquantes) !</translation>
     </message>
@@ -3206,7 +3206,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">sigma_0 vaut NaN, fin des itérations.</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1161"/>
+        <location filename="../../src/leastsquares.cpp" line="1173"/>
         <source>Compute kernel...</source>
         <translation>Calcul de noyau...</translation>
     </message>
@@ -3215,12 +3215,12 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Dimension du noyau de l&apos;application linéaire : %d</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1194"/>
+        <location filename="../../src/leastsquares.cpp" line="1206"/>
         <source>Kernel base:</source>
         <translation>Base du noyau :</translation>
     </message>
     <message>
-        <location filename="../../src/leastsquares.cpp" line="1233"/>
+        <location filename="../../src/leastsquares.cpp" line="1245"/>
         <source>• %s</source>
         <translation>• %s</translation>
     </message>
@@ -3249,43 +3249,43 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur ! Moindes carrés non initialisés !</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="50"/>
-        <location filename="../../src/station_bascule.cpp" line="1279"/>
+        <location filename="../../src/datafile.cpp" line="68"/>
+        <location filename="../../src/station_bascule.cpp" line="1314"/>
         <source>Read file %s...</source>
         <translation>Lecture du fichier %s...</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="55"/>
+        <location filename="../../src/datafile.cpp" line="73"/>
         <source>Can&apos;t open file &quot;%s&quot;: max subfile depth=%d.</source>
         <translation>Impossible d&apos;ouvrir le fichier &quot;%s&quot; : profondeur maxi des sous-fichiers =  %d.</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="145"/>
+        <location filename="../../src/datafile.cpp" line="163"/>
         <source>In %s:%d: This file cannot have subfile!</source>
         <translation>Dans %s : %d : ce fichier ne peut pas avoir de sous-fichier !</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="593"/>
+        <location filename="../../src/datafile.cpp" line="611"/>
         <source>In %s:%d: %s =&gt; Error creating point &apos;%s&apos;.</source>
         <translation>Dans %s : %d : %s =&gt; Erreur lors de la création du point &apos;%s&apos;.</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="882"/>
+        <location filename="../../src/datafile.cpp" line="989"/>
         <source>Error in AXE file line %d: %s</source>
         <translation>Erreur dans fichier AXE, ligne  %d : %s</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="960"/>
+        <location filename="../../src/datafile.cpp" line="1067"/>
         <source>At line %d: %s =&gt; Can&apos;t convert observation sigma.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir sigma de l&apos;observation.</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="969"/>
+        <location filename="../../src/datafile.cpp" line="1076"/>
         <source>At line %d: %s =&gt; Observation sigma is too small.</source>
         <translation>Ligne %d : %s =&gt; Sigma de l&apos;observation est trop petit.</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="984"/>
+        <location filename="../../src/datafile.cpp" line="1091"/>
         <source>Error in EQ file line %d: %s</source>
         <translation>Erreur dans le fichier EQ, ligne %d : %s</translation>
     </message>
@@ -3294,7 +3294,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Impossible d&apos;ouvrir le fichier &quot;%s&quot; : nombre maxi de fichiers ouverts =  %d.</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="125"/>
+        <location filename="../../src/datafile.cpp" line="143"/>
         <source>At line %d: &quot;@%s&quot; =&gt; Can&apos;t open file &quot;%s&quot;.</source>
         <translation>À la ligne %d: &quot;@%s&quot; =&gt; Impossible d&apos;ouvrir le fichier &quot;%s&quot;.</translation>
     </message>
@@ -3303,14 +3303,14 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Les fichiers NEW ne sont pas supposés avoir de sous-fichiers !</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="493"/>
-        <location filename="../../src/datafile.cpp" line="504"/>
-        <location filename="../../src/datafile.cpp" line="513"/>
+        <location filename="../../src/datafile.cpp" line="511"/>
+        <location filename="../../src/datafile.cpp" line="522"/>
+        <location filename="../../src/datafile.cpp" line="531"/>
         <source>Error in OBS line %s</source>
         <translation>Erreur dans l&apos;OBS ligne %s</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="564"/>
+        <location filename="../../src/datafile.cpp" line="582"/>
         <source>In %s:%d: %s =&gt; Impossible to determine observation type!</source>
         <translation>Dans %s:%d: %s =&gt; Impossible de déterminer le type d&apos;observation !</translation>
     </message>
@@ -3319,23 +3319,23 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Dans %s:%d: %s =&gt; %s non trouvé.</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="627"/>
-        <location filename="../../src/datafile.cpp" line="651"/>
+        <location filename="../../src/datafile.cpp" line="645"/>
+        <location filename="../../src/datafile.cpp" line="669"/>
         <source>In %s:%d: %s =&gt; Impossible to create station!</source>
         <translation>Dans %s:%d: %s =&gt; Impossible de créer la station !</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="666"/>
+        <location filename="../../src/datafile.cpp" line="684"/>
         <source>Error in OBS file line %d: %s</source>
         <translation>Erreur dans le fichier OBS, ligne %d : %s</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="717"/>
+        <location filename="../../src/datafile.cpp" line="735"/>
         <source>Error in XYZ file line %d: %s</source>
         <translation>Erreur dans le fichier XYZ, ligne %d : %s</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="821"/>
+        <location filename="../../src/datafile.cpp" line="928"/>
         <source>Error writing to &quot;%s&quot; : %s.</source>
         <translation>Erreur en écrivant dans &quot;%s&quot; : %s.</translation>
     </message>
@@ -3348,12 +3348,12 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur : type de station non initialisé!</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="660"/>
+        <location filename="../../src/datafile.cpp" line="678"/>
         <source>In %s:%d: %s =&gt; Can&apos;t interpret line!</source>
         <translation>Dans %s:%d: %s =&gt; Impossible d&apos;interpréter la ligne !</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="733"/>
+        <location filename="../../src/datafile.cpp" line="751"/>
         <source>Impossible to create tmp file &quot;%s&quot;!</source>
         <translation>Impossible de créer le fichier temporaire &quot;%s&quot; !</translation>
     </message>
@@ -3362,18 +3362,18 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur lors de l&apos;écritude de  &quot;%s&quot; : %s.</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="130"/>
-        <location filename="../../src/datafile.cpp" line="828"/>
+        <location filename="../../src/datafile.cpp" line="148"/>
+        <location filename="../../src/datafile.cpp" line="935"/>
         <source>Can&apos;t open file &quot;%s&quot;.</source>
         <translation>Impossible d&apos;ouvrir le fichier &quot;%s&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/project_config.cpp" line="46"/>
+        <location filename="../../src/project_config.cpp" line="62"/>
         <source>Exception: %s while reading configuration file &quot;%s&quot;.</source>
         <translation>Exception : %s à la lecture du fichier de configuration &quot;%s&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/project_config.cpp" line="64"/>
+        <location filename="../../src/project_config.cpp" line="80"/>
         <source>Failed to parse configuration:</source>
         <translation>Échec de la lecture de la configuration :</translation>
     </message>
@@ -3382,7 +3382,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur numéro %d : Impossible d&apos;ouvrir le fichier de configuration &quot;%s&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/project_config.cpp" line="53"/>
+        <location filename="../../src/project_config.cpp" line="69"/>
         <source>Error num %d: Can&apos;t open configuration file &quot;%s&quot; (file moved or special characters in the path?).</source>
         <translation>Erreur numéro %d: Impossible d&apos;ouvrir le fichier de configuration &quot;%s&quot; (fichier bougé ou caractères spéciaux dans le chemin?).</translation>
     </message>
@@ -3391,31 +3391,31 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Echec de l&apos;analyse de la configuration: %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project_config.cpp" line="78"/>
-        <location filename="../../src/project_config.cpp" line="87"/>
-        <location filename="../../src/project_config.cpp" line="96"/>
-        <location filename="../../src/project_config.cpp" line="106"/>
-        <location filename="../../src/project_config.cpp" line="115"/>
-        <location filename="../../src/project_config.cpp" line="124"/>
-        <location filename="../../src/project_config.cpp" line="133"/>
-        <location filename="../../src/project_config.cpp" line="143"/>
-        <location filename="../../src/project_config.cpp" line="152"/>
-        <location filename="../../src/project_config.cpp" line="162"/>
-        <location filename="../../src/project_config.cpp" line="171"/>
-        <location filename="../../src/project_config.cpp" line="180"/>
-        <location filename="../../src/project_config.cpp" line="193"/>
-        <location filename="../../src/project_config.cpp" line="203"/>
-        <location filename="../../src/project_config.cpp" line="212"/>
-        <location filename="../../src/project_config.cpp" line="221"/>
-        <location filename="../../src/project_config.cpp" line="230"/>
-        <location filename="../../src/project_config.cpp" line="247"/>
-        <location filename="../../src/project_config.cpp" line="257"/>
-        <location filename="../../src/project_config.cpp" line="268"/>
-        <location filename="../../src/project_config.cpp" line="278"/>
-        <location filename="../../src/project_config.cpp" line="287"/>
-        <location filename="../../src/project_config.cpp" line="296"/>
-        <location filename="../../src/project_config.cpp" line="308"/>
-        <location filename="../../src/project_config.cpp" line="318"/>
+        <location filename="../../src/project_config.cpp" line="94"/>
+        <location filename="../../src/project_config.cpp" line="103"/>
+        <location filename="../../src/project_config.cpp" line="112"/>
+        <location filename="../../src/project_config.cpp" line="122"/>
+        <location filename="../../src/project_config.cpp" line="131"/>
+        <location filename="../../src/project_config.cpp" line="140"/>
+        <location filename="../../src/project_config.cpp" line="149"/>
+        <location filename="../../src/project_config.cpp" line="159"/>
+        <location filename="../../src/project_config.cpp" line="168"/>
+        <location filename="../../src/project_config.cpp" line="178"/>
+        <location filename="../../src/project_config.cpp" line="187"/>
+        <location filename="../../src/project_config.cpp" line="196"/>
+        <location filename="../../src/project_config.cpp" line="206"/>
+        <location filename="../../src/project_config.cpp" line="216"/>
+        <location filename="../../src/project_config.cpp" line="225"/>
+        <location filename="../../src/project_config.cpp" line="234"/>
+        <location filename="../../src/project_config.cpp" line="243"/>
+        <location filename="../../src/project_config.cpp" line="260"/>
+        <location filename="../../src/project_config.cpp" line="270"/>
+        <location filename="../../src/project_config.cpp" line="281"/>
+        <location filename="../../src/project_config.cpp" line="291"/>
+        <location filename="../../src/project_config.cpp" line="300"/>
+        <location filename="../../src/project_config.cpp" line="309"/>
+        <location filename="../../src/project_config.cpp" line="321"/>
+        <location filename="../../src/project_config.cpp" line="331"/>
         <source>Exception: %s while reading &quot;%s&quot; node.</source>
         <translation>Exception : %s à la lecture du noeud &quot;%s&quot;.</translation>
     </message>
@@ -3496,7 +3496,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Exception : %s à la lecture du noeud &quot;centre local Y&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/project_config.cpp" line="324"/>
+        <location filename="../../src/project_config.cpp" line="337"/>
         <source>Node &quot;local_center&quot; not found!</source>
         <translation>Noeud &quot;local_center&quot; non trouvé!</translation>
     </message>
@@ -3517,12 +3517,12 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Noeud &quot;proj_center&quot; non trouvé!</translation>
     </message>
     <message>
-        <location filename="../../src/project_config.cpp" line="333"/>
+        <location filename="../../src/project_config.cpp" line="346"/>
         <source>Error while reading configuration file &quot;%s&quot;.</source>
         <translation>Erreur à la lecture du fichier de configuration &quot;%s&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="123"/>
+        <location filename="../../src/project.cpp" line="139"/>
         <source>Error reading JSON configuration file.</source>
         <translation>Erreur à la lecture du fichier de configuration JSON.</translation>
     </message>
@@ -3535,12 +3535,12 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur de projection. Vérifiez le répertoire projdata et la définition de la projection.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="248"/>
+        <location filename="../../src/project.cpp" line="270"/>
         <source>Reading COR...</source>
         <translation>Lecture du COR...</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="259"/>
+        <location filename="../../src/project.cpp" line="281"/>
         <source>Reading OBS...</source>
         <translation>Lecture du OBS...</translation>
     </message>
@@ -3549,52 +3549,52 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Initialisation des points...</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="180"/>
+        <location filename="../../src/project.cpp" line="202"/>
         <source>%s: Point name starting with &apos;@&apos; is forbidden.</source>
         <translation>%s : Le nom du point ne doit pas commencer par &apos;@&apos;.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="266"/>
+        <location filename="../../src/project.cpp" line="288"/>
         <source>Reading coordinates covariance CSV file...</source>
         <translation>Lecture du fichier CSV de covariance des coordonées...</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="274"/>
+        <location filename="../../src/project.cpp" line="296"/>
         <source>Points setting...</source>
         <translation>Mise en place des points...</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="285"/>
+        <location filename="../../src/project.cpp" line="307"/>
         <source>Forbidden point %s.</source>
         <translation>Point interdit %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="302"/>
+        <location filename="../../src/project.cpp" line="324"/>
         <source>Uninitialized point %s.</source>
         <translation>Point non initialisé : %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="312"/>
+        <location filename="../../src/project.cpp" line="334"/>
         <source>1 uninitialized point.</source>
         <translation>1 point non initialisé.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="315"/>
+        <location filename="../../src/project.cpp" line="337"/>
         <source>%d uninitialized points.</source>
         <translation>%d points non initialisés.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="320"/>
+        <location filename="../../src/project.cpp" line="342"/>
         <source>Uninitialized points in simulation mode! They will be discarded!</source>
         <translation>Points non-initialisés en mode simulation ! Ils seront éliminés !</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="443"/>
+        <location filename="../../src/project.cpp" line="465"/>
         <source>Error: inconsistent vertical deflection info.</source>
         <translation>Erreur : information incohérente de la déviation de la verticale.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1449"/>
+        <location filename="../../src/project.cpp" line="1471"/>
         <source>Big ellipsoid semi-axes found on%s (%.1fm) and %d other points</source>
         <translation>Grands demi-axes de l&apos;ellisoïde trouvés sur %s (%.1fm) et %d autres points</translation>
     </message>
@@ -3603,22 +3603,22 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Les points non initialisés sont supprimés en simulation !</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="331"/>
+        <location filename="../../src/project.cpp" line="353"/>
         <source>Point %s is unconnected to the others, it is removed.</source>
         <translation>Le point %s n&apos;est pas connecté avec les autres, il est retiré.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="349"/>
+        <location filename="../../src/project.cpp" line="371"/>
         <source>Read data finished.</source>
         <translation>Lecture des données terminée.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="375"/>
+        <location filename="../../src/project.cpp" line="397"/>
         <source>Error: fixed points used with internal constraints!</source>
         <translation>Erreur : points fixés utilisés avec contraintes internes !</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="396"/>
+        <location filename="../../src/project.cpp" line="418"/>
         <source>Remove an empty station from %s.</source>
         <translation>Suppression d&apos;une station vide depuis %s.</translation>
     </message>
@@ -3627,22 +3627,22 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Informations de déviation de la verticale incohérentes.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="445"/>
+        <location filename="../../src/project.cpp" line="467"/>
         <source>First inconsistent point: %s (there may be others)</source>
         <translation>Premier point incohérent : %s (il peut y en avoir d&apos;autres)</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="453"/>
+        <location filename="../../src/project.cpp" line="475"/>
         <source>Vertical deflection will be used (value found for all verticalized points).</source>
         <translation>La déviation de la verticale sera utilisée (une valeur a été trouvée pour tous les points verticalisés).</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="465"/>
+        <location filename="../../src/project.cpp" line="487"/>
         <source>Error: non-1D points or with vertical deflection are forbidden in altitude mode!</source>
         <translation>Erreur : les points non-1D ou avec déviation de la verticale sont interdits en mode altitude !</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="568"/>
+        <location filename="../../src/project.cpp" line="590"/>
         <source>Will remove uninitializable %s.</source>
         <translation>La station non-initialisable %s sera supprimée.</translation>
     </message>
@@ -3651,7 +3651,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Déviation de la verticale utilisée.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="457"/>
+        <location filename="../../src/project.cpp" line="479"/>
         <source>Vertical deflection not used.</source>
         <translation>Déviation de la verticale non utilisée.</translation>
     </message>
@@ -3660,22 +3660,22 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Les points donnés en altitude sont autorisés uniquements pour points 1D sans déviation de la verticale.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="519"/>
+        <location filename="../../src/project.cpp" line="541"/>
         <source>Init pass: there is still %d point(s) to initialize.</source>
         <translation>Passe d&apos;initialisation: il y a encore %d point(s) à initialiser.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="541"/>
+        <location filename="../../src/project.cpp" line="563"/>
         <source>Initialization finished with %d uninitialized points.</source>
         <translation>Initialisation terminée avec %d points non initialisés.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="545"/>
+        <location filename="../../src/project.cpp" line="567"/>
         <source>All points are initialized.</source>
         <translation>Tous les points sont initialisés.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="556"/>
+        <location filename="../../src/project.cpp" line="578"/>
         <source>Removing point %s.</source>
         <translation>Retrait du point %s.</translation>
     </message>
@@ -3684,13 +3684,13 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Écriture du fichier CAP </translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="612"/>
+        <location filename="../../src/project.cpp" line="634"/>
         <source>Try to initialize point %s.</source>
         <translation>Tentative d&apos;intialisation du point %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="672"/>
-        <location filename="../../src/project.cpp" line="908"/>
+        <location filename="../../src/project.cpp" line="694"/>
+        <location filename="../../src/project.cpp" line="930"/>
         <source>Initialize point %s from station %s.</source>
         <translation>Initialisation du point %s depuis la station %s.</translation>
     </message>
@@ -3703,22 +3703,22 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Impossible d&apos;initialiser le point %s comme station de bascule.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="705"/>
+        <location filename="../../src/project.cpp" line="727"/>
         <source>Initialize point %s by bascule from %s.</source>
         <translation>Point %s initialisé comme une station basculée depuis %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="783"/>
+        <location filename="../../src/project.cpp" line="805"/>
         <source>Initialize point %s by pseudo-intersection from %s and %s (error: %fm).</source>
         <translation>Initialisation du point %s par pseudo-intersection entre %s et %s (erreur : %fm).</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="855"/>
+        <location filename="../../src/project.cpp" line="877"/>
         <source>Initialize point %s by DE DN DH on %s.</source>
         <translation>Point %s initialisé par DE DN DH depuis %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1208"/>
+        <location filename="../../src/project.cpp" line="1230"/>
         <source>Initialize point %s from %s and %s with angles and distances.</source>
         <translation>Initialisation du point %s depuis %s et %s par angles et distances.</translation>
     </message>
@@ -3727,17 +3727,17 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">De gros demis-axes d&apos;ellipsoïdes ont été trouvés sur %s (%.1fm) et %d autres points</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1454"/>
+        <location filename="../../src/project.cpp" line="1476"/>
         <source>Big ellipsoid semi-axis found on %s (%.1fm)</source>
         <translation>De gros demis-axes d&apos;ellipsoïdes ont été trouvés sur %s (%.1fm)</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1457"/>
+        <location filename="../../src/project.cpp" line="1479"/>
         <source>and sigma0 = %.3f</source>
         <translation>et sigma0 = %.3f</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1474"/>
+        <location filename="../../src/project.cpp" line="1496"/>
         <source>Error during computation.</source>
         <translation>Erreur lors du calcul.</translation>
     </message>
@@ -3746,17 +3746,17 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Point %s initialisé par centrage sur %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="965"/>
+        <location filename="../../src/project.cpp" line="987"/>
         <source>Initialize point 1D %s by leveling on %s.</source>
         <translation>Initialisation du point 1D %s par nivellement sur %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1110"/>
+        <location filename="../../src/project.cpp" line="1132"/>
         <source>Initialize point %s by intersection from stations %s and %s, z from station %s.</source>
         <translation>Initialisation du point %s par intersection depuis %s et %s, z depuis %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1131"/>
+        <location filename="../../src/project.cpp" line="1153"/>
         <source>Initialize 2d point %s by intersection from stations %s and %s.</source>
         <translation>Initialialisation du point 2d %s par intersection depuis les stations %s et %s.</translation>
     </message>
@@ -3765,7 +3765,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Point %s intialisé depuis %s et %s.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1361"/>
+        <location filename="../../src/project.cpp" line="1383"/>
         <source>Initialize point %s by resection from %s, %s and %s.</source>
         <translation>Initialisation point %s par relèvement depuis %s, %s et %s.</translation>
     </message>
@@ -3778,7 +3778,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Initialisation point %s comme station d&apos;axe.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1409"/>
+        <location filename="../../src/project.cpp" line="1431"/>
         <source>Can&apos;t autoinitialize point %s!</source>
         <translation>Impossible d&apos;initialiser automatiquement le point %s!</translation>
     </message>
@@ -3787,12 +3787,12 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur pendant l&apos;itération.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1479"/>
+        <location filename="../../src/project.cpp" line="1501"/>
         <source>No computation, least squares are not set!</source>
         <translation>Pas de calcul, les moindres carrés ne sont pas paramétrés!</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="1593"/>
+        <location filename="../../src/project.cpp" line="1616"/>
         <source>Write file </source>
         <translation>Écriture du fichier </translation>
     </message>
@@ -3801,7 +3801,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur sur la dimension du point %s : %d!</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="2092"/>
+        <location filename="../../src/project.cpp" line="2124"/>
         <source>Number of active obs: </source>
         <translation>Nombre d&apos;obs actives : </translation>
     </message>
@@ -3810,18 +3810,18 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Nombre total d&apos;obs : </translation>
     </message>
     <message>
-        <location filename="../../src/obs.cpp" line="210"/>
+        <location filename="../../src/obs.cpp" line="226"/>
         <source>Observation %s can&apos;t be used with 1D point %s or %s.</source>
         <translation>L&apos;observation %s ne peut pas être utilisée avec un point 1D %s ou %s.</translation>
     </message>
     <message>
-        <location filename="../../src/obs.cpp" line="520"/>
+        <location filename="../../src/obs.cpp" line="531"/>
         <source>Impossible to set observation %s</source>
         <translation>Impossible de poser l&apos;observation %s</translation>
     </message>
     <message>
-        <location filename="../../src/obs.cpp" line="554"/>
-        <location filename="../../src/station_bascule.cpp" line="336"/>
+        <location filename="../../src/obs.cpp" line="565"/>
+        <location filename="../../src/station_bascule.cpp" line="356"/>
         <source>Observation %s can&apos;t be used since the points are too close!</source>
         <translation>L&apos;observation %s ne peut pas être utilisée car les points sont trop proches!</translation>
     </message>
@@ -3830,18 +3830,18 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Observation %s ne peut pas fonctionner avec des points 1D !</translation>
     </message>
     <message>
-        <location filename="../../src/obs.cpp" line="381"/>
-        <location filename="../../src/obs.cpp" line="565"/>
+        <location filename="../../src/obs.cpp" line="392"/>
+        <location filename="../../src/obs.cpp" line="576"/>
         <source>Observation %s has a sigma too low!</source>
         <translation>L&apos;observation %s a un sigma trop faible!</translation>
     </message>
     <message>
-        <location filename="../../src/obs.cpp" line="356"/>
+        <location filename="../../src/obs.cpp" line="367"/>
         <source>Observation type  %d: %s can&apos;t be used.</source>
         <translation>Type d&apos;observation %d : %s ne peut pas être utilisé.</translation>
     </message>
     <message>
-        <location filename="../../src/obs.cpp" line="231"/>
+        <location filename="../../src/obs.cpp" line="247"/>
         <source>Observation %s can&apos;t be used with 2D point %s or %s.</source>
         <translation>L&apos;observation %s ne peut pas être utilisée avec un point 2D %s ou %s.</translation>
     </message>
@@ -3850,8 +3850,8 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">L&apos;observation %s a un sigma de 0!</translation>
     </message>
     <message>
-        <location filename="../../src/obs.cpp" line="468"/>
-        <location filename="../../src/obs.cpp" line="788"/>
+        <location filename="../../src/obs.cpp" line="479"/>
+        <location filename="../../src/obs.cpp" line="799"/>
         <source>Observation type %d can&apos;t be used.</source>
         <translation>Le type d&apos;observation %d ne peut pas être utilisé.</translation>
     </message>
@@ -3864,69 +3864,69 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Impossible de paramétrer le point UNDEFINED.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="105"/>
+        <location filename="../../src/point.cpp" line="120"/>
         <source>Can&apos;t set point UNDEFINED.</source>
         <translation>Impossible de paramétrer un point UNDEFINED.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="110"/>
+        <location filename="../../src/point.cpp" line="125"/>
         <source>Can&apos;t set point FORBIDDEN.</source>
         <translation>Impossible de paramétrer un point FORBIDDEN.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="242"/>
-        <location filename="../../src/station_hz.cpp" line="168"/>
-        <location filename="../../src/station_simple.cpp" line="114"/>
+        <location filename="../../src/point.cpp" line="257"/>
+        <location filename="../../src/station_simple.cpp" line="129"/>
+        <location filename="../../src/station_hz.cpp" line="183"/>
         <source>In %s:%d: Wrong format in: %s</source>
         <translation>Dans %s:%d: Mauvais format : %s</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="269"/>
+        <location filename="../../src/point.cpp" line="284"/>
         <source>In %s:%d: Can&apos;t convert point code.</source>
         <translation>Dans %s :%d : Impossible de convertir le code du point.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="280"/>
+        <location filename="../../src/point.cpp" line="295"/>
         <source>In %s:%d: Unknown point code %d.</source>
         <translation>Dans %s : %d : Code de point %d inconnu.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="289"/>
+        <location filename="../../src/point.cpp" line="304"/>
         <source>In %s:%d: Can&apos;t convert point name.</source>
         <translation>Dans %s :%d : Impossible de convertir le nom du point.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="297"/>
+        <location filename="../../src/point.cpp" line="312"/>
         <source>In %s:%d: Point name starting with &apos;@&apos; is forbidden.</source>
         <translation>Dans %s : %d : Le nom du point ne doit pas commencer par &apos;@&apos;.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="307"/>
+        <location filename="../../src/point.cpp" line="322"/>
         <source>In %s:%d: There is already a forbidden point named &quot;%s&quot;.</source>
         <translation>Dans %s :%d : Il y a déjà un nom de point interdit &quot;%s&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="322"/>
+        <location filename="../../src/point.cpp" line="337"/>
         <source>In %s:%d: There is already a point named &quot;%s&quot;.</source>
         <translation>Dans %s :%d : Il y a déjà un point appelé &quot;%s&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="331"/>
+        <location filename="../../src/point.cpp" line="346"/>
         <source>In %s:%d: Can&apos;t convert point x.</source>
         <translation>Dans %s:%d : Impossible de convertir x du point.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="339"/>
+        <location filename="../../src/point.cpp" line="354"/>
         <source>In %s:%d: Can&apos;t convert point y.</source>
         <translation>Dans %s:%d : Impossible de convertir y du point.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="349"/>
+        <location filename="../../src/point.cpp" line="364"/>
         <source>In %s:%d: Can&apos;t convert point z.</source>
         <translation>Dans %s:%d : Impossible de convertir z du point.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="362"/>
+        <location filename="../../src/point.cpp" line="377"/>
         <source>In %s:%d: Can&apos;t convert point sigma_y.</source>
         <translation>Dans %s:%d : Impossible de convertir le sigma_y du point.</translation>
     </message>
@@ -3935,12 +3935,12 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Dans %s:%d : Impossible de convertir le sigma_z du point.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="385"/>
+        <location filename="../../src/point.cpp" line="400"/>
         <source>In %s:%d: Can&apos;t convert point xi.</source>
         <translation>Dans %s:%d : Impossible de convertir le xi du point.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="426"/>
+        <location filename="../../src/point.cpp" line="441"/>
         <source>In %s:%d: Constrained point without sigmas is not allowed.</source>
         <translation>Dans %s:%d : Point contraint sans sigmas non autorisé.</translation>
     </message>
@@ -3953,22 +3953,22 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Dans %s:%d : Impossible de convertir le sigma_2 du point.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="436"/>
+        <location filename="../../src/point.cpp" line="451"/>
         <source>In %s:%d: Error reading line.</source>
         <translation>Dans %s:%d : Erreur à la lecture de la ligne.</translation>
     </message>
     <message>
-        <location filename="../../src/point.cpp" line="449"/>
+        <location filename="../../src/point.cpp" line="464"/>
         <source>%s is too far from local center.</source>
         <translation>%s est trop loin du centre local.</translation>
     </message>
     <message>
-        <location filename="../../src/point.h" line="145"/>
+        <location filename="../../src/point.h" line="160"/>
         <source>Error: not allowed to create station on point %s.</source>
         <translation>Erreur : pas autorisé de créer une station au point %s.</translation>
     </message>
     <message>
-        <location filename="../../src/point.h" line="151"/>
+        <location filename="../../src/point.h" line="166"/>
         <source>Warning: try to create a new hz station on point %s without opening.</source>
         <translation>Attention : essaie de créer une station hz sans ouverture au point %s.</translation>
     </message>
@@ -3989,30 +3989,30 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">À la ligne %n: %s =&gt; Le code de la ligne est incorrect.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="243"/>
-        <location filename="../../src/station_bascule.cpp" line="1181"/>
-        <location filename="../../src/station_eq.cpp" line="41"/>
+        <location filename="../../src/station_eq.cpp" line="56"/>
+        <location filename="../../src/station_axis.cpp" line="258"/>
+        <location filename="../../src/station_bascule.cpp" line="1201"/>
         <source>At line %d: %s =&gt; Line code is incorrect.</source>
         <translation>Ligne %d: %s =&gt; Le code de la ligne est incorrect.</translation>
     </message>
     <message>
-        <location filename="../../src/datafile.cpp" line="929"/>
-        <location filename="../../src/station_axis.cpp" line="249"/>
-        <location filename="../../src/station_bascule.cpp" line="1195"/>
-        <location filename="../../src/station_simple.cpp" line="141"/>
+        <location filename="../../src/station_simple.cpp" line="156"/>
+        <location filename="../../src/datafile.cpp" line="1036"/>
+        <location filename="../../src/station_axis.cpp" line="264"/>
+        <location filename="../../src/station_bascule.cpp" line="1215"/>
         <source>At line %d: %s =&gt; Can&apos;t convert from point name.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir à partir du nom du point.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="255"/>
-        <location filename="../../src/station_eq.cpp" line="48"/>
+        <location filename="../../src/station_eq.cpp" line="63"/>
+        <location filename="../../src/station_axis.cpp" line="270"/>
         <source>At line %d: %s =&gt; Can&apos;t convert filename.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir la nom du fichier.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="260"/>
-        <location filename="../../src/station_bascule.cpp" line="1215"/>
-        <location filename="../../src/station_eq.cpp" line="53"/>
+        <location filename="../../src/station_eq.cpp" line="68"/>
+        <location filename="../../src/station_axis.cpp" line="275"/>
+        <location filename="../../src/station_bascule.cpp" line="1235"/>
         <source>At line %d: %s =&gt; &apos;@&apos; needed before sub file name.</source>
         <translation>Ligne %d : %s =&gt; &apos;@&apos; est requis avant chaque nom de sous-fichier.</translation>
     </message>
@@ -4029,46 +4029,46 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur: la cible %d en position %d apparaît plusieurs fois dans la station axe %s.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="41"/>
+        <location filename="../../src/station_axis.cpp" line="56"/>
         <source>Impossible to initialize axis target %s on %s: no initialized point.</source>
         <translation>Impossible d&apos;initialiser la cible d&apos;axe %s sur %s : aucun point initialisé.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="301"/>
+        <location filename="../../src/station_axis.cpp" line="316"/>
         <source>Warning: removing target id %s: only %d active obs.</source>
         <translation>Alerte : suppression de la cible id %s : seulement %d obs active(s).</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="328"/>
+        <location filename="../../src/station_axis.cpp" line="343"/>
         <source>Error: point %s appears several times in axis station %s.</source>
         <translation>Erreur : le point %s apparaît plusieurs fois dans la station d&apos;axe %s.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="339"/>
+        <location filename="../../src/station_axis.cpp" line="354"/>
         <source>Error: target %s - position %s appears several times in axis station %s.</source>
         <translation>Erreur : cible %s - position %s apparaît plusieurs fois dans station d&apos;axe %s.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="376"/>
+        <location filename="../../src/station_axis.cpp" line="391"/>
         <source>At line %d: %s =&gt; Can&apos;t constrain the axis point &quot;%s&quot;.</source>
         <translation>Ligne %d: %s =&gt; Impossible de contraindre le point de l&apos;axe &quot;%s&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="395"/>
+        <location filename="../../src/station_axis.cpp" line="410"/>
         <source>Axis %s not init, it won&apos;t be used.</source>
         <translation>Axe %s non initialisé, il ne sera pas utilisé.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="516"/>
-        <location filename="../../src/station_axis.cpp" line="568"/>
+        <location filename="../../src/station_axis.cpp" line="531"/>
+        <location filename="../../src/station_axis.cpp" line="586"/>
         <source>Impossible to initialize axis station on %s: no usable target.</source>
         <translation>Impossible d&apos;initialiser l&apos;axe de la station sur %s: pas de cible utilisable.</translation>
     </message>
     <message>
-        <location filename="../../src/project.cpp" line="624"/>
-        <location filename="../../src/station_axis.cpp" line="589"/>
-        <location filename="../../src/station_bascule.cpp" line="879"/>
-        <location filename="../../src/station_bascule.cpp" line="998"/>
+        <location filename="../../src/project.cpp" line="646"/>
+        <location filename="../../src/station_axis.cpp" line="607"/>
+        <location filename="../../src/station_bascule.cpp" line="899"/>
+        <location filename="../../src/station_bascule.cpp" line="1018"/>
         <source>Initialize point %s as a station.</source>
         <translation>Initialise le point %s en tant que station.</translation>
     </message>
@@ -4089,29 +4089,29 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Impossible d&apos;ouvrir le fichier &quot;%s&quot;.</translation>
     </message>
     <message>
-        <location filename="../../src/axisobs.cpp" line="71"/>
-        <location filename="../../src/datafile.cpp" line="951"/>
-        <location filename="../../src/station_bascule.cpp" line="69"/>
-        <location filename="../../src/station_hz.cpp" line="215"/>
-        <location filename="../../src/station_simple.cpp" line="161"/>
+        <location filename="../../src/station_simple.cpp" line="176"/>
+        <location filename="../../src/station_hz.cpp" line="230"/>
+        <location filename="../../src/datafile.cpp" line="1058"/>
+        <location filename="../../src/axisobs.cpp" line="86"/>
+        <location filename="../../src/station_bascule.cpp" line="84"/>
         <source>At line %d: %s =&gt; Observation between %s and %s.</source>
         <translation>Ligne %d : %s =&gt; L&apos;observation entre %s et %s.</translation>
     </message>
     <message>
-        <location filename="../../src/axisobs.cpp" line="81"/>
+        <location filename="../../src/axisobs.cpp" line="96"/>
         <source>At line %d: %s =&gt; Can&apos;t convert observation sigma_r.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le sigma_r de l&apos;observation.</translation>
     </message>
     <message>
-        <location filename="../../src/axisobs.cpp" line="90"/>
+        <location filename="../../src/axisobs.cpp" line="105"/>
         <source>At line %d: %s =&gt; Can&apos;t convert observation sigma_t.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le sigma_t de l&apos;observation.</translation>
     </message>
     <message>
-        <location filename="../../src/axisobs.cpp" line="102"/>
-        <location filename="../../src/station_bascule.cpp" line="171"/>
-        <location filename="../../src/station_hz.cpp" line="237"/>
-        <location filename="../../src/station_simple.cpp" line="185"/>
+        <location filename="../../src/station_simple.cpp" line="200"/>
+        <location filename="../../src/station_hz.cpp" line="252"/>
+        <location filename="../../src/axisobs.cpp" line="117"/>
+        <location filename="../../src/station_bascule.cpp" line="190"/>
         <source>At line %d: %s =&gt; Observation sigma_abs is too small.</source>
         <translation>Ligne %d : %s =&gt; sigma_abs est trop petit.</translation>
     </message>
@@ -4124,10 +4124,10 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">À la ligne %d : %s =&gt; Impossible d&apos;interpréter la ligne.</translation>
     </message>
     <message>
-        <location filename="../../src/axisobs.cpp" line="46"/>
-        <location filename="../../src/station_bascule.cpp" line="78"/>
-        <location filename="../../src/station_hz.cpp" line="223"/>
-        <location filename="../../src/station_simple.cpp" line="169"/>
+        <location filename="../../src/station_simple.cpp" line="184"/>
+        <location filename="../../src/station_hz.cpp" line="238"/>
+        <location filename="../../src/axisobs.cpp" line="61"/>
+        <location filename="../../src/station_bascule.cpp" line="93"/>
         <source>At line %d: %s =&gt; Can&apos;t convert observation value.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir la valeur de l&apos;observation.</translation>
     </message>
@@ -4136,91 +4136,96 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">À la ligne %d : %s =&gt; La distance ne peut pas être négative ou nulle!</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="94"/>
-        <location filename="../../src/station_bascule.cpp" line="121"/>
-        <location filename="../../src/station_simple.cpp" line="177"/>
+        <location filename="../../src/station_simple.cpp" line="192"/>
+        <location filename="../../src/station_bascule.cpp" line="109"/>
+        <location filename="../../src/station_bascule.cpp" line="136"/>
         <source>At line %d: %s =&gt; Can&apos;t convert observation sigma_abs.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le sigma_abs de l&apos;observation.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="139"/>
+        <location filename="../../src/station_bascule.cpp" line="154"/>
         <source>At line %d: %s =&gt; Can&apos;t convert observation sigmas.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir les sigmas des observations.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="147"/>
+        <location filename="../../src/station_bascule.cpp" line="162"/>
         <source>At line %d: %s =&gt; Too many values.</source>
         <translation>Ligne %d : %s =&gt; Trop de valeurs.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="155"/>
+        <location filename="../../src/station_bascule.cpp" line="170"/>
         <source>At line %d: %s =&gt; Distance can&apos;t be negative or zero!</source>
         <translation>Ligne %d : %s =&gt; La distance ne peut pas être négative ou nulle !</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="176"/>
-        <location filename="../../src/station_hz.cpp" line="259"/>
-        <location filename="../../src/station_simple.cpp" line="207"/>
+        <location filename="../../src/station_simple.cpp" line="222"/>
+        <location filename="../../src/station_hz.cpp" line="274"/>
+        <location filename="../../src/station_bascule.cpp" line="195"/>
         <source>At line %d: %s =&gt; Relative sigma can&apos;t be negative!</source>
         <translation>Ligne %d : %s =&gt; Le sigma relatif ne peut pas être négatif !</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="202"/>
-        <location filename="../../src/station_hz.cpp" line="276"/>
-        <location filename="../../src/station_simple.cpp" line="242"/>
+        <location filename="../../src/station_simple.cpp" line="257"/>
+        <location filename="../../src/station_hz.cpp" line="291"/>
+        <location filename="../../src/station_bascule.cpp" line="221"/>
         <source>At line %d: %s =&gt; Angle value out of range!</source>
         <translation>Ligne %d : %s =&gt; L&apos;angle est hors de l&apos;intervalle autorisé !</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="253"/>
+        <location filename="../../src/station_bascule.cpp" line="273"/>
         <source>Baseline covariance matrix from %s to %s (file %s:%d) is not positive-definite.</source>
         <translation>La matrice de covariance de la ligne de base de %s à %s (fichier %s : %d) n&apos;est pas définie-positive.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="641"/>
+        <location filename="../../src/station_bascule.cpp" line="661"/>
         <source>Baseline covariance matrix from  %s to %s (file %s:%d) is not positive-definite.</source>
         <translation>La matrice de covariance de la ligne de base de %s à %s (fichier %s : %d) n&apos;est pas définie-positive.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="1314"/>
+        <location filename="../../src/station_bascule.cpp" line="1249"/>
+        <source>At line %d: %s =&gt; %s is not a valid value for Vertical.</source>
+        <translation>À la ligne %d : %s =&gt; %s n&apos;est pas une valeur valide pour Verticale.</translation>
+    </message>
+    <message>
+        <location filename="../../src/station_bascule.cpp" line="1349"/>
         <source>Error: impossible to find bascule center &quot;%s&quot;</source>
         <translation>Erreur : impossible de trouver le centre de bascule &quot;%s&quot;</translation>
     </message>
     <message>
-        <location filename="../../src/axisobs.cpp" line="133"/>
-        <location filename="../../src/station_bascule.cpp" line="297"/>
+        <location filename="../../src/axisobs.cpp" line="148"/>
+        <location filename="../../src/station_bascule.cpp" line="317"/>
         <source>Observation %s can&apos;t be used with non-3D point %s or %s.</source>
         <translation>L&apos;observation %s ne peut pas être utilisée avec un point qui n&apos;est pas 3D %s ou %s.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="964"/>
+        <location filename="../../src/station_bascule.cpp" line="984"/>
         <source>Impossible to initialize station bascule %s!</source>
         <translation>Impossible d&apos;initialiser la station basculée %s!</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="1173"/>
+        <location filename="../../src/station_bascule.cpp" line="1193"/>
         <source>At line %d: %s =&gt;  Can&apos;t convert observation code.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le code de l&apos;observation.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="1189"/>
+        <location filename="../../src/station_bascule.cpp" line="1209"/>
         <source>At line %d: %s =&gt; Baselines not available in local compensation.</source>
         <translation>Ligne %d : %s =&gt; Les lignes de base ne sont pas utilisables en compensation locale.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="1210"/>
+        <location filename="../../src/station_bascule.cpp" line="1230"/>
         <source>At line %d: %s =&gt; Can&apos;t convert file name.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le nom du fichier.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="308"/>
-        <location filename="../../src/station_bascule.cpp" line="1261"/>
-        <location filename="../../src/station_eq.cpp" line="64"/>
+        <location filename="../../src/station_eq.cpp" line="79"/>
+        <location filename="../../src/station_axis.cpp" line="323"/>
+        <location filename="../../src/station_bascule.cpp" line="1296"/>
         <source>Warning: 0 observation found in %s.</source>
         <translation>Attention : 0 observation trouvée dans %s.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="1306"/>
+        <location filename="../../src/station_bascule.cpp" line="1341"/>
         <source>At line %s =&gt; Can&apos;t convert point name.</source>
         <translation>Ligne %s =&gt; Impossible de convertir le nom du point.</translation>
     </message>
@@ -4229,12 +4234,12 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur, impossible to de trouver le centre de la bascul de &quot;%s&quot;</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="1340"/>
+        <location filename="../../src/station_bascule.cpp" line="1375"/>
         <source>Can&apos;t open file  %s.</source>
         <translation>Impossible d&apos;ouvrir le fichier %s.</translation>
     </message>
     <message>
-        <location filename="../../src/station_bascule.cpp" line="1405"/>
+        <location filename="../../src/station_bascule.cpp" line="1440"/>
         <source>Bascule %s not init, it won&apos;t be used.</source>
         <translation>Bascule %s non initialisé, il ne sera pas utilisé.</translation>
     </message>
@@ -4243,31 +4248,31 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur d&apos;initialisation de l&apos;angle horizontal de la station sur le point %s.</translation>
     </message>
     <message>
-        <location filename="../../src/station_axis.cpp" line="238"/>
-        <location filename="../../src/station_eq.cpp" line="35"/>
-        <location filename="../../src/station_hz.cpp" line="181"/>
-        <location filename="../../src/station_simple.cpp" line="127"/>
+        <location filename="../../src/station_eq.cpp" line="50"/>
+        <location filename="../../src/station_simple.cpp" line="142"/>
+        <location filename="../../src/station_hz.cpp" line="196"/>
+        <location filename="../../src/station_axis.cpp" line="253"/>
         <source>At line %d: %s =&gt; Can&apos;t convert observation code.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le code d&apos;observation.</translation>
     </message>
     <message>
-        <location filename="../../src/station_hz.cpp" line="101"/>
+        <location filename="../../src/station_hz.cpp" line="116"/>
         <source>Error: impossible to initialize hz station on point %s.</source>
         <translation>Erreur : impossible d&apos;initialiser la station hz sur le point %s.</translation>
     </message>
     <message>
-        <location filename="../../src/station_hz.cpp" line="195"/>
-        <location filename="../../src/station_hz.cpp" line="205"/>
+        <location filename="../../src/station_hz.cpp" line="210"/>
+        <location filename="../../src/station_hz.cpp" line="220"/>
         <source>At line %d: %s =&gt; Can&apos;t convert point name.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le nom du point.</translation>
     </message>
     <message>
-        <location filename="../../src/station_hz.cpp" line="230"/>
+        <location filename="../../src/station_hz.cpp" line="245"/>
         <source>At line %d: %s =&gt; Can&apos;t convert absolute sigma.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le sigma absolu.</translation>
     </message>
     <message>
-        <location filename="../../src/station_hz.cpp" line="300"/>
+        <location filename="../../src/station_hz.cpp" line="315"/>
         <source>G0 from %s not init, it won&apos;t be used.</source>
         <translation>G0 depuis %s non initialisé, il ne sera pas utilisé.</translation>
     </message>
@@ -4284,11 +4289,11 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">G0 depuis %s non initialisé, il ne sera pas utilisé.</translation>
     </message>
     <message>
-        <location filename="../../src/axisobs.cpp" line="55"/>
-        <location filename="../../src/datafile.cpp" line="940"/>
-        <location filename="../../src/station_axis.cpp" line="362"/>
-        <location filename="../../src/station_bascule.cpp" line="55"/>
-        <location filename="../../src/station_simple.cpp" line="151"/>
+        <location filename="../../src/station_simple.cpp" line="166"/>
+        <location filename="../../src/datafile.cpp" line="1047"/>
+        <location filename="../../src/station_axis.cpp" line="377"/>
+        <location filename="../../src/axisobs.cpp" line="70"/>
+        <location filename="../../src/station_bascule.cpp" line="70"/>
         <source>At line %d: %s =&gt; Can&apos;t convert to point name.</source>
         <translation>Ligne %d : %s =&gt; Impossible de convertir le nom du point.</translation>
     </message>
@@ -4297,8 +4302,8 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">À la ligne %d : %s =&gt; La distance ne peut pas être négative ou nulle! (utiliser le code 9).</translation>
     </message>
     <message>
-        <location filename="../../src/station_hz.cpp" line="249"/>
-        <location filename="../../src/station_simple.cpp" line="197"/>
+        <location filename="../../src/station_simple.cpp" line="212"/>
+        <location filename="../../src/station_hz.cpp" line="264"/>
         <source>At line %d: %s =&gt; Can&apos;t convert target_height.</source>
         <translation>À la ligne %d : %s =&gt; Impossible de convertir la hauteur de cible.</translation>
     </message>
@@ -4311,17 +4316,17 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">A la ligne %d: %s =&gt; Impossible de convertir le sigma relatif de l&apos;observation.</translation>
     </message>
     <message>
-        <location filename="../../src/station_simple.cpp" line="20"/>
+        <location filename="../../src/station_simple.cpp" line="35"/>
         <source>At line %d: =&gt; Constraint sigma on point %s is too small.</source>
         <translation>A la ligne %d =&gt; Le sigma de la contrainte sur le point %s est trop petit.</translation>
     </message>
     <message>
-        <location filename="../../src/station_simple.cpp" line="227"/>
+        <location filename="../../src/station_simple.cpp" line="242"/>
         <source>At line %d: %s =&gt; Distance can&apos;t be negative!</source>
         <translation>À la ligne %d : %s =&gt; la distance ne peut pas être négative!</translation>
     </message>
     <message>
-        <location filename="../../src/matrixordering.cpp" line="154"/>
+        <location filename="../../src/matrixordering.cpp" line="169"/>
         <source>Original bandwidth: </source>
         <translation>Largeur de bande originale : </translation>
     </message>
@@ -4330,7 +4335,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Réordonnancement Cuthill-McKee inverse :</translation>
     </message>
     <message>
-        <location filename="../../src/matrixordering.cpp" line="172"/>
+        <location filename="../../src/matrixordering.cpp" line="187"/>
         <source>Opimized bandwidth: </source>
         <translation>Largeur de bande optimisée : </translation>
     </message>
@@ -4347,7 +4352,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur à l&apos;intialisation de la projection : %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="184"/>
+        <location filename="../../src/projection.cpp" line="174"/>
         <source>Center input: %.6f %.6f</source>
         <translation>Centre en entrée : %.6f %.6f</translation>
     </message>
@@ -4356,7 +4361,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur lors de la transformation du centre en latitude/longitude : %d %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="201"/>
+        <location filename="../../src/projection.cpp" line="191"/>
         <source>Center lat long (deg): %.6f %.6f</source>
         <translation>Centre lat long (deg): %.6f %.6f</translation>
     </message>
@@ -4381,71 +4386,73 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur : latitude hors de l&apos;intervalle %f et %f degrés!</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="74"/>
         <source>Error: latitude outside the interval %f and %f degrees!</source>
-        <translation>Erreur : latitude hors de l&apos;intervalle %f et %f degrés !</translation>
+        <translation type="vanished">Erreur : latitude hors de l&apos;intervalle %f et %f degrés !</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="136"/>
         <source>Error: projection &quot;%s&quot; is unknown! Please choose one from authorized list.</source>
-        <translation>Erreur : projection %s inconnue ! Choisissez-en une dans la liste des projections autorisées.</translation>
+        <translation type="vanished">Erreur : projection %s inconnue ! Choisissez-en une dans la liste des projections autorisées.</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="163"/>
-        <location filename="../../src/projection.cpp" line="172"/>
-        <location filename="../../src/projection.cpp" line="290"/>
+        <location filename="../../src/projection.cpp" line="145"/>
+        <source>Error init proj &quot;%s&quot;: %d %s</source>
+        <translation>Erreur init proj &quot;%s&quot; : %d %s</translation>
+    </message>
+    <message>
+        <location filename="../../src/projection.cpp" line="153"/>
+        <location filename="../../src/projection.cpp" line="162"/>
+        <location filename="../../src/projection.cpp" line="263"/>
         <source>Error: init proj &quot;%s&quot; to &quot;%s&quot;: %d %s</source>
         <translation>Erreur : init proj &quot;%s&quot; vers &quot;%s&quot; : %d %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="181"/>
+        <location filename="../../src/projection.cpp" line="171"/>
         <source>projDef %s</source>
         <translation>projDef %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="182"/>
+        <location filename="../../src/projection.cpp" line="172"/>
         <source>defLatLong %s</source>
         <translation>defLatLong %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="183"/>
+        <location filename="../../src/projection.cpp" line="173"/>
         <source>defGeocentr %s</source>
         <translation>defGeocentr %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="194"/>
+        <location filename="../../src/projection.cpp" line="184"/>
         <source>Error in projecting center %s</source>
         <translation>Erreur sur le centre de projection %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="218"/>
         <source>Error: latitude outside the interval %f and %f degrees or longitude outside%f and %f degrees!</source>
-        <translation>Erreur : latitude hors de l&apos;intervalle %f et %f degrés ou logitude hors de %f et %f degrés !</translation>
+        <translation type="vanished">Erreur : latitude hors de l&apos;intervalle %f et %f degrés ou logitude hors de %f et %f degrés !</translation>
     </message>
     <message>
         <source>Error: projecting center %s</source>
         <translation type="obsolete">Erreur lors de la projection du centre %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="233"/>
+        <location filename="../../src/projection.cpp" line="206"/>
         <source>Error projecting center: %s</source>
         <translation>Erreur lors de la projection du centre: %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="304"/>
+        <location filename="../../src/projection.cpp" line="277"/>
         <source>Error in projecting center: %s</source>
         <translation>Erreur lors de la projection du centre: %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="338"/>
-        <location filename="../../src/projection.cpp" line="382"/>
-        <location filename="../../src/projection.cpp" line="413"/>
+        <location filename="../../src/projection.cpp" line="319"/>
+        <location filename="../../src/projection.cpp" line="363"/>
+        <location filename="../../src/projection.cpp" line="394"/>
         <source>Error: projecting point %s: %s</source>
         <translation>Erreur lors de la projection du point %s : %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="364"/>
-        <location filename="../../src/projection.cpp" line="433"/>
+        <location filename="../../src/projection.cpp" line="345"/>
+        <location filename="../../src/projection.cpp" line="414"/>
         <source>Error: projection uninitialized!</source>
         <translation>Erreur : projection non initialisée !</translation>
     </message>
@@ -4454,7 +4461,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur, la latitude doit être comprise entre %f et %f degrés, et la longitude entre %f et %f degrés!</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="282"/>
+        <location filename="../../src/projection.cpp" line="255"/>
         <source>Local stereographic definition: %s</source>
         <translation>Définition de la stéréographique locale : %s</translation>
     </message>
@@ -4463,22 +4470,27 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur lors de la projection du point %s : %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="388"/>
+        <location filename="../../src/projection.cpp" line="369"/>
         <source>Point in latlong: %.6f %.6f %.6f</source>
         <translation>Point en latlong: %.6f %.6f %.6f</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="570"/>
+        <location filename="../../src/projection.cpp" line="498"/>
+        <source>Error getting factors for input proj with point %s: %s</source>
+        <translation>Erreur de calculs des facteurs pour la projection d&amp;apos;entrée avec le point %s : %s</translation>
+    </message>
+    <message>
+        <location filename="../../src/projection.cpp" line="554"/>
         <source>Testing Proj files in </source>
         <translation>Test des fichiers Proj dans </translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="584"/>
+        <location filename="../../src/projection.cpp" line="565"/>
         <source>Proj dir found: </source>
         <translation>Répertoire Proj trouvé : </translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="589"/>
+        <location filename="../../src/projection.cpp" line="573"/>
         <source>Proj directory not found, please make sure proj grids are correctly installed (see documentation).</source>
         <translation>Répertoire proj non trouvé, merci de vérifier l&apos;installation des grilles proj (voir documentation).</translation>
     </message>
@@ -4487,12 +4499,12 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Mauvais répertoire Proj, merci de mettre à jour les préférences.</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="599"/>
+        <location filename="../../src/projection.cpp" line="582"/>
         <source>User CRS</source>
         <translation>CRS utilisateur</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="599"/>
+        <location filename="../../src/projection.cpp" line="582"/>
         <source>???</source>
         <translation>???</translation>
     </message>
@@ -4501,7 +4513,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur à la transformation du centre en géocentrique : %d %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="240"/>
+        <location filename="../../src/projection.cpp" line="213"/>
         <source>Center cartesian geocentric: %.6f %.6f %.6f</source>
         <translation>Centre cartésien géocentrique : %.6f %.6f %.6f</translation>
     </message>
@@ -4510,7 +4522,7 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur à la transformation du centre en stéréographique : %d %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="311"/>
+        <location filename="../../src/projection.cpp" line="284"/>
         <source>Center in stereographic: %.6f %.6f %.6f</source>
         <translation>Centre en stéréographique: %.6f %.6f %.6f</translation>
     </message>
@@ -4523,8 +4535,8 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Erreur lors de la transformation de géoréférencée en stéréographique : %d %s</translation>
     </message>
     <message>
-        <location filename="../../src/projection.cpp" line="350"/>
-        <location filename="../../src/projection.cpp" line="425"/>
+        <location filename="../../src/projection.cpp" line="331"/>
+        <location filename="../../src/projection.cpp" line="406"/>
         <source>Point in stereographic: %.6f %.6f %.6f</source>
         <translation>Point en stéréographiques : %.6f %.6f %.6f</translation>
     </message>
@@ -4565,79 +4577,84 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation type="vanished">Centre local N</translation>
     </message>
     <message>
-        <location filename="../framewidget.cpp" line="134"/>
+        <location filename="../framewidget.cpp" line="146"/>
         <source>X</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../framewidget.cpp" line="135"/>
+        <location filename="../framewidget.cpp" line="147"/>
         <source>Y</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../framewidget.cpp" line="137"/>
+        <location filename="../framewidget.cpp" line="149"/>
         <source>E</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../framewidget.cpp" line="138"/>
+        <location filename="../framewidget.cpp" line="150"/>
         <source>N</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="479"/>
+        <location filename="../maintables.cpp" line="495"/>
         <source>Final</source>
         <translation>Final</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="480"/>
+        <location filename="../maintables.cpp" line="496"/>
         <source>Δ</source>
         <translation>Δ</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="483"/>
+        <location filename="../maintables.cpp" line="499"/>
         <source>Init</source>
         <translation>Init</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="484"/>
+        <location filename="../maintables.cpp" line="500"/>
         <source>σ</source>
         <translation>σ</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="489"/>
-        <location filename="../maintables.cpp" line="492"/>
-        <location filename="../maintables.cpp" line="495"/>
+        <location filename="../maintables.cpp" line="505"/>
+        <location filename="../maintables.cpp" line="508"/>
+        <location filename="../maintables.cpp" line="511"/>
         <source>σ̂</source>
         <translation>σ̂</translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="501"/>
+        <location filename="../maintables.cpp" line="517"/>
         <source>Nb active obs: </source>
         <translation>Nb obs actives : </translation>
     </message>
     <message>
-        <location filename="../maintables.cpp" line="503"/>
+        <location filename="../maintables.cpp" line="519"/>
         <source>Comment: </source>
         <translation>Commentaire : </translation>
     </message>
     <message>
-        <location filename="../../src/station_eq.cpp" line="136"/>
+        <location filename="../../src/station_eq.cpp" line="151"/>
         <source>Obs type %d not usable in Station_Eq.</source>
         <translation>L&apos;obs type %d non utilisable dans Station_Eq.</translation>
     </message>
     <message>
-        <location filename="../../src/varcovarmatrix.cpp" line="22"/>
+        <location filename="../../src/varcovarmatrix.cpp" line="38"/>
         <source>Error in parameter name: %s</source>
         <translation>Erreur dans le nom du paramètre : %s</translation>
     </message>
     <message>
-        <location filename="../../src/varcovarmatrix.cpp" line="77"/>
+        <location filename="../../src/varcovarmatrix.cpp" line="93"/>
         <source>Error while reading %s!</source>
         <translation>Erreur lors de la lecture %s !</translation>
     </message>
     <message>
-        <location filename="../../src/varcovarmatrix.cpp" line="144"/>
+        <location filename="../../src/varcovarmatrix.cpp" line="114"/>
+        <source>Nothing useful in CorCov matrix %s (no coord constraints on matrix points).</source>
+        <translation>Rien d&apos;utile dans la matrice CorCov %s (pas de contraintes sur les points de la matrice).</translation>
+    </message>
+    <message>
+        <location filename="../../src/varcovarmatrix.cpp" line="168"/>
         <source>Error param %u: %s != %s</source>
         <translation>Erreur param %u : %s != %s</translation>
     </message>
@@ -4805,89 +4822,89 @@ Vérifiez les coordonnées des points contraints !</translation>
         <translation>Appliquer</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="55"/>
+        <location filename="../sightmatrixdialog.cpp" line="70"/>
         <source>Select Matrix File</source>
         <translation>Sélectionner fichier matrice</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="57"/>
+        <location filename="../sightmatrixdialog.cpp" line="72"/>
         <source>Matrix (*.mat *.txt *.csv);;All (*.*)</source>
         <translation>Matrice (*.mat *.txt *.csv);;Tous (*.*)</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="75"/>
+        <location filename="../sightmatrixdialog.cpp" line="90"/>
         <source>Proj coord (*.cor);;All (*.*)</source>
         <translation>Coordonnées en projection (*.cor);;Tous (*.*)</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="161"/>
+        <location filename="../sightmatrixdialog.cpp" line="177"/>
         <source>New Obs File</source>
         <translation>Nouveau fichier Obs</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="163"/>
+        <location filename="../sightmatrixdialog.cpp" line="179"/>
         <source>obs (*.obs)</source>
         <translation>obs (*.obs)</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="116"/>
-        <location filename="../sightmatrixdialog.cpp" line="144"/>
-        <location filename="../sightmatrixdialog.cpp" line="155"/>
-        <location filename="../sightmatrixdialog.cpp" line="199"/>
-        <location filename="../sightmatrixdialog.cpp" line="213"/>
-        <location filename="../sightmatrixdialog.cpp" line="223"/>
-        <location filename="../sightmatrixdialog.cpp" line="267"/>
+        <location filename="../sightmatrixdialog.cpp" line="132"/>
+        <location filename="../sightmatrixdialog.cpp" line="160"/>
+        <location filename="../sightmatrixdialog.cpp" line="171"/>
+        <location filename="../sightmatrixdialog.cpp" line="215"/>
+        <location filename="../sightmatrixdialog.cpp" line="229"/>
+        <location filename="../sightmatrixdialog.cpp" line="239"/>
+        <location filename="../sightmatrixdialog.cpp" line="283"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="73"/>
+        <location filename="../sightmatrixdialog.cpp" line="88"/>
         <source>Select COR File</source>
         <translation>Sélectionner fichier COR</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="117"/>
+        <location filename="../sightmatrixdialog.cpp" line="133"/>
         <source>Can&apos;t open file </source>
         <translation>Impossible d&apos;ouvrir le fichier </translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="145"/>
-        <location filename="../sightmatrixdialog.cpp" line="200"/>
+        <location filename="../sightmatrixdialog.cpp" line="161"/>
+        <location filename="../sightmatrixdialog.cpp" line="216"/>
         <source>Point %1 not found in COR file.</source>
         <translation>Point %1 non trouvé dans le fichier COR.</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="156"/>
+        <location filename="../sightmatrixdialog.cpp" line="172"/>
         <source>No point found.</source>
         <translation>Pas de point trouvé.</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="214"/>
+        <location filename="../sightmatrixdialog.cpp" line="230"/>
         <source>Too many columns on line %1: </source>
         <translation>Trop de colonnes sur la ligne %1 : </translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="224"/>
+        <location filename="../sightmatrixdialog.cpp" line="240"/>
         <source>Observation from %1 to itself is ignored.</source>
         <translation>L&apos;observation de la station %1 vers elle-même est ignorée.</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="268"/>
+        <location filename="../sightmatrixdialog.cpp" line="284"/>
         <source>Not enough columns on line %1: </source>
         <translation>Pas assez de colonnes sur la ligne %1 : </translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="278"/>
+        <location filename="../sightmatrixdialog.cpp" line="294"/>
         <source>Info</source>
         <translation>Info</translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="279"/>
+        <location filename="../sightmatrixdialog.cpp" line="295"/>
         <source>Observations written to </source>
         <translation>Observations écrites dans </translation>
     </message>
     <message>
-        <location filename="../sightmatrixdialog.cpp" line="287"/>
+        <location filename="../sightmatrixdialog.cpp" line="301"/>
         <source>Matrix File Example</source>
         <translation>Exemple de fichier matrice</translation>
     </message>
