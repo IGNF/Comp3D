@@ -1,6 +1,6 @@
 Comp3D V5.23:
  - update licence info
- - proj 6 > 8/9
+ - proj 8/9
  - new rot export xyz
  - faster solver solver
  - change sigma_total
@@ -8,5 +8,4 @@ Comp3D V5.23:
  - sigma factor applicable to cartesian and polar subframes
  - native windows compliation
  - website
-
-
+ - bug and translation fix

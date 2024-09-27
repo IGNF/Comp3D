@@ -62,11 +62,11 @@ jobs:
       id: release_vars
       run: |
         if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]]; then
-          echo "release_name=Comp3D linux - Latest" >> $GITHUB_ENV
+          echo "release_name=Comp3D - Latest" >> $GITHUB_ENV
           echo "release_tag=Comp3D_linux" >> $GITHUB_ENV
           echo "release_draft=true" >> $GITHUB_ENV
         else
-          echo "release_name=Comp3D linux - ${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "release_name=Comp3D - ${{ github.ref_name }}" >> $GITHUB_ENV
           echo "release_tag=${{ github.ref_name }}" >> $GITHUB_ENV
           echo "release_draft=false" >> $GITHUB_ENV
         fi
@@ -186,11 +186,11 @@ jobs:
       shell: bash
       run: |
         if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == "refs/heads/main" ]]; then
-          echo "release_name=Comp3D win - Latest" >> $GITHUB_ENV
+          echo "release_name=Comp3D - Latest" >> $GITHUB_ENV
           echo "release_tag=Comp3D_win" >> $GITHUB_ENV
           echo "release_draft=true" >> $GITHUB_ENV
         else
-          echo "release_name=Comp3D win - ${{ github.ref_name }}" >> $GITHUB_ENV
+          echo "release_name=Comp3D - ${{ github.ref_name }}" >> $GITHUB_ENV
           echo "release_tag=${{ github.ref_name }}" >> $GITHUB_ENV
           echo "release_draft=false" >> $GITHUB_ENV
         fi
