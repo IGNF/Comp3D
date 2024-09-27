@@ -62,6 +62,9 @@ protected:
 
 class Station_Axis : public Station
 {
+#ifdef USE_QT
+    Q_OBJECT
+#endif
 public:
     std::string typeStr() const override;
     AxisTarget* updateTarget(std::string target_num, AxisObs &axisObs);

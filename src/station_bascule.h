@@ -54,6 +54,9 @@ protected:
   **/
 class Station_Bascule : public Station
 {
+#ifdef USE_QT
+    Q_OBJECT
+#endif
 public:
     std::string typeStr() const override;
     bool read_obs(std::string line, int line_number, DataFile * _file, const std::string &current_absolute_path, const std::string &comment) override;

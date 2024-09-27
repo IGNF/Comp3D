@@ -3644,7 +3644,7 @@ Vérifiez les coordonnées des points contraints !</translation>
     <message>
         <location filename="../../src/project.cpp" line="590"/>
         <source>Will remove uninitializable %s.</source>
-        <translation>La station non-initialisable %s sera supprimée.</translation>
+        <translation>La %s sera supprimée car non-initialisable.</translation>
     </message>
     <message>
         <source>Vertical deflection used.</source>
@@ -4657,6 +4657,21 @@ Vérifiez les coordonnées des points contraints !</translation>
         <location filename="../../src/varcovarmatrix.cpp" line="168"/>
         <source>Error param %u: %s != %s</source>
         <translation>Erreur param %u : %s != %s</translation>
+    </message>
+    <message>
+        <location filename="../../src/station.cpp" line="128"/>
+        <source>station type </source>
+        <translation>station de type </translation>
+    </message>
+    <message>
+        <location filename="../../src/station.cpp" line="129"/>
+        <source> number </source>
+        <translation> numéro </translation>
+    </message>
+    <message>
+        <location filename="../../src/station.cpp" line="131"/>
+        <source> on point </source>
+        <translation> sur le point </translation>
     </message>
 </context>
 <context>

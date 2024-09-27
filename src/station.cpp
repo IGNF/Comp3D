@@ -124,8 +124,10 @@ void Station::changeObsActivation(Obs& obs, bool active)
 std::string Station::toString() const
 {
     std::ostringstream oss;
-    oss<<"station type "<<typeStr()<<" number "<<getNum();
+
+    oss<<QObject::tr(QT_TRANSLATE_NOOP("QObject","station type ")).toStdString()<<typeStr()
+       <<QObject::tr(QT_TRANSLATE_NOOP("QObject"," number ")).toStdString()<<getNum();
     if (origin())
-        oss<<" on point "<<origin()->name;
+        oss<<QObject::tr(QT_TRANSLATE_NOOP("QObject"," on point ")).toStdString()<<origin()->name;
     return oss.str();
 }

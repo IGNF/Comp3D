@@ -16,6 +16,7 @@
 #ifndef STATION_H
 #define STATION_H
 
+#include "compile.h"
 #include "obs.h"
 #include "filerefjson.h"
 #include "json/json.h"
@@ -43,7 +44,13 @@ enum class STATION_TYPE{
   describing its orientation etc.
   **/
 class Station
+#ifdef USE_QT
+        : public QObject
+#endif
 {
+#ifdef USE_QT
+    Q_OBJECT
+#endif
 public:
     template <class T>
     static T *create(Point *origin);         // Factory: only way to create a station
@@ -52,7 +59,12 @@ public:
     Station(Station&&)=delete;
     Station& operator=(const Station&)=delete;
     Station& operator=(Station&&)=delete;
-    virtual ~Station();
+    virtual ~Station()
+#ifdef USE_QT
+        override
+#endif
+    ;
+
     Point* origin() const {return mOrigin;}
     bool initOk() const {return mInitOk;}
     std::vector<Parameter> params;
