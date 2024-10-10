@@ -33,7 +33,7 @@ echo $version >> distrib/comp3d5v$version/DEBIAN/control
 echo "Section: base" >> distrib/comp3d5v$version/DEBIAN/control
 echo "Priority: optional" >> distrib/comp3d5v$version/DEBIAN/control
 echo "Architecture: all" >> distrib/comp3d5v$version/DEBIAN/control
-echo "Depends: " >> distrib/comp3d5v$version/DEBIAN/control
+echo "Depends: libfuse2" >> distrib/comp3d5v$version/DEBIAN/control
 echo "Maintainer: JM Muller <jean-michael.muller@ign.fr>" >> distrib/comp3d5v$version/DEBIAN/control
 echo "Description: Micro-geodesic compensation software" >> distrib/comp3d5v$version/DEBIAN/control
 echo "Homepage: http://www.ign.fr" >> distrib/comp3d5v$version/DEBIAN/control
