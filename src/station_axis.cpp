@@ -276,6 +276,7 @@ bool Station_Axis::read_obs(std::string line,
         ok=false;
     }
     filename.erase(0,1); //remove first character (@)
+    std::replace(filename.begin(),filename.end(),'\\','/');
 
 
     if (ok)

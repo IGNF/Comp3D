@@ -126,9 +126,11 @@ bool DataFile::read()
                         if ((what_subfile[1]).length()>0)
                         {
                             std::cout<<"call for subfile\n";
+                            std::string subfile = what_subfile[1];
+                            std::replace(subfile.begin(),subfile.end(),'\\','/');
                             fs::path next_path(file_path);
                             std::string next_path_str=next_path.parent_path().string()+"/";
-                            ok =read_subfile(what_subfile[1],next_path_str,line_num) && ok;
+                            ok =read_subfile(subfile,next_path_str,line_num) && ok;
                         }
                     }
                     //else it's a normal data line
