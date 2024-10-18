@@ -87,54 +87,72 @@ bool DataFile::read()
     {
         int line_num=0;
         fileExists=true;
-        for (std::string line; std::getline(file, line); )
+        bool hasCR = false;
+
+        for (std::string raw_line; std::getline(file, raw_line); )
         {
-            line_num++;
-            if (line.empty())
-                continue;
+            size_t pos_start = 0;
+            size_t pos_end;
+            std::vector<std::string> sublines;
 
-            //remove exotic endline chars
-            if (line.back()=='\r')
-                line.resize(line.size()-1);
+            if (!raw_line.empty() && raw_line.back() == '\r')
+                raw_line.pop_back();
 
-            //remove trailing spaces
-            auto strEnd = line.find_last_not_of(" ");
-            line=line.substr(0, strEnd+1);
+            while ((pos_end = raw_line.find('\r', pos_start)) != std::string::npos) {
+                if (!hasCR) {
+                    hasCR=true;
+                    Project::theInfo()->warning(INFO_CONF,fileDepth+1,
+                                            QT_TRANSLATE_NOOP("QObject","File '%s' contains character '\\r', interpreted as line separator (first line : %d)."),
+                                            file_path.c_str(), line_num+1);
+                }
+                sublines.push_back(raw_line.substr (pos_start, pos_end - pos_start));
+                pos_start = pos_end + 1;
+            }
+            sublines.push_back (raw_line.substr (pos_start));
 
-            //std::cout<<"Line "<<line_num<<": \""<<line<<"\""<<std::endl;
-            //test if line is empty or just a comment
-            std::regex regex_line(R"(^\s*([^*]*)(.*)$)");
-            std::smatch what;
-            if(std::regex_match(line, what, regex_line))
-            {
-                // what[0] contains the whole string
-                // what[1] contains the data part
-                // what[2] contains the comment part
-                if ((what[1]).length()<2)
+            for (std::string line: sublines) {
+                line_num++;
+                if (line.empty())
+                    continue;
+                //remove trailing spaces
+                auto strEnd = line.find_last_not_of(" ");
+                line=line.substr(0, strEnd+1);
+
+                //std::cout<<"Line "<<line_num<<": \""<<line<<"\""<<std::endl;
+                //test if line is empty or just a comment
+                std::regex regex_line(R"(^\s*([^*]*)(.*)$)");
+                std::smatch what;
+                if(std::regex_match(line, what, regex_line))
                 {
-                    //std::cout<<"New comment: \""<<line<<"\""<<std::endl;
-                    comments.push_back(FileComment(line,line_num));
-                }else{
-                    //check if sub-file called
-                    std::regex regex_subfile(R"(^\s*@([^*\s]*)(.*)$)");
-                    std::smatch what_subfile;
-                    if(std::regex_match(line, what_subfile, regex_subfile))
+                    // what[0] contains the whole string
+                    // what[1] contains the data part
+                    // what[2] contains the comment part
+                    if ((what[1]).length()<2)
                     {
-                        // what_subfile[0] contains the whole string
-                        // what_subfile[1] contains the link part
-                        // what_subfile[2] contains the comment part
-                        if ((what_subfile[1]).length()>0)
+                        //std::cout<<"New comment: \""<<line<<"\""<<std::endl;
+                        comments.push_back(FileComment(line,line_num));
+                    }else{
+                        //check if sub-file called
+                        std::regex regex_subfile(R"(^\s*@([^*\s]*)(.*)$)");
+                        std::smatch what_subfile;
+                        if(std::regex_match(line, what_subfile, regex_subfile))
                         {
-                            std::cout<<"call for subfile\n";
-                            std::string subfile = what_subfile[1];
-                            std::replace(subfile.begin(),subfile.end(),'\\','/');
-                            fs::path next_path(file_path);
-                            std::string next_path_str=next_path.parent_path().string()+"/";
-                            ok =read_subfile(subfile,next_path_str,line_num) && ok;
+                            // what_subfile[0] contains the whole string
+                            // what_subfile[1] contains the link part
+                            // what_subfile[2] contains the comment part
+                            if ((what_subfile[1]).length()>0)
+                            {
+                                std::cout<<"call for subfile\n";
+                                std::string subfile = what_subfile[1];
+                                std::replace(subfile.begin(),subfile.end(),'\\','/');
+                                fs::path next_path(file_path);
+                                std::string next_path_str=next_path.parent_path().string()+"/";
+                                ok =read_subfile(subfile,next_path_str,line_num) && ok;
+                            }
                         }
+                        //else it's a normal data line
+                        else ok = interpret_line(line,line_num) && ok;
                     }
-                    //else it's a normal data line
-                    else ok = interpret_line(line,line_num) && ok;
                 }
             }
         }
