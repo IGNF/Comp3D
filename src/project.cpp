@@ -1598,7 +1598,7 @@ bool Project::saveasJSON()
         std::string file_path=it.first->get_path()+it.first->get_name();
         fs::path file_path_path(file_path);
         fs::path comp_path(config.config_file);
-        js_all_data_files[oss.str()]=relativeTo( comp_path.parent_path(),file_path_path ).string();
+        js_all_data_files[oss.str()]=relativeTo( comp_path.parent_path(),file_path_path ).generic_string();
     }
     js_root["all_data_files"]=js_all_data_files;
     
