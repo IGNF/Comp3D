@@ -31,12 +31,12 @@ Project_Config::Project_Config(const  std::string &filename):working_directory("
     root_COR_file(""),root_OBS_file(""),coord_cov_file("")
 {
     fs::path current_path(config_file);
-    working_directory=current_path.parent_path().string();
+    working_directory=current_path.parent_path().generic_string();
 
     if (working_directory.empty()) working_directory+=".";
 
     working_directory+="/";
-    name=current_path.stem().string();
+    name=current_path.stem().generic_string();
     std::cout<<"Working directory: "<<working_directory<<std::endl;
 }
 
@@ -354,24 +354,24 @@ std::string Project_Config::get_root_COR_absolute_filename()
 {
     fs::path current_COR_path(root_COR_file);
     if (current_COR_path.is_relative())
-        return working_directory+current_COR_path.string();
-    else return current_COR_path.string();
+        return working_directory+current_COR_path.generic_string();
+    else return current_COR_path.generic_string();
 }
 
 std::string Project_Config::get_root_OBS_absolute_filename()//from comp point of view
 {
     fs::path current_OBS_path(root_OBS_file);
     if (current_OBS_path.is_relative())
-        return working_directory+current_OBS_path.string();
-    else return current_OBS_path.string();
+        return working_directory+current_OBS_path.generic_string();
+    else return current_OBS_path.generic_string();
 }
 
 std::string Project_Config::get_coord_cov_absolute_filename()//from comp point of view
 {
     fs::path current_coord_cov_path(coord_cov_file);
     if (current_coord_cov_path.is_relative())
-        return working_directory+current_coord_cov_path.string();
-    else return current_coord_cov_path.string();
+        return working_directory+current_coord_cov_path.generic_string();
+    else return current_coord_cov_path.generic_string();
 }
 
 void Project_Config::set_root_COR_filename(const std::string &_root_COR_filename)//from comp point of view
@@ -382,7 +382,7 @@ void Project_Config::set_root_COR_filename(const std::string &_root_COR_filename
 void Project_Config::set_root_COR_abs_path(const std::string &_root_COR_abs_path)
 {
     fs::path COR_path(_root_COR_abs_path);
-    root_COR_file=fs::relative(COR_path).string();
+    root_COR_file=fs::relative(COR_path).generic_string();
 }
 
 void Project_Config::set_root_OBS_filename(const std::string &_root_OBS_filename)//from comp point of view
