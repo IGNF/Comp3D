@@ -162,11 +162,11 @@ bool DataFile::read()
             Project::theInfo()->warning(INFO_CONF,fileDepth+1,
                                         QT_TRANSLATE_NOOP("QObject","At line %d: \"@%s\" => Can't open file \"%s\"."),
                                         get_line_num_in_parent(),filename.c_str(),
-                                        (current_absolute_path+"/"+filename).c_str()); // TODO: use std::filesystem::path
+                                        file_path.c_str()); // TODO: use std::filesystem::path
         else
             Project::theInfo()->warning(INFO_CONF,fileDepth+1,
                                         QT_TRANSLATE_NOOP("QObject","Can't open file \"%s\"."),
-                                        (current_absolute_path+"/"+filename).c_str()); // TODO: use std::filesystem::path
+                                        file_path.c_str()); // TODO: use std::filesystem::path
         fileExists=false;
         ok=false;
     }
