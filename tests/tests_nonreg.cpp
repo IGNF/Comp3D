@@ -155,7 +155,7 @@ void Tests_NonReg::test_errors()
 {
     std::cout<<"\nPrepare test_errors"<<std::endl;
     std::string refFile="./data/errors/ex_ref.comp";
-    std::string refMD5="602291490b6abab5fc9b4d57969069f2";
+    std::string refMD5="9712a25536b768be3d9efb5005a18850";
 
     test_template(refFile, refMD5,false);
 }

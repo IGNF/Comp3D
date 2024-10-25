@@ -1,10 +1,11 @@
 data=
 {
-	"COMP3D_COMMIT" : "v5.21rc3-348-g8d36295d-dirty",
-	"COMP3D_COPYRIGHT" : "Copyright 1992-2023 IGN France",
-	"COMP3D_LICENSE" : "Licensed to IGN/ENSG only",
-	"COMP3D_OPTIONS" : "QT SIM ",
-	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"COMP3D_COMMIT" : "InitPublic-44-g499a6512",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2024 IGN France www.ign.fr",
+	"COMP3D_LICENSE" : "Provided with absolutely no warranty, under GPLv3 license",
+	"COMP3D_OPTIONS" : "QT RES ",
+	"COMP3D_REPO" : "https://github.com/IGNF/Comp3D",
+	"COMP3D_VERSION" : "COMP3D v5.24dev-PROJ 8.2.1-linux",
 	"all_data_files" : 
 	{
 		"0" : "ex.cor",
@@ -46,8 +47,8 @@ data=
 			"min" : 0.51882011574030873
 		},
 		"compensation_done" : true,
-		"computation_duration" : "00:00:00.001394",
-		"computation_start" : "2023-Oct-09 10:39:34.590819",
+		"computation_duration" : "00:00:00.001913",
+		"computation_start" : "2024-Oct-25 14:28:51.134386",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
@@ -55,7 +56,7 @@ data=
 		"kernel" : null,
 		"messages_computation" : "",
 		"messages_read_config" : "",
-		"messages_read_data" : "Reading COR...<br/>\nRead file ex.cor...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file toto.cor...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At line 1: \"@toto.cor\" => Can't open file \"./data/errors//toto.cor\".</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:2: Wrong format in: 1ere part * oubli commentaire</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:3: Wrong format in: 1 S1 10 20 0.01 0.01 * manque un champ</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:5: Unknown point code 56.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:5: Error reading line.</font><br/>\nReading OBS...<br/>\nRead file ex.obs...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Warning: try to create a new hz station on point b without opening.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:8: Wrong format in: 6 b a  0.001 0 0 0 *champ mesure manquant</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:9: 10 b a  100.001 0.001 0 0 0 *code inexistant => Impossible to determine observation type!</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:11: Wrong format in: 6 b a  100.001   *manque 4 champs</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:14: Wrong format in: 6 b a  100.001 0.001000 0 0 *manque 1 champ</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:19: 74563 b a  10.002 0.001000 0 0 0 *code inexistant => Impossible to determine observation type!</font><br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file bilout.obs...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At line 22: \"@bilout.obs\" => Can't open file \"./data/errors//bilout.obs\".</font><br/>\nPoints setting...<br/>\nRead data finished.<br/>\nAll points are initialized.<br/>\nVertical deflection not used.<br/>\n",
+		"messages_read_data" : "Reading COR...<br/>\nRead file ex.cor...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file toto.cor...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At line 1: \"@toto.cor\" => Can't open file \"./data/errors/toto.cor\".</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:2: Wrong format in: 1ere part * oubli commentaire</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:3: Wrong format in: 1 S1 10 20 0.01 0.01 * manque un champ</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:5: Unknown point code 56.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:5: Error reading line.</font><br/>\nReading OBS...<br/>\nRead file ex.obs...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Warning: try to create a new hz station on point b without opening.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:8: Wrong format in: 6 b a  0.001 0 0 0 *champ mesure manquant</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:9: 10 b a  100.001 0.001 0 0 0 *code inexistant => Impossible to determine observation type!</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:11: Wrong format in: 6 b a  100.001   *manque 4 champs</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:14: Wrong format in: 6 b a  100.001 0.001000 0 0 *manque 1 champ</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:19: 74563 b a  10.002 0.001000 0 0 0 *code inexistant => Impossible to determine observation type!</font><br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file bilout.obs...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At line 22: \"@bilout.obs\" => Can't open file \"./data/errors/bilout.obs\".</font><br/>\nPoints setting...<br/>\nRead data finished.<br/>\nAll points are initialized.<br/>\nVertical deflection not used.<br/>\n",
 		"messages_set_least_squares" : "",
 		"nbr_active_obs" : 11,
 		"nbr_all_obs" : 12,
@@ -83,7 +84,7 @@ data=
 		"rank_deficiency" : 0,
 		"sigma_0_final" : 0.35355339059470786,
 		"sigma_0_init" : 706.04685095863988,
-		"solver_name" : "N5Eigen8SparseQRINS_12SparseMatrixIdLi0EiEENS_15NaturalOrderingIiEEEE",
+		"solver_name" : "N5Eigen14SimplicialLDLTINS_12SparseMatrixIdLi0EiEELi1ENS_11AMDOrderingIiEEEE",
 		"unit_name" : "g",
 		"use_vertical_deflection" : false
 	},
@@ -137,7 +138,7 @@ data=
 			[
 				0.0,
 				11.0,
-				-6.6469467740191882e-20
+				-2.2022960026188378e-20
 			],
 			"coord_read" : 
 			[
@@ -153,7 +154,7 @@ data=
 				"axes" : 
 				[
 					[
-						3.5355339059470783e-05,
+						3.535533905947079e-05,
 						100.0,
 						0.0
 					],
@@ -170,7 +171,7 @@ data=
 				],
 				"matrix" : 
 				[
-					9.9999999999999986e-09,
+					1e-08,
 					-0.0,
 					-0.0,
 					9.9999999999999986e-09,
@@ -179,7 +180,7 @@ data=
 				],
 				"sigmas" : 
 				[
-					3.5355339059470783e-05,
+					3.535533905947079e-05,
 					3.5355339059470783e-05,
 					3.535533905947077e-05
 				]
@@ -192,7 +193,7 @@ data=
 				"a_x" : 
 				{
 					"rank" : 0,
-					"sigma" : 3.5355339059470783e-05,
+					"sigma" : 3.535533905947079e-05,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
 					"value" : 0.0
@@ -211,14 +212,14 @@ data=
 					"sigma" : 3.535533905947077e-05,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -6.6469467740191882e-20
+					"value" : -2.2022960026188378e-20
 				}
 			},
 			"shift_from_read" : 
 			[
 				0.0,
 				0.0,
-				-6.6469467740191882e-20
+				-2.2022960026188378e-20
 			],
 			"sigmas_init" : 
 			[
@@ -248,13 +249,13 @@ data=
 							"number" : 0,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
-							"obs_redondancy" : 2.2204460492503131e-14,
+							"obs_redondancy" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 0,
 							"residual" : 0.0,
 							"residual_std" : 0.0,
-							"sigma_a_posteriori" : 9.9999999999999991e-05,
+							"sigma_a_posteriori" : 0.0001,
 							"sigma_abs" : 0.0001,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 0.0001,
@@ -347,7 +348,7 @@ data=
 			[
 				0.0,
 				0.99850000123643912,
-				0.00015020536954795286
+				0.00015020536954795248
 			],
 			"coord_read" : 
 			[
@@ -373,23 +374,23 @@ data=
 						99.999097063635219
 					],
 					[
-						3.5355382690431457e-05,
+						3.5355382690431451e-05,
 						100.0,
 						0.0
 					]
 				],
 				"matrix" : 
 				[
-					1.0000024681413758e-08,
+					1.0000024681413754e-08,
 					0.0,
 					0.0,
 					5.0999999987753279e-07,
-					-7.0041327185207665e-12,
+					-7.0041327185178512e-12,
 					1.6170353540399012e-08
 				],
 				"sigmas" : 
 				[
-					3.5355382690431457e-05,
+					3.5355382690431451e-05,
 					0.00025248762342976096,
 					4.4958805506444171e-05
 				]
@@ -402,7 +403,7 @@ data=
 				"b_x" : 
 				{
 					"rank" : 3,
-					"sigma" : 3.5355382690431457e-05,
+					"sigma" : 3.5355382690431451e-05,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
 					"value" : 0.0
@@ -421,14 +422,14 @@ data=
 					"sigma" : 4.4958805506444171e-05,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 0.00015020536954795286
+					"value" : 0.00015020536954795248
 				}
 			},
 			"shift_from_read" : 
 			[
 				0.0,
 				0.99850000123643912,
-				0.00015020536954795286
+				0.00015020536954795248
 			],
 			"sigmas_init" : 
 			[
@@ -458,13 +459,13 @@ data=
 							"number" : 3,
 							"obs_azim" : 0.0,
 							"obs_length" : 10.001499999999998,
-							"obs_redondancy" : 7.2593264732745411e-09,
+							"obs_redondancy" : 3.1175062531474396e-10,
 							"obs_zen" : 1.5708120347449426,
 							"original_value" : 0.0,
 							"rank" : 3,
 							"residual" : 0.0,
 							"residual_std" : 0.0,
-							"sigma_a_posteriori" : 9.9999999996370332e-07,
+							"sigma_a_posteriori" : 9.999999999984412e-07,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -730,13 +731,13 @@ data=
 							"number" : 4,
 							"obs_azim" : 0.0,
 							"obs_length" : 10.001499999999998,
-							"obs_redondancy" : 7.2593264732745411e-09,
+							"obs_redondancy" : 3.1175062531474396e-10,
 							"obs_zen" : 1.5708120347449426,
 							"original_value" : 0.0,
 							"rank" : 10,
 							"residual" : 0.0,
 							"residual_std" : 0.0,
-							"sigma_a_posteriori" : 9.9999999996370332e-07,
+							"sigma_a_posteriori" : 9.999999999984412e-07,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
