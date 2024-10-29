@@ -533,6 +533,10 @@ function get_header_conf(table_name, matrix_inverted,use_vertical_deflection,com
         {displayed_name:_("Vertical"), field:"vertical", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
         {displayed_name:_("Global cartesian coordinates") + "(m)", field:"glob_cart_coord", tooltip:"", sortable:false, fixed_dec:false, foldable:false, colspan: "4"},
       );
+      if (matrix_inverted)
+        header_conf.push(
+          {displayed_name:_("Sigmas"), field:"sigmas", tooltip:"", sortable:false, fixed_dec:false, foldable:false},
+        );
       return header_conf
     }else if(table_name === "coord_comp_table"){
         let component = get_component();
@@ -2652,7 +2656,7 @@ function show_repart_residuals(){
     var data2graph_dist = [];
     var dist_residuals_all = [];
   }
-  
+
   let data2graph_type = [];
   for (const type of exist_type){
     data2graph_type.push({
@@ -2968,25 +2972,25 @@ function show_biggest_residuals(){
 //---------------------------------------------------------------------------------------
 function show_G0(){
   let report_div = create_title_section("g_0",_("G0"),_("G0"));
-  
+
   // Create table tag
   let table = document.createElement("table");
   table.id = "g0";
   table.classList.add("report_tables");
-  
+
   // Create header table
   let header_conf = get_header_conf("g0s", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"]);
   let thead = make_html_header(header_conf);
   table.appendChild(thead);
-  
+
   let tbody = document.createElement("tbody");
-  
+
   for (let i = 0; i < all_g0.length; i++){
     let g0=all_g0[i];
     let sigma=0;
     let value=0;
     let unitFactor=0;
-    
+
     for (const [key, val] of Object.entries(g0.params)){
       for (const [key2, val2] of Object.entries(val)){
         if (key2=="sigma"){
@@ -2998,46 +3002,46 @@ function show_G0(){
         }
       }
     }
-    
+
     let value_unit=value/unitFactor
     let sigma_unit=sigma/unitFactor*10000
-    
+
     //New line
     let new_tr = document.createElement("tr");
     new_tr.setAttribute('class',parite[i % 2]);
-    
+
     //Case Point
     let td_point=document.createElement("td");
     td_point.innerHTML=g0.name;
     new_tr.appendChild(td_point);
-    
+
     //Case Tour number
     let td_number=document.createElement("td");
     td_number.innerHTML=g0.num;
     new_tr.appendChild(td_number);
-    
+
     //Case Value
     let td_value=document.createElement("td");
     let attribute = ['post','\u0020'+'g']
     td_value.appendChild(format_value(value_unit, false, nb_decimals, attribute, true));
     new_tr.appendChild(td_value);
-    
+
     //Case Sigma
     let td_sigma=document.createElement("td");
     let attribute2 = ['post','\u0020'+'dmgon']
     td_sigma.appendChild(format_value(sigma_unit, false, nb_decimals_mini, attribute2, true));
     new_tr.appendChild(td_sigma);
-    
-    //Case Active obs   
+
+    //Case Active obs
     let td_active_obs=document.createElement("td");
     td_active_obs.innerHTML=g0.nbr_active_obs;
     new_tr.appendChild(td_active_obs);
-    
+
     tbody.appendChild(new_tr);
   }
-  
+
   table.appendChild(tbody);
-  
+
   let div = document.createElement("div");
   div.classList.add("div_buttons");
   report_div.appendChild(div);
@@ -3079,11 +3083,23 @@ function show_similarities(){
   for (let i = 0; i < all_basc.length; i++){
     if (all_basc[i].geocentric) continue;
     let basc = all_basc[i];
-    let origin = all_basc[i].origin;
+    let origin = basc.origin;
     let pos = origin["coord_compensated_cartesian"];
     let matrix = basc["params_rot"]["R_global2instr"];
     let obs_type = triplet_types[basc["triplet_type"]]; //+tooltips + traduc
-
+    let params = basc["params"];
+    if (data["computation"]["inverted_matrix"])
+    {
+      Object.keys(params).forEach((p) =>
+        {
+          if (p.includes("_Ra_"))
+            params.Rx = params[p];
+          if (p.includes("_Rb_"))
+            params.Ry = params[p];
+          if (p.includes("_Rc_"))
+            params.Rz = params[p];
+        });
+    }
 
     //First line
     let new_tr = document.createElement("tr");
@@ -3130,6 +3146,9 @@ function show_similarities(){
     td_value_T3.innerHTML=to_fixed(parseFloat(pos[2]), nb_decimals);
     new_tr.appendChild(td_value_T3);
 
+    if (data["computation"]["inverted_matrix"]) // empty line for sigmas
+        new_tr.appendChild(document.createElement("td"));
+
     tbody.appendChild(new_tr);
 
     //Second line
@@ -3153,6 +3172,16 @@ function show_similarities(){
     let td_value_R2=document.createElement("td");
     td_value_R2.innerHTML=to_fixed(parseFloat(matrix[2]), nb_decimals);
     new_tr2.appendChild(td_value_R2);
+
+    if (data["computation"]["inverted_matrix"])
+    {
+      let td_value_sigma=document.createElement("td");
+      td_value_sigma.innerHTML=to_fixed(parseFloat(params.Rx.sigma)/parseFloat(params.Rx.unit_factor), nb_decimals);
+      let span_value = document.createElement("span");
+      span_value.setAttribute('post', '\u0020'+params.Rx.unit_str);
+      td_value_sigma.appendChild(span_value);
+      new_tr2.appendChild(td_value_sigma);
+    }
 
     tbody.appendChild(new_tr2);
 
@@ -3184,6 +3213,16 @@ function show_similarities(){
     td_value_R5.innerHTML=to_fixed(parseFloat(matrix[5]), nb_decimals);
     new_tr3.appendChild(td_value_R5);
 
+    if (data["computation"]["inverted_matrix"])
+    {
+      let td_value_sigma=document.createElement("td");
+      td_value_sigma.innerHTML=to_fixed(parseFloat(params.Ry.sigma)/parseFloat(params.Ry.unit_factor), nb_decimals);
+      let span_value = document.createElement("span");
+      span_value.setAttribute('post', '\u0020'+params.Ry.unit_str);
+      td_value_sigma.appendChild(span_value);
+      new_tr3.appendChild(td_value_sigma);
+    }
+
     tbody.appendChild(new_tr3);
 
     //Fourth line
@@ -3212,6 +3251,16 @@ function show_similarities(){
     let td_value_R8=document.createElement("td");
     td_value_R8.innerHTML=to_fixed(parseFloat(matrix[8]), nb_decimals);
     new_tr4.appendChild(td_value_R8);
+
+    if (data["computation"]["inverted_matrix"])
+    {
+      let td_value_sigma=document.createElement("td");
+      td_value_sigma.innerHTML=to_fixed(parseFloat(params.Rz.sigma)/parseFloat(params.Rz.unit_factor), nb_decimals);
+      let span_value = document.createElement("span");
+      span_value.setAttribute('post', '\u0020'+params.Rz.unit_str);
+      td_value_sigma.appendChild(span_value);
+      new_tr4.appendChild(td_value_sigma);
+    }
 
     tbody.appendChild(new_tr4);
   }
@@ -3384,25 +3433,25 @@ function show_axes(){
 //---------------------------------------------------------------------------------------
 function show_equality(){
   let report_div = create_title_section("equality",_("Equality constraints"),_("Equality"));
-  
+
   // Create table tag
   let table = document.createElement("table");
   table.id = "eq";
   table.classList.add("report_tables");
-  
+
   // Create header table
   let header_conf = get_header_conf("equalities", data["computation"]["inverted_matrix"],data["computation"]["use_vertical_deflection"]);
   let thead = make_html_header(header_conf);
   table.appendChild(thead);
-  
+
   let tbody = document.createElement("tbody");
-  
+
   for (let i = 0; i < all_eq.length; i++){
     let eq = all_eq[i];
     let type=type_obs[eq.eq_type];
     let sigma=0;
     let value=0;
-    
+
     for (const [key, val] of Object.entries(eq.params)){
       for (const [key2, val2] of Object.entries(val)){
         if (key2=="sigma"){
@@ -3412,11 +3461,11 @@ function show_equality(){
         }
       }
     }
-    
+
     //New line
     let new_tr = document.createElement("tr");
     new_tr.setAttribute('class',parite[i % 2]);
-    
+
     //Case file
     let td_file=document.createElement("td");
     td_file.classList.add("name");
@@ -3425,34 +3474,34 @@ function show_equality(){
     a_file.innerHTML=all_files[eq.file_id]
     td_file.appendChild(a_file);
     new_tr.appendChild(td_file);
-    
+
     //Case type
     let td_type=document.createElement("td");
     td_type.innerHTML=type;
     new_tr.appendChild(td_type);
-    
+
     //Case value
     let td_value=document.createElement("td");
     let attribute = ['post','\u0020'+ 'm'];
     td_value.appendChild(format_value(value, false, nb_decimals, attribute, true));
     new_tr.appendChild(td_value);
-    
-    //Case sigma    
+
+    //Case sigma
     let td_sigma=document.createElement("td");
     let attribute2 = ['post','\u0020'+ 'mm'];
     td_sigma.appendChild(format_value(sigma* 1000, false, nb_decimals_mini, attribute2, true));
     new_tr.appendChild(td_sigma);
-    
-    //Case Active obs   
+
+    //Case Active obs
     let td_active_obs=document.createElement("td");
     td_active_obs.innerHTML=eq.nbr_active_obs;
     new_tr.appendChild(td_active_obs);
 
     tbody.appendChild(new_tr);
   }
-    
+
   table.appendChild(tbody);
-  
+
   let div = document.createElement("div");
   div.classList.add("div_buttons");
   report_div.appendChild(div);
@@ -3766,7 +3815,7 @@ function showComp3Djson(data){
             }
             for (const [key3, val3] of Object.entries(val["observations"])) {
               all_obs.push(val3);
-            }            
+            }
         }
     }
     if (data["computation"]){

@@ -1,0 +1,14 @@
+11 centre @bofX.xyz
+11 centre @bofY.xyz
+11 centre @bofZ.xyz
+
+11 centre @bofX_45.xyz
+
+
+11 c2 @rnd1.xyz
+11 c2 @rnd2.xyz
+11 c2 @rnd3.xyz
+
+
+
+4 a b 0.07 0.01

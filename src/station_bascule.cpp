@@ -1280,15 +1280,15 @@ bool Station_Bascule::read_obs(std::string line,
                 params.clear();
                 std::ostringstream oss_dc;
                 oss_dc<<origin()->name<<"_Rc"<<"_"<<num;
-                params.emplace_back(oss_dc.str(),&dc,1.0,"",origin());
+                params.emplace_back(oss_dc.str(),&dc,toRad(1.0,Project::theone()->config.filesUnit),Project::theone()->unitName,origin());
                 if (!isVertical)
                 {
                     std::ostringstream oss_da;
                     oss_da<<origin()->name<<"_Ra"<<"_"<<num;
-                    params.emplace_back(oss_da.str(),&da,1.0,"",origin());
+                    params.emplace_back(oss_da.str(),&da,toRad(1.0,Project::theone()->config.filesUnit),Project::theone()->unitName,origin());
                     std::ostringstream oss_db;
                     oss_db<<origin()->name<<"_Rb"<<"_"<<num;
-                    params.emplace_back(oss_db.str(),&db,1.0,"",origin());
+                    params.emplace_back(oss_db.str(),&db,toRad(1.0,Project::theone()->config.filesUnit),Project::theone()->unitName,origin());
                 }
             }
         }
