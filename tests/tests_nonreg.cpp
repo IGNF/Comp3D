@@ -137,7 +137,7 @@ void Tests_NonReg::test_dev_vert()
 {
     std::cout<<"\nPrepare test_dev_vert"<<std::endl;
     std::string refFile="./data/dev_vert/ex_ref.comp";
-    std::string refMD5="92ea680cba37dc585f463bbc59bc485e";
+    std::string refMD5="7be1fa225d0ef6aa70b29cf55166ad82";
 
     test_template(refFile, refMD5,false);
 }
@@ -263,7 +263,7 @@ void Tests_NonReg::test_photogra()
 {
     std::cout<<"\nPrepare test_photogra"<<std::endl;
     std::string refFile="./data/photogra/ex_ref.comp";
-    std::string refMD5="29d91a13299b690108866726058543fb";
+    std::string refMD5="14e4781d8ce67fbb265a8c11c3cd3ee4";
 
     test_template(refFile, refMD5,false);
 }

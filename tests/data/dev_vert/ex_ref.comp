@@ -1,10 +1,11 @@
 data=
 {
-	"COMP3D_COMMIT" : "v5.21rc3-273-ge3e3bf62-dirty",
-	"COMP3D_COPYRIGHT" : "Copyright 1992-2022 IGN France",
-	"COMP3D_LICENSE" : "Licensed to IGN/ENSG only",
-	"COMP3D_OPTIONS" : "QT SIM ",
-	"COMP3D_VERSION" : "COMP3D v5.22dev-linux",
+	"COMP3D_COMMIT" : "InitPublic-44-g499a6512",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2024 IGN France www.ign.fr",
+	"COMP3D_LICENSE" : "Provided with absolutely no warranty, under GPLv3 license",
+	"COMP3D_OPTIONS" : "QT RES ",
+	"COMP3D_REPO" : "https://github.com/IGNF/Comp3D",
+	"COMP3D_VERSION" : "COMP3D v5.24dev-PROJ 8.2.1-linux",
 	"all_data_files" : 
 	{
 		"0" : "coord.cor",
@@ -146,8 +147,8 @@ data=
 		"all_sigma0" : 
 		[
 			0.041560446751835588,
-			0.027806495991197087,
-			0.027805207980805428
+			0.027806495991200549,
+			0.027805207980773215
 		],
 		"chi2_test" : 
 		{
@@ -157,8 +158,8 @@ data=
 			"min" : 0.91138994456914668
 		},
 		"compensation_done" : true,
-		"computation_duration" : "00:00:00.112193",
-		"computation_start" : "2023-May-15 14:52:28.704058",
+		"computation_duration" : "00:00:00.183642",
+		"computation_start" : "2024-Oct-29 14:07:02.330840",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
@@ -192,8 +193,9 @@ data=
 			"stereo_def" : "+proj=sterea +lat_0=48.8 +lon_0=0 +k_0=1 +x_0=0 +y_0=0"
 		},
 		"rank_deficiency" : 0,
-		"sigma_0_final" : 0.027805207980805428,
+		"sigma_0_final" : 0.027805207980773215,
 		"sigma_0_init" : 0.041560446751835588,
+		"solver_name" : "N5Eigen14SimplicialLDLTINS_12SparseMatrixIdLi0EiEELi1ENS_11AMDOrderingIiEEEE",
 		"unit_name" : "g",
 		"use_vertical_deflection" : true
 	},
@@ -239,15 +241,15 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				1.022250954069876e-09,
+				1.0222509540556787e-09,
 				0.50000000338763695,
 				-1.2572686333700567e-07
 			],
 			"coord_compensated_georef" : 
 			[
-				1.0222509540698944e-09,
+				1.0222509540556973e-09,
 				0.50000000088424523,
-				-1.06864301683245e-07
+				-1.0686430168322865e-07
 			],
 			"coord_read" : 
 			[
@@ -269,7 +271,7 @@ data=
 					"rank" : 85,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 1.0222509540698926e-09
+					"value" : 1.0222509540556954e-09
 				},
 				"S0_y" : 
 				{
@@ -283,14 +285,14 @@ data=
 					"rank" : 87,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -1.06864301683245e-07
+					"value" : -1.0686430168322865e-07
 				}
 			},
 			"shift_from_read" : 
 			[
-				1.0222509540698944e-09,
+				1.0222509540556973e-09,
 				8.8424523259078569e-10,
-				-1.06864301683245e-07
+				-1.0686430168322865e-07
 			],
 			"sigmas_init" : 
 			[
@@ -310,20 +312,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 1.0222509540698926e-09,
+							"computed_value" : 1.0222509540556954e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "S0",
 							"instrument_height" : 0.0,
 							"line" : 27,
-							"normalized_residual" : 0.0010222509540698927,
+							"normalized_residual" : 0.0010222509540556955,
 							"number" : 72,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 72,
-							"residual" : 1.0222509540698926e-09,
+							"residual" : 1.0222509540556954e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -1074,7 +1076,7 @@ data=
 							"line" : 37,
 							"normalized_residual" : 0.0012145952288378226,
 							"number" : 123,
-							"obs_azim" : -3.9334312907357663e-09,
+							"obs_azim" : -3.9334312906835058e-09,
 							"obs_length" : 1.1180341214595229,
 							"obs_zen" : 0.46364760528363813,
 							"original_value" : 1.118034,
@@ -1102,7 +1104,7 @@ data=
 							"line" : 39,
 							"normalized_residual" : -0.0070655561068283202,
 							"number" : 125,
-							"obs_azim" : -3.9334312907357663e-09,
+							"obs_azim" : -3.9334312906835058e-09,
 							"obs_length" : 1.1180341214595229,
 							"obs_zen" : 0.46364760528363813,
 							"original_value" : 29.516724,
@@ -1298,7 +1300,7 @@ data=
 							"line" : 49,
 							"normalized_residual" : -1.1526473109313429e-05,
 							"number" : 135,
-							"obs_azim" : 1.3332351276890719e-09,
+							"obs_azim" : 1.3332351277419788e-09,
 							"obs_length" : 0.49999999884735269,
 							"obs_zen" : 1.5707962356654039,
 							"original_value" : 0.5,
@@ -1326,7 +1328,7 @@ data=
 							"line" : 51,
 							"normalized_residual" : -0.058014836988242342,
 							"number" : 137,
-							"obs_azim" : 1.3332351276890719e-09,
+							"obs_azim" : 1.3332351277419788e-09,
 							"obs_length" : 0.49999999884735269,
 							"obs_zen" : 1.5707962356654039,
 							"original_value" : 100.0,
@@ -1522,7 +1524,7 @@ data=
 							"line" : 61,
 							"normalized_residual" : -0.0014264627656856987,
 							"number" : 147,
-							"obs_azim" : 5.8841169193615353e-09,
+							"obs_azim" : 5.8841169194138206e-09,
 							"obs_length" : 1.1180338573537234,
 							"obs_zen" : 2.6779450367027477,
 							"original_value" : 1.118034,
@@ -1550,7 +1552,7 @@ data=
 							"line" : 63,
 							"normalized_residual" : -0.000321402542535138,
 							"number" : 149,
-							"obs_azim" : 5.8841169193615353e-09,
+							"obs_azim" : 5.8841169194138206e-09,
 							"obs_length" : 1.1180338573537234,
 							"obs_zen" : 2.6779450367027477,
 							"original_value" : 170.48327599999999,
@@ -2083,7 +2085,7 @@ data=
 							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -2.5121963485678118e-07,
+							"computed_value" : -2.5121963485437708e-07,
 							"deflection_correction" : 0.0,
 							"file_id" : 1,
 							"from" : "S0",
@@ -2091,7 +2093,7 @@ data=
 							"line" : 38,
 							"normalized_residual" : -0.0025121965960084049,
 							"number" : 124,
-							"obs_azim" : -3.9334312907357663e-09,
+							"obs_azim" : -3.9334312906835058e-09,
 							"obs_length" : 1.1180341214595229,
 							"obs_zen" : 0.46364760528363813,
 							"original_value" : 0.0,
@@ -2195,7 +2197,7 @@ data=
 							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 8.4066762786579377e-08,
+							"computed_value" : 8.4066762789024615e-08,
 							"deflection_correction" : -0.0,
 							"file_id" : 1,
 							"from" : "S0",
@@ -2203,7 +2205,7 @@ data=
 							"line" : 50,
 							"normalized_residual" : 0.00084066781587807877,
 							"number" : 136,
-							"obs_azim" : 1.3332351276890719e-09,
+							"obs_azim" : 1.3332351277419788e-09,
 							"obs_length" : 0.49999999884735269,
 							"obs_zen" : 1.5707962356654039,
 							"original_value" : 0.0,
@@ -2307,7 +2309,7 @@ data=
 							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 3.7378489581520878e-07,
+							"computed_value" : 3.7378489581761446e-07,
 							"deflection_correction" : 0.0,
 							"file_id" : 1,
 							"from" : "S0",
@@ -2315,7 +2317,7 @@ data=
 							"line" : 62,
 							"normalized_residual" : 0.0037378489283058083,
 							"number" : 148,
-							"obs_azim" : 5.8841169193615353e-09,
+							"obs_azim" : 5.8841169194138206e-09,
 							"obs_length" : 1.1180338573537234,
 							"obs_zen" : 2.6779450367027477,
 							"original_value" : 0.0,
@@ -2422,7 +2424,7 @@ data=
 							"rank" : 88,
 							"unit_factor" : 0.015707963267948967,
 							"unit_str" : "g",
-							"value" : 1.271750578210398e-11
+							"value" : 1.2717505796601057e-11
 						}
 					},
 					"type" : "hz_unknown"
@@ -2443,8 +2445,8 @@ data=
 			"coord_compensated_georef" : 
 			[
 				-0.50000000036876502,
-				-1.7383912995703157e-09,
-				-1.0765096688213388e-07
+				-1.7383912994745042e-09,
+				-1.07650966882134e-07
 			],
 			"coord_read" : 
 			[
@@ -2473,21 +2475,21 @@ data=
 					"rank" : 82,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -1.7383912995703126e-09
+					"value" : -1.7383912994745011e-09
 				},
 				"S1_z" : 
 				{
 					"rank" : 83,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -1.0765096688213388e-07
+					"value" : -1.07650966882134e-07
 				}
 			},
 			"shift_from_read" : 
 			[
 				-3.6876501852134425e-10,
-				-1.7383912995703157e-09,
-				-1.0765096688213388e-07
+				-1.7383912994745042e-09,
+				-1.07650966882134e-07
 			],
 			"sigmas_init" : 
 			[
@@ -2535,20 +2537,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -1.7383912995703126e-09,
+							"computed_value" : -1.7383912994745011e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "S1",
 							"instrument_height" : 0.0,
 							"line" : 28,
-							"normalized_residual" : -0.0017383912995703127,
+							"normalized_residual" : -0.0017383912994745011,
 							"number" : 76,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 124,
-							"residual" : -1.7383912995703126e-09,
+							"residual" : -1.7383912994745011e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -4619,7 +4621,7 @@ data=
 							"rank" : 84,
 							"unit_factor" : 0.015707963267948967,
 							"unit_str" : "g",
-							"value" : -6.6961756195622311e-10
+							"value" : -6.6961756189651876e-10
 						}
 					},
 					"type" : "hz_unknown"
@@ -4633,15 +4635,15 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				3.1801906914006577e-10,
+				3.1801906911656903e-10,
 				-0.49999999985744287,
 				-1.261569535504492e-07
 			],
 			"coord_compensated_georef" : 
 			[
-				3.1801906914007151e-10,
+				3.1801906911657477e-10,
 				-0.50000000063507677,
-				-1.0780170268563846e-07
+				-1.0780170268565474e-07
 			],
 			"coord_read" : 
 			[
@@ -4663,7 +4665,7 @@ data=
 					"rank" : 77,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 3.1801906914007094e-10
+					"value" : 3.180190691165742e-10
 				},
 				"S2_y" : 
 				{
@@ -4677,14 +4679,14 @@ data=
 					"rank" : 79,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -1.0780170268563846e-07
+					"value" : -1.0780170268565474e-07
 				}
 			},
 			"shift_from_read" : 
 			[
-				3.1801906914007151e-10,
+				3.1801906911657477e-10,
 				-6.3507676895113718e-10,
-				-1.0780170268563846e-07
+				-1.0780170268565474e-07
 			],
 			"sigmas_init" : 
 			[
@@ -4704,20 +4706,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 3.1801906914007094e-10,
+							"computed_value" : 3.180190691165742e-10,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "S2",
 							"instrument_height" : 0.0,
 							"line" : 29,
-							"normalized_residual" : 0.00031801906914007095,
+							"normalized_residual" : 0.00031801906911657423,
 							"number" : 78,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 174,
-							"residual" : 3.1801906914007094e-10,
+							"residual" : 3.180190691165742e-10,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -5468,7 +5470,7 @@ data=
 							"line" : 181,
 							"normalized_residual" : -0.0020129508748745195,
 							"number" : 267,
-							"obs_azim" : -8.416558021260748e-10,
+							"obs_azim" : -8.4165580210245507e-10,
 							"obs_length" : 1.8027757987049124,
 							"obs_zen" : 0.98279379381884069,
 							"original_value" : 1.8027759999999999,
@@ -5496,7 +5498,7 @@ data=
 							"line" : 183,
 							"normalized_residual" : 0.04970028373716813,
 							"number" : 269,
-							"obs_azim" : -8.416558021260748e-10,
+							"obs_azim" : -8.4165580210245507e-10,
 							"obs_length" : 1.8027757987049124,
 							"obs_zen" : 0.98279379381884069,
 							"original_value" : 62.572763999999999,
@@ -5692,7 +5694,7 @@ data=
 							"line" : 193,
 							"normalized_residual" : 3.6665537272995152e-06,
 							"number" : 279,
-							"obs_azim" : 9.1389963126834977e-10,
+							"obs_azim" : 9.1389963129218508e-10,
 							"obs_length" : 1.5000000003666554,
 							"obs_zen" : 1.5707963873112665,
 							"original_value" : 1.5,
@@ -5720,7 +5722,7 @@ data=
 							"line" : 195,
 							"normalized_residual" : 0.036920979214348282,
 							"number" : 281,
-							"obs_azim" : 9.1389963126834977e-10,
+							"obs_azim" : 9.1389963129218508e-10,
 							"obs_length" : 1.5000000003666554,
 							"obs_zen" : 1.5707963873112665,
 							"original_value" : 100.006173,
@@ -5916,7 +5918,7 @@ data=
 							"line" : 205,
 							"normalized_residual" : -0.0051723571981021621,
 							"number" : 291,
-							"obs_azim" : 2.4308602800038882e-09,
+							"obs_azim" : 2.4308602800275162e-09,
 							"obs_length" : 1.8027754827642801,
 							"obs_zen" : 2.1587989977951918,
 							"original_value" : 1.8027759999999999,
@@ -5944,7 +5946,7 @@ data=
 							"line" : 207,
 							"normalized_residual" : 0.044958799399808652,
 							"number" : 293,
-							"obs_azim" : 2.4308602800038882e-09,
+							"obs_azim" : 2.4308602800275162e-09,
 							"obs_length" : 1.8027754827642801,
 							"obs_zen" : 2.1587989977951918,
 							"original_value" : 137.439581,
@@ -6477,7 +6479,7 @@ data=
 							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : -4.0899700189709836e-08,
+							"computed_value" : -4.0899700188606278e-08,
 							"deflection_correction" : -3.463602650825524e-12,
 							"file_id" : 1,
 							"from" : "S2",
@@ -6485,7 +6487,7 @@ data=
 							"line" : 182,
 							"normalized_residual" : -0.00040899728019041669,
 							"number" : 268,
-							"obs_azim" : -8.416558021260748e-10,
+							"obs_azim" : -8.4165580210245507e-10,
 							"obs_length" : 1.8027757987049124,
 							"obs_zen" : 0.98279379381884069,
 							"original_value" : 0.0,
@@ -6589,7 +6591,7 @@ data=
 							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 7.0858966246603645e-08,
+							"computed_value" : 7.0858966247720922e-08,
 							"deflection_correction" : -3.4139439061104735e-19,
 							"file_id" : 1,
 							"from" : "S2",
@@ -6597,7 +6599,7 @@ data=
 							"line" : 194,
 							"normalized_residual" : 0.00070858969908986556,
 							"number" : 280,
-							"obs_azim" : 9.1389963126834977e-10,
+							"obs_azim" : 9.1389963129218508e-10,
 							"obs_length" : 1.5000000003666554,
 							"obs_zen" : 1.5707963873112665,
 							"original_value" : 0.0,
@@ -6701,7 +6703,7 @@ data=
 							"active_read" : true,
 							"code" : 5,
 							"comment" : "",
-							"computed_value" : 1.6744168407758432e-07,
+							"computed_value" : 1.674416840786884e-07,
 							"deflection_correction" : -1.0003542462367499e-11,
 							"file_id" : 1,
 							"from" : "S2",
@@ -6709,7 +6711,7 @@ data=
 							"line" : 206,
 							"normalized_residual" : 0.0016744170064970664,
 							"number" : 292,
-							"obs_azim" : 2.4308602800038882e-09,
+							"obs_azim" : 2.4308602800275162e-09,
 							"obs_length" : 1.8027754827642801,
 							"obs_zen" : 2.1587989977951918,
 							"original_value" : 0.0,
@@ -6816,7 +6818,7 @@ data=
 							"rank" : 80,
 							"unit_factor" : 0.015707963267948967,
 							"unit_str" : "g",
-							"value" : -1.9915040773277342e-10
+							"value" : -1.9915040772648824e-10
 						}
 					},
 					"type" : "hz_unknown"
@@ -6837,8 +6839,8 @@ data=
 			"coord_compensated_georef" : 
 			[
 				0.49999999940985906,
-				-4.8351113080516411e-09,
-				-1.0685984019177552e-07
+				-4.8351113079792678e-09,
+				-1.0685984019177553e-07
 			],
 			"coord_read" : 
 			[
@@ -6867,21 +6869,21 @@ data=
 					"rank" : 74,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -4.8351113080516328e-09
+					"value" : -4.8351113079792595e-09
 				},
 				"S3_z" : 
 				{
 					"rank" : 75,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -1.0685984019177552e-07
+					"value" : -1.0685984019177553e-07
 				}
 			},
 			"shift_from_read" : 
 			[
 				-5.9014093611864382e-10,
-				-4.8351113080516411e-09,
-				-1.0685984019177552e-07
+				-4.8351113079792678e-09,
+				-1.0685984019177553e-07
 			],
 			"sigmas_init" : 
 			[
@@ -6929,20 +6931,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -4.8351113080516328e-09,
+							"computed_value" : -4.8351113079792595e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "S3",
 							"instrument_height" : 0.0,
 							"line" : 30,
-							"normalized_residual" : -0.0048351113080516333,
+							"normalized_residual" : -0.0048351113079792597,
 							"number" : 82,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 226,
-							"residual" : -4.8351113080516328e-09,
+							"residual" : -4.8351113079792595e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -9013,7 +9015,7 @@ data=
 							"rank" : 76,
 							"unit_factor" : 0.015707963267948967,
 							"unit_str" : "g",
-							"value" : -7.485655518186134e-10
+							"value" : -7.4856555187381923e-10
 						}
 					},
 					"type" : "hz_unknown"
@@ -9679,13 +9681,13 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-9.4446476788893004e-10,
+				-9.4446476787699713e-10,
 				1.0000001407907,
 				0.999999953439909
 			],
 			"coord_compensated_georef" : 
 			[
-				-9.4446462009135007e-10,
+				-9.4446462007941716e-10,
 				0.99999998278131286,
 				1.0000000306509775
 			],
@@ -9709,7 +9711,7 @@ data=
 					"rank" : 66,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -9.4446462009134428e-10
+					"value" : -9.4446462007941137e-10
 				},
 				"T12_y" : 
 				{
@@ -9728,7 +9730,7 @@ data=
 			},
 			"shift_from_read" : 
 			[
-				-9.4446462009135007e-10,
+				-9.4446462007941716e-10,
 				-1.7218687142772637e-08,
 				3.0650977533852597e-08
 			],
@@ -9750,20 +9752,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -9.4446462009134428e-10,
+							"computed_value" : -9.4446462007941137e-10,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T12",
 							"instrument_height" : 0.0,
 							"line" : 15,
-							"normalized_residual" : -0.00094446462009134438,
+							"normalized_residual" : -0.00094446462007941143,
 							"number" : 36,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 36,
-							"residual" : -9.4446462009134428e-10,
+							"residual" : -9.4446462007941137e-10,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -9849,7 +9851,7 @@ data=
 			"coord_compensated_georef" : 
 			[
 				-0.9999999838539062,
-				-3.9967275224077299e-09,
+				-3.9967275223140235e-09,
 				1.0000000267331433
 			],
 			"coord_read" : 
@@ -9879,7 +9881,7 @@ data=
 					"rank" : 34,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -3.996727522407705e-09
+					"value" : -3.9967275223139987e-09
 				},
 				"T13_z" : 
 				{
@@ -9892,7 +9894,7 @@ data=
 			"shift_from_read" : 
 			[
 				1.6146093795299521e-08,
-				-3.9967275224077299e-09,
+				-3.9967275223140235e-09,
 				2.6733143254631386e-08
 			],
 			"sigmas_init" : 
@@ -9941,20 +9943,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -3.996727522407705e-09,
+							"computed_value" : -3.9967275223139987e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T13",
 							"instrument_height" : 0.0,
 							"line" : 16,
-							"normalized_residual" : -0.003996727522407705,
+							"normalized_residual" : -0.0039967275223139987,
 							"number" : 40,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 40,
-							"residual" : -3.996727522407705e-09,
+							"residual" : -3.9967275223139987e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -10005,13 +10007,13 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-1.2106240494699565e-09,
+				-1.2106240495048898e-09,
 				-1.0000001413260458,
 				0.99999994879253262
 			],
 			"coord_compensated_georef" : 
 			[
-				-1.2106238600215935e-09,
+				-1.2106238600565272e-09,
 				-0.9999999856258297,
 				1.0000000257065156
 			],
@@ -10035,7 +10037,7 @@ data=
 					"rank" : 36,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -1.210623860021586e-09
+					"value" : -1.2106238600565197e-09
 				},
 				"T14_y" : 
 				{
@@ -10054,7 +10056,7 @@ data=
 			},
 			"shift_from_read" : 
 			[
-				-1.2106238600215935e-09,
+				-1.2106238600565272e-09,
 				1.4374170298481204e-08,
 				2.5706515582868406e-08
 			],
@@ -10076,20 +10078,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -1.210623860021586e-09,
+							"computed_value" : -1.2106238600565197e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T14",
 							"instrument_height" : 0.0,
 							"line" : 17,
-							"normalized_residual" : -0.0012106238600215861,
+							"normalized_residual" : -0.0012106238600565198,
 							"number" : 42,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 42,
-							"residual" : -1.210623860021586e-09,
+							"residual" : -1.2106238600565197e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -10175,7 +10177,7 @@ data=
 			"coord_compensated_georef" : 
 			[
 				0.99999997988412503,
-				-1.015685639636816e-10,
+				-1.0156856392160618e-10,
 				1.0000000318665199
 			],
 			"coord_read" : 
@@ -10205,7 +10207,7 @@ data=
 					"rank" : 40,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -1.0156856396368097e-10
+					"value" : -1.0156856392160555e-10
 				},
 				"T15_z" : 
 				{
@@ -10218,7 +10220,7 @@ data=
 			"shift_from_read" : 
 			[
 				-2.0115874965753733e-08,
-				-1.015685639636816e-10,
+				-1.0156856392160618e-10,
 				3.1866519867307375e-08
 			],
 			"sigmas_init" : 
@@ -10267,20 +10269,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -1.0156856396368097e-10,
+							"computed_value" : -1.0156856392160555e-10,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T15",
 							"instrument_height" : 0.0,
 							"line" : 18,
-							"normalized_residual" : -0.00010156856396368097,
+							"normalized_residual" : -0.00010156856392160555,
 							"number" : 46,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 46,
-							"residual" : -1.0156856396368097e-10,
+							"residual" : -1.0156856392160555e-10,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -10331,15 +10333,15 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				1.6888685163776721e-09,
+				1.6888685163899284e-09,
 				1.0000000007620866,
 				-1.2117400738365092e-07
 			],
 			"coord_compensated_georef" : 
 			[
-				1.688868516377693e-09,
+				1.6888685163899493e-09,
 				0.99999999973160536,
-				-4.3710689637227052e-08
+				-4.3710689637220097e-08
 			],
 			"coord_read" : 
 			[
@@ -10361,7 +10363,7 @@ data=
 					"rank" : 42,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 1.6888685163776824e-09
+					"value" : 1.6888685163899388e-09
 				},
 				"T16_y" : 
 				{
@@ -10375,14 +10377,14 @@ data=
 					"rank" : 44,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -4.3710689637227052e-08
+					"value" : -4.3710689637220097e-08
 				}
 			},
 			"shift_from_read" : 
 			[
-				1.688868516377693e-09,
+				1.6888685163899493e-09,
 				-2.6839463984629219e-10,
-				-4.3710689637227052e-08
+				-4.3710689637220097e-08
 			],
 			"sigmas_init" : 
 			[
@@ -10402,20 +10404,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 1.6888685163776824e-09,
+							"computed_value" : 1.6888685163899388e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T16",
 							"instrument_height" : 0.0,
 							"line" : 19,
-							"normalized_residual" : 0.0016888685163776824,
+							"normalized_residual" : 0.0016888685163899389,
 							"number" : 48,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 48,
-							"residual" : 1.6888685163776824e-09,
+							"residual" : 1.6888685163899388e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -10501,8 +10503,8 @@ data=
 			"coord_compensated_georef" : 
 			[
 				-1.0000000003548664,
-				-2.8794443487606898e-09,
-				-4.4362188350793452e-08
+				-2.8794443486673304e-09,
+				-4.4362188350793551e-08
 			],
 			"coord_read" : 
 			[
@@ -10531,21 +10533,21 @@ data=
 					"rank" : 46,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -2.879444348760672e-09
+					"value" : -2.8794443486673126e-09
 				},
 				"T17_z" : 
 				{
 					"rank" : 47,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -4.4362188350793452e-08
+					"value" : -4.4362188350793551e-08
 				}
 			},
 			"shift_from_read" : 
 			[
 				-3.5486635852066684e-10,
-				-2.8794443487606898e-09,
-				-4.4362188350793452e-08
+				-2.8794443486673304e-09,
+				-4.4362188350793551e-08
 			],
 			"sigmas_init" : 
 			[
@@ -10593,20 +10595,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -2.879444348760672e-09,
+							"computed_value" : -2.8794443486673126e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T17",
 							"instrument_height" : 0.0,
 							"line" : 20,
-							"normalized_residual" : -0.0028794443487606719,
+							"normalized_residual" : -0.0028794443486673126,
 							"number" : 52,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 52,
-							"residual" : -2.879444348760672e-09,
+							"residual" : -2.8794443486673126e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -10657,15 +10659,15 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				4.5077781525494607e-10,
+				4.5077781522034298e-10,
 				-0.9999999977556242,
 				-1.2282464934010306e-07
 			],
 			"coord_compensated_georef" : 
 			[
-				4.507778152549517e-10,
+				4.5077781522034862e-10,
 				-0.99999999826660302,
-				-4.448107853827317e-08
+				-4.4481078538280013e-08
 			],
 			"coord_read" : 
 			[
@@ -10687,7 +10689,7 @@ data=
 					"rank" : 48,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 4.5077781525494891e-10
+					"value" : 4.5077781522034582e-10
 				},
 				"T18_y" : 
 				{
@@ -10701,14 +10703,14 @@ data=
 					"rank" : 50,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -4.448107853827317e-08
+					"value" : -4.4481078538280013e-08
 				}
 			},
 			"shift_from_read" : 
 			[
-				4.507778152549517e-10,
+				4.5077781522034862e-10,
 				1.733396981506985e-09,
-				-4.448107853827317e-08
+				-4.4481078538280013e-08
 			],
 			"sigmas_init" : 
 			[
@@ -10728,20 +10730,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 4.5077781525494891e-10,
+							"computed_value" : 4.5077781522034582e-10,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T18",
 							"instrument_height" : 0.0,
 							"line" : 21,
-							"normalized_residual" : 0.00045077781525494891,
+							"normalized_residual" : 0.00045077781522034584,
 							"number" : 54,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 54,
-							"residual" : 4.5077781525494891e-10,
+							"residual" : 4.5077781522034582e-10,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -10827,8 +10829,8 @@ data=
 			"coord_compensated_georef" : 
 			[
 				1.000000000446992,
-				-3.6868184070505494e-09,
-				-4.2522219008587791e-08
+				-3.6868184070091664e-09,
+				-4.2522219008587738e-08
 			],
 			"coord_read" : 
 			[
@@ -10857,21 +10859,21 @@ data=
 					"rank" : 52,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -3.6868184070505267e-09
+					"value" : -3.6868184070091437e-09
 				},
 				"T19_z" : 
 				{
 					"rank" : 53,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -4.2522219008587791e-08
+					"value" : -4.2522219008587738e-08
 				}
 			},
 			"shift_from_read" : 
 			[
 				4.4699199897024755e-10,
-				-3.6868184070505494e-09,
-				-4.2522219008587791e-08
+				-3.6868184070091664e-09,
+				-4.2522219008587738e-08
 			],
 			"sigmas_init" : 
 			[
@@ -10919,20 +10921,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -3.6868184070505267e-09,
+							"computed_value" : -3.6868184070091437e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T19",
 							"instrument_height" : 0.0,
 							"line" : 22,
-							"normalized_residual" : -0.0036868184070505267,
+							"normalized_residual" : -0.003686818407009144,
 							"number" : 58,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 58,
-							"residual" : -3.6868184070505267e-09,
+							"residual" : -3.6868184070091437e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -11146,13 +11148,13 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				3.964308928144377e-09,
+				3.9643089281563223e-09,
 				0.99999986926856554,
 				-1.000000046062034
 			],
 			"coord_compensated_georef" : 
 			[
-				3.9643095485120983e-09,
+				3.9643095485240436e-09,
 				1.0000000237868203,
 				-0.99999996837112726
 			],
@@ -11176,7 +11178,7 @@ data=
 					"rank" : 54,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 3.9643095485120735e-09
+					"value" : 3.9643095485240188e-09
 				},
 				"T20_y" : 
 				{
@@ -11195,7 +11197,7 @@ data=
 			},
 			"shift_from_read" : 
 			[
-				3.9643095485120983e-09,
+				3.9643095485240436e-09,
 				2.3786820291249455e-08,
 				3.1628872743105774e-08
 			],
@@ -11217,20 +11219,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 3.9643095485120735e-09,
+							"computed_value" : 3.9643095485240188e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T20",
 							"instrument_height" : 0.0,
 							"line" : 23,
-							"normalized_residual" : 0.0039643095485120735,
+							"normalized_residual" : 0.0039643095485240188,
 							"number" : 60,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 60,
-							"residual" : 3.9643095485120735e-09,
+							"residual" : 3.9643095485240188e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -11316,7 +11318,7 @@ data=
 			"coord_compensated_georef" : 
 			[
 				-1.0000000172447632,
-				-2.0717174468761483e-09,
+				-2.0717174467832025e-09,
 				-0.99999997242184924
 			],
 			"coord_read" : 
@@ -11346,7 +11348,7 @@ data=
 					"rank" : 58,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -2.0717174468761354e-09
+					"value" : -2.0717174467831897e-09
 				},
 				"T21_z" : 
 				{
@@ -11359,7 +11361,7 @@ data=
 			"shift_from_read" : 
 			[
 				-1.7244763172996613e-08,
-				-2.0717174468761483e-09,
+				-2.0717174467832025e-09,
 				2.7578150763041265e-08
 			],
 			"sigmas_init" : 
@@ -11408,20 +11410,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : -2.0717174468761354e-09,
+							"computed_value" : -2.0717174467831897e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T21",
 							"instrument_height" : 0.0,
 							"line" : 24,
-							"normalized_residual" : -0.0020717174468761353,
+							"normalized_residual" : -0.0020717174467831897,
 							"number" : 64,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 64,
-							"residual" : -2.0717174468761354e-09,
+							"residual" : -2.0717174467831897e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -11472,13 +11474,13 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				2.7990828563349907e-09,
+				2.7990828563000688e-09,
 				-0.99999986063240143,
 				-1.0000000476910509
 			],
 			"coord_compensated_georef" : 
 			[
-				2.7990832943585377e-09,
+				2.7990832943236154e-09,
 				-1.0000000200502424,
 				-0.99999996942306912
 			],
@@ -11502,7 +11504,7 @@ data=
 					"rank" : 60,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 2.7990832943585203e-09
+					"value" : 2.799083294323598e-09
 				},
 				"T22_y" : 
 				{
@@ -11521,7 +11523,7 @@ data=
 			},
 			"shift_from_read" : 
 			[
-				2.7990832943585377e-09,
+				2.7990832943236154e-09,
 				-2.0050242355296177e-08,
 				3.0576930876158315e-08
 			],
@@ -11543,20 +11545,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : 2.7990832943585203e-09,
+							"computed_value" : 2.799083294323598e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T22",
 							"instrument_height" : 0.0,
 							"line" : 25,
-							"normalized_residual" : 0.0027990832943585206,
+							"normalized_residual" : 0.002799083294323598,
 							"number" : 66,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 66,
-							"residual" : 2.7990832943585203e-09,
+							"residual" : 2.799083294323598e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -11642,7 +11644,7 @@ data=
 			"coord_compensated_georef" : 
 			[
 				1.0000000211056015,
-				3.7800715961647674e-09,
+				3.7800715962060851e-09,
 				-0.99999996821161041
 			],
 			"coord_read" : 
@@ -11672,7 +11674,7 @@ data=
 					"rank" : 64,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 3.7800715961647443e-09
+					"value" : 3.7800715962060619e-09
 				},
 				"T23_z" : 
 				{
@@ -11685,7 +11687,7 @@ data=
 			"shift_from_read" : 
 			[
 				2.1105601488713432e-08,
-				3.7800715961647674e-09,
+				3.7800715962060851e-09,
 				3.1788389587283916e-08
 			],
 			"sigmas_init" : 
@@ -11734,20 +11736,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 3.7800715961647443e-09,
+							"computed_value" : 3.7800715962060619e-09,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "T23",
 							"instrument_height" : 0.0,
 							"line" : 26,
-							"normalized_residual" : 0.0037800715961647446,
+							"normalized_residual" : 0.0037800715962060622,
 							"number" : 70,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 70,
-							"residual" : 3.7800715961647443e-09,
+							"residual" : 3.7800715962060619e-09,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -11969,7 +11971,7 @@ data=
 			[
 				1.0000000028071434,
 				0.99999999993591659,
-				8.2699992214577834e-09
+				8.2699992214595089e-09
 			],
 			"coord_read" : 
 			[
@@ -12005,14 +12007,14 @@ data=
 					"rank" : 8,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 8.2699992214577834e-09
+					"value" : 8.2699992214595089e-09
 				}
 			},
 			"shift_from_read" : 
 			[
 				2.8071434066134771e-09,
 				-6.4083405248993586e-11,
-				8.2699992214577834e-09
+				8.2699992214595089e-09
 			],
 			"sigmas_init" : 
 			[
@@ -12132,7 +12134,7 @@ data=
 			[
 				-1.0000000023174462,
 				1.0000000015463679,
-				8.7958752689142893e-09
+				8.7958752689159768e-09
 			],
 			"coord_read" : 
 			[
@@ -12168,14 +12170,14 @@ data=
 					"rank" : 11,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 8.7958752689142893e-09
+					"value" : 8.7958752689159768e-09
 				}
 			},
 			"shift_from_read" : 
 			[
 				-2.317446234911813e-09,
 				1.5463679226002114e-09,
-				8.7958752689142893e-09
+				8.7958752689159768e-09
 			],
 			"sigmas_init" : 
 			[
@@ -12295,7 +12297,7 @@ data=
 			[
 				-1.0000000004509899,
 				-0.99999999991431532,
-				1.3769330865970687e-08
+				1.3769330865968961e-08
 			],
 			"coord_read" : 
 			[
@@ -12331,14 +12333,14 @@ data=
 					"rank" : 14,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 1.3769330865970687e-08
+					"value" : 1.3769330865968961e-08
 				}
 			},
 			"shift_from_read" : 
 			[
 				-4.5098991208192274e-10,
 				8.5684681572217869e-11,
-				1.3769330865970687e-08
+				1.3769330865968961e-08
 			],
 			"sigmas_init" : 
 			[
@@ -12450,7 +12452,7 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				0.99999999829900266,
+				0.99999999829900243,
 				-0.99999999635900627,
 				-1.4385174307296467e-07
 			],
@@ -12458,7 +12460,7 @@ data=
 			[
 				0.99999999829901298,
 				-0.99999999865847378,
-				1.2161386027516474e-08
+				1.2161386027514741e-08
 			],
 			"coord_read" : 
 			[
@@ -12494,14 +12496,14 @@ data=
 					"rank" : 17,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 1.2161386027516474e-08
+					"value" : 1.2161386027514741e-08
 				}
 			},
 			"shift_from_read" : 
 			[
 				-1.70098701790522e-09,
 				1.3415262234417469e-09,
-				1.2161386027516474e-08
+				1.2161386027514741e-08
 			],
 			"sigmas_init" : 
 			[
@@ -12939,21 +12941,21 @@ data=
 			"comment" : "",
 			"coord_compensated_cartesian" : 
 			[
-				-7.5110969958583342e-12,
+				-7.5110952184784449e-12,
 				6.0858840379857402e-10,
 				-1.9099447946154878e-08
 			],
 			"coord_compensated_georef" : 
 			[
-				-7.5110969958583536e-12,
-				1.8185865204016629e-10,
-				-1.9345752220624019e-08
+				-7.5110952184784627e-12,
+				1.8185865203753012e-10,
+				-1.9345752220624598e-08
 			],
 			"coord_read" : 
 			[
-				-2.0849275202128669e-08,
-				-1.4168522523567108e-09,
-				-1.0989606380462646e-07
+				0.0,
+				0.0,
+				0.0
 			],
 			"dev_eta" : -0.00014544410433286079,
 			"dev_xi" : 3.8785094488762879e-05,
@@ -12969,28 +12971,28 @@ data=
 					"rank" : 69,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -7.5110969958583536e-12
+					"value" : -7.5110952184784627e-12
 				},
 				"basc_y" : 
 				{
 					"rank" : 70,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : 1.8185865204016629e-10
+					"value" : 1.8185865203753012e-10
 				},
 				"basc_z" : 
 				{
 					"rank" : 71,
 					"unit_factor" : 1.0,
 					"unit_str" : "m",
-					"value" : -1.9345752220624019e-08
+					"value" : -1.9345752220624598e-08
 				}
 			},
 			"shift_from_read" : 
 			[
-				2.0841764105132809e-08,
-				1.5987109043968771e-09,
-				9.0550311584002446e-08
+				-7.5110952184784627e-12,
+				1.8185865203753012e-10,
+				-1.9345752220624598e-08
 			],
 			"sigmas_init" : 
 			[
@@ -13010,20 +13012,20 @@ data=
 							"active_read" : true,
 							"code" : -1,
 							"comment" : "",
-							"computed_value" : -7.5110969958583536e-12,
+							"computed_value" : -7.5110952184784627e-12,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 31,
-							"normalized_residual" : -7.5110969958583537e-06,
+							"normalized_residual" : -7.5110952184784628e-06,
 							"number" : 84,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 276,
-							"residual" : -7.5110969958583536e-12,
+							"residual" : -7.5110952184784627e-12,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -13038,20 +13040,20 @@ data=
 							"active_read" : true,
 							"code" : -2,
 							"comment" : "",
-							"computed_value" : 1.8185865204016629e-10,
+							"computed_value" : 1.8185865203753012e-10,
 							"deflection_correction" : 0.0,
 							"file_id" : 0,
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 31,
-							"normalized_residual" : 0.00018185865204016629,
+							"normalized_residual" : 0.00018185865203753014,
 							"number" : 85,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.0,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 277,
-							"residual" : 1.8185865204016629e-10,
+							"residual" : 1.8185865203753012e-10,
 							"sigma_abs" : 9.9999999999999995e-07,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 9.9999999999999995e-07,
@@ -13196,14 +13198,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 2,
-							"normalized_residual" : 0.031572188485817776,
+							"normalized_residual" : 0.031572188474715546,
 							"number" : 378,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.7320509130078128,
 							"obs_zen" : 0.0,
 							"original_value" : -0.99985500000000005,
 							"rank" : 378,
-							"residual" : 3.1572188485817776e-07,
+							"residual" : 3.1572188474715546e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -13700,14 +13702,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 8,
-							"normalized_residual" : -0.0015281355070229095,
+							"normalized_residual" : -0.00152813552922737,
 							"number" : 396,
 							"obs_azim" : 0.0,
-							"obs_length" : 1.4142135590313907,
+							"obs_length" : 1.4142135590313905,
 							"obs_zen" : 0.0,
 							"original_value" : 1.0,
 							"rank" : 396,
-							"residual" : -1.5281355070229097e-08,
+							"residual" : -1.5281355292273702e-08,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -13731,7 +13733,7 @@ data=
 							"normalized_residual" : 0.00064377185804431747,
 							"number" : 397,
 							"obs_azim" : 0.0,
-							"obs_length" : 1.4142135590313907,
+							"obs_length" : 1.4142135590313905,
 							"obs_zen" : 0.0,
 							"original_value" : -1.0,
 							"rank" : 397,
@@ -13756,14 +13758,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 8,
-							"normalized_residual" : -0.035394981867843546,
+							"normalized_residual" : -0.035394981867840833,
 							"number" : 398,
 							"obs_azim" : 0.0,
-							"obs_length" : 1.4142135590313907,
+							"obs_length" : 1.4142135590313905,
 							"obs_zen" : 0.0,
 							"original_value" : -0.000184,
 							"rank" : 398,
-							"residual" : -3.5394981867843548e-07,
+							"residual" : -3.5394981867840837e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14120,14 +14122,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 13,
-							"normalized_residual" : 0.044615559665733259,
+							"normalized_residual" : 0.044615559664939082,
 							"number" : 411,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.4142136420792148,
 							"obs_zen" : 0.0,
 							"original_value" : 0.000145,
 							"rank" : 411,
-							"residual" : 4.4615559665733264e-07,
+							"residual" : 4.4615559664939086e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14232,14 +14234,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 14,
-							"normalized_residual" : 0.02101556165521825,
+							"normalized_residual" : 0.021015561654601611,
 							"number" : 415,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.4142136395529501,
 							"obs_zen" : 0.0,
 							"original_value" : -3.8999999999999999e-05,
 							"rank" : 415,
-							"residual" : 2.1015561655218253e-07,
+							"residual" : 2.1015561654601613e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14288,14 +14290,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 15,
-							"normalized_residual" : 0.043990329961932167,
+							"normalized_residual" : 0.043990329962365848,
 							"number" : 417,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.4142136400322445,
 							"obs_zen" : 0.0,
 							"original_value" : 0.000145,
 							"rank" : 417,
-							"residual" : 4.3990329961932171e-07,
+							"residual" : 4.3990329962365852e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14400,14 +14402,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 16,
-							"normalized_residual" : 0.021843206915991353,
+							"normalized_residual" : 0.021843206916607991,
 							"number" : 421,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.4142136401632821,
 							"obs_zen" : 0.0,
 							"original_value" : -3.8999999999999999e-05,
 							"rank" : 421,
-							"residual" : 2.1843206915991354e-07,
+							"residual" : 2.1843206916607994e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14456,14 +14458,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 17,
-							"normalized_residual" : 0.00046742639438031899,
+							"normalized_residual" : 0.00046742639358707207,
 							"number" : 423,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.0000000001535032,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 423,
-							"residual" : 4.6742639438031905e-09,
+							"residual" : 4.6742639358707211e-09,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14568,14 +14570,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 18,
-							"normalized_residual" : -0.00044217487896320228,
+							"normalized_residual" : -0.0004421748795799367,
 							"number" : 427,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.0000000003473477,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 427,
-							"residual" : -4.4217487896320231e-09,
+							"residual" : -4.4217487957993676e-09,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14624,14 +14626,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 19,
-							"normalized_residual" : -0.00025495277973930629,
+							"normalized_residual" : -0.00025495277930376997,
 							"number" : 429,
 							"obs_azim" : 0.0,
 							"obs_length" : 0.99999999836421793,
 							"obs_zen" : 0.0,
 							"original_value" : -0.0,
 							"rank" : 429,
-							"residual" : -2.5495277973930631e-09,
+							"residual" : -2.5495277930376999e-09,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14736,14 +14738,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 20,
-							"normalized_residual" : 7.8757719783998441e-05,
+							"normalized_residual" : 7.8757720400732983e-05,
 							"number" : 433,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.0000000004544956,
 							"obs_zen" : 0.0,
 							"original_value" : 0.0,
 							"rank" : 433,
-							"residual" : 7.8757719783998453e-10,
+							"residual" : 7.8757720400732985e-10,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14792,14 +14794,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 21,
-							"normalized_residual" : -0.043714318486500224,
+							"normalized_residual" : -0.043714318487297114,
 							"number" : 435,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.414213488567106,
 							"obs_zen" : 0.0,
 							"original_value" : -0.000145,
 							"rank" : 435,
-							"residual" : -4.3714318486500229e-07,
+							"residual" : -4.3714318487297118e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14904,14 +14906,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 22,
-							"normalized_residual" : -0.021931980045712462,
+							"normalized_residual" : -0.021931980046329101,
 							"number" : 439,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.4142134849730841,
 							"obs_zen" : 0.0,
 							"original_value" : 3.8999999999999999e-05,
 							"rank" : 439,
-							"residual" : -2.1931980045712462e-07,
+							"residual" : -2.1931980046329102e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -14960,14 +14962,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 23,
-							"normalized_residual" : -0.044429410802856478,
+							"normalized_residual" : -0.044429410802420091,
 							"number" : 441,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.414213484472979,
 							"obs_zen" : 0.0,
 							"original_value" : -0.000145,
 							"rank" : 441,
-							"residual" : -4.4429410802856485e-07,
+							"residual" : -4.4429410802420094e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -15072,14 +15074,14 @@ data=
 							"from" : "basc",
 							"instrument_height" : 0.0,
 							"line" : 24,
-							"normalized_residual" : -0.020832762976018361,
+							"normalized_residual" : -0.020832762975401722,
 							"number" : 445,
 							"obs_azim" : 0.0,
 							"obs_length" : 1.4142134851127928,
 							"obs_zen" : 0.0,
 							"original_value" : 3.8999999999999999e-05,
 							"rank" : 445,
-							"residual" : -2.0832762976018363e-07,
+							"residual" : -2.0832762975401723e-07,
 							"sigma_abs" : 1.0000000000000001e-05,
 							"sigma_rel" : 0.0,
 							"sigma_total" : 1.0000000000000001e-05,
@@ -15246,8 +15248,8 @@ data=
 						"basc_Rc_1" : 
 						{
 							"rank" : 72,
-							"unit_factor" : 1.0,
-							"unit_str" : "",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
 							"value" : 0.0
 						}
 					},
@@ -15256,11 +15258,11 @@ data=
 						"R_global2instr" : 
 						[
 							0.99999998942300616,
-							2.992730490732412e-09,
+							2.9927304845650666e-09,
 							0.00014544410381339668,
-							2.6483327913288796e-09,
+							2.6483327974962245e-09,
 							0.9999999992478581,
-							-3.8785094093854516e-05,
+							-3.8785094093854509e-05,
 							-0.00014544410382007545,
 							3.8785094068809215e-05,
 							0.99999998867086448
@@ -15268,9 +15270,9 @@ data=
 						"R_vert2instr" : 
 						[
 							0.99999999999999989,
-							-2.64833281934021e-09,
+							-2.6483328255075553e-09,
 							0.0,
-							2.64833281934021e-09,
+							2.6483328255075553e-09,
 							0.99999999999999989,
 							0.0,
 							0.0,
@@ -15280,8 +15282,9 @@ data=
 						"a" : -0.0,
 						"b" : 0.0,
 						"c" : 1.0,
-						"theta_rd" : 2.64833281934021e-09
+						"theta_rd" : 2.6483328255075553e-09
 					},
+					"sigma_factor" : 1.0,
 					"triplet_type" : 11,
 					"type" : "bascule",
 					"vertical" : true
