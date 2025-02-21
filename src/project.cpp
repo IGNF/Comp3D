@@ -2041,10 +2041,21 @@ bool Project::exportRelPrec(const std::string &filename,std::vector<Point*> &sel
                 }else{
                     relFile<<"no 2d dist; ";
                 }
-                //precisions 1d
-                static const std::array<std::string,3> dim_name{"x","y","z"};
-                for (unsigned i2=0;i2<dim_name.size();i2++)
-                    relFile<<"d"<<dim_name.at(i2)<<"="<<cartGlobalB.toVect()[i2]-cartGlobalA.toVect()[i2]<<"+/-"<<sqrt(varCovar(i2,i2) + varCovar(i2+3,i2+3) - 2*varCovar(i2,i2+3))*lsquares.sigma_0<<"m; ";
+                //1d precisions
+                {
+                    MatX Fdist(3,6);
+                    Fdist << -1, 0, 0, 1, 0, 0,
+                             0, -1, 0, 0, 1, 0,
+                             0, 0, -1, 0, 0, 1;
+
+                    MatX sigma_diff =Fdist*varCovar*Fdist.transpose();
+                    //std::cout<<"sigma_diff=\n"<<sigma_diff<<"\n";
+                    static const std::array<std::string,3> dim_name{"x","y","z"};
+                    for (unsigned i2=0;i2<dim_name.size();i2++)
+                        relFile<<"d"<<dim_name.at(i2)<<"="<<cartGlobalB.toVect()[i2]-cartGlobalA.toVect()[i2]<<"+/-"<<sqrt(sigma_diff(i2,i2))*lsquares.sigma_0<<"m; ";
+                    // x/y covariance
+                    relFile<<"sdxy="<<sigma_diff(0,1)*lsquares.sigma_0*lsquares.sigma_0<<"m2; ";
+                }
                 relFile<<"\n";
             }
         }
