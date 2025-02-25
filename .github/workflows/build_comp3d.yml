@@ -74,7 +74,7 @@ jobs:
     - name: Install deps
       run: |
         sudo apt update
-        sudo apt install wget unzip build-essential pkg-config libboost-all-dev qttools5-dev-tools qttools5-dev qtbase5-dev git doxygen sqlite libsqlite3-dev cmake fuse libtiff-dev libcurl4-openssl-dev libeigen3-dev
+        sudo apt install wget unzip build-essential pkg-config libboost-all-dev qttools5-dev-tools qttools5-dev qtbase5-dev git doxygen sqlite3 libsqlite3-dev cmake fuse libtiff-dev libcurl4-openssl-dev libeigen3-dev
 
     - name: Install libproj
       run: |

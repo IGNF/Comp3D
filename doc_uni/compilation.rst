@@ -56,7 +56,7 @@ Compile proj-9.3 :
 
 .. code-block:: bash
 
-    sudo apt install sqlite libsqlite3-dev
+    sudo apt install sqlite3 libsqlite3-dev
 
 .. code-block:: bash
 
