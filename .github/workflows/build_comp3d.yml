@@ -255,9 +255,9 @@ jobs:
         COMP3D_DIR=$(pwd)/autobuild/Release
         mkdir -p ${COMP3D_DIR}/platforms ${COMP3D_DIR}/imageformats
         cd /C/Miniconda/envs/test/Library/bin/
-        cp deflate.dll Lerc.dll libcrypto-3-x64.dll libcurl.dll liblzma.dll libssh2.dll proj_*.dll sqlite3.dll tiff.dll zlib.dll zstd.dll ${COMP3D_DIR}/
+        cp deflate.dll Lerc.dll libcrypto-3-x64.dll libcurl.dll liblzma.dll libssh2.dll proj_*.dll sqlite3.dll tiff.dll libsharpyuv.dll libwebp.dll libjpeg.dll zlib.dll zstd.dll ${COMP3D_DIR}/
         cd $Qt5_Dir/bin
-        cp Qt5Core.dll Qt5Gui.dll Qt5Xml.dll Qt5OpenGL.dll Qt5Widgets.dll ${COMP3D_DIR}/
+        cp Qt5Core.dll Qt5Gui.dll Qt5Xml.dll Qt5OpenGL.dll Qt5Widgets.dll Qt5Svg.dll ${COMP3D_DIR}/
         cd $Qt5_Dir/plugins
         cp platforms/qwindows.dll ${COMP3D_DIR}/platforms/
         cp imageformats/*.dll ${COMP3D_DIR}/imageformats/
