@@ -36,6 +36,16 @@ at the origin corresponds to the geographic north direction.
 Input coordinates (in any user-chosen projection) is converted into spherical frame for computation
 and final coordinates are converted back into user's projection for output.
 
+.. note::
+
+   The spherical Earth approximation limits the precision of topometric computations. The average error is around:
+   
+     - 4 µm in planimetry and 0.1 mm in altimetry for a 1 km network
+     - 4 mm in planimetry and 10 mm in altimetry for a 10 km network
+     - 4 m in planimetry and 1 m in altimetry for a 100 km network
+   
+   See ex/big_1km, ex/big_10km and ex/big_100km for illustrations
+
 .. _proj-coord:
 
 Projection Coordinates

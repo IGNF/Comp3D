@@ -1,0 +1,2606 @@
+data=
+{
+	"COMP3D_COMMIT" : "v5.23-14-gc5d70b5e-dirty",
+	"COMP3D_COPYRIGHT" : "Copyright 1992-2024 IGN France www.ign.fr",
+	"COMP3D_LICENSE" : "Provided with absolutely no warranty, under GPLv3 license",
+	"COMP3D_OPTIONS" : "QT GUI RES AUTO ",
+	"COMP3D_REPO" : "https://github.com/IGNF/Comp3D",
+	"COMP3D_VERSION" : "COMP3D v5.24dev-PROJ 9.4.0-linux",
+	"all_data_files" : 
+	{
+		"0" : "coord.cor",
+		"1" : "obs.obs"
+	},
+	"all_forbidden_point_names" : null,
+	"all_point_names" : 
+	[
+		"A",
+		"B",
+		"C",
+		"D",
+		"E",
+		"F"
+	],
+	"all_uninitializable_point_names" : null,
+	"computation" : 
+	{
+		"Monte_Carlo_done" : false,
+		"all_parameters_names" : 
+		[
+			"D_x",
+			"D_y",
+			"D_z",
+			"D_G0_1",
+			"C_x",
+			"C_y",
+			"C_z",
+			"C_G0_1",
+			"B_x",
+			"B_y",
+			"B_z",
+			"B_G0_1",
+			"E_x",
+			"E_y",
+			"E_z",
+			"A_x",
+			"A_y",
+			"A_z",
+			"A_G0_1",
+			"F_x",
+			"F_y",
+			"F_z"
+		],
+		"all_sigma0" : 
+		[
+			0.00043918261459545334,
+			0.00032520151290648986,
+			0.00032520301306907743
+		],
+		"biggest_ellips" : 0.00057195225884328397,
+		"chi2_test" : 
+		{
+			"DOF" : 26,
+			"confidence" : 0.98999999999999999,
+			"max" : 1.5263353315546133,
+			"min" : 0.73376771679260455
+		},
+		"compensation_done" : true,
+		"computation_duration" : "00:00:00.000671",
+		"computation_start" : "2025-Jun-25 09:09:46.934345",
+		"condition_number_approx" : 30003513439.225269,
+		"internal_constraints" : false,
+		"internal_constraints_obs" : [],
+		"interrupted" : false,
+		"inverted_matrix" : true,
+		"kernel" : null,
+		"messages_computation" : "<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Design matrix approximative condition number is suspicious: 30003513437.643272</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Design matrix approximative condition number is suspicious: 30003513439.225506</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Design matrix approximative condition number is suspicious: 30003513439.225269</font><br/>\n",
+		"messages_read_config" : "",
+		"messages_read_data" : "Reading COR...<br/>\nRead file coord.cor...<br/>\nReading OBS...<br/>\nRead file obs.obs...<br/>\nPoints setting...<br/>\nRead data finished.<br/>\nAll points are initialized.<br/>\nVertical deflection not used.<br/>\n",
+		"messages_set_least_squares" : "",
+		"nbr_active_obs" : 48,
+		"nbr_all_obs" : 48,
+		"nbr_iterations" : 2,
+		"nbr_parameters" : 22,
+		"projection" : 
+		{
+			"center_cartgeocentric" : 
+			[
+				4202230.3552151294,
+				177165.71948565257,
+				4778765.1930990852
+			],
+			"center_geographic" : 
+			[
+				2.4141561288763747,
+				48.838615201716379,
+				0.0
+			],
+			"center_latitude" : 48.838615201716379,
+			"earth_model_radius" : 6380963.9182151258,
+			"geocent_def" : "+proj=geocent",
+			"input_proj_EPSG" : 2154,
+			"input_proj_def" : "IGNF:LAMB93",
+			"input_proj_name" : "RGF93 / Lambert-93",
+			"is_georef" : true,
+			"latlong_def" : "+proj=latlong",
+			"local_center_stereo" : 
+			[
+				3.2103206747950777e-10,
+				-2.1252879183900621e-09,
+				0.0
+			],
+			"local_scale" : 1.0,
+			"rot_global2geocentric" : 
+			[
+				[
+					-0.042122506783490839,
+					-0.75219047271925898,
+					0.65759804377191722
+				],
+				[
+					0.99911245334160192,
+					-0.031712294430546135,
+					0.027724284655795618
+				],
+				[
+					0.0,
+					0.6581822111940796,
+					0.75285866991598893
+				]
+			],
+			"stereo_def" : "+proj=sterea +lat_0=48.8386152017164 +lon_0=2.41415612887637 +k_0=1 +x_0=0 +y_0=0"
+		},
+		"rank_deficiency" : 0,
+		"sigma_0_final" : 0.00032520301306907743,
+		"sigma_0_init" : 0.00043918261459545334,
+		"solver_name" : "N5Eigen14SimplicialLDLTINS_12SparseMatrixIdLi0EiEELi1ENS_11AMDOrderingIiEEEE",
+		"unit_name" : "g",
+		"use_vertical_deflection" : false
+	},
+	"config" : 
+	{
+		"center_latitude" : 48.799999999999997,
+		"clean_outputs" : false,
+		"compute_type" : 0,
+		"convergence_criterion" : 0.001,
+		"coord_cov_file" : "",
+		"description" : "",
+		"display_map" : true,
+		"files_unit" : 1,
+		"force_iterations" : 0,
+		"internal_constraints" : false,
+		"invert_matrix" : true,
+		"lang" : "en",
+		"local_center" : 
+		[
+			657000.0,
+			6860000.0,
+			0.0
+		],
+		"max_iterations" : 100,
+		"misc_metadata" : null,
+		"name" : "big 1km",
+		"nb_digits" : 4,
+		"proj_def" : "IGNF:LAMB93",
+		"refraction" : 0.12,
+		"root_COR_file" : "coord.cor",
+		"root_OBS_file" : "obs.obs",
+		"use_ellips_height" : true,
+		"use_proj" : true
+	},
+	"config_file" : "/home/JMMuller/prog/comp3d_cpp/ex/big_100km/big_100km.comp",
+	"other_stations" : null,
+	"points" : 
+	{
+		"A" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1.8926357431671844e-11,
+				-1.3153578176305144e-09,
+				-8.7104605839666468e-11
+			],
+			"coord_compensated_georef" : 
+			[
+				657000.0,
+				6859999.9999999991,
+				9.4444232309546629e-15
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4141561288763751,
+				48.838615201716372,
+				9.4444232309546629e-15
+			],
+			"coord_init_latlong" : 
+			[
+				2.4141561288763747,
+				48.838615201716379,
+				0.0
+			],
+			"coord_read" : 
+			[
+				657000.0,
+				6860000.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						3.2520301306907748e-09,
+						199.52746832104251,
+						1.0416123554926563e-09
+					],
+					[
+						3.2520291852401421e-09,
+						99.52746447538938,
+						99.992089764195939
+					],
+					[
+						3.2516621465154543e-09,
+						99.527468321058009,
+						199.99208976414548
+					]
+				],
+				"matrix" : 
+				[
+					9.9977371484080507e-11,
+					-1.6796347607623624e-16,
+					2.8045296046232309e-18,
+					9.9999998753266508e-11,
+					2.081703205053831e-20,
+					9.9999941854403348e-11
+				],
+				"sigmas" : 
+				[
+					3.2516621667954893e-09,
+					3.2520301104187001e-09,
+					3.2520291852344755e-09
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 27,
+			"number" : 0,
+			"params" : 
+			{
+				"A_x" : 
+				{
+					"rank" : 15,
+					"sigma" : 3.2516621667954893e-09,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -4.0184456529685226e-11
+				},
+				"A_y" : 
+				{
+					"rank" : 16,
+					"sigma" : 3.2520301104187001e-09,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -2.9827501843189127e-13
+				},
+				"A_z" : 
+				{
+					"rank" : 17,
+					"sigma" : 3.2520291852344755e-09,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 9.4444232309546629e-15
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.0,
+				-9.3132257461547852e-10,
+				9.4444232309546629e-15
+			],
+			"sigmas_init" : 
+			[
+				1.0000000000000001e-05,
+				1.0000000000000001e-05,
+				1.0000000000000001e-05
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 13,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : -4.0184456529685226e-11,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -4.0184456529685224e-06,
+							"number" : 0,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 0.022628515919509429,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 0,
+							"residual" : -4.0184456529685226e-11,
+							"residual_std" : -4.0189003874518756e-06,
+							"sigma_a_posteriori" : 9.9988685101905659e-06,
+							"sigma_abs" : 1.0000000000000001e-05,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0000000000000001e-05,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : -2.9827501843189127e-13,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : -2.9827501843189122e-08,
+							"number" : 1,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 1.2467334942201092e-06,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 1,
+							"residual" : -2.9827501843189127e-13,
+							"residual_std" : -2.9827502029123852e-08,
+							"sigma_a_posteriori" : 9.999999937663326e-06,
+							"sigma_abs" : 1.0000000000000001e-05,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0000000000000001e-05,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 0.0,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"normalized_residual" : 0.0,
+							"number" : 2,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 5.814559668193553e-05,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 2,
+							"residual" : 0.0,
+							"residual_std" : 0.0,
+							"sigma_a_posteriori" : 9.9999970927197442e-06,
+							"sigma_abs" : 1.0000000000000001e-05,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0000000000000001e-05,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00439034647567,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 2,
+							"nabla" : 0.0044992232938820551,
+							"normalized_residual" : 0.00034647567496543278,
+							"number" : 7,
+							"obs_azim" : 1.5633738165388698,
+							"obs_length" : 1000.1204078711884,
+							"obs_redondancy" : 83.041009187285724,
+							"obs_zen" : 1.5708652901960702,
+							"original_value" : 100.00439,
+							"rank" : 3,
+							"residual" : 3.4647567496543279e-07,
+							"residual_std" : 0.0008413423438375856,
+							"sigma_a_posteriori" : 0.00041181295284041611,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00091126839727538947,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00038021254330926417,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1000.1204078711884,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 3,
+							"nabla" : 0.0041116023441693491,
+							"normalized_residual" : -0.0001288116209252621,
+							"number" : 8,
+							"obs_azim" : 1.5633738165388698,
+							"obs_length" : 1000.1204078711884,
+							"obs_redondancy" : 99.436425357554754,
+							"obs_zen" : 1.5708652901960702,
+							"original_value" : 1000.120408,
+							"rank" : 4,
+							"residual" : -1.288116209252621e-07,
+							"residual_std" : -0.0017158500164220617,
+							"sigma_a_posteriori" : 7.5071608644363736e-05,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00099717814535595756,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00012917613720794181,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00620886739212,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 5,
+							"nabla" : 0.0044385599707588526,
+							"normalized_residual" : -0.00013260788411175646,
+							"number" : 10,
+							"obs_azim" : 0.77797567220454278,
+							"obs_length" : 1414.3792488977667,
+							"obs_redondancy" : 85.326420908680703,
+							"obs_zen" : 1.5708938554558276,
+							"original_value" : 100.006209,
+							"rank" : 5,
+							"residual" : -1.3260788411175646e-07,
+							"residual_std" : -0.00034617947653634219,
+							"sigma_a_posteriori" : 0.00038306107987263994,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00092372301534973504,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00014355806005499297,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1414.3792488977667,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 6,
+							"nabla" : 0.0051080589513130157,
+							"normalized_residual" : -0.0001022333435685141,
+							"number" : 11,
+							"obs_azim" : 0.77797567220454278,
+							"obs_length" : 1414.3792488977667,
+							"obs_redondancy" : 64.42522025062749,
+							"obs_zen" : 1.5708938554558276,
+							"original_value" : 1414.3792490000001,
+							"rank" : 6,
+							"residual" : -1.022333435685141e-07,
+							"residual_std" : -0.00017140419815187319,
+							"sigma_a_posteriori" : 0.00059644597198214454,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00080265322680861059,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00012736925505800183,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00439033236289,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 8,
+							"nabla" : 0.0047962053975250636,
+							"normalized_residual" : 0.00033236288946124571,
+							"number" : 13,
+							"obs_azim" : -0.0074192465801525016,
+							"obs_length" : 1000.1171870952694,
+							"obs_redondancy" : 73.075562404513377,
+							"obs_zen" : 1.5708652899743871,
+							"original_value" : 100.00439,
+							"rank" : 7,
+							"residual" : 3.3236288946124569e-07,
+							"residual_std" : 0.00064052960246945392,
+							"sigma_a_posteriori" : 0.00051888763326453087,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0008548424556870896,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00038880016691976904,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1000.1171870952694,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 9,
+							"nabla" : 0.005418336943230931,
+							"normalized_residual" : 9.5269456323876511e-05,
+							"number" : 14,
+							"obs_azim" : -0.0074192465801525016,
+							"obs_length" : 1000.1171870952694,
+							"obs_redondancy" : 57.257937021679581,
+							"obs_zen" : 1.5708652899743871,
+							"original_value" : 1000.1171869999999,
+							"rank" : 8,
+							"residual" : 9.5269456323876511e-08,
+							"residual_std" : 0.00014572227637673669,
+							"sigma_a_posteriori" : 0.0006537741427918392,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00075668974501891847,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00012590293042955751,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.43901900000067,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 11,
+							"normalized_residual" : 6.7851833204555019e-10,
+							"number" : 16,
+							"obs_azim" : -1.5778921324340103,
+							"obs_length" : 100007.34944999998,
+							"obs_redondancy" : 1.865174681370263e-12,
+							"obs_zen" : 1.577692421120839,
+							"original_value" : 100.439019,
+							"rank" : 9,
+							"residual" : 6.7851833204555021e-13,
+							"residual_std" : 6.785183320455565e-10,
+							"sigma_a_posteriori" : 0.0009999999999999907,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "E",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 100007.34944999998,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 12,
+							"normalized_residual" : -1.4551915228366852e-08,
+							"number" : 17,
+							"obs_azim" : -1.5778921324340103,
+							"obs_length" : 100007.34944999998,
+							"obs_redondancy" : -6.5281113847959205e-12,
+							"obs_zen" : 1.577692421120839,
+							"original_value" : 100007.34944999999,
+							"rank" : 10,
+							"residual" : -1.4551915228366852e-11,
+							"residual_std" : -1.4551915228366375e-08,
+							"sigma_a_posteriori" : 0.0010000000000000328,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "E",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.43913999999995,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 14,
+							"normalized_residual" : -4.2407395752846887e-11,
+							"number" : 19,
+							"obs_azim" : 3.1341713004119516,
+							"obs_length" : 100035.06553000001,
+							"obs_redondancy" : 2.2426505097428162e-12,
+							"obs_zen" : 1.5776943217843831,
+							"original_value" : 100.43913999999999,
+							"rank" : 11,
+							"residual" : -4.2407395752846888e-14,
+							"residual_std" : -4.2407395752847359e-11,
+							"sigma_a_posteriori" : 0.00099999999999998875,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "F",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 100035.06553000001,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 15,
+							"normalized_residual" : 0.0,
+							"number" : 20,
+							"obs_azim" : 3.1341713004119516,
+							"obs_length" : 100035.06553000001,
+							"obs_redondancy" : -6.5725203057809267e-12,
+							"obs_zen" : 1.5776943217843831,
+							"original_value" : 100035.06553000001,
+							"rank" : 12,
+							"residual" : 0.0,
+							"residual_std" : 0.0,
+							"sigma_a_posteriori" : 0.001000000000000033,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.001,
+							"target_height" : 0.0,
+							"to" : "F",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 5,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 99.527468338114929,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 1,
+							"nabla" : 0.0040217731739518696,
+							"normalized_residual" : 0.00042264369742771112,
+							"number" : 6,
+							"obs_azim" : 1.5633738165388698,
+							"obs_length" : 1000.1204078711884,
+							"obs_redondancy" : 66.513919658074556,
+							"obs_zen" : 1.5708652901960702,
+							"original_value" : 99.527467999999999,
+							"rank" : 22,
+							"residual" : 3.3811495794216897e-07,
+							"residual_std" : 0.00073036884529914807,
+							"sigma_a_posteriori" : 0.00046293726809182577,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065244853115910772,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : 0.00051822472087030471,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 49.527469551710936,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"nabla" : 0.004019277572031554,
+							"normalized_residual" : -0.00056036136174011681,
+							"number" : 9,
+							"obs_azim" : 0.77797567220454278,
+							"obs_length" : 1414.3792488977667,
+							"obs_redondancy" : 66.59654336127501,
+							"obs_zen" : 1.5708938554558276,
+							"original_value" : 49.527470000000001,
+							"rank" : 23,
+							"residual" : -4.4828908939209349e-07,
+							"residual_std" : -0.00096955505883848843,
+							"sigma_a_posteriori" : 0.00046236578862177943,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065285364172390124,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : -0.00068666093093753427,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : -0.47232388982583978,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 7,
+							"nabla" : 0.0040217750703550577,
+							"normalized_residual" : 0.00013771773499139856,
+							"number" : 12,
+							"obs_azim" : -0.0074192465801525016,
+							"obs_length" : 1000.1171870952694,
+							"obs_redondancy" : 66.513856930956621,
+							"obs_zen" : 1.5708652899743871,
+							"original_value" : -0.47232400000000002,
+							"rank" : 24,
+							"residual" : 1.1017418799311886e-07,
+							"residual_std" : 0.00023798923179508096,
+							"sigma_a_posteriori" : 0.0004629377016855267,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065244822350752274,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : 0.00016886272967505222,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : -100.45173299999998,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 10,
+							"normalized_residual" : 0.0,
+							"number" : 15,
+							"obs_azim" : -1.5778921324340103,
+							"obs_length" : 100007.34944999998,
+							"obs_redondancy" : 2.6867397195928788e-12,
+							"obs_zen" : 1.577692421120839,
+							"original_value" : -100.451733,
+							"rank" : 25,
+							"residual" : 0.0,
+							"residual_std" : 0.0,
+							"sigma_a_posteriori" : 0.0007999999999999893,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.00080000000000000004,
+							"target_height" : 0.0,
+							"to" : "E",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 199.52754200000001,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "A",
+							"instrument_height" : 0.0,
+							"line" : 13,
+							"normalized_residual" : 0.0,
+							"number" : 18,
+							"obs_azim" : 3.1341713004119516,
+							"obs_length" : 100035.06553000001,
+							"obs_redondancy" : -2.886579864025407e-12,
+							"obs_zen" : 1.5776943217843831,
+							"original_value" : 199.52754200000001,
+							"rank" : 26,
+							"residual" : 0.0,
+							"residual_std" : 0.0,
+							"sigma_a_posteriori" : 0.00080000000000001164,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 0.00080000000000000004,
+							"target_height" : 0.0,
+							"to" : "F",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"A_G0_1" : 
+						{
+							"rank" : 18,
+							"sigma" : 3.9986076112125149e-09,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -2.681934350138795e-10
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		},
+		"B" : 
+		{
+			"code" : 1,
+			"code_name" : "3xyz",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				1000.0928588870713,
+				7.4233358312991804,
+				-0.078262786141657603
+			],
+			"coord_compensated_georef" : 
+			[
+				658000.00000000221,
+				6860000.000000299,
+				1.2901927421418738e-09
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4277799222885563,
+				48.838681149415756,
+				1.2901927421418738e-09
+			],
+			"coord_init_latlong" : 
+			[
+				2.4277799222885559,
+				48.83868114941307,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658000.0,
+				6860000.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						3.2316944829135047e-06,
+						199.99989172111907,
+						199.99383565143333
+					],
+					[
+						2.1039083275665982e-06,
+						199.98808504817447,
+						99.993835651350182
+					],
+					[
+						3.2516575208595797e-09,
+						99.999891721008368,
+						199.99999885676741
+					]
+				],
+				"matrix" : 
+				[
+					9.9977371484080571e-11,
+					-1.6796347607618238e-10,
+					-7.4224864001067715e-13,
+					9.8753266480339837e-05,
+					-5.5094493219413272e-09,
+					4.185472658447219e-05
+				],
+				"sigmas" : 
+				[
+					3.2516621667954906e-09,
+					3.2316944741798374e-06,
+					2.1039083409747071e-06
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 21,
+			"number" : 1,
+			"params" : 
+			{
+				"B_x" : 
+				{
+					"rank" : 8,
+					"sigma" : 3.2516621667954906e-09,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1000.0928588752016
+				},
+				"B_y" : 
+				{
+					"rank" : 9,
+					"sigma" : 3.2316944741798374e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 7.4233358287242446
+				},
+				"B_z" : 
+				{
+					"rank" : 10,
+					"sigma" : 2.1039083409747071e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1.2901927421418738e-09
+				}
+			},
+			"shift_from_read" : 
+			[
+				2.2118911147117615e-09,
+				2.989545464515686e-07,
+				1.2901927421418738e-09
+			],
+			"sigmas_init" : 
+			[
+				1.0000000000000001e-05,
+				0.01,
+				0.01
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 9,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -1,
+							"comment" : "",
+							"computed_value" : 1000.0928588752016,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"normalized_residual" : 4.0131453715730458e-06,
+							"number" : 3,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 0.022628515919442815,
+							"obs_zen" : 0.0,
+							"original_value" : 1000.0928588751615,
+							"rank" : 13,
+							"residual" : 4.0131453715730458e-11,
+							"residual_std" : 4.0135995062670937e-06,
+							"sigma_a_posteriori" : 9.9988685101905693e-06,
+							"sigma_abs" : 1.0000000000000001e-05,
+							"sigma_rel" : 0.0,
+							"sigma_total" : 1.0000000000000001e-05,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -2,
+							"comment" : "",
+							"computed_value" : 7.4233358287242446,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"nabla" : 0.36719523656334674,
+							"normalized_residual" : 2.9827501801804601e-05,
+							"number" : 4,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 1.2467335196601703,
+							"obs_zen" : 0.0,
+							"original_value" : 7.4233355304492266,
+							"rank" : 14,
+							"residual" : 2.9827501801804601e-07,
+							"residual_std" : 3.0015193378488932e-05,
+							"sigma_a_posteriori" : 0.0099374678102794288,
+							"sigma_abs" : 0.01,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0011165722187392007,
+							"sigma_total" : 0.01,
+							"standardized_residual" : 0.00026713455073676206,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : -3,
+							"comment" : "",
+							"computed_value" : 9.3132257461547852e-10,
+							"deflection_correction" : 0.0,
+							"file_id" : 0,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 4,
+							"nabla" : 0.053768342423199611,
+							"normalized_residual" : 9.3132257461547852e-08,
+							"number" : 5,
+							"obs_azim" : 0.0,
+							"obs_length" : 0.0,
+							"obs_redondancy" : 58.145273415527818,
+							"obs_zen" : 0.0,
+							"original_value" : 0.0,
+							"rank" : 15,
+							"residual" : 9.3132257461547852e-10,
+							"residual_std" : 1.4395537177436635e-07,
+							"sigma_a_posteriori" : 0.0064695229023840842,
+							"sigma_abs" : 0.01,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0076253048080406477,
+							"sigma_total" : 0.01,
+							"standardized_residual" : 1.2213578316678276e-07,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00439034661096,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 18,
+							"nabla" : 0.0044992232937362386,
+							"normalized_residual" : 0.00034661095455788436,
+							"number" : 22,
+							"obs_azim" : -1.5782188371420904,
+							"obs_length" : 1000.1204078711884,
+							"obs_redondancy" : 83.041009192668312,
+							"obs_zen" : 1.5708652901981952,
+							"original_value" : 100.00439,
+							"rank" : 16,
+							"residual" : 3.466109545578844e-07,
+							"residual_std" : 0.00084167084163379064,
+							"sigma_a_posteriori" : 0.00041181295277506371,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00091126839730492303,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00038036099527097235,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1000.1204078711884,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 19,
+							"nabla" : 0.0041116023441693491,
+							"normalized_residual" : -0.0001288116209252621,
+							"number" : 23,
+							"obs_azim" : -1.5782188371420904,
+							"obs_length" : 1000.1204078711884,
+							"obs_redondancy" : 99.436425357554754,
+							"obs_zen" : 1.5708652901981952,
+							"original_value" : 1000.120408,
+							"rank" : 17,
+							"residual" : -1.288116209252621e-07,
+							"residual_std" : -0.0017158500164220617,
+							"sigma_a_posteriori" : 7.5071608644363736e-05,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00099717814535595756,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00012917613720794181,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00439033217491,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 21,
+							"nabla" : 0.0047962054332189889,
+							"normalized_residual" : 0.00033217489747587332,
+							"number" : 25,
+							"obs_azim" : -0.0074257274030609241,
+							"obs_length" : 1000.1171400286973,
+							"obs_redondancy" : 73.075561316839526,
+							"obs_zen" : 1.5708652899714342,
+							"original_value" : 100.00439,
+							"rank" : 18,
+							"residual" : 3.3217489747587335e-07,
+							"residual_std" : 0.00064016729147416324,
+							"sigma_a_posteriori" : 0.00051888764374535335,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00085484244932525157,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00038858025562262059,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1000.1171400286973,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 22,
+							"nabla" : 0.0054183369101666219,
+							"normalized_residual" : 2.8697400011878926e-05,
+							"number" : 26,
+							"obs_azim" : -0.0074257274030609241,
+							"obs_length" : 1000.1171400286973,
+							"obs_redondancy" : 57.257937720489636,
+							"obs_zen" : 1.5708652899714342,
+							"original_value" : 1000.1171399999999,
+							"rank" : 19,
+							"residual" : 2.8697400011878926e-08,
+							"residual_std" : 4.3894975907007953e-05,
+							"sigma_a_posteriori" : 0.00065377413744740901,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00075668974963646516,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 3.7924922368336506e-05,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.0062088674694,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 24,
+							"nabla" : 0.0044385599680758833,
+							"normalized_residual" : -0.00013253060370089619,
+							"number" : 28,
+							"obs_azim" : -0.79282064596720969,
+							"obs_length" : 1414.3792578957916,
+							"obs_redondancy" : 85.326421011834938,
+							"obs_zen" : 1.5708938554570415,
+							"original_value" : 100.006209,
+							"rank" : 20,
+							"residual" : -1.3253060370089618e-07,
+							"residual_std" : -0.00034597773339646099,
+							"sigma_a_posteriori" : 0.00038306107852619349,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00092372301590809645,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00014347439808090915,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1414.3792578957916,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 25,
+							"nabla" : 0.0051080589475790104,
+							"normalized_residual" : -0.00010420831131341401,
+							"number" : 29,
+							"obs_azim" : -0.79282064596720969,
+							"obs_length" : 1414.3792578957916,
+							"obs_redondancy" : 64.425220344817518,
+							"obs_zen" : 1.5708938554570415,
+							"original_value" : 1414.3792579999999,
+							"rank" : 21,
+							"residual" : -1.0420831131341401e-07,
+							"residual_std" : -0.00017471542494462163,
+							"sigma_a_posteriori" : 0.00059644597119255056,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00080265322739535229,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00012982980415038623,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				},
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : -100.47253165474295,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 17,
+							"nabla" : 0.0040217731696823213,
+							"normalized_residual" : 0.00043157130238160045,
+							"number" : 21,
+							"obs_azim" : -1.5782188371420904,
+							"obs_length" : 1000.1204078711884,
+							"obs_redondancy" : 66.513919799298037,
+							"obs_zen" : 1.5708652901981952,
+							"original_value" : -100.472532,
+							"rank" : 27,
+							"residual" : 3.4525704190528041e-07,
+							"residual_std" : 0.00074579660448688911,
+							"sigma_a_posteriori" : 0.0004629372671156348,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065244853185175277,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : 0.00052917130631804162,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : -0.472736458880334,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 20,
+							"nabla" : 0.004021775067288914,
+							"normalized_residual" : -0.00057360038526221217,
+							"number" : 24,
+							"obs_azim" : -0.0074257274030609241,
+							"obs_length" : 1000.1171400286973,
+							"obs_redondancy" : 66.513857032375057,
+							"obs_zen" : 1.5708652899714342,
+							"original_value" : -0.47273599999999999,
+							"rank" : 28,
+							"residual" : -4.5888030820976982e-07,
+							"residual_std" : -0.00099123555336693044,
+							"sigma_a_posteriori" : 0.00046293770098448418,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065244822400493995,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : -0.00070332064879112218,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : -50.472529886376677,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "B",
+							"instrument_height" : 0.0,
+							"line" : 23,
+							"nabla" : 0.0040192775721291851,
+							"normalized_residual" : 0.00014202915355960465,
+							"number" : 27,
+							"obs_azim" : -0.79282064596720969,
+							"obs_length" : 1414.3792578957916,
+							"obs_redondancy" : 66.596543358039668,
+							"obs_zen" : 1.5708938554570415,
+							"original_value" : -50.472529999999999,
+							"rank" : 29,
+							"residual" : 1.1362332284768375e-07,
+							"residual_std" : 0.00024574336085909324,
+							"sigma_a_posteriori" : 0.00046236578864417097,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065285364170804315,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : 0.00017404103399103993,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"B_G0_1" : 
+						{
+							"rank" : 11,
+							"sigma" : 4.0096567483962901e-09,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -4.7154837100778502e-10
+						}
+					},
+					"type" : "hz_unknown"
+				}
+			]
+		},
+		"C" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				992.66631768558591,
+				1007.5129029660255,
+				-0.15675633600807259
+			],
+			"coord_compensated_georef" : 
+			[
+				657999.99999905901,
+				6861000.0000007311,
+				9.0158984199214921e-10
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4276811753648553,
+				48.847674230706737,
+				9.0158984199214921e-10
+			],
+			"coord_init_latlong" : 
+			[
+				2.4276811753777494,
+				48.847674230700214,
+				0.0
+			],
+			"coord_read" : 
+			[
+				658000.0,
+				6861000.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						4.571172381876591e-06,
+						149.52647643458263,
+						0.0040080445948205094
+					],
+					[
+						2.7676329809050917e-06,
+						83.630113168756637,
+						99.992147893584018
+					],
+					[
+						1.9398555819890812e-07,
+						49.52647600948098,
+						199.99324787789496
+					]
+				],
+				"matrix" : 
+				[
+					0.00010043554224890116,
+					-9.8601882447146158e-05,
+					2.4800285769895656e-10,
+					9.7501685853820528e-05,
+					-1.0975281403535882e-08,
+					7.2428229855003675e-05
+				],
+				"sigmas" : 
+				[
+					3.2591044187646154e-06,
+					3.2111502242171175e-06,
+					2.7676329748927998e-06
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 18,
+			"number" : 2,
+			"params" : 
+			{
+				"C_x" : 
+				{
+					"rank" : 4,
+					"sigma" : 3.2591044187646154e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 992.66631767384922
+				},
+				"C_y" : 
+				{
+					"rank" : 5,
+					"sigma" : 3.2111502242171175e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1007.5129029738808
+				},
+				"C_z" : 
+				{
+					"rank" : 6,
+					"sigma" : 2.7676329748927998e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 9.0158984199214921e-10
+				}
+			},
+			"shift_from_read" : 
+			[
+				-9.4098504632711411e-07,
+				7.3108822107315063e-07,
+				9.0158984199214921e-10
+			],
+			"sigmas_init" : 
+			[
+				1.0000000000000001e-05,
+				1.0000000000000001e-05,
+				1.0000000000000001e-05
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : -150.47253099423924,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 27,
+							"nabla" : 0.0040180847337748724,
+							"normalized_residual" : 7.2009171568192434e-06,
+							"number" : 30,
+							"obs_azim" : -2.3636169936667484,
+							"obs_length" : 1414.3792488977667,
+							"obs_redondancy" : 66.636089912110876,
+							"obs_zen" : 1.5708938554573302,
+							"original_value" : -150.472531,
+							"rank" : 30,
+							"residual" : 5.7607337254553954e-09,
+							"residual_std" : 1.2466637847467722e-05,
+							"sigma_a_posteriori" : 0.00046209200876285502,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065304745266903054,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : 8.8213095417661467e-06,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 199.52726220607425,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 30,
+							"nabla" : 0.0040205800480558026,
+							"normalized_residual" : 0.00025759284093575848,
+							"number" : 33,
+							"obs_azim" : 3.1341669017135105,
+							"obs_length" : 1000.1171400286973,
+							"obs_redondancy" : 66.55340214776129,
+							"obs_zen" : 1.5708652899714342,
+							"original_value" : 199.52726200000001,
+							"rank" : 31,
+							"residual" : 2.0607427274860682e-07,
+							"residual_std" : 0.00044540779641315747,
+							"sigma_a_posteriori" : 0.00046266426948093567,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065264214830615429,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : 0.00031575385267936667,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : -100.47252921183508,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 33,
+							"nabla" : 0.0040223711861966278,
+							"normalized_residual" : -0.00026479382877157067,
+							"number" : 36,
+							"obs_azim" : -1.5782188022713612,
+							"obs_length" : 1000.1139140958647,
+							"obs_redondancy" : 66.494143670344556,
+							"obs_zen" : 1.5708652897487851,
+							"original_value" : -100.47252899999999,
+							"rank" : 32,
+							"residual" : -2.1183506301725656e-07,
+							"residual_std" : -0.00045745407257421122,
+							"sigma_a_posteriori" : 0.00046307394712917602,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065235153061076292,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : -0.00032472532534556385,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"C_G0_1" : 
+						{
+							"rank" : 7,
+							"sigma" : 4.0107616513995785e-09,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -3.9739262430925979e-09
+						}
+					},
+					"type" : "hz_unknown"
+				},
+				{
+					"nbr_active_obs" : 6,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00620886748777,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 28,
+							"nabla" : 0.0044385599529019942,
+							"normalized_residual" : -0.00013251222716273661,
+							"number" : 31,
+							"obs_azim" : -2.3636169936667484,
+							"obs_length" : 1414.3792488977667,
+							"obs_redondancy" : 85.326421595237534,
+							"obs_zen" : 1.5708938554573302,
+							"original_value" : 100.006209,
+							"rank" : 33,
+							"residual" : -1.3251222716273662e-07,
+							"residual_std" : -0.00034592976740635708,
+							"sigma_a_posteriori" : 0.00038306107091118602,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00092372301906598348,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00014345450359862797,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1414.3792488977667,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 29,
+							"nabla" : 0.0051080589513130157,
+							"normalized_residual" : -0.0001022333435685141,
+							"number" : 32,
+							"obs_azim" : -2.3636169936667484,
+							"obs_length" : 1414.3792488977667,
+							"obs_redondancy" : 64.42522025062749,
+							"obs_zen" : 1.5708938554573302,
+							"original_value" : 1414.3792490000001,
+							"rank" : 34,
+							"residual" : -1.022333435685141e-07,
+							"residual_std" : -0.00017140419815187319,
+							"sigma_a_posteriori" : 0.00059644597198214454,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00080265322680861059,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00012736925505800183,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00439033217491,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 31,
+							"nabla" : 0.0047962054240595518,
+							"normalized_residual" : 0.00033217489747587332,
+							"number" : 34,
+							"obs_azim" : 3.1341669017135105,
+							"obs_length" : 1000.1171400286973,
+							"obs_redondancy" : 73.075561595948102,
+							"obs_zen" : 1.5708652899714342,
+							"original_value" : 100.00439,
+							"rank" : 35,
+							"residual" : 3.3217489747587335e-07,
+							"residual_std" : 0.00064016729479226728,
+							"sigma_a_posteriori" : 0.00051888764105586388,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00085484245095776622,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00038858025488053884,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1000.1171400286973,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 32,
+							"nabla" : 0.0054183369101666219,
+							"normalized_residual" : 2.8697400011878926e-05,
+							"number" : 35,
+							"obs_azim" : 3.1341669017135105,
+							"obs_length" : 1000.1171400286973,
+							"obs_redondancy" : 57.257937720489636,
+							"obs_zen" : 1.5708652899714342,
+							"original_value" : 1000.1171399999999,
+							"rank" : 36,
+							"residual" : 2.8697400011878926e-08,
+							"residual_std" : 4.3894975907007953e-05,
+							"sigma_a_posteriori" : 0.00065377413744740901,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00075668974963646516,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 3.7924922368336506e-05,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00439031800063,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 34,
+							"nabla" : 0.0048629841166002189,
+							"normalized_residual" : 0.00031800062124784465,
+							"number" : 37,
+							"obs_azim" : -1.5782188022713612,
+							"obs_length" : 1000.1139140958647,
+							"obs_redondancy" : 71.082388302230754,
+							"obs_zen" : 1.5708652897487851,
+							"original_value" : 100.00439,
+							"rank" : 37,
+							"residual" : 3.1800062124784464e-07,
+							"residual_std" : 0.00059135293622378953,
+							"sigma_a_posteriori" : 0.00053775098045256281,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00084310372020428629,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00037717852931640753,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1000.1139140958647,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "C",
+							"instrument_height" : 0.0,
+							"line" : 35,
+							"nabla" : 0.0054190306795949385,
+							"normalized_residual" : 9.5864720606186893e-05,
+							"number" : 38,
+							"obs_azim" : -1.5782188022713612,
+							"obs_length" : 1000.1139140958647,
+							"obs_redondancy" : 57.243277805735659,
+							"obs_zen" : 1.5708652897487851,
+							"original_value" : 1000.113914,
+							"rank" : 38,
+							"residual" : 9.5864720606186893e-08,
+							"residual_std" : 0.00014660764204540861,
+							"sigma_a_posteriori" : 0.0006538862454147842,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00075659287470696977,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00012670582001359122,
+							"target_height" : 0.0,
+							"to" : "D",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"D" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-7.4200479542387292,
+				1000.0896623992949,
+				-0.078490709805407732
+			],
+			"coord_compensated_georef" : 
+			[
+				656999.99999941734,
+				6860999.9999998761,
+				7.2085650087367349e-10
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4140550310965847,
+				48.847608272153799,
+				7.2085650087367349e-10
+			],
+			"coord_init_latlong" : 
+			[
+				2.4140550311045117,
+				48.847608272154957,
+				0.0
+			],
+			"coord_read" : 
+			[
+				657000.0,
+				6861000.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						3.231914210762724e-06,
+						99.276073135206886,
+						0.019185487066884818
+					],
+					[
+						2.6509335936000552e-06,
+						82.275416956447017,
+						100.01989051220485
+					],
+					[
+						2.1225185448606291e-07,
+						199.27607155341235,
+						0.0052487675576875581
+					]
+				],
+				"matrix" : 
+				[
+					9.8753977467536228e-05,
+					1.1181784033844133e-06,
+					9.8006823549227851e-09,
+					4.3870085504821011e-07,
+					-5.3323302159682126e-09,
+					6.6449021813648951e-05
+				],
+				"sigmas" : 
+				[
+					3.2317061076646834e-06,
+					2.1539657889521418e-07,
+					2.6509336431950031e-06
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 18,
+			"number" : 3,
+			"params" : 
+			{
+				"D_x" : 
+				{
+					"rank" : 0,
+					"sigma" : 3.2317061076646834e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -7.4200479542779041
+				},
+				"D_y" : 
+				{
+					"rank" : 1,
+					"sigma" : 2.1539657889521418e-07,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 1000.0896624099921
+				},
+				"D_z" : 
+				{
+					"rank" : 2,
+					"sigma" : 2.6509336431950031e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 7.2085650087367349e-10
+				}
+			},
+			"shift_from_read" : 
+			[
+				-5.8265868574380875e-07,
+				-1.2386590242385864e-07,
+				7.2085650087367349e-10
+			],
+			"sigmas_init" : 
+			[
+				1.0000000000000001e-05,
+				1.0000000000000001e-05,
+				1.0000000000000001e-05
+			],
+			"stations" : 
+			[
+				{
+					"nbr_active_obs" : 3,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 7,
+							"comment" : "",
+							"computed_value" : 199.5276761145511,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 37,
+							"nabla" : 0.0040205800498343365,
+							"normalized_residual" : 0.00014318885447545918,
+							"number" : 39,
+							"obs_azim" : 3.134173407100767,
+							"obs_length" : 1000.1171870952694,
+							"obs_redondancy" : 66.553402088880503,
+							"obs_zen" : 1.5708652899765121,
+							"original_value" : 199.52767600000001,
+							"rank" : 39,
+							"residual" : 1.1455108358036736e-07,
+							"residual_std" : 0.00024759007996889902,
+							"sigma_a_posteriori" : 0.00046266426988818239,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065264214801745326,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : 0.00017551897916544609,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 149.52746932890497,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 40,
+							"nabla" : 0.0040180847351031735,
+							"normalized_residual" : 0.00041113122034469997,
+							"number" : 42,
+							"obs_azim" : 2.348771995521985,
+							"obs_length" : 1414.3792578957916,
+							"obs_redondancy" : 66.636089868053674,
+							"obs_zen" : 1.5708938554570415,
+							"original_value" : 149.527469,
+							"rank" : 40,
+							"residual" : 3.2890497627575998e-07,
+							"residual_std" : 0.0007117737805922399,
+							"sigma_a_posteriori" : 0.00046209200906795227,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065304745245314572,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : 0.00050364636603395668,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 5,
+							"comment" : "",
+							"computed_value" : 99.527470556543946,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 43,
+							"nabla" : 0.0040223711858585224,
+							"normalized_residual" : -0.00055432007482015915,
+							"number" : 45,
+							"obs_azim" : 1.5633738514082445,
+							"obs_length" : 1000.1139140958647,
+							"obs_redondancy" : 66.494143681523028,
+							"obs_zen" : 1.5708652897487851,
+							"original_value" : 99.527471000000006,
+							"rank" : 41,
+							"residual" : -4.4345605985612735e-07,
+							"residual_std" : -0.00095763551950893574,
+							"sigma_a_posteriori" : 0.00046307394705192889,
+							"sigma_abs" : 0.00080000000000000004,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00065235153066559709,
+							"sigma_total" : 0.00080000000000000004,
+							"standardized_residual" : -0.00067978082216449648,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : 
+					{
+						"D_G0_1" : 
+						{
+							"rank" : 3,
+							"sigma" : 4.0070933416267351e-09,
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"value" : -2.4582030597743115e-10
+						}
+					},
+					"type" : "hz_unknown"
+				},
+				{
+					"nbr_active_obs" : 6,
+					"num" : 1,
+					"observations" : 
+					[
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00439033249818,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 38,
+							"nabla" : 0.0047962053749964354,
+							"normalized_residual" : 0.00033249816905369728,
+							"number" : 40,
+							"obs_azim" : 3.134173407100767,
+							"obs_length" : 1000.1171870952694,
+							"obs_redondancy" : 73.075563091011176,
+							"obs_zen" : 1.5708652899765121,
+							"original_value" : 100.00439,
+							"rank" : 42,
+							"residual" : 3.324981690536973e-07,
+							"residual_std" : 0.00064079032140485588,
+							"sigma_a_posteriori" : 0.00051888762664943969,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00085484245970243646,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00038895841599800407,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1000.1171870952694,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 39,
+							"nabla" : 0.005418336943230931,
+							"normalized_residual" : 9.5269456323876511e-05,
+							"number" : 41,
+							"obs_azim" : 3.134173407100767,
+							"obs_length" : 1000.1171870952694,
+							"obs_redondancy" : 57.257937021679581,
+							"obs_zen" : 1.5708652899765121,
+							"original_value" : 1000.1171869999999,
+							"rank" : 43,
+							"residual" : 9.5269456323876511e-08,
+							"residual_std" : 0.00014572227637673669,
+							"sigma_a_posteriori" : 0.0006537741427918392,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00075668974501891847,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00012590293042955751,
+							"target_height" : 0.0,
+							"to" : "A",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.0062088674694,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 41,
+							"nabla" : 0.0044385599608512466,
+							"normalized_residual" : -0.00013253060370089619,
+							"number" : 43,
+							"obs_azim" : 2.348771995521985,
+							"obs_length" : 1414.3792578957916,
+							"obs_redondancy" : 85.326421289606287,
+							"obs_zen" : 1.5708938554570415,
+							"original_value" : 100.006209,
+							"rank" : 44,
+							"residual" : -1.3253060370089618e-07,
+							"residual_std" : -0.00034597773667114604,
+							"sigma_a_posteriori" : 0.00038306107490051404,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00092372301741163885,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.0001434743978473761,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1414.3792578957916,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 42,
+							"nabla" : 0.0051080589475790104,
+							"normalized_residual" : -0.00010420831131341401,
+							"number" : 44,
+							"obs_azim" : 2.348771995521985,
+							"obs_length" : 1414.3792578957916,
+							"obs_redondancy" : 64.425220344817518,
+							"obs_zen" : 1.5708938554570415,
+							"original_value" : 1414.3792579999999,
+							"rank" : 45,
+							"residual" : -1.0420831131341401e-07,
+							"residual_std" : -0.00017471542494462163,
+							"sigma_a_posteriori" : 0.00059644597119255056,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00080265322739535229,
+							"sigma_total" : 0.001,
+							"standardized_residual" : -0.00012982980415038623,
+							"target_height" : 0.0,
+							"to" : "B",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 6,
+							"comment" : "",
+							"computed_value" : 100.00439031800063,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 44,
+							"nabla" : 0.0048629841189203665,
+							"normalized_residual" : 0.00031800062124784465,
+							"number" : 46,
+							"obs_azim" : 1.5633738514082445,
+							"obs_length" : 1000.1139140958647,
+							"obs_redondancy" : 71.082388234403425,
+							"obs_zen" : 1.5708652897487851,
+							"original_value" : 100.00439,
+							"rank" : 46,
+							"residual" : 3.1800062124784464e-07,
+							"residual_std" : 0.00059135293553026953,
+							"sigma_a_posteriori" : 0.00053775098108322012,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.0008431037198020385,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00037717852949636075,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 0.015707963267948967,
+							"unit_str" : "g",
+							"variance_from_matrix" : false
+						},
+						{
+							"active" : true,
+							"active_read" : true,
+							"code" : 3,
+							"comment" : "",
+							"computed_value" : 1000.1139140958647,
+							"deflection_correction" : 0.0,
+							"file_id" : 1,
+							"from" : "D",
+							"instrument_height" : 0.0,
+							"line" : 45,
+							"nabla" : 0.0054190306795949385,
+							"normalized_residual" : 9.5864720606186893e-05,
+							"number" : 47,
+							"obs_azim" : 1.5633738514082445,
+							"obs_length" : 1000.1139140958647,
+							"obs_redondancy" : 57.243277805735659,
+							"obs_zen" : 1.5708652897487851,
+							"original_value" : 1000.113914,
+							"rank" : 47,
+							"residual" : 9.5864720606186893e-08,
+							"residual_std" : 0.00014660764204540861,
+							"sigma_a_posteriori" : 0.0006538862454147842,
+							"sigma_abs" : 0.001,
+							"sigma_rel" : 0.0,
+							"sigma_residual" : 0.00075659287470696977,
+							"sigma_total" : 0.001,
+							"standardized_residual" : 0.00012670582001359122,
+							"target_height" : 0.0,
+							"to" : "C",
+							"unit_factor" : 1.0,
+							"unit_str" : "m",
+							"variance_from_matrix" : false
+						}
+					],
+					"params" : null,
+					"type" : "simple"
+				}
+			]
+		},
+		"E" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				-100005.86722035854,
+				-709.63396884299334,
+				-782.61974599414248
+			],
+			"coord_compensated_georef" : 
+			[
+				556999.99999434617,
+				6859999.9995549219,
+				-0.00070423899306202133
+			],
+			"coord_compensated_latlong" : 
+			[
+				1.0520880040380249,
+				48.824186202796028,
+				-0.00070423899306202133
+			],
+			"coord_init_latlong" : 
+			[
+				1.0520880039654781,
+				48.824186206798863,
+				0.0
+			],
+			"coord_read" : 
+			[
+				557000.0,
+				6860000.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.00057179378668947335,
+						199.54826657885155,
+						1.2292819105064597e-08
+					],
+					[
+						0.00051086524142819492,
+						99.548265010227837,
+						99.501136153626675
+					],
+					[
+						3.2520595695244401e-07,
+						99.548266578947874,
+						199.50113615362613
+					]
+				],
+				"matrix" : 
+				[
+					0.0003081785209656719,
+					-0.021934908939525252,
+					0.019336443920941734,
+					3.0913478489978452,
+					0.0001372099529546013,
+					2.4676122646196563
+				],
+				"sigmas" : 
+				[
+					5.7089434882603515e-06,
+					0.00057177939239493535,
+					0.00051084955667184009
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 3,
+			"number" : 4,
+			"params" : 
+			{
+				"E_x" : 
+				{
+					"rank" : 12,
+					"sigma" : 5.7089434882603515e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -100005.85531745445
+				},
+				"E_y" : 
+				{
+					"rank" : 13,
+					"sigma" : 0.00057177939239493535,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -709.63402227856466
+				},
+				"E_z" : 
+				{
+					"rank" : 14,
+					"sigma" : 0.00051084955667184009,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -0.00070423899306202133
+				}
+			},
+			"shift_from_read" : 
+			[
+				-5.6538265198469162e-06,
+				-0.00044507812708616257,
+				-0.00070423899306202133
+			],
+			"sigmas_init" : 
+			[
+				1.0000000000000001e-05,
+				1.0000000000000001e-05,
+				1.0000000000000001e-05
+			],
+			"stations" : []
+		},
+		"F" : 
+		{
+			"code" : 0,
+			"code_name" : "3---",
+			"comment" : "",
+			"coord_compensated_cartesian" : 
+			[
+				742.39633305007965,
+				-100033.32250218789,
+				-785.37904358010564
+			],
+			"coord_compensated_georef" : 
+			[
+				657000.00063851255,
+				6760000.0000023702,
+				0.00035193076747648533
+			],
+			"coord_compensated_latlong" : 
+			[
+				2.4240927294476631,
+				47.9389803955048,
+				0.00035193076747648533
+			],
+			"coord_init_latlong" : 
+			[
+				2.4240927208964766,
+				47.938980395441561,
+				0.0
+			],
+			"coord_read" : 
+			[
+				657000.0,
+				6760000.0,
+				0.0
+			],
+			"dev_eta" : null,
+			"dev_xi" : null,
+			"dimension" : 3,
+			"ellips" : 
+			{
+				"axes" : 
+				[
+					[
+						0.00057195225884328397,
+						99.527542188839007,
+						199.99999999339897
+					],
+					[
+						0.00051100682284173425,
+						199.52754303152679,
+						100.49900276544064
+					],
+					[
+						3.2520595321362136e-07,
+						199.52754218878727,
+						199.50099723455858
+					]
+				],
+				"matrix" : 
+				[
+					3.0930469982617517,
+					0.022953872346725329,
+					-0.00014362441107138518,
+					0.00032305021752849507,
+					0.019352504681005508,
+					2.4689801199553894
+				],
+				"sigmas" : 
+				[
+					0.00057193650914741422,
+					5.8450681571064819e-06,
+					0.00051099112499940625
+				]
+			},
+			"file_id" : 0,
+			"nbr_active_obs" : 3,
+			"number" : 5,
+			"params" : 
+			{
+				"F_x" : 
+				{
+					"rank" : 19,
+					"sigma" : 0.00057193650914741422,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 742.39633934293875
+				},
+				"F_y" : 
+				{
+					"rank" : 20,
+					"sigma" : 5.8450681571064819e-06,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : -100033.33515821154
+				},
+				"F_z" : 
+				{
+					"rank" : 21,
+					"sigma" : 0.00051099112499940625,
+					"unit_factor" : 1.0,
+					"unit_str" : "m",
+					"value" : 0.00035193076747648533
+				}
+			},
+			"shift_from_read" : 
+			[
+				0.00063851254526525736,
+				2.3702159523963928e-06,
+				0.00035193076747648533
+			],
+			"sigmas_init" : 
+			[
+				1.0000000000000001e-05,
+				1.0000000000000001e-05,
+				1.0000000000000001e-05
+			],
+			"stations" : []
+		}
+	}
+}
