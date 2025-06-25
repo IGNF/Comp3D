@@ -247,6 +247,13 @@ Linux dependencies:
 
     sudo apt install python3-stemmer qttranslations5-l10n
 
+Since Ubuntu 24.04, a virtual env must be used to install and use pip modules:
+
+.. code-block:: bash
+
+    python3 -m venv sphinx-env
+    source sphinx-env/bin/activate
+
 On any OS (python3 must be installed):
 
 .. code-block:: bash
