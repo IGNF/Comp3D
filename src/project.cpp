@@ -487,7 +487,7 @@ bool Project::readData()
                                           QT_TRANSLATE_NOOP("QObject","Error: non-1D points or with vertical "
                                                                       "deflection are forbidden in altitude mode!"));
                 ok=false;
-                points.clear();
+                clear();
                 break;
             }
 
