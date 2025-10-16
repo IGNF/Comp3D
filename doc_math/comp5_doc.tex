@@ -2047,9 +2047,9 @@ $$ Q_{\hat{v}\hat{v}} = Q_{ll} - Q_{\hat{l}\hat{l}}$$
 où $Q_{ll} = P^{-1}$.
 
 La précision de chacun des résidus issus de la compensation est déduite de l'élément diagonal de $ Q_{\hat{v}\hat{v}} $ correspondant. On nommera cette valeur
-$\sigma_{residu}$.
+$\sigma_{\hat{v_i}}$.
 
-$$\sigma_{residu}(i)=\sqrt{Q_{\hat{v}\hat{v}}(i,i)}$$
+$$\sigma_{\hat{v_i}}=\sqrt{Q_{\hat{v}\hat{v}}(i,i)}$$
 
 Si la redondance partielle de l'observation est inférieure à 1\%, la précision des résidu n'est pas calculée et prend la valeur \textit{NaN} dans le programme et n'est pas écrite dans le fichier \textit{comp}.
 
@@ -2058,9 +2058,9 @@ Si la redondance partielle de l'observation est inférieure à 1\%, la précisio
 
 En anglais \textit{standardized residual}.
 
-Une fois le $\sigma_{residu}$ obtenu, le résidu normé $w_i$ de l'observation est calculé de la manière suivante :
+Une fois $\sigma_{\hat{v_i}}$ obtenu, le résidu normé $w_i$ de l'observation est calculé de la manière suivante :
 $$w_i=\frac{\hat{v_i}}{\sigma_{\hat{v_i}}}$$
-Le résidu normé, sans unité, suit la loi normale centrée (l'espérance des résidus est nul) et réduite (on divise par son écart-type).
+Le résidu normé, sans unité, suit la loi normale centrée (l'espérance des résidus est nulle) et réduite (on divise par son écart-type).
 
 Si la redondance partielle de l'observation est inférieure à 1\%, le résidu normé n'est pas calculé et prend la valeur \textit{NaN} dans le programme et n'est pas écrit dans le fichier \textit{comp}.
 
@@ -2101,15 +2101,15 @@ $$\delta=4.1$$
 
 \subsubsection{Estimation d'une faute probable}
 
-Si le résidu normé dépasse le 1er seuil $w_{max}$, la faute probable $\Delta_{l_{i}}$ est estimée de la manière suivante :
+Si le résidu normé dépasse le 1er seuil $w_{max}$, la faute probable $\Delta l_{i}$ est estimée de la manière suivante :
 
-$$\Delta{l_{i}}=-\frac{\hat{v_i}}{z_i}$$
+$$\Delta l_{i}=-\frac{\hat{v_i}}{z_i}$$
 Si la redondance partielle de l'observation est inférieure à 1\%, le résidu normé n'est pas calculé, le test ne peut être réalisé et donc la faute probable n'est pas calculée.
 
 
 \subsubsection{Plus grande faute non détectable}
 
-La plus grande faute non détectable pour une observation $\nabla_i$ dépend de sa précision a priori $\sigma_i$,
+La plus grande faute non détectable pour une observation $\nabla l_i$ dépend de sa précision a priori $\sigma_i$,
 de sa redondance partielle $z_i$ et du paramètre de décentralité $\delta$.
 
 $$\nabla l_i=\delta.\frac{\sigma_i}{\sqrt{z_i}}$$
