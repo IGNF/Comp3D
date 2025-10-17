@@ -20,6 +20,12 @@ then
  exit $E_BADARGS
 fi
 
+if [ -z $2 ]
+then
+ echo "Error ! $2 is not a dir."
+ exit $E_BADARGS
+fi
+
 
 base=$(pwd)
 echo "base dir: $base"
@@ -28,7 +34,7 @@ echo "version : $version"
 distrib/make_shortcut.sh
 
 cd $1
-  rm -Rf $2/
+  rm -Rf $2
   mkdir -p $2
   cmake -DINSTALL_PREFIX="$2" ..
   make install
