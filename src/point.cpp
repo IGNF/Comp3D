@@ -381,13 +381,6 @@ bool Point::read_point(std::string line, bool fromNEW)
         }else if (!(iss >> _sigmas_init[2]))
         {
             eta_xi_given=true;
-            if (!fromNEW)
-            {
-                //it may not be a problem, just that there is only eta and xi, not sigma x y z
-                //Project::theInfo()->msg(INFO_COR,getFileDepth(),QT_TRANSLATE_NOOP("QObject","In %s:%d: Can't convert point sigma_z."),
-                //                                      getFileName().c_str(),lineNumber);
-                ok=false;
-            }
         }else if (ok)
             sigmas_given=true;
     }
@@ -411,7 +404,6 @@ bool Point::read_point(std::string line, bool fromNEW)
         _xi = _sigmas_init[1];
         _sigmas_init[0] = 0;
         _sigmas_init[1] = 0;
-        ok=true;
     }
 
     if (eta_xi_given)
