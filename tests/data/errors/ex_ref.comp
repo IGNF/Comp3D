@@ -5,7 +5,7 @@ data=
 	"COMP3D_LICENSE" : "Provided with absolutely no warranty, under GPLv3 license",
 	"COMP3D_OPTIONS" : "QT RES ",
 	"COMP3D_REPO" : "https://github.com/IGNF/Comp3D",
-	"COMP3D_VERSION" : "COMP3D v5.24dev-PROJ 8.2.1-linux",
+	"COMP3D_VERSION" : "COMP3D v5.24dev-PROJ 9.4.0-linux",
 	"all_data_files" : 
 	{
 		"0" : "ex.cor",
@@ -47,8 +47,8 @@ data=
 			"min" : 0.51882011574030873
 		},
 		"compensation_done" : true,
-		"computation_duration" : "00:00:00.001913",
-		"computation_start" : "2024-Oct-25 14:28:51.134386",
+		"computation_duration" : "00:00:00.001454",
+		"computation_start" : "2025-Nov-03 10:31:57.953606",
 		"internal_constraints" : false,
 		"internal_constraints_obs" : [],
 		"interrupted" : false,
@@ -56,7 +56,7 @@ data=
 		"kernel" : null,
 		"messages_computation" : "",
 		"messages_read_config" : "",
-		"messages_read_data" : "Reading COR...<br/>\nRead file ex.cor...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file toto.cor...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At line 1: \"@toto.cor\" => Can't open file \"./data/errors/toto.cor\".</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:2: Wrong format in: 1ere part * oubli commentaire</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:3: Wrong format in: 1 S1 10 20 0.01 0.01 * manque un champ</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:5: Unknown point code 56.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:5: Error reading line.</font><br/>\nReading OBS...<br/>\nRead file ex.obs...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Warning: try to create a new hz station on point b without opening.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:8: Wrong format in: 6 b a  0.001 0 0 0 *champ mesure manquant</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:9: 10 b a  100.001 0.001 0 0 0 *code inexistant => Impossible to determine observation type!</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:11: Wrong format in: 6 b a  100.001   *manque 4 champs</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:14: Wrong format in: 6 b a  100.001 0.001000 0 0 *manque 1 champ</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:19: 74563 b a  10.002 0.001000 0 0 0 *code inexistant => Impossible to determine observation type!</font><br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file bilout.obs...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At line 22: \"@bilout.obs\" => Can't open file \"./data/errors/bilout.obs\".</font><br/>\nPoints setting...<br/>\nRead data finished.<br/>\nAll points are initialized.<br/>\nVertical deflection not used.<br/>\n",
+		"messages_read_data" : "Reading COR...<br/>\nRead file ex.cor...<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file toto.cor...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At line 1: \"@toto.cor\" => Can't open file \"./data/errors/toto.cor\".</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:2: Wrong format in: 1ere part * oubli commentaire</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:3: Wrong format in: 1 S1 10 20 0.01 0.01 * manque un champ</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:5: Unknown point code 56.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:5: Error reading line.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:10: Wrong format in: \t91E251\t946171\t6847065\t0\t0\t0\t0\t* missing code</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:11: Unknown point code 912512.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.cor:11: Error reading line.</font><br/>\nReading OBS...<br/>\nRead file ex.obs...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;Warning: try to create a new hz station on point b without opening.</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:8: Wrong format in: 6 b a  0.001 0 0 0 *champ mesure manquant</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:9: 10 b a  100.001 0.001 0 0 0 *code inexistant => Impossible to determine observation type!</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:11: Wrong format in: 6 b a  100.001   *manque 4 champs</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:14: Wrong format in: 6 b a  100.001 0.001000 0 0 *manque 1 champ</font><br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;In ex.obs:19: 74563 b a  10.002 0.001000 0 0 0 *code inexistant => Impossible to determine observation type!</font><br/>\n&nbsp;&nbsp;&nbsp;&nbsp;Read file bilout.obs...<br/>\n<font color=#FF8000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At line 22: \"@bilout.obs\" => Can't open file \"./data/errors/bilout.obs\".</font><br/>\nPoints setting...<br/>\nRead data finished.<br/>\nAll points are initialized.<br/>\nVertical deflection not used.<br/>\n",
 		"messages_set_least_squares" : "",
 		"nbr_active_obs" : 11,
 		"nbr_all_obs" : 12,
