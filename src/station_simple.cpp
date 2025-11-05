@@ -127,7 +127,8 @@ bool Station_Simple::read_obs(std::string line, int line_number, DataFile *_file
     {
         Project::theInfo()->warning(INFO_OBS,_file->get_fileDepth()+1,
                                     QT_TRANSLATE_NOOP("QObject","In %s:%d: Wrong format in: %s"),
-                                    _file->get_name().c_str(),line_number,line.c_str());
+                                    _file->get_name().c_str(),line_number,
+                                    (line+(comment.empty()?"":"*"+comment)).c_str());
         return false;
     }
 

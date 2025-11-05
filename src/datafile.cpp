@@ -201,7 +201,7 @@ void NewFile::clear()
     points.clear();
 }
 
-bool NewFile::interpret_line(const std::string &line, int line_num)
+bool NewFile::interpret_line(std::string line, int line_num)
 {
     points_owner.push_back(std::make_unique<Point>(this,line_num));
     if (points_owner.back()->read_point(line, true))
@@ -240,7 +240,7 @@ void CORFile::clear()
     new_points.clear();
 }
 
-bool CORFile::interpret_line(const std::string &line, int line_num)
+bool CORFile::interpret_line(std::string line, int line_num)
 {
     //std::cout<<"Interpret \""<<line<<"\" as a COR line"<<std::endl;
     Project::theone()->points.emplace_back(this,line_num);
@@ -520,7 +520,7 @@ void OBSFile::clear()
     sub_files.clear();
 }
 
-bool OBSFile::interpret_line(const std::string &line, int line_num)
+bool OBSFile::interpret_line(std::string line, int line_num)
 {
     //std::cout<<"Interpret \""<<line<<"\" as an OBS line"<<std::endl;
     std::regex regex_line(R"(^\s*([^*\s]+)\*?(.*)$)");
@@ -613,7 +613,10 @@ bool OBSFile::interpret_line(const std::string &line, int line_num)
         std::string comment="";
         std::size_t comment_pos = line.find('*');
         if (comment_pos!=std::string::npos)
-            comment=line.substr(line.find('*')+1);
+        {
+            comment=line.substr(comment_pos+1);
+            line=line.substr(0,comment_pos); // remove comment
+        }
 
         std::string file_path=current_absolute_path+"/"+filename.c_str();
         fs::path next_path=file_path;
@@ -732,7 +735,7 @@ std::unique_ptr<XYZFile> XYZFile::create(const std::string &_filename, Station_B
 
 void XYZFile::clear() {}
 
-bool XYZFile::interpret_line(const std::string &line, int line_num)
+bool XYZFile::interpret_line(std::string line, int line_num)
 {
     std::regex regex_line(R"(^\s*([^*]+)\*?(.*)$)");
     std::smatch what;
@@ -743,9 +746,9 @@ bool XYZFile::interpret_line(const std::string &line, int line_num)
         // what[2] contains the comment part
         if ((what[1]).length()>1)//there is something on the line
         {
-            std::string line_data=what[1];
+            line=what[1];
             station->observations3D.emplace_back(station);
-            if (!station->observations3D.back().read_obs(line_data,line_num,this,what[2]))
+            if (!station->observations3D.back().read_obs(line,line_num,this,what[2]))
                 station->observations3D.pop_back();
             else
                 return true;
@@ -978,7 +981,7 @@ std::unique_ptr<AxisFile> AxisFile::create(const std::string &_filename, Station
 
 void AxisFile::clear() {}
 
-bool AxisFile::interpret_line(const std::string &line, int line_num)
+bool AxisFile::interpret_line(std::string line, int line_num)
 {
     //File format:
     //target_num  pos_num  ground_pt   sigma_rayon  sigma_perp
@@ -991,13 +994,13 @@ bool AxisFile::interpret_line(const std::string &line, int line_num)
         // what[2] contains the comment part
         if ((what[1]).length()>1)//there is something on the line
         {
-            std::string line_data=what[1];
-            if (line_data[0]=='L')
+            line=what[1];
+            if (line[0]=='L')
             {
-                return station->read_constr(line_data,line_num,this,what[2]);
+                return station->read_constr(line,line_num,this,what[2]);
             }else{
                 AxisObs obsAx(station);
-                if (obsAx.read_obs(line_data,line_num,this,what[2]))
+                if (obsAx.read_obs(line,line_num,this,what[2]))
                 {
                     station->updateTarget(obsAx.getTargetNum(), obsAx);
                     return true;
@@ -1030,7 +1033,7 @@ std::unique_ptr<EqFile> EqFile::create(const std::string &_filename, Station_Eq 
 
 void EqFile::clear() {}
 
-bool EqFile::interpret_line(const std::string &line, int line_num)
+bool EqFile::interpret_line(std::string line, int line_num)
 {
     //File format:
     //from to sigma *comm
@@ -1041,6 +1044,7 @@ bool EqFile::interpret_line(const std::string &line, int line_num)
         // what[0] contains the whole string
         // what[1] contains the data part
         // what[2] contains the comment part
+        line=what[1];
 
         bool ok=true;
         bool active=true;

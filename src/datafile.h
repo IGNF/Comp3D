@@ -45,7 +45,7 @@ public:
     virtual void clear()=0;
     bool read();
     bool read(const std::string &_filename, const std::string &_current_absolute_path);
-    virtual bool interpret_line(const std::string &line,int line_num)=0;
+    virtual bool interpret_line(std::string line,int line_num)=0;
     virtual bool read_subfile(const std::string &filename, const std::string &absolute_path,int line_num);
 
     std::string get_name() const {return filename;}
@@ -79,7 +79,7 @@ public:
                                            int _line_num_in_parent=-1, unsigned _fileDepth=0);
 
     virtual void clear() override;
-    virtual bool interpret_line(const std::string &line,int line_num) override;
+    virtual bool interpret_line(std::string line,int line_num) override;
     virtual bool read_subfile(const std::string &filename, const std::string &absolute_path,int line_num) override;
 
     //virtual bool write(std::string new_filename);
@@ -103,7 +103,7 @@ public:
     static std::unique_ptr<NewFile> create(const std::string &_filename);
 
     virtual void clear() override;
-    virtual bool interpret_line(const std::string &line,int line_num) override;
+    virtual bool interpret_line(std::string line,int line_num) override;
     virtual bool read_subfile(const std::string &filename, const std::string &absolute_path,int line_num) override;
     std::vector <Point*> get_points(){return points;}
 protected:
@@ -120,7 +120,7 @@ public:
                                            int _line_num_in_parent=-1, unsigned _fileDepth=0);
 
     virtual void clear() override;
-    virtual bool interpret_line(const std::string &line, int line_num) override;
+    virtual bool interpret_line(std::string line, int line_num) override;
     virtual bool read_subfile(const std::string &filename, const std::string &absolute_path,int line_num) override;
 protected:
     explicit OBSFile(const std::string &_filename, const std::string &_current_absolute_path,
@@ -137,7 +137,7 @@ public:
                                            int _line_num_in_parent=-1, unsigned _fileDepth=0);
 
     virtual void clear() override;
-    virtual bool interpret_line(const std::string &line, int line_num) override;
+    virtual bool interpret_line(std::string line, int line_num) override;
 
     bool finalizeFile() const;//write matrix in XYZ file
 protected:
@@ -156,7 +156,7 @@ public:
                                             int _line_num_in_parent=-1, unsigned _fileDepth=0);
 
     virtual void clear() override;
-    virtual bool interpret_line(const std::string &line, int line_num) override;
+    virtual bool interpret_line(std::string line, int line_num) override;
 protected:
     AxisFile(const std::string &_filename, Station_Axis *_station,
              const std::string &_current_absolute_path,
@@ -173,7 +173,7 @@ public:
                                           int _line_num_in_parent=-1, unsigned _fileDepth=0);
 
     virtual void clear() override;
-    virtual bool interpret_line(const std::string &line, int line_num) override;
+    virtual bool interpret_line(std::string line, int line_num) override;
 protected:
     EqFile(const std::string &_filename, Station_Eq *_station,
            const std::string &_current_absolute_path,

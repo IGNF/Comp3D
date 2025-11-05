@@ -338,7 +338,7 @@ void Tests_NonReg::test_syntax_error2()
 {
     std::cout<<"\nPrepare test_syntax_error2"<<std::endl;
     std::string refFile="./data/syntax_error2/ex_ref.comp";
-    std::string refMD5="3e2228623b1cb08d51b4e492de7dc063";
+    std::string refMD5="fdfbe34cb2d58ad36b3e6fae98b532b9";
 
     test_template(refFile, refMD5,false);
 }

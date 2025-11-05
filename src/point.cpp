@@ -263,7 +263,10 @@ bool Point::read_point(std::string line, bool fromNEW)
     std::regex regex_line("^(.*)\\*([^\r]*)(\r)?$");//is there a * somewhere? (remove ending \r if using win file on unix)
     std::smatch what;
     if(std::regex_match(line, what, regex_line))
+    {
         comment=what[2];
+        line=what[1];
+    }
 
     Coord _coord_read;
     Coord _sigmas_init;
