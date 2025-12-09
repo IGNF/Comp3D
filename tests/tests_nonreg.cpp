@@ -102,7 +102,7 @@ void Tests_NonReg::test_coincident_with_VD()
 {
     std::cout<<"\nPrepare test_coincident_with_VD"<<std::endl;
     std::string refFile="./data/coincident_with_VD/ex_ref.comp";
-    std::string refMD5="c436e9d6d4701ffdb30cb6056ca0befa";
+    std::string refMD5="70cb8c94a465c1cfdf4143011bbc88e9";
     test_template(refFile, refMD5,false);
 }
 
@@ -218,7 +218,7 @@ void Tests_NonReg::test_init_cap()
 {
     std::cout<<"\nPrepare test_init_cap"<<std::endl;
     std::string refFile="./data/init_cap/ex_ref.comp";
-    std::string refMD5="c860f173b885c8a48186723bc4290cb8";
+    std::string refMD5="3b3d257325af1cf85cf058e8e5bc6d95";
 
     test_template(refFile, refMD5,false);
 }
@@ -329,7 +329,7 @@ void Tests_NonReg::test_syntax_error1()
 {
     std::cout<<"\nPrepare test_syntax_error1"<<std::endl;
     std::string refFile="./data/syntax_error1/ex_ref.comp";
-    std::string refMD5="79f263e25122993b85527c1fd9b028bf";
+    std::string refMD5="e3a60b11db9f561c62218a4d13528254";
 
     test_template(refFile, refMD5,false);
 }
@@ -338,7 +338,7 @@ void Tests_NonReg::test_syntax_error2()
 {
     std::cout<<"\nPrepare test_syntax_error2"<<std::endl;
     std::string refFile="./data/syntax_error2/ex_ref.comp";
-    std::string refMD5="fdfbe34cb2d58ad36b3e6fae98b532b9";
+    std::string refMD5="7d03a296c2c6912ed105cebe197a3073";
 
     test_template(refFile, refMD5,false);
 }
@@ -347,7 +347,7 @@ void Tests_NonReg::test_topo()
 {
     std::cout<<"\nPrepare test_topo"<<std::endl;
     std::string refFile="./data/topo/ex_ref.comp";
-    std::string refMD5="ff909ea05c75b62b99bd0ac10cb8c1d1";
+    std::string refMD5="884d89d1f653a19789e15516d90424fb";
 
     test_template(refFile, refMD5,false);
 }

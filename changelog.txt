@@ -1,3 +1,8 @@
+Comp3D V5.24-dev:
+ - fix stereographic meridian convergence on azimuts
+ - Add deflectionCorrection to code 8
+ - bug and translation fix
+
 Comp3D V5.23:
  - update licence info
  - proj 8/9
