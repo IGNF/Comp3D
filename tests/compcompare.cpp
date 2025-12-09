@@ -125,7 +125,7 @@ bool CompCompare::checkStrings(Json::Value nodeComp, Json::Value nodeRef, const 
     val1.replace("\\","/");
     val2.replace("\\","/");
     if (!(val1==val2)) {
-        std::cout<<"  Difference found for node "<<path<<": ";
+        std::cout<<"Error! Difference found for node "<<path<<": ";
         std::cout<<val1.toStdString()<<" /VS/ "<<val2.toStdString()<<"\n";
         std::cout<<std::endl;
         return false;
@@ -138,12 +138,12 @@ bool CompCompare::checkFiles(Json::Value nodeComp, Json::Value nodeRef, const st
 {
     Json::Value filesRef = rootRef["all_data_files"];
     if (! filesRef) {
-        std::cout << "Missing node \"all_data_files\" in " << refFilename << "\n" << std::endl;
+        std::cout << "Error! Missing node \"all_data_files\" in " << refFilename << "\n" << std::endl;
         return false;
     }
     Json::Value filesComp = rootComp["all_data_files"];
     if (! filesComp) {
-        std::cout << "Missing node \"all_data_files\" in " << compFilename << "\n" << std::endl;
+        std::cout << "Error! Missing node \"all_data_files\" in " << compFilename << "\n" << std::endl;
         return false;
     }
     if (nodeComp == -1 && nodeRef == -1)
@@ -151,7 +151,7 @@ bool CompCompare::checkFiles(Json::Value nodeComp, Json::Value nodeRef, const st
     Json::Value fileComp = filesComp[nodeComp.asString()];
     Json::Value fileRef = filesRef[nodeRef.asString()];
     if (nodeComp == -1 || nodeRef == -1) {              // 'xor' because 'and' already tested above
-        std::cout<<"  Difference found for node "<<path<<": ";
+        std::cout<<"Error! Difference found for node "<<path<<": ";
         std::cout << fileRef  << "(" << nodeRef << ") /VS/ " << fileComp << "(" << nodeComp << ")\n" << std::endl;
         return false;
     }
@@ -166,7 +166,7 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
 
     if (nodeRef.type()!=nodeComp.type())
     {
-        std::cout<<"  Difference found for node "<<path<<": ";
+        std::cout<<"Error! Difference found for node "<<path<<": ";
         std::cout<<nodeRef.type()<<" /VS/ "<<nodeComp.type()<<"\n";
         std::cout<<std::endl;
         return false;
@@ -183,7 +183,7 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
         case Json::booleanValue:
             if (!(nodeRef==nodeComp))
             {
-                std::cout<<"  Difference found for node "<<path<<": ";
+                std::cout<<"Error! Difference found for node "<<path<<": ";
                 std::cout<<nodeRef<<" /VS/ "<<nodeComp<<"\n";
                 std::cout<<std::endl;
                 return false;
@@ -194,7 +194,7 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
             {
                 if ((fabs(nodeRef.asDouble()-nodeComp.asDouble())>tolerance)&&(fabs(nodeRef.asDouble()-nodeComp.asDouble())-200>tolerance))
                 {
-                    std::cout<<"  Difference found for axes node "<<path<<": ";
+                    std::cout<<"Error! Difference found for axes node "<<path<<": ";
                     std::cout<<nodeRef<<" /VS/ "<<nodeComp<<"\n";
                     std::cout<<std::endl;
                     return false;
@@ -203,7 +203,7 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
             {
                 if (moreTolerance && (fabs(nodeRef.asDouble()-nodeComp.asDouble())<tolerance*1000))
                     return true;
-                std::cout<<"  Difference found for node "<<path<<": ";
+                std::cout<<"Error! Difference found for node "<<path<<": ";
                 std::cout<<nodeRef<<" /VS/ "<<nodeComp<<"\n";
                 std::cout<<std::endl;
                 return false;
@@ -234,7 +234,7 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
                 //test if node exists in nodeComp
                 if (!nodeComp.isMember(name))
                 {
-                    std::cout<<subNodePath<<": error! Node not existing in comp file!\n";
+                    std::cout<<subNodePath<<": Error! Node not existing in comp file!\n";
                     std::cout<<std::endl;
                     return false;
                 }
@@ -254,7 +254,7 @@ bool CompCompare::checkNode(Json::Value nodeComp, Json::Value nodeRef, std::stri
     }else if (nodeRef.type()==Json::arrayValue){
         if (nodeRef.size()!=nodeComp.size())
         {
-            std::cout<<path<<": error! Array with different sizes: "<<nodeRef.size()<<"/"<<nodeComp.size()<<".\n";
+            std::cout<<path<<": Error! Array with different sizes: "<<nodeRef.size()<<"/"<<nodeComp.size()<<".\n";
             std::cout<<std::endl;
             return false;
         }
@@ -293,7 +293,7 @@ bool CompCompare::checkOnly(std::vector<std::string> comparePaths)
             subNodeRef=subNodeRef[token.toStdString()];
             if (!subNodeComp.type())
             {
-                std::cout<<"Error, path \""<<path<<"\" does not exist in "<<compFilename<<"."<<std::endl;
+                std::cout<<"Error! Path \""<<path<<"\" does not exist in "<<compFilename<<"."<<std::endl;
                 return false;
             }
             if (!subNodeRef.type())
@@ -323,7 +323,7 @@ bool CompCompare::checkOnly(std::vector< std::pair<std::string, std::string> > c
         QStringList newpath_tokens = QString(newpath.c_str()).split(rx);
         if (oldpath_tokens.size()!=newpath_tokens.size())
         {
-            std::cout<<"Error with test setup : paths \""<<oldpath<<"\" and \""<<newpath<<"\" do not have the same depth."<<std::endl;
+            std::cout<<"Error! With test setup : paths \""<<oldpath<<"\" and \""<<newpath<<"\" do not have the same depth."<<std::endl;
             return false;
         }
         Json::Value subNodeComp=rootComp;
@@ -339,7 +339,7 @@ bool CompCompare::checkOnly(std::vector< std::pair<std::string, std::string> > c
             subNodeRef=subNodeRef[oldtoken.toStdString()];
             if (!subNodeComp.type())
             {
-                std::cout<<"Error, path \""<<newpath<<"\" does not exist in "<<compFilename<<"."<<std::endl;
+                std::cout<<"Error! Path \""<<newpath<<"\" does not exist in "<<compFilename<<"."<<std::endl;
                 return false;
             }
             if (!subNodeRef.type())
