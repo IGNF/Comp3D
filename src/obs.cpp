@@ -437,7 +437,11 @@ bool Obs::computeInfos(bool isInitialResidual)
             //std::cout<<"fix az input conv "<<Xa<<": "<<factors.meridian_convergence<<std::endl;
             //std::cout<<"fix az stereo conv "<<Xa<<": "<<Project::theone()->projection.getStereoMeridianConvergence( {Xa, Ya, 0.} )<<std::endl;}
             computedValue = azimuth(Xa,Ya,Xb,Yb,C,radius);
-            //no deflectionCorrection, AZIMUTH is given in computation frame, no vertical deflection
+            if (Project::theone()->use_vertical_deflection)
+            {
+                vertical_deflection = from->dev_norm*cos(azim-from->dev_azim+PI/2);
+                deflectionCorrection=vertical_deflection/tan(zen);
+            }
             break;
 
         case OBS_CODE::CENTER_META:
