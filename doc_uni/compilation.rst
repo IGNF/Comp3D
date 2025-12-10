@@ -82,7 +82,7 @@ Configure Comp3D
     cd Comp3D
     mkdir build
     cd build
-    cmake ..
+    cmake .. -DPROJ_DATA_LOCAL_PATH=/usr/local/proj93/share/proj
 
 
 Configure tests
