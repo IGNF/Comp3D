@@ -1968,6 +1968,7 @@ bool Project::exportRelPrec(const std::string &filename,std::vector<Point*> &sel
     {
         uni_stream::ofstream relFile(filename);
         relFile.precision(12);
+        relFile<<"In global cartesian coordinates\n";
         for (unsigned i=0;i<selectedPoints.size()-1;i++)
         {
             Point *ptA=selectedPoints.at(i);
@@ -2019,7 +2020,7 @@ bool Project::exportRelPrec(const std::string &filename,std::vector<Point*> &sel
 
                     relFile<<"3d dist="<<distAB<<"+/-"<<sigma_dist<<"m; ";
                 }else{
-                    relFile<<"no 3d dist; ";
+                    //relFile<<"no 3d dist; ";
                 }
                 if ((ptA->dimension>=2)&&(ptB->dimension>=2))
                 {
@@ -2066,8 +2067,8 @@ bool Project::exportRelPrec(const std::string &filename,std::vector<Point*> &sel
                     relFile<<"2d dist="<<distAB<<"+/-"<<sigma_dist<<"m; ";
                     relFile<<"2d azim="<<azimAB<<"+/-"<<sigma_azim<<Angles::names[Project::theone()->config.filesUnit]<<"; ";
                 }else{
-                    relFile<<"no 2d dist; ";
-                    relFile<<"no 2d azim; ";
+                    //relFile<<"no 2d dist; ";
+                    //relFile<<"no 2d azim; ";
                 }
                 //1d precisions
                 {
@@ -2080,9 +2081,14 @@ bool Project::exportRelPrec(const std::string &filename,std::vector<Point*> &sel
                     //std::cout<<"sigma_diff=\n"<<sigma_diff<<"\n";
                     static const std::array<std::string,3> dim_name{"x","y","z"};
                     for (unsigned i2=0;i2<dim_name.size();i2++)
-                        relFile<<"d"<<dim_name.at(i2)<<"="<<cartGlobalB.toVect()[i2]-cartGlobalA.toVect()[i2]<<"+/-"<<sqrt(sigma_diff(i2,i2))*lsquares.sigma_0<<"m; ";
+                    {
+                        if ( ((i2<2)&&(ptA->dimension>=2)&&(ptB->dimension==2))
+                                || ((i2==2)&&(ptA->dimension!=2)&&(ptB->dimension!=2)) )
+                            relFile<<"d"<<dim_name.at(i2)<<"="<<cartGlobalB.toVect()[i2]-cartGlobalA.toVect()[i2]<<"+/-"<<sqrt(sigma_diff(i2,i2))*lsquares.sigma_0<<"m; ";
+                    }
                     // x/y covariance
-                    relFile<<"sdxy="<<sigma_diff(0,1)*lsquares.sigma_0*lsquares.sigma_0<<"m2; ";
+                    if ((ptA->dimension>=2)&&(ptB->dimension>=2))
+                        relFile<<"sdxy="<<sigma_diff(0,1)*lsquares.sigma_0*lsquares.sigma_0<<"m2; ";
                 }
                 relFile<<"\n";
             }
