@@ -3176,9 +3176,11 @@ function show_similarities(){
     if (data["computation"]["inverted_matrix"])
     {
       let td_value_sigma=document.createElement("td");
-      td_value_sigma.innerHTML=to_fixed(parseFloat(params.Rx.sigma)/parseFloat(params.Rx.unit_factor), nb_decimals);
+      if (!basc.vertical) td_value_sigma.innerHTML=to_fixed(parseFloat(params.Rx.sigma)/parseFloat(params.Rx.unit_factor), nb_decimals);
+      else td_value_sigma.innerHTML= '-';
       let span_value = document.createElement("span");
-      span_value.setAttribute('post', '\u0020'+params.Rx.unit_str);
+      if (!basc.vertical) span_value.setAttribute('post', '\u0020'+params.Rx.unit_str);
+      else span_value.setAttribute('post', '\u0020'+' ');
       td_value_sigma.appendChild(span_value);
       new_tr2.appendChild(td_value_sigma);
     }
@@ -3216,9 +3218,13 @@ function show_similarities(){
     if (data["computation"]["inverted_matrix"])
     {
       let td_value_sigma=document.createElement("td");
-      td_value_sigma.innerHTML=to_fixed(parseFloat(params.Ry.sigma)/parseFloat(params.Ry.unit_factor), nb_decimals);
+      if (!basc.vertical) td_value_sigma.innerHTML=to_fixed(parseFloat(params.Ry.sigma)/parseFloat(params.Ry.unit_factor), nb_decimals);
+      else td_value_sigma.innerHTML='-';
+
       let span_value = document.createElement("span");
-      span_value.setAttribute('post', '\u0020'+params.Ry.unit_str);
+      if (!basc.vertical) span_value.setAttribute('post', '\u0020'+params.Ry.unit_str);
+      else span_value.setAttribute('post', '\u0020'+' ');
+
       td_value_sigma.appendChild(span_value);
       new_tr3.appendChild(td_value_sigma);
     }
