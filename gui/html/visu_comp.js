@@ -1822,11 +1822,11 @@ function createMap(){
       key="coord_compensated_latlong"
       if (!data["computation"]["compensation_done"])
         key="coord_init_latlong";
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      /*L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 35,
             attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>',
             opacity: 0.6
-          }).addTo(mymap);
+          }).addTo(mymap);*/
   }else{
       mymap = L.map('mapid',{crs: L.CRS.Simple, minZoom: -10});
   }
