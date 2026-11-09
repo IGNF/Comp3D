@@ -68,6 +68,10 @@ Simple observations definition contains the following fields:
     A reference of horizontal angles' round (code ``7``) adds a new unknown in orientation; all the measurements code ``5`` from the same station following this code will be in the same round. If a code ``5`` is not preceeded by a code ``7``, it will be considered as a reference of horizontal angles' round.
 
 .. note::
+
+   Azimuths (observation code ``8``) have to be given without convergence of meridians.
+
+.. note::
     The final precision of an observation takes into account the absolute precison and the one relative to the computed distance between the two points' coordinates at current iteration:
 
     - for linear measurements: :math:`\sigma_{abs} + \sigma_{rel} \cdot distance`

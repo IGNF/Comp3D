@@ -30,7 +30,7 @@ at the origin corresponds to the geographic north direction.
 
 .. note::
 
-   Azimuths (observation code ``8``) are always given without convergence of meridians.
+   The spherical computation frame convergence of meridians is automatically fixed during computation. Azimuths (observation code ``8``) are always given without convergence of meridians.
 
 Input coordinates (in any user-chosen projection) is converted into spherical frame for computation
 and final coordinates are converted back into user's projection for output.
